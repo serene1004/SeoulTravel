@@ -1,0 +1,208 @@
+{
+  "source": {
+    "name": "서울시 관광 명소",
+    "datasetUrl": "https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do",
+    "serviceName": "TbVwAttractions",
+    "license": "공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)",
+    "retrievedAt": "2026-09-04T04:45:19.966Z"
+  },
+  "matchedAt": "2026-09-04T04:45:19.966Z",
+  "matches": [
+    {
+      "spotId": "gyeongbokgung",
+      "record": {
+        "id": "72",
+        "language": "ko",
+        "name": "경복궁",
+        "address": "03045 서울 종로구 사직로 161 (세종로, 경복궁) ",
+        "tags": "경복궁,서울궁궐,서울볼거리,서울여행,서울나들이,한국전통,한국문화,서울가볼만한곳,한국역사적명소,서울데이트,경복궁입장료,서울명소,서울관광지",
+        "hours": "1월 ~ 2월 : 09:00~17:00(입장마감 16:00) \r\n3월 ~ 5월 : 09:00~18:00(입장마감 17:00) \r\n6월 ~ 8월 : 09:00~18:30(입장마감 17:30) \r\n9월 ~ 10월 : 09:00~18:00(입장마감 17:00) \r\n11월 ~ 12월 : 09:00~17:00(입장마감 16:00)\r\n※ 기관 사정에 따라 관람시간 단축 및 조정이 있을 수 있습니다.",
+        "closedDays": "화요일",
+        "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-gbg.do?grpCode=gbg",
+        "transport": "지하철 5호선 광화문역 2번 출구,  471m \r\n지하철 3호선 경복궁역 5번 출구,  216m"
+      }
+    },
+    {
+      "spotId": "bukchon",
+      "record": {
+        "id": "261",
+        "language": "ko",
+        "name": "북촌한옥마을",
+        "address": "03059 서울 종로구 계동길 37 북촌문화센터 일대 (계동)",
+        "tags": "서울여행,서울명소,북촌한옥마을,서울데이트,한국전통가옥,서울북촌한옥마을,서울나들이,한국문화,부모님과함께,서울가볼만한곳,한국전통,걷기좋은곳,한옥마을,북촌한옥마을데이트",
+        "hours": "10:00 ~ 17:00 (제한시간 17:00 ~ 익일 10:00, 제한시간 내 제한구역의 관광객 방문 금지)\r\n(한옥 마을은 관광지이기에 앞서 지역 주민들의 거주 공간 입니다.)",
+        "closedDays": "",
+        "officialUrl": "https://hanok.seoul.go.kr/front/kor/town/town01.do",
+        "transport": "지하철 3호선 안국역 3번 출구,  516m"
+      }
+    },
+    {
+      "spotId": "starfield-library",
+      "record": {
+        "id": "26558",
+        "language": "ko",
+        "name": "별마당 도서관",
+        "address": "06164 서울 강남구 영동대로 513 (삼성동, 코엑스) ",
+        "tags": "삼성동,코엑스, 강남,도서관, 문화,북콘서트,별마당도서관,별마당,독서, 서울도서관",
+        "hours": "10:30 ~ 22:00",
+        "closedDays": "연중무휴",
+        "officialUrl": "https://www.starfield.co.kr/coexmall/entertainment/library.do",
+        "transport": "지하철 2호선 삼성역 5번 출구,  319m\r\n지하철 9호선 봉은사역 7번 출구,  328m"
+      }
+    },
+    {
+      "spotId": "changdeokgung",
+      "record": {
+        "id": "295",
+        "language": "ko",
+        "name": "창덕궁",
+        "address": "03072 서울 종로구 율곡로 99 (와룡동, 창덕궁) ",
+        "tags": "서울,서울명소,창덕궁,서울데이트코스,고궁투어,세계유산,서울필수여행지,한국문화,서울여행코스,한국전통,서울가볼만한곳,서울한복투어,한국여행코스",
+        "hours": "2-5월\t09:00 ~ 18:00(입장마감은 17:00)\r\n6-8월\t09:00 ~ 18:30(입장마감은 17:30)\r\n9-10월\t09:00 ~ 18:00(입장마감은 17:00)\r\n11-1월\t09:00 ~ 17:30(입장마감은 16:30)",
+        "closedDays": "월요일 ",
+        "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-cdg.do?grpCode=cdg",
+        "transport": "지하철 3호선 안국역 3번 출구,  389m "
+      }
+    },
+    {
+      "spotId": "jongmyo",
+      "record": {
+        "id": "507",
+        "language": "ko",
+        "name": "종묘",
+        "address": "03135 서울 종로구 종로 157 (훈정동, 종묘공원) ",
+        "tags": " 광화문,창덕궁, 창경궁,유네스코세계문화유산,종묘제례,종로3가역,종묘사직, 종묘",
+        "hours": "월요일, 수요일~금요일: 시간제 관람 (정해진 시간에 입장해 해설사와 동행하며 단체로 관람하고 함께 퇴장하는 제도) \r\n한국어 해설 관람시간 9:20 / 10:20 / 11:20 / 12:20 / 13:20 / 14:20 / 15:20 / 16:20 / (3~9월) 16:40 *1시간 소요 \r\n영어 해설 관람시간 10:00 / 12:00 / 14:00 / 16:00\r\n일본어 해설 관람시간 09:30 / 11:40 / 13:40 / 15:40\r\n중국어 해설 관람시간 11:00 / 15:00\r\n\r\n토요일, 일요일, 공휴일, 매월 마지막 수요일 일반관람 가능\r\n2월 ~ 5월, 9월 ~ 10월 09:00~18:00 (입장마감 17:00)\r\n6월 ~ 8월 09:00~18:30 (입장마감17:30)\r\n11월 ~ 1월 09:30~17:30 (입장마감16:30)\r\n(※ 자세한 사항은 홈페이지를 참고해주세요.)",
+        "closedDays": "화요일",
+        "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-jms.do?grpCode=jms",
+        "transport": "지하철 1/3/5호선 종로3가역 8번 출구,  220m"
+      }
+    },
+    {
+      "spotId": "ikseon-dong",
+      "record": {
+        "id": "37008",
+        "language": "ko",
+        "name": "익선동 한옥거리",
+        "address": "03133 서울 종로구 돈화문로11가길 17 (익선동) ",
+        "tags": "서울걷기좋은곳, 한옥마을,서울산책,한국전통,서울한옥,서울나들이,익선동한옥거리,전통거리,익선동,서울데이트,한옥거리,한국문화,서울데이트코스,익선동데이트,데이트코스추천",
+        "hours": "",
+        "closedDays": "",
+        "officialUrl": "https://korean.visitseoul.net/attractions/익선동한옥거리/KOP037008?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP037008",
+        "transport": "지하철 1/ 3/ 5 호선 종로 3가역  4번 출구, 141m "
+      }
+    },
+    {
+      "spotId": "deoksugung",
+      "record": {
+        "id": "2049",
+        "language": "ko",
+        "name": "덕수궁",
+        "address": "04519 서울 중구 세종대로 99 ",
+        "tags": "서울걷기좋은길,한국역사,한국궁,서울여행,정동돌담길,덕수궁야간,서울야경,서울필수여행지,덕수궁투어,한국여행지,궁궐투어,서울나들이,궁,고종의길,정동길,한국전통,덕수궁",
+        "hours": "09:00 ~ 20:00 (매표 및 입장시간)\r\n21:00 (퇴장시간)",
+        "closedDays": "월요일",
+        "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-dsg.do?grpCode=dsg",
+        "transport": "지하철 1/2호선 시청역 1번 출구,  72m "
+      }
+    },
+    {
+      "spotId": "namsangol",
+      "record": {
+        "id": "276",
+        "language": "ko",
+        "name": "남산골 한옥마을",
+        "address": "04626 서울 중구 퇴계로34길 28 (남산골한옥마을) ",
+        "tags": "남산둘레길,서울아이와나들이,서울전통명소,남산골한옥마을,서울데이트코스,남산공원,서울남산,서울사진명소,서울여행,서울핫플레이스,국내한옥마을추천",
+        "hours": "하절기(4월~10월) 09:00 - 21:00\r\n동절기(11월~3월) 09:00 - 20:00 \r\n\r\n-전통정원 개방시간\r\n24시간 개방",
+        "closedDays": "월요일",
+        "officialUrl": "https://www.hanokmaeul.co.kr/",
+        "transport": "지하철 3/4호선 충무로역 4번 출구,  307m"
+      }
+    },
+    {
+      "spotId": "national-museum-korea",
+      "record": {
+        "id": "433",
+        "language": "ko",
+        "name": "국립중앙박물관",
+        "address": "04383 서울 용산구 서빙고로 137 (국립중앙박물관) ",
+        "tags": "국립,관람,어린이박물관,용산구,국립중앙,이촌역,유물, 박물관, 역사,시티투어버스, 국립중앙박물관",
+        "hours": "월, 화, 목, 금, 일요일 : 10:00 - 18:00 \r\n수, 토요일 : 10:00 - 21:00 \r\n옥외 전시장(정원)은 오전 7시부터 오후 10시까지 관람 가능\r\n",
+        "closedDays": "1월1일, 설날, 추석 \r\n상설전시실 정기휴실일 : 매년 4, 11월 첫째 월요일\r\n상설전시관 내 특별전시실 2 휴실\r\n특별전시실 1(특별전시 미운영시 휴실), 야외전시장은 정상 개관",
+        "officialUrl": "http://www.museum.go.kr/site/main/home",
+        "transport": "지하철 4호선/ 경의중앙선 이촌역 2번 출구,  309m"
+      }
+    },
+    {
+      "spotId": "leeum",
+      "record": {
+        "id": "1232",
+        "language": "ko",
+        "name": "리움 미술관 ",
+        "address": "04348 서울 용산구 이태원로55길 60-16 (한남동) ",
+        "tags": "리움미술관,삼성리움,예술체험,문화,미술관,이태원,한남동미술관,갤러리,한남동,한강진역,삼성미술관리움",
+        "hours": "10:00 ~ 18:00 (매표마감 17:30)",
+        "closedDays": "-월요일\r\n-1월 1일\r\n-설 연휴\r\n-추석 연휴",
+        "officialUrl": "https://www.leeumhoam.org/ ",
+        "transport": "지하철  6호선 한강진역 1번 출구,  399m"
+      }
+    },
+    {
+      "spotId": "war-memorial",
+      "record": {
+        "id": "859",
+        "language": "ko",
+        "name": "전쟁기념관",
+        "address": "04353 서울 용산구 이태원로 29 (용산동1가, 전쟁기념관) ",
+        "tags": "서울아이들과함께,6.25전쟁,서울아이들데리고갈만한곳,용산전쟁기념관,용산어린이박물관,전쟁기념관,서울전쟁사박물관,전쟁기념관어린이박물관,서울박물관추천,서울가볼만한곳추천",
+        "hours": "09:30 ~ 18:00\r\n*자세한 사항은 홈페이지를 참고해주세요.\r\n\r\n",
+        "closedDays": "월요일 (월요일이 포함된 연휴에는 연휴 마지막 다음날 휴관)",
+        "officialUrl": "http://www.warmemo.or.kr",
+        "transport": "지하철 4/6호선 삼각지역 11번 출구,  227m"
+      }
+    },
+    {
+      "spotId": "lotte-world-tower",
+      "record": {
+        "id": "21278",
+        "language": "ko",
+        "name": "롯데월드타워",
+        "address": "05551 서울 송파구 올림픽로 300 (신천동) ",
+        "tags": "서울스카이,롯데월드타워, 롯데월드,잠실,아쿠아리움,전망대,백화점, 면세점",
+        "hours": "매일 09:00 - 20:30 롯데면세점, 연중 무휴\r\n매일 10:00 - 23:00 롯데마트, 격주 일요일 휴무\r\n매일 10:00 - 20:00 롯데아쿠아리움, 연중 무휴\r\n매일 10:30 - 20:00 에비뉴엘, 월 1회 정기 휴무\r\n매일 10:30 - 22:00 쇼핑몰, 연중 무휴\r\n\r\n서울스카이\r\n평일 10:30 - 22:00 (월~목요일, 일요일)\r\n주말 10:30 - 23:00 (금, 토, 공휴일 前일)\r\n※시설별 상이 (홈페이지 참조)",
+        "closedDays": "연중무휴\r\n",
+        "officialUrl": "http://www.lwt.co.kr/",
+        "transport": "지하철 2/8호선 잠실역 2번 출구,  29m "
+      }
+    },
+    {
+      "spotId": "bongeunsa",
+      "record": {
+        "id": "411",
+        "language": "ko",
+        "name": "봉은사 ",
+        "address": "06087 서울 강남구 봉은사로 531 (봉은사) ",
+        "tags": "연등행렬,봉은사,코엑스,템플스테이, 봉은사역, 사찰, 불교,종교, 강남",
+        "hours": "법회, 기도 불공 등 사찰 일정에 따라 이용 시간에 차이가 있음",
+        "closedDays": "",
+        "officialUrl": "http://www.bongeunsa.org/",
+        "transport": "지하철 9호선 봉은사역 1번출구,  135m"
+      }
+    },
+    {
+      "spotId": "dosan-park",
+      "record": {
+        "id": "1789",
+        "language": "ko",
+        "name": "도산공원",
+        "address": "06020 서울 강남구 도산대로45길 20 (도산전시관) ",
+        "tags": "공원,안창호,도산공원, 전시, 압구정역,강남, 도산안창호,기념관",
+        "hours": "24시간 개방\r\n* 도산 안창호 기념관 매일 10:00 ~ 18:00",
+        "closedDays": "도산 안창호 기념관 1월 1일, 명절 연휴 휴무\r\n",
+        "officialUrl": "https://korean.visitseoul.net/attractions/도산공원/KOP001789?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP001789",
+        "transport": "지하철 3호선 압구정역 3번 출구, 882m"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1227 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-04",
+  "sourcePolicy": "This catalog is an original discovery seed, not a copy of Visit Seoul content. Production updates must ingest only source records whose license permits reuse; records without an exact active public-data match must be omitted. Coordinates are map-display coordinates and must be verified during ingestion.",
+  "publicDataSources": [
+    {
+      "id": "seoul-localdata-restaurants",
+      "name": "서울시 일반음식점 인허가 정보",
+      "url": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "license": "공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)",
+      "refreshCycle": "daily"
+    },
+    {
+      "id": "seoul-live-city-data",
+      "name": "서울시 실시간 인구데이터",
+      "url": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "license": "공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)",
+      "refreshCycle": "realtime"
+    }
+  ],
+  "spots": [
+    {
+      "id": "gyeongbokgung",
+      "name": {
+        "ko": "경복궁",
+        "en": "Gyeongbokgung Palace",
+        "ja": "景福宮"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "광화문",
+        "en": "Gwanghwamun",
+        "ja": "光化門"
+      },
+      "note": {
+        "ko": "조선 왕궁 · 1–2시간",
+        "en": "Royal palace · 1–2 hr",
+        "ja": "王宮 · 1〜2時間"
+      },
+      "minutes": 0,
+      "coordinates": [126.9769, 37.5796],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "bukchon",
+      "name": {
+        "ko": "북촌한옥마을",
+        "en": "Bukchon Hanok Village",
+        "ja": "北村韓屋村"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "북촌",
+        "en": "Bukchon",
+        "ja": "北村"
+      },
+      "note": {
+        "ko": "한옥 골목 · 1–2시간",
+        "en": "Hanok lanes · 1–2 hr",
+        "ja": "韓屋の路地 · 1〜2時間"
+      },
+      "minutes": 12,
+      "coordinates": [126.9869, 37.5826],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "mmca-seoul",
+      "name": {
+        "ko": "국립현대미술관 서울",
+        "en": "MMCA Seoul",
+        "ja": "国立現代美術館 ソウル"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "삼청동",
+        "en": "Samcheong-dong",
+        "ja": "三清洞"
+      },
+      "note": {
+        "ko": "현대미술 · 1–2시간",
+        "en": "Contemporary art · 1–2 hr",
+        "ja": "現代美術 · 1〜2時間"
+      },
+      "minutes": 7,
+      "coordinates": [126.9804, 37.5786],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "gwangjang-market",
+      "name": {
+        "ko": "광장시장",
+        "en": "Gwangjang Market",
+        "ja": "広蔵市場"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "종로5가",
+        "en": "Jongno 5-ga",
+        "ja": "鐘路5街"
+      },
+      "note": {
+        "ko": "시장 먹거리 · 1시간",
+        "en": "Market eats · 1 hr",
+        "ja": "市場グルメ · 1時間"
+      },
+      "minutes": 16,
+      "coordinates": [126.9997, 37.57],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "n-seoul-tower",
+      "name": {
+        "ko": "N서울타워",
+        "en": "N Seoul Tower",
+        "ja": "Nソウルタワー"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "용산구",
+        "en": "Yongsan-gu",
+        "ja": "龍山区"
+      },
+      "neighborhood": {
+        "ko": "남산",
+        "en": "Namsan",
+        "ja": "南山"
+      },
+      "note": {
+        "ko": "전망대 · 1–2시간",
+        "en": "Observatory · 1–2 hr",
+        "ja": "展望台 · 1〜2時間"
+      },
+      "minutes": 24,
+      "coordinates": [126.9882, 37.5512],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "cafe-onion-seongsu",
+      "name": {
+        "ko": "카페 어니언 성수",
+        "en": "Cafe Onion Seongsu",
+        "ja": "カフェ・オニオン 聖水"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "성동구",
+        "en": "Seongdong-gu",
+        "ja": "城東区"
+      },
+      "neighborhood": {
+        "ko": "성수",
+        "en": "Seongsu",
+        "ja": "聖水"
+      },
+      "note": {
+        "ko": "리노베이션 카페 · 1시간",
+        "en": "Renovated café · 1 hr",
+        "ja": "リノベーションカフェ · 1時間"
+      },
+      "minutes": 30,
+      "coordinates": [127.0557, 37.5446],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "seoul-forest",
+      "name": {
+        "ko": "서울숲",
+        "en": "Seoul Forest",
+        "ja": "ソウルの森"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "성동구",
+        "en": "Seongdong-gu",
+        "ja": "城東区"
+      },
+      "neighborhood": {
+        "ko": "서울숲",
+        "en": "Seoul Forest",
+        "ja": "ソウルの森"
+      },
+      "note": {
+        "ko": "도시 공원 · 1–2시간",
+        "en": "Urban park · 1–2 hr",
+        "ja": "都市公園 · 1〜2時間"
+      },
+      "minutes": 34,
+      "coordinates": [127.0412, 37.5444],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "hongdae-r2",
+      "name": {
+        "ko": "홍대 R2 버스킹 거리",
+        "en": "Hongdae R2 Busking Street",
+        "ja": "弘大R2バスキングストリート"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "마포구",
+        "en": "Mapo-gu",
+        "ja": "麻浦区"
+      },
+      "neighborhood": {
+        "ko": "홍대",
+        "en": "Hongdae",
+        "ja": "弘大"
+      },
+      "note": {
+        "ko": "거리 공연 · 1–2시간",
+        "en": "Street performances · 1–2 hr",
+        "ja": "路上パフォーマンス · 1〜2時間"
+      },
+      "minutes": 32,
+      "coordinates": [126.9236, 37.5577],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "anthracite-hapjeong",
+      "name": {
+        "ko": "앤트러사이트 합정",
+        "en": "Anthracite Hapjeong",
+        "ja": "アンスラサイト 合井"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "마포구",
+        "en": "Mapo-gu",
+        "ja": "麻浦区"
+      },
+      "neighborhood": {
+        "ko": "합정",
+        "en": "Hapjeong",
+        "ja": "合井"
+      },
+      "note": {
+        "ko": "신발공장 카페 · 1시간",
+        "en": "Former shoe-factory café · 1 hr",
+        "ja": "元靴工場のカフェ · 1時間"
+      },
+      "minutes": 35,
+      "coordinates": [126.9126, 37.5497],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "starfield-library",
+      "name": {
+        "ko": "별마당 도서관",
+        "en": "Starfield Library",
+        "ja": "ピョルマダン図書館"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "강남구",
+        "en": "Gangnam-gu",
+        "ja": "江南区"
+      },
+      "neighborhood": {
+        "ko": "코엑스",
+        "en": "COEX",
+        "ja": "COEX"
+      },
+      "note": {
+        "ko": "공공 도서관 · 1시간",
+        "en": "Open library · 1 hr",
+        "ja": "オープンライブラリー · 1時間"
+      },
+      "minutes": 43,
+      "coordinates": [127.0592, 37.5125],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "soonhee-food",
+      "name": {
+        "ko": "순희네 빈대떡",
+        "en": "Soonhee Food",
+        "ja": "スニネ・ピンデトック"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "광장시장",
+        "en": "Gwangjang Market",
+        "ja": "広蔵市場"
+      },
+      "note": {
+        "ko": "시장 음식점 · 45분",
+        "en": "Market restaurant · 45 min",
+        "ja": "市場の食堂 · 45分"
+      },
+      "minutes": 17,
+      "coordinates": [126.9994, 37.5702],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "forest-of-music",
+      "name": {
+        "ko": "음악의 숲",
+        "en": "Forest of Music",
+        "ja": "音楽の森"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "약수",
+        "en": "Yaksu",
+        "ja": "薬水"
+      },
+      "note": {
+        "ko": "레코드 카페 · 1시간",
+        "en": "Vinyl café · 1 hr",
+        "ja": "レコードカフェ · 1時間"
+      },
+      "minutes": 28,
+      "coordinates": [127.0105, 37.5547],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "changdeokgung",
+      "name": {
+        "ko": "창덕궁",
+        "en": "Changdeokgung Palace",
+        "ja": "昌徳宮"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "안국",
+        "en": "Anguk",
+        "ja": "安国"
+      },
+      "note": {
+        "ko": "궁궐 · 1–2시간",
+        "en": "Palace · 1–2 hr",
+        "ja": "王宮 · 1〜2時間"
+      },
+      "minutes": 14,
+      "coordinates": [126.991, 37.5794],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "jongmyo",
+      "name": {
+        "ko": "종묘",
+        "en": "Jongmyo Shrine",
+        "ja": "宗廟"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "종로3가",
+        "en": "Jongno 3-ga",
+        "ja": "鐘路3街"
+      },
+      "note": {
+        "ko": "왕실 사당 · 1시간",
+        "en": "Royal shrine · 1 hr",
+        "ja": "王室の祠堂 · 1時間"
+      },
+      "minutes": 18,
+      "coordinates": [126.9948, 37.574],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "insadong",
+      "name": {
+        "ko": "인사동",
+        "en": "Insadong",
+        "ja": "仁寺洞"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "인사동",
+        "en": "Insadong",
+        "ja": "仁寺洞"
+      },
+      "note": {
+        "ko": "전통 거리 · 1–2시간",
+        "en": "Traditional street · 1–2 hr",
+        "ja": "伝統の街 · 1〜2時間"
+      },
+      "minutes": 13,
+      "coordinates": [126.9857, 37.574],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "ikseon-dong",
+      "name": {
+        "ko": "익선동 한옥거리",
+        "en": "Ikseon-dong Hanok Village",
+        "ja": "益善洞韓屋通り"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "익선동",
+        "en": "Ikseon-dong",
+        "ja": "益善洞"
+      },
+      "note": {
+        "ko": "한옥 카페 골목 · 1–2시간",
+        "en": "Hanok café lanes · 1–2 hr",
+        "ja": "韓屋カフェの路地 · 1〜2時間"
+      },
+      "minutes": 17,
+      "coordinates": [126.989, 37.5732],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "tongin-market",
+      "name": {
+        "ko": "통인시장",
+        "en": "Tongin Market",
+        "ja": "通仁市場"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "서촌",
+        "en": "Seochon",
+        "ja": "西村"
+      },
+      "note": {
+        "ko": "도시락 카페 · 1시간",
+        "en": "Market lunch · 1 hr",
+        "ja": "市場ランチ · 1時間"
+      },
+      "minutes": 9,
+      "coordinates": [126.9702, 37.5804],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "cafe-haven",
+      "name": {
+        "ko": "카페 헤이븐",
+        "en": "Cafe Haven",
+        "ja": "カフェ・ヘイヴン"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "서촌",
+        "en": "Seochon",
+        "ja": "西村"
+      },
+      "note": {
+        "ko": "한옥 로스팅 카페 · 1시간",
+        "en": "Hanok roasting café · 1 hr",
+        "ja": "韓屋ロースティングカフェ · 1時間"
+      },
+      "minutes": 10,
+      "coordinates": [126.9685, 37.5801],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "gyeongin-dawon",
+      "name": {
+        "ko": "경인미술관 전통다원",
+        "en": "Gyeongin Traditional Tea House",
+        "ja": "耕仁美術館伝統茶院"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "인사동",
+        "en": "Insadong",
+        "ja": "仁寺洞"
+      },
+      "note": {
+        "ko": "전통 찻집 · 1시간",
+        "en": "Traditional tea house · 1 hr",
+        "ja": "伝統茶屋 · 1時間"
+      },
+      "minutes": 15,
+      "coordinates": [126.985, 37.5747],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "cheonggyecheon",
+      "name": {
+        "ko": "청계천",
+        "en": "Cheonggyecheon Stream",
+        "ja": "清渓川"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "종로구",
+        "en": "Jongno-gu",
+        "ja": "鍾路区"
+      },
+      "neighborhood": {
+        "ko": "광화문",
+        "en": "Gwanghwamun",
+        "ja": "光化門"
+      },
+      "note": {
+        "ko": "도심 산책 · 1시간",
+        "en": "Downtown walk · 1 hr",
+        "ja": "都心散策 · 1時間"
+      },
+      "minutes": 11,
+      "coordinates": [126.9784, 37.5694],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "deoksugung",
+      "name": {
+        "ko": "덕수궁",
+        "en": "Deoksugung Palace",
+        "ja": "徳寿宮"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "시청",
+        "en": "City Hall",
+        "ja": "市庁"
+      },
+      "note": {
+        "ko": "궁궐 · 1시간",
+        "en": "Palace · 1 hr",
+        "ja": "王宮 · 1時間"
+      },
+      "minutes": 19,
+      "coordinates": [126.9749, 37.5658],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "myeongdong",
+      "name": {
+        "ko": "명동",
+        "en": "Myeongdong",
+        "ja": "明洞"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "명동",
+        "en": "Myeongdong",
+        "ja": "明洞"
+      },
+      "note": {
+        "ko": "쇼핑·길거리 음식 · 1–2시간",
+        "en": "Shopping & street food · 1–2 hr",
+        "ja": "買い物・屋台グルメ · 1〜2時間"
+      },
+      "minutes": 22,
+      "coordinates": [126.985, 37.5636],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "ddp",
+      "name": {
+        "ko": "동대문디자인플라자",
+        "en": "Dongdaemun Design Plaza",
+        "ja": "東大門デザインプラザ"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "동대문",
+        "en": "Dongdaemun",
+        "ja": "東大門"
+      },
+      "note": {
+        "ko": "디자인·전시 · 1–2시간",
+        "en": "Design & exhibitions · 1–2 hr",
+        "ja": "デザイン・展示 · 1〜2時間"
+      },
+      "minutes": 25,
+      "coordinates": [127.0093, 37.5677],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "namdaemun-market",
+      "name": {
+        "ko": "남대문시장",
+        "en": "Namdaemun Market",
+        "ja": "南大門市場"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "남대문",
+        "en": "Namdaemun",
+        "ja": "南大門"
+      },
+      "note": {
+        "ko": "전통시장 · 1시간",
+        "en": "Traditional market · 1 hr",
+        "ja": "伝統市場 · 1時間"
+      },
+      "minutes": 21,
+      "coordinates": [126.9772, 37.5594],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "namsangol",
+      "name": {
+        "ko": "남산골한옥마을",
+        "en": "Namsangol Hanok Village",
+        "ja": "南山コル韓屋村"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "필동",
+        "en": "Pildong",
+        "ja": "筆洞"
+      },
+      "note": {
+        "ko": "한옥마을 · 1시간",
+        "en": "Hanok village · 1 hr",
+        "ja": "韓屋村 · 1時間"
+      },
+      "minutes": 25,
+      "coordinates": [126.9942, 37.5591],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "coffee-hanyakbang",
+      "name": {
+        "ko": "커피한약방",
+        "en": "Coffee Hanyakbang",
+        "ja": "コーヒー韓薬房"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "중구",
+        "en": "Jung-gu",
+        "ja": "中区"
+      },
+      "neighborhood": {
+        "ko": "을지로",
+        "en": "Euljiro",
+        "ja": "乙支路"
+      },
+      "note": {
+        "ko": "골목 커피 · 1시간",
+        "en": "Alley coffee · 1 hr",
+        "ja": "路地のコーヒー · 1時間"
+      },
+      "minutes": 23,
+      "coordinates": [126.9901, 37.5665],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "national-museum-korea",
+      "name": {
+        "ko": "국립중앙박물관",
+        "en": "National Museum of Korea",
+        "ja": "国立中央博物館"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "용산구",
+        "en": "Yongsan-gu",
+        "ja": "龍山区"
+      },
+      "neighborhood": {
+        "ko": "용산",
+        "en": "Yongsan",
+        "ja": "龍山"
+      },
+      "note": {
+        "ko": "국립 박물관 · 2–3시간",
+        "en": "National museum · 2–3 hr",
+        "ja": "国立博物館 · 2〜3時間"
+      },
+      "minutes": 27,
+      "coordinates": [126.98, 37.5239],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "leeum",
+      "name": {
+        "ko": "리움미술관",
+        "en": "Leeum Museum of Art",
+        "ja": "リウム美術館"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "용산구",
+        "en": "Yongsan-gu",
+        "ja": "龍山区"
+      },
+      "neighborhood": {
+        "ko": "한남",
+        "en": "Hannam",
+        "ja": "漢南"
+      },
+      "note": {
+        "ko": "현대·고미술 · 1–2시간",
+        "en": "Modern & traditional art · 1–2 hr",
+        "ja": "現代・古美術 · 1〜2時間"
+      },
+      "minutes": 29,
+      "coordinates": [126.9995, 37.5384],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "itaewon",
+      "name": {
+        "ko": "이태원 거리",
+        "en": "Itaewon Street",
+        "ja": "梨泰院通り"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "용산구",
+        "en": "Yongsan-gu",
+        "ja": "龍山区"
+      },
+      "neighborhood": {
+        "ko": "이태원",
+        "en": "Itaewon",
+        "ja": "梨泰院"
+      },
+      "note": {
+        "ko": "세계 음식 · 1–2시간",
+        "en": "Global food · 1–2 hr",
+        "ja": "世界のグルメ · 1〜2時間"
+      },
+      "minutes": 28,
+      "coordinates": [126.9948, 37.5345],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "war-memorial",
+      "name": {
+        "ko": "전쟁기념관",
+        "en": "War Memorial of Korea",
+        "ja": "戦争記念館"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "용산구",
+        "en": "Yongsan-gu",
+        "ja": "龍山区"
+      },
+      "neighborhood": {
+        "ko": "삼각지",
+        "en": "Samgakji",
+        "ja": "三角地"
+      },
+      "note": {
+        "ko": "역사 박물관 · 1–2시간",
+        "en": "History museum · 1–2 hr",
+        "ja": "歴史博物館 · 1〜2時間"
+      },
+      "minutes": 26,
+      "coordinates": [126.977, 37.5363],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "gyeongui-line-forest",
+      "name": {
+        "ko": "경의선숲길",
+        "en": "Gyeongui Line Forest Park",
+        "ja": "京義線スッキル"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "마포구",
+        "en": "Mapo-gu",
+        "ja": "麻浦区"
+      },
+      "neighborhood": {
+        "ko": "연남",
+        "en": "Yeonnam",
+        "ja": "延南"
+      },
+      "note": {
+        "ko": "산책길 · 1시간",
+        "en": "Linear park · 1 hr",
+        "ja": "散歩道 · 1時間"
+      },
+      "minutes": 33,
+      "coordinates": [126.9242, 37.5626],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "mangwon-market",
+      "name": {
+        "ko": "망원시장",
+        "en": "Mangwon Market",
+        "ja": "望遠市場"
+      },
+      "category": "Food",
+      "district": {
+        "ko": "마포구",
+        "en": "Mapo-gu",
+        "ja": "麻浦区"
+      },
+      "neighborhood": {
+        "ko": "망원",
+        "en": "Mangwon",
+        "ja": "望遠"
+      },
+      "note": {
+        "ko": "동네 시장 · 1시간",
+        "en": "Neighborhood market · 1 hr",
+        "ja": "ローカル市場 · 1時間"
+      },
+      "minutes": 37,
+      "coordinates": [126.9028, 37.5556],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "seonyudo-park",
+      "name": {
+        "ko": "선유도공원",
+        "en": "Seonyudo Park",
+        "ja": "仙遊島公園"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "영등포구",
+        "en": "Yeongdeungpo-gu",
+        "ja": "永登浦区"
+      },
+      "neighborhood": {
+        "ko": "양화",
+        "en": "Yanghwa",
+        "ja": "楊花"
+      },
+      "note": {
+        "ko": "한강 섬 공원 · 1–2시간",
+        "en": "Han River island park · 1–2 hr",
+        "ja": "漢江の島公園 · 1〜2時間"
+      },
+      "minutes": 40,
+      "coordinates": [126.8996, 37.543],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "yeouido-hangang",
+      "name": {
+        "ko": "여의도한강공원",
+        "en": "Yeouido Hangang Park",
+        "ja": "汝矣島漢江公園"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "영등포구",
+        "en": "Yeongdeungpo-gu",
+        "ja": "永登浦区"
+      },
+      "neighborhood": {
+        "ko": "여의도",
+        "en": "Yeouido",
+        "ja": "汝矣島"
+      },
+      "note": {
+        "ko": "한강 피크닉 · 1–2시간",
+        "en": "Han River picnic · 1–2 hr",
+        "ja": "漢江ピクニック · 1〜2時間"
+      },
+      "minutes": 38,
+      "coordinates": [126.9349, 37.5285],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "ban-coffee",
+      "name": {
+        "ko": "반 커피숍",
+        "en": "BAN Coffee Shop",
+        "ja": "BANコーヒーショップ"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "영등포구",
+        "en": "Yeongdeungpo-gu",
+        "ja": "永登浦区"
+      },
+      "neighborhood": {
+        "ko": "당산",
+        "en": "Dangsan",
+        "ja": "堂山"
+      },
+      "note": {
+        "ko": "한강 자전거 카페 · 1시간",
+        "en": "Han River bike café · 1 hr",
+        "ja": "漢江サイクリングカフェ · 1時間"
+      },
+      "minutes": 42,
+      "coordinates": [126.9022, 37.5336],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "lotte-world-tower",
+      "name": {
+        "ko": "롯데월드타워",
+        "en": "Lotte World Tower",
+        "ja": "ロッテワールドタワー"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "송파구",
+        "en": "Songpa-gu",
+        "ja": "松坡区"
+      },
+      "neighborhood": {
+        "ko": "잠실",
+        "en": "Jamsil",
+        "ja": "蚕室"
+      },
+      "note": {
+        "ko": "전망대 · 1–2시간",
+        "en": "Observatory · 1–2 hr",
+        "ja": "展望台 · 1〜2時間"
+      },
+      "minutes": 48,
+      "coordinates": [127.1025, 37.5126],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "seokchon-lake",
+      "name": {
+        "ko": "석촌호수",
+        "en": "Seokchon Lake",
+        "ja": "石村湖"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "송파구",
+        "en": "Songpa-gu",
+        "ja": "松坡区"
+      },
+      "neighborhood": {
+        "ko": "잠실",
+        "en": "Jamsil",
+        "ja": "蚕室"
+      },
+      "note": {
+        "ko": "호수 산책 · 1시간",
+        "en": "Lakeside walk · 1 hr",
+        "ja": "湖畔散歩 · 1時間"
+      },
+      "minutes": 47,
+      "coordinates": [127.1063, 37.5088],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "olympic-park",
+      "name": {
+        "ko": "올림픽공원",
+        "en": "Olympic Park",
+        "ja": "オリンピック公園"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "송파구",
+        "en": "Songpa-gu",
+        "ja": "松坡区"
+      },
+      "neighborhood": {
+        "ko": "방이",
+        "en": "Bangi",
+        "ja": "芳荑"
+      },
+      "note": {
+        "ko": "공원 산책 · 1–2시간",
+        "en": "Park walk · 1–2 hr",
+        "ja": "公園散策 · 1〜2時間"
+      },
+      "minutes": 51,
+      "coordinates": [127.121, 37.5208],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "bongeunsa",
+      "name": {
+        "ko": "봉은사",
+        "en": "Bongeunsa Temple",
+        "ja": "奉恩寺"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "강남구",
+        "en": "Gangnam-gu",
+        "ja": "江南区"
+      },
+      "neighborhood": {
+        "ko": "삼성",
+        "en": "Samseong",
+        "ja": "三成"
+      },
+      "note": {
+        "ko": "도심 사찰 · 1시간",
+        "en": "City temple · 1 hr",
+        "ja": "都心の寺院 · 1時間"
+      },
+      "minutes": 43,
+      "coordinates": [127.0572, 37.5152],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "garosu-gil",
+      "name": {
+        "ko": "가로수길",
+        "en": "Garosu-gil",
+        "ja": "カロスキル"
+      },
+      "category": "Cafe",
+      "district": {
+        "ko": "강남구",
+        "en": "Gangnam-gu",
+        "ja": "江南区"
+      },
+      "neighborhood": {
+        "ko": "신사",
+        "en": "Sinsa",
+        "ja": "新沙"
+      },
+      "note": {
+        "ko": "카페·편집숍 거리 · 1–2시간",
+        "en": "Cafés & boutiques · 1–2 hr",
+        "ja": "カフェ・セレクトショップ街 · 1〜2時間"
+      },
+      "minutes": 39,
+      "coordinates": [127.0234, 37.5208],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-16094/A/1/datasetView.do",
+      "dataSourceId": "seoul-localdata-restaurants"
+    },
+    {
+      "id": "dosan-park",
+      "name": {
+        "ko": "도산공원",
+        "en": "Dosan Park",
+        "ja": "島山公園"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "강남구",
+        "en": "Gangnam-gu",
+        "ja": "江南区"
+      },
+      "neighborhood": {
+        "ko": "압구정",
+        "en": "Apgujeong",
+        "ja": "狎鴎亭"
+      },
+      "note": {
+        "ko": "도심 공원 · 1시간",
+        "en": "City park · 1 hr",
+        "ja": "都心公園 · 1時間"
+      },
+      "minutes": 41,
+      "coordinates": [127.0344, 37.5241],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "seoul-arts-center",
+      "name": {
+        "ko": "예술의전당",
+        "en": "Seoul Arts Center",
+        "ja": "ソウル芸術の殿堂"
+      },
+      "category": "Culture",
+      "district": {
+        "ko": "서초구",
+        "en": "Seocho-gu",
+        "ja": "瑞草区"
+      },
+      "neighborhood": {
+        "ko": "서초",
+        "en": "Seocho",
+        "ja": "瑞草"
+      },
+      "note": {
+        "ko": "공연·전시 · 2시간",
+        "en": "Performances & exhibitions · 2 hr",
+        "ja": "公演・展示 · 2時間"
+      },
+      "minutes": 46,
+      "coordinates": [127.0118, 37.4796],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    },
+    {
+      "id": "banpo-hangang",
+      "name": {
+        "ko": "반포한강공원",
+        "en": "Banpo Hangang Park",
+        "ja": "盤浦漢江公園"
+      },
+      "category": "Nature",
+      "district": {
+        "ko": "서초구",
+        "en": "Seocho-gu",
+        "ja": "瑞草区"
+      },
+      "neighborhood": {
+        "ko": "반포",
+        "en": "Banpo",
+        "ja": "盤浦"
+      },
+      "note": {
+        "ko": "분수·한강 야경 · 1–2시간",
+        "en": "Fountain & river nights · 1–2 hr",
+        "ja": "噴水・漢江の夜景 · 1〜2時間"
+      },
+      "minutes": 36,
+      "coordinates": [126.9959, 37.5094],
+      "sourceUrl": "https://data.seoul.go.kr/dataList/OA-22270/F/1/datasetView.do",
+      "dataSourceId": "seoul-live-city-data"
+    }
+  ]
+}

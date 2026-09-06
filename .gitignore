@@ -1,0 +1,29 @@
+# Dependencies and package-manager cache
+node_modules/
+.pnpm-store/
+
+# Production builds and TypeScript incremental build metadata
+dist/
+*.tsbuildinfo
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Test and coverage outputs
+coverage/
+playwright-report/
+test-results/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs
+*.log
+pnpm-debug.log*
