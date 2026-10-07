@@ -10,11 +10,18 @@ export type Forecast = {
     precipitation_probability_max: number[];
     temperature_2m_max: number[];
     temperature_2m_min: number[];
+    time: string[];
+  };
+  hourly: {
+    precipitation_probability: number[];
+    temperature_2m: number[];
+    time: string[];
+    weather_code: number[];
   };
 };
 
 const endpoint =
-  'https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.978&current=temperature_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FSeoul';
+  'https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.978&current=temperature_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&hourly=temperature_2m,precipitation_probability,weather_code&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FSeoul&forecast_days=1';
 
 export function fetchSeoulWeather() {
   return fetch(endpoint).then((response) => {

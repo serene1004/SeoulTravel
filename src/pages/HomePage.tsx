@@ -13,7 +13,6 @@ const features = [
     text: '서울 곳곳의 장소를 지도에서 살펴보고, 여행에 맞는 곳을 골라보세요.',
     className: 'spot-visual',
     href: '/explore',
-    placeholder: 'MAP & SPOT IMAGE',
   },
   {
     icon: Navigation,
@@ -22,28 +21,36 @@ const features = [
     text: '출발지와 목적지를 고르면 이동 시간과 경로를 한눈에 확인할 수 있어요.',
     className: 'route-visual',
     href: '/routes',
-    placeholder: 'ROUTE IMAGE',
   },
   {
     icon: Shirt,
     label: 'Check today',
-    title: '날씨에 맞는\n여행 복장을 준비하세요.',
-    text: '현재 날씨를 바탕으로 입을 옷과 챙길 것을 알려드려요.',
+    title: '서울의 날씨를\n확인해 보세요.',
+    text: '서울의 현재 날씨와 시간대별 예보를 확인해 보세요.',
     className: 'weather-visual',
     href: '/weather',
-    placeholder: 'WEATHER IMAGE',
   },
 ];
 
 const heroSlides = [
-  { src: '/images/bukchon.webp', label: 'Bukchon Hanok Village' },
-  { src: '/images/cheonggyecheon.webp', label: 'Cheonggyecheon Stream' },
-  { src: '/images/ddp.webp', label: 'Dongdaemun Design Plaza' },
-  { src: '/images/hanriver.webp', label: 'Han River Park' },
+  { src: '/images/landing/bukchon.webp', label: 'Bukchon Hanok Village' },
+  { src: '/images/landing/cheonggyecheon.webp', label: 'Cheonggyecheon Stream' },
+  { src: '/images/landing/ddp.webp', label: 'Dongdaemun Design Plaza' },
+  { src: '/images/landing/hanriver.webp', label: 'Han River Park' },
+];
+
+const weatherOutfitSlides = [
+  { src: '/images/weather-outfits/cold.png', alt: '추운 날씨에 어울리는 따뜻한 코디' },
+  { src: '/images/weather-outfits/cool.png', alt: '쌀쌀한 날씨에 어울리는 겹쳐 입기 코디' },
+  { src: '/images/weather-outfits/mild.png', alt: '선선한 날씨에 어울리는 가벼운 코디' },
+  { src: '/images/weather-outfits/warm.png', alt: '따뜻한 날씨에 어울리는 시원한 코디' },
 ];
 
 export default function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [weatherOutfitSlide] = useState(() =>
+    Math.floor(Math.random() * weatherOutfitSlides.length),
+  );
   const heroSlide = heroSlides[activeSlide];
 
   useEffect(() => {
@@ -86,15 +93,24 @@ export default function HomePage() {
         </p>
       </section>
       <section className="feature-section">
-        {features.map(({ icon: Icon, label, title, text, className, href, placeholder }, index) => (
+        {features.map(({ icon: Icon, label, title, text, className, href }, index) => (
           <article className={`feature-row ${index % 2 === 1 ? 'reverse' : ''}`} key={label}>
             <div
               className={`feature-image ${className}`}
-              aria-label={`${label} image placeholder`}
+              aria-label={className === 'weather-visual' ? '오늘의 옷차림 참고 이미지' : `${label} image placeholder`}
               role="img"
             >
-              <span className="visual-label">SEOUL PATH</span>
-              <span className="image-placeholder-label">{placeholder}</span>
+              {className === 'weather-visual' ? (
+                <div className="weather-visual-frame">
+                  <img
+                    src={weatherOutfitSlides[weatherOutfitSlide].src}
+                    alt={weatherOutfitSlides[weatherOutfitSlide].alt}
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <></>
+              )}
             </div>
             <div className="feature-copy">
               <span className="feature-icon">
