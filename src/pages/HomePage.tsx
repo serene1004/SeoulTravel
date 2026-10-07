@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { ArrowRight, MapPinned, Navigation, Shirt } from 'lucide-react';
+import { ArrowRight, ArrowUp, MapPinned, Route, Shirt } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
 
@@ -11,15 +11,21 @@ const features = [
     label: 'Find places',
     title: '관광명소·카페·식당을\n지도에서 찾아보세요.',
     text: '서울 곳곳의 장소를 지도에서 살펴보고, 여행에 맞는 곳을 골라보세요.',
-    className: 'spot-visual',
+    visualImage: {
+      src: '/images/landing/find-places.png',
+      alt: '카페와 맛집, 문화 장소가 표시된 지도 일러스트',
+    },
     href: '/explore',
   },
   {
-    icon: Navigation,
+    icon: Route,
     label: 'Plan a route',
     title: '장소 사이 이동 시간을\n미리 확인하세요.',
     text: '출발지와 목적지를 고르면 이동 시간과 경로를 한눈에 확인할 수 있어요.',
-    className: 'route-visual',
+    visualImage: {
+      src: '/images/landing/plan-route.png',
+      alt: '커피숍과 사진 촬영 장소를 잇는 경로 지도 일러스트',
+    },
     href: '/routes',
   },
   {
@@ -27,7 +33,7 @@ const features = [
     label: 'Check today',
     title: '서울의 날씨를\n확인해 보세요.',
     text: '서울의 현재 날씨와 시간대별 예보를 확인해 보세요.',
-    className: 'weather-visual',
+    visualType: 'weather',
     href: '/weather',
   },
 ];
@@ -48,6 +54,7 @@ const weatherOutfitSlides = [
 
 export default function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [showGoTop, setShowGoTop] = useState(false);
   const [weatherOutfitSlide] = useState(() =>
     Math.floor(Math.random() * weatherOutfitSlides.length),
   );
@@ -59,6 +66,18 @@ export default function HomePage() {
     }, 5000);
     return () => window.clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    const updateScrollPosition = () => setShowGoTop(window.scrollY > 480);
+    updateScrollPosition();
+    window.addEventListener('scroll', updateScrollPosition, { passive: true });
+    return () => window.removeEventListener('scroll', updateScrollPosition);
+  }, []);
+
+  const goToTop = () => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+  };
 
   return (
     <main className="landing-page">
@@ -93,14 +112,14 @@ export default function HomePage() {
         </p>
       </section>
       <section className="feature-section">
-        {features.map(({ icon: Icon, label, title, text, className, href }, index) => (
+        {features.map(({ icon: Icon, label, title, text, visualType, visualImage, href }, index) => (
           <article className={`feature-row ${index % 2 === 1 ? 'reverse' : ''}`} key={label}>
             <div
-              className={`feature-image ${className}`}
-              aria-label={className === 'weather-visual' ? '오늘의 옷차림 참고 이미지' : `${label} image placeholder`}
+              className="feature-image"
+              aria-label={visualType === 'weather' ? '오늘의 옷차림 참고 이미지' : visualImage?.alt}
               role="img"
             >
-              {className === 'weather-visual' ? (
+              {visualType === 'weather' ? (
                 <div className="weather-visual-frame">
                   <img
                     src={weatherOutfitSlides[weatherOutfitSlide].src}
@@ -109,14 +128,23 @@ export default function HomePage() {
                   />
                 </div>
               ) : (
-                <></>
+                visualImage && (
+                  <img
+                    className="feature-illustration"
+                    src={visualImage.src}
+                    alt=""
+                    loading="lazy"
+                  />
+                )
               )}
             </div>
             <div className="feature-copy">
-              <span className="feature-icon">
-                <Icon size={19} />
-              </span>
-              <p className="eyebrow">{label}</p>
+              <div className="feature-kicker">
+                <span className="feature-icon">
+                  <Icon size={19} />
+                </span>
+                <p className="eyebrow">{label}</p>
+              </div>
               <h3>
                 {title.split('\n').map((line) => (
                   <span key={line}>
@@ -133,6 +161,11 @@ export default function HomePage() {
           </article>
         ))}
       </section>
+      {showGoTop && (
+        <button className="landing-go-top" type="button" onClick={goToTop} aria-label="맨 위로 이동">
+          <ArrowUp size={20} aria-hidden="true" />
+        </button>
+      )}
     </main>
   );
 }
