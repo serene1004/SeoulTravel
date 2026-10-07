@@ -13,7 +13,6 @@
   --color-border: oklch(0.84 0.018 78);
   --color-white: #fffaf2;
   --color-shadow-soft: rgb(25 35 33 / 0.12);
-  /* Literal palette tokens preserve the existing illustration and map colors. */
   --spacing-2: 2px;
   --spacing-4: 4px;
   --spacing-8: 8px;
@@ -58,183 +57,7 @@
   background: var(--paper);
   font-family: Manrope, sans-serif;
   font-synthesis: none;
-  --color-palette-fff7ef: #fff7ef;
-  --color-palette-dce2d5: #dce2d5;
-  --color-palette-rgba-255-255-255-0-67: rgba(255, 255, 255, 0.67);
-  --color-palette-rgba-255-255-255-0-78: rgba(255, 255, 255, 0.78);
-  --color-palette-rgba-91-126-96-0-12: rgba(91, 126, 96, 0.12);
-  --color-palette-rgba-122-139-117-0-1: rgba(122, 139, 117, 0.1);
-  --color-palette-a9d0d0: #a9d0d0;
-  --color-palette-rgba-251-247-240-0-95: rgba(251, 247, 240, 0.95);
-  --color-palette-rgba-214-198-170-0-85: rgba(214, 198, 170, 0.85);
-  --color-palette-rgba-47-76-63-0-55: rgba(47, 76, 63, 0.55);
-  --color-palette-fff8ef: #fff8ef;
-  --color-palette-c95037: #c95037;
-  --color-palette-5b5d535c: #5b5d535c;
-  --color-palette-354543: #354543;
-  --color-palette-173c38: #173c38;
-  --color-palette-d0d3c9: #d0d3c9;
-  --color-palette-fbf8f1: #fbf8f1;
-  --color-palette-rgb-41-53-46-0-14: rgb(41 53 46 / 0.14);
-  --color-palette-fbf8f2: #fbf8f2;
-  --color-palette-1d252442: #1d252442;
-  --color-palette-7d827c: #7d827c;
-  --color-palette-aa4835: #aa4835;
-  --color-palette-1a2927: #1a2927;
-  --color-palette-74746e: #74746e;
-  --color-palette-dfd9ce: #dfd9ce;
-  --color-palette-51615d: #51615d;
-  --color-palette-50665e: #50665e;
-  --color-palette-d5d0c7: #d5d0c7;
-  --color-palette-576563: #576563;
-  --color-palette-75746d: #75746d;
-  --color-palette-ded8ce: #ded8ce;
-  --color-palette-8b8a84: #8b8a84;
-  --color-palette-1d2524: #1d2524;
-  --color-palette-777a72: #777a72;
-  --color-palette-6d7069: #6d7069;
-  --color-palette-eee4d3: #eee4d3;
-  --color-palette-a34732: #a34732;
-  --color-palette-55564e: #55564e;
-  --color-palette-83827c: #83827c;
-  --color-palette-e4ded4: #e4ded4;
-  --color-palette-263431: #263431;
-  --color-palette-898881: #898881;
-  --color-palette-80908b: #80908b;
-  --color-palette-fbf7ef: #fbf7ef;
-  --color-palette-9aaca3: #9aaca3;
-  --color-palette-14242275: #14242275;
-  --color-palette-e9e7da: #e9e7da;
-  --color-palette-6a746b: #6a746b;
-  --color-palette-555b56: #555b56;
-  --color-palette-fff: #fff;
-  --color-palette-1d252424: #1d252424;
-  --color-palette-d8d0c5: #d8d0c5;
-  --color-palette-fff9f1: #fff9f1;
-  --color-palette-1d25242e: #1d25242e;
-  --color-palette-fff8f0: #fff8f0;
-  --color-palette-e7a940: #e7a940;
-  --color-palette-fff9ef: #fff9ef;
-  --color-palette-c7eadb: #c7eadb;
-  --color-palette-e9f1b8: #e9f1b8;
-  --color-palette-ffd9a6: #ffd9a6;
-  --color-palette-f8eecf: #f8eecf;
-  --color-palette-f1c782: #f1c782;
-  --color-palette-fffaf0: #fffaf0;
-  --color-palette-ef8066: #ef8066;
-  --color-palette-fff9ee: #fff9ee;
-  --color-palette-e5cfa7: #e5cfa7;
-  --color-palette-aa5446: #aa5446;
-  --color-palette-e5a23d: #e5a23d;
-  --color-palette-5cae94: #5cae94;
-  --color-palette-8fcac2: #8fcac2;
-  --color-palette-f7ffef: #f7ffef;
-  --color-palette-d9bc89: #d9bc89;
-  --color-palette-d5b77f: #d5b77f;
-  --color-palette-fdd9c3: #fdd9c3;
-  --color-palette-ccead8: #ccead8;
-  --color-palette-e6d8f0: #e6d8f0;
-  --color-palette-a6d7ec: #a6d7ec;
-  --color-palette-a4cf82: #a4cf82;
-  --color-palette-e3bd76: #e3bd76;
-  --color-palette-794c3c: #794c3c;
-  --color-palette-b17256: #b17256;
-  --color-palette-f4e8cb: #f4e8cb;
-  --color-palette-695545: #695545;
-  --color-palette-e9d9b7: #e9d9b7;
-  --color-palette-d3ecdc: #d3ecdc;
-  --color-palette-f9d8c1: #f9d8c1;
-  --color-palette-f9efcf: #f9efcf;
-  --color-palette-bd9c65: #bd9c65;
-  --color-palette-cc9e6d: #cc9e6d;
-  --color-palette-f1c787: #f1c787;
-  --color-palette-edbc74: #edbc74;
-  --color-palette-78bba3: #78bba3;
-  --color-palette-d7bb87: #d7bb87;
-  --color-palette-665746: #665746;
-  --color-palette-faf7f0: #faf7f0;
-  --color-palette-283a37: #283a37;
-  --color-palette-rgb-25-35-33-0-68: rgb(25 35 33 / 0.68);
-  --color-palette-rgb-25-35-33-0-28: rgb(25 35 33 / 0.28);
-  --color-palette-rgb-250-247-240-0-78: rgb(250 247 240 / 0.78);
-  --color-palette-e2e4dc: #e2e4dc;
-  --color-palette-rgb-42-50-45-0-55: rgb(42 50 45 / 0.55);
-  --color-palette-d5ddd2: #d5ddd2;
-  --color-palette-d8c9ab: #d8c9ab;
-  --color-palette-rgb-255-253-246-0-48: rgb(255 253 246 / 0.48);
-  --color-palette-rgb-255-253-246-0-26: rgb(255 253 246 / 0.26);
-  --color-palette-f9f6ef: #f9f6ef;
-  --color-palette-rgb-59-54-43-0-13: rgb(59 54 43 / 0.13);
-  --color-palette-d9e4dd: #d9e4dd;
-  --color-palette-rgb-255-251-242-0-8: rgb(255 251 242 / 0.8);
-  --color-palette-rgb-255-251-242-0-7: rgb(255 251 242 / 0.7);
-  --color-palette-dfe5da: #dfe5da;
-  --color-palette-c8d7ce: #c8d7ce;
-  --color-palette-c69558: #c69558;
-  --color-palette-2a3e39: #2a3e39;
-  --color-palette-f9f5ed: #f9f5ed;
-  --color-palette-rgb-249-245-237-0-6: rgb(249 245 237 / 0.6);
-  --color-palette-rgb-249-245-237-0-24: rgb(249 245 237 / 0.24);
-  --color-palette-d9e0d7: #d9e0d7;
-  --color-palette-rgb-255-252-244-0-38: rgb(255 252 244 / 0.38);
-  --color-palette-rgb-255-252-244-0-26: rgb(255 252 244 / 0.26);
-  --color-palette-rgb-55-56-47-0-25: rgb(55 56 47 / 0.25);
-  --color-palette-rgb-76-83-72-0-1: rgb(76 83 72 / 0.1);
-  --color-palette-rgb-49-55-46-0-14: rgb(49 55 46 / 0.14);
-  --color-palette-eee8da: #eee8da;
-  --color-palette-rgb-249-245-237-0-12: rgb(249 245 237 / 0.12);
-  --color-palette-dbe0d8: #dbe0d8;
-  --color-palette-rgb-65-74-66-0-16: rgb(65 74 66 / 0.16);
-  --color-palette-rgb-65-74-66-0-56: rgb(65 74 66 / 0.56);
-  --color-palette-rgb-65-74-66-0-6: rgb(65 74 66 / 0.6);
-  --color-palette-e4e2da: #e4e2da;
-  --color-palette-dce3df: #dce3df;
-  --color-palette-e4e1d8: #e4e1d8;
-  --color-palette-rgb-56-62-57-0-22: rgb(56 62 57 / 0.22);
-  --color-palette-rgb-56-62-57-0-6: rgb(56 62 57 / 0.6);
-  --color-palette-d9e5d8: #d9e5d8;
-  --color-palette-eae4c9: #eae4c9;
-  --color-palette-e2d7c2: #e2d7c2;
-  --color-palette-f5f1e8: #f5f1e8;
-  --color-palette-dfd9cc: #dfd9cc;
-  --color-palette-f8f4eb: #f8f4eb;
-  --color-palette-c98574: #c98574;
-  --color-palette-d8d0c2: #d8d0c2;
-  --color-palette-92594d: #92594d;
-  --color-palette-a8c9c0: #a8c9c0;
-  --color-palette-d6cbb9: #d6cbb9;
-  --color-palette-eee7d9: #eee7d9;
-  --color-palette-c9d8d1: #c9d8d1;
-  --color-palette-b9cda5: #b9cda5;
-  --color-palette-d9d0c2: #d9d0c2;
-  --color-palette-e1d9cc: #e1d9cc;
-  --color-palette-c9bca8: #c9bca8;
-  --color-palette-ded4c4: #ded4c4;
-  --color-palette-d7c096: #d7c096;
-  --color-palette-94b9a9: #94b9a9;
-  --color-palette-rgb-30-43-38-0-26: rgb(30 43 38 / 0.26);
-  --color-palette-rgb-76-83-72-0-14: rgb(76 83 72 / 0.14);
-  --color-palette-rgb-76-83-72-0-13: rgb(76 83 72 / 0.13);
-  --color-palette-4d5b54: #4d5b54;
-  --color-palette-f1ebe0: #f1ebe0;
-  --color-palette-6f756d: #6f756d;
-  --color-palette-56665e: #56665e;
-  --color-palette-rgb-76-83-72-0-12: rgb(76 83 72 / 0.12);
-  --color-palette-8a6f5d: #8a6f5d;
-  --color-palette-f5f0e7: #f5f0e7;
-  --color-palette-ece5d9: #ece5d9;
-  --color-palette-69766e: #69766e;
-  --color-palette-42564f: #42564f;
-  --color-palette-203632: #203632;
-  --color-palette-rgb-30-43-38-0-12: rgb(30 43 38 / 0.12);
-  --color-palette-f1ede4: #f1ede4;
-  --color-palette-2b4942: #2b4942;
-  --color-palette-rgb-41-52-47-0-17: rgb(41 52 47 / 0.17);
-  --color-palette-rgb-60-75-67-0-18: rgb(60 75 67 / 0.18);
-  --color-palette-rgb-60-75-67-0-12: rgb(60 75 67 / 0.12);
-  --color-palette-rgb-249-246-239-0-82: rgb(249 246 239 / 0.82);
-  --color-palette-45554e: #45554e;
-  --color-palette-6d776f: #6d776f;
+
   --spacing-92: 92px;
   --spacing-100: 100px;
   --spacing-132: 132px;
@@ -347,7 +170,7 @@ a:focus-visible {
   place-items: center;
   border-radius: 50%;
   background: var(--color-primary);
-  color: var(--color-palette-fff7ef);
+  color: #fff7ef;
   font:
     700 17px/1 Playfair Display,
     serif;
@@ -514,38 +337,38 @@ a:focus-visible {
 .map-area {
   position: relative;
   overflow: hidden;
-  background-color: var(--color-palette-dce2d5);
+  background-color: #dce2d5;
   background-image:
     linear-gradient(
       21deg,
       transparent 43%,
-      var(--color-palette-rgba-255-255-255-0-67) 43.4%,
-      var(--color-palette-rgba-255-255-255-0-67) 44.2%,
+      rgba(255, 255, 255, 0.67) 43.4%,
+      rgba(255, 255, 255, 0.67) 44.2%,
       transparent 44.5%
     ),
     linear-gradient(
       111deg,
       transparent 28%,
-      var(--color-palette-rgba-255-255-255-0-78) 28.3%,
-      var(--color-palette-rgba-255-255-255-0-78) 29.1%,
+      rgba(255, 255, 255, 0.78) 28.3%,
+      rgba(255, 255, 255, 0.78) 29.1%,
       transparent 29.4%
     ),
-    repeating-linear-gradient(72deg, var(--color-palette-rgba-91-126-96-0-12) 0 1px, transparent 1px 32px),
-    repeating-linear-gradient(-17deg, var(--color-palette-rgba-122-139-117-0-1) 0 1px, transparent 1px 46px);
+    repeating-linear-gradient(72deg, rgba(91, 126, 96, 0.12) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(-17deg, rgba(122, 139, 117, 0.1) 0 1px, transparent 1px 46px);
 }
 .river {
   position: absolute;
   inset: 71% -10% auto;
   height: 76px;
   transform: rotate(-7deg);
-  background: var(--color-palette-a9d0d0);
+  background: #a9d0d0;
   opacity: 0.75;
 }
 .road {
   position: absolute;
   height: 9px;
-  border: 2px solid var(--color-palette-rgba-251-247-240-0-95);
-  background: var(--color-palette-rgba-214-198-170-0-85);
+  border: 2px solid rgba(251, 247, 240, 0.95);
+  background: rgba(214, 198, 170, 0.85);
   border-radius: 99px;
 }
 .road-one {
@@ -568,7 +391,7 @@ a:focus-visible {
 }
 .map-label {
   position: absolute;
-  color: var(--color-palette-rgba-47-76-63-0-55);
+  color: rgba(47, 76, 63, 0.55);
   font:
     800 14px DM Mono,
     monospace;
@@ -594,11 +417,11 @@ a:focus-visible {
   width: 34px;
   height: 34px;
   padding: 0;
-  border: 2px solid var(--color-palette-fff8ef);
+  border: 2px solid #fff8ef;
   border-radius: 50% 50% 50% 0;
-  background: var(--color-palette-c95037);
-  color: var(--color-palette-fff8ef);
-  box-shadow: 0 3px 9px var(--color-palette-5b5d535c);
+  background: #c95037;
+  color: #fff8ef;
+  box-shadow: 0 3px 9px #5b5d535c;
   transform: translate(-50%, -100%) rotate(-45deg);
   transition:
     transform 0.2s ease,
@@ -612,7 +435,7 @@ a:focus-visible {
   top: 42px;
   left: 12px;
   width: max-content;
-  color: var(--color-palette-354543);
+  color: #354543;
   font:
     700 10px Manrope,
     sans-serif;
@@ -621,7 +444,7 @@ a:focus-visible {
 .map-marker:hover,
 .map-marker.is-selected {
   z-index: 3;
-  background: var(--color-palette-173c38);
+  background: #173c38;
   transform: translate(-50%, -100%) rotate(-45deg) scale(1.16);
 }
 .locate-button {
@@ -633,11 +456,11 @@ a:focus-visible {
   width: 32px;
   height: 32px;
   place-items: center;
-  border: 1px solid var(--color-palette-d0d3c9);
+  border: 1px solid #d0d3c9;
   border-radius: 12px;
-  background: var(--color-palette-fbf8f1);
-  color: var(--color-palette-173c38);
-  box-shadow: 0 5px 14px var(--color-palette-rgb-41-53-46-0-14);
+  background: #fbf8f1;
+  color: #173c38;
+  box-shadow: 0 5px 14px rgb(41 53 46 / 0.14);
 }
 .spot-preview {
   position: absolute;
@@ -646,13 +469,13 @@ a:focus-visible {
   left: var(--spacing-24);
   width: min(315px, calc(100% - 48px));
   padding: var(--spacing-20);
-  background: var(--color-palette-fbf8f2);
-  box-shadow: 0 18px 40px var(--color-palette-1d252442);
+  background: #fbf8f2;
+  box-shadow: 0 18px 40px #1d252442;
 }
 .preview-kicker {
   display: flex;
   justify-content: space-between;
-  color: var(--color-palette-7d827c);
+  color: #7d827c;
   font:
     10px DM Mono,
     monospace;
@@ -660,13 +483,13 @@ a:focus-visible {
   letter-spacing: 0.08em;
 }
 .preview-kicker span:first-child {
-  color: var(--color-palette-aa4835);
+  color: #aa4835;
 }
 .spot-preview h2,
 .detail-panel h2,
 .route-card h2 {
   margin: var(--spacing-12) 0 var(--spacing-4);
-  color: var(--color-palette-1a2927);
+  color: #1a2927;
   font:
     600 25px/1.1 Playfair Display,
     serif;
@@ -674,7 +497,7 @@ a:focus-visible {
 }
 .spot-preview p {
   margin: 0;
-  color: var(--color-palette-74746e);
+  color: #74746e;
   font-size: 11px;
 }
 .preview-meta {
@@ -683,8 +506,8 @@ a:focus-visible {
   justify-content: space-between;
   margin-top: var(--spacing-20);
   padding-top: var(--spacing-12);
-  border-top: 1px solid var(--color-palette-dfd9ce);
-  color: var(--color-palette-51615d);
+  border-top: 1px solid #dfd9ce;
+  color: #51615d;
   font-size: 10px;
 }
 .preview-meta span,
@@ -696,7 +519,7 @@ a:focus-visible {
 .preview-meta button {
   border: 0;
   background: transparent;
-  color: var(--color-palette-aa4835);
+  color: #aa4835;
   font-size: 11px;
   font-weight: 800;
 }
@@ -704,14 +527,14 @@ a:focus-visible {
   position: absolute;
   right: 20px;
   bottom: 15px;
-  color: var(--color-palette-50665e);
+  color: #50665e;
   font:
     9px DM Mono,
     monospace;
   letter-spacing: 0.08em;
 }
 .detail-panel {
-  border-left: 1px solid var(--color-palette-d5d0c7);
+  border-left: 1px solid #d5d0c7;
   overflow: auto;
 }
 .detail-top {
@@ -724,16 +547,16 @@ a:focus-visible {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--color-palette-576563);
+  color: #576563;
 }
 .detail-address {
   margin: var(--spacing-8) 0 var(--spacing-24);
-  color: var(--color-palette-75746d);
+  color: #75746d;
   font-size: 11px;
 }
 .info-rule {
   height: 1px;
-  background: var(--color-palette-ded8ce);
+  background: #ded8ce;
 }
 .weather-card {
   display: flex;
@@ -742,7 +565,7 @@ a:focus-visible {
   padding: var(--spacing-24) 0 var(--spacing-20);
 }
 .weather-card span {
-  color: var(--color-palette-8b8a84);
+  color: #8b8a84;
   font:
     9px DM Mono,
     monospace;
@@ -751,7 +574,7 @@ a:focus-visible {
 .weather-card strong {
   display: block;
   margin-top: var(--spacing-8);
-  color: var(--color-palette-1d2524);
+  color: #1d2524;
   font:
     700 30px/1 Manrope,
     sans-serif;
@@ -759,7 +582,7 @@ a:focus-visible {
 }
 .weather-card strong small {
   margin-left: var(--spacing-4);
-  color: var(--color-palette-777a72);
+  color: #777a72;
   font:
     500 10px Manrope,
     sans-serif;
@@ -768,22 +591,22 @@ a:focus-visible {
 .weather-card p,
 .clothing-note p {
   margin: var(--spacing-8) 0 0;
-  color: var(--color-palette-6d7069);
+  color: #6d7069;
   font-size: 11px;
   line-height: 1.55;
 }
 .weather-card svg {
-  color: var(--color-palette-c95037);
+  color: #c95037;
 }
 .clothing-note {
   display: flex;
   gap: var(--spacing-12);
   padding: var(--spacing-16);
-  background: var(--color-palette-eee4d3);
-  color: var(--color-palette-a34732);
+  background: #eee4d3;
+  color: #a34732;
 }
 .clothing-note b {
-  color: var(--color-palette-55564e);
+  color: #55564e;
   font-size: 11px;
 }
 .nearby {
@@ -794,10 +617,10 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   padding-bottom: var(--spacing-12);
-  border-bottom: 1px solid var(--color-palette-ded8ce);
+  border-bottom: 1px solid #ded8ce;
 }
 .section-title span {
-  color: var(--color-palette-83827c);
+  color: #83827c;
   font:
     9px DM Mono,
     monospace;
@@ -811,16 +634,16 @@ a:focus-visible {
   width: 100%;
   padding: var(--spacing-16) 0;
   border: 0;
-  border-bottom: 1px solid var(--color-palette-e4ded4);
+  border-bottom: 1px solid #e4ded4;
   background: transparent;
-  color: var(--color-palette-263431);
+  color: #263431;
   text-align: left;
 }
 .nearby-row:hover b {
-  color: var(--color-palette-aa4835);
+  color: #aa4835;
 }
 .nearby-index {
-  color: var(--color-palette-aa4835);
+  color: #aa4835;
   font:
     10px DM Mono,
     monospace;
@@ -834,11 +657,11 @@ a:focus-visible {
 }
 .nearby-row small {
   margin-top: var(--spacing-4);
-  color: var(--color-palette-898881);
+  color: #898881;
   font-size: 9px;
 }
 .nearby-row svg {
-  color: var(--color-palette-80908b);
+  color: #80908b;
 }
 .route-button {
   display: flex;
@@ -849,14 +672,14 @@ a:focus-visible {
   margin-top: var(--spacing-24);
   padding: var(--spacing-16);
   border: 0;
-  background: var(--color-palette-173c38);
-  color: var(--color-palette-fbf7ef);
+  background: #173c38;
+  color: #fbf7ef;
   font-size: 12px;
   font-weight: 800;
 }
 .route-button span {
   margin-left: auto;
-  color: var(--color-palette-9aaca3);
+  color: #9aaca3;
   font:
     10px DM Mono,
     monospace;
@@ -872,15 +695,15 @@ a:focus-visible {
 .sheet-backdrop {
   position: absolute;
   inset: 0;
-  background: var(--color-palette-14242275);
+  background: #14242275;
   backdrop-filter: blur(3px);
 }
 .route-card {
   position: relative;
   width: min(440px, 100%);
   padding: var(--spacing-32);
-  background: var(--color-palette-fbf8f2);
-  box-shadow: 0 30px 80px var(--color-palette-14242275);
+  background: #fbf8f2;
+  box-shadow: 0 30px 80px #14242275;
 }
 .sheet-close {
   position: absolute;
@@ -893,8 +716,8 @@ a:focus-visible {
   align-items: center;
   margin: var(--spacing-24) 0 var(--spacing-20);
   padding: var(--spacing-16);
-  background: var(--color-palette-e9e7da);
-  color: var(--color-palette-173c38);
+  background: #e9e7da;
+  color: #173c38;
 }
 .route-summary div {
   display: grid;
@@ -904,7 +727,7 @@ a:focus-visible {
   font-size: 13px;
 }
 .route-summary span {
-  color: var(--color-palette-6a746b);
+  color: #6a746b;
   font-size: 10px;
 }
 .route-card ol {
@@ -913,7 +736,7 @@ a:focus-visible {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: var(--color-palette-555b56);
+  color: #555b56;
   font-size: 12px;
 }
 .route-card li {
@@ -928,8 +751,8 @@ a:focus-visible {
   height: 22px;
   place-items: center;
   border-radius: 50%;
-  background: var(--color-palette-c95037);
-  color: var(--color-palette-fff);
+  background: #c95037;
+  color: #fff;
   font:
     10px DM Mono,
     monospace;
@@ -945,7 +768,7 @@ a:focus-visible {
     top: 76px;
     width: 310px;
     height: calc(100svh - 76px);
-    box-shadow: -10px 0 30px var(--color-palette-1d252424);
+    box-shadow: -10px 0 30px #1d252424;
   }
   .map-area {
     min-width: 0;
@@ -978,7 +801,7 @@ a:focus-visible {
     height: 110px;
     padding: var(--spacing-20);
     border-right: 0;
-    border-bottom: 1px solid var(--color-palette-d5d0c7);
+    border-bottom: 1px solid #d5d0c7;
   }
   .sidebar .eyebrow,
   .sidebar h2,
@@ -995,13 +818,13 @@ a:focus-visible {
   .filter {
     flex: 0 0 auto;
     padding: var(--spacing-8) var(--spacing-8);
-    border: 1px solid var(--color-palette-d8d0c5);
+    border: 1px solid #d8d0c5;
     border-radius: 20px;
   }
   .filter.active {
     background: color-mix(in oklch, var(--filter-color) 88%, var(--color-paper));
     border-color: var(--filter-color);
-    color: var(--color-palette-fff9f1);
+    color: #fff9f1;
   }
   .filter small {
     display: none;
@@ -1016,7 +839,7 @@ a:focus-visible {
     height: 245px;
     padding: var(--spacing-20) var(--spacing-20);
     border: 0;
-    box-shadow: 0 -8px 24px var(--color-palette-1d25242e);
+    box-shadow: 0 -8px 24px #1d25242e;
   }
   .detail-panel .weather-card,
   .detail-panel .clothing-note,
@@ -1104,7 +927,7 @@ a:focus-visible {
   place-items: center;
   border-radius: 9px 12px 10px 13px;
   background: var(--color-primary);
-  color: var(--color-palette-fff8f0);
+  color: #fff8f0;
   font:
     14px/1 Manrope,
     sans-serif;
@@ -1146,25 +969,25 @@ a:focus-visible {
   font-size: 11px;
 }
 .hero-weather svg {
-  color: var(--color-palette-e7a940);
+  color: #e7a940;
 }
 .hero-map {
   position: relative;
   min-height: 500px;
   overflow: hidden;
-  border: 2px solid var(--color-palette-fff9ef);
+  border: 2px solid #fff9ef;
   border-radius: 44% 56% 49% 51% / 36% 39% 61% 64%;
-  background: linear-gradient(135deg, var(--color-palette-c7eadb) 0 45%, var(--color-palette-e9f1b8) 45% 59%, var(--color-palette-ffd9a6) 59%);
+  background: linear-gradient(135deg, #c7eadb 0 45%, #e9f1b8 45% 59%, #ffd9a6 59%);
   box-shadow:
-    inset 0 0 0 9px var(--color-palette-f8eecf),
-    14px 18px 0 var(--color-palette-f1c782);
+    inset 0 0 0 9px #f8eecf,
+    14px 18px 0 #f1c782;
   transform: rotate(2deg);
 }
 .hero-map::before,
 .hero-map::after {
   position: absolute;
   content: '';
-  border: 2px dashed var(--color-palette-fff9ef);
+  border: 2px dashed #fff9ef;
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -1185,7 +1008,7 @@ a:focus-visible {
 .map-cloud {
   position: absolute;
   z-index: 2;
-  color: var(--color-palette-fffaf0);
+  color: #fffaf0;
   font-size: 40px;
 }
 .cloud-one {
@@ -1195,7 +1018,7 @@ a:focus-visible {
 .cloud-two {
   top: 170px;
   left: 36px;
-  color: var(--color-palette-ef8066);
+  color: #ef8066;
   font-size: 22px;
 }
 .map-place {
@@ -1203,9 +1026,9 @@ a:focus-visible {
   z-index: 2;
   padding: var(--spacing-8) var(--spacing-12);
   border-radius: 999px;
-  background: var(--color-palette-fff9ee);
+  background: #fff9ee;
   color: var(--color-ink);
-  box-shadow: 0 4px 0 var(--color-palette-e5cfa7);
+  box-shadow: 0 4px 0 #e5cfa7;
   font-size: 11px;
   font-weight: 800;
 }
@@ -1228,11 +1051,11 @@ a:focus-visible {
   width: 35px;
   height: 35px;
   place-items: center;
-  border: 2px solid var(--color-palette-fff9ee);
+  border: 2px solid #fff9ee;
   border-radius: 50% 50% 50% 0;
   background: var(--color-primary);
-  color: var(--color-palette-fff9ef);
-  box-shadow: 0 4px 0 var(--color-palette-aa5446);
+  color: #fff9ef;
+  box-shadow: 0 4px 0 #aa5446;
   transform: rotate(-45deg);
 }
 .home-pin svg {
@@ -1245,12 +1068,12 @@ a:focus-visible {
 .pin-two {
   right: 20%;
   bottom: 38%;
-  background: var(--color-palette-e5a23d);
+  background: #e5a23d;
 }
 .pin-three {
   bottom: 31%;
   left: 24%;
-  background: var(--color-palette-5cae94);
+  background: #5cae94;
 }
 .map-river {
   position: absolute;
@@ -1260,8 +1083,8 @@ a:focus-visible {
   z-index: 1;
   padding: var(--spacing-12);
   transform: rotate(-6deg);
-  background: var(--color-palette-8fcac2);
-  color: var(--color-palette-f7ffef);
+  background: #8fcac2;
+  color: #f7ffef;
   font:
     700 10px DM Mono,
     monospace;
@@ -1278,8 +1101,8 @@ a:focus-visible {
   width: 176px;
   padding: var(--spacing-16);
   border-radius: 19px 11px 22px 13px;
-  background: var(--color-palette-fffaf0);
-  box-shadow: 0 8px 0 var(--color-palette-d9bc89);
+  background: #fffaf0;
+  box-shadow: 0 8px 0 #d9bc89;
   transform: rotate(-4deg);
 }
 .map-postcard span {
@@ -1310,7 +1133,7 @@ a:focus-visible {
   max-width: 1240px;
   margin: 0 auto;
   padding: var(--spacing-52) clamp(var(--spacing-20), 4vw, var(--spacing-52)) var(--spacing-92);
-  border-top: 1px dashed var(--color-palette-d5b77f);
+  border-top: 1px dashed #d5b77f;
 }
 .home-tools h2 {
   margin: var(--spacing-12) 0 0;
@@ -1338,13 +1161,13 @@ a:focus-visible {
   transform: translateX(5px) rotate(0.3deg);
 }
 .tool-card.peach {
-  background: var(--color-palette-fdd9c3);
+  background: #fdd9c3;
 }
 .tool-card.mint {
-  background: var(--color-palette-ccead8);
+  background: #ccead8;
 }
 .tool-card.lavender {
-  background: var(--color-palette-e6d8f0);
+  background: #e6d8f0;
 }
 .tool-icon {
   display: grid;
@@ -1352,7 +1175,7 @@ a:focus-visible {
   height: 46px;
   place-items: center;
   border-radius: 15px 19px 14px 18px;
-  background: var(--color-palette-fff9ef);
+  background: #fff9ef;
   color: var(--color-primary);
 }
 .tool-card b {
@@ -1364,7 +1187,7 @@ a:focus-visible {
   font-size: 11px;
 }
 .page-nav {
-  border-bottom: 1px dashed var(--color-palette-d5b77f);
+  border-bottom: 1px dashed #d5b77f;
 }
 .spot-hero,
 .route-layout {
@@ -1383,8 +1206,8 @@ a:focus-visible {
   place-items: center;
   overflow: hidden;
   border-radius: 42% 58% 62% 38% / 43% 40% 60% 57%;
-  background: linear-gradient(var(--color-palette-a6d7ec) 0 52%, var(--color-palette-a4cf82) 52%);
-  box-shadow: 12px 14px 0 var(--color-palette-e3bd76);
+  background: linear-gradient(#a6d7ec 0 52%, #a4cf82 52%);
+  box-shadow: 12px 14px 0 #e3bd76;
 }
 .spot-photo > span {
   position: absolute;
@@ -1392,7 +1215,7 @@ a:focus-visible {
   left: 35px;
   padding: var(--spacing-8) var(--spacing-12);
   border-radius: 9px;
-  background: var(--color-palette-fff9ef);
+  background: #fff9ef;
   color: var(--color-primary);
   font:
     800 9px DM Mono,
@@ -1400,9 +1223,9 @@ a:focus-visible {
   letter-spacing: 0.1em;
 }
 .palace-shape {
-  color: var(--color-palette-794c3c);
+  color: #794c3c;
   font-size: 190px;
-  text-shadow: 11px 8px var(--color-palette-b17256);
+  text-shadow: 11px 8px #b17256;
 }
 .spot-intro h2 {
   font-size: clamp(42px, 5vw, 70px);
@@ -1425,8 +1248,8 @@ a:focus-visible {
   gap: var(--spacing-4);
   padding: var(--spacing-8) var(--spacing-12);
   border-radius: 99px;
-  background: var(--color-palette-f4e8cb);
-  color: var(--color-palette-695545);
+  background: #f4e8cb;
+  color: #695545;
   font-size: 10px;
   font-weight: 800;
 }
@@ -1443,14 +1266,14 @@ a:focus-visible {
   gap: var(--spacing-8);
   padding: var(--spacing-24);
   border-radius: 22px;
-  background: var(--color-palette-fff9ef);
-  box-shadow: 0 5px 0 var(--color-palette-e9d9b7);
+  background: #fff9ef;
+  box-shadow: 0 5px 0 #e9d9b7;
 }
 .spot-notes article:nth-child(2) {
-  background: var(--color-palette-d3ecdc);
+  background: #d3ecdc;
 }
 .spot-notes article:nth-child(3) {
-  background: var(--color-palette-f9d8c1);
+  background: #f9d8c1;
 }
 .spot-notes svg {
   color: var(--color-primary);
@@ -1474,7 +1297,7 @@ a:focus-visible {
   line-height: 1.5;
 }
 .route-page {
-  background: var(--color-palette-f9efcf);
+  background: #f9efcf;
 }
 .route-layout {
   min-height: calc(100svh - 70px);
@@ -1493,7 +1316,7 @@ a:focus-visible {
 .route-stops > div {
   flex: 1 1 auto;
   min-width: 32px;
-  border-top: 2px dashed var(--color-palette-bd9c65);
+  border-top: 2px dashed #bd9c65;
 }
 .route-stops span {
   flex: 0 0 auto;
@@ -1512,7 +1335,7 @@ a:focus-visible {
   place-items: center;
   border-radius: 50%;
   background: var(--color-primary);
-  color: var(--color-palette-fff8ef);
+  color: #fff8ef;
   font:
     10px DM Mono,
     monospace;
@@ -1536,10 +1359,10 @@ a:focus-visible {
 }
 .route-ticket {
   padding: var(--spacing-28);
-  border: 2px dashed var(--color-palette-cc9e6d);
+  border: 2px dashed #cc9e6d;
   border-radius: 28px;
-  background: var(--color-palette-fffaf0);
-  box-shadow: 12px 12px 0 var(--color-palette-f1c787);
+  background: #fffaf0;
+  box-shadow: 12px 12px 0 #f1c787;
   transform: rotate(2deg);
 }
 .ticket-top,
@@ -1569,11 +1392,11 @@ a:focus-visible {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--color-palette-edbc74);
+  background: #edbc74;
 }
 .ticket-line i:nth-child(2),
 .ticket-line i:nth-child(3) {
-  background: var(--color-palette-78bba3);
+  background: #78bba3;
 }
 .ticket-route {
   gap: var(--spacing-12);
@@ -1593,9 +1416,9 @@ a:focus-visible {
   gap: var(--spacing-16);
   margin: var(--spacing-28) 0;
   padding: var(--spacing-20) 0;
-  border-block: 1px dashed var(--color-palette-d7bb87);
+  border-block: 1px dashed #d7bb87;
   list-style: none;
-  color: var(--color-palette-665746);
+  color: #665746;
   font-size: 11px;
 }
 .route-ticket li {
@@ -1685,7 +1508,7 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing-28) var(--header-gutter);
-  color: var(--color-palette-faf7f0);
+  color: #faf7f0;
 }
 .landing-brand {
   display: inline-flex;
@@ -1723,12 +1546,13 @@ a:focus-visible {
   position: relative;
   min-height: max(720px, 100svh);
   overflow: hidden;
-  background: var(--color-palette-283a37);
+  background: #283a37;
 }
 .landing-hero-image {
   position: absolute;
   inset: 0;
-  background: url('/images/landing/bukchon.webp') center 62% / cover;
+  background-position: center 62%;
+  background-size: cover;
   animation: landing-hero-fade 700ms ease both;
 }
 @keyframes landing-hero-fade {
@@ -1744,7 +1568,7 @@ a:focus-visible {
   z-index: 1;
   inset: 0;
   content: '';
-  background: linear-gradient(90deg, var(--color-palette-rgb-25-35-33-0-68), var(--color-palette-rgb-25-35-33-0-28) 42%, transparent);
+  background: linear-gradient(90deg, rgb(25 35 33 / 0.68), rgb(25 35 33 / 0.28) 42%, transparent);
 }
 .landing-hero-content {
   position: relative;
@@ -1754,7 +1578,7 @@ a:focus-visible {
   justify-content: center;
   min-height: min(920px, 100svh);
   padding: var(--spacing-132) clamp(var(--spacing-24), 8vw, var(--spacing-132)) var(--spacing-112);
-  color: var(--color-palette-faf7f0);
+  color: #faf7f0;
 }
 .landing-hero-content .eyebrow {
   color: var(--color-primary-highlight);
@@ -1771,7 +1595,7 @@ a:focus-visible {
 }
 .landing-hero-content > p:not(.eyebrow) {
   margin: 0;
-  color: var(--color-palette-rgb-250-247-240-0-78);
+  color: rgb(250 247 240 / 0.78);
   font-size: 13px;
 }
 .landing-intro {
@@ -1918,8 +1742,8 @@ a:focus-visible {
   max-width: none;
   margin: 0;
   padding-block: var(--spacing-20);
-  background: var(--color-palette-2a3e39);
-  color: var(--color-palette-f9f5ed);
+  background: #2a3e39;
+  color: #f9f5ed;
   border: 0;
 }
 .topbar {
@@ -1932,14 +1756,14 @@ a:focus-visible {
 }
 .topbar .brand,
 .page-nav .home-brand {
-  color: var(--color-palette-f9f5ed);
+  color: #f9f5ed;
 }
 .page-nav nav {
   display: flex;
   gap: clamp(var(--spacing-16), 2vw, var(--spacing-28));
 }
 .page-nav nav a {
-  color: var(--color-palette-f9f5ed);
+  color: #f9f5ed;
   font-size: var(--text-label);
   font-weight: 800;
   text-decoration: none;
@@ -1949,23 +1773,23 @@ a:focus-visible {
   border: 1px solid currentColor;
 }
 .topbar .project-note {
-  color: var(--color-palette-rgb-249-245-237-0-6);
+  color: rgb(249 245 237 / 0.6);
 }
 .topbar .lang-button,
 .topbar .weather-pill {
-  color: var(--color-palette-f9f5ed);
+  color: #f9f5ed;
 }
 .topbar .weather-pill {
-  border-color: var(--color-palette-rgb-249-245-237-0-24);
+  border-color: rgb(249 245 237 / 0.24);
 }
 .workspace {
   height: calc(100svh - 70px);
   min-height: 620px;
-  background: var(--color-palette-e2e4dc);
+  background: #e2e4dc;
 }
 .sidebar,
 .detail-panel {
-  background: var(--color-palette-f9f6ef);
+  background: #f9f6ef;
 }
 .sidebar {
   padding: var(--spacing-28) var(--spacing-24);
@@ -1975,22 +1799,22 @@ a:focus-visible {
   line-height: 1.05;
 }
 .map-area {
-  background-color: var(--color-palette-d9e0d7);
+  background-color: #d9e0d7;
   background-image:
-    repeating-linear-gradient(77deg, transparent 0 35px, var(--color-palette-rgb-255-252-244-0-38) 36px 38px),
-    repeating-linear-gradient(-16deg, transparent 0 49px, var(--color-palette-rgb-255-252-244-0-26) 50px 52px);
+    repeating-linear-gradient(77deg, transparent 0 35px, rgb(255 252 244 / 0.38) 36px 38px),
+    repeating-linear-gradient(-16deg, transparent 0 49px, rgb(255 252 244 / 0.26) 50px 52px);
 }
 .map-marker {
   background: var(--color-primary);
-  box-shadow: 0 2px 5px var(--color-palette-rgb-55-56-47-0-25);
+  box-shadow: 0 2px 5px rgb(55 56 47 / 0.25);
 }
 .map-marker:hover,
 .map-marker.is-selected {
   background: var(--color-secondary);
 }
 .spot-preview {
-  border: 1px solid var(--color-palette-rgb-76-83-72-0-1);
-  box-shadow: 0 8px 20px var(--color-palette-rgb-49-55-46-0-14);
+  border: 1px solid rgb(76 83 72 / 0.1);
+  box-shadow: 0 8px 20px rgb(49 55 46 / 0.14);
 }
 .detail-panel {
   padding: var(--spacing-28) var(--spacing-24);
@@ -1999,7 +1823,7 @@ a:focus-visible {
   font-size: 23px;
 }
 .clothing-note {
-  background: var(--color-palette-eee8da);
+  background: #eee8da;
 }
 .route-button {
   background: var(--color-secondary);
@@ -2164,7 +1988,7 @@ a:focus-visible {
   color: inherit;
 }
 .page-nav {
-  border-bottom: 1px solid var(--color-palette-rgb-249-245-237-0-12);
+  border-bottom: 1px solid rgb(249 245 237 / 0.12);
 }
 .spot-hero,
 .route-layout {
@@ -2174,21 +1998,21 @@ a:focus-visible {
 .spot-photo {
   min-height: 390px;
   border-radius: 4px;
-  background: var(--color-palette-dbe0d8);
+  background: #dbe0d8;
   box-shadow: none;
 }
 .spot-photo::before {
   position: absolute;
   inset: 14px;
   content: '';
-  border: 1px solid var(--color-palette-rgb-65-74-66-0-16);
+  border: 1px solid rgb(65 74 66 / 0.16);
 }
 .spot-photo > span {
   z-index: 1;
   top: 27px;
   left: 28px;
   background: transparent;
-  color: var(--color-palette-rgb-65-74-66-0-56);
+  color: rgb(65 74 66 / 0.56);
   font:
     700 9px DM Mono,
     monospace;
@@ -2199,7 +2023,7 @@ a:focus-visible {
   align-self: end;
   justify-self: start;
   margin: 0 0 var(--spacing-32) var(--spacing-32);
-  color: var(--color-palette-rgb-65-74-66-0-6);
+  color: rgb(65 74 66 / 0.6);
   font:
     600 28px Playfair Display,
     serif;
@@ -2229,7 +2053,7 @@ a:focus-visible {
   padding: var(--spacing-32);
   border: 1px solid var(--color-border);
   border-radius: 4px;
-  background: var(--color-palette-f9f6ef);
+  background: #f9f6ef;
   box-shadow: none;
 }
 .route-ticket::before {
@@ -2385,38 +2209,38 @@ a:focus-visible {
 }
 .hero-map {
   border-radius: 34px;
-  background: linear-gradient(135deg, var(--color-palette-d9e5d8) 0 49%, var(--color-palette-eae4c9) 49% 60%, var(--color-palette-e2d7c2) 60%);
+  background: linear-gradient(135deg, #d9e5d8 0 49%, #eae4c9 49% 60%, #e2d7c2 60%);
   box-shadow:
-    inset 0 0 0 7px var(--color-palette-f5f1e8),
-    8px 10px 0 var(--color-palette-dfd9cc);
+    inset 0 0 0 7px #f5f1e8,
+    8px 10px 0 #dfd9cc;
   transform: none;
 }
 .hero-map::before,
 .hero-map::after {
-  border-color: var(--color-palette-f8f4eb);
+  border-color: #f8f4eb;
   opacity: 0.55;
 }
 .cloud-two {
-  color: var(--color-palette-c98574);
+  color: #c98574;
 }
 .map-place {
-  box-shadow: 0 2px 0 var(--color-palette-d8d0c2);
+  box-shadow: 0 2px 0 #d8d0c2;
 }
 .home-pin {
   width: 32px;
   height: 32px;
   background: var(--color-primary);
-  box-shadow: 0 2px 0 var(--color-palette-92594d);
+  box-shadow: 0 2px 0 #92594d;
 }
 .pin-two,
 .pin-three {
   background: var(--color-primary);
 }
 .map-river {
-  background: var(--color-palette-a8c9c0);
+  background: #a8c9c0;
 }
 .map-postcard {
-  box-shadow: 0 4px 0 var(--color-palette-d6cbb9);
+  box-shadow: 0 4px 0 #d6cbb9;
   transform: none;
 }
 .home-tools {
@@ -2435,33 +2259,33 @@ a:focus-visible {
   background: var(--color-paper-raised) !important;
 }
 .tool-icon {
-  background: var(--color-palette-eee7d9);
+  background: #eee7d9;
   color: var(--color-primary);
 }
 .spot-photo {
-  background: linear-gradient(var(--color-palette-c9d8d1) 0 52%, var(--color-palette-b9cda5) 52%);
-  box-shadow: 7px 8px 0 var(--color-palette-d9d0c2);
+  background: linear-gradient(#c9d8d1 0 52%, #b9cda5 52%);
+  box-shadow: 7px 8px 0 #d9d0c2;
 }
 .spot-notes article,
 .spot-notes article:nth-child(2),
 .spot-notes article:nth-child(3) {
   background: var(--color-paper-raised);
-  box-shadow: 0 3px 0 var(--color-palette-e1d9cc);
+  box-shadow: 0 3px 0 #e1d9cc;
 }
 .route-page {
   background: var(--color-paper);
 }
 .route-ticket {
-  border-color: var(--color-palette-c9bca8);
-  box-shadow: 7px 7px 0 var(--color-palette-ded4c4);
+  border-color: #c9bca8;
+  box-shadow: 7px 7px 0 #ded4c4;
   transform: none;
 }
 .ticket-line i {
-  background: var(--color-palette-d7c096);
+  background: #d7c096;
 }
 .ticket-line i:nth-child(2),
 .ticket-line i:nth-child(3) {
-  background: var(--color-palette-94b9a9);
+  background: #94b9a9;
 }
 
 /* Spot detail dialog: a focused pause from map exploration. */
@@ -2472,15 +2296,15 @@ a:focus-visible {
   display: grid;
   place-items: center;
   padding: var(--spacing-24);
-  background: var(--color-palette-rgb-30-43-38-0-26);
+  background: rgb(30 43 38 / 0.26);
 }
 .spot-dialog {
   width: min(100%, 520px);
   padding: var(--spacing-28);
-  border: 1px solid var(--color-palette-rgb-76-83-72-0-14);
+  border: 1px solid rgb(76 83 72 / 0.14);
   border-radius: 22px;
-  background: var(--color-palette-fbf8f2);
-  box-shadow: 0 24px 60px var(--color-palette-rgb-30-43-38-0-26);
+  background: #fbf8f2;
+  box-shadow: 0 24px 60px rgb(30 43 38 / 0.26);
 }
 .spot-dialog-top {
   display: flex;
@@ -2498,18 +2322,18 @@ a:focus-visible {
   width: 32px;
   height: 32px;
   place-items: center;
-  border: 1px solid var(--color-palette-rgb-76-83-72-0-13);
+  border: 1px solid rgb(76 83 72 / 0.13);
   border-radius: 50%;
   background: transparent;
-  color: var(--color-palette-4d5b54);
+  color: #4d5b54;
   cursor: pointer;
 }
 .spot-dialog-top button:hover {
-  background: var(--color-palette-f1ebe0);
+  background: #f1ebe0;
 }
 .spot-dialog h2 {
   margin: var(--spacing-24) 0 var(--spacing-8);
-  color: var(--color-palette-1a2927);
+  color: #1a2927;
   font:
     600 clamp(30px, 4vw, 42px)/1.04 Playfair Display,
     serif;
@@ -2517,7 +2341,7 @@ a:focus-visible {
 }
 .spot-dialog-district {
   margin: 0;
-  color: var(--color-palette-6f756d);
+  color: #6f756d;
   font-size: 14px;
 }
 .spot-dialog .info-rule {
@@ -2526,7 +2350,7 @@ a:focus-visible {
 .spot-dialog-meta {
   display: grid;
   gap: var(--spacing-12);
-  color: var(--color-palette-56665e);
+  color: #56665e;
   font:
     700 14px Manrope,
     sans-serif;
@@ -2538,10 +2362,10 @@ a:focus-visible {
 }
 .spot-dialog-meta span + span {
   padding-top: var(--spacing-12);
-  border-top: 1px solid var(--color-palette-rgb-76-83-72-0-12);
+  border-top: 1px solid rgb(76 83 72 / 0.12);
 }
 .spot-dialog-meta span:last-child {
-  color: var(--color-palette-8a6f5d);
+  color: #8a6f5d;
 }
 .spot-dialog-list {
   display: grid;
@@ -2554,10 +2378,10 @@ a:focus-visible {
   gap: var(--spacing-16);
   width: 100%;
   padding: var(--spacing-16) var(--spacing-16);
-  border: 1px solid var(--color-palette-rgb-76-83-72-0-14);
+  border: 1px solid rgb(76 83 72 / 0.14);
   border-radius: 10px;
-  background: var(--color-palette-f5f0e7);
-  color: var(--color-palette-1a2927);
+  background: #f5f0e7;
+  color: #1a2927;
   cursor: pointer;
   font:
     700 14px Manrope,
@@ -2565,10 +2389,10 @@ a:focus-visible {
   text-align: left;
 }
 .spot-dialog-list button:hover {
-  background: var(--color-palette-ece5d9);
+  background: #ece5d9;
 }
 .spot-dialog-list small {
-  color: var(--color-palette-7d827c);
+  color: #7d827c;
   font:
     700 11px Manrope,
     sans-serif;
@@ -2578,17 +2402,17 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   margin-top: var(--spacing-16);
-  color: var(--color-palette-69766e);
+  color: #69766e;
   font:
     700 11px Manrope,
     sans-serif;
 }
 .spot-dialog-pagination button {
   padding: var(--spacing-8) var(--spacing-12);
-  border: 1px solid var(--color-palette-rgb-76-83-72-0-14);
+  border: 1px solid rgb(76 83 72 / 0.14);
   border-radius: 8px;
   background: transparent;
-  color: var(--color-palette-42564f);
+  color: #42564f;
   font: inherit;
 }
 .spot-dialog-pagination button:disabled {
@@ -2604,7 +2428,7 @@ a:focus-visible {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--color-palette-203632);
+  color: #203632;
   transform: translateY(-50%);
 }
 .spot-dialog-stack-controls {
@@ -2628,10 +2452,10 @@ a:focus-visible {
   .spot-dialog-stack-controls button {
     width: 48px;
     height: 48px;
-    border: 1px solid var(--color-palette-rgb-76-83-72-0-14);
+    border: 1px solid rgb(76 83 72 / 0.14);
     border-radius: 50%;
-    background: var(--color-palette-fbf8f2);
-    box-shadow: 0 4px 14px var(--color-palette-rgb-30-43-38-0-12);
+    background: #fbf8f2;
+    box-shadow: 0 4px 14px rgb(30 43 38 / 0.12);
   }
   .spot-dialog-stack-controls button svg {
     width: 30px;
@@ -2652,8 +2476,8 @@ a:focus-visible {
   margin-top: var(--spacing-24);
   padding: var(--spacing-16);
   border-radius: 14px;
-  background: var(--color-palette-f1ede4);
-  color: var(--color-palette-42564f);
+  background: #f1ede4;
+  color: #42564f;
 }
 .spot-dialog-weather b {
   font:
@@ -2662,7 +2486,7 @@ a:focus-visible {
 }
 .spot-dialog-weather p {
   margin: var(--spacing-4) 0 0;
-  color: var(--color-palette-69766e);
+  color: #69766e;
   font-size: 12px;
 }
 .spot-dialog-link {
@@ -2672,15 +2496,15 @@ a:focus-visible {
   margin-top: var(--spacing-24);
   padding: var(--spacing-12) var(--spacing-16);
   border-radius: 12px;
-  background: var(--color-palette-203632);
-  color: var(--color-palette-fbf8f2);
+  background: #203632;
+  color: #fbf8f2;
   font:
     800 13px Manrope,
     sans-serif;
   text-decoration: none;
 }
 .spot-dialog-link:hover {
-  background: var(--color-palette-2b4942);
+  background: #2b4942;
 }
 @media (max-width: 600px) {
   .spot-dialog-backdrop {
@@ -2699,7 +2523,7 @@ a:focus-visible {
   position: relative;
   overflow: visible;
   box-shadow: none !important;
-  filter: drop-shadow(0 10px 16px var(--color-palette-rgb-41-52-47-0-17));
+  filter: drop-shadow(0 10px 16px rgb(41 52 47 / 0.17));
 }
 .map-area .maplibregl-popup-tip {
   display: none;
@@ -2718,14 +2542,14 @@ a:focus-visible {
   bottom: -10px;
   width: 20px;
   height: 11px;
-  background: var(--color-palette-rgb-76-83-72-0-12);
+  background: rgb(76 83 72 / 0.12);
 }
 .map-area .maplibregl-popup-content::after {
   z-index: 1;
   bottom: -8px;
   width: 16px;
   height: 9px;
-  background: var(--color-palette-fbf8f2);
+  background: #fbf8f2;
 }
 .spot-popup {
   position: relative;
@@ -2741,7 +2565,7 @@ a:focus-visible {
 .map-area .map-canvas {
   position: absolute;
   inset: 0;
-  background: var(--color-palette-dce2d5);
+  background: #dce2d5;
 }
 .map-canvas .maplibregl-canvas {
   outline: 0;
@@ -2759,10 +2583,10 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid var(--color-palette-rgb-60-75-67-0-18);
+  border: 1px solid rgb(60 75 67 / 0.18);
   border-radius: 12px;
-  background: var(--color-palette-fbf8f1);
-  box-shadow: 0 5px 14px var(--color-palette-rgb-41-53-46-0-14);
+  background: #fbf8f1;
+  box-shadow: 0 5px 14px rgb(41 53 46 / 0.14);
 }
 .map-area .maplibregl-ctrl-group button {
   width: 32px;
@@ -2776,12 +2600,12 @@ a:focus-visible {
 }
 .map-area .maplibregl-ctrl-compass {
   order: 3;
-  border-top: 1px solid var(--color-palette-rgb-60-75-67-0-12);
-  background-color: var(--color-palette-fbf8f1);
+  border-top: 1px solid rgb(60 75 67 / 0.12);
+  background-color: #fbf8f1;
 }
 .map-area .maplibregl-ctrl-attrib {
   padding: var(--spacing-4) var(--spacing-4);
-  background: var(--color-palette-rgb-249-246-239-0-82);
+  background: rgb(249 246 239 / 0.82);
   font:
     9px Manrope,
     sans-serif;
@@ -2792,13 +2616,13 @@ a:focus-visible {
 .map-area .maplibregl-popup-content {
   min-width: 232px;
   padding: 0;
-  border: 1px solid var(--color-palette-rgb-76-83-72-0-12);
+  border: 1px solid rgb(76 83 72 / 0.12);
   border-radius: 14px;
-  background: var(--color-palette-fbf8f2);
-  box-shadow: 0 10px 24px var(--color-palette-rgb-41-52-47-0-17);
+  background: #fbf8f2;
+  box-shadow: 0 10px 24px rgb(41 52 47 / 0.17);
 }
 .map-area .maplibregl-popup-tip {
-  border-top-color: var(--color-palette-fbf8f2);
+  border-top-color: #fbf8f2;
 }
 .spot-popup {
   padding: var(--spacing-16);
@@ -2806,7 +2630,7 @@ a:focus-visible {
 .spot-popup-kicker {
   display: flex;
   justify-content: space-between;
-  color: var(--color-palette-7d827c);
+  color: #7d827c;
   font:
     700 9px DM Mono,
     monospace;
@@ -2819,7 +2643,7 @@ a:focus-visible {
 .spot-popup strong {
   display: block;
   margin: var(--spacing-12) 0 var(--spacing-4);
-  color: var(--color-palette-1a2927);
+  color: #1a2927;
   font:
     600 22px/1.1 Playfair Display,
     serif;
@@ -2827,15 +2651,15 @@ a:focus-visible {
 }
 .spot-popup p {
   margin: 0;
-  color: var(--color-palette-74746e);
+  color: #74746e;
   font-size: 11px;
 }
 .spot-popup-time {
   display: block;
   margin-top: var(--spacing-12);
   padding-top: var(--spacing-12);
-  border-top: 1px solid var(--color-palette-dfd9ce);
-  color: var(--color-palette-51615d);
+  border-top: 1px solid #dfd9ce;
+  color: #51615d;
   font:
     700 10px Manrope,
     sans-serif;
@@ -2853,7 +2677,7 @@ a:focus-visible {
 .cluster-popup li {
   overflow: hidden;
   max-width: 230px;
-  color: var(--color-palette-45554e);
+  color: #45554e;
   font-size: 11px;
   font-weight: 700;
   text-overflow: ellipsis;
@@ -2867,15 +2691,15 @@ a:focus-visible {
 .cluster-popup p {
   margin-top: var(--spacing-12);
   padding-top: var(--spacing-8);
-  border-top: 1px solid var(--color-palette-dfd9ce);
-  color: var(--color-palette-6d776f);
+  border-top: 1px solid #dfd9ce;
+  color: #6d776f;
   font-size: 10px;
 }
 .language-select {
   position: relative;
   display: flex;
   align-items: center;
-  color: var(--color-palette-f9f5ed);
+  color: #f9f5ed;
 }
 .language-select select {
   appearance: none;
