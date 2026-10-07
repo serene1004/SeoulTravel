@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+node_modules
+.pnpm-store
+dist
+coverage
+*.tsbuildinfo
+Dockerfile
+docker-compose.yml
+README.md

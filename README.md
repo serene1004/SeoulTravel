@@ -1,4 +1,4 @@
-# Seoul Path
+# Seoul Travel
 
 서울 여행에 필요한 장소, 지도, 이동 경로, 날씨 정보를 한곳에서 보여주는 React 웹 앱입니다.
 
@@ -39,6 +39,22 @@ pnpm dev
 ```
 
 개발 서버가 실행되면 터미널에 표시된 로컬 주소를 브라우저에서 엽니다.
+
+## Docker 실행
+
+Docker와 Docker Compose를 설치한 뒤 다음 명령으로 `seoultravel:latest` 이미지를 빌드하고 실행합니다.
+
+```bash
+docker compose up --build -d
+```
+
+앱은 [http://localhost:8090](http://localhost:8090)에서 확인할 수 있습니다. React Router의 경로로 직접 접속해도 Nginx가 SPA 라우팅을 처리합니다. 종료하려면 `docker compose down`을 실행합니다.
+
+## GitHub Pages
+
+메인 사이트의 GitHub Pages 배포에서 이 앱을 `/seoul-travel/` 경로에 포함해 배포합니다. 빌드 시 `VITE_BASE_PATH=/seoul-travel/`을 설정하세요.
+
+배포 주소: [https://serene1004.github.io/seoul-travel/](https://serene1004.github.io/seoul-travel/)
 
 ## 주요 명령어
 

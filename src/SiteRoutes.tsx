@@ -8,7 +8,7 @@ import WeatherPage from './pages/WeatherPage';
 
 export default function SiteRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/explore" element={<ExplorePage />} />
