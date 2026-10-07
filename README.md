@@ -52,9 +52,9 @@ docker compose up --build -d
 
 ## GitHub Pages
 
-메인 사이트의 GitHub Pages 배포에서 이 앱을 `/seoul-travel/` 경로에 포함해 배포합니다. 빌드 시 `VITE_BASE_PATH=/seoul-travel/`을 설정하세요.
+`main` 브랜치에 푸시하면 GitHub Actions가 정적 사이트를 빌드해 배포합니다. 배포 경로에 맞춰 빌드 시 `VITE_BASE_PATH=/SeoulTravel/`을 설정합니다.
 
-배포 주소: [https://serene1004.github.io/seoul-travel/](https://serene1004.github.io/seoul-travel/)
+배포 주소: [https://serene1004.github.io/SeoulTravel/](https://serene1004.github.io/SeoulTravel/)
 
 ## 주요 명령어
 
