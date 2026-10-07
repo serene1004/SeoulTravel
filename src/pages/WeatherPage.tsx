@@ -166,7 +166,7 @@ export default function WeatherPage() {
                 <p>{outfit.note}</p>
               </div>
               <img
-                src={`/images/weather-outfits/${outfit.image}`}
+                src={`${import.meta.env.BASE_URL}images/weather-outfits/${outfit.image}`}
                 alt={outfit.alt}
                 loading="lazy"
               />

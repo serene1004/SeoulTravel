@@ -5,6 +5,8 @@ import { ArrowRight, ArrowUp, MapPinned, Route, Shirt } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
 
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 const features = [
   {
     icon: MapPinned,
@@ -12,7 +14,7 @@ const features = [
     title: '관광명소·카페·식당을\n지도에서 찾아보세요.',
     text: '서울 곳곳의 장소를 지도에서 살펴보고, 여행에 맞는 곳을 골라보세요.',
     visualImage: {
-      src: '/images/landing/find-places.png',
+      src: publicAsset('images/landing/find-places.png'),
       alt: '카페와 맛집, 문화 장소가 표시된 지도 일러스트',
     },
     href: '/explore',
@@ -23,7 +25,7 @@ const features = [
     title: '장소 사이 이동 시간을\n미리 확인하세요.',
     text: '출발지와 목적지를 고르면 이동 시간과 경로를 한눈에 확인할 수 있어요.',
     visualImage: {
-      src: '/images/landing/plan-route.png',
+      src: publicAsset('images/landing/plan-route.png'),
       alt: '커피숍과 사진 촬영 장소를 잇는 경로 지도 일러스트',
     },
     href: '/routes',
@@ -39,17 +41,17 @@ const features = [
 ];
 
 const heroSlides = [
-  { src: '/images/landing/bukchon.webp', label: 'Bukchon Hanok Village' },
-  { src: '/images/landing/cheonggyecheon.webp', label: 'Cheonggyecheon Stream' },
-  { src: '/images/landing/ddp.webp', label: 'Dongdaemun Design Plaza' },
-  { src: '/images/landing/hanriver.webp', label: 'Han River Park' },
+  { src: publicAsset('images/landing/bukchon.webp'), label: 'Bukchon Hanok Village' },
+  { src: publicAsset('images/landing/cheonggyecheon.webp'), label: 'Cheonggyecheon Stream' },
+  { src: publicAsset('images/landing/ddp.webp'), label: 'Dongdaemun Design Plaza' },
+  { src: publicAsset('images/landing/hanriver.webp'), label: 'Han River Park' },
 ];
 
 const weatherOutfitSlides = [
-  { src: '/images/weather-outfits/cold.png', alt: '추운 날씨에 어울리는 따뜻한 코디' },
-  { src: '/images/weather-outfits/cool.png', alt: '쌀쌀한 날씨에 어울리는 겹쳐 입기 코디' },
-  { src: '/images/weather-outfits/mild.png', alt: '선선한 날씨에 어울리는 가벼운 코디' },
-  { src: '/images/weather-outfits/warm.png', alt: '따뜻한 날씨에 어울리는 시원한 코디' },
+  { src: publicAsset('images/weather-outfits/cold.png'), alt: '추운 날씨에 어울리는 따뜻한 코디' },
+  { src: publicAsset('images/weather-outfits/cool.png'), alt: '쌀쌀한 날씨에 어울리는 겹쳐 입기 코디' },
+  { src: publicAsset('images/weather-outfits/mild.png'), alt: '선선한 날씨에 어울리는 가벼운 코디' },
+  { src: publicAsset('images/weather-outfits/warm.png'), alt: '따뜻한 날씨에 어울리는 시원한 코디' },
 ];
 
 export default function HomePage() {
@@ -88,7 +90,7 @@ export default function HomePage() {
           className="landing-hero-image"
           role="img"
           aria-label={heroSlide.label}
-          style={{ backgroundImage: `url(${heroSlide.src})` }}
+          style={{ backgroundImage: `url("${heroSlide.src}")` }}
         />
         <div className="landing-hero-content">
           <p className="eyebrow">YOUR LITTLE SEOUL TRIP</p>
