@@ -5,14 +5,18 @@ import {
   Map,
   NavigationControl,
   Popup,
+  setWorkerUrl,
   type GeoJSONSource,
   type Map as MapLibreMap,
   type MapLayerMouseEvent,
 } from 'maplibre-gl';
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
 import { getPublicAttractionRecord, type MapAttraction } from '../data/publicAttractions';
 import { getSpotCategoryLabel, type Locale, type Spot, type SpotCategory } from '../data/spots';
 import 'maplibre-gl/dist/maplibre-gl.css';
+
+setWorkerUrl(maplibreWorkerUrl);
 
 const mapStyleUrl = 'https://tiles.openfreemap.org/styles/bright';
 const seoulCenter: [number, number] = [126.9785, 37.5665];
