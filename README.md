@@ -84,4 +84,4 @@ VITE_SEOUL_OPEN_DATA_KEY=발급받은_API_키
 
 ## 이미지 출처
 
-홈 화면 이미지의 출처와 라이선스 정보는 [`public/images/README.md`](public/images/README.md)에 정리되어 있습니다.
+홈 화면 이미지의 출처와 라이선스 정보는 [`public/images/landing/README.md`](public/images/landing/README.md)에 정리되어 있습니다.
