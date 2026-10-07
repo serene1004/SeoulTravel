@@ -1,68 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
 :root {
-  /* Vermilion leads; the warm gold is reserved for text over hero images. */
+  /* Brand and surface colors */
   --color-primary: oklch(0.59 0.12 32);
   --color-primary-highlight: #f2c594;
   --color-secondary: oklch(0.42 0.055 165);
   --color-paper: oklch(0.955 0.014 82);
   --color-paper-raised: oklch(0.978 0.009 82);
-  --color-paper-soft: #f4ede1;
   --color-ink: oklch(0.26 0.024 45);
   --color-muted: oklch(0.53 0.018 75);
   --color-border: oklch(0.84 0.018 78);
   --color-white: #fffaf2;
   --color-shadow-soft: rgb(25 35 33 / 0.12);
-  --spacing-2: 2px;
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-28: 28px;
-  --spacing-32: 32px;
-  --spacing-36: 36px;
-  --spacing-40: 40px;
-  --spacing-44: 44px;
-  --spacing-48: 48px;
-  --spacing-52: 52px;
-  --spacing-56: 56px;
-  --spacing-60: 60px;
-  --spacing-64: 64px;
-  --spacing-68: 68px;
-  --spacing-72: 72px;
-  --spacing-76: 76px;
-  --spacing-80: 80px;
-  --spacing-88: 88px;
-  --spacing-96: 96px;
-  --spacing-104: 104px;
-  --spacing-112: 112px;
-  --spacing-120: 120px;
-  --spacing-128: 128px;
-  --spacing-144: 144px;
-  --spacing-160: 160px;
-  --spacing-176: 176px;
-  --spacing-192: 192px;
-  --header-gutter: var(--spacing-24);
-  --text-caption: 0.625rem;
+  /* Spacing */
+  --space-0: 0px;
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 20px;
+  --space-7: 24px;
+  --space-8: 28px;
+  --space-9: 32px;
+  --space-10: 40px;
+  --space-11: 48px;
+  --space-12: 56px;
+  --space-13: 64px;
+  --space-14: 72px;
+  --space-15: 80px;
+  --header-gutter: var(--space-7);
+  /* Typography */
   --text-label: 0.75rem;
   --text-copy: 0.875rem;
-  --text-body: 1rem;
   --text-section-title: clamp(1.625rem, 2.7vw, 2.375rem);
   --text-page-title: clamp(2.25rem, 4.2vw, 3.625rem);
   --text-display: clamp(2.375rem, 4.8vw, 4.25rem);
   --text-weather-temperature: 4rem;
-  color: var(--ink);
-  background: var(--paper);
+  color: var(--color-ink);
+  background: var(--color-paper);
   font-family: Manrope, sans-serif;
   font-synthesis: none;
-
-  --spacing-92: 92px;
-  --spacing-100: 100px;
-  --spacing-132: 132px;
-  --spacing-172: 172px;
-  --spacing-180: 180px;
 }
 * {
   box-sizing: border-box;
@@ -102,7 +80,7 @@ a:focus-visible {
 .site-brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   width: fit-content;
   color: inherit;
   font:
@@ -119,7 +97,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-self: end;
-  gap: var(--spacing-16);
+  gap: var(--space-5);
 }
 .site-header .language-select {
   justify-self: end;
@@ -149,13 +127,13 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--spacing-28);
+  padding: 0 var(--space-8);
   border-bottom: 1px solid var(--color-border);
 }
 .brand {
   display: flex;
   align-items: center;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
   color: var(--color-ink);
   text-decoration: none;
   font:
@@ -186,20 +164,20 @@ a:focus-visible {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
 }
 .lang-button,
 .weather-pill {
   display: flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   border: 0;
   background: transparent;
   color: color-mix(in oklch, var(--color-secondary) 74%, var(--color-ink));
   font-size: 12px;
 }
 .weather-pill {
-  padding: var(--spacing-8) var(--spacing-12);
+  padding: var(--space-3) var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: 999px;
   text-decoration: none;
@@ -209,7 +187,7 @@ a:focus-visible {
 }
 .weather-pill span {
   display: flex;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
 }
 .workspace {
   display: grid;
@@ -220,7 +198,7 @@ a:focus-visible {
 .sidebar,
 .detail-panel {
   background: var(--color-paper-raised);
-  padding: var(--spacing-36) var(--spacing-28);
+  padding: 36px var(--space-8);
 }
 .sidebar {
   border-right: 1px solid var(--color-border);
@@ -235,7 +213,7 @@ a:focus-visible {
   letter-spacing: 0.08em;
 }
 .sidebar h2 {
-  margin: var(--spacing-12) 0 var(--spacing-28);
+  margin: var(--space-4) 0 var(--space-8);
   color: var(--color-ink);
   font:
     600 clamp(30px, 3vw, 42px)/0.98 Playfair Display,
@@ -248,9 +226,9 @@ a:focus-visible {
 .search-box {
   display: flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   height: 44px;
-  padding: 0 var(--spacing-12);
+  padding: 0 var(--space-4);
   border-bottom: 1px solid color-mix(in oklch, var(--color-border) 70%, var(--color-ink));
   color: var(--color-muted);
 }
@@ -269,7 +247,7 @@ a:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: var(--spacing-32) 0 var(--spacing-12);
+  margin: var(--space-9) 0 var(--space-4);
   color: var(--color-muted);
   font:
     500 10px DM Mono,
@@ -278,13 +256,13 @@ a:focus-visible {
 }
 .filter-list {
   display: grid;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
 }
 .filter {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-12) var(--spacing-12);
+  padding: var(--space-4) var(--space-4);
   border: 0;
   border-left: 2px solid transparent;
   background: transparent;
@@ -306,7 +284,7 @@ a:focus-visible {
 .filter-label {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   font-size: 13px;
   font-weight: 700;
 }
@@ -326,7 +304,7 @@ a:focus-visible {
 .section-title button {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
   padding: 0;
   border: 0;
   background: transparent;
@@ -451,7 +429,7 @@ a:focus-visible {
   position: absolute;
   z-index: 3;
   top: 126px;
-  right: var(--spacing-24);
+  right: var(--space-7);
   display: grid;
   width: 32px;
   height: 32px;
@@ -465,10 +443,10 @@ a:focus-visible {
 .spot-preview {
   position: absolute;
   z-index: 4;
-  bottom: var(--spacing-24);
-  left: var(--spacing-24);
+  bottom: var(--space-7);
+  left: var(--space-7);
   width: min(315px, calc(100% - 48px));
-  padding: var(--spacing-20);
+  padding: var(--space-6);
   background: #fbf8f2;
   box-shadow: 0 18px 40px #1d252442;
 }
@@ -488,7 +466,7 @@ a:focus-visible {
 .spot-preview h2,
 .detail-panel h2,
 .route-card h2 {
-  margin: var(--spacing-12) 0 var(--spacing-4);
+  margin: var(--space-4) 0 var(--space-2);
   color: #1a2927;
   font:
     600 25px/1.1 Playfair Display,
@@ -504,8 +482,8 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: var(--spacing-20);
-  padding-top: var(--spacing-12);
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
   border-top: 1px solid #dfd9ce;
   color: #51615d;
   font-size: 10px;
@@ -514,7 +492,7 @@ a:focus-visible {
 .preview-meta button {
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
 }
 .preview-meta button {
   border: 0;
@@ -550,7 +528,7 @@ a:focus-visible {
   color: #576563;
 }
 .detail-address {
-  margin: var(--spacing-8) 0 var(--spacing-24);
+  margin: var(--space-3) 0 var(--space-7);
   color: #75746d;
   font-size: 11px;
 }
@@ -562,7 +540,7 @@ a:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-24) 0 var(--spacing-20);
+  padding: var(--space-7) 0 var(--space-6);
 }
 .weather-card span {
   color: #8b8a84;
@@ -573,7 +551,7 @@ a:focus-visible {
 }
 .weather-card strong {
   display: block;
-  margin-top: var(--spacing-8);
+  margin-top: var(--space-3);
   color: #1d2524;
   font:
     700 30px/1 Manrope,
@@ -581,7 +559,7 @@ a:focus-visible {
   letter-spacing: -0.07em;
 }
 .weather-card strong small {
-  margin-left: var(--spacing-4);
+  margin-left: var(--space-2);
   color: #777a72;
   font:
     500 10px Manrope,
@@ -590,7 +568,7 @@ a:focus-visible {
 }
 .weather-card p,
 .clothing-note p {
-  margin: var(--spacing-8) 0 0;
+  margin: var(--space-3) 0 0;
   color: #6d7069;
   font-size: 11px;
   line-height: 1.55;
@@ -600,8 +578,8 @@ a:focus-visible {
 }
 .clothing-note {
   display: flex;
-  gap: var(--spacing-12);
-  padding: var(--spacing-16);
+  gap: var(--space-4);
+  padding: var(--space-5);
   background: #eee4d3;
   color: #a34732;
 }
@@ -610,13 +588,13 @@ a:focus-visible {
   font-size: 11px;
 }
 .nearby {
-  margin-top: var(--spacing-28);
+  margin-top: var(--space-8);
 }
 .section-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: var(--spacing-12);
+  padding-bottom: var(--space-4);
   border-bottom: 1px solid #ded8ce;
 }
 .section-title span {
@@ -629,10 +607,10 @@ a:focus-visible {
 .nearby-row {
   display: grid;
   grid-template-columns: 29px 1fr auto;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   align-items: center;
   width: 100%;
-  padding: var(--spacing-16) 0;
+  padding: var(--space-5) 0;
   border: 0;
   border-bottom: 1px solid #e4ded4;
   background: transparent;
@@ -656,7 +634,7 @@ a:focus-visible {
   font-size: 11px;
 }
 .nearby-row small {
-  margin-top: var(--spacing-4);
+  margin-top: var(--space-2);
   color: #898881;
   font-size: 9px;
 }
@@ -667,10 +645,10 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   width: 100%;
-  margin-top: var(--spacing-24);
-  padding: var(--spacing-16);
+  margin-top: var(--space-7);
+  padding: var(--space-5);
   border: 0;
   background: #173c38;
   color: #fbf7ef;
@@ -690,7 +668,7 @@ a:focus-visible {
   inset: 0;
   display: grid;
   place-items: center;
-  padding: var(--spacing-20);
+  padding: var(--space-6);
 }
 .sheet-backdrop {
   position: absolute;
@@ -701,7 +679,7 @@ a:focus-visible {
 .route-card {
   position: relative;
   width: min(440px, 100%);
-  padding: var(--spacing-32);
+  padding: var(--space-9);
   background: #fbf8f2;
   box-shadow: 0 30px 80px #14242275;
 }
@@ -712,16 +690,16 @@ a:focus-visible {
 }
 .route-summary {
   display: flex;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
   align-items: center;
-  margin: var(--spacing-24) 0 var(--spacing-20);
-  padding: var(--spacing-16);
+  margin: var(--space-7) 0 var(--space-6);
+  padding: var(--space-5);
   background: #e9e7da;
   color: #173c38;
 }
 .route-summary div {
   display: grid;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
 }
 .route-summary b {
   font-size: 13px;
@@ -732,7 +710,7 @@ a:focus-visible {
 }
 .route-card ol {
   display: grid;
-  gap: var(--spacing-16);
+  gap: var(--space-5);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -741,7 +719,7 @@ a:focus-visible {
 }
 .route-card li {
   display: flex;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
   align-items: center;
 }
 .route-card li span {
@@ -777,14 +755,14 @@ a:focus-visible {
 @media (max-width: 720px) {
   .topbar {
     height: 62px;
-    padding: 0 var(--spacing-16);
+    padding: 0 var(--space-5);
   }
   .project-note,
   .lang-button {
     display: none;
   }
   .weather-pill {
-    padding: var(--spacing-8) var(--spacing-8);
+    padding: var(--space-3) var(--space-3);
     font-size: 10px;
   }
   .workspace {
@@ -799,7 +777,7 @@ a:focus-visible {
     left: 0;
     width: 100%;
     height: 110px;
-    padding: var(--spacing-20);
+    padding: var(--space-6);
     border-right: 0;
     border-bottom: 1px solid #d5d0c7;
   }
@@ -812,12 +790,12 @@ a:focus-visible {
   .filter-list {
     display: flex;
     overflow: auto;
-    margin-top: var(--spacing-12);
-    gap: var(--spacing-4);
+    margin-top: var(--space-4);
+    gap: var(--space-2);
   }
   .filter {
     flex: 0 0 auto;
-    padding: var(--spacing-8) var(--spacing-8);
+    padding: var(--space-3) var(--space-3);
     border: 1px solid #d8d0c5;
     border-radius: 20px;
   }
@@ -837,7 +815,7 @@ a:focus-visible {
     bottom: 0;
     width: 100%;
     height: 245px;
-    padding: var(--spacing-20) var(--spacing-20);
+    padding: var(--space-6) var(--space-6);
     border: 0;
     box-shadow: 0 -8px 24px #1d25242e;
   }
@@ -850,10 +828,10 @@ a:focus-visible {
     font-size: 23px;
   }
   .detail-address {
-    margin-bottom: var(--spacing-8);
+    margin-bottom: var(--space-3);
   }
   .route-button {
-    margin-top: var(--spacing-16);
+    margin-top: var(--space-5);
   }
   .spot-preview {
     bottom: 268px;
@@ -897,11 +875,11 @@ a:focus-visible {
   justify-content: space-between;
   max-width: 1240px;
   margin: 0 auto;
-  padding: var(--spacing-24) clamp(var(--spacing-20), 4vw, var(--spacing-52));
+  padding: var(--space-7) clamp(var(--space-6), 4vw, 52px);
 }
 .home-nav > div {
   display: flex;
-  gap: var(--spacing-20);
+  gap: var(--space-6);
 }
 .home-nav a:not(.home-brand),
 .page-nav nav a {
@@ -913,7 +891,7 @@ a:focus-visible {
 .home-brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   color: var(--color-ink);
   font:
     800 15px/1.1 Playfair Display,
@@ -936,16 +914,16 @@ a:focus-visible {
 .home-hero {
   display: grid;
   grid-template-columns: minmax(320px, 0.88fr) minmax(430px, 1.12fr);
-  gap: clamp(var(--spacing-36), 7vw, var(--spacing-100));
+  gap: clamp(36px, 7vw, 100px);
   max-width: 1240px;
   margin: 0 auto;
-  padding: clamp(var(--spacing-44), 7vw, var(--spacing-88)) clamp(var(--spacing-20), 4vw, var(--spacing-52)) clamp(var(--spacing-60), 9vw, var(--spacing-120));
+  padding: clamp(44px, 7vw, 88px) clamp(var(--space-6), 4vw, 52px) clamp(60px, 9vw, 120px);
   align-items: center;
 }
 .hero-copy h2,
 .route-copy h2,
 .spot-intro h2 {
-  margin: var(--spacing-16) 0 var(--spacing-20);
+  margin: var(--space-5) 0 var(--space-6);
   font:
     700 clamp(48px, 6vw, 86px)/0.96 Playfair Display,
     serif;
@@ -963,8 +941,8 @@ a:focus-visible {
 .hero-weather {
   display: flex;
   align-items: center;
-  gap: var(--spacing-8);
-  margin: var(--spacing-32) 0 0;
+  gap: var(--space-3);
+  margin: var(--space-9) 0 0;
   color: var(--color-muted);
   font-size: 11px;
 }
@@ -1024,7 +1002,7 @@ a:focus-visible {
 .map-place {
   position: absolute;
   z-index: 2;
-  padding: var(--spacing-8) var(--spacing-12);
+  padding: var(--space-3) var(--space-4);
   border-radius: 999px;
   background: #fff9ee;
   color: var(--color-ink);
@@ -1081,7 +1059,7 @@ a:focus-visible {
   bottom: 12%;
   left: -10%;
   z-index: 1;
-  padding: var(--spacing-12);
+  padding: var(--space-4);
   transform: rotate(-6deg);
   background: #8fcac2;
   color: #f7ffef;
@@ -1097,9 +1075,9 @@ a:focus-visible {
   right: 32px;
   bottom: 34px;
   display: grid;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   width: 176px;
-  padding: var(--spacing-16);
+  padding: var(--space-5);
   border-radius: 19px 11px 22px 13px;
   background: #fffaf0;
   box-shadow: 0 8px 0 #d9bc89;
@@ -1120,7 +1098,7 @@ a:focus-visible {
 .map-postcard a {
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
   color: var(--color-secondary);
   font-size: 10px;
   font-weight: 800;
@@ -1129,14 +1107,14 @@ a:focus-visible {
 .home-tools {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: var(--spacing-56);
+  gap: var(--space-12);
   max-width: 1240px;
   margin: 0 auto;
-  padding: var(--spacing-52) clamp(var(--spacing-20), 4vw, var(--spacing-52)) var(--spacing-92);
+  padding: 52px clamp(var(--space-6), 4vw, 52px) 92px;
   border-top: 1px dashed #d5b77f;
 }
 .home-tools h2 {
-  margin: var(--spacing-12) 0 0;
+  margin: var(--space-4) 0 0;
   font:
     700 clamp(28px, 3vw, 42px)/1.08 Playfair Display,
     serif;
@@ -1144,14 +1122,14 @@ a:focus-visible {
 }
 .tool-list {
   display: grid;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
 }
 .tool-card {
   display: grid;
   grid-template-columns: 47px 1fr auto;
-  gap: var(--spacing-16);
+  gap: var(--space-5);
   align-items: center;
-  padding: var(--spacing-16);
+  padding: var(--space-5);
   border-radius: 19px;
   color: var(--color-ink);
   text-decoration: none;
@@ -1182,7 +1160,7 @@ a:focus-visible {
   font-size: 13px;
 }
 .tool-card p {
-  margin: var(--spacing-4) 0 0;
+  margin: var(--space-2) 0 0;
   color: color-mix(in oklch, var(--color-ink) 70%, var(--color-muted));
   font-size: 11px;
 }
@@ -1193,10 +1171,10 @@ a:focus-visible {
 .route-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(var(--spacing-40), 8vw, var(--spacing-120));
+  gap: clamp(var(--space-10), 8vw, 120px);
   max-width: 1140px;
   margin: 0 auto;
-  padding: clamp(var(--spacing-56), 8vw, var(--spacing-104)) clamp(var(--spacing-20), 4vw, var(--spacing-52));
+  padding: clamp(var(--space-12), 8vw, 104px) clamp(var(--space-6), 4vw, 52px);
   align-items: center;
 }
 .spot-photo {
@@ -1213,7 +1191,7 @@ a:focus-visible {
   position: absolute;
   top: 31px;
   left: 35px;
-  padding: var(--spacing-8) var(--spacing-12);
+  padding: var(--space-3) var(--space-4);
   border-radius: 9px;
   background: #fff9ef;
   color: var(--color-primary);
@@ -1239,14 +1217,14 @@ a:focus-visible {
 .spot-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-8);
-  margin-top: var(--spacing-20);
+  gap: var(--space-3);
+  margin-top: var(--space-6);
 }
 .spot-chips span {
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
-  padding: var(--spacing-8) var(--spacing-12);
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
   border-radius: 99px;
   background: #f4e8cb;
   color: #695545;
@@ -1256,15 +1234,15 @@ a:focus-visible {
 .spot-notes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-16);
+  gap: var(--space-5);
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 clamp(var(--spacing-20), 4vw, var(--spacing-52)) var(--spacing-100);
+  padding: 0 clamp(var(--space-6), 4vw, 52px) 100px;
 }
 .spot-notes article {
   display: grid;
-  gap: var(--spacing-8);
-  padding: var(--spacing-24);
+  gap: var(--space-3);
+  padding: var(--space-7);
   border-radius: 22px;
   background: #fff9ef;
   box-shadow: 0 5px 0 #e9d9b7;
@@ -1307,11 +1285,11 @@ a:focus-visible {
 }
 .route-stops {
   display: flex;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
   align-items: center;
   width: 100%;
   max-width: 420px;
-  margin-top: var(--spacing-32);
+  margin-top: var(--space-9);
 }
 .route-stops > div {
   flex: 1 1 auto;
@@ -1322,7 +1300,7 @@ a:focus-visible {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   color: var(--color-ink);
   font-size: 13px;
   font-weight: 800;
@@ -1348,8 +1326,8 @@ a:focus-visible {
 .route-search {
   display: flex;
   align-items: center;
-  gap: var(--spacing-8);
-  margin-top: var(--spacing-32);
+  gap: var(--space-3);
+  margin-top: var(--space-9);
   padding: 0;
   border: 0;
   background: transparent;
@@ -1358,7 +1336,7 @@ a:focus-visible {
   font-weight: 800;
 }
 .route-ticket {
-  padding: var(--spacing-28);
+  padding: var(--space-8);
   border: 2px dashed #cc9e6d;
   border-radius: 28px;
   background: #fffaf0;
@@ -1386,7 +1364,7 @@ a:focus-visible {
 .ticket-line {
   display: flex;
   justify-content: space-between;
-  margin: var(--spacing-24) 0;
+  margin: var(--space-7) 0;
 }
 .ticket-line i {
   width: 12px;
@@ -1399,7 +1377,7 @@ a:focus-visible {
   background: #78bba3;
 }
 .ticket-route {
-  gap: var(--spacing-12);
+  gap: var(--space-4);
 }
 .ticket-route strong {
   font-size: 16px;
@@ -1407,15 +1385,15 @@ a:focus-visible {
 .ticket-route span {
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--space-2);
   color: var(--color-muted);
   font-size: 10px;
 }
 .route-ticket ol {
   display: grid;
-  gap: var(--spacing-16);
-  margin: var(--spacing-28) 0;
-  padding: var(--spacing-20) 0;
+  gap: var(--space-5);
+  margin: var(--space-8) 0;
+  padding: var(--space-6) 0;
   border-block: 1px dashed #d7bb87;
   list-style: none;
   color: #665746;
@@ -1424,7 +1402,7 @@ a:focus-visible {
 .route-ticket li {
   display: flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
 }
 .route-ticket li svg {
   color: var(--color-primary);
@@ -1433,7 +1411,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   color: var(--color-secondary);
   font-size: 12px;
   font-weight: 800;
@@ -1441,7 +1419,7 @@ a:focus-visible {
 }
 @media (max-width: 720px) {
   .home-nav > div {
-    gap: var(--spacing-12);
+    gap: var(--space-4);
   }
   .home-hero,
   .home-tools,
@@ -1450,13 +1428,13 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
   .home-hero {
-    padding-top: var(--spacing-32);
+    padding-top: var(--space-9);
   }
   .hero-map {
     min-height: 410px;
   }
   .home-tools {
-    gap: var(--spacing-32);
+    gap: var(--space-9);
   }
   .spot-notes {
     grid-template-columns: 1fr;
@@ -1468,7 +1446,7 @@ a:focus-visible {
     align-items: start;
   }
   .route-ticket {
-    margin-bottom: var(--spacing-52);
+    margin-bottom: 52px;
   }
 }
 
@@ -1480,8 +1458,8 @@ a:focus-visible {
 .landing-go-top {
   position: fixed;
   z-index: 20;
-  right: var(--spacing-24);
-  bottom: var(--spacing-24);
+  right: var(--space-7);
+  bottom: var(--space-7);
   display: grid;
   width: 48px;
   height: 48px;
@@ -1507,13 +1485,13 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-28) var(--header-gutter);
+  padding: var(--space-8) var(--header-gutter);
   color: #faf7f0;
 }
 .landing-brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   color: inherit;
   font:
     700 13px/1 DM Mono,
@@ -1534,7 +1512,7 @@ a:focus-visible {
 }
 .landing-header nav {
   display: flex;
-  gap: clamp(var(--spacing-16), 2vw, var(--spacing-28));
+  gap: clamp(var(--space-5), 2vw, var(--space-8));
 }
 .landing-header nav a {
   color: inherit;
@@ -1577,14 +1555,14 @@ a:focus-visible {
   flex-direction: column;
   justify-content: center;
   min-height: min(920px, 100svh);
-  padding: var(--spacing-132) clamp(var(--spacing-24), 8vw, var(--spacing-132)) var(--spacing-112);
+  padding: 132px clamp(var(--space-7), 8vw, 132px) 112px;
   color: #faf7f0;
 }
 .landing-hero-content .eyebrow {
   color: var(--color-primary-highlight);
 }
 .landing-hero-content h2 {
-  margin: var(--spacing-16) 0;
+  margin: var(--space-5) 0;
   font:
     600 clamp(46px, 6vw, 92px)/0.99 Playfair Display,
     serif;
@@ -1603,7 +1581,7 @@ a:focus-visible {
   justify-items: center;
   max-width: 790px;
   margin: 0 auto;
-  padding: clamp(var(--spacing-100), 14vw, var(--spacing-180)) var(--spacing-24);
+  padding: clamp(100px, 14vw, 180px) var(--space-7);
   text-align: center;
 }
 .landing-intro .eyebrow,
@@ -1611,7 +1589,7 @@ a:focus-visible {
   color: var(--color-primary);
 }
 .landing-intro h2 {
-  margin: var(--spacing-16) 0;
+  margin: var(--space-5) 0;
   font:
     600 clamp(38px, 5vw, 70px)/1.05 Playfair Display,
     serif;
@@ -1629,15 +1607,15 @@ a:focus-visible {
 }
 .feature-section {
   display: grid;
-  gap: clamp(var(--spacing-88), 13vw, var(--spacing-172));
+  gap: clamp(88px, 13vw, 172px);
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 var(--spacing-24) clamp(var(--spacing-104), 14vw, var(--spacing-180));
+  padding: 0 var(--space-7) clamp(104px, 14vw, 180px);
 }
 .feature-row {
   display: grid;
   grid-template-columns: minmax(330px, 1.1fr) minmax(270px, 0.9fr);
-  gap: clamp(var(--spacing-40), 9vw, var(--spacing-132));
+  gap: clamp(var(--space-10), 9vw, 132px);
   align-items: center;
 }
 .feature-row.reverse {
@@ -1659,7 +1637,7 @@ a:focus-visible {
 .feature-kicker {
   display: flex;
   align-items: center;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
 }
 .feature-icon {
   display: grid;
@@ -1674,7 +1652,7 @@ a:focus-visible {
   margin: 0;
 }
 .feature-copy h3 {
-  margin: var(--spacing-12) 0;
+  margin: var(--space-4) 0;
   font:
     600 clamp(30px, 3.4vw, 47px)/1.08 Playfair Display,
     serif;
@@ -1688,8 +1666,8 @@ a:focus-visible {
 .feature-copy a {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-4);
-  margin-top: var(--spacing-12);
+  gap: var(--space-2);
+  margin-top: var(--space-4);
   color: var(--color-secondary);
   font-size: 12px;
   font-weight: 800;
@@ -1697,7 +1675,7 @@ a:focus-visible {
 }
 @media (max-width: 720px) {
   .landing-header {
-    padding: var(--spacing-20) var(--header-gutter);
+    padding: var(--space-6) var(--header-gutter);
   }
   .landing-header nav {
     display: none;
@@ -1707,24 +1685,24 @@ a:focus-visible {
     min-height: 680px;
   }
   .landing-hero-content {
-    padding: var(--spacing-132) var(--spacing-24) var(--spacing-100);
+    padding: 132px var(--space-7) 100px;
   }
   .landing-hero-content h2 {
     font-size: clamp(46px, 14vw, 68px);
   }
   .landing-intro {
-    padding: var(--spacing-96) var(--spacing-24);
+    padding: 96px var(--space-7);
     text-align: left;
     justify-items: start;
   }
   .feature-section {
-    gap: var(--spacing-88);
-    padding-inline: var(--spacing-20);
+    gap: 88px;
+    padding-inline: var(--space-6);
   }
   .feature-row,
   .feature-row.reverse {
     grid-template-columns: 1fr;
-    gap: var(--spacing-28);
+    gap: var(--space-8);
   }
   .feature-row.reverse .feature-image,
   .feature-row.reverse .feature-copy {
@@ -1741,7 +1719,7 @@ a:focus-visible {
   position: relative;
   max-width: none;
   margin: 0;
-  padding-block: var(--spacing-20);
+  padding-block: var(--space-6);
   background: #2a3e39;
   color: #f9f5ed;
   border: 0;
@@ -1760,7 +1738,7 @@ a:focus-visible {
 }
 .page-nav nav {
   display: flex;
-  gap: clamp(var(--spacing-16), 2vw, var(--spacing-28));
+  gap: clamp(var(--space-5), 2vw, var(--space-8));
 }
 .page-nav nav a {
   color: #f9f5ed;
@@ -1792,7 +1770,7 @@ a:focus-visible {
   background: #f9f6ef;
 }
 .sidebar {
-  padding: var(--spacing-28) var(--spacing-24);
+  padding: var(--space-8) var(--space-7);
 }
 .sidebar h2 {
   font-size: clamp(28px, 2.6vw, 38px);
@@ -1817,7 +1795,7 @@ a:focus-visible {
   box-shadow: 0 8px 20px rgb(49 55 46 / 0.14);
 }
 .detail-panel {
-  padding: var(--spacing-28) var(--spacing-24);
+  padding: var(--space-8) var(--space-7);
 }
 .detail-panel h2 {
   font-size: 23px;
@@ -1844,18 +1822,18 @@ a:focus-visible {
 .weather-guide {
   max-width: 920px;
   margin: 0 auto;
-  padding-inline: var(--spacing-24);
+  padding-inline: var(--space-7);
 }
 .weather-hero {
-  padding-top: clamp(var(--spacing-32), 4vw, var(--spacing-56));
-  padding-bottom: var(--spacing-24);
+  padding-top: clamp(var(--space-9), 4vw, var(--space-12));
+  padding-bottom: var(--space-7);
 }
 .weather-hero .eyebrow {
   color: var(--color-primary);
 }
 .weather-hero h2 {
   max-width: none;
-  margin: var(--spacing-16) 0 var(--spacing-32);
+  margin: var(--space-5) 0 var(--space-9);
   font:
     600 var(--text-display)/1.04 Playfair Display,
     serif;
@@ -1864,7 +1842,7 @@ a:focus-visible {
 .weather-summary {
   display: flex;
   align-items: center;
-  gap: var(--spacing-24);
+  gap: var(--space-7);
   color: var(--color-secondary);
 }
 .weather-summary strong {
@@ -1876,7 +1854,7 @@ a:focus-visible {
 }
 .weather-summary div {
   display: grid;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
 }
 .weather-summary span,
 .weather-error,
@@ -1905,20 +1883,20 @@ a:focus-visible {
   }
 }
 .weather-guide {
-  padding-bottom: var(--spacing-56);
+  padding-bottom: var(--space-12);
 }
 .weather-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-24);
-  margin-top: var(--spacing-32);
-  padding: var(--spacing-20) 0;
+  gap: var(--space-7);
+  margin-top: var(--space-9);
+  padding: var(--space-6) 0;
   border-block: 1px solid var(--color-border);
 }
 .weather-stats span {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   color: var(--color-muted);
   font-size: var(--text-copy);
 }
@@ -1929,17 +1907,17 @@ a:focus-visible {
 }
 .weather-period {
   display: grid;
-  gap: var(--spacing-8);
-  padding: var(--spacing-24) 0;
+  gap: var(--space-3);
+  padding: var(--space-7) 0;
 }
 .weather-period + .weather-period {
-  padding-left: var(--spacing-24);
+  padding-left: var(--space-7);
   border-left: 1px solid var(--color-border);
 }
 .weather-period-heading {
   display: flex;
   align-items: baseline;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
 }
 .weather-period h3 {
   margin: 0;
@@ -1959,8 +1937,8 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-16);
-  margin-top: var(--spacing-24);
+  gap: var(--space-5);
+  margin-top: var(--space-7);
   text-align: center;
 }
 .outfit-note img {
@@ -1971,7 +1949,7 @@ a:focus-visible {
   object-fit: contain;
 }
 .outfit-note .eyebrow {
-  margin: 0 0 var(--spacing-8);
+  margin: 0 0 var(--space-3);
   color: var(--color-muted);
   font-size: var(--text-label);
 }
@@ -1982,7 +1960,7 @@ a:focus-visible {
   line-height: 1.6;
 }
 .weather-source {
-  margin: var(--spacing-24) 0 0;
+  margin: var(--space-7) 0 0;
 }
 .weather-source a {
   color: inherit;
@@ -1993,7 +1971,7 @@ a:focus-visible {
 .spot-hero,
 .route-layout {
   max-width: 1080px;
-  padding-block: clamp(var(--spacing-60), 8vw, var(--spacing-96));
+  padding-block: clamp(60px, 8vw, 96px);
 }
 .spot-photo {
   min-height: 390px;
@@ -2022,7 +2000,7 @@ a:focus-visible {
   z-index: 1;
   align-self: end;
   justify-self: start;
-  margin: 0 0 var(--spacing-32) var(--spacing-32);
+  margin: 0 0 var(--space-9) var(--space-9);
   color: rgb(65 74 66 / 0.6);
   font:
     600 28px Playfair Display,
@@ -2032,8 +2010,8 @@ a:focus-visible {
   font-size: clamp(36px, 4vw, 52px);
 }
 .spot-notes {
-  gap: var(--spacing-12);
-  padding-bottom: var(--spacing-104);
+  gap: var(--space-4);
+  padding-bottom: 104px;
 }
 .spot-notes article {
   min-height: 166px;
@@ -2044,13 +2022,13 @@ a:focus-visible {
 }
 .route-layout {
   grid-template-columns: 0.9fr 1.1fr;
-  gap: clamp(var(--spacing-48), 9vw, var(--spacing-112));
+  gap: clamp(var(--space-11), 9vw, 112px);
 }
 .route-copy h2 {
   font-size: clamp(37px, 4vw, 52px);
 }
 .route-ticket {
-  padding: var(--spacing-32);
+  padding: var(--space-9);
   border: 1px solid var(--color-border);
   border-radius: 4px;
   background: #f9f6ef;
@@ -2058,7 +2036,7 @@ a:focus-visible {
 }
 .route-ticket::before {
   display: block;
-  margin-bottom: var(--spacing-24);
+  margin-bottom: var(--space-7);
   color: var(--color-muted);
   content: 'ROUTE PREVIEW';
   font:
@@ -2067,14 +2045,14 @@ a:focus-visible {
   letter-spacing: 0.13em;
 }
 .ticket-top {
-  padding-bottom: var(--spacing-20);
+  padding-bottom: var(--space-6);
   border-bottom: 1px solid var(--color-border);
 }
 .ticket-line {
-  margin: var(--spacing-24) 0;
+  margin: var(--space-7) 0;
 }
 .ticket-map {
-  padding-top: var(--spacing-4);
+  padding-top: var(--space-2);
 }
 .route-stops i {
   background: var(--color-primary);
@@ -2088,14 +2066,14 @@ a:focus-visible {
 @media (max-width: 720px) {
   .page-nav {
     min-height: 62px;
-    padding-block: var(--spacing-16);
+    padding-block: var(--space-5);
   }
   .page-nav nav {
     display: none;
   }
   .weather-hero,
   .weather-guide {
-    padding-inline: var(--spacing-24);
+    padding-inline: var(--space-7);
   }
   .topbar .project-note {
     display: none;
@@ -2111,7 +2089,7 @@ a:focus-visible {
   }
   .spot-hero,
   .route-layout {
-    padding: var(--spacing-48) var(--spacing-20);
+    padding: var(--space-11) var(--space-6);
   }
   .weather-periods {
     grid-template-columns: 1fr;
@@ -2125,7 +2103,7 @@ a:focus-visible {
     min-height: 290px;
   }
   .spot-notes {
-    padding: 0 var(--spacing-20) var(--spacing-72);
+    padding: 0 var(--space-6) var(--space-14);
   }
   .route-layout {
     grid-template-columns: 1fr;
@@ -2187,7 +2165,7 @@ a:focus-visible {
 .weather-visual-frame {
   width: 100%;
   height: 100%;
-  padding: var(--spacing-16);
+  padding: var(--space-5);
 }
 .weather-visual-frame img {
   display: block;
@@ -2199,7 +2177,7 @@ a:focus-visible {
   display: block;
   width: 100%;
   height: 100%;
-  padding: var(--spacing-16);
+  padding: var(--space-5);
   box-sizing: border-box;
   object-fit: contain;
 }
@@ -2295,12 +2273,12 @@ a:focus-visible {
   inset: 0;
   display: grid;
   place-items: center;
-  padding: var(--spacing-24);
+  padding: var(--space-7);
   background: rgb(30 43 38 / 0.26);
 }
 .spot-dialog {
   width: min(100%, 520px);
-  padding: var(--spacing-28);
+  padding: var(--space-8);
   border: 1px solid rgb(76 83 72 / 0.14);
   border-radius: 22px;
   background: #fbf8f2;
@@ -2332,7 +2310,7 @@ a:focus-visible {
   background: #f1ebe0;
 }
 .spot-dialog h2 {
-  margin: var(--spacing-24) 0 var(--spacing-8);
+  margin: var(--space-7) 0 var(--space-3);
   color: #1a2927;
   font:
     600 clamp(30px, 4vw, 42px)/1.04 Playfair Display,
@@ -2345,11 +2323,11 @@ a:focus-visible {
   font-size: 14px;
 }
 .spot-dialog .info-rule {
-  margin: var(--spacing-20) 0;
+  margin: var(--space-6) 0;
 }
 .spot-dialog-meta {
   display: grid;
-  gap: var(--spacing-12);
+  gap: var(--space-4);
   color: #56665e;
   font:
     700 14px Manrope,
@@ -2361,7 +2339,7 @@ a:focus-visible {
   line-height: 1.55;
 }
 .spot-dialog-meta span + span {
-  padding-top: var(--spacing-12);
+  padding-top: var(--space-4);
   border-top: 1px solid rgb(76 83 72 / 0.12);
 }
 .spot-dialog-meta span:last-child {
@@ -2369,15 +2347,15 @@ a:focus-visible {
 }
 .spot-dialog-list {
   display: grid;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
 }
 .spot-dialog-list button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-16);
+  gap: var(--space-5);
   width: 100%;
-  padding: var(--spacing-16) var(--spacing-16);
+  padding: var(--space-5) var(--space-5);
   border: 1px solid rgb(76 83 72 / 0.14);
   border-radius: 10px;
   background: #f5f0e7;
@@ -2401,14 +2379,14 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: var(--spacing-16);
+  margin-top: var(--space-5);
   color: #69766e;
   font:
     700 11px Manrope,
     sans-serif;
 }
 .spot-dialog-pagination button {
-  padding: var(--spacing-8) var(--spacing-12);
+  padding: var(--space-3) var(--space-4);
   border: 1px solid rgb(76 83 72 / 0.14);
   border-radius: 8px;
   background: transparent;
@@ -2472,9 +2450,9 @@ a:focus-visible {
 .spot-dialog-weather {
   display: flex;
   align-items: center;
-  gap: var(--spacing-16);
-  margin-top: var(--spacing-24);
-  padding: var(--spacing-16);
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+  padding: var(--space-5);
   border-radius: 14px;
   background: #f1ede4;
   color: #42564f;
@@ -2485,7 +2463,7 @@ a:focus-visible {
     sans-serif;
 }
 .spot-dialog-weather p {
-  margin: var(--spacing-4) 0 0;
+  margin: var(--space-2) 0 0;
   color: #69766e;
   font-size: 12px;
 }
@@ -2493,8 +2471,8 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: var(--spacing-24);
-  padding: var(--spacing-12) var(--spacing-16);
+  margin-top: var(--space-7);
+  padding: var(--space-4) var(--space-5);
   border-radius: 12px;
   background: #203632;
   color: #fbf8f2;
@@ -2509,11 +2487,11 @@ a:focus-visible {
 @media (max-width: 600px) {
   .spot-dialog-backdrop {
     align-items: end;
-    padding: var(--spacing-12);
+    padding: var(--space-4);
   }
   .spot-dialog {
     width: 100%;
-    padding: var(--spacing-24);
+    padding: var(--space-7);
     border-radius: 20px 20px 14px 14px;
   }
 }
@@ -2572,7 +2550,7 @@ a:focus-visible {
 }
 .map-area .maplibregl-ctrl-top-right {
   top: 18px;
-  right: var(--spacing-16);
+  right: var(--space-5);
   margin: 0;
 }
 .map-area .maplibregl-ctrl-top-right .maplibregl-ctrl {
@@ -2604,7 +2582,7 @@ a:focus-visible {
   background-color: #fbf8f1;
 }
 .map-area .maplibregl-ctrl-attrib {
-  padding: var(--spacing-4) var(--spacing-4);
+  padding: var(--space-2) var(--space-2);
   background: rgb(249 246 239 / 0.82);
   font:
     9px Manrope,
@@ -2625,7 +2603,7 @@ a:focus-visible {
   border-top-color: #fbf8f2;
 }
 .spot-popup {
-  padding: var(--spacing-16);
+  padding: var(--space-5);
 }
 .spot-popup-kicker {
   display: flex;
@@ -2642,7 +2620,7 @@ a:focus-visible {
 }
 .spot-popup strong {
   display: block;
-  margin: var(--spacing-12) 0 var(--spacing-4);
+  margin: var(--space-4) 0 var(--space-2);
   color: #1a2927;
   font:
     600 22px/1.1 Playfair Display,
@@ -2656,8 +2634,8 @@ a:focus-visible {
 }
 .spot-popup-time {
   display: block;
-  margin-top: var(--spacing-12);
-  padding-top: var(--spacing-12);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
   border-top: 1px solid #dfd9ce;
   color: #51615d;
   font:
@@ -2665,11 +2643,11 @@ a:focus-visible {
     sans-serif;
 }
 .cluster-popup strong {
-  margin-bottom: var(--spacing-12);
+  margin-bottom: var(--space-4);
 }
 .cluster-popup ul {
   display: grid;
-  gap: var(--spacing-8);
+  gap: var(--space-3);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2684,13 +2662,13 @@ a:focus-visible {
   white-space: nowrap;
 }
 .cluster-popup li::before {
-  margin-right: var(--spacing-8);
+  margin-right: var(--space-3);
   color: var(--color-primary);
   content: '•';
 }
 .cluster-popup p {
-  margin-top: var(--spacing-12);
-  padding-top: var(--spacing-8);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
   border-top: 1px solid #dfd9ce;
   color: #6d776f;
   font-size: 10px;
@@ -2703,7 +2681,7 @@ a:focus-visible {
 }
 .language-select select {
   appearance: none;
-  padding: var(--spacing-8) var(--spacing-24) var(--spacing-8) var(--spacing-8);
+  padding: var(--space-3) var(--space-7) var(--space-3) var(--space-3);
   border: 0;
   border-radius: 8px;
   background: transparent;
