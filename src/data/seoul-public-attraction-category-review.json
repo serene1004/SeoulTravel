@@ -1,0 +1,6416 @@
+{
+  "source": {
+    "name": "서울시 관광 명소",
+    "datasetUrl": "https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do",
+    "serviceName": "TbVwAttractions",
+    "license": "공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)",
+    "retrievedAt": "2026-09-04T04:45:19.966Z"
+  },
+  "reviewedAt": "2026-09-12T10:38:10.742Z",
+  "criteria": [
+    {
+      "category": "Cafe",
+      "keywords": "카페|커피|coffee|cafe|찻집|다방|tea"
+    },
+    {
+      "category": "Culture",
+      "keywords": "박물관|미술관|갤러리|궁|성당|사찰|절|도서관|기념|유적|역사|한옥|전시|공예|공연|학교|대학|극장|서점|교회|성지|문화재"
+    },
+    {
+      "category": "Food",
+      "keywords": "맛집|식당|음식|레스토랑|restaurant|푸드|먹거리|제과|빵|치킨|냉면|면옥|과자|분식|떡볶이|만두|호프|맥주|주점|술집|와인|디저트|베이커리|케이크|아이스크림|국밥|고기|구이|한식|중식|일식|양식|피자|버거|라면|찌개|족발|보쌈|칼국수|비빔밥|갈비|삼계탕|죽|포차|감자탕|감자국|뼈찜|순대|설렁탕|불고기|삼겹|닭갈비|곰탕"
+    },
+    {
+      "category": "Nature",
+      "keywords": "공원|숲|한강|호수|생태|수목원|계곡|습지|둘레길|북한산|남산|관악산|인왕산|북악산|도봉산|일자산"
+    }
+  ],
+  "records": [
+    {
+      "id": "53539",
+      "name": "63 스카이피크닉",
+      "tags": "63빌딩,서울전망대,서울야경,63빌딩전망대,루프탑,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "15338",
+      "name": "1898 명동성당 ",
+      "tags": "복합문화공간,성당,명동나들이,명동, 1898광장,명동대성당, 고딕",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성당"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "53481",
+      "name": "GALLERY J. ONE",
+      "tags": "삼청나잇,GalleryJONE,아트컬렉팅,GalleryJONESeoul,삼청동전시,삼청동갤러리,북촌전시,북촌갤러리,경복궁전시,팔판동,종로전시,kiaf,서울전시,갤러리제이원서울,갤러리제이원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "갤러리",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "252",
+      "name": "63스퀘어",
+      "tags": " 63아트, 63빌딩전망대,63아쿠아플라넷,63스퀘어,여의도,아쿠아리움,데이트코스,63빌딩,전망대,63빌딩레스토랑",
+      "category": "Food",
+      "matchedKeywords": [
+        "레스토랑"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "24732",
+      "name": "SJ쿤스트할레",
+      "tags": "타이거버스, 강남구청역,문화예술플랫품, 시티투어버스정류장, SJ쿤스트할레,압구정로데오거리",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "37044",
+      "name": "KCDF갤러리",
+      "tags": "kcdf,한국공예디자인문화진흥원,디자인,공예,공예전문갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "공예"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2885",
+      "name": "PKM갤러리",
+      "tags": "영상,광화문, 윈도우갤러리, 조각, 화랑,삼청동갤러리, 미술관, 갤러리투어, 회화,한옥, 안국역, PKM갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "미술관",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50533",
+      "name": "e스포츠 명예의 전당",
+      "tags": "e스포츠 명예의 전당,전시관,e스포츠 전시,서울전시,스튜디오체험,VR",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28338",
+      "name": "ECC(Ewha Campus Complex)",
+      "tags": " EwhaCampusComplex, 공연, 독서실, 강의실, 이대, 홍대, 전시관,이화여자대학교,ECC",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공연",
+        "전시",
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27812",
+      "name": "가원공방",
+      "tags": " 종로귀금속거리,오래가게, 전통, 종로,옥공예, 종로5, 공방",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46391",
+      "name": "갤러리모순",
+      "tags": "갤러리,정동길,덕수궁돌담길,정동,신아기념관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "궁",
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "6927",
+      "name": "경희대학교 중앙박물관",
+      "tags": " 유물,중앙도서관, 주먹도끼,역사, 경희대학교중앙박물관, 경희대, 전시,빗살무늬토기,경희대학교,회기역, 박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "박물관",
+        "도서관",
+        "역사",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "8646",
+      "name": "고려삼계탕",
+      "tags": "서소문동,한식맛집,고려삼계탕,시청음식점,미쉐린가이드,삼계탕,서소문음식점,미슐랭,전복죽,보양식,서소문맛집,오골계탕",
+      "category": "Food",
+      "matchedKeywords": [
+        "삼계탕",
+        "한식",
+        "맛집",
+        "음식",
+        "죽",
+        "양식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46875",
+      "name": "마복림 할머니집",
+      "tags": "오래가게,떡볶이,신당,분식점",
+      "category": "Food",
+      "matchedKeywords": [
+        "떡볶이",
+        "분식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46447",
+      "name": "고터·세빛 관광안내소",
+      "tags": "고터·세빛 관광안내소,고속터미널,반포한강공원,관광안내소",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강",
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26676",
+      "name": "공근혜갤러리",
+      "tags": "경복궁,미술관,갤러리,사진,청와대,현대미술,안국역,삼청동,공근혜갤러리,화랑",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "궁",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "23605",
+      "name": "광희문",
+      "tags": " 도성,서울4소문,4소문, 서소문,광희문, 동대문역사문화공원역, 동대문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "28050",
+      "name": "경기떡집",
+      "tags": "이티떡,망원동,마포,설기,오래가게,이북식인절미",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26675",
+      "name": "공평도시유적전시관",
+      "tags": "전시관,서울역사박물관,문화재,관람,유적,박물관,공평도시유적전시관,도시박물관,종각역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "전시",
+        "역사",
+        "박물관",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49295",
+      "name": "남산서울타워 물품보관소",
+      "tags": "남산타워",
+      "category": "Nature",
+      "matchedKeywords": [
+        "남산"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "41903",
+      "name": "김근태기념도서관",
+      "tags": "김근태,김근태기념도서관,라키비움, 도봉산역,도봉구도서관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "1900",
+      "name": "광화문광장",
+      "tags": " 세종대왕,도시 문화 광장,세종문화회관,청계천, 경복궁,광화문광장,광화문, 이순신",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "433",
+      "name": "국립중앙박물관",
+      "tags": "국립,관람,어린이박물관,용산구,국립중앙,이촌역,유물, 박물관, 역사,시티투어버스, 국립중앙박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "35405",
+      "name": "국립한글박물관 ",
+      "tags": "국립한글박물관,세종대왕,한글박물관,한글, 훈민정음",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2084",
+      "name": "가나아트센터",
+      "tags": "김종구,경복궁역,종로갤러리,가나아트센터,아트센터,윤종석,미술관,심상풍경,문화,예술",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "갤러리",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "20549",
+      "name": "경찰박물관",
+      "tags": "종로가볼만한곳,서울아이와함께가볼만한곳,경찰기념관,어린이와함께,아이와서울여행,박물관,어린이체험관,경찰박물관,서대문경찰박물관,경찰,서울여행",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42288",
+      "name": "그래픽",
+      "tags": "그래픽,해방촌,어른전용서점,북카페,만화카페,이태원,서점",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2066",
+      "name": "김종영 미술관",
+      "tags": " 경복궁역,전시,김종영,현대조각, 서울 미술관, 길음역, 서울 전시, 미술관, 갤러리, 문화, 평창동, 광화문역,김종영미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "궁",
+        "전시",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "53911",
+      "name": "디뮤지엄 (D MUSEUM)",
+      "tags": "서울숲,대림미술관,예술,디뮤지엄,서울전시,문화",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "276",
+      "name": "남산골 한옥마을",
+      "tags": "남산둘레길,서울아이와나들이,서울전통명소,남산골한옥마을,서울데이트코스,남산공원,서울남산,서울사진명소,서울여행,서울핫플레이스,국내한옥마을추천",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "32546",
+      "name": "대림시장 감자국거리",
+      "tags": "응암동, 은평구,대림시장,새절역, 감자국거리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "52701",
+      "name": "동대문역사관",
+      "tags": "동대문,박물관,역사,서울,DDP,동대문디자인플라자,동대문역사문화공원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "43460",
+      "name": "라플루마앤보헤미안",
+      "tags": " 카페,오래가게, 커피명가, 드립커피,바리스타,고려대, 커피,커피맛집",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페",
+        "커피"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "52705",
+      "name": "동대문운동장기념관",
+      "tags": "동대문디자인플라자,DDP,서울,역사,박물관,동대문운동장,경성운동장,서울운동장,동대문역사문화공원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "역사",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "53498",
+      "name": "러기지 라운지 안국락커 (Luggage Lounge Anguk Locker)\t",
+      "tags": "서울 캐리어보관,종로 물품보관소,서순라길 짐보관,종묘 짐보관,익선동 짐보관,인사동 짐보관,창덕궁 짐보관,북촌한옥마을 짐보관,안국 캐리어보관,안국역 코인락커,안국역 짐보관,안국역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "53931",
+      "name": "러기지닷 스토리지 서울역점 ( LuggageDot Storage Seoul Station )",
+      "tags": "luggage,storage,locker,suitcase,짐보관소,캐리어보관,라커,무인락커,짐보관,서울역코인라커,물품보관함",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50802",
+      "name": "마포옥",
+      "tags": "설렁탕,오래가게,마포,미래유산,용강동",
+      "category": "Food",
+      "matchedKeywords": [
+        "설렁탕"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1809",
+      "name": "목인박물관",
+      "tags": "문화, 목인갤러리, 박물관, 인사동,쌈지길,옥상정원, 갤러리,목인박물관, 종각역, 관광지, 광화문,안국역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "450",
+      "name": "문화역서울 284",
+      "tags": "유적지, 서울역, 기차역,문화역서울284, 서울역전시회, 광화문, 미술관,역사,문화역서울, 구서울역,전시, 284",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "전시",
+        "미술관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "19924",
+      "name": "뮤지엄김치간",
+      "tags": "광화문,김치박물관,뮤지엄김치간,박물관,김치전시,안국역,김치체험관,김치만들기,김치,종각역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "53388",
+      "name": "백빈건널목",
+      "tags": "나의아저씨,기찻길,철도건널목,용산,드라마촬영지",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "2436",
+      "name": "부민옥",
+      "tags": " 추어탕,부민옥,한식,양무침,명동,종각음식점,육개장, 한식맛집, 경상도음식, 을지로맛집,시청음식점,을지로음식점,수요미식회",
+      "category": "Food",
+      "matchedKeywords": [
+        "한식",
+        "음식",
+        "맛집"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11669",
+      "name": "서울상상나라",
+      "tags": " 체험관, 교육프로그램, 서울시민안전체험관,어린이,가족,문화,서울상상나라, 어린이대공원역,문화공간",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3319",
+      "name": "서울대학교 미술관 MoA",
+      "tags": "서울대, 신림동,미술관, 서울대입구역,문화, 서울대학교미술관, 렘쿨하스, 서울대학교,MoA",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2615",
+      "name": "서대문자연사박물관",
+      "tags": "신촌역, 화산폭발,자연사도서관, 서대문자연사박물관, 광화문, 홍대, 박물관, 자연사박물관, 지구환경, 역사,연희동",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "도서관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "53632",
+      "name": "서울 흥천사",
+      "tags": "이성계,신덕왕후,정릉,흥천사,서울4대사찰,서울사찰",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49413",
+      "name": "서울로봇인공지능과학관(RAIM)",
+      "tags": "로봇,인공지능,서울RAIM,서울로봇인공지능과학관,AI체험,로봇과학관,AI,과학전시,로봇체험",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43489",
+      "name": "예문사",
+      "tags": "오래가게, 수제도장, 캘리그라피, 붓글씨, 인감도장,수제인감, 을지로3가",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "6668",
+      "name": "대한민국역사박물관",
+      "tags": "독립선언서,경복궁역,야경, 전시, 광화문역,종각역, 역사박물관,광화문,대한민국역사박물관, 전망대,박물관,역사체험학습",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "박물관",
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "44180",
+      "name": "서울스카이",
+      "tags": "롯데월드타워전망대,롯데월드몰,전망대,야경,서울스카이,롯데월드타워",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43437",
+      "name": "서울스튜디오",
+      "tags": "오래가게,사진관,미아동,강북구,취업사진,가족사진,여권사진",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "44450",
+      "name": "서울시립과학관",
+      "tags": "서울시립과학관,청소년,교육,과학행사,과학축제,문화행사,야간개장,과학,과학교실,어린이",
+      "category": "Culture",
+      "matchedKeywords": [
+        "학교"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1525",
+      "name": "서울시립미술관 (서소문본관)",
+      "tags": "시청역,문화,서울전시,서울시립미술관, 미술관,덕수궁,정동길, 서소문동,서대문역,미술, 예술, 광화문,갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시",
+        "궁",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43459",
+      "name": "봉화묵집",
+      "tags": "부침,손만두, 한식,오래가게, 메밀묵, 수제가정식, 단골장사, 정릉, 가성비",
+      "category": "Food",
+      "matchedKeywords": [
+        "만두",
+        "한식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2723",
+      "name": "서울역사박물관",
+      "tags": " 서대문역,경복궁역, 터치뮤지엄,유물, 광화문역,문화체험, 경희궁,서울역사박물관, 전통, 역사, 광화문,박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "박물관",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "4867",
+      "name": "서울중앙성원",
+      "tags": "한국이슬람교, 관광지, 성지, 사원, 우사단길,이슬람서울성원,이태원역, 이슬람교,한국이슬람교중앙회, 이슬람서울중앙성원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성지"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50884",
+      "name": "석교식당 ",
+      "tags": "안산,오래가게,인왕산,은평,순대국,영천시장",
+      "category": "Food",
+      "matchedKeywords": [
+        "식당",
+        "순대"
+      ],
+      "matchedCategories": [
+        "Food",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "52451",
+      "name": "군기시유적전시실",
+      "tags": "불랑기자포,무기제조,화약무기,유적,유구,군기시,승자총통",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "18992",
+      "name": "아르코미술관",
+      "tags": "문화,혜화역,동숭동, 그림, 대학로, 미술관,서울전시, 한국문화예술진흥원, 전시, 동대문, 아르코미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "대학",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1414",
+      "name": "선정릉(선릉)",
+      "tags": "세계문화유산,전릉,선릉,서울데이트장소추천,서울역사적명소,서울가볼만한곳,도시속유네스코,문화유산,선릉데이트장소,선정릉,공원데이트,선릉역,서울공원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "53265",
+      "name": "성북예술창작터",
+      "tags": "미술교육,행사,서울전시,미술관,성북구미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43458",
+      "name": "JS슈즈디자인연구소",
+      "tags": " 성수동카페거리, 성수, 남자구두, 전태수수제화, 여자구두,오래가게, 수제화",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1647",
+      "name": "국립민속박물관",
+      "tags": " 추억의거리, 시티투어버스정류장,경복궁, 생활문화,박물관, 인사동,삼청동,광화문,국립민속박물관,역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "궁",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "23758",
+      "name": "소덕문 터(옛 서소문)",
+      "tags": "성문, 소문, 문화재,옛서소문, 소덕문터,소의문,시청역,소덕문, 광화문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "33828",
+      "name": "성신여대 복식박물관 및 자연사박물관",
+      "tags": "성신여대 복식박물관,자연사박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1442",
+      "name": "스페이스 씨",
+      "tags": "화장박물관, 압구정역, 코리아나,문화,문화공간, 미술관 , 복합문화공간, 강남,코리아나화장품,화장품,박물관,스페이스씨,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2175",
+      "name": "암사동 선사주거지",
+      "tags": " 역사, 토기,관광지,신석기시대,암사역,암사동선사주거지,유적지, 암사동유적, 선사유적지,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "유적",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5228",
+      "name": "명동함흥면옥",
+      "tags": "냉면, 냉면맛집,명동,회냉면,함흥면옥, 함흥냉면,냉면음식점,비빔냉면,명동냉면집,명동맛집",
+      "category": "Food",
+      "matchedKeywords": [
+        "면옥",
+        "냉면",
+        "맛집",
+        "음식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2435",
+      "name": "연세대학교 스팀슨관&언더우드관&아펜젤러관",
+      "tags": " 홍대,신촌역, 유적지, 아펜젤러, 스팀슨,신촌캠퍼스, 언더우드, 배재학당,연세대학교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2250",
+      "name": "영학정",
+      "tags": "양천구,옛군사훈령장,양궁,안양천,활쏘기체험,목동,오목교역,자연,영학정",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "23561",
+      "name": "세운상가",
+      "tags": "을지로명소,서울가볼만한곳,힙지로,서울놀거리,종로가볼만한곳,세운상가옥상,종로데이트,을지로,서울투어,서울핫플,종로,종로3가역,서울명소,세운상가,을지로핫플,을지로데이트",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "2962",
+      "name": "고려대학교 본관 및 구 중앙도서관",
+      "tags": "안암역, 도서관, 고려대학교, 역사, 대학교도서관, 성북구, 해송법학도서관, 유적지,고려대, 고려대역,안암동도서관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "도서관",
+        "역사",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "38021",
+      "name": "국립항공박물관\t",
+      "tags": "국립박물관,비행기박물관,museum,항공박물관,국립항공박물관,박물관,항공,비행기,김포-공항",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "261",
+      "name": "북촌한옥마을",
+      "tags": "서울여행,서울명소,북촌한옥마을,서울데이트,한국전통가옥,서울북촌한옥마을,서울나들이,한국문화,부모님과함께,서울가볼만한곳,한국전통,걷기좋은곳,한옥마을,북촌한옥마을데이트",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "10231",
+      "name": "서울도서관 (옛 서울시청사)",
+      "tags": "문화,시청역,광화문,을지로역,서울시청사,공공도서관,시청사통통투어,시청,도서관,서울도서관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49647",
+      "name": "서울백제어린이박물관",
+      "tags": "올림픽공원,몽촌토성,한성백제박물관,서울백제어린이박물관,서울고대역사,유물전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "4325",
+      "name": "예술의전당 한가람미술관",
+      "tags": " 미술전시회, 문화,전시, 혼자전시회,미술관,남부터미널역, 한가람미술관, 예술의전당전시, 예술의전당, 예술",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "471",
+      "name": "운현궁 ",
+      "tags": "서울산책코스,서울,서울궁궐,서울고궁투어,종묘,서울가볼만한곳,서울볼거리,데이트코스,한국궁궐,서울나들이여행,운현궁,서울여행",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5208",
+      "name": "의릉",
+      "tags": "신이문역, 관광지, 세계문화유산, 경종, 역사,중앙정보부, 돌곶이역,유적지,선의왕후,유네스코, 의릉",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27814",
+      "name": "유일한의원",
+      "tags": "오래가게,서울미래유산,종로5가,동대문역,한방치료,한의학,한방",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "11864",
+      "name": "인천국제공항 제 1터미널 서울관광정보센터 (동편)",
+      "tags": " 안내,관광안내소,여행,인천국제공항,인천국제공항서울관광정보센터,안내소,공항,관광정보센터,서울관광정보센터",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "52890",
+      "name": "달마사",
+      "tags": "사찰,불교,절,서달산,흑석동,달마사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰",
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42078",
+      "name": "인천국제공항 제 1터미널 서울관광정보센터 (서편)",
+      "tags": "관광정보센터,인천국제공항,서편,제1터미널",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "2252",
+      "name": "일민미술관",
+      "tags": "광화문,일민미술관,일민김상만,광화문이마,광화문역,예술,일민문화재단,전시,미술관,카페이마,신문박물관,문화",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "42350",
+      "name": "박노수미술관",
+      "tags": "박노수미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1789",
+      "name": "도산공원",
+      "tags": "공원,안창호,도산공원, 전시, 압구정역,강남, 도산안창호,기념관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "29561",
+      "name": "aT센터",
+      "tags": " 양재시민의숲역,aT센터, 회의실,국제회의,MICE,컨벤션, 전시, 교역전,박람회",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "6433",
+      "name": "배재학당역사박물관",
+      "tags": "학교,박물관,배재학당,시청역,배재학당역사박물관, 역사, 전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "박물관",
+        "학교",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "889",
+      "name": "정동길",
+      "tags": "정동길,서울골목여행,서울단풍구경,서울걷기좋은곳,정동길단풀,주말산책,덕수궁길,정동길야경,덕수궁돌담길,서울산책,서울문화거리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3461",
+      "name": "정릉",
+      "tags": " 조선왕릉, 정릉,유적지,연산군묘,산책로, 역사, 태조, 신덕왕후,조선왕조,성신여대입구역, 이성계",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43457",
+      "name": "유홍식 수제화 명장 1호",
+      "tags": "수제화,유홍식수제화명장1호,성수,오래가게,성수동카페거리",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "38243",
+      "name": "서울생활사박물관",
+      "tags": "경춘선엠티의추억,서울전시,서울아이와갈만한곳,서울가볼만한곳,서울나들이,서울생활사박물관,서울,서울박물관,서울전시추천,비오는날",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50364",
+      "name": "지역관광 안테나숍(Seoul Regional Tourism Center)",
+      "tags": "안테나숍,seoul regional tourism center,로컬여행,지역관광안테나숍,지역여행",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "27219",
+      "name": "남대문시장 관광안내소",
+      "tags": "안내소,여행,안내,남대문시장-관광안내소,관광안내소,남대문시장,남대문",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "40795",
+      "name": "용산공원 부분개방부지",
+      "tags": "산책,미군기지,용산,용산공원부분개방기지,나들이,부분개방부지,용산공원",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52620",
+      "name": "감사의 정원",
+      "tags": "프리덤 홀,광화문광장,감사의 정원,감사의 빛 23,전시 해설",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "38858",
+      "name": "가을단풍길(월드컵로)",
+      "tags": "서울단풍,월드컵로가을단풍길,서울드라이브코스,단풍명소추천,서울가을단풍명소,가을단풍길,가을산책하기좋은길,월드컵로,강아지산책코스,서울산책하기좋은길,서울산책코스",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "27218",
+      "name": "이태원 관광안내소(지하)",
+      "tags": "이태원역,이태원,관광안내소,여행,안내소,안내,이태원-관광안내소지하",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "39708",
+      "name": "춘당지",
+      "tags": "서울가을데이트명소,창경궁춘당지,아름다운서울의명소,춘당지,서울놀거리,단풍명소,가을단풍,산책하기좋은곳",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "54054",
+      "name": "파메서울",
+      "tags": "갤러리,서울전시,서울갤러리,용산쇼룸",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5334",
+      "name": "서울올림픽기념관",
+      "tags": "서울올림픽회관,박물관,역사,서울올림픽기념관,스포츠,평창올림픽,기념관,올림픽공원,전시,올림픽",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "박물관",
+        "역사",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "3177",
+      "name": "성균관 명륜당",
+      "tags": "역사, 성균관대학교,명륜당,성균관명륜당,인문사회과학캠퍼스,혜화역, 유적지, 명륜당은행나무",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "대학",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1846",
+      "name": "약현성당",
+      "tags": "천주교,성당,종교,서울역,순교자기념관,결혼식,고딕성당,중림동성당,약현성당,서양식",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성당",
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "1153",
+      "name": "양화진외국인선교사묘원",
+      "tags": "양화진외국인선교사묘원, 한국선교기념관,선교사,합정역,합정동,양화진,홍대,기념관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50906",
+      "name": "일등식당",
+      "tags": "뼈해장국,감자탕,해장,오래가게,마포구,망원시장,망원동",
+      "category": "Food",
+      "matchedKeywords": [
+        "식당",
+        "감자탕"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "19540",
+      "name": "위안부 '기억의 터'",
+      "tags": " 기억의터, 명동, 남산, 기림비, 충무로역,명동역, 역사,추모공원, 위안부, 교육",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2587",
+      "name": "조계사",
+      "tags": "사찰,서울템플스테이,조계사,종로구조계사,목불좌상,혜능대사,종교,유형문화재,서울조계사,절",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰",
+        "문화재",
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "19656",
+      "name": "성균관대학교",
+      "tags": "명륜당, 광화문,성균관, 혜화역, 성균관대, 대학로, 성균관대학교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "53992",
+      "name": "퐁피두센터 한화",
+      "tags": "문화예술,전시,기획,현대미술관,근현대미술,63빌딩,여의도,퐁피두센터,한화문화재단,퐁피두센터,파리,한화,공간",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "미술관",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "16325",
+      "name": "반포대교 야경",
+      "tags": "야경,서울의밤,무지개분수,서울,반포대교,데이트코스,걷기,반포야경,서울풍경,반포한강공원,서울야경명소,서울여행,공원,반포대교달빛무지개분수,반포대교옆한강공원,산책,한강데이트",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강",
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2395",
+      "name": "세검정",
+      "tags": "상명대학교,홍제역,인조반정,세검정,유적지",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49239",
+      "name": "동대문역 물품보관소",
+      "tags": "동대문역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "46871",
+      "name": "종로 은행나무집",
+      "tags": " 한식당,갈비,오래가게,종로",
+      "category": "Food",
+      "matchedKeywords": [
+        "한식",
+        "갈비"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "36",
+      "name": "남산서울타워 ",
+      "tags": "남산타워,서울야경명소,전망,야경,전망대,남산,명동,남산서울타워,서울데이트장소,남산타워전망대,서울데이트,서울야경,N서울타워,케이블카",
+      "category": "Nature",
+      "matchedKeywords": [
+        "남산"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "48426",
+      "name": "손기정문화도서관",
+      "tags": "서울역놀거리,손기정공원,서울도서관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "33825",
+      "name": "서울하수도과학관",
+      "tags": "환경, 교육, 뮤지엄, museum,과학, 하수도과학관,과학관, 물재생센터,하수처리",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "37008",
+      "name": "익선동 한옥거리",
+      "tags": "서울걷기좋은곳, 한옥마을,서울산책,한국전통,서울한옥,서울나들이,익선동한옥거리,전통거리,익선동,서울데이트,한옥거리,한국문화,서울데이트코스,익선동데이트,데이트코스추천",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "30804",
+      "name": "서소문성지역사박물관",
+      "tags": "서소문성지역사박물관,교회사,역사박물관,전시,도서관,순교성지,지상공원,충정로역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성지",
+        "역사",
+        "박물관",
+        "교회",
+        "전시",
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "43609",
+      "name": "젬브로스",
+      "tags": "강,다이아몬드,가로수길,결혼예물,오래가게,웨딩반지,파인주얼리",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "29716",
+      "name": "성우이용원",
+      "tags": "남성전문, 바버샵,오래가게, 청파동, 서울미래유산, 이용원, 서울역, 이발소, 공덕",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "6465",
+      "name": "초전섬유퀼트박물관",
+      "tags": "전시,섬유박물관,명동,명동역,바느질,전통자수,궁중의상,초전섬유퀼트박물관,남산,전통,예술,박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "52749",
+      "name": "러기지큐 서울역점",
+      "tags": "luggage,storage,짐보관,서울역짐보관,짐보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49246",
+      "name": "동대문역사문화공원역 물품보관소",
+      "tags": "동대문역사문화공원역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2039",
+      "name": "떡박물관",
+      "tags": " 종로3가역, 체험관, 전통식문화체험, 전통음식, 전통체험, 전통, 떡카페, 한국전통음식연구소, 박물관, 떡박물관,떡만들기체험",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "53521",
+      "name": "한강유람선 이랜드크루즈",
+      "tags": "한강유람선,이랜드크루즈애슐리,진성나루,한강이랜드크루즈,런닝맨,이랜드크루즈,하천,자연,이랜드크루즈뷔페,한강데이트,여의나루역,여의도",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "507",
+      "name": "종묘",
+      "tags": " 광화문,창덕궁, 창경궁,유네스코세계문화유산,종묘제례,종로3가역,종묘사직, 종묘",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52697",
+      "name": "한양도성박물관",
+      "tags": "한양도성,수도성곽,박물관,역사,서울,흥인지문공원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "3330",
+      "name": "삼성출판박물관",
+      "tags": "박물관, 경복궁역,불광역,  문화유산, 역사, 김종규, 뮤지엄아카데미,삼성출판박물관, 출판박물관, 구기동,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "궁",
+        "역사",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52753",
+      "name": "러기지큐 홍대점",
+      "tags": "luggage,짐보관,홍대짐보관,짐보관소,storage",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50851",
+      "name": "은평역사한옥박물관",
+      "tags": "은평역사한옥박물관,한옥박물관,은평한옥마을,전시,교육,체험,한국문화체험",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "한옥",
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46789",
+      "name": "아트사이드 갤러리",
+      "tags": "서촌,아트사이드갤러리,미술관,전시,갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2012",
+      "name": "경인미술관",
+      "tags": " 경인미술관, 서울미술관, 미술관,인사동오래가게, 미술관, 경인미술관, 전시회, 문화, 전시회, 문화, 인사동,오래가게, 서울전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28340",
+      "name": "연세대 캠퍼스",
+      "tags": "연세대 캠퍼스, 홍대,캠퍼스, 언더우드, 신촌, 대학교, 연세대학교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "37130",
+      "name": "일자산허브천문공원",
+      "tags": " 서울 천문대,서울산책코스,조깅코스, 서울의 별,일자산,서울 야경, 가족나들이, 둘레길 코스, 부모님과 갈만한 곳,일자산허브천문공원,서울걷기좋은길,서울가볼만한곳",
+      "category": "Nature",
+      "matchedKeywords": [
+        "일자산",
+        "공원",
+        "둘레길"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5797",
+      "name": "종이나라박물관",
+      "tags": "종이나라박물관,종이인형,종이공예,한지,종이접기,색지공예,한지그림,전통,미술,박물관,동대입구역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "공예"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2010",
+      "name": "안동교회 소허당",
+      "tags": "소허당, 북촌교회, 선교사,한옥, 안국역,안동교회, 북촌,광화문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "교회",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52901",
+      "name": "드로잉룸",
+      "tags": "드로잉룸,dR,전시,현대미술,서촌갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "295",
+      "name": "창덕궁",
+      "tags": "서울,서울명소,창덕궁,서울데이트코스,고궁투어,세계유산,서울필수여행지,한국문화,서울여행코스,한국전통,서울가볼만한곳,서울한복투어,한국여행코스",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "16319",
+      "name": "광화문광장 야경",
+      "tags": " 문화,야경, 세종대왕,역사,광화문광장,광화문, 청계천,이순신, 광장",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52659",
+      "name": "경교장",
+      "tags": "대한민국임시정부,백범 김구,경교장",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "24705",
+      "name": "국선옻칠",
+      "tags": " 나전칠기,오래가게, 종로,자개보석함, 명함케이스, 제조도매, 광장시장, 서울미래유산",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "47356",
+      "name": "옥상정원 (The Roof)",
+      "tags": "서울데이트코스,서울역피크닉,서울산책로,서울역근처가볼만한곳,서울명소,커넥트플레이스,서울역공원,서울나들이",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "36843",
+      "name": "금선사",
+      "tags": "인왕산,구기동,금선사,서울절,템플스테이",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "11839",
+      "name": "김포공항관광정보센터",
+      "tags": "관광정보,서울안내,김포공항,김포공항관광정보센터,관광안내소,안내소,서울관광정보센터",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "7162",
+      "name": "마포옥",
+      "tags": "수요미식회,설렁탕,마포음식점,한강,마포,마포옥,설렁탕음식점,차돌탕",
+      "category": "Food",
+      "matchedKeywords": [
+        "설렁탕",
+        "음식"
+      ],
+      "matchedCategories": [
+        "Food",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "50910",
+      "name": "장가구 ",
+      "tags": "은평구,탕수육,짜장면,중국집,역촌동,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "52632",
+      "name": "딜쿠샤",
+      "tags": "서울 앨버트 테일러 가옥,딜쿠샤",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "4541",
+      "name": "장수갈비집본가",
+      "tags": "숯불갈비,고기맛집,명동역,갈비,한정식,명동맛집,충무로맛집,장수갈비집",
+      "category": "Food",
+      "matchedKeywords": [
+        "갈비",
+        "고기",
+        "맛집"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1826",
+      "name": "사직단",
+      "tags": "사직공원,문화,경복궁,어린이도서관,제사,유적지,사직대제,사직단,경복궁역,역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "도서관",
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "52806",
+      "name": "서강대학교",
+      "tags": "노고산성지,서강대학교,노고산,산책길,캠퍼스풍경,경의선숲길",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "성지"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "43462",
+      "name": "쌍마스튜디오",
+      "tags": "여의도,프로필사진,증명사진,연예인사진관,사진관,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "45573",
+      "name": "장희빈 우물터",
+      "tags": "조선시대,장희빈,연희동,역사,장희빈우물터,대한민국역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11469",
+      "name": "명동관광정보센터",
+      "tags": "명동,관광정보,서울관광정보센터,안내,을지로입구역,명동관광정보센터,관광정보센터",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "32529",
+      "name": "정동1928 아트센터",
+      "tags": "예술,서울,정동1918아트센터,광화문볼거리,서울특별행사,광화문역,정동길산책,구세군중앙회관,서울전시회,정동,역사,대한민국,센터",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "45524",
+      "name": "왕짱구식당",
+      "tags": "왕짱구식당, 종로",
+      "category": "Food",
+      "matchedKeywords": [
+        "식당"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2299",
+      "name": "태릉, 강릉",
+      "tags": "강릉,유적지,태릉,노원구,화랑대역,태릉선수촌,왕릉",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "23496",
+      "name": "서울로7017",
+      "tags": "야경,서울걷기좋은곳,서울력고가,산책하기좋은곳,서울야경,서울명소,서울여행,서울로7017,서울여름여행,서울역,서울여름가볼만한곳,서울관광",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "52584",
+      "name": "아트큐브 2R2",
+      "tags": "exhibition,미디어아트,사진,회화,컬렉팅,갤러리,전시,nft",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "25016",
+      "name": "아원공방",
+      "tags": " 갤러리, 수제, 전시, 삼청동, 종로,오래가게, 인테리어소품샵, 금속공예",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시",
+        "공예"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "47987",
+      "name": "정동전망대",
+      "tags": "정동,정동전망대,덕수궁,서울전망대,전망대",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42352",
+      "name": "최만린미술관",
+      "tags": "최만린미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "32734",
+      "name": "안녕인사동 ",
+      "tags": " 나인트리프리미어인사동,안녕인사동, 인사동관광,금옥당인사동,인사동놀거리,라인프렌즈인사동,anyounginsadong",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "44111",
+      "name": "갤러리 지우헌",
+      "tags": "한옥갤러리,삼청동갤러리,서울우수한옥,북촌한옥마을",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1694",
+      "name": "갤러리 현대",
+      "tags": " 안국역, 두가헌, 전시, 사간동, 광화문, 미술관, 근현대미술,현대갤러리, 두가헌갤러리,갤러리현대,경복궁역,갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시",
+        "미술관",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43435",
+      "name": "모퉁이집",
+      "tags": "신논현역,오래가게,수제비,강남역,라면,분식,해장",
+      "category": "Food",
+      "matchedKeywords": [
+        "라면",
+        "분식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26954",
+      "name": "박인당",
+      "tags": " 서울미래유산, 종각역, 수제도장,오래가게,도장, 맞춤도장",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "24663",
+      "name": "코엑스",
+      "tags": " 수족관, 타이거버스, 행사,코엑스, 관광, 강남, 시티투어버스, 봉은사역, 공연, 문화,삼성역, 코엑스몰, 쇼핑, 별마당도서관,아쿠아리움, 컨벤션홀, 콘서트, 박람회, 전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공연",
+        "도서관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42312",
+      "name": "옛날집낙원아구찜",
+      "tags": "옛날집낙원아구찜,해물찜,오래가게,해물탕,백년가게,아귀탕,아귀찜",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43508",
+      "name": "이태원북스",
+      "tags": " 이태원,오래가게, 서울미래유산,헌책방, 녹사평역, 외서, 서점, 책방,이태원스토어",
+      "category": "Culture",
+      "matchedKeywords": [
+        "서점"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "40770",
+      "name": "국립기상박물관",
+      "tags": "경희궁,100년관측소,날씨,한양도성,국립기상박물관,서울기상관측소,단풍,벚꽃,측우기,측우대,가장오래된측우대",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52650",
+      "name": "이회영 기념관",
+      "tags": "이회영,현충시설,이회영기념관,독립운동가",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11659",
+      "name": "국립현대미술관 서울관",
+      "tags": "미술관,현대미술, 전시,광화문,문화의거리,복합문화예술센터,삼청동,안국역,소격동,국립현대미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "16792",
+      "name": "국립현대미술관 서울관 갤러리아트존",
+      "tags": "광화문, 현대자동차, 갤러리, 갤러리아트존,아트,소격동, 예술,안국역,미술관, 국립현대미술관, 전시,아트콜라보레이션",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "갤러리",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43451",
+      "name": "사하라",
+      "tags": "마포,7080라이브,주점,오래가게,공덕,요리주점",
+      "category": "Food",
+      "matchedKeywords": [
+        "주점"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49877",
+      "name": "서울올림픽주경기장",
+      "tags": "잠실야구장,케이팝 데몬 헌터스,서울올림픽,잠실종합운동장,서울종합운동장,서울올림픽주경기장,서울아시안게임",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "25927",
+      "name": "명신당필방",
+      "tags": "오래가게, 쌈지길, 인사동, 민화, 문인화, 벼루, 붓,먹,서화재료판매",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49224",
+      "name": "광화문역 물품보관소",
+      "tags": "광화문역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43509",
+      "name": "대성표구사",
+      "tags": " 표구, 민화, 풍속도,액자, 용산, 한남동, 이태원,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28329",
+      "name": "독수리다방",
+      "tags": "커피,엔티크,카페,연세대,신촌,서울미래유산,오래가게",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "다방",
+        "커피",
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29381",
+      "name": "돈의문역사관",
+      "tags": " 돈의문박물관마을, 아지오,문화공간, 돈의문역사관,한정, 유적, 사진갤러리, 서대문역,역사, 새문안로,돈의문,경희궁",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "박물관",
+        "유적",
+        "갤러리",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27215",
+      "name": "동대문 관광안내소",
+      "tags": "안내소,여행,동대문,관광,관광안내소,동대문-관광안내소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "20547",
+      "name": "국립중앙박물관 어린이박물관",
+      "tags": "문화재,박물관,유물,이촌역,전시,관광지,국립중앙박물관,어린이박물관,관람",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "문화재",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27193",
+      "name": "송파관광정보센터",
+      "tags": "관광객,관광안내,송파관광정보센터,크로마키,사랑의우체통,송파,사랑의자물쇠",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "6307",
+      "name": "신안촌",
+      "tags": "경복궁맛집,한식,홍어맛집,신안촌,남도음식,홍어,낙지연포탕,낙지",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2247",
+      "name": "갤러리 팩토리",
+      "tags": "상수역,경복궁,전시,갤러리팩토리,미술,창성동,갤러리,예술,시각예술,광화문,퍼블릭아트,아트숍,팩토리2",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "6889",
+      "name": "경희대학교 한의학역사박물관",
+      "tags": "평화의전당,경희대학교,한의학역사박물관,전시,외대앞역,회기역,한의학,박물관,역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "역사",
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27468",
+      "name": "대구참기름집",
+      "tags": "오래가게,대구참기름집,참기름,들기름,안국역,고춧가루,미숫가루,광화문",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "46885",
+      "name": "박선영전통한복연구실",
+      "tags": "장인,혜화,오래가게,무형문화제,한복",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "5815",
+      "name": "롯데월드 민속박물관",
+      "tags": " 전통공예품,잠실,박물관,롯데월드민속박물관, 전시, 궁중의례, 민속식당가,전통,어린이박물관,전통음식, 잠실역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "공예",
+        "전시",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "21278",
+      "name": "롯데월드타워",
+      "tags": "서울스카이,롯데월드타워, 롯데월드,잠실,아쿠아리움,전망대,백화점, 면세점",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1232",
+      "name": "리움 미술관 ",
+      "tags": "리움미술관,삼성리움,예술체험,문화,미술관,이태원,한남동미술관,갤러리,한남동,한강진역,삼성미술관리움",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "52455",
+      "name": "마이아트뮤지엄 원그로브점",
+      "tags": "서울전시,서울데이트,마곡전시,전시추천,서울가볼만한곳",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29721",
+      "name": "김용안과자점",
+      "tags": "삼각지,용산,오래가게,과자,전병,장인정신",
+      "category": "Food",
+      "matchedKeywords": [
+        "과자"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "6614",
+      "name": "나폴레옹과자점",
+      "tags": " 제과점, 케이크,빵,서울3대빵집,오래가게, 서울미래유산, 성북동, 대학로",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "50865",
+      "name": "만포면옥",
+      "tags": "북한,은평,구산역,갈현동,냉면,평양,만두,불고기,어복쟁반,평양냉면,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "면옥",
+        "냉면",
+        "만두",
+        "불고기"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1399",
+      "name": "만해한용운 심우장",
+      "tags": " 심우장,유적지, 한성대입구역,성북동, 만해한용운,역사유적, 한용운",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43464",
+      "name": "맨투맨양복점",
+      "tags": "남성정장,양복제작,오래가게,맞춤양복,영등포,양장점",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "4037",
+      "name": "명동성당",
+      "tags": " 천주교, 종교,명동,명동성당, 성당,명동대성당, 고딕,가톨릭,역사, 명동주교좌성당",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성당",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1872",
+      "name": "갤러리 학고재",
+      "tags": "안국역,문화, 북촌갤러리, 삼청동갤러리,갤러리, 북촌, 종로구,인사동, 학고재, 미술관,소격동",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "51503",
+      "name": "서울시립 북서울미술관",
+      "tags": "조각공원,산책로,노원구미술관,시립미술관,북서울미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "1904",
+      "name": "보신각(상설타종행사)",
+      "tags": "제야의종,보신각, 타종행사,서울여행,서울가볼만한곳,종로,종각역,서울보신각종,서울새해여행,새해,서울역사적인곳,종각역가볼만한곳,광화문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "411",
+      "name": "봉은사 ",
+      "tags": "연등행렬,봉은사,코엑스,템플스테이, 봉은사역, 사찰, 불교,종교, 강남",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2545",
+      "name": "방이동 백제고분군",
+      "tags": " 역사, 유적지, 산책, 문화유적, 백제,방이역, 서울유적지, 방이동백제고분군, 백제고분, 고분군,방이동고분,삼국시대고분군",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "20550",
+      "name": "국립고궁박물관",
+      "tags": " 서울관광, 경복궁역, 역사,전시, 박물관, 문화재,국립고궁박물관, 관광지, 유물,왕실문화",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "박물관",
+        "역사",
+        "전시",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11897",
+      "name": "국립국악박물관",
+      "tags": "국립국악원,방배역,강남,전통음악,남부터미널역,내방역,관광지,박물관,국악기,전시,국립국악박물관,공연",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시",
+        "공연"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49183",
+      "name": "국립고궁박물관 물품보관소",
+      "tags": "국립고궁박물관 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43461",
+      "name": "명가떡집",
+      "tags": " 잠실새마을시장,쑥인절미, 대왕찹쌀떡, 잠실,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11012",
+      "name": "국립중앙도서관",
+      "tags": " 국립중앙도서관,서초공원,디지털도서관, 강남, 도서관,서초역,문화,고속버스터미널역,반포동, 지적문화유산",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "28656",
+      "name": "백범광장공원",
+      "tags": " 남산공원, 백범광장공원,김구,명동,문화유산, 독립운동가,회현역",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원",
+        "남산"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43447",
+      "name": "그날이오면",
+      "tags": "오래가게,1980년대,대학교재,서울대,신림,관악,서점",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "서점"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "45519",
+      "name": "백양세탁",
+      "tags": "종로,백양세탁소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1833",
+      "name": "서대문형무소역사관",
+      "tags": " 독립관,역사,안창호,3.1, 독립선언기념탑,독립문역,독립운동가, 서대문형무소,순국열사,역사관, 8.15, 역사 유적,서대문독립공원, 강우규,공원, 유관순",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "기념",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "46873",
+      "name": "가봉루",
+      "tags": "고기튀김,오래가게,중식,짜장면,한국식중식,종로",
+      "category": "Food",
+      "matchedKeywords": [
+        "고기",
+        "중식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "10929",
+      "name": "대오서점",
+      "tags": "서촌,대오서점,상어-촬영지,서촌카페,노포,서촌나들이,가볼만한곳,아이유",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "23563",
+      "name": "덕수궁돌담길",
+      "tags": "가을데이트코스,서울걷기좋은곳,서울나들이,주말나들이,서울가을명소,서울낭만적인장소,연인과함께,서울데이트코스,걷기좋은길,서울산책길,덕수궁돌담길",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2372",
+      "name": "살곶이다리（전곶교）",
+      "tags": " 전곶교, 한강, 한양대학교, 뚝섬역,한양대역,살곶이다리, 산책로,최장교, 중랑천",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "24645",
+      "name": "세빛섬",
+      "tags": "전시,한강, 인공섬,야간명소,이벤트,야경,강남, 세빛섬,수상문화공간,공연",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "공연"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "51227",
+      "name": "경희대학교 서울캠퍼스",
+      "tags": "회기역,서울캠퍼스,고딕건축양식,평화의 전당,경희랜드,경희대학교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "21128",
+      "name": "백인제가옥",
+      "tags": " 민속문화재, 일제강점기, 북촌,안국역, 문화유산,한옥,별당채,백인제가옥,광화문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26558",
+      "name": "별마당 도서관",
+      "tags": "삼성동,코엑스, 강남,도서관, 문화,북콘서트,별마당도서관,별마당,독서, 서울도서관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43612",
+      "name": "신흥상회",
+      "tags": " 문래창작촌,문래철공단지, 문래동, 가맥, 슈퍼, 간단안주, 영등포,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "27225",
+      "name": "광화문 관광안내소",
+      "tags": "광화문-관광안내소,광화문,관광안내소,안내소,안내,여행",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "11117",
+      "name": "북악스카이웨이 북악팔각정",
+      "tags": "북악스카이웨이,야경, 북악산,산책로,북악산성곽길,팔각정,북악산둘레길",
+      "category": "Nature",
+      "matchedKeywords": [
+        "북악산",
+        "둘레길"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27813",
+      "name": "북촌목공예공방",
+      "tags": "공예,목공예,북촌,북촌한옥마을,전시,공예체험,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예",
+        "한옥",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11992",
+      "name": "서초 여행자 지원센터",
+      "tags": "서초관광정보센터,관광정보,강남역사거리,의료관광,강남역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52237",
+      "name": "석파정 서울미술관",
+      "tags": "석파정,서울전시,서울미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1965",
+      "name": "국립서울현충원",
+      "tags": "서울단풍명소,유적지,현충일,서울현충원,서울가을단풍,가을단풍,국립서울현충원,호국보훈의달,현충원둘레길,역사,서울가볼만한곳,현충원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "5134",
+      "name": "국립어린이민속박물관",
+      "tags": "박물관,밥상지교, 추억의거리, 전통문화, 광화문, 안국역, 국립민속박물관,역사, 국립어린이민속박물관,어린이박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27221",
+      "name": "서울 관광기념품 전시관•여행자지원센터",
+      "tags": "안내소,관광안내소,삼일교-관광안내소,여행,종로,청계천,삼일교,안내",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "90",
+      "name": "서울 한양도성",
+      "tags": "성곽, 한성대입구역,4소문,낙산공원, 인왕산, 4대문,동대문,남산, 한양도성",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원",
+        "인왕산",
+        "남산"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "38092",
+      "name": "서울공예박물관 ",
+      "tags": "아이와함께,요즘볼거리,서울새로생긴곳,서울공예박물관,비오는날데이트,안국볼거리,서울역사적명소,서울박물관,서울가볼만한곳,종로놀거리,부모님과함께,박물관데이트",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예",
+        "박물관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "34149",
+      "name": "서울도시건축전시관",
+      "tags": "서울마루,seoulmaru, 서울볼거리,서울전시,건축, 서울데이트,도시,서울투어,서울도시건축전시관,seoulhour, 전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "37890",
+      "name": "세운청계상가",
+      "tags": "종로,드라마속여행지,서울명소,빈센조,한국드라마,맛집,을지로카페,카페,을지로,세운청계상가,세운상가,드라마촬영지,서울핫플,서울",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "1747",
+      "name": "소극장 산울림",
+      "tags": " 공연, 관람, 마포, 홍대, 소극장,오래가게, 문화생활, 서교동,연극",
+      "category": "Culture",
+      "matchedKeywords": [
+        "극장",
+        "공연"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50877",
+      "name": "서부감자국 ",
+      "tags": "감자탕,감자국,오래가게,김치,응암동감자국거리,응암동,은평,해장",
+      "category": "Food",
+      "matchedKeywords": [
+        "감자국",
+        "감자탕"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49285",
+      "name": "을지로4가역 물품보관소",
+      "tags": "을지로4가역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43474",
+      "name": "동부고려제과",
+      "tags": "제과점,오래가게,서울미래유산,소화잘되는빵,동네빵집,상봉역,천연발효,빵,망우동",
+      "category": "Food",
+      "matchedKeywords": [
+        "제과",
+        "빵"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "37583",
+      "name": "서울관광플라자 관광정보센터",
+      "tags": "관광정보센터,종로,종각,을지로,서울관광플라자,관광안내소,서울관광플라자관광정보센터",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "24591",
+      "name": "서울중앙우체국",
+      "tags": "스카이홀,서울중앙우체국,명동,남대문시장,시티투어버스,타이거버스",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "37164",
+      "name": "석파정",
+      "tags": "석파정,미술,미술관,정원,역사적명소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "846",
+      "name": "의학박물관 (구 대한의원) ",
+      "tags": "서울대학교, 박물관, 의학박물관,역사,혜화역, 전시,서울대학교병원,종로구연건동",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "대학",
+        "역사",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43432",
+      "name": "만나당",
+      "tags": " 가로수길, 압구정,수제, 궁중약과, 강남,오래가게, 약과",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46796",
+      "name": "이길이구 갤러리",
+      "tags": "강남,신사,갤러리,강남전시,미술관,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43465",
+      "name": "미도파꽃집",
+      "tags": " 꽃, 꽃집,오래가게, 영등포,화원, 영등포역지하쇼핑센터",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "48679",
+      "name": "서울시립사진미술관 ",
+      "tags": "미술관,문화,서울전시,사진,전시,전시회,창동역,서울시립사진미술관,사진전시,예술",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "51370",
+      "name": "서울아트센터 도암갤러리",
+      "tags": "서울아트센터도암,평창동갤러리,도암갤러리,무료전시,예술체험,평창동미술관,미술관,갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "4632",
+      "name": "서울약령시 한의약박물관",
+      "tags": " 전통,용두역,한약,한방체험,용두동, 한의약,한방문화쉼터, 동대문, 동의보감타워, 제기동역,한의약박물관, 박물관, 전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1151",
+      "name": "경교장",
+      "tags": " 광화문,종로구, 백범김구,유적지,임시정부청사, 서대문역,경교장, 독립문역, 역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28327",
+      "name": "연희사진관",
+      "tags": "증명사진,오래가게,사진관,신촌,이대,취업사진,여권사진",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "45458",
+      "name": "창신동 절벽마을",
+      "tags": "서울가볼만한곳, 창신동,창신동절벽마을,대한민국현대사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5538",
+      "name": "청와대",
+      "tags": "사랑채,청와대,청와대지도,대통령집무실,청와대위치,서울종로구,대통령,종로가볼만한곳,관저,서울여행명소,대한민국대통령관저,청와대주소,청와대대통령,청와대관람",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "46889",
+      "name": "광성유통",
+      "tags": "오래가게,청량리,온라인쇼핑,견과류",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "46881",
+      "name": "손가네닭한마리",
+      "tags": "닭한마리,오래가게,신설동",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "6996",
+      "name": "손기정기념관",
+      "tags": "충정로역,금메달,만리동,베를린올림픽,마라톤,일제강점기,기념관,박물관,손기정체육공원,이승만,서울역,김구,손기정기념관,손기정",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "3778",
+      "name": "송은(SONGEUN)",
+      "tags": "청담동,압구정로데오역,미술, 송은 문화재단,송은, 강남, 예술, 미술관,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재",
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29578",
+      "name": "쉼박물관",
+      "tags": "문화,쉼박물관, 기획전, 보존,예술,광화문역,홍지동, 경복궁역, 현대예술, 전시실, 휴식",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49395",
+      "name": "스퀘어랩 물품보관소",
+      "tags": "스퀘어랩 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "5060",
+      "name": "신당창작아케이드",
+      "tags": "아트마켓,서울시창작공간,황학동,신당역,신당지하쇼핑센터,문화체험,신당창작아케이드,동대문,전시,미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46311",
+      "name": "신아기념관",
+      "tags": "덕수궁,정동길,정동,대한민국근현대사,신아기념관,덕수궁돌담길",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26193",
+      "name": "순희네 반찬",
+      "tags": "오래가게,반찬, 종로, 게장, 광장시장,젓갈",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "30803",
+      "name": "아모레퍼시픽미술관",
+      "tags": "현대미술,아모레퍼시픽미술관, 미술관, 고미술,전시, 신용산역,기획전",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1159",
+      "name": "경희궁",
+      "tags": "고궁투어,서울고궁,종로데이트코스,경희궁산책길,서울역사박물관,걷기좋은길,종로산책길,서울산책,고궁데이트,서울궁,경희궁,한국궁궐,서울5대궁궐,서울가볼만한곳,종로산책",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "역사",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "6957",
+      "name": "경희대학교 자연사박물관",
+      "tags": "퇴작암,경희대자연사박물관,유물,화성암,회기역, 경희대,경희대학교, 유럽산암석,외대앞역, 박물관,자연사박물관, 전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학",
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49815",
+      "name": "청운문학도서관",
+      "tags": "공공도서관,시문학특화,청운문학도서관,종로구도서관,한옥도서관,종로문화재단",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관",
+        "한옥",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3387",
+      "name": "구 공업전습소 본관(구 중앙시험소 청사)",
+      "tags": "옛공업전습소본관,동대문,유적지,대한제국,서울대학교,경성공업,방송통신대학교,혜화역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29767",
+      "name": "국궁전시관",
+      "tags": "체험프로그램, 황학정, 전시관,국궁전시관,국궁,활쏘기, 활만들기,경복궁역, 활",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50532",
+      "name": "넷마블게임박물관",
+      "tags": "넷마블,게임박물관,넷마블게임박물관,서울박물관,게임전시,체험형박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43452",
+      "name": "다락",
+      "tags": "분식,즉석떡볶이,볶음밥,마포떡볶이골목,공덕,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "분식",
+        "떡볶이"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "6218",
+      "name": "진아춘 광화문점",
+      "tags": "라풍기,동파육,광화문맛집,중식맛집,중국요리,중식,중화,3대맛집,광화문역,진아춘",
+      "category": "Food",
+      "matchedKeywords": [
+        "맛집",
+        "중식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27105",
+      "name": "근현대사기념관",
+      "tags": "초대길,강북구, 근현대사기념관,수유역,독립운동, 민주주의,순국선열",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28052",
+      "name": "글벗서점",
+      "tags": "책방,서점,오래가게,헌책,헌책방,경의선책거리,신촌,연세대",
+      "category": "Culture",
+      "matchedKeywords": [
+        "서점"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "48454",
+      "name": "녹사평 육교",
+      "tags": "이태원클라쓰,드라마촬영지,녹사평역사진스팟",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5018",
+      "name": "대각사",
+      "tags": " 종로사찰, 사찰, 대각회,  불교,절, 용성스님,종로 3가역, 종교, 대각사,서울사찰,창덕궁",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰",
+        "절",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "5000",
+      "name": "청원산방",
+      "tags": " 소목장, 창호, 전통,오래가게, 공예체험, 북촌한옥마을, 공예",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "4537",
+      "name": "청진옥 ",
+      "tags": "선지해장국,국밥집,해장맛집,한식맛집,종로맛집,한식당,해장국,수요미식회,국밥맛집,청진옥,르메이에르",
+      "category": "Food",
+      "matchedKeywords": [
+        "국밥",
+        "맛집",
+        "한식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "72",
+      "name": "경복궁",
+      "tags": "경복궁,서울궁궐,서울볼거리,서울여행,서울나들이,한국전통,한국문화,서울가볼만한곳,한국역사적명소,서울데이트,경복궁입장료,서울명소,서울관광지",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43606",
+      "name": "삼우치킨센타",
+      "tags": "대림동, 보라매공원, 월급날, 통닭,오래가게, 치킨,호프, 치맥",
+      "category": "Food",
+      "matchedKeywords": [
+        "치킨",
+        "호프"
+      ],
+      "matchedCategories": [
+        "Food",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2121",
+      "name": "삼청동 골목길",
+      "tags": "골목길, 삼청동,문화공간, 종로, 광화문, 북촌,갤러리, 카페, 안국역,경복궁돌담길, 예술가,가회동",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "46877",
+      "name": "삼청동 수제비",
+      "tags": "오래가게,수제비,종로",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43433",
+      "name": "상신당",
+      "tags": "강남,오래가게,도장,인감도장,불도장,수제,도장판매",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43443",
+      "name": "등촌 최월선칼국수",
+      "tags": "칼국수,김포공항,오래가게,한식,면요리,국물",
+      "category": "Food",
+      "matchedKeywords": [
+        "칼국수",
+        "한식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49356",
+      "name": "롯데월드 물품보관소",
+      "tags": "롯데월드 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50869",
+      "name": "목노집",
+      "tags": "오래가게,보쌈,돼지보쌈,연신내,은평,목로주점",
+      "category": "Food",
+      "matchedKeywords": [
+        "보쌈",
+        "주점"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3085",
+      "name": "토탈미술관",
+      "tags": "경복궁역, 길음역, 가나아트센터, 토탈미술관, 김종영갤러리, 예술, 미술관,평창동,야외공연장, 음악회, 전시,아트숍",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "궁",
+        "갤러리",
+        "공연",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "24708",
+      "name": "종로양복점",
+      "tags": "맞춤양복,오래가게,서울미래유산,양복, 남성정장, 명동",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "45562",
+      "name": "명동재미로",
+      "tags": "명동,명동역, 만화,애니메이션, 재미로",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28339",
+      "name": "봉원사",
+      "tags": " 마포,연꽃, 절, 홍대,연세대, 신라, 독립문역,봉원사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2637",
+      "name": "춘원당 한의약박물관",
+      "tags": " 춘원당,한방병원, 한방박물관, 한방,탕제실,종로3가역,광화문, 춘원당한방박물관, 박물관,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28053",
+      "name": "코끼리분식",
+      "tags": "분식,즉석떡볶이, 떡볶이맛집, 서울맛집, 서울떡볶이맛집,공덕,오래가게,마포떡볶이골목,볶음밥",
+      "category": "Food",
+      "matchedKeywords": [
+        "분식",
+        "떡볶이",
+        "맛집"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3306",
+      "name": "봉황각",
+      "tags": "만세운동, 천도교, 우이동봉황각,봉황각, 수유역, 역사, 기와집, 안암손병희선생,3.1독립운동, 유적지",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "34857",
+      "name": "서울기록원",
+      "tags": "서울기록원",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "27189",
+      "name": "북촌마을관광안내소",
+      "tags": "외국어안내,북촌마을관광안내소,정독도서관,관광안내소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46621",
+      "name": "석굴암",
+      "tags": "불상,석굴암,수성동,사찰,인왕산",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "49193",
+      "name": "경복궁역 물품보관소",
+      "tags": "경복궁역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "18912",
+      "name": "가회민화박물관　",
+      "tags": " 박물관, 가회동,민화, 북촌한옥마을, 전통, 전시,북촌, 가회민화박물관,안국역,부적관계, 민속품, 광화문,민화박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "한옥",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26955",
+      "name": "송림수제화",
+      "tags": "오래가게,맞춤화,트레킹화,등산화,수제화,서울미래유산,서울수제화,송림수제화",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49346",
+      "name": "신당역 물품보관소",
+      "tags": "신당역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "23760",
+      "name": "숙정문",
+      "tags": "안국역,한양도성순성길,도심속문화재,서울문화재,경복궁역,한양도성,광화문,숙정문,서울성곽,서울산책,사적제10호,서울사대문,주말나들이,북대문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50010",
+      "name": "예술의전당 서울서예박물관",
+      "tags": "서예,한국서예사,서화,서울서예박물관,예술의전당,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49372",
+      "name": "낙산 물품보관소",
+      "tags": "낙산 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49462",
+      "name": "옐로우 물품보관소",
+      "tags": "옐로우 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "35673",
+      "name": "은평한옥마을",
+      "tags": "북한산경치,은평한옥마을,진관사,서울여행지,진관동,문화체험,서울가볼만한곳,놀면뭐하니촬영지,서울데이트코스,전통체험,북한산풍경,뷰맛집,한국전통문화,은평구,한옥,서울나들이",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "18898",
+      "name": "동림매듭공방",
+      "tags": "오래가게,전통공예,북촌한옥마을,매듭체험,창작품,전통매듭,전통체험",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "859",
+      "name": "전쟁기념관",
+      "tags": "서울아이들과함께,6.25전쟁,서울아이들데리고갈만한곳,용산전쟁기념관,용산어린이박물관,전쟁기념관,서울전쟁사박물관,전쟁기념관어린이박물관,서울박물관추천,서울가볼만한곳추천",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29394",
+      "name": "절두산순교성지",
+      "tags": "순례, 순교자박물관,천주교, 전시, 절두산순교기념관, 합정역, 한국천주교순교자박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절",
+        "성지",
+        "박물관",
+        "전시",
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "41904",
+      "name": "중랑망우공간",
+      "tags": " 망우리공원, 망우역사문화공원,중랑망우공간,중랑망우",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "13755",
+      "name": "지대방",
+      "tags": "카페,전통차,쌈지길,종로,인사동,오래가게,전통찻집",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페",
+        "찻집"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27112",
+      "name": "초대길",
+      "tags": " 초대길,둘레길, 트레킹,순국선열묘역, 근현대사기념관, 수유역, 이준열사, 순례길,역사, 신익희",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "50415",
+      "name": "페이스갤러리 서울",
+      "tags": "서울갤러리,페이스갤러리,서울전시,미술전시,한강진갤러리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "25377",
+      "name": "학림다방",
+      "tags": " 대학로,서울미래유산, 카페,감성,오래가게,커피",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "다방",
+        "카페",
+        "커피"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "43446",
+      "name": "학사당구장",
+      "tags": "동대문,제기동,당구장,오래가게,안암,고려대,대학가앞,추억",
+      "category": "Culture",
+      "matchedKeywords": [
+        "대학"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "52403",
+      "name": "한강진역",
+      "tags": "꼼데가르송길,리움미술관,한남동,쇼룸,한강진역,블루스퀘어,남산산책로",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "29048",
+      "name": "한신옹기",
+      "tags": "오래가게, 한신옹기,쌀독, 포토존, 장독, 항아리, 화분, 자기, 이촌, 서울미래유산, 녹사평역, 도자기,옹기, 서울, 해방촌, 뚝배기,용산구",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1910",
+      "name": "성곡미술관",
+      "tags": "전시, 카페찻집, 김성곤, 경복궁역,성곡미술관, 미술관, 야외조각공원, 광화문, 찻집,한국미술,미술, 광화문역",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페",
+        "찻집"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "1708",
+      "name": "국립현대미술관 덕수궁관",
+      "tags": " 서울광장, 덕수궁미술관, 정동길, 국립현대미술관, 문화, 관광지,현대미술,예술, 덕수궁돌담길, 미술관, 전시, 덕수궁관,대한문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "22888",
+      "name": "숭례문(남대문)",
+      "tags": " 문화재,남대문,서울여행,서울문화재,광화문,서울사대문, 서울관광,  회현역, 목조건물,서울볼거리,한국문화재,국보,숭례문, 국보제1호",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43440",
+      "name": "신락원",
+      "tags": "오래가게, 청량리,짜장면, 서울시립대,중화요리, 중식",
+      "category": "Food",
+      "matchedKeywords": [
+        "중식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11702",
+      "name": "라칸티나 ",
+      "tags": " 을지로맛집, 파스타맛집, 시청맛집,을지로입구역, 스파게티, 시청음식점,라칸티나,을지로음식점,이탈리안레스토랑",
+      "category": "Food",
+      "matchedKeywords": [
+        "맛집",
+        "음식",
+        "레스토랑"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "27190",
+      "name": "마포관광정보센터",
+      "tags": "마포관광정보센터,마포구관광,홍대,서울관광정보센터,홍대관광,홍대입구역,마포",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "2406",
+      "name": "아트선재센터",
+      "tags": "독립영화,단편영화,씨네코드,안국역,박물관,아트선재센터,미술관,관광지,현대미술,전시,광화문,행위예술,음악회",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49314",
+      "name": "명동역 물품보관소",
+      "tags": "명동역",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50888",
+      "name": "역전회관",
+      "tags": "마포,내한,막걸리,낙지볶음,불고기,바싹불고기,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "불고기"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3759",
+      "name": "윤봉길 의사 기념관",
+      "tags": "윤봉길, 강남,독립운동가, 전시관,윤봉길의사기념관, 양재역, 양재시민의숲",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "49383",
+      "name": "잠실역 물품보관소",
+      "tags": "잠실역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "47482",
+      "name": "종묘돌담길",
+      "tags": "종묘돌담길,공예작업실,카페,돌담길,세계문화유산,종로산책길,산책로,종묘,서순라길",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Culture"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "45465",
+      "name": "채석장 전망대",
+      "tags": "창신동,카페,전망대,채석장전망대",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "51173",
+      "name": "충무로역",
+      "tags": "충무로,충무로역,한국의집,충무로 영상 센터,남산골한옥마을,인쇄골목",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2052",
+      "name": "하늘물빛 (전통 천연 염색 연구소) ",
+      "tags": "천연염색,쪽염색,염색,체험,하늘물빛,공방,전통문화체험,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "5614",
+      "name": "하동관 ",
+      "tags": "명동음식점,을지로음식점,한우곰탕전문점,단골맛집,명동,곰탕,명동맛집,수요미식회,수육,하동관",
+      "category": "Food",
+      "matchedKeywords": [
+        "음식",
+        "곰탕",
+        "맛집"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1932",
+      "name": "순라길",
+      "tags": "안국역,종로,목길,순라길,문화공간,광화문,역사문학탐방로",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46812",
+      "name": "THEO 띠오",
+      "tags": "무료전시,선정릉,미술관,갤러리,THEO,삼성동전시회,전시회",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "미술관",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42170",
+      "name": "어린이대공원 꿈마루",
+      "tags": "어린이대공원-꿈마루",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "4525",
+      "name": "영휘원 숭인원(홍릉)",
+      "tags": "홍릉,유적지,청량리,의릉,가을단풍,조선왕릉,숭인원,조선,영휘원,현충사,서울왕릉,청량리역,동대문구,역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3100",
+      "name": "금호미술관",
+      "tags": " 광화문역, 예술, 안국역, 광화문,전시, 문화, 경복궁,경복궁역,금호아카데미, 금호갤러리콘서트,금호미술관,미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시",
+        "궁",
+        "갤러리"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49280",
+      "name": "종로3가역 물품보관소",
+      "tags": "종로3가역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49200",
+      "name": "돈의문박물관마을 물품보관소",
+      "tags": "돈의문박물관마을 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "23759",
+      "name": "돈의문 터(옛 서대문)",
+      "tags": "광화문,서울가볼만한곳,사대문,한양도성순성길,새문,국내여행,도성,돈의문,성곽길,문화유산,서대문,서대문역,돈의문박물관마을,서전문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46869",
+      "name": "진고개 동대문점",
+      "tags": "한식당,갈비,종로,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "한식",
+        "갈비"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "6252",
+      "name": "진관사",
+      "tags": "진관사, 구파발역,불교, 템플스테이,고려, 절,사찰,종교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절",
+        "사찰"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43613",
+      "name": "미림분식",
+      "tags": "즉석떡볶이,오래가게, 군만두,분식, 가성비, 신림, 미림여고",
+      "category": "Food",
+      "matchedKeywords": [
+        "분식",
+        "떡볶이",
+        "만두"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50927",
+      "name": "태조대림감자국",
+      "tags": "뼈찜,24시간,응암동감자국거리,감자탕,감자국,오래가게,응암동,대림시장",
+      "category": "Food",
+      "matchedKeywords": [
+        "감자국",
+        "뼈찜",
+        "감자탕"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50022",
+      "name": "통의동 골목",
+      "tags": "경복궁,보안여관,영추문길,추사김정희집터,서촌,겸재정선집터,대림미술관,통의동 백송터,통의동 골목",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2730",
+      "name": "한국은행화폐박물관",
+      "tags": "박물관,전시,서울박물관,서울전시회,한국은행화폐박물관,서울어린이체험,아이들과가볼만한곳,명동,세계화페,한국은행,화폐박물관,서울가볼만한곳",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "11610",
+      "name": "한성백제박물관",
+      "tags": "한성백제박물관, 박물관, 올림픽공원역,문화재,몽촌토성역, 잠실, 백제, 4D영상체험, 올림픽공원, 방이동, 유적, 전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "문화재",
+        "유적",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "26956",
+      "name": "한영양복점",
+      "tags": " 맞춤양복,양복, 남성정장, 서울미래유산, 명동,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28659",
+      "name": "해방촌 골목",
+      "tags": "용산구,카페,골목길,이태원,해방촌골목,해방촌데이트,서울,핫플레이스,이태원명소,해방촌,서울명소,오래된가게,해방촌골목길,해방촌산책,서울산책",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43472",
+      "name": "불광대장간",
+      "tags": " 도끼,오래가게, 단조, 은평구, 주방칼,불광동, 수제, 전통, 서울미래유산,철물, 대장간",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "47249",
+      "name": "성수구름다리",
+      "tags": "성수,야경명소,노을명소,성수구름다리,서울야경명소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "48986",
+      "name": "경복궁 물품보관소",
+      "tags": "경복궁 물품보관소, 경복궁 물품보관함, 경복궁 락커",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "20731",
+      "name": "아라리오뮤지엄 인 스페이스",
+      "tags": " 현대미술, 아라리오뮤지엄, 전시, 미술관, 아트뮤지엄,뮤지엄,문화공간, 안국역, 예술,아라리오",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "4471",
+      "name": "아름다운 차박물관",
+      "tags": " 전통, 차박물관, 도자기, 문화,안국역,광화문, 종로3가역,박물관, 광광지, 종각역,퓨전차",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43441",
+      "name": "공항칼국수",
+      "tags": "김포공항,면요리,국물,칼국수,오래가게,한식",
+      "category": "Food",
+      "matchedKeywords": [
+        "칼국수",
+        "한식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "12492",
+      "name": "오장동함흥냉면",
+      "tags": "비빔냉면,을지로4가역,회냉면,미쉐린가이드,물냉면,홍어회,오장동함흥냉면,을지로맛집",
+      "category": "Food",
+      "matchedKeywords": [
+        "냉면",
+        "맛집"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "51178",
+      "name": "용마산 스카이워크 전망대",
+      "tags": "서울전망대,서울둘레길,트레킹,용마산 스카이워크,체험형 숲길,무장애길,용마산",
+      "category": "Nature",
+      "matchedKeywords": [
+        "둘레길",
+        "숲"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43611",
+      "name": "이화명주",
+      "tags": "결혼예복,돌복,강남,오래가게,서초,한복판매,한복,한복대여",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49296",
+      "name": "인사동길 내 물품보관소",
+      "tags": "인사동길 내 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "3256",
+      "name": "길상사",
+      "tags": "길상사, 템플스테이,성북동,한성대입구역,서울벚꽃,법정스님,침묵의집,서울사찰,수련,절,종교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰",
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26206",
+      "name": "동대문역사관 상설전시실 재개관",
+      "tags": "동대문역사관,전시회,전시,상설전시실,서울역사박물관,박물관,동대문역사문화공원,유물,동대문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "전시",
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "49319",
+      "name": "동대입구역",
+      "tags": "동대입구역",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "3266",
+      "name": "창의문",
+      "tags": "자하문,경복궁역,유적지,북문,한양도성,북악산,성곽길,성곽,광화문,창의문",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "유적"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "48010",
+      "name": "명동 화교거리",
+      "tags": "명동화교거리,명동,중국대사관",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50932",
+      "name": "평택 고여사집 냉면",
+      "tags": "냉면,평양냉면,평택,수육,오래가게,신촌,연희동",
+      "category": "Food",
+      "matchedKeywords": [
+        "냉면"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43614",
+      "name": "평택쌀상회",
+      "tags": "오래가게, 금천구, 시흥동, 소면,곡류, 국수",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28351",
+      "name": "피터팬1978",
+      "tags": "오래가게, 연희동, 제과점, 빵, 신촌,연세대,베이커리",
+      "category": "Food",
+      "matchedKeywords": [
+        "제과",
+        "빵",
+        "베이커리"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2027",
+      "name": "허준근린공원",
+      "tags": " 구암공원,분수,허준, 허준박물관, 가양역, 허준공원, 동의보감,박물관, 한강, 가양동, 야경",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "45954",
+      "name": "현대카드 뮤직 라이브러리, 현대카드 바이닐앤플라스틱",
+      "tags": "현대카드,턴테이블,희귀음반,바이닐,뮤직라이브러리,한남동,이태원,아날로그,LP",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "4513",
+      "name": "사육신공원",
+      "tags": "한강대교,노들역,노량진역,세조,문화유산,노량진,여의도,유형문화재8번,사육신,사육신묘",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "43476",
+      "name": "서울레코드",
+      "tags": " LP, CD, 테이프,오래가게, 블루레이, 레코드, 음반, 종로",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "52167",
+      "name": "간송미술관",
+      "tags": "서울미술관,간송미술관,서울전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29715",
+      "name": "개미슈퍼",
+      "tags": "오래가게, 청파동, 추억, 외국인명소,슈퍼, 마트, 서울역",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "24905",
+      "name": "손맛김밥",
+      "tags": "효자동,오래가게,김밥,통인시장,참깨야채김밥,분식",
+      "category": "Food",
+      "matchedKeywords": [
+        "분식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43444",
+      "name": "엘부림양복점",
+      "tags": "맞춤정장, 결혼예복, 맞춤셔츠, 동대문, 답십리,오래가게, 양복제작",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "18897",
+      "name": "금박연",
+      "tags": " 공예, 서울미래유산,오래가게,전통, 공예체험,금박장식, 북촌,무형문화재",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43615",
+      "name": "금복상회",
+      "tags": "독산역,봉제부속품,오래가게,명찰,이름표,구로",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "11144",
+      "name": "디지털미디어시티",
+      "tags": " 한국문화콘텐츠센터,디지털미디어시티, DMC,DMC문화공원, DMC홍보관, 누리꿈스퀘어,홍대, IT,디지털파빌리온",
+      "category": "Nature",
+      "matchedKeywords": [
+        "공원"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49251",
+      "name": "종로5가역 물품보관소",
+      "tags": "종로5가역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "3333",
+      "name": "짚풀생활사박물관",
+      "tags": "짚풀, 유물, 공예체험,대학로, 역사,혜화역, 명륜동,짚풀생활사박물관, 동대문, 한옥, 박물관, 민속자료",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "공예",
+        "대학",
+        "역사",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "297",
+      "name": "창경궁",
+      "tags": "서울데이트코스,서울여행코스,서울가볼만한곳,서울밤산책,서울궁궐,전통,서울야경,창경궁,궁궐야행,한국역사적명소,한국궁궐,한국전통문화,서울야간데이트,서울볼거리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49367",
+      "name": "창덕궁 물품보관소",
+      "tags": "창덕궁 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "45763",
+      "name": "청전이상범 가옥",
+      "tags": "서촌,서촌한옥마을,근현대건축,한옥,가옥",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28328",
+      "name": "춘추사",
+      "tags": "졸업식,추억,석사복,박사복,이대,학위복판매,학위복대여,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "25930",
+      "name": "통문관",
+      "tags": " 인문학서점, 희귀본, 고서, 서울미래유산, 서점, 쌈지길,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [
+        "서점"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50129",
+      "name": "한지가헌",
+      "tags": "한지가헌,한지문화홍보관,한지,북촌한옥마을 명소,한국공예디자인문화진흥원,안국역 명소",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥",
+        "공예"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42375",
+      "name": "함스브로트과자점",
+      "tags": " 명장,빵, 제과,오래가게, 쌍문역, 빵지순례, 꽃다발케이크,케이크",
+      "category": "Food",
+      "matchedKeywords": [
+        "과자",
+        "빵",
+        "제과",
+        "케이크"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43466",
+      "name": "합덕슈퍼",
+      "tags": "골목길,이태원,마트,정겨움,오래가게,슈퍼,추억,레트로",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "32528",
+      "name": "형제대장간 ",
+      "tags": " 은평구,전통, 수색동,대장간,오래가게, 서울미래유산,철물, 단조, 수제, 망치",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43449",
+      "name": "설화철물",
+      "tags": "건축자재판매,동작구,사당동,오래가게,공구,철물점",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43436",
+      "name": "수유어묵공장",
+      "tags": "핫바,수제,수유전통시장,수유시장,미아동,어묵,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49229",
+      "name": "안국역 물품보관소",
+      "tags": "안국역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "46887",
+      "name": "안경박사 본점",
+      "tags": "정릉,오래가게,안경점,안경",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "45397",
+      "name": "옛시장실 재현 공간",
+      "tags": "시청, 시장실, 서울시장, 서울도서관,통통투어",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50161",
+      "name": "을지로 노가리 골목",
+      "tags": "맥주,야장 분위기,노가리 안주,을지로술집,노가리골목,을지로",
+      "category": "Food",
+      "matchedKeywords": [
+        "맥주",
+        "술집"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46608",
+      "name": "경국사 ",
+      "tags": "북한산,삼각산,사찰,경국사,불교,절",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰",
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "49805",
+      "name": "한강버스",
+      "tags": "망원선착장,여의도선착장,마곡선착장,맞춤형요금제,잠실선착장,압구정선착장,뚝섬선착장,수상대중교통,한강버스,옥수선착장,기후동행카드",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46883",
+      "name": "남도한식정든님고운님",
+      "tags": "오래가게, 한식당, 시청역,한상차림,  보리굴비",
+      "category": "Food",
+      "matchedKeywords": [
+        "한식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49351",
+      "name": "두타몰 물품보관소",
+      "tags": "두타몰 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "27472",
+      "name": "돌 레코드",
+      "tags": " LD판,오래가게, 중고, CD,레코드, 테이프, LP판",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43439",
+      "name": "삼양탕",
+      "tags": "아날로그,강북,레트로,카페,수유,삼양여관,스파,오래가게,목욕탕",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1539",
+      "name": "서울광장",
+      "tags": "문화행사, 문화공간,서울광장, 시청역, 잔디, 아이스링크, 시청",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "44215",
+      "name": "서촌한옥마을",
+      "tags": "서촌,서촌한옥마을,한옥마을",
+      "category": "Culture",
+      "matchedKeywords": [
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "46879",
+      "name": "성원전주콩나물국밥",
+      "tags": "오래가게,명동,콩나물국밥",
+      "category": "Food",
+      "matchedKeywords": [
+        "국밥"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43456",
+      "name": "아다모스튜디오",
+      "tags": " 명품옷수선, 건대입구,오래가게,옷수선, 뚝섬, 성수, 모피,밍크",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43448",
+      "name": "애플하우스",
+      "tags": " 사당동, 순대볶음, 분식,오래가게, 무침군만두,즉석떡볶이",
+      "category": "Food",
+      "matchedKeywords": [
+        "순대",
+        "분식",
+        "만두",
+        "떡볶이"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "24807",
+      "name": "인천공항 제2여객터미널 관광정보센터 ",
+      "tags": "제2여객터미널,관광정보센터,인천공항,인천공항-제2여객터미널-관광정보센터,인천공항2터미널역",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1596",
+      "name": "정독도서관",
+      "tags": "도서관데이트,종로가볼만한곳,종로시립도서관,정독도서관,시립공공도서관,서울아이들과가볼만한곳,서울책읽는곳,서울책빌리는곳,아이들과함께,서울가볼만한곳,서울대표도서관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49275",
+      "name": "종각역 물품보관소",
+      "tags": "종각역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "2134",
+      "name": "정동제일교회",
+      "tags": "한국최초교회,종교,교회,성지,정동제일교회,정동교회",
+      "category": "Culture",
+      "matchedKeywords": [
+        "교회",
+        "성지"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "10611",
+      "name": "가미분식",
+      "tags": "얼큰우동,주먹밥,이대,분식,오래가게,면요리",
+      "category": "Food",
+      "matchedKeywords": [
+        "분식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "37176",
+      "name": "창경궁 대온실 ",
+      "tags": "창경궁데이트,창경궁포토존,창경궁,창경궁대온실,서울가볼만한곳",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49407",
+      "name": "코엑스 물품보관소",
+      "tags": "코엑스 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50409",
+      "name": "갤러리조선",
+      "tags": "갤러리조선,현대미술,삼천동전시,삼청동갤러리,안국역,서울전시,MZ콜렉터",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43470",
+      "name": "거안",
+      "tags": "쌈지길,책장,기러기,식탁,책상,오래가게,느티나무",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "25929",
+      "name": "탈방 ",
+      "tags": "전통공예,산대탈,목공예품,오래가게,하회탈,전통탈,인사동,목공예",
+      "category": "Culture",
+      "matchedKeywords": [
+        "공예"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3452",
+      "name": "한국가구박물관",
+      "tags": " 전시,문화, 가구박물관,목재, 성북동,전통가구, 가구, 한국가구박물관,한성대입구역,박물관, 목가구",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "41681",
+      "name": "한국금융사박물관",
+      "tags": "금융,어린이체험,박물관,역사,화폐,한국금융사박물관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3358",
+      "name": "한상수자수박물관",
+      "tags": "전시,오래가게,체험,전통문화,성북동,한국자수,무형문화재",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3241",
+      "name": "국제갤러리",
+      "tags": " 갤러리, 작가발굴, 국제갤러리, 광화문역,문화, 안국역, 더레스토랑,광화문, 현대미술, 미술관,경복궁역,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "미술관",
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "5242",
+      "name": "헌인릉",
+      "tags": "문화재청,헌인릉,관광코스,서울명소,조선왕릉,헌릉,인릉,강남,유네스코,세계문화유산,서울문화재",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "23606",
+      "name": "혜화문",
+      "tags": " 북동방, 혜화, 4소문, 성곽,도성, 한성대입구역, 사소문, 동대문, 혜화동, 동소문,혜화문,성문",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "5765",
+      "name": "국회의사당",
+      "tags": " 민주주의, 국회의사당역, 여의도, 국회의사당,국회참관, 국회도서관,의원회관,인권,국회,역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50797",
+      "name": "굴다리식당 ",
+      "tags": "제육볶음,굴다리,김치찌개,노포,마포,오래가게,공덕,계란말이",
+      "category": "Food",
+      "matchedKeywords": [
+        "식당",
+        "찌개"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26190",
+      "name": "낙원떡집",
+      "tags": "쑥인절미,서울미래유산,오래가게,떡집,종로3가,쑥떡,두텁떡,호박설기,오색경단",
+      "category": "Culture",
+      "matchedKeywords": [
+        "절"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2049",
+      "name": "덕수궁",
+      "tags": "서울걷기좋은길,한국역사,한국궁,서울여행,정동돌담길,덕수궁야간,서울야경,서울필수여행지,덕수궁투어,한국여행지,궁궐투어,서울나들이,궁,고종의길,정동길,한국전통,덕수궁",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26192",
+      "name": "비원떡집",
+      "tags": " 떡집, 궁중떡,오래가게, 두텁떡, 쌍개피, 잣설기, 약식, 쑥찹쌀떡, 서울미래유산",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43490",
+      "name": "승진완구\t",
+      "tags": " 레고,교육용완구, 도매상,오래가게, 자동차장난감, 동대문,장난감",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50902",
+      "name": "원조조박집 ",
+      "tags": "돼지갈비,주물럭,외식,가족식사,막걸리,마포,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "갈비"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "12801",
+      "name": "유림면",
+      "tags": " 국수,서울3대메밀국수,냄비우동,시청역,별에서온그대, 돌냄비국수,비빔국수,메밀국수,오래된국수집,유림면,시청음식점,김수현,정동음식점",
+      "category": "Food",
+      "matchedKeywords": [
+        "음식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "25376",
+      "name": "을지다방",
+      "tags": "오래가게,카페, 을지로3가, 냉커피, 다방, 라면,쌍화차",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "다방",
+        "카페",
+        "커피"
+      ],
+      "matchedCategories": [
+        "Cafe",
+        "Food"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "43445",
+      "name": "자성당약국",
+      "tags": "공항시장역,방화,김포공항,건강,오래가게,약국",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성당"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "37158",
+      "name": "자하문터널",
+      "tags": "서울가볼만한곳,영화명소,기생충촬영지,자하문터널,기생충",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43488",
+      "name": "경은상사",
+      "tags": "일렉기타,기타,종각역,베이스기타,어쿠스틱기타,클래식기타,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "45529",
+      "name": "중앙고등학교",
+      "tags": " 종로,중앙고등학교,역사,겨울연가",
+      "category": "Culture",
+      "matchedKeywords": [
+        "학교",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "45534",
+      "name": "중앙상회",
+      "tags": "한류,중앙상회, 종로",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "50922",
+      "name": "코스모스 분식",
+      "tags": "짜장떡볶이,예일여고,구산역,즉석떡볶이,떡볶이,오래가게,분식",
+      "category": "Food",
+      "matchedKeywords": [
+        "분식",
+        "떡볶이"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "26194",
+      "name": "태극당",
+      "tags": " 제과점, 빵, 옛날빵, 장충동, 동국대,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "제과",
+        "빵"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "42446",
+      "name": "김중업 건축문화의집",
+      "tags": "도시재생,김중업-건축문화의집,서울미래유산,정원,성북문화재단,전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "문화재",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "35015",
+      "name": "남산케이블카",
+      "tags": "서울구경,서울구경,남산타워,남산케이블카,서울투어,남산,가족나들이,남산타워전망대,서울여행,서울야경,서울,남산전망대,N서울타워,야경",
+      "category": "Nature",
+      "matchedKeywords": [
+        "남산"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "25928",
+      "name": "납청놋전",
+      "tags": "방짜유기,오래가게, 놋그릇, 납청유기, 안국역, 이봉주방짜유기, 이형근방짜유기",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "24904",
+      "name": "내자땅콩",
+      "tags": "땅콩센베이,오래가게,꽈배기",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43450",
+      "name": "혜성미용실",
+      "tags": " 구로, 오류동, 인두파마,오래가게,미장원, 미용실",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "5548",
+      "name": "호림박물관 (신사분관)",
+      "tags": " 호림박물관,강남구청역,신사역, 호림박물관신사분관, 전시, 현대미술, 압구정로데오역,강남, 고미술, 박물관,신사동",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "48960",
+      "name": "호호재 서울",
+      "tags": "서울전시,서울갤러리,한옥갤러리,삼청동전시,호호재갤러리,갤러리투어,한국작가",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "갤러리",
+        "한옥"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "48918",
+      "name": "홍대R1 레드컬처마켓",
+      "tags": " 레드로드, 버스킹, 관광특화거리, 플리마켓, 문화, 마포구,홍대",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28332",
+      "name": "홍익문고",
+      "tags": " 홍대서점, 홍익문고, 서강대, 서울미래유산, 서울서점, 신촌역, 연세대,서점,오래가게, 팬시, 문구류",
+      "category": "Culture",
+      "matchedKeywords": [
+        "서점"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2021",
+      "name": "화계사",
+      "tags": "사찰,삼각산,숲, 자연, 흥선대원군, 템플스테이,화계사, 수유역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "사찰"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "49388",
+      "name": "롯데월드타워 물품보관소",
+      "tags": "롯데월드타워 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "5668",
+      "name": "북촌동양문화박물관",
+      "tags": "문화,안국역,동양문화,북촌동양문화박물관,전시,북촌한옥마을,광화문,박물관,역사",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "전시",
+        "한옥",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43454",
+      "name": "서우제과",
+      "tags": "전통과자,오래가게, 서초, 방배동,뻥튀기,쌀과자",
+      "category": "Food",
+      "matchedKeywords": [
+        "제과",
+        "과자"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49403",
+      "name": "안녕러기지 물품보관소",
+      "tags": "안녕러기지 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "27231",
+      "name": "신촌역사 관광안내소",
+      "tags": "관광안내소,안내소,신촌,여행,신촌역사-관광안내소,구신촌역사,이대,안내",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "4281",
+      "name": "안중근의사기념관",
+      "tags": " 안중근의사기념관, 전시,명동, 유적지,독립운동가, 안중근,역사,기념관, 서울역,회현역",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념",
+        "전시",
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49290",
+      "name": "을지로3가역 물품보관소",
+      "tags": "을지로3가역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1862",
+      "name": "원효로성당",
+      "tags": "여의도,서울근대문화재,용산역,원효로성당,성당,용산신학교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성당",
+        "문화재",
+        "학교"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43473",
+      "name": "잉꼬네떡볶이",
+      "tags": "가성비,중랑,망우동,매콤함,오래가게,분식,떡볶이",
+      "category": "Food",
+      "matchedKeywords": [
+        "떡볶이",
+        "분식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "41095",
+      "name": "잠실대교",
+      "tags": "서울,야경,잠실대교,잠실,한강,다리",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50914",
+      "name": "청송본관함흥냉면",
+      "tags": "오래가게,냉면,회냉면,녹두전,만두,연희동,서대문구,함흥냉면",
+      "category": "Food",
+      "matchedKeywords": [
+        "냉면",
+        "만두"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43610",
+      "name": "터방내",
+      "tags": "분위기,중앙대,흑석동,오래가게,카페,사이폰커피,다방",
+      "category": "Cafe",
+      "matchedKeywords": [
+        "카페",
+        "커피",
+        "다방"
+      ],
+      "matchedCategories": [
+        "Cafe"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "48452",
+      "name": "한강초교앞보도육교",
+      "tags": "용산가볼만한곳,야경맛집,서울사진스팟",
+      "category": "Food",
+      "matchedKeywords": [
+        "맛집"
+      ],
+      "matchedCategories": [
+        "Food",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "2126",
+      "name": "한강 이랜드크루즈",
+      "tags": "하천,자연,이랜드크루즈뷔페,한강데이트,여의나루역,여의도,한강유람선,이랜드크루즈애슐리,진성나루,이랜드크루즈,런닝맨,한강이랜드크루즈",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "1403",
+      "name": "허준박물관",
+      "tags": " 동의보감, 한의학,허준박물관, 구암허준, 구암공원, 체험관, 역사, 박물관, 체험학습, 허준,가양역,가양동",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "49336",
+      "name": "회현쇼핑센터 물품보관소",
+      "tags": "회현쇼핑센터 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "4198",
+      "name": "환구단(원구단)",
+      "tags": "원구단,광화문,시청역,을지로입구역,제천단,조선호텔,환구단",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "43442",
+      "name": "효성한의원",
+      "tags": " 한약재, 서울약령시, 제기동, 한의학, 한방치료,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28330",
+      "name": "훼드라",
+      "tags": "매운라면,연세대,해장,라면,분식,오래가게,신촌",
+      "category": "Food",
+      "matchedKeywords": [
+        "라면",
+        "분식"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "29766",
+      "name": "황학정",
+      "tags": "경복궁역,국궁전시관, 광화문, 경희궁, 활터, 황학정",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "19657",
+      "name": "효자베이커리",
+      "tags": " 도넛,발효빵,고로케, 베이글, 빵집, 빵,오래가게",
+      "category": "Food",
+      "matchedKeywords": [
+        "베이커리",
+        "빵"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43491",
+      "name": "휘가로",
+      "tags": "호프,오래가게,녹두거리,관악구,서울대,맥주",
+      "category": "Food",
+      "matchedKeywords": [
+        "호프",
+        "맥주"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49872",
+      "name": "청담대교",
+      "tags": "영화 촬영지,애니메이션,케이팝 데몬 헌터스,청담대교,한강다리,7호선자양역,영화 어벤져스2",
+      "category": "Nature",
+      "matchedKeywords": [
+        "한강"
+      ],
+      "matchedCategories": [
+        "Nature"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "47055",
+      "name": "경복궁 돌담길 ",
+      "tags": "종로,경복궁돌담길,광화문,돌담길,북촌,서촌,청와대,경복궁",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "47060",
+      "name": "경복궁 집옥재",
+      "tags": "집옥재,경복궁,광화문,도서관,청와대",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁",
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "47031",
+      "name": "창덕궁 후원 ",
+      "tags": "정원,창덕궁,창덕궁후원",
+      "category": "Culture",
+      "matchedKeywords": [
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49867",
+      "name": "코엑스 K-POP 광장",
+      "tags": "코엑스 K-POP 스퀘어,별마당도서관,한류콘텐츠,LED사이니지,옥외광고,디지털미디어,삼성역,코엑스",
+      "category": "Culture",
+      "matchedKeywords": [
+        "도서관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50346",
+      "name": "스페이스K 서울",
+      "tags": "서울 전시관,마곡 볼거리,전시관람,스페이스K 서울,문화예술,비영리 미술관,서울전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시",
+        "미술관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "50421",
+      "name": "플랫폼엘 (PLATFORM-L)",
+      "tags": "서울미술관,플랫폼엘 컨템포러리 아트센터,리틀엘(LITTLE-L),플랫폼엘미술관,강남전시",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49393",
+      "name": "삼성역 물품보관소",
+      "tags": "삼성역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49361",
+      "name": "놓다 물품보관소",
+      "tags": "놓다 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49341",
+      "name": "동대문디자인플라자 물품보관소",
+      "tags": "동대문디자인플라자 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49309",
+      "name": "충무로역 물품보관소",
+      "tags": "물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1961",
+      "name": "겸재정선미술관",
+      "tags": "양천향교역, 겸재성선미술관, 영화감상회,문화,정선, 서울식물원화가정선, 전시, 가양동, 미술관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "미술관",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "3164",
+      "name": "남포면옥(중구)",
+      "tags": "어복쟁반,갈비탕,을지로맛집,남포면옥,냉면",
+      "category": "Food",
+      "matchedKeywords": [
+        "면옥",
+        "갈비",
+        "맛집",
+        "냉면"
+      ],
+      "matchedCategories": [
+        "Food"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2030",
+      "name": "대한성공회서울주교좌성당(서울성공회성당)",
+      "tags": "대한성공회,서울주교좌성당,시청역, 덕수궁돌담길,광화문, 광화문역,천주교",
+      "category": "Culture",
+      "matchedKeywords": [
+        "성당",
+        "궁"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "24679",
+      "name": "동대문디자인플라자 (DDP)",
+      "tags": "동대문디자인플라자,서울복합문화공간,서울명소,서울볼거리,서울DDP,서울동대문역사문화공원역,서울데이트코스,서울놀거리,DDP",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "47187",
+      "name": "삼세영",
+      "tags": "현대미술,문화예술,전시,평창동전시,현대미술전시,건축,고미술,삼세영",
+      "category": "Culture",
+      "matchedKeywords": [
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "2388",
+      "name": "아라리오갤러리 서울",
+      "tags": "아라리오,아라리오갤러리,문화,미술,화랑,서울전시,현대미술,전시,북촌,종로,갤러리,광화문,삼청동,예술",
+      "category": "Culture",
+      "matchedKeywords": [
+        "갤러리",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49324",
+      "name": "요요 물품보관소",
+      "tags": "요요 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "34860",
+      "name": "전태일기념관",
+      "tags": "전태일기념관",
+      "category": "Culture",
+      "matchedKeywords": [
+        "기념"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "49409",
+      "name": "짐프리 물품보관소",
+      "tags": "짐프리 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "4696",
+      "name": "청계천박물관",
+      "tags": " 청계천문화관,역사,전시관,두물다리, 청계천박물관, 생태, 제기동역,청계천",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관",
+        "역사",
+        "전시"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "1955",
+      "name": "풍납토성",
+      "tags": " 유적지, 백제, 백제풍납토성, 송파구, 풍납토성, 역사, 한강,천호역,한강유적",
+      "category": "Culture",
+      "matchedKeywords": [
+        "유적",
+        "역사"
+      ],
+      "matchedCategories": [
+        "Culture",
+        "Nature"
+      ],
+      "needsReview": true
+    },
+    {
+      "id": "42255",
+      "name": "피겨앤그라운드",
+      "tags": "피겨앤그라운드",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "15863",
+      "name": "피규어뮤지엄W",
+      "tags": " 피규어뮤지엄W,박물관, 피규어뮤지엄, 피규어,임시완,오마이비너스, 이종석, 키덜트, 신민아,압구정로데오역, 한류, 강남, 엑소,디오, 소지섭, 이광수, 문화가있는날, 고소영",
+      "category": "Culture",
+      "matchedKeywords": [
+        "박물관"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "28057",
+      "name": "해창양복점",
+      "tags": "맞춤양복점,광화문,을지로입구역,해창양복점,소공동,시청역",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "49457",
+      "name": "홍대입구역 물품보관소",
+      "tags": "홍대입구역 물품보관소",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "28051",
+      "name": "호미화방",
+      "tags": "화방,오래가게, 서교동, 디자인, 홍대, 미술용품, 미술화방, 서울미래유산",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    },
+    {
+      "id": "1999",
+      "name": "흥인지문(동대문)",
+      "tags": " 역사,서울여행,동대문야시장, 동대문,서울사대문,동대문명소, 문화재,서울명소,서울데이트,흥인지문,성곽,서울문화재,서울동대문볼거리",
+      "category": "Culture",
+      "matchedKeywords": [
+        "역사",
+        "문화재"
+      ],
+      "matchedCategories": [
+        "Culture"
+      ],
+      "needsReview": false
+    },
+    {
+      "id": "43455",
+      "name": "힐스트링",
+      "tags": "악기수리,명장,현악기제작,바이올린,예술의전당, 힐스트링,서초,오래가게",
+      "category": "Culture",
+      "matchedKeywords": [],
+      "matchedCategories": [],
+      "needsReview": true
+    }
+  ]
+}

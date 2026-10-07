@@ -69,6 +69,12 @@ for (let startIndex = pageSize + 1; startIndex <= totalCount; startIndex += page
 
 const rows = pages.flatMap((page) => page.row);
 const seedCatalog = JSON.parse(await readFile(seedPath, 'utf8'));
+const existingCandidateCatalog = JSON.parse(await readFile(candidateOutputPath, 'utf8'));
+const existingCoordinates = new Map(
+  existingCandidateCatalog.attractions
+    .filter((attraction) => Array.isArray(attraction.coordinates))
+    .map((attraction) => [attraction.id, attraction]),
+);
 
 function normalizeName(value) {
   return value.replace(/[\s·()-]/g, '').toLocaleLowerCase('ko');
@@ -81,8 +87,8 @@ const koreanAttractions = normalizedRows
     ...record,
     district: getDistrict(record.address),
     placeType: '관광지',
-    coordinates: null,
-    coordinateStatus: 'pending',
+    coordinates: existingCoordinates.get(record.id)?.coordinates ?? null,
+    coordinateStatus: existingCoordinates.get(record.id)?.coordinateStatus ?? 'pending',
   }));
 const matches = seedCatalog.spots.flatMap((spot) => {
   const sourceRecord = normalizedRows.find(

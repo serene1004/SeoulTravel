@@ -10,7 +10,8 @@
     "format:check": "prettier --check .",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "sync:seoul-attractions": "node scripts/sync-seoul-attractions.mjs"
+    "sync:seoul-attractions": "node scripts/sync-seoul-attractions.mjs",
+    "geocode:seoul-attractions": "node scripts/geocode-seoul-attractions.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
