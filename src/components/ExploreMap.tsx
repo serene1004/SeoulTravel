@@ -12,7 +12,7 @@ import {
 } from 'maplibre-gl';
 import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
-import { getPublicAttractionRecord, type MapAttraction } from '../data/publicAttractions';
+import { getPublicAttractionRecord } from '../data/publicAttractions';
 import { getSpotCategoryLabel, type Locale, type Spot, type SpotCategory } from '../data/spots';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -23,24 +23,17 @@ const seoulCenter: [number, number] = [126.9785, 37.5665];
 
 type ExploreMapProps = {
   spots: Spot[];
-  attractions: Array<MapAttraction & { coordinates: [number, number] }>;
   locale: Locale;
   categoryColors: Record<SpotCategory, string>;
   centerLabel: string;
   selectedSpotId: string | null;
-  selectedAttractionId: string | null;
   onSelectSpot: (id: string) => void;
-  onSelectAttraction: (id: string) => void;
   onSelectCluster: (places: ClusterPlace[]) => void;
 };
 
-export type ClusterPlace = { id: string; kind: 'spot' | 'public'; coordinates: [number, number] };
+export type ClusterPlace = { id: string; kind: 'spot'; coordinates: [number, number] };
 
-function toMapPlaceFeatureCollection(
-  spots: Spot[],
-  attractions: MapAttraction[],
-  categoryColors: Record<SpotCategory, string>,
-) {
+function toMapPlaceFeatureCollection(spots: Spot[], categoryColors: Record<SpotCategory, string>) {
   return {
     type: 'FeatureCollection' as const,
     features: [
@@ -57,33 +50,17 @@ function toMapPlaceFeatureCollection(
         },
         geometry: { type: 'Point' as const, coordinates: spot.coordinates },
       })),
-      ...attractions.map((attraction) => ({
-        type: 'Feature' as const,
-        properties: {
-          id: attraction.id,
-          kind: 'public',
-          category: attraction.category,
-          color: categoryColors[attraction.category],
-          nameKo: attraction.name,
-          nameEn: attraction.name,
-          nameJa: attraction.name,
-        },
-        geometry: { type: 'Point' as const, coordinates: attraction.coordinates },
-      })),
     ],
   };
 }
 
 export function ExploreMap({
   spots,
-  attractions,
   locale,
   categoryColors,
   centerLabel,
   selectedSpotId,
-  selectedAttractionId,
   onSelectSpot,
-  onSelectAttraction,
   onSelectCluster,
 }: ExploreMapProps) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
@@ -91,18 +68,15 @@ export function ExploreMap({
   const popupRef = useRef<Popup | null>(null);
   const localeRef = useRef(locale);
   const onSelectSpotRef = useRef(onSelectSpot);
-  const onSelectAttractionRef = useRef(onSelectAttraction);
   const onSelectClusterRef = useRef(onSelectCluster);
   const [isMapReady, setIsMapReady] = useState(false);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const [hoveredPublicId, setHoveredPublicId] = useState<string | null>(null);
 
   useEffect(() => {
     localeRef.current = locale;
     onSelectSpotRef.current = onSelectSpot;
-    onSelectAttractionRef.current = onSelectAttraction;
     onSelectClusterRef.current = onSelectCluster;
-  }, [locale, onSelectAttraction, onSelectCluster, onSelectSpot]);
+  }, [locale, onSelectCluster, onSelectSpot]);
 
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return undefined;
@@ -152,7 +126,7 @@ export function ExploreMap({
         filter: ['has', 'point_count'],
         layout: {
           'text-field': ['get', 'point_count_abbreviated'],
-          'text-font': ['Open Sans Bold'],
+          'text-font': ['Noto Sans Bold'],
           'text-size': 12,
         },
         paint: { 'text-color': '#fffaf0' },
@@ -182,7 +156,6 @@ export function ExploreMap({
         if (!source || !Number.isFinite(clusterId) || !coordinates) return;
 
         setHoveredId(null);
-        setHoveredPublicId(null);
         const places = await source.getClusterLeaves(clusterId, 8, 0);
         const popupContent = document.createElement('article');
         popupContent.className = 'spot-popup cluster-popup';
@@ -234,9 +207,7 @@ export function ExploreMap({
             const kind = place.properties?.kind;
             const coordinates =
               place.geometry.type === 'Point' ? place.geometry.coordinates : undefined;
-            return typeof id === 'string' &&
-              (kind === 'spot' || kind === 'public') &&
-              Array.isArray(coordinates)
+            return typeof id === 'string' && kind === 'spot' && Array.isArray(coordinates)
               ? [{ id, kind, coordinates: coordinates as [number, number] }]
               : [];
           }),
@@ -250,19 +221,16 @@ export function ExploreMap({
         const kind = event.features?.[0]?.properties?.kind;
         if (typeof id !== 'string') return;
         setHoveredId(kind === 'spot' ? id : null);
-        setHoveredPublicId(kind === 'public' ? id : null);
       });
       map.on('mouseleave', 'place-points', () => {
         map.getCanvas().style.cursor = '';
         setHoveredId(null);
-        setHoveredPublicId(null);
       });
       map.on('click', 'place-points', (event: MapLayerMouseEvent) => {
         const id = event.features?.[0]?.properties?.id;
         const kind = event.features?.[0]?.properties?.kind;
         if (typeof id !== 'string') return;
         if (kind === 'spot') onSelectSpotRef.current(id);
-        if (kind === 'public') onSelectAttractionRef.current(id);
       });
       setIsMapReady(true);
     });
@@ -278,16 +246,12 @@ export function ExploreMap({
 
   useEffect(() => {
     const source = mapRef.current?.getSource('map-places') as GeoJSONSource | undefined;
-    if (isMapReady)
-      source?.setData(toMapPlaceFeatureCollection(spots, attractions, categoryColors));
-  }, [attractions, categoryColors, isMapReady, spots]);
+    if (isMapReady) source?.setData(toMapPlaceFeatureCollection(spots, categoryColors));
+  }, [categoryColors, isMapReady, spots]);
 
   useEffect(() => {
     const spot = selectedSpotId ? spots.find((item) => item.id === selectedSpotId) : undefined;
-    const attraction = selectedAttractionId
-      ? attractions.find((item) => item.id === selectedAttractionId)
-      : undefined;
-    const coordinates = spot?.coordinates ?? attraction?.coordinates;
+    const coordinates = spot?.coordinates;
     const map = mapRef.current;
     if (coordinates && map)
       map.flyTo({
@@ -296,16 +260,13 @@ export function ExploreMap({
         duration: 900,
         essential: true,
       });
-  }, [attractions, selectedAttractionId, selectedSpotId, spots]);
+  }, [selectedSpotId, spots]);
 
   useEffect(() => {
     const map = mapRef.current;
     if (!isMapReady || !map) return;
     const spot = hoveredId ? spots.find((item) => item.id === hoveredId) : undefined;
-    const attraction = hoveredPublicId
-      ? attractions.find((item) => item.id === hoveredPublicId)
-      : undefined;
-    if (!spot && !attraction) {
+    if (!spot) {
       popupRef.current?.remove();
       popupRef.current = null;
       return;
@@ -314,16 +275,22 @@ export function ExploreMap({
     const popupContent = document.createElement('article');
     popupContent.className = 'spot-popup spot-hover-popup';
     const record = spot ? getPublicAttractionRecord(spot.id) : undefined;
-    const name = attraction
-      ? attraction.name
-      : locale === 'ko'
-        ? record?.name || spot!.name.ko
-        : spot!.name[locale];
-    const metadata = attraction ? attraction.address : record?.address || spot!.note[locale];
-    const category = attraction ? attraction.category : spot!.category;
-    const district = attraction ? (attraction.district ?? '') : spot!.district[locale];
-    const coordinates = attraction ? attraction.coordinates : spot!.coordinates;
-    popupContent.innerHTML = `<div class="spot-popup-kicker"><span>${getSpotCategoryLabel(category, locale)}</span><span>${district}</span></div><strong>${name}</strong><p>${metadata}</p>`;
+    const name = locale === 'ko' ? record?.name || spot.name.ko : spot.name[locale];
+    const metadata = record?.address || spot.note[locale];
+    const district = spot.district[locale];
+    const coordinates = spot.coordinates;
+    const kicker = document.createElement('div');
+    kicker.className = 'spot-popup-kicker';
+    for (const text of [getSpotCategoryLabel(spot.category, locale), district]) {
+      const label = document.createElement('span');
+      label.textContent = text;
+      kicker.append(label);
+    }
+    const heading = document.createElement('strong');
+    heading.textContent = name;
+    const description = document.createElement('p');
+    description.textContent = metadata;
+    popupContent.append(kicker, heading, description);
     const popup =
       popupRef.current ??
       new Popup({
@@ -335,7 +302,7 @@ export function ExploreMap({
       }).addTo(map);
     popup.setLngLat(coordinates).setDOMContent(popupContent);
     popupRef.current = popup;
-  }, [attractions, hoveredId, hoveredPublicId, isMapReady, locale, spots]);
+  }, [hoveredId, isMapReady, locale, spots]);
 
   function centerMap() {
     mapRef.current?.flyTo({ center: seoulCenter, zoom: 11.35, duration: 900, essential: true });

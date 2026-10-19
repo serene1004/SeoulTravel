@@ -5,8 +5,14 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, CloudSun, Search, X } from 'lu
 
 import { ExploreMap, type ClusterPlace } from './components/ExploreMap';
 import { SiteHeader } from './components/SiteHeader';
-import { getPublicAttractionRecord, mapPublicAttractions } from './data/publicAttractions';
-import { getSpotCategoryLabel, seoulSpots, type Locale, type SpotCategory } from './data/spots';
+import { getPublicAttractionRecord } from './data/publicAttractions';
+import {
+  getSpotCategoryLabel,
+  seoulSpots,
+  spotCategories,
+  type Locale,
+  type SpotCategory,
+} from './data/spots';
 import { fetchSeoulWeather, type Forecast, weatherCondition } from './data/weather';
 
 type Category = 'All' | SpotCategory;
@@ -14,42 +20,47 @@ type Category = 'All' | SpotCategory;
 const copy: Record<Locale, Record<string, string>> = {
   ko: {
     all: '전체',
-    bestTime: '추천 시간 09:00–12:00',
+    bestTime: '운영시간 확인 필요',
     center: '서울 중심으로 보기',
     explore: '서울의 볼거리 먹거리',
     filters: '카테고리',
+    results: '검색 결과',
     search: '장소 또는 지역 검색',
     spot: '장소 정보 보기',
     title: '서울을 한눈에',
   },
   en: {
     all: 'All',
-    bestTime: 'Best 09:00–12:00',
+    bestTime: 'Check opening hours',
     center: 'Center on Seoul',
     explore: 'Seoul sights & eats',
     filters: 'Filter by',
+    results: 'Results',
     search: 'Search a place or area',
     spot: 'View place details',
     title: 'Plan Seoul in one place',
   },
   ja: {
     all: 'すべて',
-    bestTime: 'おすすめ 09:00–12:00',
+    bestTime: '営業時間をご確認ください',
     center: 'ソウル中心に戻る',
     explore: 'ソウルの見どころ・グルメ',
     filters: 'カテゴリー',
+    results: '検索結果',
     search: '場所・エリアを検索',
     spot: '場所の情報を見る',
     title: 'ソウル旅行を、ひとつに',
   },
 };
 
-const categories: Category[] = ['All', 'Culture', 'Food', 'Cafe', 'Nature'];
+const categories: Category[] = ['All', ...spotCategories];
 const categoryColors: Record<SpotCategory, string> = {
   Culture: '#c6503a',
   Food: '#d4773c',
   Cafe: '#d5a33e',
   Nature: '#368b68',
+  Shopping: '#8a5896',
+  Experience: '#347d9b',
 };
 const clusterPageSize = 5;
 const searchDebounceMs = 300;
@@ -57,7 +68,6 @@ const searchDebounceMs = 300;
 export default function App() {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [selectedPublicId, setSelectedPublicId] = useState<string | null>(null);
   const [selectedClusterPlaces, setSelectedClusterPlaces] = useState<ClusterPlace[]>([]);
   const [clusterListPage, setClusterListPage] = useState(0);
   const [sameLocationIndex, setSameLocationIndex] = useState(0);
@@ -77,7 +87,6 @@ export default function App() {
     const timeoutId = window.setTimeout(() => {
       setSearch(searchInput);
       setSelectedId(null);
-      setSelectedPublicId(null);
       setSelectedClusterPlaces([]);
       setClusterListPage(0);
       setSameLocationIndex(0);
@@ -90,35 +99,17 @@ export default function App() {
     return seoulSpots.filter((spot) => {
       const matchesCategory = activeCategory === 'All' || spot.category === activeCategory;
       const searchable =
-        `${spot.name.ko} ${spot.name.en} ${spot.name.ja} ${spot.district.ko} ${spot.district.en} ${spot.neighborhood.ko} ${spot.neighborhood.en}`.toLocaleLowerCase(
+        `${spot.name.ko} ${spot.name.en} ${spot.name.ja} ${spot.district.ko} ${spot.district.en} ${spot.neighborhood.ko} ${spot.neighborhood.en} ${spot.district.ja} ${spot.neighborhood.ja}`.toLocaleLowerCase(
           locale,
         );
       return matchesCategory && searchable.includes(normalizedSearch);
     });
   }, [activeCategory, locale, search]);
-  const visiblePublicAttractions = useMemo(() => {
-    const normalizedSearch = search.toLocaleLowerCase(locale);
-    return mapPublicAttractions.filter(
-      (attraction) =>
-        (activeCategory === 'All' || attraction.category === activeCategory) &&
-        `${attraction.name} ${attraction.district ?? ''}`
-          .toLocaleLowerCase(locale)
-          .includes(normalizedSearch),
-    );
-  }, [activeCategory, locale, search]);
-
   const selected = selectedId ? visibleSpots.find((spot) => spot.id === selectedId) : undefined;
-  const selectedPublicAttraction = selectedPublicId
-    ? visiblePublicAttractions.find((attraction) => attraction.id === selectedPublicId)
-    : undefined;
   const selectedPublicRecord = selected ? getPublicAttractionRecord(selected.id) : undefined;
   const selectedClusterItems = selectedClusterPlaces.flatMap((place) => {
-    if (place.kind === 'spot') {
-      const spot = seoulSpots.find((item) => item.id === place.id);
-      return spot ? [{ ...place, name: spot.name[locale], category: spot.category }] : [];
-    }
-    const attraction = mapPublicAttractions.find((item) => item.id === place.id);
-    return attraction ? [{ ...place, name: attraction.name, category: attraction.category }] : [];
+    const spot = seoulSpots.find((item) => item.id === place.id);
+    return spot ? [{ ...place, name: spot.name[locale], category: spot.category }] : [];
   });
   const clusterPageCount = Math.ceil(selectedClusterItems.length / clusterPageSize);
   const pagedClusterItems = selectedClusterItems.slice(
@@ -128,22 +119,21 @@ export default function App() {
   const isSameLocationCluster =
     selectedClusterPlaces.length > 1 &&
     selectedClusterPlaces.every(
-    (place) =>
-      place.coordinates[0] === selectedClusterPlaces[0]?.coordinates[0] &&
-      place.coordinates[1] === selectedClusterPlaces[0]?.coordinates[1],
+      (place) =>
+        place.coordinates[0] === selectedClusterPlaces[0]?.coordinates[0] &&
+        place.coordinates[1] === selectedClusterPlaces[0]?.coordinates[1],
     );
   const text = copy[locale];
 
   useEffect(() => {
-    if (!selectedId && !selectedPublicId && !selectedClusterPlaces.length) return undefined;
+    if (!selectedId && !selectedClusterPlaces.length) return undefined;
     const closeOnEscape = (event: KeyboardEvent) => event.key === 'Escape' && closeDialog();
     window.addEventListener('keydown', closeOnEscape);
     return () => window.removeEventListener('keydown', closeOnEscape);
-  }, [selectedClusterPlaces.length, selectedId, selectedPublicId]);
+  }, [selectedClusterPlaces.length, selectedId]);
 
   function closeDialog() {
     setSelectedId(null);
-    setSelectedPublicId(null);
     setSelectedClusterPlaces([]);
     setClusterListPage(0);
     setSameLocationIndex(0);
@@ -165,12 +155,10 @@ export default function App() {
       setClusterListPage(0);
       setSameLocationIndex(0);
     }
-    setSelectedId(place.kind === 'spot' ? place.id : null);
-    setSelectedPublicId(place.kind === 'public' ? place.id : null);
+    setSelectedId(place.id);
   }
   function selectStackPlace(place: ClusterPlace) {
-    setSelectedId(place.kind === 'spot' ? place.id : null);
-    setSelectedPublicId(place.kind === 'public' ? place.id : null);
+    setSelectedId(place.id);
   }
   function moveSameLocation(direction: -1 | 1) {
     const index = sameLocationIndex + direction;
@@ -219,34 +207,26 @@ export default function App() {
                 </span>
                 <small>
                   {category === 'All'
-                    ? seoulSpots.length + mapPublicAttractions.length
-                    : seoulSpots.filter((spot) => spot.category === category).length +
-                      mapPublicAttractions.filter((attraction) => attraction.category === category)
-                        .length}
+                    ? seoulSpots.length
+                    : seoulSpots.filter((spot) => spot.category === category).length}
                 </small>
               </button>
             ))}
           </div>
+          <p aria-live="polite">
+            {text.results} · {visibleSpots.length}
+          </p>
         </aside>
         <ExploreMap
           spots={visibleSpots}
-          attractions={visiblePublicAttractions}
           locale={locale}
           categoryColors={categoryColors}
           centerLabel={text.center}
           selectedSpotId={selectedId}
-          selectedAttractionId={selectedPublicId}
           onSelectSpot={(id) => {
             setSelectedClusterPlaces([]);
             setSameLocationIndex(0);
-            setSelectedPublicId(null);
             setSelectedId(id);
-          }}
-          onSelectAttraction={(id) => {
-            setSelectedClusterPlaces([]);
-            setSameLocationIndex(0);
-            setSelectedId(null);
-            setSelectedPublicId(id);
           }}
           onSelectCluster={(places) => {
             if (places.length < 2) return;
@@ -254,16 +234,15 @@ export default function App() {
             setClusterListPage(0);
             setSameLocationIndex(0);
             setSelectedId(null);
-            setSelectedPublicId(null);
           }}
         />
       </section>
-      {(selected || selectedPublicAttraction || selectedClusterItems.length > 0) && (
+      {(selected || selectedClusterItems.length > 0) && (
         <div
           className="spot-dialog-backdrop"
           onMouseDown={(event) => event.target === event.currentTarget && closeDialog()}
         >
-          {isSameLocationCluster && (selected || selectedPublicAttraction) && (
+          {isSameLocationCluster && selected && (
             <nav className="spot-dialog-stack-controls" aria-label="같은 위치의 장소">
               <button
                 type="button"
@@ -291,7 +270,7 @@ export default function App() {
             aria-modal="true"
             aria-labelledby="spot-dialog-title"
           >
-            {selectedClusterItems.length > 0 && !selected && !selectedPublicAttraction ? (
+            {selectedClusterItems.length > 0 && !selected ? (
               <>
                 <div className="spot-dialog-top">
                   <span className="eyebrow">이 주변의 장소</span>
@@ -342,39 +321,20 @@ export default function App() {
                   <span className="eyebrow">
                     {isSameLocationCluster
                       ? `같은 위치의 장소 · ${sameLocationIndex + 1}/${selectedClusterItems.length}`
-                      : getSpotCategoryLabel(
-                          selectedPublicAttraction?.category ?? selected!.category,
-                          locale,
-                        )}
+                      : getSpotCategoryLabel(selected!.category, locale)}
                   </span>
                   <button type="button" aria-label="Close place details" onClick={closeDialog}>
                     <X size={19} />
                   </button>
                 </div>
-                <h2 id="spot-dialog-title">
-                  {selectedPublicAttraction
-                    ? selectedPublicAttraction.name
-                    : locale === 'ko' && selectedPublicRecord
-                      ? selectedPublicRecord.name
-                      : selected!.name[locale]}
-                </h2>
+                <h2 id="spot-dialog-title">{selected!.name[locale]}</h2>
                 <p className="spot-dialog-district">
-                  {selectedPublicAttraction?.address ||
-                    selectedPublicRecord?.address ||
-                    selected!.district[locale]}
+                  {selectedPublicRecord?.address || selected!.district[locale]}
                 </p>
                 <div className="info-rule" />
                 <div className="spot-dialog-meta">
-                  <span>
-                    {selectedPublicAttraction?.tags ||
-                      selectedPublicRecord?.tags ||
-                      selected!.note[locale]}
-                  </span>
-                  <span>
-                    {selectedPublicAttraction?.hours ||
-                      selectedPublicRecord?.hours ||
-                      text.bestTime}
-                  </span>
+                  <span>{selectedPublicRecord?.tags || selected!.note[locale]}</span>
+                  <span>{selectedPublicRecord?.hours || text.bestTime}</span>
                 </div>
                 <section className="spot-dialog-weather">
                   <CloudSun size={30} strokeWidth={1.5} />

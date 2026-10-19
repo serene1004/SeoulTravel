@@ -4,8 +4,6 @@ import { resolve } from 'node:path';
 const envPath = resolve('.env.local');
 const outputPath = resolve('src/data/seoul-open-attractions.json');
 const candidateOutputPath = resolve('src/data/seoul-public-attraction-candidates.json');
-const seedPath = resolve('src/data/seoul-spots.json');
-const matchOutputPath = resolve('src/data/seoul-spot-public-records.json');
 const datasetUrl = 'https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do';
 const apiBaseUrl = 'http://openapi.seoul.go.kr:8088';
 const pageSize = 1000;
@@ -68,17 +66,12 @@ for (let startIndex = pageSize + 1; startIndex <= totalCount; startIndex += page
 }
 
 const rows = pages.flatMap((page) => page.row);
-const seedCatalog = JSON.parse(await readFile(seedPath, 'utf8'));
 const existingCandidateCatalog = JSON.parse(await readFile(candidateOutputPath, 'utf8'));
 const existingCoordinates = new Map(
   existingCandidateCatalog.attractions
     .filter((attraction) => Array.isArray(attraction.coordinates))
     .map((attraction) => [attraction.id, attraction]),
 );
-
-function normalizeName(value) {
-  return value.replace(/[\s·()-]/g, '').toLocaleLowerCase('ko');
-}
 
 const normalizedRows = rows.map(toPublicAttraction);
 const koreanAttractions = normalizedRows
@@ -90,13 +83,6 @@ const koreanAttractions = normalizedRows
     coordinates: existingCoordinates.get(record.id)?.coordinates ?? null,
     coordinateStatus: existingCoordinates.get(record.id)?.coordinateStatus ?? 'pending',
   }));
-const matches = seedCatalog.spots.flatMap((spot) => {
-  const sourceRecord = normalizedRows.find(
-    (record) => normalizeName(record.name) === normalizeName(spot.name.ko),
-  );
-  return sourceRecord ? [{ spotId: spot.id, record: sourceRecord }] : [];
-});
-
 const catalog = {
   source: {
     name: '서울시 관광 명소',
@@ -109,12 +95,6 @@ const catalog = {
   attractions: normalizedRows,
 };
 
-const matchedCatalog = {
-  source: catalog.source,
-  matchedAt: catalog.source.retrievedAt,
-  matches,
-};
-
 const candidateCatalog = {
   source: catalog.source,
   totalCount: koreanAttractions.length,
@@ -124,8 +104,7 @@ const candidateCatalog = {
 };
 
 await writeFile(outputPath, `${JSON.stringify(catalog, null, 2)}\n`, 'utf8');
-await writeFile(matchOutputPath, `${JSON.stringify(matchedCatalog, null, 2)}\n`, 'utf8');
 await writeFile(candidateOutputPath, `${JSON.stringify(candidateCatalog, null, 2)}\n`, 'utf8');
 console.log(
-  `Wrote ${catalog.attractions.length} public records, ${koreanAttractions.length} map candidates, and ${matches.length} matched map spots.`,
+  `Wrote ${catalog.attractions.length} public records and ${koreanAttractions.length} map candidates.`,
 );
