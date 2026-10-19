@@ -1,21 +1,38 @@
-# Seoul spot data and map plan
+# 서울 장소 데이터와 지도
 
-## Goal
+이 문서는 현재 장소 데이터의 흐름과 관리 방법을 안내합니다. 지도에 넣을 장소의 세부 선정 기준은 [장소 선정 정책](TRAVEL_PLACE_POLICY.md), 항목별 판단 결과는 [장소 검토 결과](TRAVEL_PLACE_REVIEW.md)를 참고하세요.
 
-Replace inline placeholder markers with a curated, auditable Seoul spot catalog that can feed maps, search, category filters, and detail views from one source.
+## 현재 데이터 흐름
 
-## Implemented flow
+지도·검색·카테고리 필터·장소 상세 화면은 `src/data/seoul-travel-places.json` 하나를 공통으로 사용합니다. 이 파일은 직접 편집하지 않는 생성 결과이며, 장소 선정과 좌표 검사를 통과한 항목만 담습니다.
 
-1. `src/data/seoul-spots.json` is the source of truth. Every spot has a stable ID, category, district/neighborhood, localized labels, map coordinates, and a public-data source identifier.
-2. `src/data/spots.ts` provides typed access to the JSON catalog, category values, and a safe `getSpotById` lookup.
-3. `src/App.tsx` imports the catalog, turns its filtered entries into MapLibre GeoJSON, and refreshes the same source whenever a category or text search changes.
-4. Selecting a marker drives the detail panel and dialog; nearby recommendations are derived from the selected spot's coordinates instead of an unrelated static list.
-5. `/spots/:spotId` resolves its content from the same catalog and includes a link back to the official tourism listing.
+| 파일                                                | 역할                                   | 수정 방법              |
+| --------------------------------------------------- | -------------------------------------- | ---------------------- |
+| `src/data/seoul-open-attractions.json`              | 서울시 관광 명소 원천 스냅샷           | 동기화 명령으로 갱신   |
+| `src/data/seoul-public-attraction-coordinates.json` | 원천 장소의 좌표와 주소 대조 정보      | 지오코딩 명령으로 갱신 |
+| `src/data/seoul-travel-place-review.json`           | 장소별 포함·제외·보류 판단과 근거      | 판단을 수정할 때 편집  |
+| `src/data/seoul-travel-places.json`                 | 앱에서 사용하는 선정 장소 카탈로그     | 빌더로 재생성          |
+| `docs/TRAVEL_PLACE_REVIEW.md`                       | 전체 검토 결과를 읽기 쉽게 출력한 문서 | 빌더로 재생성          |
 
-## Curation and maintenance rules
+`src/data/spots.ts`는 카탈로그를 앱의 장소 타입으로 변환합니다. `src/App.tsx`의 지도와 탐색 화면, `src/data/publicAttractions.ts`와 장소 상세 화면도 같은 카탈로그를 참조합니다. 기존 장소 카탈로그 파일을 별도로 합산하지 않습니다.
 
-- The catalog does not copy Visit Seoul text, images, ratings, or editorial rankings. Its production refresh path is limited to Seoul Open Data Plaza datasets with an explicit reusable license.
-- Every refresh must retain the data-source identifier, license, retrieval time, and required attribution. A seed record without an exact currently active public-data match must not be published.
-- Coordinates are appropriate for marker display but should be verified against the place's official map or a licensed geocoding provider before a production release.
-- Opening hours, prices, and temporary notices are deliberately not duplicated in the JSON because they change frequently; the detail screen links to the official listing instead.
-- When adding a location, retain the `id`, three localized labels, category, district, neighborhood, coordinates, and `sourceUrl`. Update the catalog's `updatedAt` field after verification.
+## 데이터 갱신과 검증
+
+원천 데이터를 갱신하고 선정 결과를 다시 만들 때 다음 순서로 실행합니다.
+
+```sh
+pnpm sync:seoul-attractions
+pnpm geocode:seoul-attractions
+pnpm build:travel-places
+pnpm test:travel-places
+```
+
+빌더는 AI를 호출하지 않습니다. 검토 원장에 기록된 판단과 원천·좌표를 대조해 카탈로그와 검토 문서를 결정적으로 생성합니다. 신규 또는 주요 원천 정보가 바뀐 장소는 기존 판단을 그대로 적용하지 않고 검토 대상으로 보류합니다.
+
+지도에 장소를 포함하려면 방문 목적에 맞는다는 판단뿐 아니라 서울 주소와 좌표 대조도 통과해야 합니다. 좌표 범위 검사는 명백한 오류를 찾기 위한 것으로, 정확한 입구나 현재 접근 가능 여부까지 보증하지는 않습니다. 운영시간과 교통 정보는 원천 데이터 기준이므로 실제 방문 전 공식 안내를 확인해야 합니다.
+
+## 커밋 원칙
+
+장소 선정 변경은 판단 원장, 생성된 카탈로그, 사람이 읽을 수 있는 검토 결과를 함께 커밋합니다. 그래야 앱에 반영된 데이터와 그 판단 근거를 같은 버전에서 검토하고 재현할 수 있습니다. `TRAVEL_PLACE_REVIEW.md`와 `seoul-travel-places.json`은 생성 파일이므로 직접 편집하지 말고, 검토 원장을 수정한 뒤 `pnpm build:travel-places`를 실행하세요.
+
+원천 스냅샷이나 좌표 데이터가 바뀌었다면 그 파일도 함께 커밋해야 다음 갱신과 검증을 같은 입력으로 재현할 수 있습니다. 생성 결과가 원장과 일치하는지는 `pnpm test:travel-places`로 확인합니다.

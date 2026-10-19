@@ -42,19 +42,17 @@ pnpm dev
 
 ## Docker 실행
 
-Docker와 Docker Compose를 설치한 뒤 다음 명령으로 `seoultravel:latest` 이미지를 빌드하고 실행합니다.
-
 ```bash
-docker compose up --build -d
+docker compose up --build
 ```
 
-앱은 [http://localhost:8090](http://localhost:8090)에서 확인할 수 있습니다. React Router의 경로로 직접 접속해도 Nginx가 SPA 라우팅을 처리합니다. 종료하려면 `docker compose down`을 실행합니다.
+앱: [http://localhost:8090](http://localhost:8090)
 
 ## GitHub Pages
 
-`main` 브랜치에 푸시하면 GitHub Actions가 정적 사이트를 빌드해 배포합니다. 배포 경로에 맞춰 빌드 시 `VITE_BASE_PATH=/SeoulTravel/`을 설정합니다.
+`main` 브랜치에 푸시하면 GitHub Actions가 빌드해 배포합니다. 최초 배포 전에 저장소 Settings → Pages에서 배포 소스를 GitHub Actions로 설정하세요.
 
-배포 주소: [https://serene1004.github.io/SeoulTravel/](https://serene1004.github.io/SeoulTravel/)
+배포: [https://serene1004.github.io/SeoulTravel/](https://serene1004.github.io/SeoulTravel/)
 
 ## 주요 명령어
 
@@ -80,19 +78,21 @@ VITE_SEOUL_OPEN_DATA_KEY=발급받은_API_키
 
 ## 페이지
 
-| 경로 | 설명 |
-| --- | --- |
-| `/` | 서비스 소개 및 주요 기능 |
-| `/explore` | 장소 검색·필터·지도 탐색 |
-| `/spots/:spotId` | 장소 상세 정보 |
-| `/routes` | 장소 간 이동 경로 안내 |
-| `/weather` | 서울 날씨 및 추천 복장 |
+| 경로             | 설명                     |
+| ---------------- | ------------------------ |
+| `/`              | 서비스 소개 및 주요 기능 |
+| `/explore`       | 장소 검색·필터·지도 탐색 |
+| `/spots/:spotId` | 장소 상세 정보           |
+| `/routes`        | 장소 간 이동 경로 안내   |
+| `/weather`       | 서울 날씨 및 추천 복장   |
 
 ## 데이터 구조
 
-- `src/data/seoul-spots.json`: 지도와 검색에 사용하는 장소 카탈로그
+AI 적합성 검토로 별도 선정한 지도용 후보와 포함·제외 기준은 [장소 선정 정책](docs/TRAVEL_PLACE_POLICY.md), [전체 검토 결과](docs/TRAVEL_PLACE_REVIEW.md)에 정리했습니다. `pnpm build:travel-places`로 재생성하고 `pnpm test:travel-places`로 검증합니다. 지도·검색·상세 화면은 선정 데이터셋의 369개 장소를 사용합니다. 빌드할 때 선정 결과를 재생성합니다.
+
+- `src/data/seoul-travel-places.json`: 지도·검색·상세 화면에 사용하는 선정 장소 카탈로그
+- `src/data/seoul-travel-place-review.json`: 포함·제외·보류 판단과 근거
 - `src/data/spots.ts`: 장소 데이터 타입과 조회 함수
-- `src/data/seoul-spot-public-records.json`: 서울시 공공 관광 데이터와 매칭된 정보
 - `src/data/publicAttractions.ts`: 공공 관광 데이터 접근 함수
 - `docs/SPOT_DATA_PLAN.md`: 장소 데이터 관리 및 검증 규칙
 
