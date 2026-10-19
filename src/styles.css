@@ -2240,16 +2240,6 @@ a:focus-visible {
   background: #eee7d9;
   color: var(--color-primary);
 }
-.spot-photo {
-  background: linear-gradient(#c9d8d1 0 52%, #b9cda5 52%);
-  box-shadow: 7px 8px 0 #d9d0c2;
-}
-.spot-notes article,
-.spot-notes article:nth-child(2),
-.spot-notes article:nth-child(3) {
-  background: var(--color-paper-raised);
-  box-shadow: 0 3px 0 #e1d9cc;
-}
 .route-page {
   background: var(--color-paper);
 }
@@ -2722,13 +2712,97 @@ a:focus-visible {
   margin-left: auto;
 }
 
+.spot-info-list {
+  display: grid;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 clamp(var(--space-6), 4vw, 52px) var(--space-14);
+}
+.spot-hero {
+  padding-bottom: var(--space-6);
+}
+.spot-info-row {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-5) var(--space-6);
+}
+.spot-info-row + .spot-info-row {
+  border-top: 1px solid var(--color-border);
+}
+.spot-info-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-muted);
+}
+.spot-info-label svg {
+  flex: 0 0 auto;
+  color: var(--color-primary);
+}
+.spot-info-label p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+.spot-info-content {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+}
+.spot-info-content strong {
+  color: var(--color-ink);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.spot-info-content small {
+  color: var(--color-muted);
+  font-size: 10px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.spot-map-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-5);
+  border-radius: 4px;
+  background: var(--color-primary);
+  color: #fffaf2;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+.spot-map-link:hover {
+  background: var(--color-secondary);
+}
+
+@media (max-width: 720px) {
+  .spot-info-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+    padding: var(--space-5);
+  }
+  .spot-info-content {
+    padding-left: 28px;
+  }
+  .spot-map-link {
+    margin-left: 28px;
+  }
+}
+
 @media (max-width: 720px) {
   .map-area .maplibregl-ctrl-top-right {
-    top: 126px;
+    top: 16px;
     right: 14px;
   }
   .locate-button {
-    top: 234px;
+    top: 124px;
     right: 14px;
   }
 }
