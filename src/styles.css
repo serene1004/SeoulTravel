@@ -2886,6 +2886,16 @@ a:focus-visible {
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
+.spot-field-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+  color: var(--color-primary);
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .spot-map-link {
   display: inline-flex;
   align-items: center;
