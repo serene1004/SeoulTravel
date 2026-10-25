@@ -53,7 +53,7 @@ export default function SpotDetailPage() {
   };
   const mapUrl = new URL('https://www.google.com/maps/search/');
   mapUrl.searchParams.set('api', '1');
-  mapUrl.searchParams.set('query', `${spot.coordinates[1]},${spot.coordinates[0]}`);
+  mapUrl.searchParams.set('query', `${spot.name.ko}, ${publicAddress || spot.address}`);
   const weatherNote = forecast
     ? {
         icon: CloudSun,
