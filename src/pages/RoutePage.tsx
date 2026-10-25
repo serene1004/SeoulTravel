@@ -4,9 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import {
   ArrowLeftRight,
   ArrowUpRight,
-  CarFront,
   Check,
-  Footprints,
   MapPin,
   Navigation,
   Search,
@@ -16,14 +14,6 @@ import {
 
 import { SiteHeader } from '../components/SiteHeader';
 import { getSpotCategoryLabel, seoulSpots } from '../data/spots';
-
-type TravelMode = 'transit' | 'walking' | 'driving';
-
-const modeOptions: { id: TravelMode; label: string; Icon: typeof Train }[] = [
-  { id: 'transit', label: '대중교통', Icon: Train },
-  { id: 'walking', label: '도보', Icon: Footprints },
-  { id: 'driving', label: '자동차', Icon: CarFront },
-];
 
 const featuredPlaceNames = [
   '경복궁',
@@ -56,11 +46,11 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
   const normalizedQueryName = normalizedQuery.replaceAll(/\s+/g, '');
   const excludedMatchesQuery = Boolean(
     normalizedQuery &&
-      excluded &&
-      [excluded.name.ko, excluded.name.en, excluded.name.ja, excluded.district.ko]
-        .join(' ')
-        .toLocaleLowerCase('ko')
-        .includes(normalizedQuery),
+    excluded &&
+    [excluded.name.ko, excluded.name.en, excluded.name.ja, excluded.district.ko]
+      .join(' ')
+      .toLocaleLowerCase('ko')
+      .includes(normalizedQuery),
   );
   const matchingSpots = normalizedQuery
     ? availableSpots
@@ -234,22 +224,17 @@ function getDistanceKm(from: [number, number], to: [number, number]) {
   return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-function createDirectionsUrl(
-  from: (typeof seoulSpots)[number],
-  to: (typeof seoulSpots)[number],
-  mode: TravelMode,
-) {
+function createDirectionsUrl(from: (typeof seoulSpots)[number], to: (typeof seoulSpots)[number]) {
   const url = new URL('https://www.google.com/maps/dir/');
   url.searchParams.set('api', '1');
-  url.searchParams.set('origin', `${from.coordinates[1]},${from.coordinates[0]}`);
-  url.searchParams.set('destination', `${to.coordinates[1]},${to.coordinates[0]}`);
-  url.searchParams.set('travelmode', mode);
+  url.searchParams.set('origin', `${from.name.ko}, ${from.address}`);
+  url.searchParams.set('destination', `${to.name.ko}, ${to.address}`);
+  url.searchParams.set('travelmode', 'transit');
   return url.href;
 }
 
 export default function RoutePage() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [mode, setMode] = useState<TravelMode>('transit');
   const fromId = searchParams.get('from') ?? '';
   const toId = searchParams.get('to') ?? '';
   const from = seoulSpots.find((spot) => spot.id === fromId);
@@ -257,8 +242,7 @@ export default function RoutePage() {
   const hasValidRoute = Boolean(from && to && from.id !== to.id);
   const distanceKm =
     hasValidRoute && from && to ? getDistanceKm(from.coordinates, to.coordinates) : 0;
-  const directionsUrl =
-    hasValidRoute && from && to ? createDirectionsUrl(from, to, mode) : undefined;
+  const directionsUrl = hasValidRoute && from && to ? createDirectionsUrl(from, to) : undefined;
 
   function updateRoute(nextFromId: string, nextToId: string) {
     if (nextFromId && nextFromId === nextToId) return;
@@ -318,21 +302,13 @@ export default function RoutePage() {
             </p>
           )}
 
-          <div className="route-mode-picker" role="group" aria-label="이동 방법">
-            {modeOptions.map(({ id, label, Icon }) => (
-              <button
-                type="button"
-                key={id}
-                className={mode === id ? 'route-mode active' : 'route-mode'}
-                aria-pressed={mode === id}
-                onClick={() => setMode(id)}
-              >
-                <Icon size={17} /> {label}
-              </button>
-            ))}
+          <div className="route-mode-picker" aria-label="이동 방법">
+            <span className="route-mode active">
+              <Train size={17} aria-hidden="true" /> 대중교통
+            </span>
           </div>
           <p className="route-provider-note">
-            실제 경로와 소요 시간은 선택한 이동 방법으로 지도 앱에서 확인합니다.
+            Google Maps는 한국에서 도보·자동차 경로를 제공하지 않아 대중교통 경로로 안내합니다.
           </p>
         </div>
 
@@ -357,8 +333,7 @@ export default function RoutePage() {
                 장소 좌표 간 거리이며 실제 이동 거리와 다를 수 있습니다.
               </p>
               <a className="ticket-map" href={directionsUrl} target="_blank" rel="noreferrer">
-                <Navigation size={17} /> 지도에서{' '}
-                {modeOptions.find((item) => item.id === mode)?.label} 경로 보기
+                <Navigation size={17} /> 지도에서 대중교통 경로 보기
                 <ArrowUpRight size={15} />
               </a>
             </>

@@ -34,6 +34,7 @@ export type Spot = {
   district: LocalizedText;
   neighborhood: LocalizedText;
   note: LocalizedText;
+  address: string;
   coordinates: [number, number];
   sourceId: string;
   sourceUrl: string;
@@ -54,6 +55,7 @@ export const seoulSpots: Spot[] = travelCatalog.places.map((place) => {
     district: localize(place.district),
     neighborhood: localize(place.district),
     note: localize(place.tags || place.name),
+    address: place.address,
     coordinates: place.coordinates as [number, number],
     sourceUrl: travelCatalog.source.datasetUrl,
   };
