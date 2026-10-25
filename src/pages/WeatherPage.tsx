@@ -24,7 +24,7 @@ function outfitFor(temperature: number, precipitationChance: number) {
     return {
       image: 'mild.png',
       alt: '가벼운 재킷과 셔츠를 활용한 얇은 코디',
-      note: '긴팔 옷에 가벼운 겉옷을 더하면 활동하기 좋아요.',
+      note: '긴팔에 가벼운 겉옷을 걸치고, 따뜻한 낮에는 벗어 체온을 조절해 보세요.',
     };
   }
   return {
@@ -89,9 +89,12 @@ export default function WeatherPage() {
   const temperature = current ? Math.round(current.temperature_2m) : undefined;
   const apparent = current ? Math.round(current.apparent_temperature) : undefined;
   const rainChance = today?.precipitation_probability_max[0];
-  const outfit = current && rainChance !== undefined
-    ? outfitFor(Math.round(current.apparent_temperature), rainChance)
-    : undefined;
+  const dayLow = today ? Math.round(today.temperature_2m_min[0]) : undefined;
+  const dayHigh = today ? Math.round(today.temperature_2m_max[0]) : undefined;
+  const outfit =
+    current && rainChance !== undefined && dayLow !== undefined && dayHigh !== undefined
+      ? outfitFor((dayLow + dayHigh) / 2, rainChance)
+      : undefined;
   const periods = forecast
     ? [
         periodForecast(forecast, '오전', 6, 11, 9),
