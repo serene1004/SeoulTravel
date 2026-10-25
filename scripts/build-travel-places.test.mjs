@@ -8,6 +8,7 @@ const read = (name) => JSON.parse(readFileSync(`src/data/${name}.json`, 'utf8'))
 const raw = read('seoul-open-attractions');
 const coordinates = read('seoul-public-attraction-coordinates');
 const review = read('seoul-travel-place-review');
+const enrichment = read('seoul-travel-place-enrichment');
 
 test('every Korean source has a current explicit review and the generated catalog is reproducible', () => {
   const records = raw.attractions.filter((record) => record.language === 'ko');
@@ -18,7 +19,7 @@ test('every Korean source has a current explicit review and the generated catalo
       recordFingerprint(record),
     );
   }
-  const { results, ...catalog } = buildTravelPlaces(raw, coordinates, review);
+  const { results, ...catalog } = buildTravelPlaces(raw, coordinates, review, enrichment);
   assert.deepEqual(catalog, read('seoul-travel-places'));
   assert.equal(
     results.length,
@@ -86,7 +87,9 @@ test('unknown, invalid, non-Seoul and mismatched coordinates cannot enter the da
 
 test('explicit out-of-Seoul addresses are excluded while Seoul places with unverified geocoding stay under review', () => {
   const outside = structuredClone(raw);
-  const outsideRecord = outside.attractions.find((item) => item.id === '72' && item.language === 'ko');
+  const outsideRecord = outside.attractions.find(
+    (item) => item.id === '72' && item.language === 'ko',
+  );
   outsideRecord.address = outsideRecord.address.replace('서울 종로구', '경기도 고양시');
   const outsideReview = structuredClone(review);
   outsideReview.decisions.find((item) => item.sourceId === '72').inputFingerprint =

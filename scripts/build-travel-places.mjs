@@ -28,11 +28,23 @@ export function recordFingerprint(record) {
     .digest('hex');
 }
 
-export function buildTravelPlaces(raw, coordinates, review) {
+export function buildTravelPlaces(
+  raw,
+  coordinates,
+  review,
+  enrichment = { schemaVersion: 1, entries: [] },
+) {
   if (review.schemaVersion !== 1) throw new Error('Unsupported review schema.');
+  if (enrichment.schemaVersion !== 1) throw new Error('Unsupported enrichment schema.');
   const records = raw.attractions.filter((record) => record.language === 'ko');
   const sourceIds = new Set(records.map((record) => record.id));
   if (sourceIds.size !== records.length) throw new Error('Duplicate Korean source IDs.');
+  const enrichmentById = new Map();
+  for (const entry of enrichment.entries) {
+    if (enrichmentById.has(entry.sourceId))
+      throw new Error(`Duplicate enrichment: ${entry.sourceId}`);
+    enrichmentById.set(entry.sourceId, entry);
+  }
   const decisions = new Map();
   for (const decision of review.decisions) {
     if (decisions.has(decision.sourceId)) throw new Error(`Duplicate review: ${decision.sourceId}`);
@@ -71,7 +83,8 @@ export function buildTravelPlaces(raw, coordinates, review) {
       outsideSeoulMarkers.test(record.address)
     ) {
       outcome = 'exclude';
-      reason = '원천 주소에서 서울 밖의 시·도 지역이 확인되어 서울 여행 데이터 범위에서 제외합니다.';
+      reason =
+        '원천 주소에서 서울 밖의 시·도 지역이 확인되어 서울 여행 데이터 범위에서 제외합니다.';
     }
     if (outcome === 'include') {
       if (!districts.has(coordinate?.district) || !record.address.includes(coordinate.district)) {
@@ -95,6 +108,25 @@ export function buildTravelPlaces(raw, coordinates, review) {
       }
     }
     if (outcome === 'include') {
+      const candidateEnrichment = enrichmentById.get(record.id);
+      const enrichmentFields = ['address', 'hours', 'closedDays', 'transport', 'officialUrl'];
+      const currentSnapshotMatches =
+        candidateEnrichment &&
+        enrichmentFields.every(
+          (field) =>
+            (candidateEnrichment.current?.[field] ?? null) ===
+            ((field === 'address' ? record[field]?.trim() : record[field]) || null),
+        );
+      const placeEnrichment = currentSnapshotMatches ? candidateEnrichment : undefined;
+      const enrichedValue = (field) => {
+        const suggestion = placeEnrichment?.fields?.[field];
+        return suggestion?.value && suggestion.sourceUrl ? suggestion.value : record[field];
+      };
+      const enrichedFields = Object.fromEntries(
+        enrichmentFields
+          .map((field) => [field, placeEnrichment?.fields?.[field]])
+          .filter(([, field]) => field?.value && field.sourceUrl),
+      );
       places.push({
         id: `seoul-attraction-${record.id}`,
         sourceId: record.id,
@@ -103,15 +135,23 @@ export function buildTravelPlaces(raw, coordinates, review) {
         ...(decision.legacyId ? { legacyId: decision.legacyId } : {}),
         category: decision.category,
         placeType: decision.placeType,
-        address: record.address.trim(),
+        address: enrichedValue('address').trim(),
         district: coordinate.district,
         coordinates: coordinate.coordinates,
         coordinateStatus: coordinate.coordinateStatus,
         tags: record.tags,
-        hours: record.hours,
-        closedDays: record.closedDays,
-        officialUrl: record.officialUrl,
-        transport: record.transport,
+        hours: enrichedValue('hours'),
+        closedDays: enrichedValue('closedDays'),
+        officialUrl: enrichedValue('officialUrl'),
+        transport: enrichedValue('transport'),
+        ...(Object.keys(enrichedFields).length
+          ? {
+              enrichedInfo: {
+                researchedAt: placeEnrichment.researchedAt,
+                fields: enrichedFields,
+              },
+            }
+          : {}),
         curationReason: decision.reason,
         reviewedAt: decision.reviewedAt,
         evidenceUrls: decision.evidenceUrls ?? [],
@@ -152,7 +192,8 @@ async function main() {
   const raw = await readJson('src/data/seoul-open-attractions.json');
   const coordinates = await readJson('src/data/seoul-public-attraction-coordinates.json');
   const review = await readJson('src/data/seoul-travel-place-review.json');
-  const { results, ...catalog } = buildTravelPlaces(raw, coordinates, review);
+  const enrichment = await readJson('src/data/seoul-travel-place-enrichment.json');
+  const { results, ...catalog } = buildTravelPlaces(raw, coordinates, review, enrichment);
   await writeFile('src/data/seoul-travel-places.json', `${JSON.stringify(catalog, null, 2)}\n`);
   const counts = catalog.summary;
   const escape = (value) =>

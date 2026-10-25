@@ -13,6 +13,8 @@
     "sync:seoul-attractions": "node scripts/sync-seoul-attractions.mjs",
     "geocode:seoul-attractions": "node scripts/geocode-seoul-attractions.mjs",
     "build:travel-places": "node scripts/build-travel-places.mjs",
+    "enrich:travel-places": "node scripts/enrich-travel-places.mjs",
+    "test:travel-place-enrichment": "node --test scripts/enrich-travel-places.test.mjs",
     "test:travel-places": "node --test scripts/build-travel-places.test.mjs"
   },
   "dependencies": {

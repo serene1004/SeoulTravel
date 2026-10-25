@@ -33,6 +33,8 @@
 
 `include`는 **여행 방문 목적에 맞는다는 판단**이며 현재 영업·개방·안전·인기도의 보증이 아닙니다. 전체 501건을 웹으로 전수 검증하지 않았습니다. 각 항목의 `evidenceFields`는 읽은 원천 필드이며 독립된 외부 검증 근거가 아닙니다. 별도로 확인한 공식 페이지는 `evidenceUrls`에만 기록합니다. 외부 페이지의 문구가 AI 실행 지시로 사용되지 않도록 자료로만 취급했습니다.
 
+2026-10-25에는 지도 장소 369개 중 기존 운영정보가 확인된 3개를 제외한 366개를 AI로 조사했습니다. 주소·운영시간·휴무일·교통·공식 링크의 제안값과 출처를 `seoul-travel-place-enrichment.json`에 보존하며, 이 결과는 사람의 개별 교차 검증을 마친 자료가 아닙니다. 앱은 출처 URL이 있고 현재 원천 스냅샷과 일치하는 필드만 사용합니다. 실제 운영 상태나 당일 정보는 방문 전에 해당 출처에서 확인해야 합니다.
+
 - 국립한글박물관: [공식 홈페이지](https://hangeul.go.kr/)의 전체 공간 공사·휴관 안내를 확인해 보류했습니다.
 - 63 스카이피크닉: [공식 안내](https://63skypicnic.com/?locale=ko)에서 전망·미디어아트 공간임을 확인했습니다.
 - 퐁피두센터 한화: [공식 미술관 소개](https://www.centrepompidou-hanwha.kr/about-us/museum_v1)를 확인했습니다.
@@ -45,8 +47,9 @@
 1. `src/data/seoul-open-attractions.json`: 다국어 원천 2,481건과 출처·수집일. 원본 보존.
 2. `src/data/seoul-travel-place-review.json`: 한국어 501건의 AI 판단 원장. `sourceId`, 원천 지문, 판단, 카테고리, 장소 유형, 근거, 검토일, 외부 근거를 보존.
 3. `src/data/seoul-public-attraction-coordinates.json`: 기존 지오코딩 결과. 카테고리는 사용하지 않고 좌표와 이름·주소를 대조. 원천 주소에서 서울 밖 지역이 확인되면 제외하며, 서울 주소인데 좌표만 확정되지 않은 경우는 보류.
-4. `src/data/seoul-travel-places.json`: 포함 판단을 받고 좌표 검사를 통과한 지도 입력. `seoul-attraction-{sourceId}`를 안정적인 ID로 사용. 출처·라이선스·수집일은 최상위 `source`에 보존.
-5. `docs/TRAVEL_PLACE_REVIEW.md`: 포함·보류·제외 전 항목을 사람이 읽을 수 있는 검토표.
+4. `src/data/seoul-travel-place-enrichment.json`: 장소 상세정보 조사값과 조사일·필드별 출처 URL. 생성 시 기존 원천 스냅샷과 대조.
+5. `src/data/seoul-travel-places.json`: 포함 판단을 받고 좌표 검사를 통과한 지도 입력. 상세정보 조사 중 원천과 일치하는 필드는 출처와 함께 적용합니다. `seoul-attraction-{sourceId}`를 안정적인 ID로 사용.
+6. `docs/TRAVEL_PLACE_REVIEW.md`: 포함·보류·제외 전 항목을 사람이 읽을 수 있는 검토표.
 
 ```sh
 pnpm build:travel-places
@@ -61,6 +64,6 @@ pnpm test:travel-places
 
 ## 지도 연결
 
-`src/data/spots.ts`는 선정 데이터셋만 지도용 장소로 변환합니다. `src/data/publicAttractions.ts`도 같은 파일에서 운영·교통 정보를 조회합니다. 기존 상세 URL 별칭은 검토 원장의 `legacyId` 필드로 유지하며 해당 장소가 선정 목록에 남아 있을 때만 연결됩니다. Shopping·Experience 필터를 포함한 여섯 카테고리와 모든 장소의 상세 페이지가 같은 장소 카탈로그를 사용합니다.
+`src/data/spots.ts`는 선정 데이터셋만 지도용 장소로 변환합니다. `src/data/publicAttractions.ts`도 같은 파일에서 운영·교통 정보를 조회합니다. 상세 화면은 필드별 조사 출처와 조사일을 함께 제공하며, 현재 운영 여부를 보증하지 않습니다. 기존 상세 URL 별칭은 검토 원장의 `legacyId` 필드로 유지하며 해당 장소가 선정 목록에 남아 있을 때만 연결됩니다. Shopping·Experience 필터를 포함한 여섯 카테고리와 모든 장소의 상세 페이지가 같은 장소 카탈로그를 사용합니다.
 
 기존 상세 URL은 공공 원천 ID가 선정 목록에 남아 있는 경우에만 연결합니다. 예전 장소 목록을 새 목록에 합산하지 않습니다. 상세 화면에는 공식 안내 링크와 데이터 출처·라이선스·수집일을 표시합니다. `pnpm build`는 선정 데이터셋을 재생성한 뒤 빌드하므로 신규·변경된 원천이 검토 없이 배포되지 않습니다.

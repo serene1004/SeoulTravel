@@ -4,17 +4,31 @@
 
 ## 현재 데이터 흐름
 
-지도·검색·카테고리 필터·장소 상세 화면은 `src/data/seoul-travel-places.json` 하나를 공통으로 사용합니다. 이 파일은 직접 편집하지 않는 생성 결과이며, 장소 선정과 좌표 검사를 통과한 항목만 담습니다.
+지도·검색·카테고리 필터·장소 상세 화면은 `src/data/seoul-travel-places.json` 하나를 공통으로 사용합니다. 이 파일은 직접 편집하지 않는 생성 결과이며, 장소 선정·좌표 검사 결과에 상세정보 보강값을 합칩니다.
 
 | 파일                                                | 역할                                   | 수정 방법              |
 | --------------------------------------------------- | -------------------------------------- | ---------------------- |
 | `src/data/seoul-open-attractions.json`              | 서울시 관광 명소 원천 스냅샷           | 동기화 명령으로 갱신   |
 | `src/data/seoul-public-attraction-coordinates.json` | 원천 장소의 좌표와 주소 대조 정보      | 지오코딩 명령으로 갱신 |
 | `src/data/seoul-travel-place-review.json`           | 장소별 포함·제외·보류 판단과 근거      | 판단을 수정할 때 편집  |
+| `src/data/seoul-travel-place-enrichment.json`       | 주소·운영시간·교통·공식 링크와 출처    | 조사 결과를 보존       |
 | `src/data/seoul-travel-places.json`                 | 앱에서 사용하는 선정 장소 카탈로그     | 빌더로 재생성          |
 | `docs/TRAVEL_PLACE_REVIEW.md`                       | 전체 검토 결과를 읽기 쉽게 출력한 문서 | 빌더로 재생성          |
 
 `src/data/spots.ts`는 카탈로그를 앱의 장소 타입으로 변환합니다. `src/App.tsx`의 지도와 탐색 화면, `src/data/publicAttractions.ts`와 장소 상세 화면도 같은 카탈로그를 참조합니다. 기존 장소 카탈로그 파일을 별도로 합산하지 않습니다.
+
+## 상세 정보 AI 조사 배치
+
+상세 정보 보강은 원천 데이터를 덮어쓰지 않고 `src/data/seoul-travel-place-enrichment.json`에 조사값과 필드별 출처를 보존합니다. 앱 카탈로그를 재생성하면 원천 스냅샷과 일치하는 조사값 중 출처 URL이 있는 값만 기존 상세정보 위에 적용합니다. 조사되지 않은 값은 원천 값을 유지합니다. 상세 화면은 보강된 값과 출처 링크, 조사일을 표시하며 방문 전 최신 운영 안내를 확인하도록 안내합니다. 사용자 승인에 따라 현재 366개 후보의 보강 결과를 앱에 적용했습니다. 이 결과는 사람의 개별 교차 검증을 마친 자료가 아니며, `not_found`는 기존 원천 정보만 유지합니다.
+
+```sh
+pnpm enrich:travel-places -- --dry-run
+pnpm enrich:travel-places -- --limit 25 --offset 0
+pnpm enrich:travel-places -- --limit 25 --offset 25
+pnpm test:travel-place-enrichment
+```
+
+`--offset`과 `--limit`으로 배치를 나눌 수 있고, `OPENAI_MODEL`로 모델을 지정할 수 있습니다. 응답별 토큰·검색 호출 수·추정 비용을 결과 파일에 기록하며 비용 상한에 가까우면 다음 장소를 처리하지 않습니다. 이 추정 상한은 공급자 측 과금 차단을 대체하지 않습니다. `pnpm build:travel-places`는 조사 파일의 원천 스냅샷이 현재 원천과 일치하는지 확인한 뒤 필드별 출처 URL이 있는 값을 앱 카탈로그에 적용합니다.
 
 ## 데이터 갱신과 검증
 
