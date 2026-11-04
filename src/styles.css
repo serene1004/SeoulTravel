@@ -93,6 +93,12 @@ a:focus-visible {
   margin: 0;
   font: inherit;
 }
+.site-brand img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 .site-header-actions {
   display: flex;
   align-items: center;

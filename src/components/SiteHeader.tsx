@@ -27,7 +27,7 @@ export function SiteHeader({ locale = 'ko', onLocaleChange, overlay = false }: S
     <header className={`site-header${overlay ? ' site-header-overlay' : ''}`}>
       <h1 className="site-brand-heading">
         <Link className="site-brand" to="/" aria-label="Seoul Travel home">
-          <b>SEOUL TRAVEL</b>
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Seoul Travel" />
         </Link>
       </h1>
       <div className="site-header-actions">
