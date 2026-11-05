@@ -14,8 +14,10 @@ import {
 } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
+import { useLocale } from '../context/useLocale';
 import { useSavedSpots } from '../context/useSavedSpots';
 import { getSpotCategoryLabel, seoulSpots } from '../data/spots';
+import { t } from '../i18n/messages';
 
 const featuredPlaceNames = [
   '경복궁',
@@ -35,32 +37,37 @@ type PlacePickerProps = {
 };
 
 function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePickerProps) {
+  const { locale } = useLocale();
   const listId = useId();
   const { savedSpotIds } = useSavedSpots();
   const selected = seoulSpots.find((spot) => spot.id === selectedId);
-  const [queryValue, setQueryValue] = useState(selected?.name.ko ?? '');
+  const [queryValue, setQueryValue] = useState(selected?.name[locale] ?? '');
   const [querySelectedId, setQuerySelectedId] = useState(selectedId);
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const excluded = seoulSpots.find((spot) => spot.id === excludedId);
   const availableSpots = seoulSpots.filter((spot) => spot.id !== excludedId);
-  const query = querySelectedId === selectedId ? queryValue : (selected?.name.ko ?? '');
-  const normalizedQuery = query.trim().toLocaleLowerCase('ko');
+  const query = querySelectedId === selectedId ? queryValue : (selected?.name[locale] ?? '');
+  const normalizedQuery = query.trim().toLocaleLowerCase(locale);
   const normalizedQueryName = normalizedQuery.replaceAll(/\s+/g, '');
   const excludedMatchesQuery = Boolean(
     normalizedQuery &&
     excluded &&
-    [excluded.name.ko, excluded.name.en, excluded.name.ja, excluded.district.ko]
+    [...Object.values(excluded.name), ...Object.values(excluded.district)]
       .join(' ')
-      .toLocaleLowerCase('ko')
+      .toLocaleLowerCase(locale)
       .includes(normalizedQuery),
   );
   const matchingSpots = normalizedQuery
     ? availableSpots
         .filter((spot) =>
-          [spot.name.ko, spot.name.en, spot.name.ja, spot.district.ko, spot.neighborhood.ko]
+          [
+            ...Object.values(spot.name),
+            ...Object.values(spot.district),
+            ...Object.values(spot.neighborhood),
+          ]
             .join(' ')
-            .toLocaleLowerCase('ko')
+            .toLocaleLowerCase(locale)
             .includes(normalizedQuery),
         )
         .sort((left, right) => {
@@ -92,7 +99,7 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
   function choose(placeId: string) {
     const place = seoulSpots.find((spot) => spot.id === placeId);
     if (!place) return;
-    setQueryValue(place.name.ko);
+    setQueryValue(place.name[locale]);
     setQuerySelectedId(place.id);
     setIsOpen(false);
     setActiveIndex(-1);
@@ -113,7 +120,7 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
       choose(results[activeIndex >= 0 ? activeIndex : 0].id);
     } else if (event.key === 'Escape') {
       setIsOpen(false);
-      setQueryValue(selected?.name.ko ?? '');
+      setQueryValue(selected?.name[locale] ?? '');
       setQuerySelectedId(selectedId);
     }
   }
@@ -132,7 +139,7 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
             aria-controls={listId}
             aria-activedescendant={activeIndex >= 0 ? `${listId}-option-${activeIndex}` : undefined}
             autoComplete="off"
-            placeholder="장소명 또는 자치구 검색"
+            placeholder={t(locale, 'searchPlaceDistrict')}
             value={query}
             onChange={(event) => {
               setQueryValue(event.target.value);
@@ -149,7 +156,7 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
             <button
               type="button"
               className="route-place-clear"
-              aria-label={`${label} 지우기`}
+              aria-label={`${label} ${t(locale, 'close')}`}
               onClick={() => {
                 setQueryValue('');
                 setQuerySelectedId('');
@@ -169,19 +176,17 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
           className="route-place-results"
           id={listId}
           role="listbox"
-          aria-label={`${label} 검색 결과`}
+          aria-label={t(locale, 'routeSearchResultsLabel', { label })}
         >
           <p className="route-place-result-heading">
             {normalizedQuery
-              ? `검색 결과 ${matchingSpots.length}곳`
+              ? t(locale, 'searchResultsCount', { count: matchingSpots.length })
               : savedSpotIds.length
-                ? '저장한 장소 · 많이 찾는 장소'
-                : '많이 찾는 장소'}
+                ? t(locale, 'savedAndPopular')
+                : t(locale, 'popularPlaces')}
           </p>
           {excludedMatchesQuery && (
-            <p className="route-place-result-count">
-              반대편에 이미 선택한 장소는 선택할 수 없어요.
-            </p>
+            <p className="route-place-result-count">{t(locale, 'samePlaceBlocked')}</p>
           )}
           {results.length ? (
             results.map((spot, index) => (
@@ -202,9 +207,9 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
                 onClick={() => choose(spot.id)}
               >
                 <span>
-                  <b>{spot.name.ko}</b>
+                  <b>{spot.name[locale]}</b>
                   <small>
-                    {spot.district.ko} · {getSpotCategoryLabel(spot.category, 'ko')}
+                    {spot.district[locale]} · {getSpotCategoryLabel(spot.category, locale)}
                   </small>
                 </span>
                 {spot.id === selectedId ? (
@@ -215,18 +220,20 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
               </button>
             ))
           ) : (
-            <p className="route-place-no-results">
-              검색 결과가 없어요. 다른 장소를 검색해 주세요. 출발지와 도착지는 서로 달라야 합니다.
-            </p>
+            <p className="route-place-no-results">{t(locale, 'noRouteResults')}</p>
           )}
           {normalizedQuery && matchingSpots.length > 8 && (
             <p className="route-place-result-count">
-              {matchingSpots.length}곳 · 목록을 스크롤하거나 장소명을 더 입력해 좁혀보세요.
+              {t(locale, 'routeMoreResults', { count: matchingSpots.length })}
             </p>
           )}
         </div>
       )}
-      {!isOpen && selected && <span className="sr-only">선택됨: {selected.name.ko}</span>}
+      {!isOpen && selected && (
+        <span className="sr-only">
+          {t(locale, 'selectedPlace')}: {selected.name[locale]}
+        </span>
+      )}
     </div>
   );
 }
@@ -253,6 +260,7 @@ function createDirectionsUrl(from: (typeof seoulSpots)[number], to: (typeof seou
 }
 
 export default function RoutePage() {
+  const { locale } = useLocale();
   const [searchParams, setSearchParams] = useSearchParams();
   const fromId = searchParams.get('from') ?? '';
   const toId = searchParams.get('to') ?? '';
@@ -280,26 +288,22 @@ export default function RoutePage() {
       <SiteHeader />
       <section className="route-layout">
         <div className="route-copy">
-          <p className="eyebrow">LET'S CONNECT THE DOTS</p>
-          <h2>
-            장소 사이,
-            <br />
-            <em>길을 찾아볼까요?</em>
-          </h2>
-          <p>서울 장소 두 곳을 고르면 이동 경로를 지도 앱에서 바로 확인할 수 있어요.</p>
+          <p className="eyebrow">{t(locale, 'routeKicker')}</p>
+          <h2>{t(locale, 'routeTitle')}</h2>
+          <p>{t(locale, 'routeIntro')}</p>
 
           <div className="route-form">
             <div className="route-place-fields">
               <PlacePicker
                 id="route-origin"
-                label="출발 장소"
+                label={t(locale, 'fromPlace')}
                 selectedId={fromId}
                 excludedId={toId}
                 onSelect={(placeId) => updateRoute(placeId, toId)}
               />
               <PlacePicker
                 id="route-destination"
-                label="도착 장소"
+                label={t(locale, 'toPlace')}
                 selectedId={toId}
                 excludedId={fromId}
                 onSelect={(placeId) => updateRoute(fromId, placeId)}
@@ -310,25 +314,23 @@ export default function RoutePage() {
               className="route-swap"
               onClick={swapPlaces}
               disabled={!fromId && !toId}
-              aria-label="출발지와 도착지 바꾸기"
+              aria-label={t(locale, 'swapPlaces')}
             >
               <ArrowLeftRight size={18} />
             </button>
           </div>
           {from && to && from.id === to.id && (
             <p className="route-error" role="alert">
-              출발지와 다른 장소를 도착지로 선택해 주세요.
+              {t(locale, 'samePlaceHint')}
             </p>
           )}
 
-          <div className="route-mode-picker" aria-label="이동 방법">
+          <div className="route-mode-picker" aria-label={t(locale, 'transit')}>
             <span className="route-mode active">
-              <Train size={17} aria-hidden="true" /> 대중교통
+              <Train size={17} aria-hidden="true" /> {t(locale, 'transit')}
             </span>
           </div>
-          <p className="route-provider-note">
-            Google Maps는 한국에서 도보·자동차 경로를 제공하지 않아 대중교통 경로로 안내합니다.
-          </p>
+          <p className="route-provider-note">{t(locale, 'googleTransitNote')}</p>
         </div>
 
         <div className="route-ticket" aria-live="polite">
@@ -342,29 +344,27 @@ export default function RoutePage() {
           {hasValidRoute && from && to ? (
             <>
               <div className="ticket-route">
-                <strong>{from.name.ko}</strong>
+                <strong>{from.name[locale]}</strong>
                 <span>
-                  <MapPin size={17} /> 직선거리
+                  <MapPin size={17} /> {t(locale, 'straightLine')}
                 </span>
-                <strong>{to.name.ko}</strong>
+                <strong>{to.name[locale]}</strong>
               </div>
-              <p className="route-distance-note">
-                장소 좌표 간 거리이며 실제 이동 거리와 다를 수 있습니다.
-              </p>
+              <p className="route-distance-note">{t(locale, 'routeDistanceNote')}</p>
               <a className="ticket-map" href={directionsUrl} target="_blank" rel="noreferrer">
-                <Navigation size={17} /> 지도에서 대중교통 경로 보기
+                <Navigation size={17} /> {t(locale, 'routeDirections')}
                 <ArrowUpRight size={15} />
               </a>
             </>
           ) : (
             <div className="route-empty-state">
               <MapPin size={27} />
-              <strong>출발지와 도착지를 선택해 주세요</strong>
-              <span>선정된 서울 여행 장소 {seoulSpots.length}곳에서 고를 수 있습니다.</span>
+              <strong>{t(locale, 'chooseRoutePlaces')}</strong>
+              <span>{t(locale, 'chooseAmongSpots', { count: seoulSpots.length })}</span>
             </div>
           )}
           <Link to="/explore" className="route-explore-link">
-            지도에서 장소 찾기
+            {t(locale, 'findOnMap')}
           </Link>
         </div>
       </section>

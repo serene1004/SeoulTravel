@@ -13,6 +13,7 @@ import {
 
 import { ExploreMap, type ClusterPlace } from './components/ExploreMap';
 import { SiteHeader } from './components/SiteHeader';
+import { useLocale } from './context/useLocale';
 import { useSavedSpots } from './context/useSavedSpots';
 import { getPublicAttractionRecord } from './data/publicAttractions';
 import {
@@ -22,7 +23,9 @@ import {
   type Locale,
   type SpotCategory,
 } from './data/spots';
-import { fetchSeoulWeather, type Forecast, weatherCondition } from './data/weather';
+import { weatherCondition } from './data/weather';
+import { useSeoulWeather } from './hooks/useSeoulWeather';
+import { t } from './i18n/messages';
 
 type Category = 'All' | SpotCategory;
 
@@ -33,6 +36,8 @@ const copy: Record<Locale, Record<string, string>> = {
     center: '서울 중심으로 보기',
     explore: '서울의 볼거리 먹거리',
     filters: '카테고리',
+    mapError: '지도를 불러오지 못했어요. 네트워크를 확인해 주세요.',
+    retry: '다시 시도',
     results: '검색 결과',
     search: '장소 또는 지역 검색',
     spot: '장소 정보 보기',
@@ -44,6 +49,8 @@ const copy: Record<Locale, Record<string, string>> = {
     center: 'Center on Seoul',
     explore: 'Seoul sights & eats',
     filters: 'Filter by',
+    mapError: 'The map could not load. Check your connection and try again.',
+    retry: 'Try again',
     results: 'Results',
     search: 'Search a place or area',
     spot: 'View place details',
@@ -55,6 +62,8 @@ const copy: Record<Locale, Record<string, string>> = {
     center: 'ソウル中心に戻る',
     explore: 'ソウルの見どころ・グルメ',
     filters: 'カテゴリー',
+    mapError: '地図を読み込めませんでした。接続を確認して再試行してください。',
+    retry: '再試行',
     results: '検索結果',
     search: '場所・エリアを検索',
     spot: '場所の情報を見る',
@@ -76,6 +85,8 @@ const searchDebounceMs = 300;
 
 export default function App() {
   const { savedSpotIds, toggleSavedSpot } = useSavedSpots();
+  const { locale } = useLocale();
+  const { forecast, hasError: weatherError, retry: retryWeather } = useSeoulWeather();
   const [activeCategory, setActiveCategory] = useState<Category>('All');
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedClusterPlaces, setSelectedClusterPlaces] = useState<ClusterPlace[]>([]);
@@ -83,15 +94,6 @@ export default function App() {
   const [sameLocationIndex, setSameLocationIndex] = useState(0);
   const [search, setSearch] = useState('');
   const [searchInput, setSearchInput] = useState('');
-  const [locale, setLocale] = useState<Locale>('ko');
-  const [forecast, setForecast] = useState<Forecast>();
-
-  useEffect(() => {
-    fetchSeoulWeather()
-      .then(setForecast)
-      .catch(() => undefined);
-  }, []);
-
   useEffect(() => {
     if (searchInput === search) return undefined;
     const timeoutId = window.setTimeout(() => {
@@ -180,9 +182,9 @@ export default function App() {
 
   return (
     <main className="app-shell">
-      <SiteHeader locale={locale} onLocaleChange={setLocale} />
+      <SiteHeader />
       <section className="workspace" id="top">
-        <aside className="sidebar" aria-label="Place filters">
+        <aside className="sidebar" aria-label={text.filters}>
           <div className="eyebrow">{text.explore}</div>
           <h2>{text.title}</h2>
           <label className="search-box">
@@ -232,6 +234,8 @@ export default function App() {
           locale={locale}
           categoryColors={categoryColors}
           centerLabel={text.center}
+          mapErrorLabel={text.mapError}
+          retryLabel={text.retry}
           selectedSpotId={selectedId}
           onSelectSpot={(id) => {
             setSelectedClusterPlaces([]);
@@ -253,11 +257,11 @@ export default function App() {
           onMouseDown={(event) => event.target === event.currentTarget && closeDialog()}
         >
           {isSameLocationCluster && selected && (
-            <nav className="spot-dialog-stack-controls" aria-label="같은 위치의 장소">
+            <nav className="spot-dialog-stack-controls" aria-label={t(locale, 'sameLocation')}>
               <button
                 type="button"
                 className="spot-dialog-stack-previous"
-                aria-label="이전 장소"
+                aria-label={t(locale, 'previous')}
                 disabled={sameLocationIndex === 0}
                 onClick={() => moveSameLocation(-1)}
               >
@@ -266,7 +270,7 @@ export default function App() {
               <button
                 type="button"
                 className="spot-dialog-stack-next"
-                aria-label="다음 장소"
+                aria-label={t(locale, 'next')}
                 disabled={sameLocationIndex === selectedClusterItems.length - 1}
                 onClick={() => moveSameLocation(1)}
               >
@@ -283,13 +287,15 @@ export default function App() {
             {selectedClusterItems.length > 0 && !selected ? (
               <>
                 <div className="spot-dialog-top">
-                  <span className="eyebrow">이 주변의 장소</span>
-                  <button type="button" aria-label="Close place list" onClick={closeDialog}>
+                  <span className="eyebrow">{t(locale, 'aroundHere')}</span>
+                  <button type="button" aria-label={t(locale, 'close')} onClick={closeDialog}>
                     <X size={19} />
                   </button>
                 </div>
-                <h2 id="spot-dialog-title">주변 장소 {selectedClusterItems.length}곳</h2>
-                <p className="spot-dialog-district">장소를 선택해 상세 정보를 확인하세요.</p>
+                <h2 id="spot-dialog-title">
+                  {t(locale, 'nearbyCount', { count: selectedClusterItems.length })}
+                </h2>
+                <p className="spot-dialog-district">{t(locale, 'choosePlaceDetails')}</p>
                 <div className="info-rule" />
                 <div className="spot-dialog-list">
                   {pagedClusterItems.map((place) => (
@@ -304,13 +310,13 @@ export default function App() {
                   ))}
                 </div>
                 {clusterPageCount > 1 && (
-                  <nav className="spot-dialog-pagination" aria-label="장소 목록 페이지">
+                  <nav className="spot-dialog-pagination" aria-label={t(locale, 'pageList')}>
                     <button
                       type="button"
                       disabled={clusterListPage === 0}
                       onClick={() => setClusterListPage((page) => page - 1)}
                     >
-                      이전
+                      {t(locale, 'previous')}
                     </button>
                     <span>
                       {clusterListPage + 1} / {clusterPageCount}
@@ -320,7 +326,7 @@ export default function App() {
                       disabled={clusterListPage === clusterPageCount - 1}
                       onClick={() => setClusterListPage((page) => page + 1)}
                     >
-                      다음
+                      {t(locale, 'next')}
                     </button>
                   </nav>
                 )}
@@ -330,10 +336,10 @@ export default function App() {
                 <div className="spot-dialog-top">
                   <span className="eyebrow">
                     {isSameLocationCluster
-                      ? `같은 위치의 장소 · ${sameLocationIndex + 1}/${selectedClusterItems.length}`
+                      ? `${t(locale, 'sameLocation')} · ${sameLocationIndex + 1}/${selectedClusterItems.length}`
                       : getSpotCategoryLabel(selected!.category, locale)}
                   </span>
-                  <button type="button" aria-label="Close place details" onClick={closeDialog}>
+                  <button type="button" aria-label={t(locale, 'close')} onClick={closeDialog}>
                     <X size={19} />
                   </button>
                 </div>
@@ -358,7 +364,9 @@ export default function App() {
                       fill={savedSpotIds.includes(selected.id) ? 'currentColor' : 'none'}
                       aria-hidden="true"
                     />
-                    {savedSpotIds.includes(selected.id) ? '저장됨' : '장소 저장'}
+                    {savedSpotIds.includes(selected.id)
+                      ? t(locale, 'saved')
+                      : t(locale, 'savePlace')}
                   </button>
                 )}
                 <section className="spot-dialog-weather">
@@ -366,15 +374,26 @@ export default function App() {
                   <div>
                     <b>
                       {forecast
-                        ? `${Math.round(forecast.current.temperature_2m)}° · ${weatherCondition(forecast.current.weather_code)}`
-                        : '서울 날씨 확인 중'}
+                        ? `${Math.round(forecast.current.temperature_2m)}° · ${weatherCondition(forecast.current.weather_code, locale)}`
+                        : weatherError
+                          ? t(locale, 'weatherError')
+                          : t(locale, 'weatherLoading')}
                     </b>
                     <p>
                       {forecast
-                        ? `체감 ${Math.round(forecast.current.apparent_temperature)}° · 서울`
-                        : '잠시만 기다려 주세요'}
+                        ? t(locale, 'feelsLike', {
+                            temperature: Math.round(forecast.current.apparent_temperature),
+                          })
+                        : weatherError
+                          ? t(locale, 'weatherRetryHint')
+                          : t(locale, 'pleaseWait')}
                     </p>
                   </div>
+                  {weatherError && (
+                    <button type="button" className="spot-weather-retry" onClick={retryWeather}>
+                      {t(locale, 'retry')}
+                    </button>
+                  )}
                 </section>
                 {selected && (
                   <Link className="spot-dialog-link" to={`/spots/${selected.id}`}>

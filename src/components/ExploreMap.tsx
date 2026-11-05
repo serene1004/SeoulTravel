@@ -14,6 +14,7 @@ import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&ur
 
 import { getPublicAttractionRecord } from '../data/publicAttractions';
 import { getSpotCategoryLabel, type Locale, type Spot, type SpotCategory } from '../data/spots';
+import { t } from '../i18n/messages';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
 setWorkerUrl(maplibreWorkerUrl);
@@ -26,6 +27,8 @@ type ExploreMapProps = {
   locale: Locale;
   categoryColors: Record<SpotCategory, string>;
   centerLabel: string;
+  mapErrorLabel: string;
+  retryLabel: string;
   selectedSpotId: string | null;
   onSelectSpot: (id: string) => void;
   onSelectCluster: (places: ClusterPlace[]) => void;
@@ -54,11 +57,44 @@ function toMapPlaceFeatureCollection(spots: Spot[], categoryColors: Record<SpotC
   };
 }
 
+function applyMapLabelLanguage(map: MapLibreMap, locale: Locale) {
+  const fields =
+    locale === 'ko'
+      ? ['name:ko', 'name_ko', 'name']
+      : locale === 'ja'
+        ? ['name:ja', 'name_ja']
+        : ['name:en', 'name_en'];
+  const textField = ['coalesce', ...fields.map((field) => ['get', field])];
+
+  for (const layer of map.getStyle().layers ?? []) {
+    if (layer.type !== 'symbol') continue;
+    const currentTextField = JSON.stringify(layer.layout?.['text-field'] ?? '');
+    if (currentTextField.includes('name')) {
+      map.setLayoutProperty(layer.id, 'text-field', textField as never);
+    }
+  }
+  map.getCanvasContainer().setAttribute('lang', locale);
+  const controlLabels = [
+    ['.maplibregl-ctrl-zoom-in', 'zoomIn'],
+    ['.maplibregl-ctrl-zoom-out', 'zoomOut'],
+    ['.maplibregl-ctrl-compass', 'resetNorth'],
+  ] as const;
+  controlLabels.forEach(([selector, key]) => {
+    const control = map.getContainer().querySelector<HTMLButtonElement>(selector);
+    if (!control) return;
+    const label = t(locale, key);
+    control.setAttribute('aria-label', label);
+    control.title = label;
+  });
+}
+
 export function ExploreMap({
   spots,
   locale,
   categoryColors,
   centerLabel,
+  mapErrorLabel,
+  retryLabel,
   selectedSpotId,
   onSelectSpot,
   onSelectCluster,
@@ -70,6 +106,8 @@ export function ExploreMap({
   const onSelectSpotRef = useRef(onSelectSpot);
   const onSelectClusterRef = useRef(onSelectCluster);
   const [isMapReady, setIsMapReady] = useState(false);
+  const [mapError, setMapError] = useState(false);
+  const [mapAttempt, setMapAttempt] = useState(0);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -81,6 +119,7 @@ export function ExploreMap({
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return undefined;
 
+    setMapError(false);
     const map = new Map({
       container: mapContainerRef.current,
       style: mapStyleUrl,
@@ -88,7 +127,9 @@ export function ExploreMap({
       zoom: 11.35,
     });
     map.addControl(new NavigationControl({ showCompass: true }), 'top-right');
+    map.on('error', () => setMapError(true));
     map.on('load', () => {
+      applyMapLabelLanguage(map, localeRef.current);
       map.addSource('map-places', {
         type: 'geojson',
         data: { type: 'FeatureCollection', features: [] },
@@ -160,7 +201,7 @@ export function ExploreMap({
         const popupContent = document.createElement('article');
         popupContent.className = 'spot-popup cluster-popup';
         const heading = document.createElement('strong');
-        heading.textContent = `${pointCount}개의 장소`;
+        heading.textContent = t(localeRef.current, 'placesCount', { count: pointCount });
         popupContent.append(heading);
         const list = document.createElement('ul');
         const currentLocale = localeRef.current;
@@ -168,14 +209,16 @@ export function ExploreMap({
           const item = document.createElement('li');
           item.textContent = String(
             place.properties?.[`name${currentLocale[0].toUpperCase()}${currentLocale.slice(1)}`] ??
-              '서울 장소',
+              t(currentLocale, 'mapPlaceFallback'),
           );
           list.append(item);
         });
         popupContent.append(list);
         if (pointCount > places.length) {
           const more = document.createElement('p');
-          more.textContent = `외 ${pointCount - places.length}곳 · 클릭하여 목록 보기`;
+          more.textContent = t(localeRef.current, 'morePlacesClick', {
+            count: pointCount - places.length,
+          });
           popupContent.append(more);
         }
         const popup =
@@ -242,12 +285,17 @@ export function ExploreMap({
       mapRef.current = null;
       setIsMapReady(false);
     };
-  }, []);
+  }, [mapAttempt]);
 
   useEffect(() => {
     const source = mapRef.current?.getSource('map-places') as GeoJSONSource | undefined;
     if (isMapReady) source?.setData(toMapPlaceFeatureCollection(spots, categoryColors));
   }, [categoryColors, isMapReady, spots]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (map?.isStyleLoaded()) applyMapLabelLanguage(map, locale);
+  }, [isMapReady, locale]);
 
   useEffect(() => {
     const spot = selectedSpotId ? spots.find((item) => item.id === selectedSpotId) : undefined;
@@ -309,8 +357,16 @@ export function ExploreMap({
   }
 
   return (
-    <section className="map-area" aria-label="Interactive Seoul map">
-      <div className="map-canvas" ref={mapContainerRef} aria-label="Map of Seoul places" />
+    <section className="map-area" aria-label={t(locale, 'interactiveMap')}>
+      <div className="map-canvas" ref={mapContainerRef} aria-label={t(locale, 'mapOfSeoul')} />
+      {mapError && (
+        <div className="map-error-notice" role="alert">
+          <span>{mapErrorLabel}</span>
+          <button type="button" onClick={() => setMapAttempt((attempt) => attempt + 1)}>
+            {retryLabel}
+          </button>
+        </div>
+      )}
       <button
         className="locate-button"
         onClick={centerMap}

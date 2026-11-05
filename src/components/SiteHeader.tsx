@@ -1,30 +1,23 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Bookmark, CloudSun } from 'lucide-react';
 
+import { useLocale } from '../context/useLocale';
 import { useSavedSpots } from '../context/useSavedSpots';
+import { useSeoulWeather } from '../hooks/useSeoulWeather';
+import { t } from '../i18n/messages';
 
 import type { Locale } from '../data/spots';
 
 type SiteHeaderProps = {
-  locale?: Locale;
-  onLocaleChange?: (locale: Locale) => void;
   overlay?: boolean;
 };
 
-export function SiteHeader({ locale = 'ko', onLocaleChange, overlay = false }: SiteHeaderProps) {
-  const [temperature, setTemperature] = useState<number>();
+export function SiteHeader({ overlay = false }: SiteHeaderProps) {
   const { savedSpotIds } = useSavedSpots();
-
-  useEffect(() => {
-    fetch(
-      'https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.978&current=temperature_2m',
-    )
-      .then((response) => response.json() as Promise<{ current: { temperature_2m: number } }>)
-      .then((data) => setTemperature(Math.round(data.current.temperature_2m)))
-      .catch(() => undefined);
-  }, []);
+  const { locale, setLocale } = useLocale();
+  const { forecast, hasError: weatherError } = useSeoulWeather();
+  const temperature = forecast?.current.temperature_2m;
 
   return (
     <header className={`site-header${overlay ? ' site-header-overlay' : ''}`}>
@@ -37,21 +30,29 @@ export function SiteHeader({ locale = 'ko', onLocaleChange, overlay = false }: S
         <Link
           className="saved-spots-link"
           to="/saved"
-          aria-label={`저장한 장소 ${savedSpotIds.length}곳`}
+          aria-label={t(locale, 'savedCountAria', { count: savedSpotIds.length })}
         >
           <Bookmark size={16} aria-hidden="true" />
-          <span>저장 {savedSpotIds.length}</span>
+          <span>{t(locale, 'savedCount', { count: savedSpotIds.length })}</span>
         </Link>
-        <Link className="weather-pill" to="/weather">
+        <Link
+          className="weather-pill"
+          to="/weather"
+          aria-label={weatherError ? t(locale, 'weatherErrorLink') : undefined}
+        >
           <CloudSun size={16} />
-          <span>{temperature === undefined ? '서울 날씨' : `서울 ${temperature}°`}</span>
+          <span>
+            {temperature === undefined
+              ? t(locale, 'seoulWeather')
+              : t(locale, 'weatherAt', { temperature: Math.round(temperature) })}
+          </span>
         </Link>
         <label className="language-select">
-          <span className="sr-only">Language</span>
+          <span className="sr-only">{t(locale, 'language')}</span>
           <select
-            defaultValue={locale}
-            onChange={(event) => onLocaleChange?.(event.target.value as Locale)}
-            aria-label="Language"
+            value={locale}
+            onChange={(event) => setLocale(event.target.value as Locale)}
+            aria-label={t(locale, 'language')}
           >
             <option value="ko">한국어</option>
             <option value="en">English</option>

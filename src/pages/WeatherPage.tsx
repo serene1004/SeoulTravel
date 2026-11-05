@@ -1,14 +1,10 @@
-import { useEffect, useState } from 'react';
-
 import { CloudSun, Umbrella, Wind } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
-import {
-  fetchSeoulWeather,
-  getOutfitRecommendation,
-  type Forecast,
-  weatherCondition,
-} from '../data/weather';
+import { useLocale } from '../context/useLocale';
+import { getOutfitRecommendation, type Forecast, weatherCondition } from '../data/weather';
+import { useSeoulWeather } from '../hooks/useSeoulWeather';
+import { t } from '../i18n/messages';
 
 function periodForecast(
   forecast: Forecast,
@@ -16,6 +12,7 @@ function periodForecast(
   startHour: number,
   endHour: number,
   representativeHour: number,
+  locale: import('../data/spots').Locale,
 ) {
   const date = forecast.daily.time[0];
   const indexes = forecast.hourly.time.flatMap((time, index) => {
@@ -36,7 +33,7 @@ function periodForecast(
 
   return {
     label,
-    condition: weatherCondition(forecast.hourly.weather_code[representativeIndex]),
+    condition: weatherCondition(forecast.hourly.weather_code[representativeIndex], locale),
     low: Math.round(Math.min(...temperatures)),
     high: Math.round(Math.max(...temperatures)),
     precipitationChance: Math.max(
@@ -46,27 +43,20 @@ function periodForecast(
 }
 
 export default function WeatherPage() {
-  const [forecast, setForecast] = useState<Forecast>();
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    fetchSeoulWeather()
-      .then(setForecast)
-      .catch(() => setError(true));
-  }, []);
+  const { locale } = useLocale();
+  const { forecast, isLoading, hasError: error, retry } = useSeoulWeather();
 
   const current = forecast?.current;
   const today = forecast?.daily;
-  const isLoading = !forecast && !error;
-  const weather = current ? weatherCondition(current.weather_code) : undefined;
+  const weather = current ? weatherCondition(current.weather_code, locale) : undefined;
   const temperature = current ? Math.round(current.temperature_2m) : undefined;
   const apparent = current ? Math.round(current.apparent_temperature) : undefined;
   const rainChance = today?.precipitation_probability_max[0];
-  const outfit = forecast ? getOutfitRecommendation(forecast) : undefined;
+  const outfit = forecast ? getOutfitRecommendation(forecast, locale) : undefined;
   const periods = forecast
     ? [
-        periodForecast(forecast, '오전', 6, 11, 9),
-        periodForecast(forecast, '오후', 12, 17, 15),
+        periodForecast(forecast, t(locale, 'morning'), 6, 11, 9, locale),
+        periodForecast(forecast, t(locale, 'afternoon'), 12, 17, 15, locale),
       ].filter((period) => period !== undefined)
     : [];
 
@@ -74,19 +64,22 @@ export default function WeatherPage() {
     <main className="weather-page">
       <SiteHeader />
       <section className="weather-hero">
-        <p className="eyebrow">SEOUL WEATHER · TODAY</p>
-        <h2>오늘 서울 날씨</h2>
+        <p className="eyebrow">{t(locale, 'weatherKicker')}</p>
+        <h2>{t(locale, 'weatherTitle')}</h2>
         {error ? (
-          <p className="weather-error">
-            날씨 정보를 불러오지 못했어요. 잠시 후 다시 확인해 주세요.
-          </p>
+          <div className="weather-error" role="alert">
+            <p>{t(locale, 'weatherLoadError')}</p>
+            <button type="button" onClick={retry}>
+              {t(locale, 'retry')}
+            </button>
+          </div>
         ) : isLoading ? (
           <div className="weather-summary weather-summary-loading" aria-live="polite">
             <span className="weather-loading-icon" aria-hidden="true" />
             <strong aria-hidden="true">--°</strong>
             <div>
-              <b>서울 날씨 확인 중</b>
-              <span>잠시만 기다려 주세요</span>
+              <b>{t(locale, 'weatherLoading')}</b>
+              <span>{t(locale, 'pleaseWait')}</span>
             </div>
           </div>
         ) : (
@@ -95,27 +88,34 @@ export default function WeatherPage() {
             <strong>{temperature}°</strong>
             <div>
               <b>{weather}</b>
-              <span>체감 {apparent}° · 서울</span>
+              <span>{t(locale, 'feelsLike', { temperature: apparent ?? '--' })}</span>
             </div>
           </div>
         )}
         {!error && current && today && (
-          <div className="weather-stats" aria-label="오늘 날씨 요약">
+          <div className="weather-stats" aria-label={t(locale, 'weatherStats')}>
             <span>
-              <Wind size={16} aria-hidden="true" /> 바람 {Math.round(current.wind_speed_10m)} km/h
+              <Wind size={16} aria-hidden="true" />{' '}
+              {t(locale, 'wind', { speed: Math.round(current.wind_speed_10m) })}
             </span>
             <span>
-              <Umbrella size={16} aria-hidden="true" /> 강수 확률 {rainChance}%
+              <Umbrella size={16} aria-hidden="true" />{' '}
+              {t(locale, 'rainChance', { chance: rainChance ?? '--' })}
             </span>
             <span>
-              최저 {Math.round(today.temperature_2m_min[0])}° · 최고{' '}
-              {Math.round(today.temperature_2m_max[0])}°
+              {t(locale, 'lowHigh', {
+                low: Math.round(today.temperature_2m_min[0]),
+                high: Math.round(today.temperature_2m_max[0]),
+              })}
             </span>
           </div>
         )}
       </section>
       {!error && forecast && (
-        <section className="weather-guide" aria-label="오전과 오후 날씨 예보">
+        <section
+          className="weather-guide"
+          aria-label={`${t(locale, 'morning')} · ${t(locale, 'afternoon')}`}
+        >
           <div className="weather-periods">
             {periods.map((period) => (
               <article className="weather-period" key={period.label}>
@@ -126,14 +126,16 @@ export default function WeatherPage() {
                 <strong>
                   {period.low}°{period.low !== period.high && `–${period.high}°`}
                 </strong>
-                <span>강수 확률 {period.precipitationChance}%</span>
+                <span>
+                  {t(locale, 'precipitationChance', { chance: period.precipitationChance })}
+                </span>
               </article>
             ))}
           </div>
           {outfit && (
-            <aside className="outfit-note" aria-label="옷차림 참고">
+            <aside className="outfit-note" aria-label={t(locale, 'outfitAdvice')}>
               <div>
-                <p className="eyebrow">옷차림 참고</p>
+                <p className="eyebrow">{t(locale, 'outfitAdvice')}</p>
                 <p>{outfit.note}</p>
               </div>
               <img
@@ -144,7 +146,7 @@ export default function WeatherPage() {
             </aside>
           )}
           <p className="weather-source">
-            날씨 데이터: <a href="https://open-meteo.com/en/docs">Open-Meteo</a>
+            {t(locale, 'weatherSource')}: <a href="https://open-meteo.com/en/docs">Open-Meteo</a>
           </p>
         </section>
       )}

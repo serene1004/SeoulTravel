@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import { Bookmark, Clock3, CloudSun, ExternalLink, Footprints, MapPin, Route } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
+import { useLocale } from '../context/useLocale';
 import { useSavedSpots } from '../context/useSavedSpots';
 import {
   getOfficialPlaceUrl,
@@ -11,28 +11,25 @@ import {
   publicAttractionDataset,
 } from '../data/publicAttractions';
 import { getSpotById, getSpotCategoryLabel } from '../data/spots';
-import { fetchSeoulWeather, type Forecast, weatherCondition } from '../data/weather';
+import { weatherCondition } from '../data/weather';
+import { useSeoulWeather } from '../hooks/useSeoulWeather';
+import { t } from '../i18n/messages';
 
 export default function SpotDetailPage() {
   const { spotId } = useParams();
+  const { locale } = useLocale();
   const spot = getSpotById(spotId);
-  const [forecast, setForecast] = useState<Forecast>();
   const { savedSpotIds, toggleSavedSpot } = useSavedSpots();
-
-  useEffect(() => {
-    fetchSeoulWeather()
-      .then(setForecast)
-      .catch(() => undefined);
-  }, []);
+  const { forecast, hasError: weatherError, retry: retryWeather } = useSeoulWeather();
 
   if (!spot) {
     return (
       <main className="detail-page">
         <SiteHeader />
         <section className="spot-intro">
-          <p className="eyebrow">SPOT NOT FOUND</p>
-          <h2>이 장소를 찾을 수 없어요.</h2>
-          <Link to="/explore">지도에서 다른 장소 찾기</Link>
+          <p className="eyebrow">{t(locale, 'detailKicker')}</p>
+          <h2>{t(locale, 'placeNotFound')}</h2>
+          <Link to="/explore">{t(locale, 'findAnotherPlace')}</Link>
         </section>
       </main>
     );
@@ -47,46 +44,69 @@ export default function SpotDetailPage() {
     const source = enrichedFields?.[field];
     if (!source?.sourceUrl) return null;
     const typeLabel =
-      source.sourceType === 'official' ? '공식' : source.sourceType === 'public' ? '공공' : '보조';
+      source.sourceType === 'official'
+        ? t(locale, 'sourceOfficial')
+        : source.sourceType === 'public'
+          ? t(locale, 'sourcePublic')
+          : t(locale, 'sourceSupplement');
     return (
       <a className="spot-field-source" href={source.sourceUrl} target="_blank" rel="noreferrer">
-        {label} · {typeLabel} 출처 <ExternalLink size={12} aria-hidden="true" />
+        {label} · {typeLabel} {t(locale, 'sourceLabel')}{' '}
+        <ExternalLink size={12} aria-hidden="true" />
       </a>
     );
   };
   const mapUrl = new URL('https://www.google.com/maps/search/');
   mapUrl.searchParams.set('api', '1');
-  mapUrl.searchParams.set('query', `${spot.name.ko}, ${publicAddress || spot.address}`);
+  mapUrl.searchParams.set('query', `${spot.name[locale]}, ${publicAddress || spot.address}`);
   const weatherNote = forecast
     ? {
         icon: CloudSun,
-        label: '오늘의 날씨',
-        value: `${Math.round(forecast.current.temperature_2m)}° · ${weatherCondition(forecast.current.weather_code)}`,
-        description: `체감 ${Math.round(forecast.current.apparent_temperature)}° · 서울`,
+        label: t(locale, 'todayWeather'),
+        value: `${Math.round(forecast.current.temperature_2m)}° · ${weatherCondition(forecast.current.weather_code, locale)}`,
+        description: t(locale, 'feelsLike', {
+          temperature: Math.round(forecast.current.apparent_temperature),
+        }),
       }
-    : {
-        icon: CloudSun,
-        label: '오늘의 날씨',
-        value: '날씨 확인 중',
-        description: '잠시만 기다려 주세요.',
-      };
+    : weatherError
+      ? {
+          icon: CloudSun,
+          label: t(locale, 'todayWeather'),
+          value: t(locale, 'weatherUnavailable'),
+          description: t(locale, 'weatherDescription'),
+          retry: retryWeather,
+        }
+      : {
+          icon: CloudSun,
+          label: t(locale, 'todayWeather'),
+          value: t(locale, 'checkingWeather'),
+          description: t(locale, 'pleaseWait'),
+        };
   const notes = [
     weatherNote,
     {
       icon: Clock3,
-      label: '이용시간',
-      value: publicRecord?.hours || '운영시간 확인 필요',
+      label: t(locale, 'hours'),
+      value:
+        publicRecord?.hours ||
+        (locale === 'en' ? 'Check hours' : locale === 'ja' ? '営業時間を確認' : t(locale, 'hours')),
       field: 'hours',
       description: publicRecord?.closedDays
-        ? `휴무일: ${publicRecord.closedDays}`
-        : '방문 전 공식 안내에서 운영시간과 휴무일을 확인해 주세요.',
+        ? `${t(locale, 'closedDays')}: ${publicRecord.closedDays}`
+        : t(locale, 'checkOfficialHours'),
     },
     {
       icon: Footprints,
-      label: '교통 정보',
-      value: publicRecord?.transport || '교통 정보 확인 필요',
+      label: t(locale, 'transport'),
+      value:
+        publicRecord?.transport ||
+        (locale === 'en'
+          ? 'Check directions'
+          : locale === 'ja'
+            ? 'アクセス情報を確認'
+            : t(locale, 'transport')),
       field: 'transport',
-      description: publicRecord?.tags || '방문 전 지도에서 이동 경로를 확인해 주세요.',
+      description: publicRecord?.tags || t(locale, 'checkRoute'),
     },
   ];
 
@@ -96,12 +116,15 @@ export default function SpotDetailPage() {
       <section className="spot-hero">
         <div className="spot-intro">
           <p className="eyebrow">
-            {spot.district.ko} · {getSpotCategoryLabel(spot.category, 'ko')}
+            {spot.district[locale]} · {getSpotCategoryLabel(spot.category, locale)}
           </p>
-          <h2>{spot.name.ko}</h2>
+          <h2>{spot.name[locale]}</h2>
           <p>
             {publicRecord?.curationReason ||
-              `${spot.district.ko}에서 ${getSpotCategoryLabel(spot.category, 'ko')} 장소를 둘러보세요.`}
+              t(locale, 'detailIntroFallback', {
+                district: spot.district[locale],
+                category: getSpotCategoryLabel(spot.category, locale),
+              })}
           </p>
           <div className="spot-chips">
             {(publicRecord?.tags || spot.note.ko)
@@ -121,59 +144,60 @@ export default function SpotDetailPage() {
               onClick={() => toggleSavedSpot(spot.id)}
             >
               <Bookmark size={15} fill={isSaved ? 'currentColor' : 'none'} aria-hidden="true" />
-              {isSaved ? '저장됨' : '장소 저장'}
+              {isSaved ? t(locale, 'savedStatus') : t(locale, 'save')}
             </button>
             <Link to={`/routes?from=${encodeURIComponent(spot.id)}`}>
-              <Route size={15} aria-hidden="true" /> 이 장소에서 출발
+              <Route size={15} aria-hidden="true" /> {t(locale, 'departFromHere')}
             </Link>
             {officialUrl && (
               <>
                 <a href={officialUrl} target="_blank" rel="noreferrer">
-                  공식 안내 확인
+                  {t(locale, 'officialInfo')}
                 </a>{' '}
                 ·{' '}
               </>
             )}
             <a href={publicAttractionDataset.datasetUrl} target="_blank" rel="noreferrer">
-              서울시 관광 명소 데이터
+              {t(locale, 'publicDataset')}
             </a>
           </p>
           <p className="spot-source-note">
-            데이터 출처: 서울시 관광 명소 · {publicAttractionDataset.license}
+            {t(locale, 'dataSource')}: {t(locale, 'seoulAttractionDatasetName')} ·{' '}
+            {publicAttractionDataset.license}
             {publicRecord?.enrichedInfo ? (
               <>
                 <br />
-                방문 정보 조사일: {publicRecord.enrichedInfo.researchedAt} · 실제 운영 여부와 당일
-                변동은 출처에서 확인해 주세요.
+                {t(locale, 'researchedAt')}: {publicRecord.enrichedInfo.researchedAt} ·{' '}
+                {t(locale, 'operatingStatusUnknown')}
               </>
             ) : publicRecord?.operatingStatus !== 'official_information_found' ? (
               <>
                 <br />
-                운영 정보 미확인 · 방문 전 공식 안내를 확인해 주세요.
+                {t(locale, 'operatingStatusUnknown')}
               </>
             ) : null}
           </p>
         </div>
       </section>
-      <section className="spot-info-list" aria-label="장소 방문 정보">
+      <section className="spot-info-list" aria-label={t(locale, 'visitInfo')}>
         <article className="spot-info-row spot-location-row">
           <div className="spot-info-label">
             <MapPin size={17} aria-hidden="true" />
-            <p>위치</p>
+            <p>{t(locale, 'location')}</p>
           </div>
           <div className="spot-info-content">
             <strong>{publicAddress || `${spot.neighborhood.ko}, ${spot.district.ko}`}</strong>
             <small>
               {publicRecord?.enrichedInfo
-                ? '공개 출처에서 조사한 주소'
+                ? t(locale, 'researchedAddress')
                 : publicRecord?.operatingStatus === 'official_information_found'
-                  ? '공식 안내 정보 확인'
-                  : '운영 정보 미확인 · 방문 전 공식 안내를 확인해 주세요.'}
+                  ? t(locale, 'officialAddress')
+                  : t(locale, 'addressUnknown')}
             </small>
-            {sourceLink('address', '주소')}
+            {sourceLink('address', t(locale, 'addressSource'))}
           </div>
           <a className="spot-map-link" href={mapUrl.href} target="_blank" rel="noreferrer">
-            지도에서 위치 보기 <MapPin size={15} aria-hidden="true" />
+            {t(locale, 'showOnMap')} <MapPin size={15} aria-hidden="true" />
           </a>
         </article>
         {notes.map((note) => (
@@ -185,8 +209,15 @@ export default function SpotDetailPage() {
             <div className="spot-info-content">
               <strong>{note.value}</strong>
               <small>{note.description}</small>
+              {'retry' in note && (
+                <button className="spot-weather-retry" type="button" onClick={note.retry}>
+                  {t(locale, 'retryWeather')}
+                </button>
+              )}
               {'field' in note && sourceLink(note.field as 'hours' | 'transport', note.label)}
-              {'field' in note && note.field === 'hours' && sourceLink('closedDays', '휴무일')}
+              {'field' in note &&
+                note.field === 'hours' &&
+                sourceLink('closedDays', t(locale, 'closedDays'))}
             </div>
           </article>
         ))}

@@ -4,38 +4,54 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUp, CloudSun, MapPinned, Route, Shirt } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
-import { fetchSeoulWeather, getOutfitRecommendation } from '../data/weather';
+import { useLocale } from '../context/useLocale';
+import { getOutfitRecommendation } from '../data/weather';
+import { useSeoulWeather } from '../hooks/useSeoulWeather';
+import { t } from '../i18n/messages';
+
+import type { LucideIcon } from 'lucide-react';
 
 const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
-const features = [
+const features: {
+  icon: LucideIcon;
+  label: 'findPlaces' | 'planRoute' | 'checkToday';
+  title: 'featurePlaces' | 'featureRoute' | 'featureWeather';
+  text: 'featurePlacesText' | 'featureRouteText' | 'featureWeatherText';
+  visualImage?: {
+    src: string;
+    alt: 'mapPlacesIllustrationAlt' | 'routeIllustrationAlt';
+  };
+  visualType?: 'weather';
+  href: string;
+}[] = [
   {
     icon: MapPinned,
-    label: 'Find places',
-    title: '관광명소·카페·식당을\n지도에서 찾아보세요.',
-    text: '서울 곳곳의 장소를 지도에서 살펴보고, 여행에 맞는 곳을 골라보세요.',
+    label: 'findPlaces',
+    title: 'featurePlaces',
+    text: 'featurePlacesText',
     visualImage: {
       src: publicAsset('images/landing/find-places.png'),
-      alt: '카페와 맛집, 문화 장소가 표시된 지도 일러스트',
+      alt: 'mapPlacesIllustrationAlt',
     },
     href: '/explore',
   },
   {
     icon: Route,
-    label: 'Plan a route',
-    title: '장소 사이 이동 시간을\n미리 확인하세요.',
-    text: '출발지와 목적지를 고르면 이동 시간과 경로를 한눈에 확인할 수 있어요.',
+    label: 'planRoute',
+    title: 'featureRoute',
+    text: 'featureRouteText',
     visualImage: {
       src: publicAsset('images/landing/plan-route.png'),
-      alt: '커피숍과 사진 촬영 장소를 잇는 경로 지도 일러스트',
+      alt: 'routeIllustrationAlt',
     },
     href: '/routes',
   },
   {
     icon: Shirt,
-    label: 'Check today',
-    title: '서울의 날씨를\n확인해 보세요.',
-    text: '현재 날씨와 시간대별 예보, 기온에 맞는 옷차림을 확인해 보세요.',
+    label: 'checkToday',
+    title: 'featureWeather',
+    text: 'featureWeatherText',
     visualType: 'weather',
     href: '/weather',
   },
@@ -51,8 +67,9 @@ const heroSlides = [
 export default function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [showGoTop, setShowGoTop] = useState(false);
-  const [weatherOutfit, setWeatherOutfit] = useState<ReturnType<typeof getOutfitRecommendation>>();
-  const [weatherError, setWeatherError] = useState(false);
+  const { locale } = useLocale();
+  const { forecast, hasError: weatherError, retry: retryWeather } = useSeoulWeather();
+  const weatherOutfit = forecast ? getOutfitRecommendation(forecast, locale) : undefined;
   const heroSlide = heroSlides[activeSlide];
 
   useEffect(() => {
@@ -60,20 +77,6 @@ export default function HomePage() {
       setActiveSlide((current) => (current + 1) % heroSlides.length);
     }, 5000);
     return () => window.clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    let isActive = true;
-    fetchSeoulWeather()
-      .then((forecast) => {
-        if (isActive) setWeatherOutfit(getOutfitRecommendation(forecast));
-      })
-      .catch(() => {
-        if (isActive) setWeatherError(true);
-      });
-    return () => {
-      isActive = false;
-    };
   }, []);
 
   useEffect(() => {
@@ -100,25 +103,15 @@ export default function HomePage() {
           style={{ backgroundImage: `url("${heroSlide.src}")` }}
         />
         <div className="landing-hero-content">
-          <p className="eyebrow">YOUR LITTLE SEOUL TRIP</p>
-          <h2>
-            <span>서울 여행을</span>
-            <br />더 쉽게 준비하세요.
-          </h2>
-          <p>관광명소부터 이동 시간과 경로 그리고 날씨까지</p>
+          <p className="eyebrow">{t(locale, 'homeKicker')}</p>
+          <h2>{t(locale, 'homeTitle')}</h2>
+          <p>{t(locale, 'homeSubtitle')}</p>
         </div>
       </section>
       <section className="landing-intro">
-        <p className="eyebrow">ABOUT SEOUL PATH</p>
-        <h2>
-          서울 여행에 필요한 정보를
-          <br />
-          <em>한곳에 담았어요.</em>
-        </h2>
-        <p>
-          관광명소와 카페·식당을 살펴보고, 장소 정보와 이동 시간, 날씨에 맞는 여행 복장까지 한곳에서
-          확인하세요.
-        </p>
+        <p className="eyebrow">{t(locale, 'homeIntroKicker')}</p>
+        <h2>{t(locale, 'homeIntroTitle')}</h2>
+        <p>{t(locale, 'homeIntroText')}</p>
       </section>
       <section className="feature-section">
         {features.map(
@@ -129,10 +122,10 @@ export default function HomePage() {
                 aria-label={
                   visualType === 'weather'
                     ? (weatherOutfit?.alt ??
-                      (weatherError
-                        ? '오늘의 옷차림 정보를 불러오지 못했어요.'
-                        : '오늘의 옷차림을 확인하고 있어요.'))
-                    : visualImage?.alt
+                      (weatherError ? t(locale, 'weatherError') : t(locale, 'mapLoadingWeather')))
+                    : visualImage
+                      ? t(locale, visualImage.alt)
+                      : undefined
                 }
                 role="img"
               >
@@ -147,7 +140,11 @@ export default function HomePage() {
                     ) : (
                       <div className="weather-visual-status" aria-hidden="true">
                         <CloudSun size={28} />
-                        <span>{weatherError ? '날씨 정보 확인 불가' : '날씨 확인 중'}</span>
+                        <span>
+                          {weatherError
+                            ? t(locale, 'mapWeatherError')
+                            : t(locale, 'mapLoadingWeather')}
+                        </span>
                       </div>
                     )}
                   </div>
@@ -167,19 +164,30 @@ export default function HomePage() {
                   <span className="feature-icon">
                     <Icon size={19} />
                   </span>
-                  <p className="eyebrow">{label}</p>
+                  <p className="eyebrow">{t(locale, label)}</p>
                 </div>
                 <h3>
-                  {title.split('\n').map((line) => (
-                    <span key={line}>
-                      {line}
-                      <br />
-                    </span>
-                  ))}
+                  {t(locale, title)
+                    .split('\n')
+                    .map((line) => (
+                      <span key={line}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
                 </h3>
-                <p>{text}</p>
+                <p>
+                  {visualType === 'weather' && weatherError
+                    ? t(locale, 'weatherError')
+                    : t(locale, text)}
+                </p>
+                {visualType === 'weather' && weatherError && (
+                  <button className="weather-retry-link" type="button" onClick={retryWeather}>
+                    {t(locale, 'retry')}
+                  </button>
+                )}
                 <Link to={href}>
-                  자세히 보기 <ArrowRight size={15} />
+                  {t(locale, 'learnMore')} <ArrowRight size={15} />
                 </Link>
               </div>
             </article>
@@ -191,7 +199,7 @@ export default function HomePage() {
           className="landing-go-top"
           type="button"
           onClick={goToTop}
-          aria-label="맨 위로 이동"
+          aria-label={t(locale, 'backToTop')}
         >
           <ArrowUp size={20} aria-hidden="true" />
         </button>
