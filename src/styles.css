@@ -159,6 +159,12 @@ a:focus-visible {
 .site-header-overlay .language-select-trigger[aria-expanded='true'] {
   color: var(--color-primary-highlight);
 }
+.route-loading {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  color: var(--color-muted);
+}
 .topbar {
   height: 76px;
   display: flex;
@@ -2898,6 +2904,12 @@ a:focus-visible {
 }
 .map-area .maplibregl-popup {
   z-index: 5;
+}
+.map-loading {
+  display: grid;
+  place-items: center;
+  color: var(--color-muted);
+  font-size: var(--text-copy);
 }
 .map-area .maplibregl-popup-content {
   min-width: 232px;

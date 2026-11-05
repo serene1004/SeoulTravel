@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -11,7 +11,6 @@ import {
   X,
 } from 'lucide-react';
 
-import { ExploreMap, type ClusterPlace } from './components/ExploreMap';
 import { SiteHeader } from './components/SiteHeader';
 import { useLocale } from './context/useLocale';
 import { useSavedSpots } from './context/useSavedSpots';
@@ -26,6 +25,14 @@ import {
 import { weatherCondition } from './data/weather';
 import { useSeoulWeather } from './hooks/useSeoulWeather';
 import { t } from './i18n/messages';
+
+import type { ClusterPlace } from './components/ExploreMap';
+
+const ExploreMap = lazy(() =>
+  import('./components/ExploreMap').then(({ ExploreMap: MapComponent }) => ({
+    default: MapComponent,
+  })),
+);
 
 type Category = 'All' | SpotCategory;
 
@@ -229,27 +236,35 @@ export default function App() {
             {text.results} · {visibleSpots.length}
           </p>
         </aside>
-        <ExploreMap
-          spots={visibleSpots}
-          locale={locale}
-          categoryColors={categoryColors}
-          centerLabel={text.center}
-          mapErrorLabel={text.mapError}
-          retryLabel={text.retry}
-          selectedSpotId={selectedId}
-          onSelectSpot={(id) => {
-            setSelectedClusterPlaces([]);
-            setSameLocationIndex(0);
-            setSelectedId(id);
-          }}
-          onSelectCluster={(places) => {
-            if (places.length < 2) return;
-            setSelectedClusterPlaces(places);
-            setClusterListPage(0);
-            setSameLocationIndex(0);
-            setSelectedId(null);
-          }}
-        />
+        <Suspense
+          fallback={
+            <div className="map-area map-loading" role="status" aria-live="polite">
+              {t(locale, 'mapLoading')}
+            </div>
+          }
+        >
+          <ExploreMap
+            spots={visibleSpots}
+            locale={locale}
+            categoryColors={categoryColors}
+            centerLabel={text.center}
+            mapErrorLabel={text.mapError}
+            retryLabel={text.retry}
+            selectedSpotId={selectedId}
+            onSelectSpot={(id) => {
+              setSelectedClusterPlaces([]);
+              setSameLocationIndex(0);
+              setSelectedId(id);
+            }}
+            onSelectCluster={(places) => {
+              if (places.length < 2) return;
+              setSelectedClusterPlaces(places);
+              setClusterListPage(0);
+              setSameLocationIndex(0);
+              setSelectedId(null);
+            }}
+          />
+        </Suspense>
       </section>
       {(selected || selectedClusterItems.length > 0) && (
         <div

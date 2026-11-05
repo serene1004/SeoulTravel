@@ -1,7 +1,9 @@
+import { locales, type Locale } from '../i18n/locales';
+
 import travelCatalog from './seoul-travel-places.json';
 
-export const locales = ['ko', 'en', 'ja'] as const;
-export type Locale = (typeof locales)[number];
+export { locales };
+export type { Locale };
 
 export const spotCategories = [
   'Culture',

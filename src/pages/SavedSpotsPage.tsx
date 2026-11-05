@@ -1,3 +1,4 @@
+import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Bookmark, MapPin, Route, Trash2 } from 'lucide-react';
@@ -9,12 +10,25 @@ import { getSpotCategoryLabel, getSpotById } from '../data/spots';
 import { t } from '../i18n/messages';
 
 export default function SavedSpotsPage() {
-  const { savedSpotIds, toggleSavedSpot } = useSavedSpots();
+  const { savedSpotIds, toggleSavedSpot, removeSavedSpots } = useSavedSpots();
   const { locale } = useLocale();
-  const savedSpots = savedSpotIds.flatMap((id) => {
-    const spot = getSpotById(id);
-    return spot ? [spot] : [];
-  });
+  const savedSpots = useMemo(
+    () =>
+      savedSpotIds.flatMap((id) => {
+        const spot = getSpotById(id);
+        return spot ? [spot] : [];
+      }),
+    [savedSpotIds],
+  );
+  const validSavedIds = useMemo(() => new Set(savedSpots.map((spot) => spot.id)), [savedSpots]);
+  const staleSavedIds = useMemo(
+    () => savedSpotIds.filter((id) => !validSavedIds.has(id)),
+    [savedSpotIds, validSavedIds],
+  );
+
+  useEffect(() => {
+    if (staleSavedIds.length > 0) removeSavedSpots(staleSavedIds);
+  }, [removeSavedSpots, staleSavedIds]);
 
   return (
     <main className="saved-page">

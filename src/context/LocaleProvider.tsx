@@ -1,8 +1,10 @@
 import { useEffect, useState, type ReactNode } from 'react';
 
-import { locales, type Locale } from '../data/spots';
+import { locales } from '../i18n/locales';
 
 import { LocaleContext } from './localeContext';
+
+import type { Locale } from '../i18n/locales';
 
 const storageKey = 'seoul-travel:locale';
 

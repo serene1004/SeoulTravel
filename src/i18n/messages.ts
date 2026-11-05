@@ -1,4 +1,4 @@
-import type { Locale } from '../data/spots';
+import type { Locale } from './locales';
 
 const messages = {
   ko: {
@@ -8,6 +8,7 @@ const messages = {
     weatherAt: '서울 {temperature}°',
     weatherErrorLink: '날씨 정보를 불러오지 못했어요. 날씨 페이지에서 다시 시도',
     language: '언어',
+    pageLoading: '페이지를 불러오는 중…',
     sourceOfficial: '공식',
     sourcePublic: '공공',
     sourceSupplement: '보조',
@@ -37,6 +38,7 @@ const messages = {
     backToTop: '맨 위로 이동',
     interactiveMap: '서울 인터랙티브 지도',
     mapOfSeoul: '서울 장소 지도',
+    mapLoading: '지도를 불러오는 중…',
     zoomIn: '확대',
     zoomOut: '축소',
     resetNorth: '지도 회전 조절, 클릭하여 북쪽으로 초기화',
@@ -163,6 +165,7 @@ const messages = {
     weatherAt: 'Seoul {temperature}°',
     weatherErrorLink: 'Weather is unavailable. Open the weather page to retry.',
     language: 'Language',
+    pageLoading: 'Loading page…',
     sourceOfficial: 'Official',
     sourcePublic: 'Public',
     sourceSupplement: 'Supplementary',
@@ -194,6 +197,7 @@ const messages = {
     backToTop: 'Back to top',
     interactiveMap: 'Interactive Seoul map',
     mapOfSeoul: 'Map of Seoul places',
+    mapLoading: 'Loading map…',
     zoomIn: 'Zoom in',
     zoomOut: 'Zoom out',
     resetNorth: 'Drag to rotate map, click to reset north',
@@ -322,6 +326,7 @@ const messages = {
     weatherAt: 'ソウル {temperature}°',
     weatherErrorLink: '天気を取得できません。天気ページから再試行できます。',
     language: '言語',
+    pageLoading: 'ページを読み込み中…',
     sourceOfficial: '公式',
     sourcePublic: '公共',
     sourceSupplement: '補足',
@@ -351,6 +356,7 @@ const messages = {
     backToTop: 'ページの先頭へ',
     interactiveMap: 'ソウルのインタラクティブマップ',
     mapOfSeoul: 'ソウルのスポットマップ',
+    mapLoading: '地図を読み込み中…',
     zoomIn: '拡大',
     zoomOut: '縮小',
     resetNorth: 'ドラッグして回転、クリックして北向きに戻す',

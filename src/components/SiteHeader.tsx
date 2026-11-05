@@ -8,7 +8,7 @@ import { useSavedSpots } from '../context/useSavedSpots';
 import { useSeoulWeather } from '../hooks/useSeoulWeather';
 import { t } from '../i18n/messages';
 
-import type { Locale } from '../data/spots';
+import type { Locale } from '../i18n/locales';
 
 const localeOptions: { locale: Locale; label: string }[] = [
   { locale: 'ko', label: '한국어' },
