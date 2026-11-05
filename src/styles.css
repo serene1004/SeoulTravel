@@ -1905,6 +1905,38 @@ a:focus-visible {
   color: var(--color-muted);
   font-size: var(--text-copy);
 }
+.weather-error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.weather-error p {
+  margin: 0;
+}
+.weather-error button,
+.weather-retry-link,
+.spot-weather-retry {
+  border: 0;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+.weather-retry-link,
+.spot-weather-retry {
+  display: inline-block;
+  margin-top: var(--space-2);
+  padding: 0;
+}
+.spot-weather-retry {
+  margin-left: var(--space-3);
+}
 .weather-summary-loading {
   min-height: 92px;
 }
@@ -2775,6 +2807,33 @@ a:focus-visible {
   inset: 0;
   background: #dce2d5;
 }
+.map-error-notice {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  max-width: calc(100% - 2 * var(--space-5));
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-size: 12px;
+  transform: translateX(-50%);
+}
+.map-error-notice button {
+  border: 0;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
 .map-canvas .maplibregl-canvas {
   outline: 0;
 }
@@ -3184,7 +3243,137 @@ a:focus-visible {
     right: 14px;
   }
   .locate-button {
-    top: 124px;
+    top: 160px;
     right: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    min-height: 64px;
+    padding-inline: 12px;
+  }
+  .site-brand img {
+    width: 36px;
+    height: 36px;
+  }
+  .site-header-actions {
+    gap: 8px;
+  }
+  .site-header .saved-spots-link,
+  .site-header .weather-pill {
+    min-height: 44px;
+    justify-content: center;
+  }
+  .site-header .language-select select {
+    min-height: 44px;
+    padding-inline: 8px;
+  }
+  .site-header .weather-pill {
+    font-size: 12px;
+  }
+  .workspace {
+    height: calc(100svh - 64px);
+  }
+  .filter {
+    min-height: 44px;
+    padding-inline: 12px;
+  }
+  .filter.active {
+    background: color-mix(in oklch, var(--filter-color) 20%, var(--color-paper-raised));
+    color: var(--color-ink);
+  }
+  .search-box input,
+  .route-place-input-wrap input {
+    font-size: 16px;
+  }
+  .spot-intro-links a,
+  .spot-save-inline {
+    min-height: 44px;
+  }
+  .spot-source-note {
+    font-size: 12px !important;
+    line-height: 1.6;
+  }
+  .spot-info-content small,
+  .spot-field-source {
+    font-size: 12px;
+  }
+  .map-area .maplibregl-ctrl-group button,
+  .locate-button {
+    width: 44px;
+    height: 44px;
+  }
+  .route-swap {
+    width: 44px;
+    height: 44px;
+  }
+  .spot-dialog-backdrop {
+    padding: 8px;
+  }
+  .spot-dialog {
+    max-height: calc(100svh - 16px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .spot-dialog-top button,
+  .spot-dialog-save,
+  .weather-error button,
+  .spot-weather-retry {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .spot-dialog-save {
+    padding-block: 8px;
+  }
+  .saved-place-actions a,
+  .saved-place-actions button {
+    min-height: 44px;
+  }
+  .saved-place-actions button {
+    min-width: 44px;
+  }
+  .map-error-notice {
+    width: min(calc(100% - 24px), 420px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 16px;
+  }
+  .map-error-notice button,
+  .weather-retry-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .detail-page,
+  .route-page {
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header .saved-spots-link span {
+    display: none;
+  }
+  .site-header .saved-spots-link {
+    width: 44px;
+  }
+  .site-header .weather-pill {
+    font-size: 11px;
+  }
+  .route-layout {
+    padding-inline: 16px;
+  }
+  .route-form {
+    grid-template-columns: minmax(0, 1fr) 44px;
+    gap: 8px;
+  }
+  .route-ticket {
+    padding: 20px;
+  }
+  .weather-hero,
+  .weather-guide {
+    padding-inline: 16px;
   }
 }
