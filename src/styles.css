@@ -1626,13 +1626,16 @@ a:focus-visible {
   gap: var(--space-4);
 }
 .feature-icon {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
   color: var(--color-primary);
+}
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.8;
 }
 .feature-kicker .eyebrow {
   margin: 0;
@@ -1682,21 +1685,75 @@ a:focus-visible {
     justify-items: start;
   }
   .feature-section {
-    gap: 88px;
-    padding-inline: var(--space-6);
+    gap: 0;
+    padding: 0 var(--space-6) var(--space-10);
   }
   .feature-row,
   .feature-row.reverse {
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: var(--space-5);
+    padding-block: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+  .feature-row:last-child {
+    border-bottom: 1px solid var(--color-border);
   }
   .feature-row.reverse .feature-image,
   .feature-row.reverse .feature-copy {
     grid-column: auto;
-    grid-row: auto;
+    grid-row: 1;
+  }
+  .feature-row.reverse .feature-image {
+    grid-column: 1;
+  }
+  .feature-row.reverse .feature-copy {
+    grid-column: 2;
   }
   .feature-image {
-    height: 300px;
+    width: 96px;
+    height: 96px;
+    align-self: start;
+  }
+  .feature-illustration {
+    padding: 0;
+  }
+  .weather-visual-frame {
+    padding: 0;
+  }
+  .feature-copy {
+    max-width: none;
+  }
+  .feature-kicker {
+    gap: var(--space-2);
+  }
+  .feature-icon {
+    flex-basis: auto;
+  }
+  .feature-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+  .feature-kicker .eyebrow {
+    font-size: 9px;
+  }
+  .feature-copy h3 {
+    margin: var(--space-3) 0;
+    font-size: clamp(18px, 5.4vw, 22px);
+    line-height: 1.25;
+    letter-spacing: -0.035em;
+  }
+  .feature-copy h3 br {
+    display: none;
+  }
+  .feature-copy > p:not(.eyebrow) {
+    margin-block: 0;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+  .feature-copy a {
+    min-height: 40px;
+    margin-top: var(--space-2);
+    font-size: 11px;
   }
 }
 /* Routed pages share the landing's restrained travel tone. */
