@@ -1,10 +1,19 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 
-import { ArrowUpRight, ChevronLeft, ChevronRight, CloudSun, Search, X } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Bookmark,
+  ChevronLeft,
+  ChevronRight,
+  CloudSun,
+  Search,
+  X,
+} from 'lucide-react';
 
 import { ExploreMap, type ClusterPlace } from './components/ExploreMap';
 import { SiteHeader } from './components/SiteHeader';
+import { useSavedSpots } from './context/useSavedSpots';
 import { getPublicAttractionRecord } from './data/publicAttractions';
 import {
   getSpotCategoryLabel,
@@ -66,6 +75,7 @@ const clusterPageSize = 5;
 const searchDebounceMs = 300;
 
 export default function App() {
+  const { savedSpotIds, toggleSavedSpot } = useSavedSpots();
   const [activeCategory, setActiveCategory] = useState<Category>('All');
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedClusterPlaces, setSelectedClusterPlaces] = useState<ClusterPlace[]>([]);
@@ -336,6 +346,21 @@ export default function App() {
                   <span>{selectedPublicRecord?.tags || selected!.note[locale]}</span>
                   <span>{selectedPublicRecord?.hours || text.bestTime}</span>
                 </div>
+                {selected && (
+                  <button
+                    type="button"
+                    className="spot-dialog-save"
+                    aria-pressed={savedSpotIds.includes(selected.id)}
+                    onClick={() => toggleSavedSpot(selected.id)}
+                  >
+                    <Bookmark
+                      size={16}
+                      fill={savedSpotIds.includes(selected.id) ? 'currentColor' : 'none'}
+                      aria-hidden="true"
+                    />
+                    {savedSpotIds.includes(selected.id) ? '저장됨' : '장소 저장'}
+                  </button>
+                )}
                 <section className="spot-dialog-weather">
                   <CloudSun size={30} strokeWidth={1.5} />
                   <div>

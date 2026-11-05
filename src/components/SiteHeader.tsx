@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { CloudSun } from 'lucide-react';
+import { Bookmark, CloudSun } from 'lucide-react';
+
+import { useSavedSpots } from '../context/useSavedSpots';
 
 import type { Locale } from '../data/spots';
 
@@ -13,6 +15,7 @@ type SiteHeaderProps = {
 
 export function SiteHeader({ locale = 'ko', onLocaleChange, overlay = false }: SiteHeaderProps) {
   const [temperature, setTemperature] = useState<number>();
+  const { savedSpotIds } = useSavedSpots();
 
   useEffect(() => {
     fetch(
@@ -31,6 +34,14 @@ export function SiteHeader({ locale = 'ko', onLocaleChange, overlay = false }: S
         </Link>
       </h1>
       <div className="site-header-actions">
+        <Link
+          className="saved-spots-link"
+          to="/saved"
+          aria-label={`저장한 장소 ${savedSpotIds.length}곳`}
+        >
+          <Bookmark size={16} aria-hidden="true" />
+          <span>저장 {savedSpotIds.length}</span>
+        </Link>
         <Link className="weather-pill" to="/weather">
           <CloudSun size={16} />
           <span>{temperature === undefined ? '서울 날씨' : `서울 ${temperature}°`}</span>

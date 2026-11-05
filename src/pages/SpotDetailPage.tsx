@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-import { Clock3, CloudSun, ExternalLink, Footprints, MapPin } from 'lucide-react';
+import { Bookmark, Clock3, CloudSun, ExternalLink, Footprints, MapPin, Route } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
+import { useSavedSpots } from '../context/useSavedSpots';
 import {
   getOfficialPlaceUrl,
   getPublicAttractionRecord,
@@ -16,6 +17,7 @@ export default function SpotDetailPage() {
   const { spotId } = useParams();
   const spot = getSpotById(spotId);
   const [forecast, setForecast] = useState<Forecast>();
+  const { savedSpotIds, toggleSavedSpot } = useSavedSpots();
 
   useEffect(() => {
     fetchSeoulWeather()
@@ -39,6 +41,7 @@ export default function SpotDetailPage() {
   const publicRecord = getPublicAttractionRecord(spot.id);
   const officialUrl = getOfficialPlaceUrl(publicRecord?.officialUrl);
   const publicAddress = publicRecord?.address;
+  const isSaved = savedSpotIds.includes(spot.id);
   const enrichedFields = publicRecord?.enrichedInfo?.fields;
   const sourceLink = (field: 'address' | 'hours' | 'closedDays' | 'transport', label: string) => {
     const source = enrichedFields?.[field];
@@ -111,6 +114,18 @@ export default function SpotDetailPage() {
               ))}
           </div>
           <p className="spot-intro-links">
+            <button
+              type="button"
+              className="spot-save-inline"
+              aria-pressed={isSaved}
+              onClick={() => toggleSavedSpot(spot.id)}
+            >
+              <Bookmark size={15} fill={isSaved ? 'currentColor' : 'none'} aria-hidden="true" />
+              {isSaved ? '저장됨' : '장소 저장'}
+            </button>
+            <Link to={`/routes?from=${encodeURIComponent(spot.id)}`}>
+              <Route size={15} aria-hidden="true" /> 이 장소에서 출발
+            </Link>
             {officialUrl && (
               <>
                 <a href={officialUrl} target="_blank" rel="noreferrer">

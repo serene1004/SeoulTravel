@@ -4,6 +4,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import {
   ArrowLeftRight,
   ArrowUpRight,
+  Bookmark,
   Check,
   MapPin,
   Navigation,
@@ -13,6 +14,7 @@ import {
 } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
+import { useSavedSpots } from '../context/useSavedSpots';
 import { getSpotCategoryLabel, seoulSpots } from '../data/spots';
 
 const featuredPlaceNames = [
@@ -34,11 +36,12 @@ type PlacePickerProps = {
 
 function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePickerProps) {
   const listId = useId();
-  const [queryValue, setQueryValue] = useState('');
+  const { savedSpotIds } = useSavedSpots();
+  const selected = seoulSpots.find((spot) => spot.id === selectedId);
+  const [queryValue, setQueryValue] = useState(selected?.name.ko ?? '');
   const [querySelectedId, setQuerySelectedId] = useState(selectedId);
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const selected = seoulSpots.find((spot) => spot.id === selectedId);
   const excluded = seoulSpots.find((spot) => spot.id === excludedId);
   const availableSpots = seoulSpots.filter((spot) => spot.id !== excludedId);
   const query = querySelectedId === selectedId ? queryValue : (selected?.name.ko ?? '');
@@ -73,9 +76,17 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
                 : 2;
           return leftRank - rightRank || left.name.ko.localeCompare(right.name.ko, 'ko');
         })
-    : featuredPlaceNames
-        .map((name) => availableSpots.find((spot) => spot.name.ko === name))
-        .filter((spot): spot is (typeof seoulSpots)[number] => Boolean(spot));
+    : [
+        ...savedSpotIds
+          .map((savedId) => availableSpots.find((spot) => spot.id === savedId))
+          .filter((spot): spot is (typeof seoulSpots)[number] => Boolean(spot)),
+        ...featuredPlaceNames
+          .map((name) => availableSpots.find((spot) => spot.name.ko === name))
+          .filter(
+            (spot): spot is (typeof seoulSpots)[number] =>
+              spot !== undefined && !savedSpotIds.includes(spot.id),
+          ),
+      ];
   const results = matchingSpots;
 
   function choose(placeId: string) {
@@ -161,7 +172,11 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
           aria-label={`${label} 검색 결과`}
         >
           <p className="route-place-result-heading">
-            {normalizedQuery ? `검색 결과 ${matchingSpots.length}곳` : '많이 찾는 장소'}
+            {normalizedQuery
+              ? `검색 결과 ${matchingSpots.length}곳`
+              : savedSpotIds.length
+                ? '저장한 장소 · 많이 찾는 장소'
+                : '많이 찾는 장소'}
           </p>
           {excludedMatchesQuery && (
             <p className="route-place-result-count">
@@ -192,7 +207,11 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
                     {spot.district.ko} · {getSpotCategoryLabel(spot.category, 'ko')}
                   </small>
                 </span>
-                {spot.id === selectedId && <Check size={16} aria-hidden="true" />}
+                {spot.id === selectedId ? (
+                  <Check size={16} aria-hidden="true" />
+                ) : (
+                  savedSpotIds.includes(spot.id) && <Bookmark size={15} aria-hidden="true" />
+                )}
               </button>
             ))
           ) : (
