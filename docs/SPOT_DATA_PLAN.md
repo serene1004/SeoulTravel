@@ -6,14 +6,16 @@
 
 지도·검색·카테고리 필터·장소 상세 화면은 `src/data/seoul-travel-places.json` 하나를 공통으로 사용합니다. 이 파일은 직접 편집하지 않는 생성 결과이며, 장소 선정·좌표 검사 결과에 상세정보 보강값을 합칩니다.
 
-| 파일                                                | 역할                                   | 수정 방법              |
-| --------------------------------------------------- | -------------------------------------- | ---------------------- |
-| `src/data/seoul-open-attractions.json`              | 서울시 관광 명소 원천 스냅샷           | 동기화 명령으로 갱신   |
-| `src/data/seoul-public-attraction-coordinates.json` | 원천 장소의 좌표와 주소 대조 정보      | 지오코딩 명령으로 갱신 |
-| `src/data/seoul-travel-place-review.json`           | 장소별 포함·제외·보류 판단과 근거      | 판단을 수정할 때 편집  |
-| `src/data/seoul-travel-place-enrichment.json`       | 주소·운영시간·교통·공식 링크와 출처    | 조사 결과를 보존       |
-| `src/data/seoul-travel-places.json`                 | 앱에서 사용하는 선정 장소 카탈로그     | 빌더로 재생성          |
-| `docs/TRAVEL_PLACE_REVIEW.md`                       | 전체 검토 결과를 읽기 쉽게 출력한 문서 | 빌더로 재생성          |
+| 파일                                                       | 역할                                   | 수정 방법              |
+| ---------------------------------------------------------- | -------------------------------------- | ---------------------- |
+| `src/data/seoul-open-attractions.json`                     | 서울시 관광 명소 원천 스냅샷           | 동기화 명령으로 갱신   |
+| `src/data/seoul-public-attraction-coordinates.json`        | 원천 장소의 좌표와 주소 대조 정보      | 지오코딩 명령으로 갱신 |
+| `src/data/seoul-travel-place-review.json`                  | 장소별 포함·제외·보류 판단과 근거      | 판단을 수정할 때 편집  |
+| `src/data/seoul-travel-place-enrichment.json`              | 주소·운영시간·교통·공식 링크와 출처    | 조사 결과를 보존       |
+| `src/data/seoul-travel-place-localization-candidates.json` | 영어·일본어 장소명 1차 번역 후보       | 후보 생성 후 API 검토  |
+| `src/data/seoul-travel-place-localization-review.json`     | 번역별 OpenAI 검토와 수정 제안         | 검토 배치로 생성       |
+| `src/data/seoul-travel-places.json`                        | 앱에서 사용하는 선정 장소 카탈로그     | 빌더로 재생성          |
+| `docs/TRAVEL_PLACE_REVIEW.md`                              | 전체 검토 결과를 읽기 쉽게 출력한 문서 | 빌더로 재생성          |
 
 `src/data/spots.ts`는 카탈로그를 앱의 장소 타입으로 변환합니다. `src/App.tsx`의 지도와 탐색 화면, `src/data/publicAttractions.ts`와 장소 상세 화면도 같은 카탈로그를 참조합니다. 기존 장소 카탈로그 파일을 별도로 합산하지 않습니다.
 
@@ -29,6 +31,18 @@ pnpm test:travel-place-enrichment
 ```
 
 `--offset`과 `--limit`으로 배치를 나눌 수 있고, `OPENAI_MODEL`로 모델을 지정할 수 있습니다. 응답별 토큰·검색 호출 수·추정 비용을 결과 파일에 기록하며 비용 상한에 가까우면 다음 장소를 처리하지 않습니다. 이 추정 상한은 공급자 측 과금 차단을 대체하지 않습니다. `pnpm build:travel-places`는 조사 파일의 원천 스냅샷이 현재 원천과 일치하는지 확인한 뒤 필드별 출처 URL이 있는 값을 앱 카탈로그에 적용합니다.
+
+## 영어·일본어 장소명 검토 배치
+
+현재 카탈로그에 다국어 장소명이 없는 항목은 앱 데이터와 분리된 `seoul-travel-place-localization-candidates.json`에 1차 후보로 기록합니다. 원래 한국어 이름과 기존 다국어 이름은 보존하며, 이 후보 파일은 앱에서 직접 사용하지 않습니다. API 검토 결과는 `seoul-travel-place-localization-review.json`에 언어별 승인·수정 제안·추가 검토 상태와 토큰 사용량 및 추정 비용으로 누적됩니다. 검토 스크립트는 앱 카탈로그를 변경하지 않습니다.
+
+```sh
+pnpm review:place-localizations -- --dry-run --limit 25 --offset 0
+pnpm review:place-localizations -- --limit 25 --offset 0
+pnpm review:place-localizations -- --limit 25 --offset 25
+```
+
+실행 전 `.env.local`에 `OPENAI_API_KEY`를 설정하고, 필요하면 `OPENAI_MODEL`과 `LOCALIZATION_REVIEW_MAX_SPEND_USD`를 지정합니다. 기본 모델은 `gpt-6-luna`, 실행당 기본 처리량은 25곳, 누적 추정 비용 상한은 $1입니다. `--dry-run`은 API를 호출하지 않습니다. 이 배치는 제공된 한국어 이름과 문맥으로 번역 품질을 검토하며, 장소의 공식 외국어 표기를 웹에서 독립 검증하지는 않습니다.
 
 ## 데이터 갱신과 검증
 

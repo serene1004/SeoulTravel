@@ -61,21 +61,23 @@ pnpm format                 # Prettier 적용
 pnpm format:check           # 포맷 검사
 pnpm sync:seoul-attractions # 서울 공공 관광 데이터 동기화
 pnpm enrich:travel-places -- --limit 25 --offset 0 # 장소 상세 정보 조사 배치
+pnpm review:place-localizations -- --limit 25 --offset 0 # 영어·일본어 장소명 검토
 pnpm test:travel-place-enrichment                 # 조사 파이프라인 검사
 ```
 
 ## 환경 변수
 
-공공 관광 데이터를 동기화하거나 AI 조사 배치를 실행할 때 `.env.local`을 사용합니다. 실제 키는 커밋하지 않습니다.
+공공 관광 데이터를 동기화하거나 AI 조사·번역 검토 배치를 실행할 때 `.env.local`을 사용합니다. 실제 키는 커밋하지 않습니다.
 
 ```env
 VITE_SEOUL_OPEN_DATA_KEY=발급받은_API_키
 OPENAI_API_KEY=발급받은_API_키
 OPENAI_MODEL=gpt-6-luna
 ENRICH_MAX_SPEND_USD=4.5
+LOCALIZATION_REVIEW_MAX_SPEND_USD=1
 ```
 
-서울 데이터 키는 `pnpm sync:seoul-attractions`, OpenAI 키는 `pnpm enrich:travel-places` 실행 시 사용됩니다. `.env.example`에 변수 목록이 있습니다.
+서울 데이터 키는 `pnpm sync:seoul-attractions`, OpenAI 키는 `pnpm enrich:travel-places`와 `pnpm review:place-localizations` 실행 시 사용됩니다. `.env.example`에 변수 목록이 있습니다.
 
 ## 페이지
 
