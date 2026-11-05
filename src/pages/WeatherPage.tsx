@@ -3,39 +3,12 @@ import { useEffect, useState } from 'react';
 import { CloudSun, Umbrella, Wind } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
-import { fetchSeoulWeather, type Forecast, weatherCondition } from '../data/weather';
-
-function outfitFor(temperature: number, precipitationChance: number) {
-  if (temperature <= 4) {
-    return {
-      image: 'cold.png',
-      alt: '패딩과 두꺼운 겨울 코트 코디',
-      note: '두꺼운 외투와 따뜻한 이너를 챙기면 좋아요.',
-    };
-  }
-  if (temperature <= 11) {
-    return {
-      image: 'cool.png',
-      alt: '재킷과 니트를 겹쳐 입은 도톰한 코디',
-      note: '재킷이나 트렌치코트에 얇은 니트를 더해 보세요.',
-    };
-  }
-  if (temperature <= 20) {
-    return {
-      image: 'mild.png',
-      alt: '가벼운 재킷과 셔츠를 활용한 얇은 코디',
-      note: '긴팔에 가벼운 겉옷을 걸치고, 따뜻한 낮에는 벗어 체온을 조절해 보세요.',
-    };
-  }
-  return {
-    image: 'warm.png',
-    alt: '통풍이 잘되는 여름 코디',
-    note:
-      precipitationChance >= 40
-        ? '가볍게 입고 접이식 우산을 챙기면 좋아요.'
-        : '통풍이 잘되는 옷차림과 모자가 잘 어울려요.',
-  };
-}
+import {
+  fetchSeoulWeather,
+  getOutfitRecommendation,
+  type Forecast,
+  weatherCondition,
+} from '../data/weather';
 
 function periodForecast(
   forecast: Forecast,
@@ -89,12 +62,7 @@ export default function WeatherPage() {
   const temperature = current ? Math.round(current.temperature_2m) : undefined;
   const apparent = current ? Math.round(current.apparent_temperature) : undefined;
   const rainChance = today?.precipitation_probability_max[0];
-  const dayLow = today ? Math.round(today.temperature_2m_min[0]) : undefined;
-  const dayHigh = today ? Math.round(today.temperature_2m_max[0]) : undefined;
-  const outfit =
-    current && rainChance !== undefined && dayLow !== undefined && dayHigh !== undefined
-      ? outfitFor((dayLow + dayHigh) / 2, rainChance)
-      : undefined;
+  const outfit = forecast ? getOutfitRecommendation(forecast) : undefined;
   const periods = forecast
     ? [
         periodForecast(forecast, '오전', 6, 11, 9),

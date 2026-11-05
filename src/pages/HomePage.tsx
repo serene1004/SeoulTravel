@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { ArrowRight, ArrowUp, MapPinned, Route, Shirt } from 'lucide-react';
+import { ArrowRight, ArrowUp, CloudSun, MapPinned, Route, Shirt } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
+import { fetchSeoulWeather, getOutfitRecommendation } from '../data/weather';
 
 const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
@@ -34,7 +35,7 @@ const features = [
     icon: Shirt,
     label: 'Check today',
     title: '서울의 날씨를\n확인해 보세요.',
-    text: '서울의 현재 날씨와 시간대별 예보를 확인해 보세요.',
+    text: '현재 날씨와 시간대별 예보, 기온에 맞는 옷차림을 확인해 보세요.',
     visualType: 'weather',
     href: '/weather',
   },
@@ -47,19 +48,11 @@ const heroSlides = [
   { src: publicAsset('images/landing/hanriver.webp'), label: 'Han River Park' },
 ];
 
-const weatherOutfitSlides = [
-  { src: publicAsset('images/weather-outfits/cold.png'), alt: '추운 날씨에 어울리는 따뜻한 코디' },
-  { src: publicAsset('images/weather-outfits/cool.png'), alt: '쌀쌀한 날씨에 어울리는 겹쳐 입기 코디' },
-  { src: publicAsset('images/weather-outfits/mild.png'), alt: '선선한 날씨에 어울리는 가벼운 코디' },
-  { src: publicAsset('images/weather-outfits/warm.png'), alt: '따뜻한 날씨에 어울리는 시원한 코디' },
-];
-
 export default function HomePage() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [showGoTop, setShowGoTop] = useState(false);
-  const [weatherOutfitSlide] = useState(() =>
-    Math.floor(Math.random() * weatherOutfitSlides.length),
-  );
+  const [weatherOutfit, setWeatherOutfit] = useState<ReturnType<typeof getOutfitRecommendation>>();
+  const [weatherError, setWeatherError] = useState(false);
   const heroSlide = heroSlides[activeSlide];
 
   useEffect(() => {
@@ -67,6 +60,20 @@ export default function HomePage() {
       setActiveSlide((current) => (current + 1) % heroSlides.length);
     }, 5000);
     return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    let isActive = true;
+    fetchSeoulWeather()
+      .then((forecast) => {
+        if (isActive) setWeatherOutfit(getOutfitRecommendation(forecast));
+      })
+      .catch(() => {
+        if (isActive) setWeatherError(true);
+      });
+    return () => {
+      isActive = false;
+    };
   }, []);
 
   useEffect(() => {
@@ -114,57 +121,78 @@ export default function HomePage() {
         </p>
       </section>
       <section className="feature-section">
-        {features.map(({ icon: Icon, label, title, text, visualType, visualImage, href }, index) => (
-          <article className={`feature-row ${index % 2 === 1 ? 'reverse' : ''}`} key={label}>
-            <div
-              className="feature-image"
-              aria-label={visualType === 'weather' ? '오늘의 옷차림 참고 이미지' : visualImage?.alt}
-              role="img"
-            >
-              {visualType === 'weather' ? (
-                <div className="weather-visual-frame">
-                  <img
-                    src={weatherOutfitSlides[weatherOutfitSlide].src}
-                    alt={weatherOutfitSlides[weatherOutfitSlide].alt}
-                    loading="lazy"
-                  />
-                </div>
-              ) : (
-                visualImage && (
-                  <img
-                    className="feature-illustration"
-                    src={visualImage.src}
-                    alt=""
-                    loading="lazy"
-                  />
-                )
-              )}
-            </div>
-            <div className="feature-copy">
-              <div className="feature-kicker">
-                <span className="feature-icon">
-                  <Icon size={19} />
-                </span>
-                <p className="eyebrow">{label}</p>
+        {features.map(
+          ({ icon: Icon, label, title, text, visualType, visualImage, href }, index) => (
+            <article className={`feature-row ${index % 2 === 1 ? 'reverse' : ''}`} key={label}>
+              <div
+                className="feature-image"
+                aria-label={
+                  visualType === 'weather'
+                    ? (weatherOutfit?.alt ??
+                      (weatherError
+                        ? '오늘의 옷차림 정보를 불러오지 못했어요.'
+                        : '오늘의 옷차림을 확인하고 있어요.'))
+                    : visualImage?.alt
+                }
+                role="img"
+              >
+                {visualType === 'weather' ? (
+                  <div className="weather-visual-frame">
+                    {weatherOutfit ? (
+                      <img
+                        src={publicAsset(`images/weather-outfits/${weatherOutfit.image}`)}
+                        alt={weatherOutfit.alt}
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="weather-visual-status" aria-hidden="true">
+                        <CloudSun size={28} />
+                        <span>{weatherError ? '날씨 정보 확인 불가' : '날씨 확인 중'}</span>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  visualImage && (
+                    <img
+                      className="feature-illustration"
+                      src={visualImage.src}
+                      alt=""
+                      loading="lazy"
+                    />
+                  )
+                )}
               </div>
-              <h3>
-                {title.split('\n').map((line) => (
-                  <span key={line}>
-                    {line}
-                    <br />
+              <div className="feature-copy">
+                <div className="feature-kicker">
+                  <span className="feature-icon">
+                    <Icon size={19} />
                   </span>
-                ))}
-              </h3>
-              <p>{text}</p>
-              <Link to={href}>
-                자세히 보기 <ArrowRight size={15} />
-              </Link>
-            </div>
-          </article>
-        ))}
+                  <p className="eyebrow">{label}</p>
+                </div>
+                <h3>
+                  {title.split('\n').map((line) => (
+                    <span key={line}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </h3>
+                <p>{text}</p>
+                <Link to={href}>
+                  자세히 보기 <ArrowRight size={15} />
+                </Link>
+              </div>
+            </article>
+          ),
+        )}
       </section>
       {showGoTop && (
-        <button className="landing-go-top" type="button" onClick={goToTop} aria-label="맨 위로 이동">
+        <button
+          className="landing-go-top"
+          type="button"
+          onClick={goToTop}
+          aria-label="맨 위로 이동"
+        >
           <ArrowUp size={20} aria-hidden="true" />
         </button>
       )}
