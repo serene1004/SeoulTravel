@@ -301,6 +301,40 @@ a:focus-visible {
   display: grid;
   gap: var(--space-2);
 }
+.accessible-place-list {
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-ink);
+  font-size: 12px;
+}
+.accessible-place-list summary {
+  padding: var(--space-4) 0;
+  cursor: pointer;
+}
+.accessible-place-list-items {
+  display: grid;
+  max-height: min(30svh, 280px);
+  overflow-y: auto;
+}
+.accessible-place-list-items button {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-2);
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.accessible-place-list-items button:hover,
+.accessible-place-list-items button:focus-visible,
+.accessible-place-list-items button[aria-pressed='true'] {
+  background: color-mix(in oklch, var(--color-paper) 80%, var(--color-primary));
+}
+.accessible-place-list-items small {
+  color: var(--color-muted);
+}
 .filter {
   display: flex;
   align-items: center;

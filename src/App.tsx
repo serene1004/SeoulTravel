@@ -164,6 +164,11 @@ export default function App() {
   function changeSearch(value: string) {
     setSearchInput(value);
   }
+  function selectSpot(id: string) {
+    setSelectedClusterPlaces([]);
+    setSameLocationIndex(0);
+    setSelectedId(id);
+  }
   function selectClusterPlace(place: ClusterPlace) {
     if (isSameLocationCluster) {
       setSameLocationIndex(
@@ -235,6 +240,26 @@ export default function App() {
           <p aria-live="polite">
             {text.results} · {visibleSpots.length}
           </p>
+          <details className="accessible-place-list">
+            <summary>
+              {t(locale, 'placeList')} · {visibleSpots.length}
+            </summary>
+            <div className="accessible-place-list-items">
+              {visibleSpots.map((spot) => (
+                <button
+                  type="button"
+                  key={spot.id}
+                  aria-pressed={selectedId === spot.id}
+                  onClick={() => selectSpot(spot.id)}
+                >
+                  <span>{spot.name[locale]}</span>
+                  <small>
+                    {spot.district[locale]} · {getSpotCategoryLabel(spot.category, locale)}
+                  </small>
+                </button>
+              ))}
+            </div>
+          </details>
         </aside>
         <Suspense
           fallback={
@@ -251,11 +276,7 @@ export default function App() {
             mapErrorLabel={text.mapError}
             retryLabel={text.retry}
             selectedSpotId={selectedId}
-            onSelectSpot={(id) => {
-              setSelectedClusterPlaces([]);
-              setSameLocationIndex(0);
-              setSelectedId(id);
-            }}
+            onSelectSpot={selectSpot}
             onSelectCluster={(places) => {
               if (places.length < 2) return;
               setSelectedClusterPlaces(places);
