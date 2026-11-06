@@ -59,6 +59,8 @@ pnpm preview                # 프로덕션 빌드 미리보기
 pnpm lint                   # ESLint 검사
 pnpm format                 # Prettier 적용
 pnpm format:check           # 포맷 검사
+pnpm test                   # 전체 테스트
+pnpm verify                 # 린트, 전체 테스트, 프로덕션 빌드
 pnpm sync:seoul-attractions # 서울 공공 관광 데이터 동기화
 pnpm enrich:travel-places -- --limit 25 --offset 0 # 장소 상세 정보 조사 배치
 pnpm review:place-localizations -- --limit 25 --offset 0 # 영어·일본어 장소명 검토
@@ -71,13 +73,14 @@ pnpm test:travel-place-enrichment                 # 조사 파이프라인 검�
 
 ```env
 VITE_SEOUL_OPEN_DATA_KEY=발급받은_API_키
+SEOUL_OPEN_DATA_API_BASE_URL=신뢰할_수_있는_HTTPS_중계_주소
 OPENAI_API_KEY=발급받은_API_키
 OPENAI_MODEL=gpt-6-luna
 ENRICH_MAX_SPEND_USD=4.5
 LOCALIZATION_REVIEW_MAX_SPEND_USD=1
 ```
 
-서울 데이터 키는 `pnpm sync:seoul-attractions`, OpenAI 키는 `pnpm enrich:travel-places`와 `pnpm review:place-localizations` 실행 시 사용됩니다. `.env.example`에 변수 목록이 있습니다.
+서울 데이터 키는 `pnpm sync:seoul-attractions` 실행 시 사용됩니다. 서울시 공식 API가 HTTP만 제공하므로, 이 스크립트는 키가 평문으로 전송되지 않도록 신뢰할 수 있는 HTTPS 중계 주소(`SEOUL_OPEN_DATA_API_BASE_URL`)가 설정된 경우에만 실행됩니다. 중계 서버는 키가 포함된 URL 경로를 액세스 로그에서 숨겨야 합니다. OpenAI 키는 `pnpm enrich:travel-places`와 `pnpm review:place-localizations` 실행 시 사용됩니다. `.env.example`에 변수 목록이 있습니다.
 
 ## 페이지
 
