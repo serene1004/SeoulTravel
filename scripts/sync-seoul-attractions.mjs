@@ -5,7 +5,6 @@ const envPath = resolve('.env.local');
 const outputPath = resolve('src/data/seoul-open-attractions.json');
 const candidateOutputPath = resolve('src/data/seoul-public-attraction-candidates.json');
 const datasetUrl = 'https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do';
-const apiBaseUrl = 'http://openapi.seoul.go.kr:8088';
 const pageSize = 1000;
 
 function getEnvValue(envText, name) {
@@ -33,14 +32,32 @@ function getDistrict(address) {
 
 const envText = await readFile(envPath, 'utf8');
 const apiKey = getEnvValue(envText, 'VITE_SEOUL_OPEN_DATA_KEY');
+const configuredApiBaseUrl = getEnvValue(envText, 'SEOUL_OPEN_DATA_API_BASE_URL');
 
 if (!apiKey) {
   throw new Error('VITE_SEOUL_OPEN_DATA_KEY is missing from .env.local.');
 }
+if (!configuredApiBaseUrl) {
+  throw new Error(
+    'SEOUL_OPEN_DATA_API_BASE_URL must point to an HTTPS proxy; the official endpoint uses unencrypted HTTP.',
+  );
+}
+
+const apiBaseUrl = new URL(configuredApiBaseUrl);
+if (
+  apiBaseUrl.protocol !== 'https:' ||
+  apiBaseUrl.username ||
+  apiBaseUrl.password ||
+  apiBaseUrl.search ||
+  apiBaseUrl.hash
+) {
+  throw new Error('SEOUL_OPEN_DATA_API_BASE_URL must be an HTTPS URL without embedded credentials.');
+}
+const secureApiBaseUrl = apiBaseUrl.href.replace(/\/+$/, '');
 
 async function fetchPage(startIndex, endIndex) {
   const response = await fetch(
-    `${apiBaseUrl}/${apiKey}/json/TbVwAttractions/${startIndex}/${endIndex}/`,
+    `${secureApiBaseUrl}/${apiKey}/json/TbVwAttractions/${startIndex}/${endIndex}/`,
   );
   if (!response.ok) {
     throw new Error(`Seoul Open Data request failed with HTTP ${response.status}.`);
