@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
+
 import { CloudSun, Umbrella, Wind } from 'lucide-react';
 
 import { SiteHeader } from '../components/SiteHeader';
 import { useLocale } from '../context/useLocale';
+import { getSpotCategoryLabel } from '../data/spots';
 import { getOutfitRecommendation, type Forecast, weatherCondition } from '../data/weather';
+import { getWeatherPlaceRecommendations } from '../data/weatherPlaceRecommendations';
 import { useSeoulWeather } from '../hooks/useSeoulWeather';
 import { t } from '../i18n/messages';
 
@@ -53,6 +57,7 @@ export default function WeatherPage() {
   const apparent = current ? Math.round(current.apparent_temperature) : undefined;
   const rainChance = today?.precipitation_probability_max[0];
   const outfit = forecast ? getOutfitRecommendation(forecast, locale) : undefined;
+  const placeRecommendations = forecast ? getWeatherPlaceRecommendations(forecast) : undefined;
   const periods = forecast
     ? [
         periodForecast(forecast, t(locale, 'morning'), 6, 11, 9, locale),
@@ -111,6 +116,34 @@ export default function WeatherPage() {
           </div>
         )}
       </section>
+      {placeRecommendations && placeRecommendations.places.length > 0 && (
+        <section className="weather-places" aria-labelledby="weather-places-title">
+          <div className="weather-places-heading">
+            <div>
+              <p className="eyebrow">{t(locale, 'weatherKicker')}</p>
+              <h3 id="weather-places-title">{t(locale, 'weatherPlacesTitle')}</h3>
+            </div>
+            <p>
+              {t(
+                locale,
+                placeRecommendations.mode === 'indoor'
+                  ? 'weatherPlacesIndoor'
+                  : 'weatherPlacesOutdoor',
+              )}
+            </p>
+          </div>
+          <div className="weather-place-list">
+            {placeRecommendations.places.map((spot) => (
+              <Link className="weather-place-card" key={spot.id} to={`/spots/${spot.id}`}>
+                <span>{getSpotCategoryLabel(spot.category, locale)}</span>
+                <strong>{spot.name[locale]}</strong>
+                <small>{spot.district[locale]}</small>
+              </Link>
+            ))}
+          </div>
+          <p className="weather-place-note">{t(locale, 'weatherPlacesNote')}</p>
+        </section>
+      )}
       {!error && forecast && (
         <section
           className="weather-guide"

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { getOutfitRules, parseForecast } from '../src/data/weatherRules.mjs';
+import { getOutfitRules, getWeatherPlaceMode, parseForecast } from '../src/data/weatherRules.mjs';
 
 function validForecast() {
   return {
@@ -41,6 +41,27 @@ test('rain advice threshold applies across every temperature tier', () => {
     assert.deepEqual(getOutfitRules(min, max, 40), { tier, rainAdvice: true });
     assert.equal(getOutfitRules(min, max, 39).rainAdvice, false);
   }
+});
+
+test('weather place mode prefers indoor places for rain, snow, or high rain probability', () => {
+  const base = {
+    current: { precipitation: 0, weather_code: 1 },
+    daily: { precipitation_probability_max: [10] },
+  };
+
+  assert.equal(getWeatherPlaceMode(base), 'outdoor');
+  assert.equal(
+    getWeatherPlaceMode({ ...base, daily: { precipitation_probability_max: [40] } }),
+    'indoor',
+  );
+  assert.equal(
+    getWeatherPlaceMode({ ...base, current: { ...base.current, precipitation: 0.1 } }),
+    'indoor',
+  );
+  assert.equal(
+    getWeatherPlaceMode({ ...base, current: { ...base.current, weather_code: 71 } }),
+    'indoor',
+  );
 });
 
 test('accepts a forecast with all required fields and matching arrays', () => {

@@ -6,6 +6,16 @@ export function getOutfitRules(minTemperature, maxTemperature, precipitationChan
   return { tier, rainAdvice: precipitationChance >= 40 };
 }
 
+export function getWeatherPlaceMode(forecast) {
+  const weatherCode = forecast.current.weather_code;
+  const hasPrecipitation =
+    forecast.current.precipitation > 0 ||
+    (weatherCode >= 51 && weatherCode <= 99) ||
+    forecast.daily.precipitation_probability_max[0] >= 40;
+
+  return hasPrecipitation ? 'indoor' : 'outdoor';
+}
+
 function isRecord(value) {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
