@@ -1,6 +1,6 @@
 import { locales, type Locale } from '../i18n/locales';
 
-import travelCatalog from './seoul-travel-places.json';
+import travelCatalog from './seoul-travel-place-index.json';
 
 export { locales };
 export type { Locale };
@@ -65,6 +65,7 @@ export type Spot = {
   id: string;
   name: LocalizedText;
   category: SpotCategory;
+  placeType?: string;
   district: LocalizedText;
   neighborhood: LocalizedText;
   note: LocalizedText;
@@ -86,6 +87,7 @@ export const seoulSpots: Spot[] = travelCatalog.places.map((place) => {
       ja: place.localizedNames?.ja || place.name,
     },
     category: place.category as SpotCategory,
+    placeType: place.placeType,
     district: localizeDistrict(place.district),
     neighborhood: localizeDistrict(place.district),
     note: localize(place.tags || place.name),

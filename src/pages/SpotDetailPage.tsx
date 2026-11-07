@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import { Bookmark, Clock3, CloudSun, ExternalLink, Footprints, MapPin, Route } from 'lucide-react';
@@ -7,8 +8,11 @@ import { useLocale } from '../context/useLocale';
 import { useSavedSpots } from '../context/useSavedSpots';
 import {
   getOfficialPlaceUrl,
-  getPublicAttractionRecord,
+  loadPublicAttractionRecord,
+  loadLocalizedPlaceContents,
   publicAttractionDataset,
+  type LocalizedPlaceContentMap,
+  type PublicAttractionRecord,
 } from '../data/publicAttractions';
 import { getSpotById, getSpotCategoryLabel } from '../data/spots';
 import { weatherCondition } from '../data/weather';
@@ -18,9 +22,45 @@ import { t } from '../i18n/messages';
 export default function SpotDetailPage() {
   const { spotId } = useParams();
   const { locale } = useLocale();
+  const [localizedContents, setLocalizedContents] = useState<LocalizedPlaceContentMap>({});
   const spot = getSpotById(spotId);
+  const selectedSpotId = spot?.id;
+  const [loadedPublicRecord, setLoadedPublicRecord] = useState<{
+    spotId: string;
+    record: PublicAttractionRecord | undefined;
+  }>();
   const { savedSpotIds, toggleSavedSpot } = useSavedSpots();
   const { forecast, hasError: weatherError, retry: retryWeather } = useSeoulWeather();
+
+  useEffect(() => {
+    let mounted = true;
+    void loadLocalizedPlaceContents()
+      .then((content) => {
+        if (mounted) setLocalizedContents(content);
+      })
+      .catch(() => undefined);
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!selectedSpotId) return undefined;
+    let mounted = true;
+    void loadPublicAttractionRecord(selectedSpotId)
+      .then((record) => {
+        if (mounted) setLoadedPublicRecord({ spotId: selectedSpotId, record });
+      })
+      .catch(() => undefined);
+    return () => {
+      mounted = false;
+    };
+  }, [selectedSpotId]);
+
+  const publicRecord =
+    loadedPublicRecord && loadedPublicRecord.spotId === selectedSpotId
+      ? loadedPublicRecord.record
+      : undefined;
 
   if (!spot) {
     return (
@@ -35,9 +75,10 @@ export default function SpotDetailPage() {
     );
   }
 
-  const publicRecord = getPublicAttractionRecord(spot.id);
+  const localizedContent = localizedContents[spot.id]?.[locale];
   const officialUrl = getOfficialPlaceUrl(publicRecord?.officialUrl);
   const publicAddress = publicRecord?.address;
+  const displayAddress = localizedContent?.address || (locale === 'ko' ? publicAddress : undefined);
   const isSaved = savedSpotIds.includes(spot.id);
   const enrichedFields = publicRecord?.enrichedInfo?.fields;
   const sourceLink = (field: 'address' | 'hours' | 'closedDays' | 'transport', label: string) => {
@@ -58,7 +99,10 @@ export default function SpotDetailPage() {
   };
   const mapUrl = new URL('https://www.google.com/maps/search/');
   mapUrl.searchParams.set('api', '1');
-  mapUrl.searchParams.set('query', `${spot.name[locale]}, ${publicAddress || spot.address}`);
+  mapUrl.searchParams.set(
+    'query',
+    `${spot.name[locale]}, ${displayAddress || `${spot.district[locale]}, Seoul`}`,
+  );
   const weatherNote = forecast
     ? {
         icon: CloudSun,
@@ -88,27 +132,35 @@ export default function SpotDetailPage() {
       icon: Clock3,
       label: t(locale, 'hours'),
       value:
-        publicRecord?.hours ||
+        localizedContent?.hours ||
+        (locale === 'ko' ? publicRecord?.hours : undefined) ||
         (locale === 'en' ? 'Check hours' : locale === 'ja' ? '営業時間を確認' : t(locale, 'hours')),
       field: 'hours',
-      description: publicRecord?.closedDays
-        ? `${t(locale, 'closedDays')}: ${publicRecord.closedDays}`
+      description: (locale === 'ko' ? publicRecord?.closedDays : localizedContent?.closedDays)
+        ? `${t(locale, 'closedDays')}: ${locale === 'ko' ? publicRecord?.closedDays : localizedContent?.closedDays}`
         : t(locale, 'checkOfficialHours'),
     },
     {
       icon: Footprints,
       label: t(locale, 'transport'),
       value:
-        publicRecord?.transport ||
+        localizedContent?.transport ||
+        (locale === 'ko' ? publicRecord?.transport : undefined) ||
         (locale === 'en'
           ? 'Check directions'
           : locale === 'ja'
             ? 'アクセス情報を確認'
             : t(locale, 'transport')),
       field: 'transport',
-      description: publicRecord?.tags || t(locale, 'checkRoute'),
+      description:
+        localizedContent?.tags ||
+        (locale === 'ko' ? publicRecord?.tags : undefined) ||
+        t(locale, 'checkRoute'),
     },
   ];
+  const placeTags =
+    (locale === 'ko' ? publicRecord?.tags || spot.note.ko : localizedContent?.tags) ||
+    getSpotCategoryLabel(spot.category, locale);
 
   return (
     <main className="detail-page">
@@ -120,14 +172,15 @@ export default function SpotDetailPage() {
           </p>
           <h2>{spot.name[locale]}</h2>
           <p>
-            {publicRecord?.curationReason ||
+            {localizedContent?.curationReason ||
+              (locale === 'ko' ? publicRecord?.curationReason : undefined) ||
               t(locale, 'detailIntroFallback', {
                 district: spot.district[locale],
                 category: getSpotCategoryLabel(spot.category, locale),
               })}
           </p>
           <div className="spot-chips">
-            {(publicRecord?.tags || spot.note.ko)
+            {placeTags
               .split(',')
               .map((tag) => tag.trim())
               .filter(Boolean)
@@ -163,7 +216,7 @@ export default function SpotDetailPage() {
           </p>
           <p className="spot-source-note">
             {t(locale, 'dataSource')}: {t(locale, 'seoulAttractionDatasetName')} ·{' '}
-            {publicAttractionDataset.license}
+            {t(locale, 'publicDatasetLicense')}
             {publicRecord?.enrichedInfo ? (
               <>
                 <br />
@@ -186,7 +239,9 @@ export default function SpotDetailPage() {
             <p>{t(locale, 'location')}</p>
           </div>
           <div className="spot-info-content">
-            <strong>{publicAddress || `${spot.neighborhood.ko}, ${spot.district.ko}`}</strong>
+            <strong>
+              {displayAddress || `${spot.neighborhood[locale]}, ${spot.district[locale]}`}
+            </strong>
             <small>
               {publicRecord?.enrichedInfo
                 ? t(locale, 'researchedAddress')

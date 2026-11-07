@@ -134,6 +134,12 @@ function validateReviews(reviews, places) {
   });
 }
 
+export function selectReviewBatch(draftPlaces, entries, options) {
+  const completedIds = new Set(entries.map((entry) => entry.id));
+  const pendingPlaces = draftPlaces.filter((place) => options.force || !completedIds.has(place.id));
+  return pendingPlaces.slice(options.offset, options.offset + options.limit);
+}
+
 async function reviewBatch(places, apiKey) {
   const input = [
     'Review first-pass English and Japanese display names for Seoul travel places.',
@@ -244,10 +250,7 @@ async function main() {
       requests: [],
     }));
   output.requests ??= [];
-  const completedIds = new Set(output.entries.map((entry) => entry.id));
-  const batch = draftPlaces
-    .slice(options.offset, options.offset + options.limit)
-    .filter((place) => options.force || !completedIds.has(place.id));
+  const batch = selectReviewBatch(draftPlaces, output.entries, options);
 
   if (!batch.length) {
     console.log('검토할 장소가 없습니다. --force 또는 다른 --offset을 사용하세요.');

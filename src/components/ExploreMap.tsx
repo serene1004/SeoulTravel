@@ -12,7 +12,10 @@ import {
 } from 'maplibre-gl';
 import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 
-import { getPublicAttractionRecord } from '../data/publicAttractions';
+import {
+  loadLocalizedPlaceContents,
+  type LocalizedPlaceContentMap,
+} from '../data/publicAttractions';
 import { getSpotCategoryLabel, type Locale, type Spot, type SpotCategory } from '../data/spots';
 import { t } from '../i18n/messages';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -59,11 +62,7 @@ function toMapPlaceFeatureCollection(spots: Spot[], categoryColors: Record<SpotC
 
 function applyMapLabelLanguage(map: MapLibreMap, locale: Locale) {
   const fields =
-    locale === 'ko'
-      ? ['name:ko', 'name_ko', 'name']
-      : locale === 'ja'
-        ? ['name:ja', 'name_ja']
-        : ['name:en', 'name_en'];
+    locale === 'ko' ? ['name:ko', 'name_ko', 'name'] : locale === 'ja' ? ['name:ja'] : ['name:en'];
   const textField = ['coalesce', ...fields.map((field) => ['get', field])];
 
   for (const layer of map.getStyle().layers ?? []) {
@@ -73,6 +72,9 @@ function applyMapLabelLanguage(map: MapLibreMap, locale: Locale) {
       map.setLayoutProperty(layer.id, 'text-field', textField as never);
     }
   }
+}
+
+function applyMapControlLanguage(map: MapLibreMap, locale: Locale) {
   map.getCanvasContainer().setAttribute('lang', locale);
   const controlLabels = [
     ['.maplibregl-ctrl-zoom-in', 'zoomIn'],
@@ -109,6 +111,19 @@ export function ExploreMap({
   const [mapError, setMapError] = useState(false);
   const [mapAttempt, setMapAttempt] = useState(0);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [localizedContents, setLocalizedContents] = useState<LocalizedPlaceContentMap>({});
+
+  useEffect(() => {
+    let mounted = true;
+    void loadLocalizedPlaceContents()
+      .then((content) => {
+        if (mounted) setLocalizedContents(content);
+      })
+      .catch(() => undefined);
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   useEffect(() => {
     localeRef.current = locale;
@@ -130,6 +145,7 @@ export function ExploreMap({
     map.on('error', () => setMapError(true));
     map.on('load', () => {
       applyMapLabelLanguage(map, localeRef.current);
+      applyMapControlLanguage(map, localeRef.current);
       map.addSource('map-places', {
         type: 'geojson',
         data: { type: 'FeatureCollection', features: [] },
@@ -294,7 +310,22 @@ export function ExploreMap({
 
   useEffect(() => {
     const map = mapRef.current;
-    if (map?.isStyleLoaded()) applyMapLabelLanguage(map, locale);
+    if (!map) return undefined;
+
+    const updateLanguage = () => {
+      if (!map.isStyleLoaded() || !map.getStyle()?.layers?.length) {
+        map.once('idle', updateLanguage);
+        map.triggerRepaint();
+        return;
+      }
+      applyMapLabelLanguage(map, locale);
+    };
+
+    applyMapControlLanguage(map, locale);
+    updateLanguage();
+    return () => {
+      map.off('idle', updateLanguage);
+    };
   }, [isMapReady, locale]);
 
   useEffect(() => {
@@ -322,9 +353,12 @@ export function ExploreMap({
 
     const popupContent = document.createElement('article');
     popupContent.className = 'spot-popup spot-hover-popup';
-    const record = spot ? getPublicAttractionRecord(spot.id) : undefined;
-    const name = locale === 'ko' ? record?.name || spot.name.ko : spot.name[locale];
-    const metadata = record?.address || spot.note[locale];
+    const localizedContent = localizedContents[spot.id]?.[locale];
+    const name = spot.name[locale];
+    const metadata =
+      localizedContent?.curationReason ||
+      localizedContent?.tags ||
+      (locale === 'ko' ? spot.address || spot.note.ko : undefined);
     const district = spot.district[locale];
     const coordinates = spot.coordinates;
     const kicker = document.createElement('div');
@@ -336,9 +370,12 @@ export function ExploreMap({
     }
     const heading = document.createElement('strong');
     heading.textContent = name;
-    const description = document.createElement('p');
-    description.textContent = metadata;
-    popupContent.append(kicker, heading, description);
+    popupContent.append(kicker, heading);
+    if (metadata) {
+      const description = document.createElement('p');
+      description.textContent = metadata;
+      popupContent.append(description);
+    }
     const popup =
       popupRef.current ??
       new Popup({
@@ -350,7 +387,7 @@ export function ExploreMap({
       }).addTo(map);
     popup.setLngLat(coordinates).setDOMContent(popupContent);
     popupRef.current = popup;
-  }, [hoveredId, isMapReady, locale, spots]);
+  }, [hoveredId, isMapReady, locale, localizedContents, spots]);
 
   function centerMap() {
     mapRef.current?.flyTo({ center: seoulCenter, zoom: 11.35, duration: 900, essential: true });

@@ -10,6 +10,46 @@ const districts = new Set(
 );
 const outsideSeoulMarkers =
   /(?:^|\s)(?:경기도?|인천(?:광역시|시)?|부산(?:광역시|시)?|대구(?:광역시|시)?|광주(?:광역시|시)?|대전(?:광역시|시)?|울산(?:광역시|시)?|세종(?:특별자치시|시)?|강원(?:특별자치도|도)?|충청북도|충청남도|전라북도|전라남도|경상북도|경상남도|제주(?:특별자치도|도)?)(?:\s|$)/;
+const localizationUncertainty =
+  /\b(?:uncertain|unclear|not established|cannot confirm|not confirmed|unverified|unknown|may be confused|may confuse|unsure|ambiguous|insufficient context|not enough context)\b/i;
+const localizedContentFields = [
+  'address',
+  'tags',
+  'hours',
+  'closedDays',
+  'transport',
+  'curationReason',
+];
+const placeDetailShardCount = 4;
+
+export function buildPlaceIndex(catalog) {
+  return {
+    schemaVersion: catalog.schemaVersion,
+    source: catalog.source,
+    detailShardCount: placeDetailShardCount,
+    places: catalog.places.map((place) => ({
+      id: place.id,
+      sourceId: place.sourceId,
+      ...(place.legacyId ? { legacyId: place.legacyId } : {}),
+      name: place.name,
+      localizedNames: place.localizedNames,
+      category: place.category,
+      placeType: place.placeType,
+      address: place.address,
+      district: place.district,
+      coordinates: place.coordinates,
+      tags: place.tags,
+    })),
+  };
+}
+
+export function buildPlaceDetailShards(catalog, shardCount = placeDetailShardCount) {
+  return Array.from({ length: shardCount }, (_, shard) => ({
+    schemaVersion: catalog.schemaVersion,
+    source: catalog.source,
+    places: catalog.places.filter((place) => Number(place.sourceId) % shardCount === shard),
+  }));
+}
 
 export function recordFingerprint(record) {
   const fields = [
@@ -28,14 +68,24 @@ export function recordFingerprint(record) {
     .digest('hex');
 }
 
+function contentFingerprint(values) {
+  return createHash('sha256').update(JSON.stringify(values)).digest('hex');
+}
+
 export function buildTravelPlaces(
   raw,
   coordinates,
   review,
   enrichment = { schemaVersion: 1, entries: [] },
+  localizationReview = { schemaVersion: 1, entries: [] },
+  contentLocalizationReview = { schemaVersion: 1, entries: [] },
 ) {
   if (review.schemaVersion !== 1) throw new Error('Unsupported review schema.');
   if (enrichment.schemaVersion !== 1) throw new Error('Unsupported enrichment schema.');
+  if (localizationReview.schemaVersion !== 1)
+    throw new Error('Unsupported localization review schema.');
+  if (contentLocalizationReview.schemaVersion !== 1)
+    throw new Error('Unsupported content localization review schema.');
   const records = raw.attractions.filter((record) => record.language === 'ko');
   const sourceIds = new Set(records.map((record) => record.id));
   if (sourceIds.size !== records.length) throw new Error('Duplicate Korean source IDs.');
@@ -45,6 +95,18 @@ export function buildTravelPlaces(
       throw new Error(`Duplicate enrichment: ${entry.sourceId}`);
     enrichmentById.set(entry.sourceId, entry);
   }
+  const localizationById = new Map();
+  for (const entry of localizationReview.entries) {
+    if (localizationById.has(entry.id))
+      throw new Error(`Duplicate localization review: ${entry.id}`);
+    localizationById.set(entry.id, entry);
+  }
+  const contentLocalizationById = new Map();
+  for (const entry of contentLocalizationReview.entries) {
+    if (contentLocalizationById.has(entry.id))
+      throw new Error(`Duplicate content localization review: ${entry.id}`);
+    contentLocalizationById.set(entry.id, entry);
+  }
   const decisions = new Map();
   for (const decision of review.decisions) {
     if (decisions.has(decision.sourceId)) throw new Error(`Duplicate review: ${decision.sourceId}`);
@@ -53,6 +115,13 @@ export function buildTravelPlaces(
     }
     if (decision.decision === 'include' && !categories.includes(decision.category)) {
       throw new Error(`Invalid category: ${decision.sourceId}`);
+    }
+    if (
+      decision.locationOverride &&
+      (!decision.locationOverride.address?.trim() ||
+        !decision.locationOverride.evidenceUrl?.startsWith('https://'))
+    ) {
+      throw new Error(`Invalid location override: ${decision.sourceId}`);
     }
     if (
       decision.duplicateOf &&
@@ -71,6 +140,7 @@ export function buildTravelPlaces(
   const results = records.map((record) => {
     const decision = decisions.get(record.id);
     const coordinate = coordinateById.get(record.id);
+    const expectedAddress = decision?.locationOverride?.address?.trim() ?? record.address;
     let outcome = decision?.decision ?? 'review';
     let reason = decision?.reason ?? '새 원천 항목: AI 적합성 검토가 필요합니다.';
     if (decision && decision.inputFingerprint !== recordFingerprint(record)) {
@@ -87,10 +157,16 @@ export function buildTravelPlaces(
         '원천 주소에서 서울 밖의 시·도 지역이 확인되어 서울 여행 데이터 범위에서 제외합니다.';
     }
     if (outcome === 'include') {
-      if (!districts.has(coordinate?.district) || !record.address.includes(coordinate.district)) {
+      if (!coordinate) {
         outcome = 'review';
-        reason = '서울 내 주소와 자치구를 확인해야 합니다.';
-      } else if (coordinate.address !== record.address || coordinate.name !== record.name) {
+        reason = '좌표 데이터가 없어 위치 검증이 필요합니다.';
+      } else if (
+        !districts.has(coordinate.district) ||
+        !expectedAddress.includes(coordinate.district)
+      ) {
+        outcome = 'review';
+        reason = '서울 내 주소와 좌표의 자치구 정보가 서로 맞는지 확인해야 합니다.';
+      } else if (coordinate.address !== expectedAddress || coordinate.name !== record.name) {
         outcome = 'review';
         reason = '좌표를 생성한 이름·주소가 현재 원천과 다릅니다.';
       } else if (
@@ -119,19 +195,92 @@ export function buildTravelPlaces(
         );
       const placeEnrichment = currentSnapshotMatches ? candidateEnrichment : undefined;
       const enrichedValue = (field) => {
+        if (field === 'address' && decision.locationOverride?.address) {
+          return decision.locationOverride.address;
+        }
         const suggestion = placeEnrichment?.fields?.[field];
         return suggestion?.value && suggestion.sourceUrl ? suggestion.value : record[field];
       };
+      const localizationId = `seoul-attraction-${record.id}`;
+      const localizationEntry = localizationById.get(localizationId);
+      const localizedNames = { ...decision.localizedNames };
+      if (localizationEntry?.sourceName === record.name.trim()) {
+        for (const language of ['en', 'ja']) {
+          const manualReview = localizationEntry.manualReview?.[language];
+          if (manualReview) {
+            if (!['verified', 'brand_preserved'].includes(manualReview.status)) {
+              throw new Error(`Invalid manual ${language} localization status: ${localizationId}`);
+            }
+            if (
+              !manualReview.suggestion?.trim() ||
+              !Array.isArray(manualReview.sourceUrls) ||
+              manualReview.sourceUrls.length === 0
+            ) {
+              throw new Error(
+                `Invalid manual ${language} localization evidence: ${localizationId}`,
+              );
+            }
+            localizedNames[language] = manualReview.suggestion.trim();
+            continue;
+          }
+          const languageReview = localizationEntry.review?.[language];
+          if (!languageReview) continue;
+          if (!['approved', 'corrected', 'needs_review'].includes(languageReview.status)) {
+            throw new Error(`Invalid ${language} localization status: ${localizationId}`);
+          }
+          if (
+            languageReview.status === 'needs_review' ||
+            (languageReview.status === 'approved' &&
+              localizationUncertainty.test(languageReview.reason ?? ''))
+          )
+            continue;
+          if (!languageReview.suggestion?.trim()) {
+            throw new Error(`Empty ${language} localization: ${localizationId}`);
+          }
+          localizedNames[language] = languageReview.suggestion.trim();
+        }
+      }
+      const contentEntry = contentLocalizationById.get(localizationId);
+      const sourceContent = Object.fromEntries(
+        localizedContentFields.map((field) => {
+          const value = field === 'curationReason' ? reason : enrichedValue(field);
+          return [field, field === 'address' ? value?.trim() || '' : value || ''];
+        }),
+      );
+      const localizedInfo = {};
+      if (
+        contentEntry?.sourceFingerprint === contentFingerprint(sourceContent) &&
+        JSON.stringify(contentEntry.source) === JSON.stringify(sourceContent)
+      ) {
+        for (const language of ['en', 'ja']) {
+          const languageReview = contentEntry.review?.[language];
+          if (!['approved', 'corrected'].includes(languageReview?.status)) continue;
+          if (
+            !localizedContentFields.every(
+              (field) =>
+                typeof languageReview.fields?.[field] === 'string' &&
+                Boolean(sourceContent[field]) === Boolean(languageReview.fields[field].trim()),
+            )
+          ) {
+            throw new Error(`Invalid ${language} content localization: ${localizationId}`);
+          }
+          localizedInfo[language] = Object.fromEntries(
+            localizedContentFields.map((field) => [field, languageReview.fields[field].trim()]),
+          );
+        }
+      }
       const enrichedFields = Object.fromEntries(
         enrichmentFields
           .map((field) => [field, placeEnrichment?.fields?.[field]])
+          .filter(([field]) => !(field === 'address' && decision.locationOverride?.address))
           .filter(([, field]) => field?.value && field.sourceUrl),
       );
       places.push({
         id: `seoul-attraction-${record.id}`,
         sourceId: record.id,
         name: record.name.trim(),
-        ...(decision.localizedNames ? { localizedNames: decision.localizedNames } : {}),
+        ...(Object.keys(localizedNames).length ? { localizedNames } : {}),
+        ...(Object.keys(localizedInfo).length ? { localizedInfo } : {}),
         ...(decision.legacyId ? { legacyId: decision.legacyId } : {}),
         category: decision.category,
         placeType: decision.placeType,
@@ -193,8 +342,49 @@ async function main() {
   const coordinates = await readJson('src/data/seoul-public-attraction-coordinates.json');
   const review = await readJson('src/data/seoul-travel-place-review.json');
   const enrichment = await readJson('src/data/seoul-travel-place-enrichment.json');
-  const { results, ...catalog } = buildTravelPlaces(raw, coordinates, review, enrichment);
-  await writeFile('src/data/seoul-travel-places.json', `${JSON.stringify(catalog, null, 2)}\n`);
+  const localizationReview = await readJson('src/data/seoul-travel-place-localization-review.json');
+  const contentLocalizationReview = await readJson(
+    'src/data/seoul-travel-place-content-localization-review.json',
+  );
+  const { results, ...catalog } = buildTravelPlaces(
+    raw,
+    coordinates,
+    review,
+    enrichment,
+    localizationReview,
+    contentLocalizationReview,
+  );
+  const localizedContent = {
+    schemaVersion: 1,
+    entries: catalog.places.flatMap(({ id, localizedInfo }) =>
+      localizedInfo ? [{ id, ...localizedInfo }] : [],
+    ),
+  };
+  const appCatalog = {
+    ...catalog,
+    places: catalog.places.map((place) =>
+      Object.fromEntries(Object.entries(place).filter(([key]) => key !== 'localizedInfo')),
+    ),
+  };
+  const placeIndex = buildPlaceIndex(appCatalog);
+  const placeDetailShards = buildPlaceDetailShards(appCatalog);
+  await writeFile('src/data/seoul-travel-places.json', `${JSON.stringify(appCatalog, null, 2)}\n`);
+  await writeFile(
+    'src/data/seoul-travel-place-index.json',
+    `${JSON.stringify(placeIndex, null, 2)}\n`,
+  );
+  await Promise.all(
+    placeDetailShards.map((shard, index) =>
+      writeFile(
+        `src/data/seoul-travel-place-details-${index}.json`,
+        `${JSON.stringify(shard, null, 2)}\n`,
+      ),
+    ),
+  );
+  await writeFile(
+    'src/data/seoul-travel-place-localized-content.json',
+    `${JSON.stringify(localizedContent, null, 2)}\n`,
+  );
   const counts = catalog.summary;
   const escape = (value) =>
     String(value ?? '')

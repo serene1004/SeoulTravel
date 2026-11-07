@@ -1,0 +1,3977 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "서울시 관광 명소",
+    "datasetUrl": "https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do",
+    "serviceName": "TbVwAttractions",
+    "license": "공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)",
+    "retrievedAt": "2026-11-07T11:46:39.966Z"
+  },
+  "places": [
+    {
+      "id": "seoul-attraction-37044",
+      "sourceId": "37044",
+      "name": "KCDF갤러리",
+      "localizedNames": {
+        "en": "KCDF Gallery",
+        "ja": "KCDFギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03145 서울 종로구 인사동11길 8 (관훈동, 공예종합유통지원센터)",
+      "district": "종로구",
+      "coordinates": [
+        126.984128478814,
+        37.5740079809751
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "kcdf,디자인,공예,한국공예디자인문화진흥원,공예전문갤러리",
+      "hours": "- 전시장 화요일~일요일 10:00~18:00\r\n- 갤러리숍 화요일~일요일 10:00 ~ 19:00\r\n- KCDF 자료실  화요일~토요일 10:00~16:00 (12:00~13:00 점심시간)",
+      "closedDays": "매주 월요일\r\n설,추석 당일\r\nKCDF 자료실은 공휴일도 휴무",
+      "officialUrl": "https://www.kcdf.or.kr",
+      "transport": "지하철 3호선 안국역 6번 출구,  380m",
+      "curationReason": "공예 전문 갤러리와 전시장이 명시되어 있어 관람 목적에 부합합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-24732",
+      "sourceId": "24732",
+      "name": "SJ쿤스트할레",
+      "localizedNames": {
+        "en": "SJ Kunsthalle",
+        "ja": "SJクンストハレ"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "06054 서울 강남구 언주로148길 5 (논현동)",
+      "district": "강남구",
+      "coordinates": [
+        127.034917264221,
+        37.5205086087205
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "타이거버스, 강남구청역,압구정로데오거리, SJ쿤스트할레, 시티투어버스정류장,문화예술플랫품",
+      "hours": "· 카페 운영시간: 평일 09:00-18:00 (대관시 미운영)",
+      "closedDays": "",
+      "officialUrl": "http://sjkunsthalle.com/",
+      "transport": "지하철 수인분당선/7호선 강남구청역 3번 출구,  1km ",
+      "curationReason": "서울 공식 관광 안내에 평일 카페 운영시간(09:00~18:00)이 명시되어 있어 카페 방문 목적을 충족합니다. 대관 시 카페가 운영되지 않을 수 있으며 전시·공연 프로그램은 별도 확인이 필요합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/museum/SJ-KUNSTHALLE-kr/KOP024732"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-52620",
+      "sourceId": "52620",
+      "name": "감사의 정원",
+      "localizedNames": {
+        "en": "Garden of Gratitude",
+        "ja": "感謝の庭"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03154 서울 종로구 세종대로 지하 172 (세종로, 5호선 광화문역)",
+      "district": "종로구",
+      "coordinates": [
+        126.976787992565,
+        37.5716228232824
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "광화문광장,전시 해설,감사의 정원,감사의 빛 23,프리덤 홀",
+      "hours": " (지상) 감사의 빛 23 - (조형물) 상시 개방 / (레이저) 20:00~24:00\r\n (지하) 감사의 정원 프리덤홀 - (월~목) 10:00 ~ 22:00 / (금~일) 10:00~23:00",
+      "closedDays": "",
+      "officialUrl": "https://gwanghwamun.seoul.go.kr/ghm/bbsPost/70/list.do?mid=1360&optn1=03&n_media=27758&n_query=%EA%B4%91%ED%99%94%EB%AC%B8%EA%B0%90%EC%82%AC%EC%9D%98%EC%A0%95%EC%9B%90&n_rank=1&n_ad_group=grp-a001-01-000000066879249&n_ad=nad-a001-01-000000523104107&n_keyword_id=nkw-a001-01-000008188521502&n_keyword=%EA%B4%91%ED%99%94%EB%AC%B8%EA%B0%90%EC%82%AC%EC%9D%98%EC%A0%95%EC%9B%90&n_campaign_type=1&n_ad_group_type=1&n_match=1",
+      "transport": "지하철 5호선 광화문역 8번출구, 63m",
+      "curationReason": "조형물과 전시 해설, 프리덤홀 운영시간이 제시된 관람 공간입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://www.seoul.go.kr/news/news_report.do?nttNo=458538"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-2012",
+      "sourceId": "2012",
+      "name": "경인미술관",
+      "localizedNames": {
+        "en": "Kyungin Museum of Fine Art",
+        "ja": "京仁美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03146 서울 종로구 인사동10길 11-4",
+      "district": "종로구",
+      "coordinates": [
+        126.985723489033,
+        37.5745908579478
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게, 서울전시, 서울미술관,인사동오래가게, 미술관, 경인미술관, 전시회, 문화, 인사동, 문화, 미술관, 경인미술관, 전시회",
+      "hours": "10:00~18:00",
+      "closedDays": "신정, 구정, 추석",
+      "officialUrl": "http://www.kyunginart.co.kr/",
+      "transport": "지하철 3호선 안국역 5번 출구,  354m ",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03146 서울 종로구 인사동10길 11-4",
+            "sourceUrl": "https://www.culture.go.kr/portal/cltInfo/oneCltInfo/oneCltInfoView.do?menuNo=200010&pblprfrSn=385730",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "10:00~18:00",
+            "sourceUrl": "https://korean.visitseoul.net/palace/%EC%9D%B8%EC%82%AC%EB%8F%99-%EC%9A%B4%ED%98%84%EA%B6%81-%EC%BD%94%EC%8A%A4/KON000653",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "신정, 구정, 추석",
+            "sourceUrl": "https://korean.visitseoul.net/palace/%EC%9D%B8%EC%82%AC%EB%8F%99-%EC%9A%B4%ED%98%84%EA%B6%81-%EC%BD%94%EC%8A%A4/KON000653",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "http://www.kyunginart.co.kr/",
+            "sourceUrl": "https://korean.visitseoul.net/palace/%EC%9D%B8%EC%82%AC%EB%8F%99-%EC%9A%B4%ED%98%84%EA%B6%81-%EC%BD%94%EC%8A%A4/KON000653",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "미술관·전시회 태그와 운영시간이 있어 전시 관람 목적에 부합합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-2084",
+      "sourceId": "2084",
+      "name": "가나아트센터",
+      "localizedNames": {
+        "en": "Gana Art Center",
+        "ja": "ガナ・アートセンター"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03004 서울 종로구 평창30길 28 (가나아트센타)",
+      "district": "종로구",
+      "coordinates": [
+        126.97512913242,
+        37.6122904729365
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "아트센터,김종구,경복궁역,종로갤러리,가나아트센터,미술관,문화,예술,윤종석,심상풍경",
+      "hours": "10:00 - 19:00",
+      "closedDays": "월요일, 추석",
+      "officialUrl": "http://www.ganaart.com",
+      "transport": "지하철 5호선 광화문역 2번 출구/지하철 3호선 경복궁역 3번 출구,  버스 1020, 1711번을 타고 롯데아파트에서 하차,  150m",
+      "curationReason": "아트센터·미술관·예술 태그와 운영시간이 제시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-6668",
+      "sourceId": "6668",
+      "name": "대한민국역사박물관",
+      "localizedNames": {
+        "en": "National Museum of Korean Contemporary History",
+        "ja": "大韓民国歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03141 서울시 종로구 세종대로 198 (세종로)",
+      "district": "종로구",
+      "coordinates": [
+        126.978339442463,
+        37.5737136067193
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 전시,역사체험학습,박물관,경복궁역,야경,광화문, 광화문역,종각역, 역사박물관,독립선언서, 전망대,대한민국역사박물관",
+      "hours": "10:00 ~ 18:00 (수요일 / 토요일 10:00 ~ 21:00) \r\n*폐관 30분 전 입장 마감",
+      "closedDays": "-1월 1일\r\n-설날\r\n-추석 \r\n",
+      "officialUrl": "http://www.much.go.kr",
+      "transport": "지하철 5호선 광화문역 2번 출구,  250m",
+      "curationReason": "역사박물관·전시·역사체험 태그와 운영시간이 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-27812",
+      "sourceId": "27812",
+      "name": "가원공방",
+      "localizedNames": {
+        "en": "Gawon Craft Workshop",
+        "ja": "カウォン工房"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03138 서울 종로구 돈화문로6나길 45 (봉익동)",
+      "district": "종로구",
+      "coordinates": [
+        126.992294774883,
+        37.5723524974576
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 종로귀금속거리, 종로5, 공방,오래가게, 종로,옥공예, 전통",
+      "hours": "월요일~금요일 10:30~18:30",
+      "closedDays": "주말, 공휴일",
+      "officialUrl": "http://www.gawoncraft.co.kr/",
+      "transport": "지하철 1/3/5호선 종로 3가역 8번 출구,  54m",
+      "curationReason": "옥공예 공방으로 소개되어 전통 공예 관련 방문·체험 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-53992",
+      "sourceId": "53992",
+      "name": "퐁피두센터 한화",
+      "localizedNames": {
+        "en": "Centre Pompidou Hanwha",
+        "ja": "ポンピドゥー・センター・ハンファ"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "07345 서울 영등포구 63로 50 63빌딩 별관",
+      "district": "영등포구",
+      "coordinates": [
+        126.939909338068,
+        37.5196641552816
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "퐁피두센터,여의도,한화문화재단,퐁피두센터,파리,한화,근현대미술,현대미술관,63빌딩,기획,전시,문화예술,공간",
+      "hours": "월·화·목·금·일: 동절기(10~3월) 10:00~18:00 / 하절기(4~9월) 10:00~19:00 (입장 마감 30분 전)\n수·토: 10:00~21:00 (입장 마감 20:30)",
+      "closedDays": "관람 안내 페이지: 매월 둘째·넷째 월요일, 1월 1일, 설날·추석 당일 휴관. 공식 FAQ에는 매주 월요일 휴관으로 다르게 안내되어 있어 방문일은 예매 캘린더에서 확인 필요.",
+      "officialUrl": "https://www.centrepompidou-hanwha.kr/",
+      "transport": "지하철 5호선 여의나루역 1번출구에서 버스이용(5634번, 5633번,261번) '63빌딩, 여의도성모병원' 정류장에서 하차",
+      "enrichedInfo": {
+        "researchedAt": "2026-11-07",
+        "fields": {
+          "hours": {
+            "value": "월·화·목·금·일: 동절기(10~3월) 10:00~18:00 / 하절기(4~9월) 10:00~19:00 (입장 마감 30분 전)\n수·토: 10:00~21:00 (입장 마감 20:30)",
+            "sourceUrl": "https://www.centrepompidou-hanwha.kr/visit/info",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "관람 안내 페이지: 매월 둘째·넷째 월요일, 1월 1일, 설날·추석 당일 휴관. 공식 FAQ에는 매주 월요일 휴관으로 다르게 안내되어 있어 방문일은 예매 캘린더에서 확인 필요.",
+            "sourceUrl": "https://www.centrepompidou-hanwha.kr/visit/info",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.centrepompidou-hanwha.kr/",
+            "sourceUrl": "https://www.centrepompidou-hanwha.kr/visit/info",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "공식 관람 안내에서 계절별 운영시간·입장 마감·휴관일을 확인했습니다. 같은 공식 사이트의 FAQ와 월요일 휴관 안내가 달라 방문 전 예매 캘린더 확인이 필요합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://www.centrepompidou-hanwha.kr/visit/info",
+        "https://www.centrepompidou-hanwha.kr/visit/faq",
+        "https://www.centrepompidou-hanwha.kr/exhibition/list"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-55084",
+      "sourceId": "55084",
+      "name": "혜성칼국수",
+      "localizedNames": {
+        "en": "Hyeseong Kalguksu",
+        "ja": "ヘソンカルグクス"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "02488 서울 동대문구 왕산로 247-1 (청량리동)",
+      "district": "동대문구",
+      "coordinates": [
+        127.04898605372,
+        37.5834249035109
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게,닭칼국수,멸치칼국수,칼국수,혜성칼국수,청량리역 맛집,청량리 맛집",
+      "hours": "10:30–20:00",
+      "closedDays": "매주 월요일",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+      "transport": "지하철 1호선 청량리역 3번 출구에서 약 300m(서울 공식 관광정보에는 396m로 표기).",
+      "enrichedInfo": {
+        "researchedAt": "2026-11-07",
+        "fields": {
+          "address": {
+            "value": "02488 서울 동대문구 왕산로 247-1 (청량리동)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "10:30–20:00",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "매주 월요일",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 1호선 청량리역 3번 출구에서 약 300m(서울 공식 관광정보에는 396m로 표기).",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/HyeseongKalguksu/KOPgcz8w3",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "칼국수 전문점으로 음식 방문 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-54764",
+      "sourceId": "54764",
+      "name": "후암동 108계단",
+      "localizedNames": {
+        "en": "Huam-dong 108 Steps",
+        "ja": "厚岩洞108階段"
+      },
+      "category": "Culture",
+      "placeType": "neighborhood_walk",
+      "address": "04337 서울 용산구 용산동2가 1-1342",
+      "district": "용산구",
+      "coordinates": [
+        126.982362514324,
+        37.5462532410879
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "벽화,후암동108계단,해방촌,용산,해방촌모노레일",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/Huam-dong108Steps/KOP9rb5w8",
+      "transport": "지하철 4호선 숙대입구역 3번 출구에서 943m",
+      "enrichedInfo": {
+        "researchedAt": "2026-11-07",
+        "fields": {
+          "address": {
+            "value": "04337 서울 용산구 용산동2가 1-1342",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Huam-dong108Steps/KOP9rb5w8",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 4호선 숙대입구역 3번 출구에서 943m",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Huam-dong108Steps/KOP9rb5w8",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/Huam-dong108Steps/KOP9rb5w8",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Huam-dong108Steps/KOP9rb5w8",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "후암동의 계단과 벽화가 명시되어 동네 경관을 둘러볼 장소로 볼 수 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-26676",
+      "sourceId": "26676",
+      "name": "공근혜갤러리",
+      "localizedNames": {
+        "en": "Kong Geun-hye Gallery",
+        "ja": "コン・グネ・ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03049 서울 종로구 삼청로7길 38 (삼청동)",
+      "district": "종로구",
+      "coordinates": [
+        126.97967490139,
+        37.5840268022577
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "경복궁,미술관,갤러리,사진,안국역,삼청동,공근혜갤러리,현대미술,화랑,청와대",
+      "hours": "화요일~토요일 10:30~17:30",
+      "closedDays": "일요일, 월요일, 추석 연휴",
+      "officialUrl": "https://konggallery.com/",
+      "transport": "지하철 3호선 안국역 1번 출구,  1.2km\r\n지하철 3호선 경복궁역 5번 출구,  1.5km",
+      "curationReason": "미술관·갤러리·현대미술 태그가 있어 관람 목적이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-39708",
+      "sourceId": "39708",
+      "name": "춘당지",
+      "localizedNames": {
+        "en": "Chundangji Pond",
+        "ja": "春塘池"
+      },
+      "category": "Nature",
+      "placeType": "garden_park",
+      "address": "03072 서울 종로구 창경궁로 185 (창경궁 내 춘당지)",
+      "district": "종로구",
+      "coordinates": [
+        126.993841430623,
+        37.5776239475981
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "춘당지,서울가을데이트명소,서울놀거리,단풍명소,아름다운서울의명소,가을단풍,창경궁춘당지,산책하기좋은곳",
+      "hours": "춘당지는 창경궁 관람 구역입니다. 창경궁 관람시간은 계절별로 달라지며, 춘당지 일부 구간은 공사·안전 사유로 출입이 제한될 수 있습니다. 검색 결과에서 현재 전체 관람시간표는 확인되지 않았습니다.",
+      "closedDays": "월요일",
+      "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-cgg.do?grpCode=cgg",
+      "transport": "지하철 4호선 혜화역 4번 출구에서 도보 약 12분. 버스는 서울대학교병원 또는 창경궁·서울대학교병원 정류장 이용.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03072 서울 종로구 창경궁로 185 (창경궁 내 춘당지)",
+            "sourceUrl": "https://royal.cha.go.kr/ROYAL/contents/R707000000.do?schGroupCode=cgg&schGroupCodeNm=%EC%B0%BD%EA%B2%BD%EA%B6%81",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "춘당지는 창경궁 관람 구역입니다. 창경궁 관람시간은 계절별로 달라지며, 춘당지 일부 구간은 공사·안전 사유로 출입이 제한될 수 있습니다. 검색 결과에서 현재 전체 관람시간표는 확인되지 않았습니다.",
+            "sourceUrl": "https://royal.cha.go.kr/ROYAL/contents/R702000000.do/",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "월요일",
+            "sourceUrl": "https://royal.cha.go.kr/ROYAL/contents/R404000000.do?schGroupCode=cgg",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 4호선 혜화역 4번 출구에서 도보 약 12분. 버스는 서울대학교병원 또는 창경궁·서울대학교병원 정류장 이용.",
+            "sourceUrl": "https://royal.cha.go.kr/ROYAL/contents/R707000000.do?schGroupCode=cgg&schGroupCodeNm=%EC%B0%BD%EA%B2%BD%EA%B6%81",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "창경궁 내 독립된 연못 경관이며 궁능유적본부가 2026년 춘당지 일원 행사를 공지하고 일반 관람 구역으로 안내합니다. 궁궐 전체와 별도 경관 방문 목적이 있어 유지합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202609030300&undefined=",
+        "https://royal.khs.go.kr/ROYAL/contents/R702000000.do"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-1900",
+      "sourceId": "1900",
+      "name": "광화문광장",
+      "localizedNames": {
+        "en": "Gwanghwamun Square",
+        "ja": "光化門広場"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 세종대로 172 (세종로)",
+      "district": "종로구",
+      "coordinates": [
+        126.976787992565,
+        37.5716228232824
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 이순신,광화문,광화문광장, 경복궁,세종문화회관,도시 문화 광장,청계천, 세종대왕",
+      "hours": "연중 24시간 상시 개방",
+      "closedDays": "연중무휴",
+      "officialUrl": "https://gwanghwamun.seoul.go.kr/ghm/main.do",
+      "transport": "지하철: 3호선 경복궁역 6번 출구(정부중앙청사·광화문 방향), 5호선 광화문역 해치마당 연결통로 또는 7번 출구(광장숲 방향). 버스 노선도 공식 안내 페이지 참조. 안내 노선은 변경될 수 있음.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 종로구 세종대로 172 (세종로)",
+            "sourceUrl": "https://gwanghwamun.seoul.go.kr/ghm/contents/16.do?mid=1009",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "연중 24시간 상시 개방",
+            "sourceUrl": "https://gwanghwamun.seoul.go.kr/ghm/contents/16.do?mid=1009",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철: 3호선 경복궁역 6번 출구(정부중앙청사·광화문 방향), 5호선 광화문역 해치마당 연결통로 또는 7번 출구(광장숲 방향). 버스 노선도 공식 안내 페이지 참조. 안내 노선은 변경될 수 있음.",
+            "sourceUrl": "https://gwanghwamun.seoul.go.kr/ghm/contents/16.do?mid=1009",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "도심의 열린 광장으로 연중 개방 정보와 광장 방문 목적이 제시됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-42288",
+      "sourceId": "42288",
+      "name": "그래픽",
+      "localizedNames": {
+        "en": "Graphic",
+        "ja": "グラフィック"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "서울특별시 용산구 회나무로39길 33 (이태원동), 04344",
+      "district": "용산구",
+      "coordinates": [
+        126.993580131333,
+        37.5408948786009
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "만화카페,북카페,어른전용서점,해방촌,이태원,서점,그래픽",
+      "hours": "평일 13:00~23:00, 주말 11:00~23:00",
+      "closedDays": "매주 월요일",
+      "officialUrl": "https://graphic-bookstore.com/",
+      "transport": "지하철 6호선 이태원역 2번 출구에서 1.2km",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 용산구 회나무로39길 33 (이태원동), 04344",
+            "sourceUrl": "https://graphic-bookstore.com/branches",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "평일 13:00~23:00, 주말 11:00~23:00",
+            "sourceUrl": "https://graphic-bookstore.com/branches",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일",
+            "sourceUrl": "https://graphic-bookstore.com/branches",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 6호선 이태원역 2번 출구에서 1.2km",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EA%B7%B8%EB%9E%98%ED%94%BD/KOP042288",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://graphic-bookstore.com/",
+            "sourceUrl": "https://graphic-bookstore.com/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "만화카페·북카페 태그와 운영 시간이 있어 방문형 카페로 볼 수 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-276",
+      "sourceId": "276",
+      "name": "남산골 한옥마을",
+      "localizedNames": {
+        "en": "Namsangol Hanok Village",
+        "ja": "南山コル韓屋村"
+      },
+      "legacyId": "namsangol",
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04626 서울특별시 중구 퇴계로34길 28",
+      "district": "중구",
+      "coordinates": [
+        126.994738735334,
+        37.5595422700067
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울핫플레이스,서울여행,남산골한옥마을,남산둘레길,서울아이와나들이,서울사진명소,서울남산,남산공원,서울데이트코스,국내한옥마을추천,서울전통명소",
+      "hours": "전통가옥 관람: 4~11월 09:00~21:00, 12~3월 09:00~20:00. 전통정원은 24시간 개방.",
+      "closedDays": "매주 월요일 정기 휴관. 월요일이 공휴일(임시공휴일·대체공휴일 포함)인 경우 정상 운영.",
+      "officialUrl": "https://www.hanokmaeul.co.kr/",
+      "transport": "지하철 3·4호선 충무로역 4번 출구에서 안내 표지를 따라 도보 약 3분. 버스: 퇴계로3가·한옥마을 정류장 하차, 7011·104·105·140(강남 방향)·421·463·507·604 및 남산순환버스 02·05, 90s 투어. 공항버스 6001·6015·6021.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "04626 서울특별시 중구 퇴계로34길 28",
+            "sourceUrl": "https://www.hanokmaeul.co.kr/guide",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "전통가옥 관람: 4~11월 09:00~21:00, 12~3월 09:00~20:00. 전통정원은 24시간 개방.",
+            "sourceUrl": "https://www.hanokmaeul.co.kr/",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일 정기 휴관. 월요일이 공휴일(임시공휴일·대체공휴일 포함)인 경우 정상 운영.",
+            "sourceUrl": "https://www.hanokmaeul.co.kr/guide",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 3·4호선 충무로역 4번 출구에서 안내 표지를 따라 도보 약 3분. 버스: 퇴계로3가·한옥마을 정류장 하차, 7011·104·105·140(강남 방향)·421·463·507·604 및 남산순환버스 02·05, 90s 투어. 공항버스 6001·6015·6021.",
+            "sourceUrl": "https://www.hanokmaeul.co.kr/guide",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.hanokmaeul.co.kr/",
+            "sourceUrl": "https://www.hanokmaeul.co.kr/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "한옥마을과 전통정원이 명시된 방문형 문화 공간입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43460",
+      "sourceId": "43460",
+      "name": "라플루마앤보헤미안",
+      "localizedNames": {
+        "en": "La Pluma & Bohemian",
+        "ja": "ラ・プルマ＆ボヘミアン"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "02842 서울 성북구 고려대로27길 18",
+      "district": "성북구",
+      "coordinates": [
+        127.029898451923,
+        37.5870992240896
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "고려대, 커피,커피맛집, 커피명가,오래가게, 카페, 드립커피,바리스타",
+      "hours": "12:00~17:00 (월요일~금요일)",
+      "closedDays": "토요일, 일요일",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+      "transport": "지하철 6호선 안암역 2번 출구에서 121m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "02842 서울 성북구 고려대로27길 18",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "12:00~17:00 (월요일~금요일)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "토요일, 일요일",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 6호선 안암역 2번 출구에서 121m",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023051/KOPlzuy5x",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "커피·드립커피·카페 태그가 있어 카페 방문 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-5228",
+      "sourceId": "5228",
+      "name": "명동함흥면옥",
+      "localizedNames": {
+        "en": "Myeongdong Hamheung Myeonok",
+        "ja": "明洞咸興麺屋（ミョンドン・ハムフンミョノク）"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04537 서울 중구 명동10길 35-19 (명동2가)",
+      "district": "중구",
+      "coordinates": [
+        126.985685790889,
+        37.5627701513326
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 함흥냉면,냉면,함흥면옥,회냉면,냉면음식점, 냉면맛집,명동,명동맛집,명동냉면집,비빔냉면",
+      "hours": "11:00 ~ 20:00",
+      "closedDays": "일요일, 명절 휴무",
+      "officialUrl": "https://korean.visitseoul.net/attractions/명동함흥면옥/KOP005228?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP005228",
+      "transport": "지하철 4호선 명동역 8번 출구,  226m ",
+      "curationReason": "함흥냉면·회냉면 등 냉면 음식점임이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-19924",
+      "sourceId": "19924",
+      "name": "뮤지엄김치간",
+      "localizedNames": {
+        "en": "Museum Kimchikan",
+        "ja": "ミュージアム・キムチカン"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03149 서울 종로구 인사동길 35-4 (관훈동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984865059281,
+        37.5735538862116
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "김치만들기,김치전시,안국역,김치체험관,박물관,광화문,종각역,김치,뮤지엄김치간,김치박물관",
+      "hours": "10:00~18:00(입장 마감 17:30)\r\n",
+      "closedDays": "-월요일\r\n-1월 1일\r\n-설날, 추석 연휴\r\n-크리스마스 ",
+      "officialUrl": "https://www.kimchikan.com/",
+      "transport": "지하철 3호선 안국역 6번 출구, 394m",
+      "curationReason": "김치 전시와 김치 만들기 체험이 명시된 박물관·체험관입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-2436",
+      "sourceId": "2436",
+      "name": "부민옥",
+      "localizedNames": {
+        "en": "Buminok",
+        "ja": "プミノク"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울 중구 다동길 24-12",
+      "district": "중구",
+      "coordinates": [
+        126.980177653984,
+        37.5675310295731
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "부민옥,한식,양무침,명동,종각음식점,수요미식회,을지로음식점,시청음식점, 을지로맛집, 경상도음식, 한식맛집, 추어탕,육개장",
+      "hours": "월–금 11:00–22:00, 토 11:30–21:00. 브레이크타임 15:00–17:00.",
+      "closedDays": "매주 일요일",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/%EB%B6%80%EB%AF%BC%EC%98%A5/KOP002436",
+      "transport": "지하철 2호선 을지로입구역 1번 출구,  300m ",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울 중구 다동길 24-12",
+            "sourceUrl": "https://www.tabling.co.kr/place/677ccaa266de5f06987ba63a",
+            "sourceType": "secondary"
+          },
+          "hours": {
+            "value": "월–금 11:00–22:00, 토 11:30–21:00. 브레이크타임 15:00–17:00.",
+            "sourceUrl": "https://www.tabling.co.kr/place/677ccaa266de5f06987ba63a",
+            "sourceType": "secondary"
+          },
+          "closedDays": {
+            "value": "매주 일요일",
+            "sourceUrl": "https://www.tabling.co.kr/place/677ccaa266de5f06987ba63a",
+            "sourceType": "secondary"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/%EB%B6%80%EB%AF%BC%EC%98%A5/KOP002436",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/%EB%B6%80%EB%AF%BC%EC%98%A5/KOP002436",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "추어탕·육개장 등 한식 메뉴를 제공하는 음식점입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-53632",
+      "sourceId": "53632",
+      "name": "서울 흥천사",
+      "localizedNames": {
+        "en": "Heungcheonsa Temple, Seoul",
+        "ja": "ソウル興天寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02825 서울특별시 성북구 흥천사길 29 (돈암동)",
+      "district": "성북구",
+      "coordinates": [
+        127.008118578319,
+        37.5979609460611
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "정릉,흥천사,이성계,서울4대사찰,서울사찰,신덕왕후",
+      "hours": "08:00-18:00",
+      "closedDays": "",
+      "officialUrl": "http://www.heungcheonsa.net/",
+      "transport": "지하철 4호선 성신여대역 4번출구 앞 셔틀버스 이용, 6번출구 앞 마을버스 22번 이용",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "02825 서울특별시 성북구 흥천사길 29 (돈암동)",
+            "sourceUrl": "https://archive.sb.go.kr/isbcc/home/u/story/view/1095.do%3Bjsessionid%3D25CB289C4739E51D3B91D627C9907298",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "사찰이며 태그에 이성계·신덕왕후 등 역사 관련 내용이 있어 문화 방문 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-44180",
+      "sourceId": "44180",
+      "name": "서울스카이",
+      "localizedNames": {
+        "en": "Seoul Sky",
+        "ja": "ソウルスカイ"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "05551 서울 송파구 올림픽로 300 (신천동, 롯데월드타워앤드롯데월드몰) 117~123층",
+      "district": "송파구",
+      "coordinates": [
+        127.104301829165,
+        37.5137129859207
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울스카이,롯데월드타워,야경,전망대,롯데월드몰,롯데월드타워전망대",
+      "hours": "일~목 10:30~22:00, 금~토 10:30~23:00",
+      "closedDays": "연중무휴",
+      "officialUrl": "https://seoulsky.lotteworld.com/ko/main/index.do",
+      "transport": "지하철 2/8호선 잠실역 2번 출구,  311m",
+      "curationReason": "서울스카이 전망대와 야경 감상 목적이 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-50884",
+      "sourceId": "50884",
+      "name": "석교식당",
+      "localizedNames": {
+        "en": "Seokgyo Sikdang",
+        "ja": "ソッキョ食堂"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03734 서울 서대문구 통일로 185 (영천동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.962281820841,
+        37.5700187320924
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게,은평,순대국,영천시장,안산,인왕산",
+      "hours": "11:00~22:00",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/SeokgyoRestaurant/KOPv5rscz?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOPv5rscz",
+      "transport": "지하철 3호선 독립문역 4번 출구, 515m\r\n지하철 5호선 서대문역 2번 출구, 583m",
+      "curationReason": "식당이며 순댓국을 제공하는 먹거리 장소로 소개됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-36",
+      "sourceId": "36",
+      "name": "남산서울타워",
+      "localizedNames": {
+        "en": "N Seoul Tower",
+        "ja": "Nソウルタワー"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "04340 서울 용산구 남산공원길 105 (용산동2가, YTN서울타워)",
+      "district": "용산구",
+      "coordinates": [
+        126.987867837993,
+        37.5511225714939
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울데이트,전망,N서울타워,서울데이트장소,전망대,케이블카,남산타워,서울야경명소,남산서울타워,명동,야경,남산,서울야경,남산타워전망대",
+      "hours": "전망대: 평일 10:00~22:30, 주말·공휴일 10:00~23:00. 마감 30분 전 입장 마감.",
+      "closedDays": "연중무휴(기상 상황 등에 따라 운영이 변경되거나 일시 중단될 수 있음).",
+      "officialUrl": "https://www.nseoultower.co.kr/",
+      "transport": "남산순환버스 01A·01B 이용, '남산서울타워' 정류장 하차. 서울시 안내에 따르면 충무로역 2번 출구 또는 동대입구역 6번 출구에서 순환버스를 탈 수 있습니다.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "hours": {
+            "value": "전망대: 평일 10:00~22:30, 주말·공휴일 10:00~23:00. 마감 30분 전 입장 마감.",
+            "sourceUrl": "https://www.nseoultower.co.kr/eng/visit/use.asp",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "연중무휴(기상 상황 등에 따라 운영이 변경되거나 일시 중단될 수 있음).",
+            "sourceUrl": "https://www.nseoultower.co.kr/global/customer/faq.asp?sch_type=01",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "남산순환버스 01A·01B 이용, '남산서울타워' 정류장 하차. 서울시 안내에 따르면 충무로역 2번 출구 또는 동대입구역 6번 출구에서 순환버스를 탈 수 있습니다.",
+            "sourceUrl": "https://www.nseoultower.co.kr/visit/traffic.asp",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "전망대와 서울 야경 감상 목적이 이름·태그에 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-30804",
+      "sourceId": "30804",
+      "name": "서소문성지역사박물관",
+      "localizedNames": {
+        "en": "Seosomun Shrine History Museum",
+        "ja": "西小門聖地歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중구 칠패로 5 (의주로2가 16-40)",
+      "district": "중구",
+      "coordinates": [
+        126.968867161039,
+        37.5605678517575
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "충정로역,서소문성지역사박물관,교회사,역사박물관,전시,도서관,순교성지,지상공원",
+      "hours": "화요일~일요일 09:30~17:30 (마지막 입장 17:00)",
+      "closedDays": "매주 월요일, 1월 1일, 설날 당일, 추석 당일",
+      "officialUrl": "https://www.seosomun.org",
+      "transport": "지하철 2·5호선 충정로역 4번 출구에서 약 500m 직진 후 횡단보도를 건너 브라운스톤 건물을 지나 우회전. 지하철 1·4호선 서울역 2번 출구에서 염천교 방향으로 직진해 횡단보도를 건넌 뒤 좌회전하면 서소문 역사공원이 보이며, 공원 안쪽에 박물관 진입로가 있습니다.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 중구 칠패로 5 (의주로2가 16-40)",
+            "sourceUrl": "https://www.junggu.seoul.kr/tour/content.do?cid=1187754453&cmsid=14979&mode=view&page=&sf_category1=CWS1331",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "화요일~일요일 09:30~17:30 (마지막 입장 17:00)",
+            "sourceUrl": "https://m.seosomun.org/faq.do",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일, 1월 1일, 설날 당일, 추석 당일",
+            "sourceUrl": "https://m.seosomun.org/faq.do",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 2·5호선 충정로역 4번 출구에서 약 500m 직진 후 횡단보도를 건너 브라운스톤 건물을 지나 우회전. 지하철 1·4호선 서울역 2번 출구에서 염천교 방향으로 직진해 횡단보도를 건넌 뒤 좌회전하면 서소문 역사공원이 보이며, 공원 안쪽에 박물관 진입로가 있습니다.",
+            "sourceUrl": "https://m.seosomun.org/faq.do",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "역사박물관과 전시가 명시되어 있어 관람 목적에 부합합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-33828",
+      "sourceId": "33828",
+      "name": "성신여대 복식박물관 및 자연사박물관",
+      "localizedNames": {
+        "en": "Sungshin Women's University Costume Museum and Natural History Museum",
+        "ja": "誠信女子大学校服飾博物館・自然史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01133 서울 강북구 도봉로76가길 55 (미아동, 성신여자대학교운정그린캠퍼스) 운정그린캠퍼스 B1",
+      "district": "강북구",
+      "coordinates": [
+        127.027124202688,
+        37.6320379987723
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "자연사박물관,성신여대 복식박물관",
+      "hours": "월~금: 10:00~17:00 ",
+      "closedDays": "토요일, 법정공휴일, 개교기념일(4월 28일) 및 전시 교체 시기",
+      "officialUrl": "https://www.sungshin.ac.kr/sites/museum/index.do",
+      "transport": "지하철 4호선 미아역 1번 출구,  500m",
+      "curationReason": "성신여자대학교 공식 박물관 안내가 운정캠퍼스 자연사박물관과 정원박광훈복식박물관의 관람시간·요금·단체관람 방법을 공개합니다. 두 전시 공간의 일반 관람 목적과 이용 조건을 확인했습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://sungshin.ac.kr/museum/18598/subview.do",
+        "https://sungshin.ac.kr/museum/14405/subview.do"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-18992",
+      "sourceId": "18992",
+      "name": "아르코미술관",
+      "localizedNames": {
+        "en": "Arko Art Center",
+        "ja": "アルコ美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03087 서울 종로구 동숭길 3 (동숭동, 한국문화예술진흥원)",
+      "district": "종로구",
+      "coordinates": [
+        127.003256182632,
+        37.5805022887696
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 전시, 한국문화예술진흥원, 아르코미술관, 동대문, 대학로,혜화역,문화, 미술관,서울전시,동숭동, 그림",
+      "hours": "화–일요일, 오전 11시 – 오후 7시\r\n\r\n※ 오후 6시 30분까지 입장가능\r\n\r\n수요일, 오전 11시-오후9시\r\n\r\n※ 오후 8시 30분까지 입장가능",
+      "closedDays": "매주 월요일\r\n1월1일, 설날, 추석 당일",
+      "officialUrl": "https://www.arko.or.kr/artcenter/",
+      "transport": "지하철 4호선 혜화역 2번 출구,  138m",
+      "curationReason": "미술관과 전시 관련 정보가 명시된 관람 장소입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-19540",
+      "sourceId": "19540",
+      "name": "위안부 '기억의 터'",
+      "localizedNames": {
+        "en": "Site of Memory for the Comfort Women",
+        "ja": "慰安婦「記憶の場」"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04628 서울 중구 퇴계로26가길 6 (예장동) 서울종합방재센터",
+      "district": "중구",
+      "coordinates": [
+        126.99026627798,
+        37.5590886943831
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 위안부,명동역,추모공원, 역사, 충무로역, 기림비, 남산, 명동, 기억의터, 교육",
+      "hours": "24시간",
+      "closedDays": "연중무휴",
+      "officialUrl": "https://korean.visitseoul.net/attractions/위안부-기억의-터/KOP019540?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP019540",
+      "transport": "지하철 4호선 명동역 1번 출구,  511m",
+      "curationReason": "추모공원과 기림비를 갖춘 역사·기억의 장소임이 태그에 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-5208",
+      "sourceId": "5208",
+      "name": "의릉",
+      "localizedNames": {
+        "en": "Uireung Royal Tomb",
+        "ja": "懿陵"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 성북구 화랑로32길 146-20 (공식 궁능유적본부 표기). 사용자 제공 주소는 화랑로32길 146-37로 달라 공식 출처 주소를 우선 기재했습니다.",
+      "district": "성북구",
+      "coordinates": [
+        127.053931211593,
+        37.6063458637902
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "유네스코,선의왕후,유적지, 돌곶이역, 역사, 경종, 세계문화유산,중앙정보부, 의릉,신이문역, 관광지",
+      "hours": "2~5월·9~10월 09:00~18:00 (입장 마감 17:00); 6~8월 09:00~18:30 (입장 마감 17:30); 11~1월 09:00~17:30 (입장 마감 16:30).",
+      "closedDays": "매주 월요일",
+      "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/R106020000.do?schBdcode=rtm&pageType=story&bdProgramCode=storyCtg7&returnPage=subMain&schBdIdx=20231026044229634026&schIdx=11",
+      "transport": "지하철 1호선 신이문역 1번 출구에서 의릉·한예종 방향 도보 약 15분, 또는 6호선 돌곶이역 7번 출구에서 도보 약 15분. 청량리역 환승센터에서 120·147·261번 버스를 타고 ‘의릉입구’ 하차 후 도보 약 5분.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 성북구 화랑로32길 146-20 (공식 궁능유적본부 표기). 사용자 제공 주소는 화랑로32길 146-37로 달라 공식 출처 주소를 우선 기재했습니다.",
+            "sourceUrl": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?ilIdx=20231030071706038310&schGroupCode=rtm",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "2~5월·9~10월 09:00~18:00 (입장 마감 17:00); 6~8월 09:00~18:30 (입장 마감 17:30); 11~1월 09:00~17:30 (입장 마감 16:30).",
+            "sourceUrl": "https://royal.khs.go.kr/ROYAL/contents/R702000000.do",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EC%9D%98%EB%A6%89/KOP005205",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 1호선 신이문역 1번 출구에서 의릉·한예종 방향 도보 약 15분, 또는 6호선 돌곶이역 7번 출구에서 도보 약 15분. 청량리역 환승센터에서 120·147·261번 버스를 타고 ‘의릉입구’ 하차 후 도보 약 5분.",
+            "sourceUrl": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?ilIdx=20231030071706038310&schGroupCode=rtm",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://royal.khs.go.kr/ROYAL/contents/R106020000.do?schBdcode=rtm&pageType=story&bdProgramCode=storyCtg7&returnPage=subMain&schBdIdx=20231026044229634026&schIdx=11",
+            "sourceUrl": "https://royal.khs.go.kr/ROYAL/contents/R707000000.do?ilIdx=20231030071706038310&schGroupCode=rtm",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "유네스코 세계문화유산·조선왕릉 유적지로 역사 관람 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-28340",
+      "sourceId": "28340",
+      "name": "연세대 캠퍼스",
+      "localizedNames": {
+        "en": "Yonsei University Campus",
+        "ja": "延世大学校キャンパス"
+      },
+      "category": "Culture",
+      "placeType": "campus_architecture",
+      "address": "03722 서울특별시 서대문구 연세로 50 (신촌캠퍼스)",
+      "district": "서대문구",
+      "coordinates": [
+        126.943916239886,
+        37.5660508394158
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "캠퍼스, 홍대, 언더우드, 연세대학교,연세대 캠퍼스, 신촌, 대학교",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://www.yonsei.ac.kr/sc/index.do",
+      "transport": "지하철 2호선 신촌역 2번 출구,  564m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03722 서울특별시 서대문구 연세로 50 (신촌캠퍼스)",
+            "sourceUrl": "https://www.yonsei.ac.kr/sc/242/subview.do",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.yonsei.ac.kr/sc/index.do",
+            "sourceUrl": "https://www.yonsei.ac.kr/sc/242/subview.do",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "서울 소재 대학교 캠퍼스로, 캠퍼스 관람·건축 목적의 방문지입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-37008",
+      "sourceId": "37008",
+      "name": "익선동 한옥거리",
+      "localizedNames": {
+        "en": "Ikseon-dong Hanok Village",
+        "ja": "益善洞韓屋通り"
+      },
+      "legacyId": "ikseon-dong",
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03133 서울 종로구 돈화문로11가길 17 (익선동)",
+      "district": "종로구",
+      "coordinates": [
+        126.990919055365,
+        37.5733907062616
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "전통거리,익선동한옥거리,서울나들이,서울한옥,한국전통,서울산책, 한옥마을,데이트코스추천,익선동데이트,서울데이트코스,한옥거리,한국문화,서울걷기좋은곳,서울데이트,익선동",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/익선동한옥거리/KOP037008?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP037008",
+      "transport": "지하철 1/ 3/ 5 호선 종로 3가역  4번 출구, 123m ",
+      "curationReason": "한옥 전통거리로 명시되어 있으며 산책·한국문화 탐방 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-2252",
+      "sourceId": "2252",
+      "name": "일민미술관",
+      "localizedNames": {
+        "en": "Ilmin Museum of Art",
+        "ja": "イルミン美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03187 서울 종로구 세종대로 152 (세종로, 일민미술관)",
+      "district": "종로구",
+      "coordinates": [
+        126.977657083792,
+        37.5698677620456
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "일민미술관,광화문,일민김상만,신문박물관,광화문이마,광화문역,예술,일민문화재단,미술관,카페이마,문화,전시",
+      "hours": "11:00~19:00",
+      "closedDays": "월요일, 추석",
+      "officialUrl": "https://ilmin.org/",
+      "transport": "지하철 5호선 광화문역 5번 출구,  16m",
+      "curationReason": "미술관이며 태그에 예술·전시가 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-47356",
+      "sourceId": "47356",
+      "name": "옥상정원 (The Roof)",
+      "localizedNames": {
+        "en": "Rooftop Garden (The Roof)",
+        "ja": "屋上庭園（The Roof）"
+      },
+      "category": "Nature",
+      "placeType": "landmark_viewpoint",
+      "address": "서울특별시 중구 한강대로 405 (봉래동2가), 4층 옥외주차장 왼편",
+      "district": "중구",
+      "coordinates": [
+        126.969526329341,
+        37.5547278494914
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울명소,서울나들이,서울역공원,서울역근처가볼만한곳,서울산책로,서울역피크닉,서울데이트코스,커넥트플레이스",
+      "hours": "24시간",
+      "closedDays": "연중무휴",
+      "officialUrl": "https://korean.visitseoul.net/attractions/2024-stnrooftop/KOPyz09up?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOPyz09up",
+      "transport": "지하철 1호선/ 4호선/ 공항철도/ 경의중앙선 서울역 1번 출구,  300m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 중구 한강대로 405 (봉래동2가), 4층 옥외주차장 왼편",
+            "sourceUrl": "https://koreatourinfo.com/korea-info-3399181/",
+            "sourceType": "secondary"
+          }
+        }
+      },
+      "curationReason": "서울 공식 관광 안내가 문화역서울284 옥상 공간을 공공 루프탑·야경 감상 명소로 소개하고 매일 무료 개방 정보를 갱신했습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/attractions/2024-stnrooftop/KOPyz09up"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-52632",
+      "sourceId": "52632",
+      "name": "딜쿠샤",
+      "localizedNames": {
+        "en": "Dilkusha",
+        "ja": "ディルクシャ"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03026 서울 종로구 사직로2길 17 (행촌동)",
+      "district": "종로구",
+      "coordinates": [
+        126.963476480113,
+        37.5730423068152
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울 앨버트 테일러 가옥,딜쿠샤",
+      "hours": "화요일~일요일 09:00~18:00 (입장 마감 17:30)",
+      "closedDays": "매주 월요일, 1월 1일",
+      "officialUrl": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_dilkusha/annex_dilkusha_02.jsp?sso=ok",
+      "transport": "지하철 3호선 독립문역 3번출구, 501m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "hours": {
+            "value": "화요일~일요일 09:00~18:00 (입장 마감 17:30)",
+            "sourceUrl": "https://mediahub.seoul.go.kr/archives/2013383",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "매주 월요일, 1월 1일",
+            "sourceUrl": "https://museum.seoul.go.kr/www/edu/2024%20%EA%B5%90%EC%9C%A1%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%EC%95%88%EB%82%B4%20%EB%B8%8C%EB%A1%9C%EC%8A%88%EC%96%B4.pdf",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "원천에 역사·건축·문화·골목 탐방 또는 독서 공간 방문 목적이 드러나는 장소로 판단했습니다. 내부 개방과 예약 조건은 별도 확인이 필요합니다.",
+      "reviewedAt": "2026-10-19",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-50364",
+      "sourceId": "50364",
+      "name": "지역관광 안테나숍(Seoul Regional Tourism Center)",
+      "localizedNames": {
+        "en": "Regional Tourism Antenna Shop",
+        "ja": "地域観光アンテナショップ"
+      },
+      "category": "Experience",
+      "placeType": "cultural_experience",
+      "address": "04519 서울 중구 세종대로 119 (태평로1가)",
+      "district": "중구",
+      "coordinates": [
+        126.976702419575,
+        37.5668837502225
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "안테나숍,seoul regional tourism center,로컬여행,지역여행,지역관광안테나숍",
+      "hours": "화~금, 일 : 10:00-18:00\r\n토 : 12:00~21:00 (8~10월)\r\n",
+      "closedDays": "월요일",
+      "officialUrl": "https://www.instagram.com/antennashop_seoul",
+      "transport": "지하철 1호선/2호선 시청역 3번출구, 80m",
+      "curationReason": "서울 공식 관광정보와 서울시 안내가 지역 관광 콘텐츠 전시·감각 체험·굿즈숍을 갖춘 도심형 관광 공간으로 소개합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/etc-area/Seoul-Regional-Tourism-Center/KOPh83fpt",
+        "https://www.seoul.go.kr/news/news_report.do?nttNo=456598"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-45524",
+      "sourceId": "45524",
+      "name": "왕짱구식당",
+      "localizedNames": {
+        "en": "Wang Jjanggu Sikdang",
+        "ja": "ワン・チャング食堂"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03056 서울 종로구 계동길 83 (계동)",
+      "district": "종로구",
+      "coordinates": [
+        126.986679456785,
+        37.5810909221363
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "왕짱구식당, 종로",
+      "hours": "매일 11:00~21:00 (보조 출처 기준)",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/wangjjanggu-2024/KOP2dut7v?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP2dut7v",
+      "transport": "지하철 3호선 안국역 3번 출구,  497m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "hours": {
+            "value": "매일 11:00~21:00 (보조 출처 기준)",
+            "sourceUrl": "https://www.esquirekorea.co.kr/eee/3509",
+            "sourceType": "secondary"
+          }
+        }
+      },
+      "curationReason": "음식·식사·제과·간식·주류를 직접 즐길 수 있는 식당·먹거리 가게·음식 거리로 판단했습니다. 맛이나 인기 순위를 보증하는 선정은 아닙니다.",
+      "reviewedAt": "2026-10-19",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-23496",
+      "sourceId": "23496",
+      "name": "서울로7017",
+      "localizedNames": {
+        "en": "Seoullo 7017",
+        "ja": "ソウル路7017"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04509 서울 중구 청파로 432 (봉래동2가, 코레일서울본부)",
+      "district": "중구",
+      "coordinates": [
+        126.969772737969,
+        37.5580093456227
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울여행,서울로7017,서울여름여행,서울역,서울여름가볼만한곳,서울관광,서울명소,서울야경,산책하기좋은곳,서울력고가,서울걷기좋은곳,야경",
+      "hours": "24시간",
+      "closedDays": "",
+      "officialUrl": "https://parks.seoul.go.kr/content.do?key=2605090001",
+      "transport": "지하철 1호선/ 4호선/ 경의중앙선/ 공항철도 서울역 7번 출구,  148m",
+      "curationReason": "서울 중구의 산책로로 소개되며 산책과 야경 감상 목적이 태그에 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-52584",
+      "sourceId": "52584",
+      "name": "아트큐브 2R2",
+      "localizedNames": {
+        "en": "Art Cube 2R2",
+        "ja": "アートキューブ2R2"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06145 서울 강남구 선릉로 563 (역삼동)",
+      "district": "강남구",
+      "coordinates": [
+        127.044212516797,
+        37.5088515512806
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "nft,미디어아트,사진,회화,전시,컬렉팅,갤러리,exhibition",
+      "hours": "11:00–18:00",
+      "closedDays": "월요일, 일요일, 공휴일",
+      "officialUrl": "https://www.artcube2r2.com/",
+      "transport": "지하철 9호선·수인분당선 선정릉역 4번 출구에서 176m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "06145 서울 강남구 선릉로 563 (역삼동)",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/artcube2r2/KOPhax5cj",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "11:00–18:00",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/artcube2r2/KOPhax5cj",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "월요일, 일요일, 공휴일",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/artcube2r2/KOPhax5cj",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 9호선·수인분당선 선정릉역 4번 출구에서 176m",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/artcube2r2/KOPhax5cj",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "서울 강남구의 갤러리이며 미디어아트·사진·회화·전시 태그가 관람 목적을 분명히 합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-25016",
+      "sourceId": "25016",
+      "name": "아원공방",
+      "localizedNames": {
+        "en": "Awon Craft Workshop",
+        "ja": "アウォン工房"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03053 서울 종로구 북촌로5가길 3",
+      "district": "종로구",
+      "coordinates": [
+        126.982194537365,
+        37.5797469490698
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 삼청동,오래가게, 갤러리, 수제, 종로, 전시,금속공예,인테리어소품샵",
+      "hours": "10:00 - 19:00\r\n",
+      "closedDays": "월요일, 추석",
+      "officialUrl": "https://www.ah-won.com/",
+      "transport": "지하철 3호선 안국역 2번 출구,  528m",
+      "curationReason": "서울 종로구의 공방이며 금속공예·전시·인테리어 소품샵 태그가 특색 있는 문화 쇼핑 목적을 뒷받침합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-42352",
+      "sourceId": "42352",
+      "name": "최만린미술관",
+      "localizedNames": {
+        "en": "Choi Man Lin Museum",
+        "ja": "崔萬麟美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02708 서울 성북구 솔샘로7길 23 (정릉동)",
+      "district": "성북구",
+      "coordinates": [
+        127.004288022173,
+        37.6106597929108
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "최만린미술관",
+      "hours": "화~토요일 10:00 ~ 18:00\r\n전시준비로 휴관 : 기간(7.1. ~ 9. 3.)",
+      "closedDays": "매주 일, 월요일, 법정공휴일 휴관",
+      "officialUrl": "https://sma.sbculture.or.kr/cml",
+      "transport": "지하철 우이신설  북한산보국문역 2번 출구,  438m",
+      "curationReason": "미술관으로 명시된 서울 성북구 소재 장소이며 운영시간과 휴관일이 제공됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-42312",
+      "sourceId": "42312",
+      "name": "옛날집낙원아구찜",
+      "localizedNames": {
+        "en": "Yennaljip Nakwon Agujjim",
+        "ja": "イェンナルチプ・ナグォンアグチム"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03133 서울 종로구 삼일대로 436 (낙원동)",
+      "district": "종로구",
+      "coordinates": [
+        126.988000615593,
+        37.5734999165726
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "아귀찜,백년가게,해물탕,아귀탕,오래가게,해물찜,옛날집낙원아구찜",
+      "hours": "매일 11:30–22:00",
+      "closedDays": "없음",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+      "transport": "종로3가역 5번 출구에서 약 146m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03133 서울 종로구 삼일대로 436 (낙원동)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "매일 11:30–22:00",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "없음",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "종로3가역 5번 출구에서 약 146m",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/YennaljipNakwonAgujjim/KOPo9l1ex",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "아귀찜과 해물탕 등을 파는 식당입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43508",
+      "sourceId": "43508",
+      "name": "이태원북스",
+      "localizedNames": {
+        "en": "Itaewon Books",
+        "ja": "梨泰院ブックス"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04345 서울 용산구 녹사평대로 208 (이태원동)",
+      "district": "용산구",
+      "coordinates": [
+        126.987226909735,
+        37.5362463724633
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 이태원,이태원스토어, 서울미래유산,오래가게,헌책방, 녹사평역, 외서, 서점, 책방",
+      "hours": "11:00 - 19:30",
+      "closedDays": "수요일",
+      "officialUrl": "www.instagram.com/itaewon_books",
+      "transport": "버스 143·401·406번 및 마을버스 2·3번 정류장에서 도보 1~3분. 지하철 6호선 녹사평역에서 도보 약 5~6분.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "04345 서울 용산구 녹사평대로 208 (이태원동)",
+            "sourceUrl": "https://futureheritage.seoul.go.kr/futureHeritageMeet/futureHeritage/view.do?htNo=2569",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "버스 143·401·406번 및 마을버스 2·3번 정류장에서 도보 1~3분. 지하철 6호선 녹사평역에서 도보 약 5~6분.",
+            "sourceUrl": "https://futureheritage.seoul.go.kr/futureHeritageMeet/futureHeritage/view.do?htNo=2569",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "헌책·외서를 다루는 서점으로 문화적 구경·쇼핑 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-1232",
+      "sourceId": "1232",
+      "name": "리움 미술관",
+      "localizedNames": {
+        "en": "Leeum Museum of Art",
+        "ja": "リウム美術館"
+      },
+      "legacyId": "leeum",
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04348 서울 용산구 이태원로55길 60-16 (한남동)",
+      "district": "용산구",
+      "coordinates": [
+        126.999294071613,
+        37.5384612696435
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "한강진역,한남동,갤러리,이태원,미술관,문화,예술체험,삼성리움,리움미술관,한남동미술관,삼성미술관리움",
+      "hours": "10:00 ~ 18:00 (매표마감 17:30)",
+      "closedDays": "-월요일\r\n-1월 1일\r\n-설 당일\r\n-추석 당일",
+      "officialUrl": "https://www.leeumhoam.org/ ",
+      "transport": "지하철  6호선 한강진역 1번 출구,  399m",
+      "curationReason": "미술관·갤러리로 명시되어 있고 관람 시간과 위치가 제시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-1872",
+      "sourceId": "1872",
+      "name": "갤러리 학고재",
+      "localizedNames": {
+        "en": "Hakgojae Gallery",
+        "ja": "学古斎ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03053 서울특별시 종로구 삼청로 50 (소격동)",
+      "district": "종로구",
+      "coordinates": [
+        126.980316758246,
+        37.5804654638012
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 삼청동갤러리, 북촌,갤러리, 학고재,소격동,안국역,인사동, 미술관, 종로구,문화, 북촌갤러리",
+      "hours": "10:00~18:00",
+      "closedDays": "월요일, 일요일",
+      "officialUrl": "http://www.hakgojae.com",
+      "transport": "지하철 3호선 안국역 1번 출구에서 751m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03053 서울특별시 종로구 삼청로 50 (소격동)",
+            "sourceUrl": "https://korean.visitseoul.net/museum/%EA%B0%A4%EB%9F%AC%EB%A6%AC-%ED%95%99%EA%B3%A0%EC%9E%AC/KOP001871",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "10:00~18:00",
+            "sourceUrl": "https://korean.visitseoul.net/museum/%EA%B0%A4%EB%9F%AC%EB%A6%AC-%ED%95%99%EA%B3%A0%EC%9E%AC/KOP001871",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "월요일, 일요일",
+            "sourceUrl": "https://korean.visitseoul.net/museum/%EA%B0%A4%EB%9F%AC%EB%A6%AC-%ED%95%99%EA%B3%A0%EC%9E%AC/KOP001871",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 3호선 안국역 1번 출구에서 751m",
+            "sourceUrl": "https://korean.visitseoul.net/museum/%EA%B0%A4%EB%9F%AC%EB%A6%AC-%ED%95%99%EA%B3%A0%EC%9E%AC/KOP001871",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "http://www.hakgojae.com",
+            "sourceUrl": "https://mediahub.seoul.go.kr/archives/2002892",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "갤러리·미술관으로 명시되어 있고 관람 시간과 주소가 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-1904",
+      "sourceId": "1904",
+      "name": "보신각(상설타종행사)",
+      "localizedNames": {
+        "en": "Bosingak Bell-Ringing Event",
+        "ja": "普信閣常設鐘撞きイベント"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03189 서울 종로구 종로 54 (관철동, 보신각)",
+      "district": "종로구",
+      "coordinates": [
+        126.983677617361,
+        37.5697673859634
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "제야의종, 타종행사,서울여행,서울보신각종,서울새해여행,서울역사적인곳,서울가볼만한곳,광화문,종각역가볼만한곳,새해,종각역,종로,보신각",
+      "hours": "매일 정오 상설 타종 행사 (월요일 제외). 화요일은 외국인 참여 프로그램을 운영합니다. 참여는 사전 신청이 필요합니다.",
+      "closedDays": "매주 월요일. 행사 일정은 서울문화포털의 공식 안내를 확인하세요.",
+      "officialUrl": "https://culture.seoul.go.kr/culture/main/contents.do?menuNo=200147",
+      "transport": "지하철 1호선 종각역 4번 출구.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03189 서울 종로구 종로 54 (관철동, 보신각)",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B3%B4%EC%8B%A0%EA%B0%81%EC%83%81%EC%84%A4%ED%83%80%EC%A2%85%ED%96%89%EC%82%AC/KOP001904",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "매일 정오 상설 타종 행사 (월요일 제외). 화요일은 외국인 참여 프로그램을 운영합니다. 참여는 사전 신청이 필요합니다.",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/main/contents.do?menuNo=200147",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일. 행사 일정은 서울문화포털의 공식 안내를 확인하세요.",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/main/contents.do?menuNo=200147",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 1호선 종각역 4번 출구.",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/main/contents.do?menuNo=200147",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://culture.seoul.go.kr/culture/main/contents.do?menuNo=200147",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/main/contents.do?menuNo=200147",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "보신각 타종 체험과 행사 시간이 안내되어 있어 체험 방문 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-28656",
+      "sourceId": "28656",
+      "name": "백범광장공원",
+      "localizedNames": {
+        "en": "Baekbeom Square Park",
+        "ja": "白凡広場公園"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04633 서울 중구 퇴계로8길 49-4",
+      "district": "중구",
+      "coordinates": [
+        126.979964687665,
+        37.5571619646336
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 독립운동가,문화유산,명동, 남산공원, 백범광장공원,김구,회현역",
+      "hours": "24시간",
+      "closedDays": "연중무휴",
+      "officialUrl": "https://korean.visitseoul.net/attractions/백범광장공원/KOP028656?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP028656",
+      "transport": "지하철 4호선 회현역 4번 출구,  512m \r\n지하철 1/4호선/경의중앙선/공항철도 서울역 10번 출구,  679m",
+      "curationReason": "공원으로 명시되어 있고 산책·문화유산 관련 태그와 위치가 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-2372",
+      "sourceId": "2372",
+      "name": "살곶이다리（전곶교）",
+      "localizedNames": {
+        "en": "Salgodari Bridge (Jeongokgyo)",
+        "ja": "サルゴダリ橋（箭串橋）"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "서울 성동구 행당동 61-1",
+      "district": "성동구",
+      "coordinates": [
+        127.045468943168,
+        37.5540825979594
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 중랑천,한양대역, 뚝섬역, 한강, 전곶교, 한양대학교,살곶이다리, 산책로,최장교",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/살곶이다리전곶교/KOP002372?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP002372",
+      "transport": "지하철 2호선 한양대역 3번 출구,  257m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울 성동구 행당동 61-1",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=149333&menuNo=200008",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/살곶이다리전곶교/KOP002372?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP002372",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=149333&menuNo=200008",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "역사적 다리와 산책로로 소개되어 보행·경관 방문 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-21128",
+      "sourceId": "21128",
+      "name": "백인제가옥",
+      "localizedNames": {
+        "en": "Baek In-je House",
+        "ja": "白麟済家屋"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03055 서울 종로구 북촌로7길 16 (가회동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984092922693,
+        37.5804450398958
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "안국역, 문화유산,한옥, 북촌,별당채, 민속문화재,광화문,백인제가옥, 일제강점기",
+      "hours": "09:00~18:00 (입장 마감 17:30)",
+      "closedDays": "월요일(월요일이 공휴일인 경우 개관), 1월 1일",
+      "officialUrl": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_22/annex_22_01.jsp?sso=ok",
+      "transport": "지하철 3호선 안국역 2번 출구에서 464m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03055 서울 종로구 북촌로7길 16 (가회동)",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B0%B1%EC%9D%B8%EC%A0%9C%EA%B0%80%EC%98%A5/KOP021128",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "09:00~18:00 (입장 마감 17:30)",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B0%B1%EC%9D%B8%EC%A0%9C%EA%B0%80%EC%98%A5/KOP021128",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "월요일(월요일이 공휴일인 경우 개관), 1월 1일",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B0%B1%EC%9D%B8%EC%A0%9C%EA%B0%80%EC%98%A5/KOP021128",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 3호선 안국역 2번 출구에서 464m",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B0%B1%EC%9D%B8%EC%A0%9C%EA%B0%80%EC%98%A5/KOP021128",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "문화유산 한옥으로 소개되고 관람 시간과 주소가 제시되어 있어 방문 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43612",
+      "sourceId": "43612",
+      "name": "신흥상회",
+      "localizedNames": {
+        "en": "Shinheung Store",
+        "ja": "新興商会"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07299 서울 영등포구 도림로126길 1 (문래동3가)",
+      "district": "영등포구",
+      "coordinates": [
+        126.896507333338,
+        37.5139792234346
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 영등포, 문래창작촌,오래가게, 슈퍼, 가맥, 문래동,문래철공단지, 간단안주",
+      "hours": "월요일~금요일 06:00~23:00, 토요일~일요일 10:00~22:00",
+      "closedDays": "없음",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+      "transport": "지하철 2호선 문래역 7번 출구에서 515m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "07299 서울 영등포구 도림로126길 1 (문래동3가)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "월요일~금요일 06:00~23:00, 토요일~일요일 10:00~22:00",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "없음",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 2호선 문래역 7번 출구에서 515m",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023054/KOP8fihkt",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "가맥과 간단한 안주를 제공하는 오래가게로 소개되어 먹거리 방문 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-38092",
+      "sourceId": "38092",
+      "name": "서울공예박물관",
+      "localizedNames": {
+        "en": "Seoul Museum of Craft Art",
+        "ja": "ソウル工芸博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03061 서울 종로구 율곡로3길 4 (안국동, 서울공예박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.983261339115,
+        37.576611194995
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울박물관,아이와함께,박물관데이트,요즘볼거리,안국볼거리,서울가볼만한곳,서울역사적명소,서울공예박물관,서울새로생긴곳,비오는날데이트,부모님과함께,종로놀거리",
+      "hours": "10:00 ~ 18:00 (17:30 입장 마감)\r\n2026.9.15.(화)~11.30.(월) 목요일 제외한 화~일 21:00까지 야간개관합니다.",
+      "closedDays": "월요일 (공휴일인 경우 운영) , 1월 1일",
+      "officialUrl": "http://craftmuseum.seoul.go.kr",
+      "transport": "지하철 3호선 안국역 1번 출구,  141m",
+      "curationReason": "공예박물관으로 소개되며 관람 시간과 공식 사이트가 제시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-37164",
+      "sourceId": "37164",
+      "name": "석파정",
+      "localizedNames": {
+        "en": "Seokpajeong Pavilion",
+        "ja": "石坡亭"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03021 서울 종로구 창의문로11길 4-1",
+      "district": "종로구",
+      "coordinates": [
+        126.962428778162,
+        37.5949660263908
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "역사적명소,석파정,정원,미술관,미술",
+      "hours": "10:00 ~ 18:00 ",
+      "closedDays": "월요일, 화요일\r\n(※ 차기 전시를 위해  ~ 10/6 휴관)",
+      "officialUrl": "https://seoulmuseum.org/INTRO",
+      "transport": "지하철 3호선 경복궁역 3번출구,  1020, 1711, 7016, 7018버스승차,  자하문터널 입구 하차",
+      "curationReason": "석파정 서울미술관 공식 관람 안내에서 석파정과 미술관을 통합 관람할 수 있고 수~일요일에 개방한다고 명시합니다. 확인된 정원·문화유산 관람 장소로 선정합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://seoulmuseum.org/관람안내"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-43432",
+      "sourceId": "43432",
+      "name": "만나당",
+      "localizedNames": {
+        "en": "Mannadang",
+        "ja": "マンナダン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "06029 서울 강남구 논현로175길 61 (신사동) 1층 101호 만나당",
+      "district": "강남구",
+      "coordinates": [
+        127.024073114133,
+        37.5241526290529
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "수제, 궁중약과, 강남,오래가게, 압구정, 약과, 가로수길",
+      "hours": "월~토 10:00~18:00",
+      "closedDays": "일요일",
+      "officialUrl": "https://manna-dang.imweb.me/",
+      "transport": "지하철 3호선 압구정역 5번 출구에서 498m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "06029 서울 강남구 논현로175길 61 (신사동) 1층 101호 만나당",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023001/KOPv423hd",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "월~토 10:00~18:00",
+            "sourceUrl": "https://manna-dang.imweb.me/32",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "일요일",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023001/KOPv423hd",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 3호선 압구정역 5번 출구에서 498m",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023001/KOPv423hd",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://manna-dang.imweb.me/",
+            "sourceUrl": "https://manna-dang.imweb.me/32",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "수제 궁중약과를 판매하는 가게로 먹거리 방문 목적이 구체적입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-46796",
+      "sourceId": "46796",
+      "name": "이길이구 갤러리",
+      "localizedNames": {
+        "en": "2GIL29 Gallery",
+        "ja": "2GIL29ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06034 서울 강남구 강남대로158길 35 (신사동)",
+      "district": "강남구",
+      "coordinates": [
+        127.021480246749,
+        37.5197495682315
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "전시,미술관,강남,신사,갤러리,강남전시",
+      "hours": "10:00~18:00",
+      "closedDays": "일요일, 월요일 정기휴무\r\n공휴일 휴무",
+      "officialUrl": "https://www.2gil29gallery.com/",
+      "transport": "지하철 3호선/ 신분당선  신사역 8번 출구,  460m",
+      "curationReason": "갤러리·미술관으로 소개되고 전시와 관람 시간이 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-4632",
+      "sourceId": "4632",
+      "name": "서울약령시 한의약박물관",
+      "localizedNames": {
+        "en": "Seoul Yangnyeongsi Museum of Korean Medicine",
+        "ja": "ソウル薬令市韓医薬博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02570 서울 동대문구 약령중앙로 26 (제기동, 서울한방진흥센터) B2",
+      "district": "동대문구",
+      "coordinates": [
+        127.037586644096,
+        37.5806004145096
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 동의보감타워, 전시, 박물관, 전통,한방체험,용두동, 한의약,한약,용두역,한방문화쉼터,한의약박물관, 제기동역, 동대문",
+      "hours": "하절기(3~10월) 10:00~18:00, 동절기(11~2월) 10:00~17:00. 입장 마감은 종료 1시간 전.",
+      "closedDays": "-월요일 (월요일이 공휴일인 경우에는 그 다음날을 휴관일로 함)\r\n-1월 1일 \r\n-설날, 추석\r\n\r\n",
+      "officialUrl": "http://museum.ddm.go.kr",
+      "transport": "지하철 1호선 제기동역 2번 출구에서 약 322m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "02570 서울 동대문구 약령중앙로 26 (제기동, 서울한방진흥센터) B2",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158036&menuNo=200009",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "하절기(3~10월) 10:00~18:00, 동절기(11~2월) 10:00~17:00. 입장 마감은 종료 1시간 전.",
+            "sourceUrl": "https://kmedi.ddm.go.kr/guide/guide1.php",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 1호선 제기동역 2번 출구에서 약 322m",
+            "sourceUrl": "https://medical.visitseoul.net/organization/wellness/recommendedWellnessDetail/1147",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "http://museum.ddm.go.kr",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158036&menuNo=200009",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "전시·박물관·한방 체험을 갖춘 한의약 박물관입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-6996",
+      "sourceId": "6996",
+      "name": "손기정기념관",
+      "localizedNames": {
+        "en": "Son Kee-chung Memorial Hall",
+        "ja": "孫基禎記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04501 서울 중구 손기정로 101 (손기정 체육공원)",
+      "district": "중구",
+      "coordinates": [
+        126.964815746241,
+        37.5554795035057
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울역,이승만,손기정체육공원,베를린올림픽,만리동,손기정기념관,김구,금메달,박물관,손기정,일제강점기,기념관,마라톤,충정로역",
+      "hours": "10:00~18:00 (입장 마감 17:00)",
+      "closedDays": "매주 월요일, 1월 1일, 국경일",
+      "officialUrl": "https://www.sonkeechung.com/sonkeechung/main/main.do",
+      "transport": "버스: 173, 261, 463, 604, N16번 또는 용산04번, 손기정체육공원 정류장. 지하철: 충정로역(2·5호선) 5번 출구 또는 서울역 1호선 1번 출구·공항철도/4호선 15번 출구.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "04501 서울 중구 손기정로 101 (손기정 체육공원)",
+            "sourceUrl": "https://www.sonkeechung.com/sonkeechung/main/main.do",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "10:00~18:00 (입장 마감 17:00)",
+            "sourceUrl": "https://www.sonkeechung.com/sonkeechungEn/main/main.do",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일, 1월 1일, 국경일",
+            "sourceUrl": "https://www.sonkeechung.com/sonkeechungEn/main/main.do",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "버스: 173, 261, 463, 604, N16번 또는 용산04번, 손기정체육공원 정류장. 지하철: 충정로역(2·5호선) 5번 출구 또는 서울역 1호선 1번 출구·공항철도/4호선 15번 출구.",
+            "sourceUrl": "https://www.sonkeechung.com/sonkeechungEn/main/main.do",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.sonkeechung.com/sonkeechung/main/main.do",
+            "sourceUrl": "https://www.sonkeechung.com/sonkeechung/main/main.do",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "손기정과 베를린올림픽 등을 다루는 기념관·박물관입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-5060",
+      "sourceId": "5060",
+      "name": "신당창작아케이드",
+      "localizedNames": {
+        "en": "Sindang Creative Arcade",
+        "ja": "新堂創作アーケード"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "04571 서울 중구 마장로 87 (황학동) 신당지하쇼핑센터",
+      "district": "중구",
+      "coordinates": [
+        127.019357377705,
+        37.568494451339
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "전시,동대문,신당창작아케이드,문화체험,신당지하쇼핑센터,신당역,황학동,서울시창작공간,미술관,아트마켓",
+      "hours": "창작공방, 아트마켓 9:00~18:00",
+      "closedDays": "창작공방, 공동작업장, 사진실 연중무휴\r\n아트마켓 토·일요일 휴관",
+      "officialUrl": "https://www.sfac.or.kr/artspace/artspace/sindang_main.do",
+      "transport": "지하철 2/ 6호선 신당역 2번 출구,  336m",
+      "curationReason": "창작공방·문화체험·아트마켓이 있어 예술 체험 방문 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-50532",
+      "sourceId": "50532",
+      "name": "넷마블게임박물관",
+      "localizedNames": {
+        "en": "Netmarble Game Museum",
+        "ja": "ネットマーブルゲーム博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "08393 서울 구로구 디지털로26길 38 3층",
+      "district": "구로구",
+      "coordinates": [
+        126.895318461208,
+        37.4798477003537
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "게임박물관,서울박물관,넷마블게임박물관,넷마블,게임전시,체험형박물관",
+      "hours": "10:00-18:00",
+      "closedDays": " 월요일,  1월 1일, 설날/추석 전날 및 당일",
+      "officialUrl": "https://netmarblegamemuseum.org/ko",
+      "transport": "지하철 2호선 구로디지털단지역 2번출구, 847m",
+      "curationReason": "공식 홈페이지와 넷마블문화재단 발표에서 게임 문화 전시를 위한 전문박물관으로 운영 중임을 확인했습니다. 원천에도 체험형 박물관과 관람시간이 기재되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://netmarblegamemuseum.org/ko",
+        "https://ch.netmarble.com/Newsroom/PressRelease/Detail?bbs_code=1014&post_seq=6680"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-43452",
+      "sourceId": "43452",
+      "name": "다락",
+      "localizedNames": {
+        "en": "Darak",
+        "ja": "タラク"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04172 서울 마포구 도화2길 8 (도화동, 에어몰 빌딩)",
+      "district": "마포구",
+      "coordinates": [
+        126.948762009763,
+        37.5400702441827
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "분식,즉석떡볶이,볶음밥,마포떡볶이골목,오래가게,공덕",
+      "hours": "09:30~22:00",
+      "closedDays": "매달 1·3번째 일요일 정기휴무",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+      "transport": "지하철 5호선 마포역 3번 출구에서 297m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "04172 서울 마포구 도화2길 8 (도화동, 에어몰 빌딩)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "09:30~22:00",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매달 1·3번째 일요일 정기휴무",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 5호선 마포역 3번 출구에서 297m",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/2023--028/KOPyubahz",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "즉석떡볶이와 볶음밥을 제공하는 음식점입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-28052",
+      "sourceId": "28052",
+      "name": "글벗서점",
+      "localizedNames": {
+        "en": "Geulbeot Bookstore",
+        "ja": "クルボッ書店"
+      },
+      "category": "Shopping",
+      "placeType": "bookshop",
+      "address": "03941 서울 마포구 월드컵북로 210 (성산동)",
+      "district": "마포구",
+      "coordinates": [
+        126.905804329554,
+        37.5692205219891
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게,연세대,신촌,경의선책거리,헌책방,책방,헌책,서점",
+      "hours": "11:00~21:30",
+      "closedDays": "없음",
+      "officialUrl": "https://korean.visitseoul.net/attractions/글벗서점/KOP028052?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP028052",
+      "transport": "지하철 2호선/공항철도/경의중앙선 홍대입구역 6번 출구,  312m",
+      "curationReason": "서울 공식 관광정보가 글벗서점을 헌책·예술서적을 취급하는 오래가게 서점으로 소개하며 운영시간과 주소를 확인했습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/shopping/%EA%B8%80%EB%B2%97%EC%84%9C%EC%A0%90/KOP028052"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-5000",
+      "sourceId": "5000",
+      "name": "청원산방",
+      "localizedNames": {
+        "en": "Cheongwonsanbang",
+        "ja": "青園山房"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03056 서울 종로구 북촌로6길 27 (계동)",
+      "district": "종로구",
+      "coordinates": [
+        126.986357149175,
+        37.5804298262002
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게, 북촌한옥마을, 공예체험, 전통, 창호, 소목장, 공예",
+      "hours": "- 화요일반\r\n(오전반 10:00–13:00 / 오후반 14:00–17:00)\r\n- 토요일반\r\n(종일 수업 10:00–17:00)",
+      "closedDays": "예약제 ",
+      "officialUrl": "http://www.somokjang.com/",
+      "transport": "지하철 3호선 안국역 3번 출구,  430m",
+      "curationReason": "공예 체험과 소목장 전통이 명시되어 있어 체험 방문 목적이 분명합니다. 예약제라는 안내도 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-72",
+      "sourceId": "72",
+      "name": "경복궁",
+      "localizedNames": {
+        "en": "Gyeongbokgung Palace",
+        "ja": "景福宮"
+      },
+      "legacyId": "gyeongbokgung",
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03045 서울 종로구 사직로 161 (세종로, 경복궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.976842133821,
+        37.5759040910202
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "경복궁입장료,서울데이트,서울가볼만한곳,서울나들이,한국문화,한국전통,서울볼거리,경복궁,서울명소,서울궁궐,서울관광지,서울여행,한국역사적명소",
+      "hours": "1월 ~ 2월 : 09:00~17:00(입장마감 16:00) \r\n3월 ~ 5월 : 09:00~18:00(입장마감 17:00) \r\n6월 ~ 8월 : 09:00~18:30(입장마감 17:30) \r\n9월 ~ 10월 : 09:00~18:00(입장마감 17:00) \r\n11월 ~ 12월 : 09:00~17:00(입장마감 16:00)\r\n※ 기관 사정에 따라 관람시간 단축 및 조정이 있을 수 있습니다.",
+      "closedDays": "화요일",
+      "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-gbg.do?grpCode=gbg",
+      "transport": "지하철 5호선 광화문역 2번 출구,  471m \r\n지하철 3호선 경복궁역 5번 출구,  492m",
+      "curationReason": "궁궐·한국 역사·전통 문화 명소로 제시된 서울의 문화 방문지입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-18912",
+      "sourceId": "18912",
+      "name": "가회민화박물관",
+      "localizedNames": {
+        "en": "Gahoe Folk Painting Museum",
+        "ja": "嘉会民画博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03056 서울 종로구 북촌로 52 (가회동) 가회민화박물관",
+      "district": "종로구",
+      "coordinates": [
+        126.985262518095,
+        37.581539718891
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 광화문,민화박물관, 박물관, 민속품, 가회동,민화, 북촌한옥마을, 전통, 전시,북촌, 가회민화박물관,안국역,부적관계",
+      "hours": "10:00 ~ 18:00\r\n\r\n* 관람 시 종료 40분 전까지 입장\r\n* 체험 시 종료 1시간 전까지 입장",
+      "closedDays": "월요일, 추석 연휴\r\n",
+      "officialUrl": "https://www.instagram.com/gahoemuseum/",
+      "transport": "지하철 3호선 안국역 2번 출구,  496m",
+      "curationReason": "민화·민속품 전시 박물관이며 관람과 체험 정보가 기재되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-23760",
+      "sourceId": "23760",
+      "name": "숙정문",
+      "localizedNames": {
+        "en": "Sukjeongmun Gate",
+        "ja": "粛靖門"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02822 서울 성북구 대사관로 1 (성북동, 홍련사(조계종))",
+      "district": "성북구",
+      "coordinates": [
+        126.98342224198,
+        37.5968606715659
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "주말나들이,서울사대문,사적제10호,안국역,서울성곽,숙정문,북대문,경복궁역,서울문화재,도심속문화재,한양도성,광화문,한양도성순성길,서울산책",
+      "hours": "하절기(3~10월) 09:00~16:00(퇴장 18:00), 동절기(11~2월) 10:00~15:00(퇴장 17:00)",
+      "closedDays": "월요일(월요일이 공휴일인 경우 화요일 휴관)",
+      "officialUrl": "https://korean.visitseoul.net/attractions/sookjeongmun/KOP023760?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP023760",
+      "transport": "지하철 3호선 경복궁역 3번 출구에서 710번 간선버스를 타고 방송통신대·이화장 정류장에서 하차한 뒤, 2112번 지선버스로 환승하여 서울다원학교·한용운활동터 정류장에서 하차. 숙정문까지 약 820m.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "02822 서울 성북구 대사관로 1 (성북동, 홍련사(조계종))",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/sookjeongmun/KOP023760",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "하절기(3~10월) 09:00~16:00(퇴장 18:00), 동절기(11~2월) 10:00~15:00(퇴장 17:00)",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/sookjeongmun/KOP023760",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "월요일(월요일이 공휴일인 경우 화요일 휴관)",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/sookjeongmun/KOP023760",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 3호선 경복궁역 3번 출구에서 710번 간선버스를 타고 방송통신대·이화장 정류장에서 하차한 뒤, 2112번 지선버스로 환승하여 서울다원학교·한용운활동터 정류장에서 하차. 숙정문까지 약 820m.",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/sookjeongmun/KOP023760",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/sookjeongmun/KOP023760?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP023760",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/sookjeongmun/KOP023760",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "주소가 서울 성북구이며, 태그에 사적·서울성곽·한양도성이 있어 역사 유적 방문 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-41904",
+      "sourceId": "41904",
+      "name": "중랑망우공간",
+      "localizedNames": {
+        "en": "Jungnang Mangwoo Space",
+        "ja": "中浪忘憂空間"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중랑구 망우로91길 2 (망우동), 우편번호 02178",
+      "district": "중랑구",
+      "coordinates": [
+        127.114323654095,
+        37.5989997495367
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "중랑망우공간, 망우리공원, 망우역사문화공원,중랑망우",
+      "hours": "중랑망우공간: 평일 09:00~18:00. 주말·공휴일 운영시간은 공식 페이지에 '-'로 표시되어 있어 확인되지 않음. 교육전시실(전시기간 중): 평일·주말·공휴일 10:00~17:00.",
+      "closedDays": "",
+      "officialUrl": "https://manguripark.or.kr/",
+      "transport": "지하철 경의중앙선 양원역 2번 출구,  1.5km",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 중랑구 망우로91길 2 (망우동), 우편번호 02178",
+            "sourceUrl": "https://manguripark.or.kr/bbs/content.php?co_id=MUP_2020&lang=en&me_code=2020",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "중랑망우공간: 평일 09:00~18:00. 주말·공휴일 운영시간은 공식 페이지에 '-'로 표시되어 있어 확인되지 않음. 교육전시실(전시기간 중): 평일·주말·공휴일 10:00~17:00.",
+            "sourceUrl": "https://manguripark.or.kr/bbs/content.php?co_id=MUP_2020&lang=en&me_code=2020",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "서울시 공식 소개가 망우역사문화공원의 전시 관람 공간과 운영시간을 안내해 별도 문화·역사 방문 목적을 확인했습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://mediahub.seoul.go.kr/archives/2017176"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-27112",
+      "sourceId": "27112",
+      "name": "초대길",
+      "localizedNames": {
+        "en": "Chodae-gil Trail",
+        "ja": "チョデギルトレイル"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "서울 강북구 4.19로 114, 근현대사기념관(출발 지점)",
+      "district": "강북구",
+      "coordinates": [
+        127.002830628534,
+        37.6434410661945
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 초대길,순국선열묘역, 근현대사기념관, 수유역, 이준열사, 순례길,역사,둘레길, 신익희, 트레킹",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/초대길/KOP027112?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP027112",
+      "transport": "지하철 4호선 수유(강북구청)역 4번 출구,  수유역정류장  (마을) 강북 01번 승차 – 신성빌라 정류장 하차,  근현대사기념관 도착",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울 강북구 4.19로 114, 근현대사기념관(출발 지점)",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/%EC%B4%88%EB%8C%80%EA%B8%B8/KOP027112",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/초대길/KOP027112?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP027112",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/%EC%B4%88%EB%8C%80%EA%B8%B8/KOP027112",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "서울 강북구에서 출발하는 순례·트레킹 길로, 태그에 둘레길과 트레킹이 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-29048",
+      "sourceId": "29048",
+      "name": "한신옹기",
+      "localizedNames": {
+        "en": "Hanshin Onggi",
+        "ja": "ハンシンオンギ"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04338 서울 용산구 신흥로 7 (용산동2가)",
+      "district": "용산구",
+      "coordinates": [
+        126.986504185678,
+        37.5391526489225
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 포토존, 항아리, 화분, 자기, 이촌, 서울미래유산, 녹사평역, 도자기,옹기, 서울, 해방촌,쌀독, 한신옹기,오래가게,용산구, 장독, 뚝배기",
+      "hours": "토~목 11:00~19:00\r\n금 14:00~18:30",
+      "closedDays": "월요일, 일요일, 공휴일",
+      "officialUrl": "https://futureheritage.seoul.go.kr/web/investigate/aroundHeritageView.do?htId=2719",
+      "transport": "지하철 6호선 녹사평역 2번 출구,  381m",
+      "curationReason": "서울 공식 관광정보가 서울미래유산인 한신옹기를 오래된 도기·도자기 판매점이자 대표 포토존으로 소개하고, 방문시간과 주소를 확인했습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://stage-kr.visitseoul.net/itaewon/%ED%95%9C%EC%8B%A0%EC%98%B9%EA%B8%B0/KOP029048"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-1708",
+      "sourceId": "1708",
+      "name": "국립현대미술관 덕수궁관",
+      "localizedNames": {
+        "en": "National Museum of Modern and Contemporary Art, Deoksugung",
+        "ja": "国立現代美術館徳寿宮館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04519 서울특별시 중구 세종대로 99 (정동)",
+      "district": "중구",
+      "coordinates": [
+        126.973725785222,
+        37.5660868250943
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 미술관,예술,현대미술, 덕수궁돌담길, 관광지, 덕수궁관, 덕수궁미술관,대한문, 전시, 문화, 서울광장, 정동길, 국립현대미술관",
+      "hours": "월요일, 화요일, 목요일, 금요일, 일요일 10:00~18:00 \r\n수요일, 토요일 야간개장 10:00~21:00",
+      "closedDays": " 1월1일, 설날, 추석",
+      "officialUrl": "http://www.mmca.go.kr/",
+      "transport": "지하철 1호선 시청역 1번 출구,  72m",
+      "curationReason": "서울 중구의 국립현대미술관 분관이며, 태그에 미술관·전시가 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-22888",
+      "sourceId": "22888",
+      "name": "숭례문(남대문)",
+      "localizedNames": {
+        "en": "Sungnyemun Gate (Namdaemun)",
+        "ja": "崇礼門（南大門）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04528 서울 중구 세종대로 40 (숭례문(남대문))",
+      "district": "중구",
+      "coordinates": [
+        126.975359779271,
+        37.5599277853801
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "숭례문,남대문,서울여행,서울문화재,광화문,서울사대문, 서울관광,  회현역, 목조건물,서울볼거리,국보, 문화재, 국보제1호,한국문화재",
+      "hours": "화요일~일요일 09:00–18:00",
+      "closedDays": "월요일",
+      "officialUrl": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+      "transport": "지하철 1·4호선, 경의중앙선, 공항철도 서울역 4번 출구에서 258m; 지하철 4호선 회현역 5번 출구에서 403m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "04528 서울 중구 세종대로 40 (숭례문(남대문))",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "화요일~일요일 09:00–18:00",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "월요일",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 1·4호선, 경의중앙선, 공항철도 서울역 4번 출구에서 258m; 지하철 4호선 회현역 5번 출구에서 403m",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/Sungnyemun/KOP022888",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "서울 중구의 숭례문으로, 태그에 국보·문화재·목조건물이 있어 역사 건축물 관람 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43440",
+      "sourceId": "43440",
+      "name": "신락원",
+      "localizedNames": {
+        "en": "Shinrakwon",
+        "ja": "シンラクウォン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "02506 서울 동대문구 전농로20길 2 (전농동)",
+      "district": "동대문구",
+      "coordinates": [
+        127.057164463607,
+        37.5788979681127
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게, 중식,중화요리, 서울시립대,짜장면, 청량리",
+      "hours": "화~토 11:30–22:00, 일요일 11:30–21:00 (휴게시간 15:00–17:00)",
+      "closedDays": "월요일 정기휴무",
+      "officialUrl": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+      "transport": "지하철 1호선·수인분당선·경의중앙선 청량리역 3번 출구에서 1.1km",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "02506 서울 동대문구 전농로20길 2 (전농동)",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "화~토 11:30–22:00, 일요일 11:30–21:00 (휴게시간 15:00–17:00)",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "월요일 정기휴무",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 1호선·수인분당선·경의중앙선 청량리역 3번 출구에서 1.1km",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/2023020/KOP1rnlut",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "서울 동대문구 식당으로, 태그에 중식·중화요리·짜장면이 있어 식사 목적이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-50888",
+      "sourceId": "50888",
+      "name": "역전회관",
+      "localizedNames": {
+        "en": "Yeokjeon Hoegwan",
+        "ja": "ヨクチョン会館"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울시 마포구 토정로37길 47 (염리동 173-21)",
+      "district": "마포구",
+      "coordinates": [
+        126.947016676997,
+        37.542937806474
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "막걸리,마포,낙지볶음,불고기,바싹불고기,오래가게,내한",
+      "hours": "평일 11:00–21:50 (브레이크타임 15:00–17:00); 주말 11:00–21:20 (브레이크타임 15:00–16:30)",
+      "closedDays": "매주 월요일",
+      "officialUrl": "https://www.yukjeon.com/",
+      "transport": "마포역 2번 출구에서 약 400m 직진 후 SK주유소를 끼고 좌회전, 약 100m 이동. 또는 공덕역 1번 출구에서 마포대교 방향으로 직진 후 SK주유소가 보이면 우회전.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울시 마포구 토정로37길 47 (염리동 173-21)",
+            "sourceUrl": "https://www.yukjeon.com/",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "평일 11:00–21:50 (브레이크타임 15:00–17:00); 주말 11:00–21:20 (브레이크타임 15:00–16:30)",
+            "sourceUrl": "https://www.yukjeon.com/",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일",
+            "sourceUrl": "https://www.yukjeon.com/",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "마포역 2번 출구에서 약 400m 직진 후 SK주유소를 끼고 좌회전, 약 100m 이동. 또는 공덕역 1번 출구에서 마포대교 방향으로 직진 후 SK주유소가 보이면 우회전.",
+            "sourceUrl": "https://www.yukjeon.com/",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.yukjeon.com/",
+            "sourceUrl": "https://www.yukjeon.com/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "주소와 음식 태그에 낙지볶음·불고기 등 식당 방문 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-2052",
+      "sourceId": "2052",
+      "name": "하늘물빛 (전통 천연 염색 연구소)",
+      "localizedNames": {
+        "en": "Haneulmulbit Traditional Natural Dyeing Studio",
+        "ja": "ハヌルムルビッ伝統天然染色研究所"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03113 서울 종로구 종로63라길 8 6층 옥상",
+      "district": "종로구",
+      "coordinates": [
+        127.018065848943,
+        37.5746051151834
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "쪽염색,염색,체험,하늘물빛,공방,전통문화체험,오래가게,천연염색",
+      "hours": "월요일~금요일 10:00~17:00\r\n토요일 10:00~14:00",
+      "closedDays": "일요일, 추석 연휴, 공휴일\r\n",
+      "officialUrl": "https://korean.visitseoul.net/attractions/首爾韓方振興中心/KOP002052?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP002052",
+      "transport": "지하철 1/6호선 동묘앞역 2번 출구,   247m",
+      "curationReason": "이름과 태그에 전통 천연 염색 연구소·공방·체험이 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-1932",
+      "sourceId": "1932",
+      "name": "순라길",
+      "localizedNames": {
+        "en": "Sunra-gil",
+        "ja": "スンラギル"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 서순라길 일대. 입력된 상세 주소(03134 서울시 종로구 서순라길 161, 권농동)는 검색 출처에서 확인되지 않음.",
+      "district": "종로구",
+      "coordinates": [
+        126.991788676673,
+        37.5773777611238
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "광화문,역사문학탐방로,안국역,문화공간,순라길,목길,종로",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/순라길/KOP001932?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP001932",
+      "transport": "지하철 1/3/5호선 종로3가역 7번 출구,  471m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 종로구 서순라길 일대. 입력된 상세 주소(03134 서울시 종로구 서순라길 161, 권농동)는 검색 출처에서 확인되지 않음.",
+            "sourceUrl": "https://bookcouncil.jongno.go.kr/record/appendixDownload.do?key=41a6966dcee3fa6145a9892720009eeba7aca0e48719c892c32cc73a6d883794ded1059151babb9a",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "이름과 태그에 순라길·역사문학탐방로가 있어 골목 탐방 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-46812",
+      "sourceId": "46812",
+      "name": "THEO 띠오",
+      "localizedNames": {
+        "en": "THEO",
+        "ja": "THEO（ティオ）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06156 서울 강남구 봉은사로68길 55-3 (삼성동, BANG2011) 지하 1층",
+      "district": "강남구",
+      "coordinates": [
+        127.052810669685,
+        37.5091052569619
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "무료전시,THEO,선정릉,전시회,삼성동전시회,갤러리,미술관",
+      "hours": "화요일~토요일 13:00~19:00",
+      "closedDays": "일요일, 월요일, 공휴일",
+      "officialUrl": "https://gallerytheo.com/",
+      "transport": "지하철 9호선 삼성중앙역 6번 출구에서 539m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "06156 서울 강남구 봉은사로68길 55-3 (삼성동, BANG2011) 지하 1층",
+            "sourceUrl": "https://gallerytheo.com/about/",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "화요일~토요일 13:00~19:00",
+            "sourceUrl": "https://gallerytheo.com/about/",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "일요일, 월요일, 공휴일",
+            "sourceUrl": "https://gallerytheo.com/about/",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 9호선 삼성중앙역 6번 출구에서 539m",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/THEO/KOP9q04ig",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://gallerytheo.com/",
+            "sourceUrl": "https://gallerytheo.com/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "이름과 태그에 갤러리·미술관·무료 전시가 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-3100",
+      "sourceId": "3100",
+      "name": "금호미술관",
+      "localizedNames": {
+        "en": "Kumho Museum of Art",
+        "ja": "クムホ美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03062 서울 종로구 삼청로 18 (사간동, 금호미술관)",
+      "district": "종로구",
+      "coordinates": [
+        126.979912833772,
+        37.5774667074193
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 금호갤러리콘서트,금호아카데미,경복궁역, 경복궁, 문화,전시, 광화문, 안국역, 예술, 광화문역,미술관,금호미술관",
+      "hours": "10:00 ~ 18:00 (17:30 입장 제한)\r\n",
+      "closedDays": "월요일",
+      "officialUrl": "http://www.kumhomuseum.com",
+      "transport": "지하철 3호선 안국역 1번 출구,  620m",
+      "curationReason": "이름과 태그에 미술관·전시가 명시되어 관람 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-6252",
+      "sourceId": "6252",
+      "name": "진관사",
+      "localizedNames": {
+        "en": "Jingwansa Temple",
+        "ja": "津寛寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03308 서울특별시 은평구 진관길 73 (진관동)",
+      "district": "은평구",
+      "coordinates": [
+        126.946513261796,
+        37.6378568370404
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "종교,사찰, 절,고려, 템플스테이,불교, 구파발역,진관사",
+      "hours": "09:00–18:00 (서울 공식 관광정보 및 한국관광공사 안내 기준)",
+      "closedDays": "",
+      "officialUrl": "http://www.jinkwansa.org",
+      "transport": "연신내역: 7211·701번 버스, 하나고 하차. 구파발역: 7211·7723번 버스, 하나고 하차.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03308 서울특별시 은평구 진관길 73 (진관동)",
+            "sourceUrl": "https://www.jinkwansa.org/",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "09:00–18:00 (서울 공식 관광정보 및 한국관광공사 안내 기준)",
+            "sourceUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=89135",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "연신내역: 7211·701번 버스, 하나고 하차. 구파발역: 7211·7723번 버스, 하나고 하차.",
+            "sourceUrl": "https://www.jinkwansa.org/",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "http://www.jinkwansa.org",
+            "sourceUrl": "https://www.jinkwansa.org/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "이름과 태그에 사찰·불교·템플스테이가 명시되어 역사문화 방문 및 체험 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43472",
+      "sourceId": "43472",
+      "name": "불광대장간",
+      "localizedNames": {
+        "en": "Bulgwang Blacksmith",
+        "ja": "プルグァン鍛冶屋"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03396 서울 은평구 통일로69길 15 (대조동)",
+      "district": "은평구",
+      "coordinates": [
+        126.927031323434,
+        37.6111713283271
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "철물, 도끼, 주방칼, 수제, 전통, 대장간, 서울미래유산,불광동, 단조,오래가게, 은평구",
+      "hours": "월요일 ~ 토요일 08:00~18:30",
+      "closedDays": "일요일",
+      "officialUrl": "futureheritage.seoul.go.kr/web/investigate/aroundHeritageView.do?htId=225",
+      "transport": "지하철 3/6호선 불광역 7번 출구,  305m",
+      "curationReason": "전통 대장간·단조·수제 제작이 태그에 명시된 공예 관련 방문지입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-12492",
+      "sourceId": "12492",
+      "name": "오장동함흥냉면",
+      "localizedNames": {
+        "en": "Ojang-dong Hamheung Naengmyeon",
+        "ja": "オジャンドン・ハムフン冷麺"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04559 서울 중구 마른내로 108 (오장동, 오장동함흥냉면)",
+      "district": "중구",
+      "coordinates": [
+        126.999883983625,
+        37.5642721691252
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "홍어회,미쉐린가이드,회냉면,을지로4가역,비빔냉면,물냉면,오장동함흥냉면,을지로맛집",
+      "hours": "월, 목~금 11:00 ~ 20:00 (Break Time 15:30 ~ 17:00)\r\n수, 토~일, 공휴일 11:00 ~ 20:00",
+      "closedDays": "화요일, 명절 휴무",
+      "officialUrl": "https://korean.visitseoul.net/attractions/오장동함흥냉면/KOP012488?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP012488",
+      "transport": "지하철 2 / 5호선 을지로4가역  8번 출구,  351m",
+      "curationReason": "냉면·회냉면 등 음식 태그가 있는 식당입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-3256",
+      "sourceId": "3256",
+      "name": "길상사",
+      "localizedNames": {
+        "en": "Gilsangsa Temple",
+        "ja": "吉祥寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02839 서울특별시 성북구 선잠로5길 68 (성북동)",
+      "district": "성북구",
+      "coordinates": [
+        126.994652153245,
+        37.5991094172211
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "법정스님,침묵의집,수련, 템플스테이,서울벚꽃,길상사,서울사찰,종교,성북동,한성대입구역,절",
+      "hours": "대중법회 및 연중기도 일정에 따라 이용 시간에 차이가 있음",
+      "closedDays": "",
+      "officialUrl": "http://kilsangsa.info",
+      "transport": "지하철 4호선 한성대입구역 6번 출구 앞 정류장에서 성북02번 마을버스를 타고 길상사 정류장에서 하차",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "02839 서울특별시 성북구 선잠로5길 68 (성북동)",
+            "sourceUrl": "https://korean.visitseoul.net/attractions/%25EA%25B8%25B8%25EC%2583%2581%25EC%2582%25AC/KOP003255",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 4호선 한성대입구역 6번 출구 앞 정류장에서 성북02번 마을버스를 타고 길상사 정류장에서 하차",
+            "sourceUrl": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=49dbf1fe-788b-4ed6-8e04-dcf09d35da5d",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "http://kilsangsa.info",
+            "sourceUrl": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=49dbf1fe-788b-4ed6-8e04-dcf09d35da5d",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "서울 사찰이며 템플스테이·수련·문화 방문 목적이 태그에 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-50932",
+      "sourceId": "50932",
+      "name": "평택 고여사집 냉면",
+      "localizedNames": {
+        "en": "Pyeongtaek Goh Yeosa's Naengmyeon",
+        "ja": "平沢・コ女史の冷麺"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03708 서울 서대문구 연희로 81-9 (연희동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.929261397915,
+        37.5656774341986
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "냉면,오래가게,평양냉면,연희동,신촌,수육,평택",
+      "hours": "11:00~20:00 (브레이크타임 15:40~17:00, 라스트오더 19:30)",
+      "closedDays": "월요일",
+      "officialUrl": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+      "transport": "지하철 2호선·경의중앙선·공항철도 홍대입구역 3번 출구에서 1km",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03708 서울 서대문구 연희로 81-9 (연희동)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "11:00~20:00 (브레이크타임 15:40~17:00, 라스트오더 19:30)",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "월요일",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 2호선·경의중앙선·공항철도 홍대입구역 3번 출구에서 1km",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+            "sourceUrl": "https://korean.visitseoul.net/restaurants/Pyeongtaek-GoyeosaJip/KOPs9xa69",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "냉면·수육을 취급하는 음식점임이 이름과 태그에 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43476",
+      "sourceId": "43476",
+      "name": "서울레코드",
+      "localizedNames": {
+        "en": "Seoul Record",
+        "ja": "ソウルレコード"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "서울특별시 종로구 종로 154 1층 (03193)",
+      "district": "종로구",
+      "coordinates": [
+        126.994616749008,
+        37.5702578122921
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 블루레이, 음반, 테이프, CD, LP, 레코드,오래가게, 종로",
+      "hours": "10:00~19:30",
+      "closedDays": "명절 당일",
+      "officialUrl": "https://www.seoulrecord.co.kr/",
+      "transport": "지하철 1/3/5호선 종로3가역 12번 출구,  160m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 종로구 종로 154 1층 (03193)",
+            "sourceUrl": "https://seoulrecord.co.kr/service/guide.php",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.seoulrecord.co.kr/",
+            "sourceUrl": "https://seoulrecord.co.kr/service/guide.php",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "LP·레코드·음반 등 전문 문화 쇼핑 품목이 태그에 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-32528",
+      "sourceId": "32528",
+      "name": "형제대장간",
+      "localizedNames": {
+        "en": "Hyeongje Blacksmith Shop",
+        "ja": "兄弟鍛冶屋"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03504 서울 은평구 수색로 249 (수색동)",
+      "district": "은평구",
+      "coordinates": [
+        126.895989653878,
+        37.5813935447878
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 단조,전통, 수제, 망치, 은평구, 수색동,오래가게, 서울미래유산,철물,대장간",
+      "hours": "07:30~18:30 (동절기에는 좀 더 일찍 닫고, 하절기에는 좀 더 늦게 닫음)",
+      "closedDays": "일요일",
+      "officialUrl": "futureheritage.seoul.go.kr/web/investigate/aroundHeritageView.do?htId=2529",
+      "transport": "수색역에서 도보 약 5분",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03504 서울 은평구 수색로 249 (수색동)",
+            "sourceUrl": "https://www.tripadvisor.co.kr/Attraction_Review-g294197-d21294734-Reviews-Hyeongje_Daejanggan-Seoul.html",
+            "sourceType": "secondary"
+          },
+          "transport": {
+            "value": "수색역에서 도보 약 5분",
+            "sourceUrl": "https://www.tripadvisor.co.kr/Attraction_Review-g294197-d21294734-Reviews-Hyeongje_Daejanggan-Seoul.html",
+            "sourceType": "secondary"
+          }
+        }
+      },
+      "curationReason": "서울미래유산과 서울역사박물관이 형제대장간을 1976년부터 이어 온 서울의 전통 대장간으로 기록합니다. 희소한 전통 수공업을 볼 수 있는 문화 특화 업소로 선정합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://futureheritage.seoul.go.kr/futureHeritageMeet/promotion/list.do?tabNum=03",
+        "https://mediahub.seoul.go.kr/archives/2003617"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-43436",
+      "sourceId": "43436",
+      "name": "수유어묵공장",
+      "localizedNames": {
+        "en": "Suyu Fish Cake Factory",
+        "ja": "スユオムク工場"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "01117 서울 강북구 도봉로67길 18",
+      "district": "강북구",
+      "coordinates": [
+        127.022668132796,
+        37.6307289053601
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "미아동,수유시장,수유전통시장,수제,오래가게,어묵,핫바",
+      "hours": "매일 08:00~21:00",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/2023006/KOPmuqfz0?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOPmuqfz0",
+      "transport": "지하철 4호선 미아역 8번 출구에서 530m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "01117 서울 강북구 도봉로67길 18",
+            "sourceUrl": "https://stage-kr.visitseoul.net/restaurants/2023006/KOPmuqfz0",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "매일 08:00~21:00",
+            "sourceUrl": "https://stage-kr.visitseoul.net/restaurants/2023006/KOPmuqfz0",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철 4호선 미아역 8번 출구에서 530m",
+            "sourceUrl": "https://stage-kr.visitseoul.net/restaurants/2023006/KOPmuqfz0",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://korean.visitseoul.net/attractions/2023006/KOPmuqfz0?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOPmuqfz0",
+            "sourceUrl": "https://stage-kr.visitseoul.net/restaurants/2023006/KOPmuqfz0",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "수제 어묵·핫바가 태그에 명시되어 있어 먹거리 방문 목적에 부합합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-46608",
+      "sourceId": "46608",
+      "name": "경국사",
+      "localizedNames": {
+        "en": "Gyeongguksa Temple",
+        "ja": "慶国寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 성북구 보국문로 113-10",
+      "district": "성북구",
+      "coordinates": [
+        127.004551833207,
+        37.6149594820999
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "삼각산,불교,북한산,사찰,경국사,절",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://www.templestay.com/fe/MI000000000000000062/temple/introView.do?templeIdTmp=Kyungguksa",
+      "transport": "지하철: 4호선 성신여대입구역에서 우이신설선으로 환승해 북한산보국문역 하차, 2번 출구에서 길을 건너 약 100m 이동 후 극락교를 건너 오른쪽 일주문. 버스: 110A, 110B, 143, 162, 1020, 1113번을 타고 경국사·정릉4동주민센터 정류장 하차.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 성북구 보국문로 113-10",
+            "sourceUrl": "https://www.templestay.com/fe/MI000000000000000062/temple/introView.do?templeIdTmp=Kyungguksa",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철: 4호선 성신여대입구역에서 우이신설선으로 환승해 북한산보국문역 하차, 2번 출구에서 길을 건너 약 100m 이동 후 극락교를 건너 오른쪽 일주문. 버스: 110A, 110B, 143, 162, 1020, 1113번을 타고 경국사·정릉4동주민센터 정류장 하차.",
+            "sourceUrl": "https://www.templestay.com/fe/MI000000000000000062/reserve/view.do?bookmarkFlag=&templeFlag=&templeId=Kyungguksa&templestaySeq=19326",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "https://www.templestay.com/fe/MI000000000000000062/temple/introView.do?templeIdTmp=Kyungguksa",
+            "sourceUrl": "https://www.templestay.com/fe/MI000000000000000062/temple/introView.do?templeIdTmp=Kyungguksa",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "사찰·불교 문화 장소로 표시되어 있어 문화 방문지에 해당합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-27472",
+      "sourceId": "27472",
+      "name": "돌 레코드",
+      "localizedNames": {
+        "en": "Dol Records",
+        "ja": "ドルレコード"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "서울특별시 중구 마장로9길 49-29",
+      "district": "중구",
+      "coordinates": [
+        127.017948235192,
+        37.5699026596932
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "레코드, LP판, LD판,오래가게, 테이프, CD, 중고",
+      "hours": "10:00~21:00",
+      "closedDays": "없음",
+      "officialUrl": "https://korean.visitseoul.net/attractions/돌-레코드/KOP027472?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP027472",
+      "transport": "지하철 1/6호선 동묘얖역 5번 출구,  400m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울특별시 중구 마장로9길 49-29",
+            "sourceUrl": "https://oraegage.co.kr/map?id=55",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "LP·LD판과 테이프·CD를 취급하는 음반 전문점으로, 문화 쇼핑 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43448",
+      "sourceId": "43448",
+      "name": "애플하우스",
+      "localizedNames": {
+        "en": "Apple House",
+        "ja": "アップルハウス"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07008 서울 동작구 동작대로27다길 29 (사당동, 서광시티뷰) 2층",
+      "district": "동작구",
+      "coordinates": [
+        126.980662610028,
+        37.4862850569156
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 순대볶음, 분식, 사당동,오래가게, 무침군만두,즉석떡볶이",
+      "hours": "매일 10:30–21:00 (검색된 보조 출처 기준)",
+      "closedDays": "없음",
+      "officialUrl": "https://korean.visitseoul.net/attractions/2023024/KOPc29hhb?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOPc29hhb",
+      "transport": "지하철 4/ 7호선 이수역 10번 출구,  158m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "07008 서울 동작구 동작대로27다길 29 (사당동, 서광시티뷰) 2층",
+            "sourceUrl": "https://www.tabling.co.kr/place/677cca9766de5f06987b91ab",
+            "sourceType": "secondary"
+          },
+          "hours": {
+            "value": "매일 10:30–21:00 (검색된 보조 출처 기준)",
+            "sourceUrl": "https://www.tabling.co.kr/place/677cca9766de5f06987b91ab",
+            "sourceType": "secondary"
+          }
+        }
+      },
+      "curationReason": "분식·즉석떡볶이·무침군만두 등 먹거리가 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-1596",
+      "sourceId": "1596",
+      "name": "정독도서관",
+      "localizedNames": {
+        "en": "Jeongdok Public Library",
+        "ja": "正読図書館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03055 서울 종로구 북촌로5길 48 (정독도서관)",
+      "district": "종로구",
+      "coordinates": [
+        126.983870059299,
+        37.5812654545612
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울대표도서관,서울가볼만한곳,도서관데이트,종로시립도서관,정독도서관,아이들과함께,시립공공도서관,서울아이들과가볼만한곳,서울책읽는곳,서울책빌리는곳,종로가볼만한곳",
+      "hours": "자율학습실\r\n3월~10월 평일 07:00 - 22:00 \r\n3월~10월 주말 07:00 - 22:00 \r\n11월~2월 평일 08:00 - 22:00\r\n11월~2월 주말 08:00 - 22:00\r\n*이용시설마다 이용시간이 상이함.",
+      "closedDays": "-매월 첫째 주, 셋째 주 수요일 \r\n-일요일을 제외한 법정 공휴일\r\n-도서관 사정으로 임시로 정하는 휴일",
+      "officialUrl": "http://jdlib.sen.go.kr/jdlib_index.jsp",
+      "transport": "지하철 3호선 안국역 2번 출구,  720m",
+      "curationReason": "서울 공식 관광정보와 서울시가 정독도서관을 북촌 방문 명소로 소개하고, 옛 학교 건물·정원·서울교육박물관 등 관광·문화 방문 요소를 안내합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://english.visitseoul.net/attractions/Jeongdok-Public-Library/ENP001596",
+        "https://mediahub.seoul.go.kr/archives/2017534"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-37176",
+      "sourceId": "37176",
+      "name": "창경궁 대온실",
+      "localizedNames": {
+        "en": "Changgyeonggung Grand Greenhouse",
+        "ja": "昌慶宮大温室"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03072 서울 종로구 창경궁로 185 (와룡동, 창경궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.993841430623,
+        37.5776239475981
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "창경궁,서울가볼만한곳,창경궁대온실,창경궁데이트,창경궁포토존",
+      "hours": "09:00 ~ 21:00 (12월~2월 09:00 ~ 18:00 )",
+      "closedDays": "월요일",
+      "officialUrl": "http://cgg.cha.go.kr/agapp/main/index.do?siteCd=CGG",
+      "transport": "지하철 4호선 혜화역 4번 출구,  779m",
+      "curationReason": "서울 공식 관광 안내가 창경궁 대온실을 1909년에 지어진 온실 명소로 별도 소개합니다. 창경궁 안의 구체적인 건축·관람 지점이므로 독립 방문 목적을 인정합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/dongdaemun-around/%EC%B0%BD%EA%B2%BD%EA%B6%81-%EB%8C%80%EC%98%A8%EC%8B%A4/KOP037176",
+        "https://royal.khs.go.kr/ROYAL/contents/R702000000.do"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-26192",
+      "sourceId": "26192",
+      "name": "비원떡집",
+      "localizedNames": {
+        "en": "Biwon Rice Cake House",
+        "ja": "秘苑餅店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03055 서울 종로구 북촌로 33-1 (가회동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984878290353,
+        37.5797781373572
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 잣설기, 서울미래유산, 쑥찹쌀떡, 약식, 떡집,궁중떡, 두텁떡, 쌍개피,오래가게",
+      "hours": "매일 10:00 ~ 17:00\r\n*떡 소진시 조기 마감 ",
+      "closedDays": "추석 연휴",
+      "officialUrl": "http://www.biwon.net/",
+      "transport": "지하철 3호선 안국역 2번 출구,  324m ",
+      "curationReason": "떡집 이름과 궁중떡 등 떡 종류 태그, 영업 시간이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-25376",
+      "sourceId": "25376",
+      "name": "을지다방",
+      "localizedNames": {
+        "en": "Eulji Coffee Shop",
+        "ja": "乙支茶房"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "04550 서울 중구 을지로 124-1 2층",
+      "district": "중구",
+      "coordinates": [
+        126.99167977913,
+        37.5661204498117
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 냉커피,쌍화차, 라면, 다방,오래가게,카페, 을지로3가",
+      "hours": "월~토 06:00 ~ 21:00\r\n일 09:00 ~ 20:00",
+      "closedDays": "없음",
+      "officialUrl": "https://korean.visitseoul.net/attractions/EuljI-Tea-House-kr/KOP025376?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP025376",
+      "transport": "지하철 2/3호선 을지로3가역 10번 출구,  44m",
+      "curationReason": "다방 이름과 커피·쌍화차 태그, 영업 시간이 있어 카페 방문 목적이 드러납니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-43488",
+      "sourceId": "43488",
+      "name": "경은상사",
+      "localizedNames": {
+        "en": "Gyeongeun Trading",
+        "ja": "キョンウン商店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03140 서울 종로구 삼일대로 428 낙원상가 2층 B-282호",
+      "district": "종로구",
+      "coordinates": [
+        126.987902476529,
+        37.5727635233966
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "종각역,기타,일렉기타,베이스기타,어쿠스틱기타,클래식기타,오래가게",
+      "hours": "월요일–토요일 10:00–19:00 (공식 사이트 고객센터 운영시간 기준이며, 매장 영업시간인지는 확인되지 않음)",
+      "closedDays": "없음",
+      "officialUrl": "http://acousticgt.co.kr/",
+      "transport": "지하철 1/3/5호선 종로3가역 5번 출구,  106m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03140 서울 종로구 삼일대로 428 낙원상가 2층 B-282호",
+            "sourceUrl": "https://www.acousticgt.co.kr/member/privacy.html",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "월요일–토요일 10:00–19:00 (공식 사이트 고객센터 운영시간 기준이며, 매장 영업시간인지는 확인되지 않음)",
+            "sourceUrl": "https://www.acousticgt.co.kr/product/recent_view_product.html",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "http://acousticgt.co.kr/",
+            "sourceUrl": "https://www.acousticgt.co.kr/member/privacy.html",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "기타 전문점으로 이름과 기타·일렉기타 등 악기 태그가 있어 특화 쇼핑 목적이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-25928",
+      "sourceId": "25928",
+      "name": "납청놋전",
+      "localizedNames": {
+        "en": "Napcheong Brassware",
+        "ja": "ナプチョン鍮器店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "서울 종로구 인사동10길 5 (관훈동)",
+      "district": "종로구",
+      "coordinates": [
+        126.985309826057,
+        37.5741249929142
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "오래가게, 안국역, 이봉주방짜유기,방짜유기, 납청유기, 놋그릇, 이형근방짜유기",
+      "hours": "매장 오픈시간 10:30. 정기 운영시간 전체는 확인되지 않음.",
+      "closedDays": "",
+      "officialUrl": "http://www.napcheong.com",
+      "transport": "인근 지하철역으로 안국역·종각역·종로3가역이 채용 공고에 안내되어 있음. 정확한 도보 경로·거리는 확인되지 않음.",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "서울 종로구 인사동10길 5 (관훈동)",
+            "sourceUrl": "https://www.alba.co.kr/job/Detail?adid=147305740&listmenucd=SIMILARVIEW&recomyn=Y",
+            "sourceType": "secondary"
+          },
+          "hours": {
+            "value": "매장 오픈시간 10:30. 정기 운영시간 전체는 확인되지 않음.",
+            "sourceUrl": "https://www.alba.co.kr/job/Detail?adid=147305740&listmenucd=SIMILARVIEW&recomyn=Y",
+            "sourceType": "secondary"
+          },
+          "transport": {
+            "value": "인근 지하철역으로 안국역·종각역·종로3가역이 채용 공고에 안내되어 있음. 정확한 도보 경로·거리는 확인되지 않음.",
+            "sourceUrl": "https://www.alba.co.kr/job/Detail?adid=147305740&listmenucd=SIMILARVIEW&recomyn=Y",
+            "sourceType": "secondary"
+          }
+        }
+      },
+      "curationReason": "방짜유기·놋그릇 전문점으로, 전통 공예품을 둘러보고 구매할 문화 쇼핑 목적이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-24904",
+      "sourceId": "24904",
+      "name": "내자땅콩",
+      "localizedNames": {
+        "en": "Naeja Peanut Shop",
+        "ja": "ネジャピーナッツ店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03041 서울 종로구 사직로 111 (내자동)",
+      "district": "종로구",
+      "coordinates": [
+        126.971075140727,
+        37.5762640275272
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "땅콩센베이,꽈배기,오래가게",
+      "hours": "11:00 ~ 16:00 (소진시 영업 종료/브레이크타임 13:00 ~ 14:00)",
+      "closedDays": "일요일, 공휴일\r\n",
+      "officialUrl": "https://korean.visitseoul.net/attractions/Naeja-Peanuts-kr/KOP024904?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP024904",
+      "transport": "지하철 3호선 경복궁역 1번 출구, 103m ",
+      "curationReason": "땅콩센베이와 꽈배기를 판매하는 먹거리 가게로 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-5548",
+      "sourceId": "5548",
+      "name": "호림박물관 (신사분관)",
+      "localizedNames": {
+        "en": "Horim Museum (Sinsa Branch)",
+        "ja": "湖林博物館（新沙分館）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06021 서울 강남구 도산대로 317 (신사동, 호림아트센터 1빌딩)",
+      "district": "강남구",
+      "coordinates": [
+        127.036399755802,
+        37.5227003008947
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "신사동, 박물관,강남, 압구정로데오역, 호림박물관, 현대미술, 전시, 호림박물관신사분관,신사역,강남구청역, 고미술",
+      "hours": "AM 10:30 ~ PM 06:00 (입장 마감 PM 5:00)",
+      "closedDays": "-매주 월, 일\r\n-1월 1일\r\n-설날, 추석 연휴",
+      "officialUrl": "https://www.horimmuseum.org/ko",
+      "transport": "지하철 수인분당선 압구정로데오역 5번 출구,  635m",
+      "curationReason": "박물관·전시·고미술 태그와 관람 시간이 있어 전시 관람 장소로 판단됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-48960",
+      "sourceId": "48960",
+      "name": "호호재 서울",
+      "localizedNames": {
+        "en": "Hohojae Seoul",
+        "ja": "ホホジェ・ソウル"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03054 서울 종로구 삼청로 71-7 (팔판동)",
+      "district": "종로구",
+      "coordinates": [
+        126.981153090219,
+        37.5821003632233
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "한옥갤러리,삼청동전시,한국작가,갤러리투어,호호재갤러리,서울갤러리,서울전시",
+      "hours": "화–일 11:00–19:00",
+      "closedDays": "매주 월요일",
+      "officialUrl": "https://www.hohojae.com/home",
+      "transport": "지하철 3호선 안국역 2번 출구에서 약 830m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03054 서울 종로구 삼청로 71-7 (팔판동)",
+            "sourceUrl": "https://www.hohojae.com/location",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "화–일 11:00–19:00",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/hohojae-seoul/KOPbnvhzx",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "매주 월요일",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/hohojae-seoul/KOPbnvhzx",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 3호선 안국역 2번 출구에서 약 830m",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/hohojae-seoul/KOPbnvhzx",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://www.hohojae.com/home",
+            "sourceUrl": "https://www.hohojae.com/home",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "갤러리와 전시 관련 태그, 운영 시간이 있어 관람 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-28332",
+      "sourceId": "28332",
+      "name": "홍익문고",
+      "localizedNames": {
+        "en": "Hongik Bookstore",
+        "ja": "弘益書店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03779 서울 서대문구 연세로 2 (창천동, 홍익문고)",
+      "district": "서대문구",
+      "coordinates": [
+        126.937043755972,
+        37.5557853830354
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 문구류, 팬시, 홍익문고, 홍대서점, 서울서점,오래가게, 신촌역, 연세대, 서강대,서점, 서울미래유산",
+      "hours": "10:00~21:30",
+      "closedDays": "명절 당일",
+      "officialUrl": "https://cafe.naver.com/hongikbook",
+      "transport": "지하철 2호선 신촌역 3번 출구에서 약 30m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03779 서울 서대문구 연세로 2 (창천동, 홍익문고)",
+            "sourceUrl": "https://bookshop.or.kr/home/bookstore/searchView.do?idx=10418",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 2호선 신촌역 3번 출구에서 약 30m",
+            "sourceUrl": "https://english.visitseoul.net/attractions/hongik%20bookstore/ENP028332",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://cafe.naver.com/hongikbook",
+            "sourceUrl": "https://bookshop.or.kr/home/bookstore/searchView.do?idx=10418",
+            "sourceType": "public"
+          }
+        }
+      },
+      "curationReason": "서점으로 명시되어 있고 오래가게·서울미래유산 태그가 있어 책을 둘러보는 문화 쇼핑 장소입니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-5668",
+      "sourceId": "5668",
+      "name": "북촌동양문화박물관",
+      "localizedNames": {
+        "en": "Bukchon Oriental Culture Museum",
+        "ja": "北村東洋文化博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03052 서울 종로구 북촌로11길 76",
+      "district": "종로구",
+      "coordinates": [
+        126.983370412821,
+        37.5839903499019
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "문화,안국역,박물관,광화문,북촌한옥마을,전시,동양문화,북촌동양문화박물관,역사",
+      "hours": "10:00~18:30",
+      "closedDays": "매일 운영으로 기재됨. 다만 박물관 사정으로 임시 휴관할 수 있으므로 방문 전 확인 권고.",
+      "officialUrl": "https://blog.naver.com/baamuseum",
+      "transport": "지하철 3호선 안국역 2번 출구에서 903m",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03052 서울 종로구 북촌로11길 76",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B6%81%EC%B4%8C%EB%8F%99%EC%96%91%EB%AC%B8%ED%99%94%EB%B0%95%EB%AC%BC%EA%B4%80/KOP005667",
+            "sourceType": "public"
+          },
+          "hours": {
+            "value": "10:00~18:30",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B6%81%EC%B4%8C%EB%8F%99%EC%96%91%EB%AC%B8%ED%99%94%EB%B0%95%EB%AC%BC%EA%B4%80/KOP005667",
+            "sourceType": "public"
+          },
+          "closedDays": {
+            "value": "매일 운영으로 기재됨. 다만 박물관 사정으로 임시 휴관할 수 있으므로 방문 전 확인 권고.",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B6%81%EC%B4%8C%EB%8F%99%EC%96%91%EB%AC%B8%ED%99%94%EB%B0%95%EB%AC%BC%EA%B4%80/KOP005667",
+            "sourceType": "public"
+          },
+          "transport": {
+            "value": "지하철 3호선 안국역 2번 출구에서 903m",
+            "sourceUrl": "https://stage-kr.visitseoul.net/attractions/%EB%B6%81%EC%B4%8C%EB%8F%99%EC%96%91%EB%AC%B8%ED%99%94%EB%B0%95%EB%AC%BC%EA%B4%80/KOP005667",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "https://blog.naver.com/baamuseum",
+            "sourceUrl": "https://www.yugacrew.com/seoul/jongno/museum/26_111",
+            "sourceType": "secondary"
+          }
+        }
+      },
+      "curationReason": "박물관·전시·동양문화·역사 태그와 운영 시간이 확인됩니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-48452",
+      "sourceId": "48452",
+      "name": "한강초교앞보도육교",
+      "localizedNames": {
+        "en": "Pedestrian Overpass by Hangang Elementary School",
+        "ja": "漢江小学校前歩道橋"
+      },
+      "category": "Nature",
+      "placeType": "landmark_viewpoint",
+      "address": "서울 용산구 한강로3가",
+      "district": "용산구",
+      "coordinates": [
+        126.962182447512,
+        37.5276608637792
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울사진스팟,야경맛집,용산가볼만한곳",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/hangangelementaryschooloverpass/KOPlwvkl4?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOPlwvkl4",
+      "transport": "지하철 4호선 신용산역 2번출구,  445m",
+      "curationReason": "서울 공식 관광정보가 이 보도육교를 용산 도심과 남산 야경을 감상하는 뷰포인트로 소개하고 매일 무료 이용 가능하다고 안내합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/attractions/hangangelementaryschooloverpass/KOPlwvkl4"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-3164",
+      "sourceId": "3164",
+      "name": "남포면옥(중구)",
+      "localizedNames": {
+        "en": "Nampo Myeonok (Jung-gu)",
+        "ja": "ナンポミョノク（中区）"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "04522 서울특별시 중구 을지로3길 24 (다동)",
+      "district": "중구",
+      "coordinates": [
+        126.981675952718,
+        37.5671463662203
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "을지로맛집,갈비탕,냉면,남포면옥,어복쟁반",
+      "hours": "월요일 ~ 금요일 11:00 ~ 22:00\r\n토요일 ~ 일요일 11:00 ~ 21:00",
+      "closedDays": "",
+      "officialUrl": "https://korean.visitseoul.net/attractions/남포면옥중구/KOP003160?utm_source=seoulopendata&utm_medium=attractions&utm_content=KOP003160",
+      "transport": "지하철 2호선 을지로입구역 1-1번 출구,  150m",
+      "curationReason": "식당으로 소개되며 냉면·갈비탕·어복쟁반 등 음식이 명시되어 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-2388",
+      "sourceId": "2388",
+      "name": "아라리오갤러리 서울",
+      "localizedNames": {
+        "en": "Arario Gallery Seoul",
+        "ja": "アラリオギャラリー・ソウル"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03058 서울 종로구 율곡로 85 아라리오갤러리",
+      "district": "종로구",
+      "coordinates": [
+        126.988514892719,
+        37.5778802427982
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "아라리오갤러리,문화,미술,화랑,아라리오,서울전시,현대미술,전시,북촌,종로,갤러리,삼청동,예술,광화문",
+      "hours": "11:00~18:00",
+      "closedDays": "일요일, 월요일, 새해, 추석 연휴",
+      "officialUrl": "http://www.arariogallery.com/",
+      "transport": "지하철 3호선 안국역 3번 출구,  180m",
+      "curationReason": "갤러리·현대미술·전시 태그와 운영시간이 제시되어 관람 목적이 분명합니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-34860",
+      "sourceId": "34860",
+      "name": "전태일기념관",
+      "localizedNames": {
+        "en": "Jeon Tae-il Memorial Hall",
+        "ja": "全泰壱記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03191 서울특별시 종로구 청계천로 105",
+      "district": "종로구",
+      "coordinates": [
+        126.989300313392,
+        37.5684664512813
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "전태일기념관",
+      "hours": "3~10월 10:00~18:00, 11~2월 10:00~17:30",
+      "closedDays": "매주 월요일, 1월 1일, 설날·추석 당일",
+      "officialUrl": "http://taeil.org",
+      "transport": "지하철: 1호선 종로3가역 15번 출구, 2호선 을지로3가역 1·2번 출구. 버스: 청계2가·수표교·청계2가 교차로 정류장, 간선 470·501·741·173",
+      "enrichedInfo": {
+        "researchedAt": "2026-10-25",
+        "fields": {
+          "address": {
+            "value": "03191 서울특별시 종로구 청계천로 105",
+            "sourceUrl": "https://taeil.org/permanent5",
+            "sourceType": "official"
+          },
+          "hours": {
+            "value": "3~10월 10:00~18:00, 11~2월 10:00~17:30",
+            "sourceUrl": "https://taeil.org/permanent5",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 월요일, 1월 1일, 설날·추석 당일",
+            "sourceUrl": "https://taeil.org/permanent5",
+            "sourceType": "official"
+          },
+          "transport": {
+            "value": "지하철: 1호선 종로3가역 15번 출구, 2호선 을지로3가역 1·2번 출구. 버스: 청계2가·수표교·청계2가 교차로 정류장, 간선 470·501·741·173",
+            "sourceUrl": "https://culture.seoul.go.kr/culture/culture/cultureSpace/view.do?facCode=101645&menuNo=200119",
+            "sourceType": "public"
+          },
+          "officialUrl": {
+            "value": "http://taeil.org",
+            "sourceUrl": "https://taeil.org/permanent5",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "원천의 전시·소장품·과학·역사 안내를 근거로 관람 목적이 있는 박물관·미술관·전시 공간으로 판단했습니다.",
+      "reviewedAt": "2026-10-19",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-4696",
+      "sourceId": "4696",
+      "name": "청계천박물관",
+      "localizedNames": {
+        "en": "Cheonggyecheon Museum",
+        "ja": "清渓川博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04704 서울 성동구 청계천로 530 (마장동, 청계천박물관)",
+      "district": "성동구",
+      "coordinates": [
+        127.03504316401,
+        37.5712661734969
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 제기동역,역사,전시관, 생태, 청계천박물관, 청계천문화관,청계천,두물다리",
+      "hours": "09:00 ~ 18:00(입장마감 : 17:30)",
+      "closedDays": "-월요일\r\n-1월 1일",
+      "officialUrl": "https://museum.seoul.go.kr/cgcm/index.do",
+      "transport": "지하철 2호선 용두역 5번 출구,  497m",
+      "curationReason": "박물관·전시관으로 명시되어 청계천의 역사·생태 전시 관람 목적이 있습니다.",
+      "reviewedAt": "2026-11-07",
+      "evidenceUrls": [],
+      "operatingStatus": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,7011 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "서울시 관광 명소",
+    "datasetUrl": "https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do",
+    "serviceName": "TbVwAttractions",
+    "license": "공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)",
+    "retrievedAt": "2026-11-07T11:46:39.966Z"
+  },
+  "detailShardCount": 4,
+  "places": [
+    {
+      "id": "seoul-attraction-53539",
+      "sourceId": "53539",
+      "name": "63 스카이피크닉",
+      "localizedNames": {
+        "en": "63 Sky Picnic",
+        "ja": "63スカイピクニック"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "07345 서울 영등포구 63로 50 (여의도동, 63한화생명빌딩) 63스카이피크닉 60F",
+      "district": "영등포구",
+      "coordinates": [
+        126.939909338068,
+        37.5196641552816
+      ],
+      "tags": "전시,루프탑,63빌딩전망대,서울야경,서울전망대,63빌딩"
+    },
+    {
+      "id": "seoul-attraction-15338",
+      "sourceId": "15338",
+      "name": "1898 명동성당",
+      "localizedNames": {
+        "en": "1898 Myeongdong Cathedral",
+        "ja": "1898明洞聖堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울시 중구 명동길 74 (명동2가 1-1), 지하 1층",
+      "district": "중구",
+      "coordinates": [
+        126.986775823267,
+        37.5636758699882
+      ],
+      "tags": " 1898광장,명동,명동대성당,명동나들이,성당,복합문화공간, 고딕"
+    },
+    {
+      "id": "seoul-attraction-53481",
+      "sourceId": "53481",
+      "name": "GALLERY J. ONE",
+      "localizedNames": {
+        "en": "GALLERY J. ONE",
+        "ja": "GALLERY J. ONE"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03054 서울 종로구 팔판길 13 (팔판동)",
+      "district": "종로구",
+      "coordinates": [
+        126.980738496133,
+        37.5825613346848
+      ],
+      "tags": "갤러리제이원,갤러리제이원서울,GalleryJONE,아트컬렉팅,GalleryJONESeoul,삼청동전시,삼청동갤러리,북촌전시,북촌갤러리,경복궁전시,팔판동,종로전시,삼청나잇,kiaf,서울전시"
+    },
+    {
+      "id": "seoul-attraction-37044",
+      "sourceId": "37044",
+      "name": "KCDF갤러리",
+      "localizedNames": {
+        "en": "KCDF Gallery",
+        "ja": "KCDFギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03145 서울 종로구 인사동11길 8 (관훈동, 공예종합유통지원센터)",
+      "district": "종로구",
+      "coordinates": [
+        126.984128478814,
+        37.5740079809751
+      ],
+      "tags": "kcdf,디자인,공예,한국공예디자인문화진흥원,공예전문갤러리"
+    },
+    {
+      "id": "seoul-attraction-24732",
+      "sourceId": "24732",
+      "name": "SJ쿤스트할레",
+      "localizedNames": {
+        "en": "SJ Kunsthalle",
+        "ja": "SJクンストハレ"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "06054 서울 강남구 언주로148길 5 (논현동)",
+      "district": "강남구",
+      "coordinates": [
+        127.034917264221,
+        37.5205086087205
+      ],
+      "tags": "타이거버스, 강남구청역,압구정로데오거리, SJ쿤스트할레, 시티투어버스정류장,문화예술플랫품"
+    },
+    {
+      "id": "seoul-attraction-2885",
+      "sourceId": "2885",
+      "name": "PKM갤러리",
+      "localizedNames": {
+        "en": "PKM Gallery",
+        "ja": "PKMギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03049 서울 종로구 삼청로7길 40 (삼청동, 피케이엠 갤러리)",
+      "district": "종로구",
+      "coordinates": [
+        126.980082350686,
+        37.5840916531266
+      ],
+      "tags": " 갤러리투어, 회화,한옥, 화랑,삼청동갤러리, 조각, 윈도우갤러리, 미술관, 안국역, PKM갤러리,광화문,영상"
+    },
+    {
+      "id": "seoul-attraction-50533",
+      "sourceId": "50533",
+      "name": "e스포츠 명예의 전당",
+      "localizedNames": {
+        "en": "Esports Hall of Fame",
+        "ja": "eスポーツ名誉の殿堂"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03909  서울시 마포구 매봉산로 31 에스플렉스센터 시너지움 11층",
+      "district": "마포구",
+      "coordinates": [
+        126.889972593033,
+        37.5757269662412
+      ],
+      "tags": "e스포츠 전시,스튜디오체험,VR,서울전시,전시관,e스포츠 명예의 전당"
+    },
+    {
+      "id": "seoul-attraction-28338",
+      "sourceId": "28338",
+      "name": "ECC(Ewha Campus Complex)",
+      "localizedNames": {
+        "en": "Ewha Campus Complex (ECC)",
+        "ja": "梨花キャンパス・コンプレックス（ECC）"
+      },
+      "category": "Culture",
+      "placeType": "campus_architecture",
+      "address": "03760 서울 서대문구 이화여대길 52 (대현동, 이화여자대학교)",
+      "district": "서대문구",
+      "coordinates": [
+        126.950288837762,
+        37.5644645178259
+      ],
+      "tags": " 공연, 강의실, 이대, 홍대, 전시관,이화여자대학교, EwhaCampusComplex,ECC, 독서실"
+    },
+    {
+      "id": "seoul-attraction-52620",
+      "sourceId": "52620",
+      "name": "감사의 정원",
+      "localizedNames": {
+        "en": "Garden of Gratitude",
+        "ja": "感謝の庭"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03154 서울 종로구 세종대로 지하 172 (세종로, 5호선 광화문역)",
+      "district": "종로구",
+      "coordinates": [
+        126.976787992565,
+        37.5716228232824
+      ],
+      "tags": "광화문광장,전시 해설,감사의 정원,감사의 빛 23,프리덤 홀"
+    },
+    {
+      "id": "seoul-attraction-2012",
+      "sourceId": "2012",
+      "name": "경인미술관",
+      "localizedNames": {
+        "en": "Kyungin Museum of Fine Art",
+        "ja": "京仁美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03146 서울 종로구 인사동10길 11-4",
+      "district": "종로구",
+      "coordinates": [
+        126.985723489033,
+        37.5745908579478
+      ],
+      "tags": "오래가게, 서울전시, 서울미술관,인사동오래가게, 미술관, 경인미술관, 전시회, 문화, 인사동, 문화, 미술관, 경인미술관, 전시회"
+    },
+    {
+      "id": "seoul-attraction-20549",
+      "sourceId": "20549",
+      "name": "경찰박물관",
+      "localizedNames": {
+        "en": "Police Museum",
+        "ja": "警察博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03166 서울특별시 종로구 송월길 162(행촌동)",
+      "district": "종로구",
+      "coordinates": [
+        126.962191028162,
+        37.5720537809294
+      ],
+      "tags": "어린이체험관,박물관,서울여행,아이와서울여행,어린이와함께,경찰기념관,서울아이와함께가볼만한곳,경찰,서대문경찰박물관,경찰박물관,종로가볼만한곳"
+    },
+    {
+      "id": "seoul-attraction-1647",
+      "sourceId": "1647",
+      "name": "국립민속박물관",
+      "localizedNames": {
+        "en": "National Folk Museum of Korea",
+        "ja": "国立民俗博物館（韓国）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03045 서울 종로구 삼청로 37 (세종로, 국립민속박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.978889955558,
+        37.5816745310255
+      ],
+      "tags": "박물관, 인사동,삼청동, 생활문화,광화문,역사, 추억의거리,국립민속박물관,경복궁, 시티투어버스정류장"
+    },
+    {
+      "id": "seoul-attraction-2084",
+      "sourceId": "2084",
+      "name": "가나아트센터",
+      "localizedNames": {
+        "en": "Gana Art Center",
+        "ja": "ガナ・アートセンター"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03004 서울 종로구 평창30길 28 (가나아트센타)",
+      "district": "종로구",
+      "coordinates": [
+        126.97512913242,
+        37.6122904729365
+      ],
+      "tags": "아트센터,김종구,경복궁역,종로갤러리,가나아트센터,미술관,문화,예술,윤종석,심상풍경"
+    },
+    {
+      "id": "seoul-attraction-433",
+      "sourceId": "433",
+      "legacyId": "national-museum-korea",
+      "name": "국립중앙박물관",
+      "localizedNames": {
+        "en": "National Museum of Korea",
+        "ja": "国立中央博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04383 서울 용산구 서빙고로 137 (국립중앙박물관)",
+      "district": "용산구",
+      "coordinates": [
+        126.977740246542,
+        37.5247022357875
+      ],
+      "tags": "용산구,국립중앙,이촌역,유물, 박물관,시티투어버스, 국립중앙박물관, 역사,관람,국립,어린이박물관"
+    },
+    {
+      "id": "seoul-attraction-2066",
+      "sourceId": "2066",
+      "name": "김종영 미술관",
+      "localizedNames": {
+        "en": "Kim Chong Yung Museum",
+        "ja": "キム・ジョンヨン美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03004 서울특별시 종로구 평창32길 30  (평창동)",
+      "district": "종로구",
+      "coordinates": [
+        126.977511093535,
+        37.6130366993851
+      ],
+      "tags": "현대조각,김종영,전시, 경복궁역, 갤러리, 길음역, 미술관, 서울 미술관, 서울 전시,김종영미술관, 광화문역, 평창동, 문화"
+    },
+    {
+      "id": "seoul-attraction-55059",
+      "sourceId": "55059",
+      "name": "대도식당 왕십리본점",
+      "localizedNames": {
+        "en": "Daedo Sikdang Wangsimni Main Branch",
+        "ja": "大道食堂 往十里本店"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "04706 서울 성동구 무학로12길 3 (홍익동, 대도식당)",
+      "district": "성동구",
+      "coordinates": [
+        127.030645905854,
+        37.5674071718066
+      ],
+      "tags": "오래가게,가족외식,노포,깍두기볶음밥,대도식당,한우 등심,왕십리 한우,왕십리 맛집"
+    },
+    {
+      "id": "seoul-attraction-6668",
+      "sourceId": "6668",
+      "name": "대한민국역사박물관",
+      "localizedNames": {
+        "en": "National Museum of Korean Contemporary History",
+        "ja": "大韓民国歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03141 서울시 종로구 세종대로 198 (세종로)",
+      "district": "종로구",
+      "coordinates": [
+        126.978339442463,
+        37.5737136067193
+      ],
+      "tags": " 전시,역사체험학습,박물관,경복궁역,야경,광화문, 광화문역,종각역, 역사박물관,독립선언서, 전망대,대한민국역사박물관"
+    },
+    {
+      "id": "seoul-attraction-6927",
+      "sourceId": "6927",
+      "name": "경희대학교 중앙박물관",
+      "localizedNames": {
+        "en": "Kyung Hee University Central Museum",
+        "ja": "慶熙大学校中央博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02447 서울특별시 동대문구 경희대로 26 경희대학교 서울캠퍼스 중앙도서관 4층",
+      "district": "동대문구",
+      "coordinates": [
+        127.054890960564,
+        37.5939491407769
+      ],
+      "tags": "회기역, 박물관,경희대학교,빗살무늬토기, 경희대학교중앙박물관, 유물, 경희대, 전시,역사, 주먹도끼,중앙도서관"
+    },
+    {
+      "id": "seoul-attraction-10231",
+      "sourceId": "10231",
+      "name": "서울도서관 (옛 서울시청사)",
+      "localizedNames": {
+        "en": "Seoul Metropolitan Library (Former Seoul City Hall)",
+        "ja": "ソウル図書館（旧ソウル市庁舎）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04524 서울특별시 중구 세종대로 110 (태평로1가)",
+      "district": "중구",
+      "coordinates": [
+        126.977918351844,
+        37.566370776634
+      ],
+      "tags": "공공도서관,시청사통통투어,도서관,서울시청사,시청,문화,서울도서관,을지로역,시청역,광화문"
+    },
+    {
+      "id": "seoul-attraction-54586",
+      "sourceId": "54586",
+      "name": "서울시립 미술아카이브",
+      "localizedNames": {
+        "en": "Seoul Museum of Art Archives",
+        "ja": "ソウル市立美術アーカイブ"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03004 서울 종로구 평창문화로 101 (평창동)",
+      "district": "종로구",
+      "coordinates": [
+        126.97190179486,
+        37.6078008399411
+      ],
+      "tags": "서울시립미술관,서울전시,현대미술,문화예술,미술아카이브"
+    },
+    {
+      "id": "seoul-attraction-55377",
+      "sourceId": "55377",
+      "name": "서울시립 서서울미술관",
+      "localizedNames": {
+        "en": "Seoul Museum of Art Seosomun",
+        "ja": "ソウル市立西ソウル美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "08611 서울 금천구 시흥대로79길 65 (독산동)",
+      "district": "금천구",
+      "coordinates": [
+        126.895539272251,
+        37.4577462883391
+      ],
+      "tags": "서서울미술관,서울시립미술관,SeMA,뉴미디어,현대미술,금천구,예술관광,무료전시"
+    },
+    {
+      "id": "seoul-attraction-2723",
+      "sourceId": "2723",
+      "name": "서울역사박물관",
+      "localizedNames": {
+        "en": "Seoul Museum of History",
+        "ja": "ソウル歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03177 서울 종로구 새문안로 55 (신문로2가, 서울역사박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.97107522045,
+        37.5704968494713
+      ],
+      "tags": "문화체험, 광화문, 터치뮤지엄, 경희궁, 서대문역, 전통,서울역사박물관,경복궁역, 역사,박물관,유물, 광화문역"
+    },
+    {
+      "id": "seoul-attraction-55066",
+      "sourceId": "55066",
+      "name": "성수족발",
+      "localizedNames": {
+        "en": "Seongsu Jokbal",
+        "ja": "聖水チョッパル"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "04793 서울 성동구 아차산로7길 7 (성수동2가, 동진빌딩) 1층",
+      "district": "성동구",
+      "coordinates": [
+        127.054270741555,
+        37.5459871942742
+      ],
+      "tags": "오래가게,성수동 맛집,성수역 맛집,성수 족발,서울 3대 족발,포장,족발"
+    },
+    {
+      "id": "seoul-attraction-55363",
+      "sourceId": "55363",
+      "name": "세종마을 음식문화거리",
+      "localizedNames": {
+        "en": "Sejong Village Food Culture Street",
+        "ja": "世宗村飲食文化通り"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03041 서울 종로구 자하문로1길 24",
+      "district": "종로구",
+      "coordinates": [
+        126.971062024195,
+        37.5765172037421
+      ],
+      "tags": "세종마을음식문화거리,금천교시장,서촌맛집,경복궁역맛집,서촌,종로구,먹자골목,한식"
+    },
+    {
+      "id": "seoul-attraction-1153",
+      "sourceId": "1153",
+      "name": "양화진외국인선교사묘원",
+      "localizedNames": {
+        "en": "Yanghwajin Foreign Missionary Cemetery",
+        "ja": "楊花津外国人宣教師墓苑"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04084 서울 마포구 양화진길 46 (합정동, 양화진홍보관)",
+      "district": "마포구",
+      "coordinates": [
+        126.911769148865,
+        37.5465227992805
+      ],
+      "tags": "홍대,양화진,합정동,합정역,선교사, 한국선교기념관,양화진외국인선교사묘원,기념관"
+    },
+    {
+      "id": "seoul-attraction-55077",
+      "sourceId": "55077",
+      "name": "영화장",
+      "localizedNames": {
+        "en": "Yeonghwajang",
+        "ja": "ヨンファジャン"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "02419 서울 동대문구 휘경로 3-8 (이문동)",
+      "district": "동대문구",
+      "coordinates": [
+        127.060942053934,
+        37.5965814813787
+      ],
+      "tags": "오래가게,삼선간짜장,백짬뽕,탕수육,화교 중식당,영화장,이문동 맛집,외대앞 맛집"
+    },
+    {
+      "id": "seoul-attraction-471",
+      "sourceId": "471",
+      "name": "운현궁",
+      "localizedNames": {
+        "en": "Unhyeongung",
+        "ja": "雲峴宮"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03131 서울 종로구 삼일대로 464 (운현궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.986981427118,
+        37.5756967940777
+      ],
+      "tags": "데이트코스,서울고궁투어,서울여행,운현궁,서울나들이여행,서울궁궐,한국궁궐,서울,서울볼거리,서울가볼만한곳,종묘,서울산책코스"
+    },
+    {
+      "id": "seoul-attraction-54317",
+      "sourceId": "54317",
+      "name": "경춘철교 음악분수",
+      "localizedNames": {
+        "en": "Gyeongchun Railway Bridge Musical Fountain",
+        "ja": "京春鉄道橋の音楽噴水"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "01908 서울시 노원구 월계동 224-3 경춘철교",
+      "district": "노원구",
+      "coordinates": [
+        127.064211225722,
+        37.6297138767489
+      ],
+      "tags": "레이저쇼,노원야경,중랑천,음악분수,경춘철교,야간명소"
+    },
+    {
+      "id": "seoul-attraction-53911",
+      "sourceId": "53911",
+      "name": "디뮤지엄 (D MUSEUM)",
+      "localizedNames": {
+        "en": "D Museum",
+        "ja": "Dミュージアム"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04769 서울 성동구 왕십리로 83-21 (성수동1가, 아크로 서울포레스트)",
+      "district": "성동구",
+      "coordinates": [
+        127.043357753557,
+        37.5441547484979
+      ],
+      "tags": "예술,문화,대림미술관,디뮤지엄,서울숲,서울전시"
+    },
+    {
+      "id": "seoul-attraction-42350",
+      "sourceId": "42350",
+      "name": "박노수미술관",
+      "localizedNames": {
+        "en": "Park No-soo Art Museum",
+        "ja": "パク・ノス美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03034 서울 종로구 옥인1길 34 (옥인동, 박노수 가옥)",
+      "district": "종로구",
+      "coordinates": [
+        126.966818545949,
+        37.5813191962491
+      ],
+      "tags": "박노수미술관"
+    },
+    {
+      "id": "seoul-attraction-55265",
+      "sourceId": "55265",
+      "name": "박서보미술관",
+      "localizedNames": {
+        "en": "Park Seo-Bo Museum",
+        "ja": "朴栖甫美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03723 서울특별시 서대문구 연희로24길 9-54",
+      "district": "서대문구",
+      "coordinates": [
+        126.935600689093,
+        37.5718119760327
+      ],
+      "tags": "연희동,묘법,단색화,박서보,박서보미술관,연희동산책,서대문구,연희동미술관"
+    },
+    {
+      "id": "seoul-attraction-5797",
+      "sourceId": "5797",
+      "name": "종이나라박물관",
+      "localizedNames": {
+        "en": "Jong Ie Nara Paper Museum",
+        "ja": "紙나라博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중구 장충단로 166, 종이나라빌딩 2층",
+      "district": "중구",
+      "coordinates": [
+        127.006153920631,
+        37.5596497157976
+      ],
+      "tags": "미술,박물관,종이인형,종이나라박물관,전통,동대입구역,한지그림,색지공예,종이접기,한지,종이공예"
+    },
+    {
+      "id": "seoul-attraction-27812",
+      "sourceId": "27812",
+      "name": "가원공방",
+      "localizedNames": {
+        "en": "Gawon Craft Workshop",
+        "ja": "カウォン工房"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03138 서울 종로구 돈화문로6나길 45 (봉익동)",
+      "district": "종로구",
+      "coordinates": [
+        126.992294774883,
+        37.5723524974576
+      ],
+      "tags": " 종로귀금속거리, 종로5, 공방,오래가게, 종로,옥공예, 전통"
+    },
+    {
+      "id": "seoul-attraction-46391",
+      "sourceId": "46391",
+      "name": "갤러리모순",
+      "localizedNames": {
+        "en": "Gallery MOSOON",
+        "ja": "Gallery MOSOON"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 종로구 사직로10길 4 (필운동)",
+      "district": "종로구",
+      "coordinates": [
+        126.970348686669,
+        37.5757397388119
+      ],
+      "tags": "갤러리,신아기념관,덕수궁돌담길,정동길,정동"
+    },
+    {
+      "id": "seoul-attraction-54753",
+      "sourceId": "54753",
+      "name": "서울시청 하늘전망대",
+      "localizedNames": {
+        "en": "Seoul City Hall Sky Observatory",
+        "ja": "ソウル市庁空の展望台"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "04524 서울 중구 세종대로 110 서울시청 본관 9층",
+      "district": "중구",
+      "coordinates": [
+        126.977918351844,
+        37.566370776634
+      ],
+      "tags": "서울야경,도심전망,시청역,세종대로,숭례문,광화문,서울시청,덕수궁,하늘전망대,무료전망대"
+    },
+    {
+      "id": "seoul-attraction-28050",
+      "sourceId": "28050",
+      "name": "경기떡집",
+      "localizedNames": {
+        "en": "Gyeonggi Tteok House",
+        "ja": "キョンギ餅店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04013 서울 마포구 동교로9길 24 (망원동)",
+      "district": "마포구",
+      "coordinates": [
+        126.910304381602,
+        37.5550438760879
+      ],
+      "tags": "마포,망원동,이티떡,오래가게,이북식인절미,설기"
+    },
+    {
+      "id": "seoul-attraction-38243",
+      "sourceId": "38243",
+      "name": "서울생활사박물관",
+      "localizedNames": {
+        "en": "Seoul Museum of Living History",
+        "ja": "ソウル生活史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01849 서울 노원구 동일로174길 27 (공릉동) 서울생활사박물관",
+      "district": "노원구",
+      "coordinates": [
+        127.076936195632,
+        37.6201739154268
+      ],
+      "tags": "서울,서울박물관,서울전시추천,비오는날,서울전시,서울나들이,경춘선엠티의추억,서울생활사박물관,서울아이와갈만한곳,서울가볼만한곳"
+    },
+    {
+      "id": "seoul-attraction-2435",
+      "sourceId": "2435",
+      "name": "연세대학교 스팀슨관&언더우드관&아펜젤러관",
+      "localizedNames": {
+        "en": "Yonsei University Stimson, Underwood & Appenzeller Halls",
+        "ja": "延世大学校スティムソン館・アンダーウッド館・アッペンツェラー館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03722 서울특별시 서대문구 연세로 50 (신촌동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.943916239886,
+        37.5660508394158
+      ],
+      "tags": " 홍대,신촌역,신촌캠퍼스, 유적지, 아펜젤러, 스팀슨, 언더우드, 배재학당,연세대학교"
+    },
+    {
+      "id": "seoul-attraction-2299",
+      "sourceId": "2299",
+      "name": "태릉, 강릉",
+      "localizedNames": {
+        "en": "Taereung and Gangneung Royal Tombs",
+        "ja": "泰陵・康陵"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "(01794) 서울 노원구 화랑로 681",
+      "district": "노원구",
+      "coordinates": [
+        127.097473658713,
+        37.6301539234948
+      ],
+      "tags": "태릉선수촌,화랑대역,노원구,왕릉,태릉,강릉,유적지"
+    },
+    {
+      "id": "seoul-attraction-53992",
+      "sourceId": "53992",
+      "name": "퐁피두센터 한화",
+      "localizedNames": {
+        "en": "Centre Pompidou Hanwha",
+        "ja": "ポンピドゥー・センター・ハンファ"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "07345 서울 영등포구 63로 50 63빌딩 별관",
+      "district": "영등포구",
+      "coordinates": [
+        126.939909338068,
+        37.5196641552816
+      ],
+      "tags": "퐁피두센터,여의도,한화문화재단,퐁피두센터,파리,한화,근현대미술,현대미술관,63빌딩,기획,전시,문화예술,공간"
+    },
+    {
+      "id": "seoul-attraction-52697",
+      "sourceId": "52697",
+      "name": "한양도성박물관",
+      "localizedNames": {
+        "en": "Hanyangdoseong Museum",
+        "ja": "漢陽都城博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03098 서울특별시 종로구 율곡로 283 서울디자인지원센터 1~3층",
+      "district": "종로구",
+      "coordinates": [
+        127.008512843764,
+        37.5728571793919
+      ],
+      "tags": "한양도성,수도성곽,흥인지문공원,서울,역사,박물관"
+    },
+    {
+      "id": "seoul-attraction-45954",
+      "sourceId": "45954",
+      "name": "현대카드 뮤직 라이브러리, 현대카드 바이닐앤플라스틱",
+      "localizedNames": {
+        "en": "Hyundai Card Music Library and Vinyl & Plastic",
+        "ja": "現代カード・ミュージックライブラリー、Vinyl & Plastic"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04400 서울 용산구 이태원로 246 (한남동)",
+      "district": "용산구",
+      "coordinates": [
+        127.000702064249,
+        37.5366355725896
+      ],
+      "tags": "LP,한남동,아날로그,바이닐,이태원,뮤직라이브러리,현대카드,희귀음반,턴테이블"
+    },
+    {
+      "id": "seoul-attraction-55222",
+      "sourceId": "55222",
+      "name": "서울우리소리박물관",
+      "localizedNames": {
+        "en": "Seoul Museum of Korean Folk Music",
+        "ja": "ソウル私たちの音博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03131 서울특별시 종로구 율곡로 96 (와룡동, 서울우리소리박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.989622047178,
+        37.577157928122
+      ],
+      "tags": "민요,박물관,우리소리,전통,문화,소리,음악"
+    },
+    {
+      "id": "seoul-attraction-55084",
+      "sourceId": "55084",
+      "name": "혜성칼국수",
+      "localizedNames": {
+        "en": "Hyeseong Kalguksu",
+        "ja": "ヘソンカルグクス"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "02488 서울 동대문구 왕산로 247-1 (청량리동)",
+      "district": "동대문구",
+      "coordinates": [
+        127.04898605372,
+        37.5834249035109
+      ],
+      "tags": "오래가게,닭칼국수,멸치칼국수,칼국수,혜성칼국수,청량리역 맛집,청량리 맛집"
+    },
+    {
+      "id": "seoul-attraction-54764",
+      "sourceId": "54764",
+      "name": "후암동 108계단",
+      "localizedNames": {
+        "en": "Huam-dong 108 Steps",
+        "ja": "厚岩洞108階段"
+      },
+      "category": "Culture",
+      "placeType": "neighborhood_walk",
+      "address": "04337 서울 용산구 용산동2가 1-1342",
+      "district": "용산구",
+      "coordinates": [
+        126.982362514324,
+        37.5462532410879
+      ],
+      "tags": "벽화,후암동108계단,해방촌,용산,해방촌모노레일"
+    },
+    {
+      "id": "seoul-attraction-8646",
+      "sourceId": "8646",
+      "name": "고려삼계탕",
+      "localizedNames": {
+        "en": "Goryeo Samgyetang",
+        "ja": "高麗サムゲタン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04516 서울 중구 서소문로11길 1 (서소문동)",
+      "district": "중구",
+      "coordinates": [
+        126.972911826174,
+        37.562998746872
+      ],
+      "tags": "삼계탕,서소문음식점,한식맛집,서소문동,미쉐린가이드,오골계탕,시청음식점,고려삼계탕,미슐랭,전복죽,보양식,서소문맛집"
+    },
+    {
+      "id": "seoul-attraction-26676",
+      "sourceId": "26676",
+      "name": "공근혜갤러리",
+      "localizedNames": {
+        "en": "Kong Geun-hye Gallery",
+        "ja": "コン・グネ・ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03049 서울 종로구 삼청로7길 38 (삼청동)",
+      "district": "종로구",
+      "coordinates": [
+        126.97967490139,
+        37.5840268022577
+      ],
+      "tags": "경복궁,미술관,갤러리,사진,안국역,삼청동,공근혜갤러리,현대미술,화랑,청와대"
+    },
+    {
+      "id": "seoul-attraction-26675",
+      "sourceId": "26675",
+      "name": "공평도시유적전시관",
+      "localizedNames": {
+        "en": "Gongpyeong Historic Sites Exhibition Hall",
+        "ja": "公平都市遺跡博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03161 서울 종로구 우정국로 26 (센트로폴리스 지하 1층)",
+      "district": "종로구",
+      "coordinates": [
+        126.983530268891,
+        37.5716808092144
+      ],
+      "tags": "박물관,전시관,종각역,유적,관람,문화재,도시박물관,서울역사박물관,공평도시유적전시관"
+    },
+    {
+      "id": "seoul-attraction-39708",
+      "sourceId": "39708",
+      "name": "춘당지",
+      "localizedNames": {
+        "en": "Chundangji Pond",
+        "ja": "春塘池"
+      },
+      "category": "Nature",
+      "placeType": "garden_park",
+      "address": "03072 서울 종로구 창경궁로 185 (창경궁 내 춘당지)",
+      "district": "종로구",
+      "coordinates": [
+        126.993841430623,
+        37.5776239475981
+      ],
+      "tags": "춘당지,서울가을데이트명소,서울놀거리,단풍명소,아름다운서울의명소,가을단풍,창경궁춘당지,산책하기좋은곳"
+    },
+    {
+      "id": "seoul-attraction-43489",
+      "sourceId": "43489",
+      "name": "예문사",
+      "localizedNames": {
+        "en": "Yemunsa",
+        "ja": "イェムンサ"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "04550 서울 중구 을지로 126-1",
+      "district": "중구",
+      "coordinates": [
+        126.991954489492,
+        37.5661256946289
+      ],
+      "tags": " 인감도장, 수제도장, 붓글씨,오래가게,수제인감, 캘리그라피, 을지로3가"
+    },
+    {
+      "id": "seoul-attraction-1900",
+      "sourceId": "1900",
+      "name": "광화문광장",
+      "localizedNames": {
+        "en": "Gwanghwamun Square",
+        "ja": "光化門広場"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 세종대로 172 (세종로)",
+      "district": "종로구",
+      "coordinates": [
+        126.976787992565,
+        37.5716228232824
+      ],
+      "tags": " 이순신,광화문,광화문광장, 경복궁,세종문화회관,도시 문화 광장,청계천, 세종대왕"
+    },
+    {
+      "id": "seoul-attraction-23605",
+      "sourceId": "23605",
+      "name": "광희문",
+      "localizedNames": {
+        "en": "Gwanghuimun Gate",
+        "ja": "光熙門"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04612 서울 중구 퇴계로 350 (신당동)",
+      "district": "중구",
+      "coordinates": [
+        127.010459267728,
+        37.5644413634852
+      ],
+      "tags": " 서소문,광희문, 동대문역사문화공원역, 동대문,서울4소문, 도성,4소문"
+    },
+    {
+      "id": "seoul-attraction-41903",
+      "sourceId": "41903",
+      "name": "김근태기념도서관",
+      "localizedNames": {
+        "en": "Kim Geun-tae Memorial Library",
+        "ja": "キム・グンテ記念図書館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01301 서울 도봉구 도봉산길 14 (도봉동)",
+      "district": "도봉구",
+      "coordinates": [
+        127.044019937677,
+        37.6876674374375
+      ],
+      "tags": "김근태기념도서관,김근태, 도봉산역,라키비움,도봉구도서관"
+    },
+    {
+      "id": "seoul-attraction-42288",
+      "sourceId": "42288",
+      "name": "그래픽",
+      "localizedNames": {
+        "en": "Graphic",
+        "ja": "グラフィック"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "서울특별시 용산구 회나무로39길 33 (이태원동), 04344",
+      "district": "용산구",
+      "coordinates": [
+        126.993580131333,
+        37.5408948786009
+      ],
+      "tags": "만화카페,북카페,어른전용서점,해방촌,이태원,서점,그래픽"
+    },
+    {
+      "id": "seoul-attraction-52451",
+      "sourceId": "52451",
+      "name": "군기시유적전시실",
+      "localizedNames": {
+        "en": "Gungisi Relics Exhibition Hall",
+        "ja": "軍器寺遺跡展示室"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04524 서울특별시 중구 세종대로 110 서울시청 지하 1층",
+      "district": "중구",
+      "coordinates": [
+        126.977918351844,
+        37.566370776634
+      ],
+      "tags": "군기시,유구,승자총통,불랑기자포,무기제조,화약무기,유적"
+    },
+    {
+      "id": "seoul-attraction-276",
+      "sourceId": "276",
+      "legacyId": "namsangol",
+      "name": "남산골 한옥마을",
+      "localizedNames": {
+        "en": "Namsangol Hanok Village",
+        "ja": "南山コル韓屋村"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04626 서울특별시 중구 퇴계로34길 28",
+      "district": "중구",
+      "coordinates": [
+        126.994738735334,
+        37.5595422700067
+      ],
+      "tags": "서울핫플레이스,서울여행,남산골한옥마을,남산둘레길,서울아이와나들이,서울사진명소,서울남산,남산공원,서울데이트코스,국내한옥마을추천,서울전통명소"
+    },
+    {
+      "id": "seoul-attraction-32546",
+      "sourceId": "32546",
+      "name": "대림시장 감자국거리",
+      "localizedNames": {
+        "en": "Daerim Market Gamjaguk Alley",
+        "ja": "大林市場カムジャグク通り"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03480 서울 은평구 응암로4길 26 (응암동) 대림시장 감자국거리",
+      "district": "은평구",
+      "coordinates": [
+        126.917545647532,
+        37.5871616982388
+      ],
+      "tags": " 은평구,응암동,새절역,대림시장, 감자국거리"
+    },
+    {
+      "id": "seoul-attraction-43458",
+      "sourceId": "43458",
+      "name": "JS슈즈디자인연구소",
+      "localizedNames": {
+        "en": "JS Shoe Design Institute",
+        "ja": "JSシューズデザイン研究所"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04775 서울 성동구 연무장길 57 (2층)",
+      "district": "성동구",
+      "coordinates": [
+        127.055803844555,
+        37.5423763558831
+      ],
+      "tags": " 전태수수제화, 남자구두, 성수,오래가게, 성수동카페거리, 수제화, 여자구두"
+    },
+    {
+      "id": "seoul-attraction-52701",
+      "sourceId": "52701",
+      "name": "동대문역사관",
+      "localizedNames": {
+        "en": "Dongdaemun History Museum",
+        "ja": "東大門歴史館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중구 을지로 281(을지로7가 2-1), 동대문역사문화공원 내",
+      "district": "중구",
+      "coordinates": [
+        127.010890355484,
+        37.5680445876689
+      ],
+      "tags": "DDP,동대문디자인플라자,동대문역사문화공원,서울,동대문,박물관,역사"
+    },
+    {
+      "id": "seoul-attraction-52705",
+      "sourceId": "52705",
+      "name": "동대문운동장기념관",
+      "localizedNames": {
+        "en": "Dongdaemun Stadium Memorial Hall",
+        "ja": "東大門運動場記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중구 을지로 281, 동대문역사문화공원 내",
+      "district": "중구",
+      "coordinates": [
+        127.010890355484,
+        37.5680445876689
+      ],
+      "tags": "DDP,서울,역사,동대문디자인플라자,동대문역사문화공원,서울운동장,경성운동장,동대문운동장,박물관"
+    },
+    {
+      "id": "seoul-attraction-43460",
+      "sourceId": "43460",
+      "name": "라플루마앤보헤미안",
+      "localizedNames": {
+        "en": "La Pluma & Bohemian",
+        "ja": "ラ・プルマ＆ボヘミアン"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "02842 서울 성북구 고려대로27길 18",
+      "district": "성북구",
+      "coordinates": [
+        127.029898451923,
+        37.5870992240896
+      ],
+      "tags": "고려대, 커피,커피맛집, 커피명가,오래가게, 카페, 드립커피,바리스타"
+    },
+    {
+      "id": "seoul-attraction-50802",
+      "sourceId": "50802",
+      "name": "마포옥",
+      "localizedNames": {
+        "en": "Mapo Ok",
+        "ja": "麻浦屋"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04165 서울특별시 마포구 토정로 312 1층",
+      "district": "마포구",
+      "coordinates": [
+        126.943351207119,
+        37.5398742377381
+      ],
+      "tags": "설렁탕,오래가게,용강동,마포,미래유산"
+    },
+    {
+      "id": "seoul-attraction-2962",
+      "sourceId": "2962",
+      "name": "고려대학교 본관 및 구 중앙도서관",
+      "localizedNames": {
+        "en": "Korea University Main Hall & Former Central Library",
+        "ja": "高麗大学校本館・旧中央図書館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02841 서울특별시 성북구 안암로 145 (안암동5가, 고려대학교)",
+      "district": "성북구",
+      "coordinates": [
+        127.031698331241,
+        37.5887034223667
+      ],
+      "tags": " 고려대학교, 성북구,안암역, 도서관, 고려대역, 역사, 대학교도서관, 해송법학도서관,고려대,안암동도서관, 유적지"
+    },
+    {
+      "id": "seoul-attraction-38021",
+      "sourceId": "38021",
+      "name": "국립항공박물관",
+      "localizedNames": {
+        "en": "National Aviation Museum of Korea",
+        "ja": "国立航空博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "07505 서울 강서구 하늘길 177 (공항동, 국립항공박물관)",
+      "district": "강서구",
+      "coordinates": [
+        126.80887234623,
+        37.5568697658909
+      ],
+      "tags": "박물관,항공,국립박물관,국립항공박물관,museum,김포-공항,비행기,항공박물관,비행기박물관"
+    },
+    {
+      "id": "seoul-attraction-46875",
+      "sourceId": "46875",
+      "name": "마복림 할머니집",
+      "localizedNames": {
+        "en": "Maboknim Halmeoni's House",
+        "ja": "マボンニム・ハルモニの店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04611 서울 중구 다산로35길 5 (신당동)",
+      "district": "중구",
+      "coordinates": [
+        127.015116325142,
+        37.5632211802975
+      ],
+      "tags": "신당,분식점,떡볶이,오래가게"
+    },
+    {
+      "id": "seoul-attraction-1809",
+      "sourceId": "1809",
+      "name": "목인박물관",
+      "localizedNames": {
+        "en": "Mokin Museum",
+        "ja": "木人博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03022 서울 종로구 창의문로5길 46-1",
+      "district": "종로구",
+      "coordinates": [
+        126.963289212881,
+        37.5890219122924
+      ],
+      "tags": " 목인갤러리,문화, 박물관, 인사동,쌈지길, 갤러리,옥상정원, 광화문, 관광지, 종각역,목인박물관,안국역"
+    },
+    {
+      "id": "seoul-attraction-5228",
+      "sourceId": "5228",
+      "name": "명동함흥면옥",
+      "localizedNames": {
+        "en": "Myeongdong Hamheung Myeonok",
+        "ja": "明洞咸興麺屋（ミョンドン・ハムフンミョノク）"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04537 서울 중구 명동10길 35-19 (명동2가)",
+      "district": "중구",
+      "coordinates": [
+        126.985685790889,
+        37.5627701513326
+      ],
+      "tags": " 함흥냉면,냉면,함흥면옥,회냉면,냉면음식점, 냉면맛집,명동,명동맛집,명동냉면집,비빔냉면"
+    },
+    {
+      "id": "seoul-attraction-450",
+      "sourceId": "450",
+      "name": "문화역서울 284",
+      "localizedNames": {
+        "en": "Culture Station Seoul 284",
+        "ja": "文化駅ソウル284"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04509 서울 중구 통일로 1 (서울역 본옥)",
+      "district": "중구",
+      "coordinates": [
+        126.971594506836,
+        37.5560408483984
+      ],
+      "tags": "유적지, 광화문,문화역서울, 서울역전시회, 서울역,문화역서울284,역사,전시, 284, 구서울역, 기차역, 미술관"
+    },
+    {
+      "id": "seoul-attraction-52890",
+      "sourceId": "52890",
+      "name": "달마사",
+      "localizedNames": {
+        "en": "Dalmasa Temple",
+        "ja": "達磨寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "06987 서울특별시 동작구 서달로 50-26 (흑석동)",
+      "district": "동작구",
+      "coordinates": [
+        126.962205101368,
+        37.4984464444881
+      ],
+      "tags": "서달산,흑석동,절,불교,사찰,달마사"
+    },
+    {
+      "id": "seoul-attraction-19924",
+      "sourceId": "19924",
+      "name": "뮤지엄김치간",
+      "localizedNames": {
+        "en": "Museum Kimchikan",
+        "ja": "ミュージアム・キムチカン"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03149 서울 종로구 인사동길 35-4 (관훈동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984865059281,
+        37.5735538862116
+      ],
+      "tags": "김치만들기,김치전시,안국역,김치체험관,박물관,광화문,종각역,김치,뮤지엄김치간,김치박물관"
+    },
+    {
+      "id": "seoul-attraction-43459",
+      "sourceId": "43459",
+      "name": "봉화묵집",
+      "localizedNames": {
+        "en": "Bonghwa Mukjip",
+        "ja": "ポンファ・ムクチプ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "02813 서울 성북구 아리랑로19길 46-2",
+      "district": "성북구",
+      "coordinates": [
+        127.010747622706,
+        37.6027138226589
+      ],
+      "tags": "손만두,부침, 한식,오래가게, 메밀묵, 수제가정식, 가성비, 단골장사, 정릉"
+    },
+    {
+      "id": "seoul-attraction-1789",
+      "sourceId": "1789",
+      "legacyId": "dosan-park",
+      "name": "도산공원",
+      "localizedNames": {
+        "en": "Dosan Park",
+        "ja": "島山公園"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "06020 서울 강남구 도산대로45길 20 (도산전시관)",
+      "district": "강남구",
+      "coordinates": [
+        127.035603166151,
+        37.5239508648976
+      ],
+      "tags": "공원,기념관,안창호,도산공원, 전시, 압구정역, 도산안창호,강남"
+    },
+    {
+      "id": "seoul-attraction-6433",
+      "sourceId": "6433",
+      "name": "배재학당역사박물관",
+      "localizedNames": {
+        "en": "Pai Chai Hakdang History Museum",
+        "ja": "培材学堂歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04516 서울특별시 중구 서소문로11길 19, 배재정동빌딩 동관 (정동)",
+      "district": "중구",
+      "coordinates": [
+        126.972089131199,
+        37.5637878280982
+      ],
+      "tags": "박물관, 전시, 역사,학교,시청역,배재학당역사박물관,배재학당"
+    },
+    {
+      "id": "seoul-attraction-2436",
+      "sourceId": "2436",
+      "name": "부민옥",
+      "localizedNames": {
+        "en": "Buminok",
+        "ja": "プミノク"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울 중구 다동길 24-12",
+      "district": "중구",
+      "coordinates": [
+        126.980177653984,
+        37.5675310295731
+      ],
+      "tags": "부민옥,한식,양무침,명동,종각음식점,수요미식회,을지로음식점,시청음식점, 을지로맛집, 경상도음식, 한식맛집, 추어탕,육개장"
+    },
+    {
+      "id": "seoul-attraction-261",
+      "sourceId": "261",
+      "legacyId": "bukchon",
+      "name": "북촌한옥마을",
+      "localizedNames": {
+        "en": "Bukchon Hanok Village",
+        "ja": "北村韓屋村"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03059 서울 종로구 계동길 37 북촌문화센터 일대 (계동)",
+      "district": "종로구",
+      "coordinates": [
+        126.986276109794,
+        37.5790883269606
+      ],
+      "tags": "서울북촌한옥마을,걷기좋은곳,한국전통,북촌한옥마을데이트,서울가볼만한곳,부모님과함께,서울여행,한국문화,서울나들이,한국전통가옥,서울데이트,북촌한옥마을,서울명소,한옥마을"
+    },
+    {
+      "id": "seoul-attraction-3330",
+      "sourceId": "3330",
+      "name": "삼성출판박물관",
+      "localizedNames": {
+        "en": "Samsung Publishing Museum",
+        "ja": "サムスン出版博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03007 서울 종로구 비봉길 2-2 (구기동, 삼성출판박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.957092157442,
+        37.6086660197949
+      ],
+      "tags": " 김종규, 출판박물관, 뮤지엄아카데미,삼성출판박물관,  문화유산,불광역, 경복궁역, 구기동,전시,박물관, 역사"
+    },
+    {
+      "id": "seoul-attraction-2615",
+      "sourceId": "2615",
+      "name": "서대문자연사박물관",
+      "localizedNames": {
+        "en": "Seodaemun Museum of Natural History",
+        "ja": "西大門自然史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03718 서울특별시 서대문구 연희로32길 51 (연희동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.937858169171,
+        37.5767519879565
+      ],
+      "tags": "신촌역,자연사도서관, 역사, 광화문,연희동, 서대문자연사박물관, 홍대, 화산폭발, 박물관, 자연사박물관, 지구환경"
+    },
+    {
+      "id": "seoul-attraction-38858",
+      "sourceId": "38858",
+      "name": "가을단풍길(월드컵로)",
+      "localizedNames": {
+        "en": "Autumn Foliage Road (World Cup-ro)",
+        "ja": "紅葉の道（ワールドカップ路）"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "03906 서울 마포구 월드컵로42길 9-1 (가로판매대07)",
+      "district": "마포구",
+      "coordinates": [
+        126.881709454186,
+        37.5781856263782
+      ],
+      "tags": "서울산책코스,서울산책하기좋은길,가을단풍길,월드컵로,강아지산책코스,서울가을단풍명소,단풍명소추천,서울단풍,서울드라이브코스,월드컵로가을단풍길,가을산책하기좋은길"
+    },
+    {
+      "id": "seoul-attraction-53632",
+      "sourceId": "53632",
+      "name": "서울 흥천사",
+      "localizedNames": {
+        "en": "Heungcheonsa Temple, Seoul",
+        "ja": "ソウル興天寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02825 서울특별시 성북구 흥천사길 29 (돈암동)",
+      "district": "성북구",
+      "coordinates": [
+        127.008118578319,
+        37.5979609460611
+      ],
+      "tags": "정릉,흥천사,이성계,서울4대사찰,서울사찰,신덕왕후"
+    },
+    {
+      "id": "seoul-attraction-3319",
+      "sourceId": "3319",
+      "name": "서울대학교 미술관 MoA",
+      "localizedNames": {
+        "en": "Seoul National University Museum of Art (MoA)",
+        "ja": "ソウル大学校美術館（MoA）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "08826 서울 관악구 관악로 1 (신림동, 서울대학교) 서울대학교 미술관 (서울대학교 내)",
+      "district": "관악구",
+      "coordinates": [
+        126.94815644252,
+        37.4662872666604
+      ],
+      "tags": "문화, 서울대학교미술관, 렘쿨하스, 서울대학교, 신림동,MoA, 서울대입구역,미술관,서울대"
+    },
+    {
+      "id": "seoul-attraction-49413",
+      "sourceId": "49413",
+      "name": "서울로봇인공지능과학관(RAIM)",
+      "localizedNames": {
+        "en": "Seoul Robot & AI Museum (RAIM)",
+        "ja": "ソウル・ロボット・AI博物館（RAIM）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01411 서울 도봉구 마들로13길 56 (창동)",
+      "district": "도봉구",
+      "coordinates": [
+        127.049506212905,
+        37.6555838047766
+      ],
+      "tags": "로봇,인공지능,서울로봇인공지능과학관,서울RAIM,AI,과학전시,로봇과학관,AI체험,로봇체험"
+    },
+    {
+      "id": "seoul-attraction-49647",
+      "sourceId": "49647",
+      "name": "서울백제어린이박물관",
+      "localizedNames": {
+        "en": "Seoul Baekje Children's Museum",
+        "ja": "ソウル百済子ども博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "05540 서울 송파구 올림픽로 424 서울백제어린이박물관",
+      "district": "송파구",
+      "coordinates": [
+        127.115698883086,
+        37.5203488012491
+      ],
+      "tags": "몽촌토성,한성백제박물관,서울백제어린이박물관,서울고대역사,유물전시,올림픽공원"
+    },
+    {
+      "id": "seoul-attraction-11669",
+      "sourceId": "11669",
+      "name": "서울상상나라",
+      "localizedNames": {
+        "en": "Seoul Children's Imagination Museum",
+        "ja": "ソウル子ども想像博物館"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "04991 서울 광진구 능동로 216 (서울상상나라)",
+      "district": "광진구",
+      "coordinates": [
+        127.078770241307,
+        37.5520117940291
+      ],
+      "tags": " 체험관, 서울시민안전체험관,서울상상나라,문화, 어린이대공원역,어린이, 교육프로그램,문화공간,가족"
+    },
+    {
+      "id": "seoul-attraction-44180",
+      "sourceId": "44180",
+      "name": "서울스카이",
+      "localizedNames": {
+        "en": "Seoul Sky",
+        "ja": "ソウルスカイ"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "05551 서울 송파구 올림픽로 300 (신천동, 롯데월드타워앤드롯데월드몰) 117~123층",
+      "district": "송파구",
+      "coordinates": [
+        127.104301829165,
+        37.5137129859207
+      ],
+      "tags": "서울스카이,롯데월드타워,야경,전망대,롯데월드몰,롯데월드타워전망대"
+    },
+    {
+      "id": "seoul-attraction-44450",
+      "sourceId": "44450",
+      "name": "서울시립과학관",
+      "localizedNames": {
+        "en": "Seoul Science Museum",
+        "ja": "ソウル市立科学館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01792 서울 노원구 한글비석로 160 (하계동, 서울시립과학관)",
+      "district": "노원구",
+      "coordinates": [
+        127.07743706477,
+        37.6419941138165
+      ],
+      "tags": "과학교실,과학,야간개장,문화행사,과학축제,과학행사,교육,청소년,어린이,서울시립과학관"
+    },
+    {
+      "id": "seoul-attraction-1525",
+      "sourceId": "1525",
+      "name": "서울시립미술관 (서소문본관)",
+      "localizedNames": {
+        "en": "Seoul Museum of Art (Seosomun Main Branch)",
+        "ja": "ソウル市立美術館（西小門本館）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04515 서울 중구 덕수궁길 61 (서소문동, 서울시립미술관)",
+      "district": "중구",
+      "coordinates": [
+        126.973699316136,
+        37.5641060692766
+      ],
+      "tags": "시청역,서울시립미술관,예술,문화,서울전시,갤러리, 미술관,덕수궁,정동길, 서소문동,서대문역,미술, 광화문"
+    },
+    {
+      "id": "seoul-attraction-5334",
+      "sourceId": "5334",
+      "name": "서울올림픽기념관",
+      "localizedNames": {
+        "en": "Seoul Olympic Memorial Hall",
+        "ja": "ソウルオリンピック記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "05540 서울 송파구 올림픽로 424 (방이동, 올림픽공원)",
+      "district": "송파구",
+      "coordinates": [
+        127.115698883086,
+        37.5203488012491
+      ],
+      "tags": "서울올림픽기념관,서울올림픽회관,올림픽공원,박물관,전시,스포츠,평창올림픽,기념관,올림픽,역사"
+    },
+    {
+      "id": "seoul-attraction-16325",
+      "sourceId": "16325",
+      "name": "반포대교 야경",
+      "localizedNames": {
+        "en": "Banpo Bridge Night View",
+        "ja": "盤浦大橋の夜景"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "06500 서울 서초구 올림픽대로 2085-14",
+      "district": "서초구",
+      "coordinates": [
+        126.995962256954,
+        37.5124362037118
+      ],
+      "tags": "데이트코스,서울여행,서울야경명소,반포한강공원,산책,한강데이트,걷기,반포대교옆한강공원,반포대교달빛무지개분수,공원,반포대교,서울,서울풍경,반포야경,서울의밤,야경,무지개분수"
+    },
+    {
+      "id": "seoul-attraction-4867",
+      "sourceId": "4867",
+      "name": "서울중앙성원",
+      "localizedNames": {
+        "en": "Seoul Central Mosque",
+        "ja": "ソウル中央モスク"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04405 서울 용산구 우사단로10길 39",
+      "district": "용산구",
+      "coordinates": [
+        126.99729799402,
+        37.5332797663619
+      ],
+      "tags": "한국이슬람교중앙회, 이슬람교,이태원역,이슬람서울성원, 우사단길,한국이슬람교, 관광지, 사원, 성지, 이슬람서울중앙성원"
+    },
+    {
+      "id": "seoul-attraction-50884",
+      "sourceId": "50884",
+      "name": "석교식당",
+      "localizedNames": {
+        "en": "Seokgyo Sikdang",
+        "ja": "ソッキョ食堂"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03734 서울 서대문구 통일로 185 (영천동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.962281820841,
+        37.5700187320924
+      ],
+      "tags": "오래가게,은평,순대국,영천시장,안산,인왕산"
+    },
+    {
+      "id": "seoul-attraction-1414",
+      "sourceId": "1414",
+      "name": "선정릉(선릉)",
+      "localizedNames": {
+        "en": "Seonjeongneung (Seolleung)",
+        "ja": "宣靖陵（宣陵）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "06153 서울특별시 강남구 선릉로100길 1 (삼성동)",
+      "district": "강남구",
+      "coordinates": [
+        127.047165945717,
+        37.5073677154051
+      ],
+      "tags": "선릉역,서울역사적명소,선정릉,서울공원,세계문화유산,공원데이트,선릉,전릉,선릉데이트장소,문화유산,도시속유네스코,서울가볼만한곳,서울데이트장소추천"
+    },
+    {
+      "id": "seoul-attraction-36",
+      "sourceId": "36",
+      "name": "남산서울타워",
+      "localizedNames": {
+        "en": "N Seoul Tower",
+        "ja": "Nソウルタワー"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "04340 서울 용산구 남산공원길 105 (용산동2가, YTN서울타워)",
+      "district": "용산구",
+      "coordinates": [
+        126.987867837993,
+        37.5511225714939
+      ],
+      "tags": "서울데이트,전망,N서울타워,서울데이트장소,전망대,케이블카,남산타워,서울야경명소,남산서울타워,명동,야경,남산,서울야경,남산타워전망대"
+    },
+    {
+      "id": "seoul-attraction-3177",
+      "sourceId": "3177",
+      "name": "성균관 명륜당",
+      "localizedNames": {
+        "en": "Myeongnyundang Hall, Sungkyunkwan",
+        "ja": "成均館 明倫堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03063 서울특별시 종로구 성균관로 25-1",
+      "district": "종로구",
+      "coordinates": [
+        126.995130662457,
+        37.585831879528
+      ],
+      "tags": " 명륜당은행나무,혜화역, 유적지,인문사회과학캠퍼스,성균관명륜당,명륜당, 성균관대학교,역사"
+    },
+    {
+      "id": "seoul-attraction-33825",
+      "sourceId": "33825",
+      "name": "서울하수도과학관",
+      "localizedNames": {
+        "en": "Seoul Sewerage Science Museum",
+        "ja": "ソウル下水道科学館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04809 서울 성동구 자동차시장3길 64 (용답동) 서울하수도과학관",
+      "district": "성동구",
+      "coordinates": [
+        127.060364943935,
+        37.5604666954517
+      ],
+      "tags": "하수처리,과학관, 하수도과학관,과학, museum, 물재생센터,환경, 교육, 뮤지엄"
+    },
+    {
+      "id": "seoul-attraction-53265",
+      "sourceId": "53265",
+      "name": "성북예술창작터",
+      "localizedNames": {
+        "en": "Seongbuk Art Creation Center",
+        "ja": "城北芸術創作所"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02880 서울 성북구 성북로 23 (성북동1가, 성북예술창작터)",
+      "district": "성북구",
+      "coordinates": [
+        127.004123001975,
+        37.5900522477346
+      ],
+      "tags": "서울전시,미술관,미술교육,성북구미술관,행사"
+    },
+    {
+      "id": "seoul-attraction-30804",
+      "sourceId": "30804",
+      "name": "서소문성지역사박물관",
+      "localizedNames": {
+        "en": "Seosomun Shrine History Museum",
+        "ja": "西小門聖地歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중구 칠패로 5 (의주로2가 16-40)",
+      "district": "중구",
+      "coordinates": [
+        126.968867161039,
+        37.5605678517575
+      ],
+      "tags": "충정로역,서소문성지역사박물관,교회사,역사박물관,전시,도서관,순교성지,지상공원"
+    },
+    {
+      "id": "seoul-attraction-2250",
+      "sourceId": "2250",
+      "name": "영학정",
+      "localizedNames": {
+        "en": "Yeonghakjeong Pavilion",
+        "ja": "ヨンハク亭（迎鶴亭）"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "07990 서울 양천구 목동동로 316-8 (영학정)",
+      "district": "양천구",
+      "coordinates": [
+        126.879009593617,
+        37.5283243936952
+      ],
+      "tags": "양궁,안양천,활쏘기체험,목동,양천구,옛군사훈령장,영학정,자연,오목교역"
+    },
+    {
+      "id": "seoul-attraction-33828",
+      "sourceId": "33828",
+      "name": "성신여대 복식박물관 및 자연사박물관",
+      "localizedNames": {
+        "en": "Sungshin Women's University Costume Museum and Natural History Museum",
+        "ja": "誠信女子大学校服飾博物館・自然史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01133 서울 강북구 도봉로76가길 55 (미아동, 성신여자대학교운정그린캠퍼스) 운정그린캠퍼스 B1",
+      "district": "강북구",
+      "coordinates": [
+        127.027124202688,
+        37.6320379987723
+      ],
+      "tags": "자연사박물관,성신여대 복식박물관"
+    },
+    {
+      "id": "seoul-attraction-23561",
+      "sourceId": "23561",
+      "name": "세운상가",
+      "localizedNames": {
+        "en": "Sewoon Arcade",
+        "ja": "世運商店街"
+      },
+      "category": "Shopping",
+      "placeType": "shopping_destination",
+      "address": "03194 서울 종로구 청계천로 159 (장사동, 세운상가)",
+      "district": "종로구",
+      "coordinates": [
+        126.995239727442,
+        37.5692814302828
+      ],
+      "tags": "세운상가,서울가볼만한곳,힙지로,서울놀거리,을지로데이트,서울명소,을지로핫플,종로3가역,종로,서울핫플,서울투어,을지로,종로데이트,세운상가옥상,종로가볼만한곳,을지로명소"
+    },
+    {
+      "id": "seoul-attraction-2395",
+      "sourceId": "2395",
+      "name": "세검정",
+      "localizedNames": {
+        "en": "Segeomjeong Pavilion",
+        "ja": "洗剣亭"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 세검정로 244 (신영동)",
+      "district": "종로구",
+      "coordinates": [
+        126.95970458873,
+        37.6008931085507
+      ],
+      "tags": "홍제역,인조반정,상명대학교,세검정,유적지"
+    },
+    {
+      "id": "seoul-attraction-23758",
+      "sourceId": "23758",
+      "name": "소덕문 터(옛 서소문)",
+      "localizedNames": {
+        "en": "Site of Sodeokmun Gate (Former Seosomun Gate)",
+        "ja": "旧西小門・昭徳門跡"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04513 서울 중구 서소문로 100 (중앙일보 구관)",
+      "district": "중구",
+      "coordinates": [
+        126.97258645939,
+        37.5622732794756
+      ],
+      "tags": "소의문, 광화문,소덕문,시청역,성문, 소문, 문화재,옛서소문, 소덕문터"
+    },
+    {
+      "id": "seoul-attraction-1442",
+      "sourceId": "1442",
+      "name": "스페이스 씨",
+      "localizedNames": {
+        "en": "Space C",
+        "ja": "スペースC"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06024 서울특별시 강남구 언주로 827, 스페이스씨 (신사동)",
+      "district": "강남구",
+      "coordinates": [
+        127.032811501034,
+        37.5240704255681
+      ],
+      "tags": " 압구정역, 코리아나,문화공간, 미술관 , 복합문화공간, 강남,화장품,박물관,전시,문화,코리아나화장품,스페이스씨,화장박물관"
+    },
+    {
+      "id": "seoul-attraction-2175",
+      "sourceId": "2175",
+      "name": "암사동 선사주거지",
+      "localizedNames": {
+        "en": "Amsa-dong Prehistoric Settlement Site",
+        "ja": "岩寺洞先史時代住居跡"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 강동구 올림픽로 875 (암사동)",
+      "district": "강동구",
+      "coordinates": [
+        127.130833358875,
+        37.5598523707759
+      ],
+      "tags": "전시, 선사유적지,신석기시대, 암사동유적,유적지,관광지, 토기, 역사,암사동선사주거지,암사역"
+    },
+    {
+      "id": "seoul-attraction-2039",
+      "sourceId": "2039",
+      "name": "떡박물관",
+      "localizedNames": {
+        "en": "Tteok Museum",
+        "ja": "トック博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03132 서울 종로구 돈화문로 71 (와룡동, 떡박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.990638129224,
+        37.5748995802783
+      ],
+      "tags": "떡만들기체험, 떡박물관, 박물관, 종로3가역, 떡카페, 전통체험, 한국전통음식연구소, 전통, 전통음식, 전통식문화체험, 체험관"
+    },
+    {
+      "id": "seoul-attraction-1846",
+      "sourceId": "1846",
+      "name": "약현성당",
+      "localizedNames": {
+        "en": "Yakhyeon Catholic Church",
+        "ja": "薬峴聖堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04506 서울시 중구 청파로 447-1",
+      "district": "중구",
+      "coordinates": [
+        126.966980133221,
+        37.5591934088751
+      ],
+      "tags": "서울역,종교,순교자기념관,천주교,성당,고딕성당,중림동성당,약현성당,서양식,결혼식"
+    },
+    {
+      "id": "seoul-attraction-18992",
+      "sourceId": "18992",
+      "name": "아르코미술관",
+      "localizedNames": {
+        "en": "Arko Art Center",
+        "ja": "アルコ美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03087 서울 종로구 동숭길 3 (동숭동, 한국문화예술진흥원)",
+      "district": "종로구",
+      "coordinates": [
+        127.003256182632,
+        37.5805022887696
+      ],
+      "tags": " 전시, 한국문화예술진흥원, 아르코미술관, 동대문, 대학로,혜화역,문화, 미술관,서울전시,동숭동, 그림"
+    },
+    {
+      "id": "seoul-attraction-4325",
+      "sourceId": "4325",
+      "name": "예술의전당 한가람미술관",
+      "localizedNames": {
+        "en": "Hangaram Art Museum at Seoul Arts Center",
+        "ja": "芸術の殿堂 ハンガラム美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06757 서울특별시 서초구 남부순환로 2406 (서초동)",
+      "district": "서초구",
+      "coordinates": [
+        127.014215239186,
+        37.4802401962069
+      ],
+      "tags": " 예술의전당전시, 예술의전당,전시, 문화, 미술전시회, 혼자전시회,미술관,남부터미널역, 예술, 한가람미술관"
+    },
+    {
+      "id": "seoul-attraction-40795",
+      "sourceId": "40795",
+      "name": "용산공원 부분개방부지",
+      "localizedNames": {
+        "en": "Yongsan Park Partial Opening Area",
+        "ja": "龍山公園一部開放区域"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04383 서울 용산구 서빙고로 221 (용산동6가, 미군 장교숙소5단지)",
+      "district": "용산구",
+      "coordinates": [
+        126.98918463406,
+        37.5230097734164
+      ],
+      "tags": "용산공원,미군기지,부분개방부지,산책,용산공원부분개방기지,용산,나들이"
+    },
+    {
+      "id": "seoul-attraction-43457",
+      "sourceId": "43457",
+      "name": "유홍식 수제화 명장 1호",
+      "localizedNames": {
+        "en": "Yoo Hong-sik, Master Shoemaker No. 1",
+        "ja": "靴職人ユ・ホンシク名匠第1号"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04794 서울 성동구 아차산로 97 2층",
+      "district": "성동구",
+      "coordinates": [
+        127.055123744487,
+        37.5452324827558
+      ],
+      "tags": "성수,유홍식수제화명장1호,오래가게,성수동카페거리,수제화"
+    },
+    {
+      "id": "seoul-attraction-50851",
+      "sourceId": "50851",
+      "name": "은평역사한옥박물관",
+      "localizedNames": {
+        "en": "Eunpyeong History & Hanok Museum",
+        "ja": "恩平歴史韓屋博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03308 서울특별시 은평구 연서로50길 8 (진관동, 은평역사한옥박물관)",
+      "district": "은평구",
+      "coordinates": [
+        126.938008171987,
+        37.6403336262874
+      ],
+      "tags": "교육,체험,전시,은평한옥마을,한옥박물관,은평역사한옥박물관,한국문화체험"
+    },
+    {
+      "id": "seoul-attraction-37130",
+      "sourceId": "37130",
+      "name": "일자산허브천문공원",
+      "localizedNames": {
+        "en": "Iljasan Herb Astronomy Park",
+        "ja": "イルジャ山ハーブ天文公園"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "서울특별시 강동구 둔촌동 산86",
+      "district": "강동구",
+      "coordinates": [
+        127.154246253068,
+        37.5374114232963
+      ],
+      "tags": "서울가볼만한곳,서울걷기좋은길,일자산허브천문공원, 부모님과 갈만한 곳, 둘레길 코스, 가족나들이,서울 야경,일자산, 서울 천문대,서울산책코스,조깅코스, 서울의 별"
+    },
+    {
+      "id": "seoul-attraction-19540",
+      "sourceId": "19540",
+      "name": "위안부 '기억의 터'",
+      "localizedNames": {
+        "en": "Site of Memory for the Comfort Women",
+        "ja": "慰安婦「記憶の場」"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04628 서울 중구 퇴계로26가길 6 (예장동) 서울종합방재센터",
+      "district": "중구",
+      "coordinates": [
+        126.99026627798,
+        37.5590886943831
+      ],
+      "tags": " 위안부,명동역,추모공원, 역사, 충무로역, 기림비, 남산, 명동, 기억의터, 교육"
+    },
+    {
+      "id": "seoul-attraction-5208",
+      "sourceId": "5208",
+      "name": "의릉",
+      "localizedNames": {
+        "en": "Uireung Royal Tomb",
+        "ja": "懿陵"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 성북구 화랑로32길 146-20 (공식 궁능유적본부 표기). 사용자 제공 주소는 화랑로32길 146-37로 달라 공식 출처 주소를 우선 기재했습니다.",
+      "district": "성북구",
+      "coordinates": [
+        127.053931211593,
+        37.6063458637902
+      ],
+      "tags": "유네스코,선의왕후,유적지, 돌곶이역, 역사, 경종, 세계문화유산,중앙정보부, 의릉,신이문역, 관광지"
+    },
+    {
+      "id": "seoul-attraction-46789",
+      "sourceId": "46789",
+      "name": "아트사이드 갤러리",
+      "localizedNames": {
+        "en": "Artside Gallery",
+        "ja": "アートサイド・ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03044 서울 종로구 자하문로6길 15 (통의동, 갤러리 아트싸이드)",
+      "district": "종로구",
+      "coordinates": [
+        126.972946031397,
+        37.5782683724918
+      ],
+      "tags": "미술관,서촌,아트사이드갤러리,갤러리,전시"
+    },
+    {
+      "id": "seoul-attraction-50906",
+      "sourceId": "50906",
+      "name": "일등식당",
+      "localizedNames": {
+        "en": "Ildeung Sikdang",
+        "ja": "イルドゥン食堂"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03964 서울특별시 마포구 방울내로 82 (망원동)",
+      "district": "마포구",
+      "coordinates": [
+        126.904350324808,
+        37.5605651073381
+      ],
+      "tags": "마포구,오래가게,망원시장,뼈해장국,감자탕,해장,망원동"
+    },
+    {
+      "id": "seoul-attraction-28340",
+      "sourceId": "28340",
+      "name": "연세대 캠퍼스",
+      "localizedNames": {
+        "en": "Yonsei University Campus",
+        "ja": "延世大学校キャンパス"
+      },
+      "category": "Culture",
+      "placeType": "campus_architecture",
+      "address": "03722 서울특별시 서대문구 연세로 50 (신촌캠퍼스)",
+      "district": "서대문구",
+      "coordinates": [
+        126.943916239886,
+        37.5660508394158
+      ],
+      "tags": "캠퍼스, 홍대, 언더우드, 연세대학교,연세대 캠퍼스, 신촌, 대학교"
+    },
+    {
+      "id": "seoul-attraction-37008",
+      "sourceId": "37008",
+      "legacyId": "ikseon-dong",
+      "name": "익선동 한옥거리",
+      "localizedNames": {
+        "en": "Ikseon-dong Hanok Village",
+        "ja": "益善洞韓屋通り"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03133 서울 종로구 돈화문로11가길 17 (익선동)",
+      "district": "종로구",
+      "coordinates": [
+        126.990919055365,
+        37.5733907062616
+      ],
+      "tags": "전통거리,익선동한옥거리,서울나들이,서울한옥,한국전통,서울산책, 한옥마을,데이트코스추천,익선동데이트,서울데이트코스,한옥거리,한국문화,서울걷기좋은곳,서울데이트,익선동"
+    },
+    {
+      "id": "seoul-attraction-889",
+      "sourceId": "889",
+      "name": "정동길",
+      "localizedNames": {
+        "en": "Jeongdong-gil",
+        "ja": "貞洞キル"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04516 서울 중구 정동길 2 (충정로1가)",
+      "district": "중구",
+      "coordinates": [
+        126.969234203738,
+        37.5680078344819
+      ],
+      "tags": "정동길단풀,정동길야경,덕수궁길,덕수궁돌담길,서울걷기좋은곳,서울단풍구경,정동길,서울산책,서울문화거리,서울골목여행,주말산책"
+    },
+    {
+      "id": "seoul-attraction-52901",
+      "sourceId": "52901",
+      "name": "드로잉룸",
+      "localizedNames": {
+        "en": "Drawing Room",
+        "ja": "ドローイングルーム"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03036 서울 종로구 자하문로7길 68-4 2층",
+      "district": "종로구",
+      "coordinates": [
+        126.969251439131,
+        37.5803239866774
+      ],
+      "tags": "드로잉룸,dR,전시,현대미술,서촌갤러리"
+    },
+    {
+      "id": "seoul-attraction-2252",
+      "sourceId": "2252",
+      "name": "일민미술관",
+      "localizedNames": {
+        "en": "Ilmin Museum of Art",
+        "ja": "イルミン美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03187 서울 종로구 세종대로 152 (세종로, 일민미술관)",
+      "district": "종로구",
+      "coordinates": [
+        126.977657083792,
+        37.5698677620456
+      ],
+      "tags": "일민미술관,광화문,일민김상만,신문박물관,광화문이마,광화문역,예술,일민문화재단,미술관,카페이마,문화,전시"
+    },
+    {
+      "id": "seoul-attraction-3461",
+      "sourceId": "3461",
+      "name": "정릉",
+      "localizedNames": {
+        "en": "Jeongneung Royal Tomb",
+        "ja": "貞陵"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 성북구 아리랑로19길 116 (정릉동 508)",
+      "district": "성북구",
+      "coordinates": [
+        127.006676901021,
+        37.6012265878
+      ],
+      "tags": "성신여대입구역, 역사, 조선왕릉, 신덕왕후, 태조,연산군묘,유적지, 이성계, 정릉,조선왕조,산책로"
+    },
+    {
+      "id": "seoul-attraction-52659",
+      "sourceId": "52659",
+      "name": "경교장",
+      "localizedNames": {
+        "en": "Gyeonggyojang",
+        "ja": "京橋荘（キョンギョジャン）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03181 서울특별시 종로구 새문안로 29 (강북삼성병원 내)",
+      "district": "종로구",
+      "coordinates": [
+        126.967812703696,
+        37.5688677261045
+      ],
+      "tags": "경교장,백범 김구,대한민국임시정부"
+    },
+    {
+      "id": "seoul-attraction-24705",
+      "sourceId": "24705",
+      "name": "국선옻칠",
+      "localizedNames": {
+        "en": "Gukseon Ottchil",
+        "ja": "国宣漆"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03195 서울특별시 종로구 창경궁로 88 (예지동) 광장3층 2390호 (광신에이동)",
+      "district": "종로구",
+      "coordinates": [
+        126.999798964693,
+        37.5701196320637
+      ],
+      "tags": " 서울미래유산, 제조도매,오래가게, 나전칠기,자개보석함, 종로, 명함케이스, 광장시장"
+    },
+    {
+      "id": "seoul-attraction-47356",
+      "sourceId": "47356",
+      "name": "옥상정원 (The Roof)",
+      "localizedNames": {
+        "en": "Rooftop Garden (The Roof)",
+        "ja": "屋上庭園（The Roof）"
+      },
+      "category": "Nature",
+      "placeType": "landmark_viewpoint",
+      "address": "서울특별시 중구 한강대로 405 (봉래동2가), 4층 옥외주차장 왼편",
+      "district": "중구",
+      "coordinates": [
+        126.969526329341,
+        37.5547278494914
+      ],
+      "tags": "서울명소,서울나들이,서울역공원,서울역근처가볼만한곳,서울산책로,서울역피크닉,서울데이트코스,커넥트플레이스"
+    },
+    {
+      "id": "seoul-attraction-2587",
+      "sourceId": "2587",
+      "name": "조계사",
+      "localizedNames": {
+        "en": "Jogyesa Temple",
+        "ja": "曹渓寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03144 서울특별시 종로구 우정국로 55 (조계사)",
+      "district": "종로구",
+      "coordinates": [
+        126.981881684461,
+        37.5738931410856
+      ],
+      "tags": "절,사찰,목불좌상,종로구조계사,조계사,서울템플스테이,유형문화재,서울조계사,혜능대사,종교"
+    },
+    {
+      "id": "seoul-attraction-507",
+      "sourceId": "507",
+      "legacyId": "jongmyo",
+      "name": "종묘",
+      "localizedNames": {
+        "en": "Jongmyo Shrine",
+        "ja": "宗廟"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03135 서울 종로구 종로 157 (훈정동, 종묘공원)",
+      "district": "종로구",
+      "coordinates": [
+        126.994863544656,
+        37.5731337998335
+      ],
+      "tags": " 창경궁,종묘사직,창덕궁, 광화문,종묘제례,유네스코세계문화유산, 종묘,종로3가역"
+    },
+    {
+      "id": "seoul-attraction-36843",
+      "sourceId": "36843",
+      "name": "금선사",
+      "localizedNames": {
+        "en": "Geumsunsa Temple",
+        "ja": "金仙寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03000 서울 종로구 비봉길 137 (구기동, 금선사)",
+      "district": "종로구",
+      "coordinates": [
+        126.953420987682,
+        37.6207199441963
+      ],
+      "tags": "인왕산,구기동,템플스테이,금선사,서울절"
+    },
+    {
+      "id": "seoul-attraction-46871",
+      "sourceId": "46871",
+      "name": "종로 은행나무집",
+      "localizedNames": {
+        "en": "Jongno Eunhaengnamujip",
+        "ja": "鐘路ウナンナムジプ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03191 서울 종로구 삼일대로 382 (관철동, 신영빌딩) 2~3층",
+      "district": "종로구",
+      "coordinates": [
+        126.988007378946,
+        37.5687370762082
+      ],
+      "tags": "종로,오래가게, 한식당,갈비"
+    },
+    {
+      "id": "seoul-attraction-50910",
+      "sourceId": "50910",
+      "name": "장가구",
+      "localizedNames": {
+        "en": "Janggagu",
+        "ja": "チャンガグ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03406 서울 은평구 연서로4길 19 (역촌동)",
+      "district": "은평구",
+      "coordinates": [
+        126.918148141435,
+        37.602732419623
+      ],
+      "tags": "중국집,역촌동,오래가게,짜장면,은평구,탕수육"
+    },
+    {
+      "id": "seoul-attraction-52632",
+      "sourceId": "52632",
+      "name": "딜쿠샤",
+      "localizedNames": {
+        "en": "Dilkusha",
+        "ja": "ディルクシャ"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03026 서울 종로구 사직로2길 17 (행촌동)",
+      "district": "종로구",
+      "coordinates": [
+        126.963476480113,
+        37.5730423068152
+      ],
+      "tags": "서울 앨버트 테일러 가옥,딜쿠샤"
+    },
+    {
+      "id": "seoul-attraction-4541",
+      "sourceId": "4541",
+      "name": "장수갈비집본가",
+      "localizedNames": {
+        "en": "Jangsu Galbijip Bonga",
+        "ja": "チャンス・カルビチプ・ポンガ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울 중구 명동2길 54-1",
+      "district": "중구",
+      "coordinates": [
+        126.983126635022,
+        37.5610101668668
+      ],
+      "tags": "숯불갈비,고기맛집,명동역,갈비,한정식,명동맛집,충무로맛집,장수갈비집"
+    },
+    {
+      "id": "seoul-attraction-1826",
+      "sourceId": "1826",
+      "name": "사직단",
+      "localizedNames": {
+        "en": "Sajikdan Altar",
+        "ja": "社稷壇"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03027 서울 종로구 사직로 89",
+      "district": "종로구",
+      "coordinates": [
+        126.967833124699,
+        37.5756034804899
+      ],
+      "tags": "사직단,제사,어린이도서관,경복궁,문화,사직대제,사직공원,경복궁역,역사,유적지"
+    },
+    {
+      "id": "seoul-attraction-52806",
+      "sourceId": "52806",
+      "name": "서강대학교",
+      "localizedNames": {
+        "en": "Sogang University",
+        "ja": "西江大学"
+      },
+      "category": "Culture",
+      "placeType": "campus_architecture",
+      "address": "04107 서울특별시 마포구 백범로 35 (신수동), 서강대학교",
+      "district": "마포구",
+      "coordinates": [
+        126.942979960696,
+        37.5514649610226
+      ],
+      "tags": "노고산성지,경의선숲길,캠퍼스풍경,서강대학교,노고산,산책길"
+    },
+    {
+      "id": "seoul-attraction-45573",
+      "sourceId": "45573",
+      "name": "장희빈 우물터",
+      "localizedNames": {
+        "en": "Site of Lady Jang Hui-bin's Well",
+        "ja": "張禧嬪の井戸跡"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서대문구 연희로 11길 일대 (연희동). 서대문구 관광 안내 자료는 더 구체적으로 연희동이라고만 안내합니다.",
+      "district": "서대문구",
+      "coordinates": [
+        126.929172406604,
+        37.5704854534118
+      ],
+      "tags": "장희빈우물터,장희빈,대한민국역사,연희동,조선시대,역사"
+    },
+    {
+      "id": "seoul-attraction-32529",
+      "sourceId": "32529",
+      "name": "정동1928 아트센터",
+      "localizedNames": {
+        "en": "Jeongdong 1928 Art Center",
+        "ja": "貞洞1928アートセンター"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "04519 서울 중구 덕수궁길 130 (정동, 구세군중앙회관) 정동1928 아트센터",
+      "district": "중구",
+      "coordinates": [
+        126.973957385284,
+        37.5679960866099
+      ],
+      "tags": "정동길산책,구세군중앙회관,서울전시회,서울,역사,센터,대한민국,정동,정동1918아트센터,예술,광화문역,서울특별행사,광화문볼거리"
+    },
+    {
+      "id": "seoul-attraction-50364",
+      "sourceId": "50364",
+      "name": "지역관광 안테나숍(Seoul Regional Tourism Center)",
+      "localizedNames": {
+        "en": "Regional Tourism Antenna Shop",
+        "ja": "地域観光アンテナショップ"
+      },
+      "category": "Experience",
+      "placeType": "cultural_experience",
+      "address": "04519 서울 중구 세종대로 119 (태평로1가)",
+      "district": "중구",
+      "coordinates": [
+        126.976702419575,
+        37.5668837502225
+      ],
+      "tags": "안테나숍,seoul regional tourism center,로컬여행,지역여행,지역관광안테나숍"
+    },
+    {
+      "id": "seoul-attraction-45524",
+      "sourceId": "45524",
+      "name": "왕짱구식당",
+      "localizedNames": {
+        "en": "Wang Jjanggu Sikdang",
+        "ja": "ワン・チャング食堂"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03056 서울 종로구 계동길 83 (계동)",
+      "district": "종로구",
+      "coordinates": [
+        126.986679456785,
+        37.5810909221363
+      ],
+      "tags": "왕짱구식당, 종로"
+    },
+    {
+      "id": "seoul-attraction-295",
+      "sourceId": "295",
+      "legacyId": "changdeokgung",
+      "name": "창덕궁",
+      "localizedNames": {
+        "en": "Changdeokgung Palace",
+        "ja": "昌徳宮"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03072 서울 종로구 율곡로 99",
+      "district": "종로구",
+      "coordinates": [
+        126.989710338876,
+        37.5788697347103
+      ],
+      "tags": "서울한복투어,한국여행코스,서울,서울명소,창덕궁,서울가볼만한곳,한국전통,서울여행코스,서울데이트코스,고궁투어,세계유산,한국문화,서울필수여행지"
+    },
+    {
+      "id": "seoul-attraction-5538",
+      "sourceId": "5538",
+      "name": "청와대",
+      "localizedNames": {
+        "en": "Cheong Wa Dae",
+        "ja": "青瓦台"
+      },
+      "category": "Culture",
+      "placeType": "heritage_architecture",
+      "address": "03048 서울 종로구 청와대로 1 (세종로)",
+      "district": "종로구",
+      "coordinates": [
+        126.974936757836,
+        37.5864756914613
+      ],
+      "tags": "사랑채,청와대지도,대통령집무실,대통령,청와대,청와대위치,서울종로구,청와대관람,청와대대통령,청와대주소,대한민국대통령관저,서울여행명소,관저,종로가볼만한곳"
+    },
+    {
+      "id": "seoul-attraction-6465",
+      "sourceId": "6465",
+      "name": "초전섬유퀼트박물관",
+      "localizedNames": {
+        "en": "Chojeon Textile & Quilt Museum",
+        "ja": "草田繊維・キルト博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04630 서울 중구 퇴계로18길 66 (제일빌딩)",
+      "district": "중구",
+      "coordinates": [
+        126.984229519746,
+        37.5581281200112
+      ],
+      "tags": "전시,박물관,명동역,전통자수,바느질,전통,초전섬유퀼트박물관,궁중의상,남산,명동,섬유박물관,예술"
+    },
+    {
+      "id": "seoul-attraction-23496",
+      "sourceId": "23496",
+      "name": "서울로7017",
+      "localizedNames": {
+        "en": "Seoullo 7017",
+        "ja": "ソウル路7017"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04509 서울 중구 청파로 432 (봉래동2가, 코레일서울본부)",
+      "district": "중구",
+      "coordinates": [
+        126.969772737969,
+        37.5580093456227
+      ],
+      "tags": "서울여행,서울로7017,서울여름여행,서울역,서울여름가볼만한곳,서울관광,서울명소,서울야경,산책하기좋은곳,서울력고가,서울걷기좋은곳,야경"
+    },
+    {
+      "id": "seoul-attraction-54054",
+      "sourceId": "54054",
+      "name": "파메서울",
+      "localizedNames": {
+        "en": "Pharmeseoul",
+        "ja": "Pharmeseoul"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 용산구 서빙고로 17, 센트럴파크타워 20층",
+      "district": "용산구",
+      "coordinates": [
+        126.966566172294,
+        37.5269056148241
+      ],
+      "tags": "갤러리,서울갤러리,용산쇼룸,서울전시"
+    },
+    {
+      "id": "seoul-attraction-52584",
+      "sourceId": "52584",
+      "name": "아트큐브 2R2",
+      "localizedNames": {
+        "en": "Art Cube 2R2",
+        "ja": "アートキューブ2R2"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06145 서울 강남구 선릉로 563 (역삼동)",
+      "district": "강남구",
+      "coordinates": [
+        127.044212516797,
+        37.5088515512806
+      ],
+      "tags": "nft,미디어아트,사진,회화,전시,컬렉팅,갤러리,exhibition"
+    },
+    {
+      "id": "seoul-attraction-53521",
+      "sourceId": "53521",
+      "name": "한강유람선 이랜드크루즈",
+      "localizedNames": {
+        "en": "Eland Cruise on the Han River",
+        "ja": "漢江イーランドクルーズ"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "07337 서울 영등포구 여의동로 280 이랜드크루즈 매표소",
+      "district": "영등포구",
+      "coordinates": [
+        126.939020093353,
+        37.5249632164977
+      ],
+      "tags": "이랜드크루즈애슐리,진성나루,런닝맨,한강이랜드크루즈,이랜드크루즈,하천,자연,이랜드크루즈뷔페,한강데이트,여의나루역,여의도,한강유람선"
+    },
+    {
+      "id": "seoul-attraction-25016",
+      "sourceId": "25016",
+      "name": "아원공방",
+      "localizedNames": {
+        "en": "Awon Craft Workshop",
+        "ja": "アウォン工房"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03053 서울 종로구 북촌로5가길 3",
+      "district": "종로구",
+      "coordinates": [
+        126.982194537365,
+        37.5797469490698
+      ],
+      "tags": " 삼청동,오래가게, 갤러리, 수제, 종로, 전시,금속공예,인테리어소품샵"
+    },
+    {
+      "id": "seoul-attraction-47987",
+      "sourceId": "47987",
+      "name": "정동전망대",
+      "localizedNames": {
+        "en": "Jeongdong Observatory",
+        "ja": "貞洞展望台"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "04515 서울 중구 덕수궁길 15 (서소문동, 서울시청 서소문별관)",
+      "district": "중구",
+      "coordinates": [
+        126.975613605737,
+        37.5645541852439
+      ],
+      "tags": "덕수궁,정동,정동전망대,전망대,서울전망대"
+    },
+    {
+      "id": "seoul-attraction-42352",
+      "sourceId": "42352",
+      "name": "최만린미술관",
+      "localizedNames": {
+        "en": "Choi Man Lin Museum",
+        "ja": "崔萬麟美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02708 서울 성북구 솔샘로7길 23 (정릉동)",
+      "district": "성북구",
+      "coordinates": [
+        127.004288022173,
+        37.6106597929108
+      ],
+      "tags": "최만린미술관"
+    },
+    {
+      "id": "seoul-attraction-32734",
+      "sourceId": "32734",
+      "name": "안녕인사동",
+      "localizedNames": {
+        "en": "Annyeong Insadong",
+        "ja": "アンニョン仁寺洞"
+      },
+      "category": "Shopping",
+      "placeType": "shopping_destination",
+      "address": "03145 서울 종로구 인사동길 49 (관훈동)",
+      "district": "종로구",
+      "coordinates": [
+        126.983552182559,
+        37.5744668688197
+      ],
+      "tags": "인사동놀거리,안녕인사동,금옥당인사동, 인사동관광,anyounginsadong, 나인트리프리미어인사동,라인프렌즈인사동"
+    },
+    {
+      "id": "seoul-attraction-44111",
+      "sourceId": "44111",
+      "name": "갤러리 지우헌",
+      "localizedNames": {
+        "en": "Gallery Jiuheon",
+        "ja": "ギャラリー・ジウホン"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03052 서울 종로구 북촌로11라길 13 (가회동)",
+      "district": "종로구",
+      "coordinates": [
+        126.982999426985,
+        37.5833833879584
+      ],
+      "tags": "북촌한옥마을,서울우수한옥,한옥갤러리,삼청동갤러리"
+    },
+    {
+      "id": "seoul-attraction-1694",
+      "sourceId": "1694",
+      "name": "갤러리 현대",
+      "localizedNames": {
+        "en": "Gallery Hyundai",
+        "ja": "ギャラリー現代"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03062 서울시 종로구 삼청로 14",
+      "district": "종로구",
+      "coordinates": [
+        126.979832722889,
+        37.5773204623898
+      ],
+      "tags": "현대갤러리, 근현대미술, 미술관, 광화문, 사간동, 전시, 두가헌, 안국역,갤러리,경복궁역,갤러리현대, 두가헌갤러리"
+    },
+    {
+      "id": "seoul-attraction-43435",
+      "sourceId": "43435",
+      "name": "모퉁이집",
+      "localizedNames": {
+        "en": "Motungijip",
+        "ja": "モトゥンイチプ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "06129 서울 강남구 테헤란로1길 20 (역삼동)",
+      "district": "강남구",
+      "coordinates": [
+        127.027810535308,
+        37.4996634128853
+      ],
+      "tags": "분식,라면,수제비,해장,강남역,신논현역,오래가게"
+    },
+    {
+      "id": "seoul-attraction-24663",
+      "sourceId": "24663",
+      "name": "코엑스",
+      "localizedNames": {
+        "en": "COEX",
+        "ja": "COEX"
+      },
+      "category": "Shopping",
+      "placeType": "shopping_destination",
+      "address": "06164 서울 강남구 영동대로 513 (삼성동, 코엑스)",
+      "district": "강남구",
+      "coordinates": [
+        127.059159043842,
+        37.5118239121138
+      ],
+      "tags": " 강남,컨벤션홀,아쿠아리움, 별마당도서관, 쇼핑, 타이거버스, 관광,코엑스, 행사, 시티투어버스, 봉은사역, 공연, 문화, 수족관, 콘서트, 코엑스몰, 박람회, 전시,삼성역"
+    },
+    {
+      "id": "seoul-attraction-26954",
+      "sourceId": "26954",
+      "name": "박인당",
+      "localizedNames": {
+        "en": "Park Indang",
+        "ja": "パク・インダン"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "서울특별시 종로구 종로 88 3층 302호",
+      "district": "종로구",
+      "coordinates": [
+        126.987182330255,
+        37.5699504502726
+      ],
+      "tags": "오래가게, 맞춤도장, 수제도장, 종각역, 서울미래유산,도장"
+    },
+    {
+      "id": "seoul-attraction-42312",
+      "sourceId": "42312",
+      "name": "옛날집낙원아구찜",
+      "localizedNames": {
+        "en": "Yennaljip Nakwon Agujjim",
+        "ja": "イェンナルチプ・ナグォンアグチム"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03133 서울 종로구 삼일대로 436 (낙원동)",
+      "district": "종로구",
+      "coordinates": [
+        126.988000615593,
+        37.5734999165726
+      ],
+      "tags": "아귀찜,백년가게,해물탕,아귀탕,오래가게,해물찜,옛날집낙원아구찜"
+    },
+    {
+      "id": "seoul-attraction-43508",
+      "sourceId": "43508",
+      "name": "이태원북스",
+      "localizedNames": {
+        "en": "Itaewon Books",
+        "ja": "梨泰院ブックス"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04345 서울 용산구 녹사평대로 208 (이태원동)",
+      "district": "용산구",
+      "coordinates": [
+        126.987226909735,
+        37.5362463724633
+      ],
+      "tags": " 이태원,이태원스토어, 서울미래유산,오래가게,헌책방, 녹사평역, 외서, 서점, 책방"
+    },
+    {
+      "id": "seoul-attraction-40770",
+      "sourceId": "40770",
+      "name": "국립기상박물관",
+      "localizedNames": {
+        "en": "National Meteorological Museum of Korea",
+        "ja": "国立気象博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03178 서울 종로구 송월길 52 (송월동, 국립기상박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.966204176024,
+        37.5702217430549
+      ],
+      "tags": "국립기상박물관,경희궁,측우기,측우대,서울기상관측소,단풍,벚꽃,가장오래된측우대,100년관측소,날씨,한양도성"
+    },
+    {
+      "id": "seoul-attraction-52650",
+      "sourceId": "52650",
+      "name": "이회영 기념관",
+      "localizedNames": {
+        "en": "Lee Hoe-young Memorial Hall",
+        "ja": "李会栄記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03167 서울 종로구 사직로6길 15 (사직동)",
+      "district": "종로구",
+      "coordinates": [
+        126.965832677435,
+        37.5731739268239
+      ],
+      "tags": "이회영기념관,독립운동가,이회영,현충시설"
+    },
+    {
+      "id": "seoul-attraction-11659",
+      "sourceId": "11659",
+      "name": "국립현대미술관 서울관",
+      "localizedNames": {
+        "en": "National Museum of Modern and Contemporary Art, Seoul",
+        "ja": "国立現代美術館ソウル館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03062 서울 종로구 삼청로 30 (소격동)",
+      "district": "종로구",
+      "coordinates": [
+        126.980032718285,
+        37.5787436166877
+      ],
+      "tags": "소격동,현대미술,국립현대미술관,안국역,삼청동,복합문화예술센터, 전시,문화의거리,미술관,광화문"
+    },
+    {
+      "id": "seoul-attraction-43451",
+      "sourceId": "43451",
+      "name": "사하라",
+      "localizedNames": {
+        "en": "Sahara",
+        "ja": "サハラ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울특별시 마포구 만리재로 15, 제일빌딩 지하 1층 2호",
+      "district": "마포구",
+      "coordinates": [
+        126.95276773044,
+        37.5445849310546
+      ],
+      "tags": "오래가게,요리주점,공덕,마포,7080라이브,주점"
+    },
+    {
+      "id": "seoul-attraction-25927",
+      "sourceId": "25927",
+      "name": "명신당필방",
+      "localizedNames": {
+        "en": "Myeongsindang Calligraphy Shop",
+        "ja": "明信堂筆房"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03148 서울 종로구 인사동길 34",
+      "district": "종로구",
+      "coordinates": [
+        126.985717340243,
+        37.5735931856781
+      ],
+      "tags": "오래가게,서화재료판매,먹, 붓, 벼루, 문인화, 민화, 인사동, 쌈지길"
+    },
+    {
+      "id": "seoul-attraction-28329",
+      "sourceId": "28329",
+      "name": "독수리다방",
+      "localizedNames": {
+        "en": "Dokseori Dabang",
+        "ja": "トッスリ茶房"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "03776 서울 서대문구 연세로 36 독수리빌딩 8층",
+      "district": "서대문구",
+      "coordinates": [
+        126.937240313986,
+        37.5587839163385
+      ],
+      "tags": "카페,커피,엔티크,연세대,신촌,서울미래유산,오래가게"
+    },
+    {
+      "id": "seoul-attraction-6307",
+      "sourceId": "6307",
+      "name": "신안촌",
+      "localizedNames": {
+        "en": "Sinanchon",
+        "ja": "シナンチョン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03169 서울특별시 종로구 사직로12길 8 (내자동)",
+      "district": "종로구",
+      "coordinates": [
+        126.970877962504,
+        37.5756194075988
+      ],
+      "tags": "남도음식,경복궁맛집,낙지연포탕,홍어,낙지,신안촌,홍어맛집,한식"
+    },
+    {
+      "id": "seoul-attraction-20547",
+      "sourceId": "20547",
+      "name": "국립중앙박물관 어린이박물관",
+      "localizedNames": {
+        "en": "Children's Museum of the National Museum of Korea",
+        "ja": "国立中央博物館子ども博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04383 서울 용산구 서빙고로 137 (용산동6가, 국립중앙박물관)",
+      "district": "용산구",
+      "coordinates": [
+        126.977740246542,
+        37.5247022357875
+      ],
+      "tags": "관람,어린이박물관,국립중앙박물관,관광지,전시,이촌역,유물,문화재,박물관"
+    },
+    {
+      "id": "seoul-attraction-2247",
+      "sourceId": "2247",
+      "name": "갤러리 팩토리",
+      "localizedNames": {
+        "en": "Gallery Factory",
+        "ja": "ギャラリーファクトリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03043 서울 종로구 자하문로10길 15",
+      "district": "종로구",
+      "coordinates": [
+        126.972412473034,
+        37.5795217119018
+      ],
+      "tags": "전시,갤러리,창성동,미술,예술,시각예술,광화문,퍼블릭아트,아트숍,팩토리2,갤러리팩토리,경복궁,상수역"
+    },
+    {
+      "id": "seoul-attraction-6889",
+      "sourceId": "6889",
+      "name": "경희대학교 한의학역사박물관",
+      "localizedNames": {
+        "en": "Kyung Hee University Museum of Korean Medicine",
+        "ja": "慶熙大学韓医学歴史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02453 서울 동대문구 경희대로 26-6 (회기동, 경희대학교)",
+      "district": "동대문구",
+      "coordinates": [
+        127.053223139329,
+        37.5937443884234
+      ],
+      "tags": "한의학역사박물관,경희대학교,평화의전당,외대앞역,전시,박물관,역사,한의학,회기역"
+    },
+    {
+      "id": "seoul-attraction-46885",
+      "sourceId": "46885",
+      "name": "박선영전통한복연구실",
+      "localizedNames": {
+        "en": "Park Seon-yeong Traditional Hanbok Studio",
+        "ja": "パク・ソニョン伝統韓服研究室"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03100 서울 종로구 율곡로 227 (이화동)",
+      "district": "종로구",
+      "coordinates": [
+        127.004234082328,
+        37.5761633402492
+      ],
+      "tags": "장인,혜화,무형문화제,오래가게,한복"
+    },
+    {
+      "id": "seoul-attraction-5815",
+      "sourceId": "5815",
+      "name": "롯데월드 민속박물관",
+      "localizedNames": {
+        "en": "Lotte World Folk Museum",
+        "ja": "ロッテワールド民俗博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "05554 서울 송파구 올림픽로 240 (잠실동, 롯데월드)",
+      "district": "송파구",
+      "coordinates": [
+        127.098141751177,
+        37.5113096112036
+      ],
+      "tags": "전통음식, 민속식당가,전통,어린이박물관, 전시, 잠실역,박물관,잠실,롯데월드민속박물관, 전통공예품, 궁중의례"
+    },
+    {
+      "id": "seoul-attraction-21278",
+      "sourceId": "21278",
+      "legacyId": "lotte-world-tower",
+      "name": "롯데월드타워",
+      "localizedNames": {
+        "en": "Lotte World Tower",
+        "ja": "ロッテワールドタワー"
+      },
+      "category": "Shopping",
+      "placeType": "shopping_destination",
+      "address": "05551 서울 송파구 올림픽로 300 (신천동)",
+      "district": "송파구",
+      "coordinates": [
+        127.104301829165,
+        37.5137129859207
+      ],
+      "tags": "백화점,전망대,서울스카이,아쿠아리움,잠실, 롯데월드,롯데월드타워, 면세점"
+    },
+    {
+      "id": "seoul-attraction-1232",
+      "sourceId": "1232",
+      "legacyId": "leeum",
+      "name": "리움 미술관",
+      "localizedNames": {
+        "en": "Leeum Museum of Art",
+        "ja": "リウム美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04348 서울 용산구 이태원로55길 60-16 (한남동)",
+      "district": "용산구",
+      "coordinates": [
+        126.999294071613,
+        37.5384612696435
+      ],
+      "tags": "한강진역,한남동,갤러리,이태원,미술관,문화,예술체험,삼성리움,리움미술관,한남동미술관,삼성미술관리움"
+    },
+    {
+      "id": "seoul-attraction-52455",
+      "sourceId": "52455",
+      "name": "마이아트뮤지엄 원그로브점",
+      "localizedNames": {
+        "en": "My Art Museum, One Grove",
+        "ja": "マイアートミュージアム・ワングローブ"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "07800 서울 강서구 공항대로 165 원그로브 C동 2층 W213호",
+      "district": "강서구",
+      "coordinates": [
+        126.824695969186,
+        37.5608751008131
+      ],
+      "tags": "서울가볼만한곳,전시추천,서울전시,마곡전시,서울데이트"
+    },
+    {
+      "id": "seoul-attraction-1399",
+      "sourceId": "1399",
+      "name": "만해한용운 심우장",
+      "localizedNames": {
+        "en": "Manhae Han Yong-un's Simujang",
+        "ja": "万海・韓龍雲の尋牛荘"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02879 서울 성북구 성북로29길 24 (만해 한용운 심우장)",
+      "district": "성북구",
+      "coordinates": [
+        126.991664715178,
+        37.5936269817903
+      ],
+      "tags": "유적지, 한성대입구역,성북동, 만해한용운, 심우장, 한용운,역사유적"
+    },
+    {
+      "id": "seoul-attraction-29721",
+      "sourceId": "29721",
+      "name": "김용안과자점",
+      "localizedNames": {
+        "en": "Kim Yong-an Confectionery Shop",
+        "ja": "キム・ヨンアン菓子店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04376 서울 용산구 한강대로 155-1 (한강로2가)",
+      "district": "용산구",
+      "coordinates": [
+        126.971256672775,
+        37.5330751959489
+      ],
+      "tags": "용산,전병,과자,오래가게,장인정신,삼각지"
+    },
+    {
+      "id": "seoul-attraction-6614",
+      "sourceId": "6614",
+      "name": "나폴레옹과자점",
+      "localizedNames": {
+        "en": "Napoleon Bakery",
+        "ja": "ナポレオン製菓店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "02880 서울 성북구 성북로 7",
+      "district": "성북구",
+      "coordinates": [
+        127.005061678527,
+        37.5889000220847
+      ],
+      "tags": " 케이크, 대학로, 성북동,서울3대빵집,빵, 제과점,오래가게, 서울미래유산"
+    },
+    {
+      "id": "seoul-attraction-50865",
+      "sourceId": "50865",
+      "name": "만포면옥",
+      "localizedNames": {
+        "en": "Manpo Myeonok",
+        "ja": "マンポ麺屋"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03336 서울 은평구 연서로 171 (갈현동, 동연빌딩)",
+      "district": "은평구",
+      "coordinates": [
+        126.917460367247,
+        37.6141425195587
+      ],
+      "tags": "오래가게,평양냉면,어복쟁반,불고기,만두,평양,냉면,북한,갈현동,구산역,은평"
+    },
+    {
+      "id": "seoul-attraction-4037",
+      "sourceId": "4037",
+      "name": "명동성당",
+      "localizedNames": {
+        "en": "Myeongdong Cathedral",
+        "ja": "明洞大聖堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04537 서울 중구 명동길 74 (명동성당)",
+      "district": "중구",
+      "coordinates": [
+        126.986775823267,
+        37.5636758699882
+      ],
+      "tags": "가톨릭,역사, 천주교,명동, 종교, 명동주교좌성당, 고딕,명동대성당, 성당,명동성당"
+    },
+    {
+      "id": "seoul-attraction-1872",
+      "sourceId": "1872",
+      "name": "갤러리 학고재",
+      "localizedNames": {
+        "en": "Hakgojae Gallery",
+        "ja": "学古斎ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03053 서울특별시 종로구 삼청로 50 (소격동)",
+      "district": "종로구",
+      "coordinates": [
+        126.980316758246,
+        37.5804654638012
+      ],
+      "tags": " 삼청동갤러리, 북촌,갤러리, 학고재,소격동,안국역,인사동, 미술관, 종로구,문화, 북촌갤러리"
+    },
+    {
+      "id": "seoul-attraction-51503",
+      "sourceId": "51503",
+      "name": "서울시립 북서울미술관",
+      "localizedNames": {
+        "en": "Buk-Seoul Museum of Art",
+        "ja": "ソウル市立北ソウル美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01783 서울특별시 노원구 동일로 1238 (중계동)",
+      "district": "노원구",
+      "coordinates": [
+        127.066865579183,
+        37.6406604547872
+      ],
+      "tags": "시립미술관,노원구미술관,산책로,조각공원,북서울미술관"
+    },
+    {
+      "id": "seoul-attraction-1904",
+      "sourceId": "1904",
+      "name": "보신각(상설타종행사)",
+      "localizedNames": {
+        "en": "Bosingak Bell-Ringing Event",
+        "ja": "普信閣常設鐘撞きイベント"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03189 서울 종로구 종로 54 (관철동, 보신각)",
+      "district": "종로구",
+      "coordinates": [
+        126.983677617361,
+        37.5697673859634
+      ],
+      "tags": "제야의종, 타종행사,서울여행,서울보신각종,서울새해여행,서울역사적인곳,서울가볼만한곳,광화문,종각역가볼만한곳,새해,종각역,종로,보신각"
+    },
+    {
+      "id": "seoul-attraction-411",
+      "sourceId": "411",
+      "legacyId": "bongeunsa",
+      "name": "봉은사",
+      "localizedNames": {
+        "en": "Bongeunsa Temple",
+        "ja": "奉恩寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "06087 서울특별시 강남구 봉은사로 531",
+      "district": "강남구",
+      "coordinates": [
+        127.057734484281,
+        37.5158257049833
+      ],
+      "tags": "종교, 사찰,코엑스,봉은사, 강남,템플스테이, 봉은사역, 불교,연등행렬"
+    },
+    {
+      "id": "seoul-attraction-2545",
+      "sourceId": "2545",
+      "name": "방이동 백제고분군",
+      "localizedNames": {
+        "en": "Bangi-dong Baekje Tombs",
+        "ja": "芳荑洞百済古墳群"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울 송파구 방이동 산47-4번지",
+      "district": "송파구",
+      "coordinates": [
+        127.118164220291,
+        37.5075749063374
+      ],
+      "tags": " 고분군,방이동고분, 서울유적지,방이역, 역사, 유적지, 문화유적, 산책,삼국시대고분군, 백제, 백제고분, 방이동백제고분군"
+    },
+    {
+      "id": "seoul-attraction-20550",
+      "sourceId": "20550",
+      "name": "국립고궁박물관",
+      "localizedNames": {
+        "en": "National Palace Museum of Korea",
+        "ja": "国立古宮博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03045 서울 종로구 효자로 12 (세종로, 국립고궁박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.974974825074,
+        37.5765916191985
+      ],
+      "tags": " 관광지,국립고궁박물관, 유물, 서울관광, 경복궁역, 역사,전시, 박물관, 문화재,왕실문화"
+    },
+    {
+      "id": "seoul-attraction-11897",
+      "sourceId": "11897",
+      "name": "국립국악박물관",
+      "localizedNames": {
+        "en": "National Museum of Korean Traditional Music",
+        "ja": "国立国楽博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06757 서울특별시 서초구 남부순환로 2364",
+      "district": "서초구",
+      "coordinates": [
+        127.009818464555,
+        37.4777188083482
+      ],
+      "tags": "방배역,강남,남부터미널역,내방역,관광지,박물관,국악기,전시,국립국악원,국립국악박물관,공연,전통음악"
+    },
+    {
+      "id": "seoul-attraction-43461",
+      "sourceId": "43461",
+      "name": "명가떡집",
+      "localizedNames": {
+        "en": "Myeongga Rice Cake Shop",
+        "ja": "名家餅店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "05564 서울 송파구 석촌호수로12길 7 (잠실동)",
+      "district": "송파구",
+      "coordinates": [
+        127.085614159971,
+        37.5090211638931
+      ],
+      "tags": " 잠실, 대왕찹쌀떡,오래가게,쑥인절미, 잠실새마을시장"
+    },
+    {
+      "id": "seoul-attraction-28656",
+      "sourceId": "28656",
+      "name": "백범광장공원",
+      "localizedNames": {
+        "en": "Baekbeom Square Park",
+        "ja": "白凡広場公園"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04633 서울 중구 퇴계로8길 49-4",
+      "district": "중구",
+      "coordinates": [
+        126.979964687665,
+        37.5571619646336
+      ],
+      "tags": " 독립운동가,문화유산,명동, 남산공원, 백범광장공원,김구,회현역"
+    },
+    {
+      "id": "seoul-attraction-43447",
+      "sourceId": "43447",
+      "name": "그날이오면",
+      "localizedNames": {
+        "en": "Geunal-i Omyeon",
+        "ja": "クナルイオミョン"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "08814 서울 관악구 신림로 91 (신림동) 9호",
+      "district": "관악구",
+      "coordinates": [
+        126.939065988966,
+        37.4703086452623
+      ],
+      "tags": "오래가게,1980년대,대학교재,서점,서울대,신림,관악"
+    },
+    {
+      "id": "seoul-attraction-1833",
+      "sourceId": "1833",
+      "name": "서대문형무소역사관",
+      "localizedNames": {
+        "en": "Seodaemun Prison History Hall",
+        "ja": "西大門刑務所歴史館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 서대문구 통일로 251 (현저동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.955611774864,
+        37.5746085138333
+      ],
+      "tags": "안창호,3.1, 강우규,공원,역사관, 독립선언기념탑, 역사 유적, 8.15, 유관순,순국열사, 서대문형무소,독립운동가,독립문역,역사, 독립관,서대문독립공원"
+    },
+    {
+      "id": "seoul-attraction-46873",
+      "sourceId": "46873",
+      "name": "가봉루",
+      "localizedNames": {
+        "en": "Gabongnu",
+        "ja": "ガボンヌ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03182 서울 종로구 새문안로5길 5-27 (당주동, 당주빌딩)",
+      "district": "종로구",
+      "coordinates": [
+        126.974571894891,
+        37.5710268990296
+      ],
+      "tags": "오래가게,고기튀김,한국식중식,중식,종로,짜장면"
+    },
+    {
+      "id": "seoul-attraction-10929",
+      "sourceId": "10929",
+      "name": "대오서점",
+      "localizedNames": {
+        "en": "Daeo Bookstore",
+        "ja": "大五書店"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "03036 서울특별시 종로구 자하문로7길 55  (누하동)",
+      "district": "종로구",
+      "coordinates": [
+        126.969324927835,
+        37.5797361073093
+      ],
+      "tags": "가볼만한곳,서촌나들이,서촌카페,상어-촬영지,대오서점,서촌,아이유,노포"
+    },
+    {
+      "id": "seoul-attraction-23563",
+      "sourceId": "23563",
+      "name": "덕수궁돌담길",
+      "localizedNames": {
+        "en": "Deoksugung Stonewall Walkway",
+        "ja": "徳寿宮石垣道"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04519 서울 중구 세종대로19길 24 덕수궁 돌담길",
+      "district": "중구",
+      "coordinates": [
+        126.974461639777,
+        37.5677154464989
+      ],
+      "tags": "서울데이트코스,서울나들이,연인과함께,덕수궁돌담길,서울산책길,서울걷기좋은곳,주말나들이,서울낭만적인장소,가을데이트코스,걷기좋은길,서울가을명소"
+    },
+    {
+      "id": "seoul-attraction-2372",
+      "sourceId": "2372",
+      "name": "살곶이다리（전곶교）",
+      "localizedNames": {
+        "en": "Salgodari Bridge (Jeongokgyo)",
+        "ja": "サルゴダリ橋（箭串橋）"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "서울 성동구 행당동 61-1",
+      "district": "성동구",
+      "coordinates": [
+        127.045468943168,
+        37.5540825979594
+      ],
+      "tags": " 중랑천,한양대역, 뚝섬역, 한강, 전곶교, 한양대학교,살곶이다리, 산책로,최장교"
+    },
+    {
+      "id": "seoul-attraction-24645",
+      "sourceId": "24645",
+      "name": "세빛섬",
+      "localizedNames": {
+        "en": "Some Sevit",
+        "ja": "セビッ島"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "06500 서울 서초구 올림픽대로 2085-14 (반포동)",
+      "district": "서초구",
+      "coordinates": [
+        126.995962256954,
+        37.5124362037118
+      ],
+      "tags": "공연, 세빛섬,강남,야경,이벤트, 인공섬,한강,전시,야간명소,수상문화공간"
+    },
+    {
+      "id": "seoul-attraction-51227",
+      "sourceId": "51227",
+      "name": "경희대학교 서울캠퍼스",
+      "localizedNames": {
+        "en": "Kyung Hee University, Seoul Campus",
+        "ja": "慶熙大学ソウルキャンパス"
+      },
+      "category": "Culture",
+      "placeType": "campus_architecture",
+      "address": "02447 서울 동대문구 경희대로 26 (회기동, 경희대학교,경희초,중,고,여자중고등학교)",
+      "district": "동대문구",
+      "coordinates": [
+        127.054890960564,
+        37.5939491407769
+      ],
+      "tags": "경희대학교,고딕건축양식,서울캠퍼스,경희랜드,회기역,평화의 전당"
+    },
+    {
+      "id": "seoul-attraction-21128",
+      "sourceId": "21128",
+      "name": "백인제가옥",
+      "localizedNames": {
+        "en": "Baek In-je House",
+        "ja": "白麟済家屋"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03055 서울 종로구 북촌로7길 16 (가회동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984092922693,
+        37.5804450398958
+      ],
+      "tags": "안국역, 문화유산,한옥, 북촌,별당채, 민속문화재,광화문,백인제가옥, 일제강점기"
+    },
+    {
+      "id": "seoul-attraction-26558",
+      "sourceId": "26558",
+      "legacyId": "starfield-library",
+      "name": "별마당 도서관",
+      "localizedNames": {
+        "en": "Starfield Library",
+        "ja": "ピョルマダン図書館"
+      },
+      "category": "Culture",
+      "placeType": "library_architecture",
+      "address": "06164 서울 강남구 영동대로 513 (삼성동, 코엑스)",
+      "district": "강남구",
+      "coordinates": [
+        127.059159043842,
+        37.5118239121138
+      ],
+      "tags": "강남,코엑스,삼성동, 서울도서관, 문화,도서관,북콘서트,독서,별마당,별마당도서관"
+    },
+    {
+      "id": "seoul-attraction-43612",
+      "sourceId": "43612",
+      "name": "신흥상회",
+      "localizedNames": {
+        "en": "Shinheung Store",
+        "ja": "新興商会"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07299 서울 영등포구 도림로126길 1 (문래동3가)",
+      "district": "영등포구",
+      "coordinates": [
+        126.896507333338,
+        37.5139792234346
+      ],
+      "tags": " 영등포, 문래창작촌,오래가게, 슈퍼, 가맥, 문래동,문래철공단지, 간단안주"
+    },
+    {
+      "id": "seoul-attraction-27813",
+      "sourceId": "27813",
+      "name": "북촌목공예공방",
+      "localizedNames": {
+        "en": "Bukchon Woodcraft Workshop",
+        "ja": "北村木工芸工房"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03057 서울 종로구 계동길 112 지1층",
+      "district": "종로구",
+      "coordinates": [
+        126.986935437125,
+        37.5823429714786
+      ],
+      "tags": "공예체험,전시,북촌한옥마을,목공예,북촌,오래가게,공예"
+    },
+    {
+      "id": "seoul-attraction-52237",
+      "sourceId": "52237",
+      "name": "석파정 서울미술관",
+      "localizedNames": {
+        "en": "Seokparang Seoul Museum",
+        "ja": "石坡亭ソウル美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03021 서울 종로구 창의문로11길 4-1 (부암동)",
+      "district": "종로구",
+      "coordinates": [
+        126.962428778162,
+        37.5949660263908
+      ],
+      "tags": "석파정,서울전시,서울미술관"
+    },
+    {
+      "id": "seoul-attraction-1965",
+      "sourceId": "1965",
+      "name": "국립서울현충원",
+      "localizedNames": {
+        "en": "Seoul National Cemetery",
+        "ja": "国立ソウル顕忠院"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "06984 서울 동작구 현충로 210 (동작동, 국립현충원)",
+      "district": "동작구",
+      "coordinates": [
+        126.978408414947,
+        37.4998236507216
+      ],
+      "tags": "서울단풍명소,유적지,현충일,서울현충원,서울가을단풍,현충원,서울가볼만한곳,역사,현충원둘레길,호국보훈의달,국립서울현충원,가을단풍"
+    },
+    {
+      "id": "seoul-attraction-5134",
+      "sourceId": "5134",
+      "name": "국립어린이민속박물관",
+      "localizedNames": {
+        "en": "National Children's Folk Museum",
+        "ja": "国立子ども民俗博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03045 서울 종로구 삼청로 37 (세종로, 국립민속박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.978889955558,
+        37.5816745310255
+      ],
+      "tags": "밥상지교, 국립어린이민속박물관, 안국역, 광화문,박물관, 추억의거리, 국립민속박물관,역사,어린이박물관, 전통문화"
+    },
+    {
+      "id": "seoul-attraction-90",
+      "sourceId": "90",
+      "name": "서울 한양도성",
+      "localizedNames": {
+        "en": "Seoul City Wall",
+        "ja": "ソウル漢陽都城"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03098 서울 종로구 율곡로 283 (종로6가, 서울디자인지원센터)",
+      "district": "종로구",
+      "coordinates": [
+        127.008512843764,
+        37.5728571793919
+      ],
+      "tags": "성곽, 한성대입구역, 인왕산, 한양도성, 4대문,동대문,남산,낙산공원,4소문"
+    },
+    {
+      "id": "seoul-attraction-38092",
+      "sourceId": "38092",
+      "name": "서울공예박물관",
+      "localizedNames": {
+        "en": "Seoul Museum of Craft Art",
+        "ja": "ソウル工芸博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03061 서울 종로구 율곡로3길 4 (안국동, 서울공예박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.983261339115,
+        37.576611194995
+      ],
+      "tags": "서울박물관,아이와함께,박물관데이트,요즘볼거리,안국볼거리,서울가볼만한곳,서울역사적명소,서울공예박물관,서울새로생긴곳,비오는날데이트,부모님과함께,종로놀거리"
+    },
+    {
+      "id": "seoul-attraction-34149",
+      "sourceId": "34149",
+      "name": "서울도시건축전시관",
+      "localizedNames": {
+        "en": "Seoul Hall of Urbanism and Architecture",
+        "ja": "ソウル都市建築展示館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04519 서울 중구 세종대로 119 (태평로1가)",
+      "district": "중구",
+      "coordinates": [
+        126.976702419575,
+        37.5668837502225
+      ],
+      "tags": " 서울데이트,도시,서울마루, 전시,서울투어, 서울볼거리,seoulmaru,서울전시,seoulhour,서울도시건축전시관,건축"
+    },
+    {
+      "id": "seoul-attraction-1747",
+      "sourceId": "1747",
+      "name": "소극장 산울림",
+      "localizedNames": {
+        "en": "Sanullim Small Theater",
+        "ja": "小劇場サヌルリム"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "04052 서울특별시 마포구 와우산로 157 (서교동)",
+      "district": "마포구",
+      "coordinates": [
+        126.930109457636,
+        37.5550832990905
+      ],
+      "tags": " 관람, 서교동,오래가게,연극, 소극장, 홍대, 마포, 공연, 문화생활"
+    },
+    {
+      "id": "seoul-attraction-37890",
+      "sourceId": "37890",
+      "name": "세운청계상가",
+      "localizedNames": {
+        "en": "Sewoon Cheonggye Arcade",
+        "ja": "世運清渓商店街"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04545 서울 중구 청계천로 160 (산림동, 세운청계상가)",
+      "district": "중구",
+      "coordinates": [
+        126.995365114169,
+        37.5679798569884
+      ],
+      "tags": "한국드라마,서울,종로,드라마속여행지,서울명소,빈센조,세운상가,서울핫플,드라마촬영지,세운청계상가,을지로,카페,을지로카페,맛집"
+    },
+    {
+      "id": "seoul-attraction-50877",
+      "sourceId": "50877",
+      "name": "서부감자국",
+      "localizedNames": {
+        "en": "Seobu Gamjaguk",
+        "ja": "西部カムジャグク"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03384 서울 은평구 서오릉로 8 (녹번동)",
+      "district": "은평구",
+      "coordinates": [
+        126.926933124828,
+        37.602260750611
+      ],
+      "tags": "해장,감자탕,김치,응암동감자국거리,응암동,오래가게,감자국,은평"
+    },
+    {
+      "id": "seoul-attraction-43474",
+      "sourceId": "43474",
+      "name": "동부고려제과",
+      "localizedNames": {
+        "en": "Dongbu Goryeo Bakery",
+        "ja": "東部高麗製菓"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "02163 서울특별시 중랑구 망우로 388",
+      "district": "중랑구",
+      "coordinates": [
+        127.095128523555,
+        37.5985084427747
+      ],
+      "tags": "소화잘되는빵,서울미래유산,오래가게,천연발효,상봉역,빵,동네빵집,망우동,제과점"
+    },
+    {
+      "id": "seoul-attraction-37164",
+      "sourceId": "37164",
+      "name": "석파정",
+      "localizedNames": {
+        "en": "Seokpajeong Pavilion",
+        "ja": "石坡亭"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03021 서울 종로구 창의문로11길 4-1",
+      "district": "종로구",
+      "coordinates": [
+        126.962428778162,
+        37.5949660263908
+      ],
+      "tags": "역사적명소,석파정,정원,미술관,미술"
+    },
+    {
+      "id": "seoul-attraction-846",
+      "sourceId": "846",
+      "name": "의학박물관 (구 대한의원)",
+      "localizedNames": {
+        "en": "Medical Museum (Former Daehan Hospital)",
+        "ja": "医学博物館（旧・大韓医院）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03080 서울특별시 종로구 대학로 101",
+      "district": "종로구",
+      "coordinates": [
+        126.997196437908,
+        37.5804523853297
+      ],
+      "tags": "서울대학교,혜화역,역사,서울대학교병원, 전시,종로구연건동, 의학박물관, 박물관"
+    },
+    {
+      "id": "seoul-attraction-43432",
+      "sourceId": "43432",
+      "name": "만나당",
+      "localizedNames": {
+        "en": "Mannadang",
+        "ja": "マンナダン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "06029 서울 강남구 논현로175길 61 (신사동) 1층 101호 만나당",
+      "district": "강남구",
+      "coordinates": [
+        127.024073114133,
+        37.5241526290529
+      ],
+      "tags": "수제, 궁중약과, 강남,오래가게, 압구정, 약과, 가로수길"
+    },
+    {
+      "id": "seoul-attraction-46796",
+      "sourceId": "46796",
+      "name": "이길이구 갤러리",
+      "localizedNames": {
+        "en": "2GIL29 Gallery",
+        "ja": "2GIL29ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06034 서울 강남구 강남대로158길 35 (신사동)",
+      "district": "강남구",
+      "coordinates": [
+        127.021480246749,
+        37.5197495682315
+      ],
+      "tags": "전시,미술관,강남,신사,갤러리,강남전시"
+    },
+    {
+      "id": "seoul-attraction-48679",
+      "sourceId": "48679",
+      "name": "서울시립사진미술관",
+      "localizedNames": {
+        "en": "Seoul Museum of Photography",
+        "ja": "ソウル市立写真美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "01411 서울 도봉구 마들로13길 68 (창동) 서울시립 사진미술관",
+      "district": "도봉구",
+      "coordinates": [
+        127.048947814686,
+        37.6555150225578
+      ],
+      "tags": "사진,전시,미술관,창동역,서울시립사진미술관,전시회,사진전시,예술,문화,서울전시"
+    },
+    {
+      "id": "seoul-attraction-51370",
+      "sourceId": "51370",
+      "name": "서울아트센터 도암갤러리",
+      "localizedNames": {
+        "en": "Seoul Art Center Doam Gallery",
+        "ja": "ソウルアートセンター・ドアムギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03011 서울 종로구 평창문화로 70, 서울아트센터 도암 3층",
+      "district": "종로구",
+      "coordinates": [
+        126.967906461707,
+        37.6057079931502
+      ],
+      "tags": "미술관,예술체험,무료전시,도암갤러리,평창동미술관,평창동갤러리,갤러리,서울아트센터도암"
+    },
+    {
+      "id": "seoul-attraction-4632",
+      "sourceId": "4632",
+      "name": "서울약령시 한의약박물관",
+      "localizedNames": {
+        "en": "Seoul Yangnyeongsi Museum of Korean Medicine",
+        "ja": "ソウル薬令市韓医薬博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02570 서울 동대문구 약령중앙로 26 (제기동, 서울한방진흥센터) B2",
+      "district": "동대문구",
+      "coordinates": [
+        127.037586644096,
+        37.5806004145096
+      ],
+      "tags": " 동의보감타워, 전시, 박물관, 전통,한방체험,용두동, 한의약,한약,용두역,한방문화쉼터,한의약박물관, 제기동역, 동대문"
+    },
+    {
+      "id": "seoul-attraction-45458",
+      "sourceId": "45458",
+      "name": "창신동 절벽마을",
+      "localizedNames": {
+        "en": "Changsin-dong Cliff Village",
+        "ja": "昌信洞崖村"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03091 서울 종로구 낙산5길 51",
+      "district": "종로구",
+      "coordinates": [
+        127.011596787935,
+        37.5782558563534
+      ],
+      "tags": "서울가볼만한곳, 창신동,창신동절벽마을,대한민국현대사"
+    },
+    {
+      "id": "seoul-attraction-6996",
+      "sourceId": "6996",
+      "name": "손기정기념관",
+      "localizedNames": {
+        "en": "Son Kee-chung Memorial Hall",
+        "ja": "孫基禎記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04501 서울 중구 손기정로 101 (손기정 체육공원)",
+      "district": "중구",
+      "coordinates": [
+        126.964815746241,
+        37.5554795035057
+      ],
+      "tags": "서울역,이승만,손기정체육공원,베를린올림픽,만리동,손기정기념관,김구,금메달,박물관,손기정,일제강점기,기념관,마라톤,충정로역"
+    },
+    {
+      "id": "seoul-attraction-46881",
+      "sourceId": "46881",
+      "name": "손가네닭한마리",
+      "localizedNames": {
+        "en": "Son Gane Dakhanmari",
+        "ja": "ソンガネタッカンマリ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03115 서울 종로구 종로66가길 10 (숭인동, 유림빌딩)",
+      "district": "종로구",
+      "coordinates": [
+        127.021385020305,
+        37.5736925736747
+      ],
+      "tags": "오래가게,닭한마리,신설동"
+    },
+    {
+      "id": "seoul-attraction-3778",
+      "sourceId": "3778",
+      "name": "송은(SONGEUN)",
+      "localizedNames": {
+        "en": "SONGEUN",
+        "ja": "ソンウン"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06016 서울 강남구 도산대로 441 (청담동)",
+      "district": "강남구",
+      "coordinates": [
+        127.044120642323,
+        37.5241627891516
+      ],
+      "tags": "송은, 송은 문화재단, 강남,청담동,전시,미술, 예술, 미술관,압구정로데오역"
+    },
+    {
+      "id": "seoul-attraction-5060",
+      "sourceId": "5060",
+      "name": "신당창작아케이드",
+      "localizedNames": {
+        "en": "Sindang Creative Arcade",
+        "ja": "新堂創作アーケード"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "04571 서울 중구 마장로 87 (황학동) 신당지하쇼핑센터",
+      "district": "중구",
+      "coordinates": [
+        127.019357377705,
+        37.568494451339
+      ],
+      "tags": "전시,동대문,신당창작아케이드,문화체험,신당지하쇼핑센터,신당역,황학동,서울시창작공간,미술관,아트마켓"
+    },
+    {
+      "id": "seoul-attraction-46311",
+      "sourceId": "46311",
+      "name": "신아기념관",
+      "localizedNames": {
+        "en": "Shina Memorial Hall",
+        "ja": "シナ記念館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_architecture",
+      "address": "04518 서울 중구 정동길 33 (정동, 신아일보)",
+      "district": "중구",
+      "coordinates": [
+        126.972170048684,
+        37.5662500894879
+      ],
+      "tags": "신아기념관,대한민국근현대사,덕수궁돌담길,정동,정동길,덕수궁"
+    },
+    {
+      "id": "seoul-attraction-26193",
+      "sourceId": "26193",
+      "name": "순희네 반찬",
+      "localizedNames": {
+        "en": "Soonhee's Side Dishes",
+        "ja": "スニネおかず"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03195 서울 종로구 창경궁로 88 1층 광장시장 65-1",
+      "district": "종로구",
+      "coordinates": [
+        126.999798964693,
+        37.5701196320637
+      ],
+      "tags": " 종로,젓갈,반찬,오래가게, 게장, 광장시장"
+    },
+    {
+      "id": "seoul-attraction-30803",
+      "sourceId": "30803",
+      "name": "아모레퍼시픽미술관",
+      "localizedNames": {
+        "en": "Amorepacific Museum of Art",
+        "ja": "アモーレパシフィック美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 용산구 한강대로 100 (한강로2가 181)",
+      "district": "용산구",
+      "coordinates": [
+        126.968673565462,
+        37.5287911785354
+      ],
+      "tags": "아모레퍼시픽미술관,기획전,현대미술, 신용산역,전시, 고미술, 미술관"
+    },
+    {
+      "id": "seoul-attraction-1159",
+      "sourceId": "1159",
+      "name": "경희궁",
+      "localizedNames": {
+        "en": "Gyeonghuigung Palace",
+        "ja": "慶熙宮"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03177 서울 종로구 새문안로 45 (경희궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.96798487452,
+        37.5717690679936
+      ],
+      "tags": "종로산책,경희궁산책길,서울5대궁궐,한국궁궐,경희궁,서울궁,고궁투어,서울산책,종로산책길,서울고궁,고궁데이트,종로데이트코스,걷기좋은길,서울역사박물관,서울가볼만한곳"
+    },
+    {
+      "id": "seoul-attraction-6957",
+      "sourceId": "6957",
+      "name": "경희대학교 자연사박물관",
+      "localizedNames": {
+        "en": "Kyung Hee University Natural History Museum",
+        "ja": "慶熙大学自然史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02447 서울특별시 동대문구 경희대로 26, 경희대학교 자연사박물관",
+      "district": "동대문구",
+      "coordinates": [
+        127.054890960564,
+        37.5939491407769
+      ],
+      "tags": " 경희대,퇴작암,회기역,외대앞역,화성암,경희대학교, 유럽산암석, 박물관,경희대자연사박물관, 전시,자연사박물관,유물"
+    },
+    {
+      "id": "seoul-attraction-49815",
+      "sourceId": "49815",
+      "name": "청운문학도서관",
+      "localizedNames": {
+        "en": "Cheongun Literature Library",
+        "ja": "青雲文学図書館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 자하문로36길 40",
+      "district": "종로구",
+      "coordinates": [
+        126.965918565819,
+        37.5903774328865
+      ],
+      "tags": "공공도서관,종로문화재단,시문학특화,한옥도서관,종로구도서관,청운문학도서관"
+    },
+    {
+      "id": "seoul-attraction-3387",
+      "sourceId": "3387",
+      "name": "구 공업전습소 본관(구 중앙시험소 청사)",
+      "localizedNames": {
+        "en": "Former Main Building of the Industrial Training Institute (Former Central Testing Laboratory)",
+        "ja": "旧工業伝習所本館（旧中央試験所庁舎）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 대학로 86 (동숭동, 한국방송통신대학교)",
+      "district": "종로구",
+      "coordinates": [
+        127.003290880975,
+        37.5791954862382
+      ],
+      "tags": "옛공업전습소본관,대한제국,유적지,서울대학교,경성공업,방송통신대학교,동대문,혜화역"
+    },
+    {
+      "id": "seoul-attraction-29767",
+      "sourceId": "29767",
+      "name": "국궁전시관",
+      "localizedNames": {
+        "en": "Korean Archery Exhibition Hall",
+        "ja": "国弓展示館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03027 서울 종로구 사직로9길 15-32 (사직동)",
+      "district": "종로구",
+      "coordinates": [
+        126.963945833593,
+        37.5779183632114
+      ],
+      "tags": "활쏘기,국궁,국궁전시관, 전시관,체험프로그램, 활만들기, 활, 황학정,경복궁역"
+    },
+    {
+      "id": "seoul-attraction-50532",
+      "sourceId": "50532",
+      "name": "넷마블게임박물관",
+      "localizedNames": {
+        "en": "Netmarble Game Museum",
+        "ja": "ネットマーブルゲーム博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "08393 서울 구로구 디지털로26길 38 3층",
+      "district": "구로구",
+      "coordinates": [
+        126.895318461208,
+        37.4798477003537
+      ],
+      "tags": "게임박물관,서울박물관,넷마블게임박물관,넷마블,게임전시,체험형박물관"
+    },
+    {
+      "id": "seoul-attraction-43452",
+      "sourceId": "43452",
+      "name": "다락",
+      "localizedNames": {
+        "en": "Darak",
+        "ja": "タラク"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04172 서울 마포구 도화2길 8 (도화동, 에어몰 빌딩)",
+      "district": "마포구",
+      "coordinates": [
+        126.948762009763,
+        37.5400702441827
+      ],
+      "tags": "분식,즉석떡볶이,볶음밥,마포떡볶이골목,오래가게,공덕"
+    },
+    {
+      "id": "seoul-attraction-6218",
+      "sourceId": "6218",
+      "name": "진아춘 광화문점",
+      "localizedNames": {
+        "en": "Jinachun Gwanghwamun Branch",
+        "ja": "ジナチュン光化門店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03186 서울 종로구 새문안로 92 (신문로1가, 광화문오피시아 B117~119호)",
+      "district": "종로구",
+      "coordinates": [
+        126.974907969051,
+        37.5696996246023
+      ],
+      "tags": "중식,중화,3대맛집,광화문역,진아춘,중국요리,중식맛집,광화문맛집,라풍기,동파육"
+    },
+    {
+      "id": "seoul-attraction-27105",
+      "sourceId": "27105",
+      "name": "근현대사기념관",
+      "localizedNames": {
+        "en": "Modern Korean History Memorial Hall",
+        "ja": "近現代史記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 강북구 4·19로 114 (수유동)",
+      "district": "강북구",
+      "coordinates": [
+        127.002830628534,
+        37.6434410661945
+      ],
+      "tags": "강북구,독립운동,초대길,수유역, 민주주의,순국선열, 근현대사기념관"
+    },
+    {
+      "id": "seoul-attraction-28052",
+      "sourceId": "28052",
+      "name": "글벗서점",
+      "localizedNames": {
+        "en": "Geulbeot Bookstore",
+        "ja": "クルボッ書店"
+      },
+      "category": "Shopping",
+      "placeType": "bookshop",
+      "address": "03941 서울 마포구 월드컵북로 210 (성산동)",
+      "district": "마포구",
+      "coordinates": [
+        126.905804329554,
+        37.5692205219891
+      ],
+      "tags": "오래가게,연세대,신촌,경의선책거리,헌책방,책방,헌책,서점"
+    },
+    {
+      "id": "seoul-attraction-48454",
+      "sourceId": "48454",
+      "name": "녹사평 육교",
+      "localizedNames": {
+        "en": "Noksapyeong Overpass",
+        "ja": "緑莎坪歩道橋"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04353 서울 용산구 녹사평대로 지하 195 (용산동4가, 6호선 녹사평역)",
+      "district": "용산구",
+      "coordinates": [
+        126.987028473368,
+        37.5348314193581
+      ],
+      "tags": "녹사평역사진스팟,드라마촬영지,이태원클라쓰"
+    },
+    {
+      "id": "seoul-attraction-5018",
+      "sourceId": "5018",
+      "name": "대각사",
+      "localizedNames": {
+        "en": "Daegaksa Temple",
+        "ja": "大覚寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03134 서울 종로구 율곡로10길 87 (대각사)",
+      "district": "종로구",
+      "coordinates": [
+        126.992025898705,
+        37.5736834293495
+      ],
+      "tags": "  불교, 대각회, 종로사찰, 사찰,절,종로 3가역,서울사찰,창덕궁, 대각사, 종교, 용성스님"
+    },
+    {
+      "id": "seoul-attraction-5000",
+      "sourceId": "5000",
+      "name": "청원산방",
+      "localizedNames": {
+        "en": "Cheongwonsanbang",
+        "ja": "青園山房"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03056 서울 종로구 북촌로6길 27 (계동)",
+      "district": "종로구",
+      "coordinates": [
+        126.986357149175,
+        37.5804298262002
+      ],
+      "tags": "오래가게, 북촌한옥마을, 공예체험, 전통, 창호, 소목장, 공예"
+    },
+    {
+      "id": "seoul-attraction-4537",
+      "sourceId": "4537",
+      "name": "청진옥",
+      "localizedNames": {
+        "en": "Cheongjinok",
+        "ja": "清進屋"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03156 서울 종로구 종로3길 32 (청진동, 청진빌딩) 1층",
+      "district": "종로구",
+      "coordinates": [
+        126.979463167521,
+        37.571729636393
+      ],
+      "tags": "해장맛집,국밥집,선지해장국,종로맛집,청진옥,르메이에르,한식당,해장국,한식맛집,수요미식회,국밥맛집"
+    },
+    {
+      "id": "seoul-attraction-72",
+      "sourceId": "72",
+      "legacyId": "gyeongbokgung",
+      "name": "경복궁",
+      "localizedNames": {
+        "en": "Gyeongbokgung Palace",
+        "ja": "景福宮"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03045 서울 종로구 사직로 161 (세종로, 경복궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.976842133821,
+        37.5759040910202
+      ],
+      "tags": "경복궁입장료,서울데이트,서울가볼만한곳,서울나들이,한국문화,한국전통,서울볼거리,경복궁,서울명소,서울궁궐,서울관광지,서울여행,한국역사적명소"
+    },
+    {
+      "id": "seoul-attraction-43606",
+      "sourceId": "43606",
+      "name": "삼우치킨센타",
+      "localizedNames": {
+        "en": "Samwoo Chicken Center",
+        "ja": "三友チキンセンター"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07442 서울특별시 영등포구 시흥대로 671 (대림동)",
+      "district": "영등포구",
+      "coordinates": [
+        126.90815760996,
+        37.4916433823343
+      ],
+      "tags": "호프, 치킨,오래가게, 통닭, 월급날, 보라매공원,대림동, 치맥"
+    },
+    {
+      "id": "seoul-attraction-2121",
+      "sourceId": "2121",
+      "name": "삼청동 골목길",
+      "localizedNames": {
+        "en": "Samcheong-dong Alley",
+        "ja": "三清洞の路地"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 삼청로 99",
+      "district": "종로구",
+      "coordinates": [
+        126.981899085813,
+        37.5843120583386
+      ],
+      "tags": "골목길, 삼청동,문화공간, 종로, 광화문, 북촌,갤러리, 카페,가회동, 예술가,경복궁돌담길, 안국역"
+    },
+    {
+      "id": "seoul-attraction-46877",
+      "sourceId": "46877",
+      "name": "삼청동 수제비",
+      "localizedNames": {
+        "en": "Samcheong-dong Sujebi",
+        "ja": "三清洞スジェビ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03049 서울 종로구 삼청로 101-1 (삼청동)",
+      "district": "종로구",
+      "coordinates": [
+        126.981947585254,
+        37.5846047083553
+      ],
+      "tags": "종로,오래가게,수제비"
+    },
+    {
+      "id": "seoul-attraction-43433",
+      "sourceId": "43433",
+      "name": "상신당",
+      "localizedNames": {
+        "en": "Sangsindang",
+        "ja": "サンシンダン"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "06038 서울 강남구 강남대로146길 7 (논현동) 금원빌딩 505호",
+      "district": "강남구",
+      "coordinates": [
+        127.02071838876,
+        37.5148445513632
+      ],
+      "tags": "강남,도장판매,인감도장,도장,오래가게,불도장,수제"
+    },
+    {
+      "id": "seoul-attraction-43443",
+      "sourceId": "43443",
+      "name": "등촌 최월선칼국수",
+      "localizedNames": {
+        "en": "Deungchon Choi Wol-seon Kalguksu",
+        "ja": "登村チェ・ウォルソンカルグクス"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07571 서울 강서구 화곡로64길 68",
+      "district": "강서구",
+      "coordinates": [
+        126.856708298569,
+        37.5560425503116
+      ],
+      "tags": "면요리,국물,한식,오래가게,김포공항,칼국수"
+    },
+    {
+      "id": "seoul-attraction-3085",
+      "sourceId": "3085",
+      "name": "토탈미술관",
+      "localizedNames": {
+        "en": "Total Museum of Contemporary Art",
+        "ja": "トータル美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03004 서울 종로구 평창32길 8",
+      "district": "종로구",
+      "coordinates": [
+        126.975628088798,
+        37.6121417336643
+      ],
+      "tags": " 토탈미술관, 김종영갤러리,아트숍, 가나아트센터,경복궁역,야외공연장, 전시, 음악회, 미술관,평창동, 예술, 길음역"
+    },
+    {
+      "id": "seoul-attraction-50869",
+      "sourceId": "50869",
+      "name": "목노집",
+      "localizedNames": {
+        "en": "Mokno Jip",
+        "ja": "モンノチプ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03385 서울 은평구 연서로28길 10 (대조동)",
+      "district": "은평구",
+      "coordinates": [
+        126.920981012189,
+        37.6177797860508
+      ],
+      "tags": "은평,오래가게,목로주점,보쌈,돼지보쌈,연신내"
+    },
+    {
+      "id": "seoul-attraction-45562",
+      "sourceId": "45562",
+      "name": "명동재미로",
+      "localizedNames": {
+        "en": "Myeongdong Jaemiro",
+        "ja": "明洞ジェミロ"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울 중구 남산동2가 15-27 일대",
+      "district": "중구",
+      "coordinates": [
+        126.985597508957,
+        37.5592322866074
+      ],
+      "tags": "애니메이션, 만화,명동역, 재미로,명동"
+    },
+    {
+      "id": "seoul-attraction-28339",
+      "sourceId": "28339",
+      "name": "봉원사",
+      "localizedNames": {
+        "en": "Bongwonsa Temple",
+        "ja": "奉元寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03721 서울 서대문구 봉원사길 120 (봉원사)",
+      "district": "서대문구",
+      "coordinates": [
+        126.946944792341,
+        37.57235344097
+      ],
+      "tags": " 신라,연세대, 홍대, 절,연꽃, 독립문역,봉원사, 마포"
+    },
+    {
+      "id": "seoul-attraction-2637",
+      "sourceId": "2637",
+      "name": "춘원당 한의약박물관",
+      "localizedNames": {
+        "en": "Chunwondang Museum of Korean Medicine",
+        "ja": "春園堂韓医薬博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03139 서울 종로구 돈화문로9길 27 (춘원당한방박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.990242136551,
+        37.5715005448529
+      ],
+      "tags": "광화문, 박물관, 한방,전시, 춘원당한방박물관,종로3가역, 한방박물관,한방병원, 춘원당,탕제실"
+    },
+    {
+      "id": "seoul-attraction-28053",
+      "sourceId": "28053",
+      "name": "코끼리분식",
+      "localizedNames": {
+        "en": "Kokkiri Bunsik",
+        "ja": "コッキリ粉食"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04172 서울 마포구 도화2길 3 (도화동)",
+      "district": "마포구",
+      "coordinates": [
+        126.948796338712,
+        37.5403361441386
+      ],
+      "tags": " 서울맛집, 떡볶이맛집,즉석떡볶이,공덕, 서울떡볶이맛집,볶음밥,오래가게,마포떡볶이골목,분식"
+    },
+    {
+      "id": "seoul-attraction-3306",
+      "sourceId": "3306",
+      "name": "봉황각",
+      "localizedNames": {
+        "en": "Bonghwanggak",
+        "ja": "鳳凰閣"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "01002 서울특별시 강북구 삼양로173길 107-12 (우이동)",
+      "district": "강북구",
+      "coordinates": [
+        127.006060325301,
+        37.6601985055374
+      ],
+      "tags": " 역사,만세운동,봉황각, 우이동봉황각, 천도교, 유적지,3.1독립운동, 수유역, 기와집, 안암손병희선생"
+    },
+    {
+      "id": "seoul-attraction-34857",
+      "sourceId": "34857",
+      "name": "서울기록원",
+      "localizedNames": {
+        "en": "Seoul Archives",
+        "ja": "ソウル記録院"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03371 서울특별시 은평구 통일로62길 7",
+      "district": "은평구",
+      "coordinates": [
+        126.934431196604,
+        37.6072253744222
+      ],
+      "tags": "서울기록원"
+    },
+    {
+      "id": "seoul-attraction-46621",
+      "sourceId": "46621",
+      "name": "석굴암",
+      "localizedNames": {
+        "en": "Seokguram Grotto",
+        "ja": "Seokguram Grotto"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "110035 서울 종로구 옥인동 산3-14",
+      "district": "종로구",
+      "coordinates": [
+        126.96053396869,
+        37.58460805063
+      ],
+      "tags": "석굴암,인왕산,사찰,불상,수성동"
+    },
+    {
+      "id": "seoul-attraction-18912",
+      "sourceId": "18912",
+      "name": "가회민화박물관",
+      "localizedNames": {
+        "en": "Gahoe Folk Painting Museum",
+        "ja": "嘉会民画博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03056 서울 종로구 북촌로 52 (가회동) 가회민화박물관",
+      "district": "종로구",
+      "coordinates": [
+        126.985262518095,
+        37.581539718891
+      ],
+      "tags": " 광화문,민화박물관, 박물관, 민속품, 가회동,민화, 북촌한옥마을, 전통, 전시,북촌, 가회민화박물관,안국역,부적관계"
+    },
+    {
+      "id": "seoul-attraction-23760",
+      "sourceId": "23760",
+      "name": "숙정문",
+      "localizedNames": {
+        "en": "Sukjeongmun Gate",
+        "ja": "粛靖門"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02822 서울 성북구 대사관로 1 (성북동, 홍련사(조계종))",
+      "district": "성북구",
+      "coordinates": [
+        126.98342224198,
+        37.5968606715659
+      ],
+      "tags": "주말나들이,서울사대문,사적제10호,안국역,서울성곽,숙정문,북대문,경복궁역,서울문화재,도심속문화재,한양도성,광화문,한양도성순성길,서울산책"
+    },
+    {
+      "id": "seoul-attraction-50010",
+      "sourceId": "50010",
+      "name": "예술의전당 서울서예박물관",
+      "localizedNames": {
+        "en": "Seoul Calligraphy Museum at Seoul Arts Center",
+        "ja": "芸術の殿堂ソウル書芸博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06757 서울 서초구 남부순환로 2406 (서초동, 예술의전당)",
+      "district": "서초구",
+      "coordinates": [
+        127.014215239186,
+        37.4802401962069
+      ],
+      "tags": "전시,한국서예사,서화,서예,서울서예박물관,예술의전당"
+    },
+    {
+      "id": "seoul-attraction-35673",
+      "sourceId": "35673",
+      "name": "은평한옥마을",
+      "localizedNames": {
+        "en": "Eunpyeong Hanok Village",
+        "ja": "恩平韓屋村"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03308 서울 은평구 연서로50길 7-10 (진관동, 은평역사한옥박물관) 은평한옥마을",
+      "district": "은평구",
+      "coordinates": [
+        126.939229317645,
+        37.6413357058171
+      ],
+      "tags": "놀면뭐하니촬영지,서울데이트코스,은평한옥마을,진관사,서울여행지,진관동,서울나들이,한옥,은평구,한국전통문화,북한산경치,문화체험,서울가볼만한곳,뷰맛집,북한산풍경,전통체험"
+    },
+    {
+      "id": "seoul-attraction-18898",
+      "sourceId": "18898",
+      "name": "동림매듭공방",
+      "localizedNames": {
+        "en": "Dongnim Knot Workshop",
+        "ja": "東林メドゥプ工房"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03056 서울 종로구 북촌로12길 10",
+      "district": "종로구",
+      "coordinates": [
+        126.985612978132,
+        37.5817835710003
+      ],
+      "tags": "오래가게,전통공예,매듭체험,창작품,전통매듭,전통체험,북촌한옥마을"
+    },
+    {
+      "id": "seoul-attraction-859",
+      "sourceId": "859",
+      "legacyId": "war-memorial",
+      "name": "전쟁기념관",
+      "localizedNames": {
+        "en": "War Memorial of Korea",
+        "ja": "戦争記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04353 서울 용산구 이태원로 29 (용산동1가, 전쟁기념관)",
+      "district": "용산구",
+      "coordinates": [
+        126.978466063237,
+        37.5373140468913
+      ],
+      "tags": "6.25전쟁,서울아이들데리고갈만한곳,용산전쟁기념관,용산어린이박물관,전쟁기념관,서울전쟁사박물관,전쟁기념관어린이박물관,서울가볼만한곳추천,서울아이들과함께,서울박물관추천"
+    },
+    {
+      "id": "seoul-attraction-29394",
+      "sourceId": "29394",
+      "name": "절두산순교성지",
+      "localizedNames": {
+        "en": "Jeoldusan Martyrs' Shrine",
+        "ja": "切頭山殉教聖地"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04085 서울 마포구 토정로 6 (합정동, 한국천주교순교자박물관)",
+      "district": "마포구",
+      "coordinates": [
+        126.911793575318,
+        37.5441354407025
+      ],
+      "tags": "천주교,순례, 순교자박물관, 한국천주교순교자박물관, 합정역, 절두산순교기념관, 전시"
+    },
+    {
+      "id": "seoul-attraction-41904",
+      "sourceId": "41904",
+      "name": "중랑망우공간",
+      "localizedNames": {
+        "en": "Jungnang Mangwoo Space",
+        "ja": "中浪忘憂空間"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 중랑구 망우로91길 2 (망우동), 우편번호 02178",
+      "district": "중랑구",
+      "coordinates": [
+        127.114323654095,
+        37.5989997495367
+      ],
+      "tags": "중랑망우공간, 망우리공원, 망우역사문화공원,중랑망우"
+    },
+    {
+      "id": "seoul-attraction-13755",
+      "sourceId": "13755",
+      "name": "지대방",
+      "localizedNames": {
+        "en": "Jidaebang",
+        "ja": "チデバン"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "서울특별시 종로구 인사동길 33, 2층",
+      "district": "종로구",
+      "coordinates": [
+        126.985508845877,
+        37.5734820676018
+      ],
+      "tags": "카페,전통찻집,오래가게,종로,쌈지길,인사동,전통차"
+    },
+    {
+      "id": "seoul-attraction-27112",
+      "sourceId": "27112",
+      "name": "초대길",
+      "localizedNames": {
+        "en": "Chodae-gil Trail",
+        "ja": "チョデギルトレイル"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "서울 강북구 4.19로 114, 근현대사기념관(출발 지점)",
+      "district": "강북구",
+      "coordinates": [
+        127.002830628534,
+        37.6434410661945
+      ],
+      "tags": " 초대길,순국선열묘역, 근현대사기념관, 수유역, 이준열사, 순례길,역사,둘레길, 신익희, 트레킹"
+    },
+    {
+      "id": "seoul-attraction-50415",
+      "sourceId": "50415",
+      "name": "페이스갤러리 서울",
+      "localizedNames": {
+        "en": "Pace Gallery Seoul",
+        "ja": "ペース・ギャラリー・ソウル"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04348 서울 용산구 이태원로 267",
+      "district": "용산구",
+      "coordinates": [
+        127.001133061453,
+        37.5384987479277
+      ],
+      "tags": "서울전시,페이스갤러리,한강진갤러리,서울갤러리,미술전시"
+    },
+    {
+      "id": "seoul-attraction-25377",
+      "sourceId": "25377",
+      "name": "학림다방",
+      "localizedNames": {
+        "en": "Hakrim Dabang",
+        "ja": "学林茶房（ハンニムタバン）"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "03079 서울 종로구 대학로 119 2층",
+      "district": "종로구",
+      "coordinates": [
+        127.001677370261,
+        37.5819304868796
+      ],
+      "tags": "커피, 대학로,오래가게,서울미래유산,감성, 카페"
+    },
+    {
+      "id": "seoul-attraction-29048",
+      "sourceId": "29048",
+      "name": "한신옹기",
+      "localizedNames": {
+        "en": "Hanshin Onggi",
+        "ja": "ハンシンオンギ"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04338 서울 용산구 신흥로 7 (용산동2가)",
+      "district": "용산구",
+      "coordinates": [
+        126.986504185678,
+        37.5391526489225
+      ],
+      "tags": " 포토존, 항아리, 화분, 자기, 이촌, 서울미래유산, 녹사평역, 도자기,옹기, 서울, 해방촌,쌀독, 한신옹기,오래가게,용산구, 장독, 뚝배기"
+    },
+    {
+      "id": "seoul-attraction-1910",
+      "sourceId": "1910",
+      "name": "성곡미술관",
+      "localizedNames": {
+        "en": "Sungkok Art Museum",
+        "ja": "ソンゴク美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03175 서울 종로구 경희궁길 42 (신문로2가, 성곡미술관)",
+      "district": "종로구",
+      "coordinates": [
+        126.96970364743,
+        37.5735105141974
+      ],
+      "tags": "한국미술,전시, 광화문역, 광화문, 야외조각공원,미술, 미술관,성곡미술관, 경복궁역, 김성곤, 카페찻집, 찻집"
+    },
+    {
+      "id": "seoul-attraction-1708",
+      "sourceId": "1708",
+      "name": "국립현대미술관 덕수궁관",
+      "localizedNames": {
+        "en": "National Museum of Modern and Contemporary Art, Deoksugung",
+        "ja": "国立現代美術館徳寿宮館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04519 서울특별시 중구 세종대로 99 (정동)",
+      "district": "중구",
+      "coordinates": [
+        126.973725785222,
+        37.5660868250943
+      ],
+      "tags": " 미술관,예술,현대미술, 덕수궁돌담길, 관광지, 덕수궁관, 덕수궁미술관,대한문, 전시, 문화, 서울광장, 정동길, 국립현대미술관"
+    },
+    {
+      "id": "seoul-attraction-22888",
+      "sourceId": "22888",
+      "name": "숭례문(남대문)",
+      "localizedNames": {
+        "en": "Sungnyemun Gate (Namdaemun)",
+        "ja": "崇礼門（南大門）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04528 서울 중구 세종대로 40 (숭례문(남대문))",
+      "district": "중구",
+      "coordinates": [
+        126.975359779271,
+        37.5599277853801
+      ],
+      "tags": "숭례문,남대문,서울여행,서울문화재,광화문,서울사대문, 서울관광,  회현역, 목조건물,서울볼거리,국보, 문화재, 국보제1호,한국문화재"
+    },
+    {
+      "id": "seoul-attraction-43440",
+      "sourceId": "43440",
+      "name": "신락원",
+      "localizedNames": {
+        "en": "Shinrakwon",
+        "ja": "シンラクウォン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "02506 서울 동대문구 전농로20길 2 (전농동)",
+      "district": "동대문구",
+      "coordinates": [
+        127.057164463607,
+        37.5788979681127
+      ],
+      "tags": "오래가게, 중식,중화요리, 서울시립대,짜장면, 청량리"
+    },
+    {
+      "id": "seoul-attraction-11702",
+      "sourceId": "11702",
+      "name": "라칸티나",
+      "localizedNames": {
+        "en": "La Cantina",
+        "ja": "ラ・カンティーナ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04523 서울 중구 을지로 19 (을지로1가, 삼성빌딩) 삼성빌딩 지하 1층",
+      "district": "중구",
+      "coordinates": [
+        126.979957145213,
+        37.5663064488484
+      ],
+      "tags": " 을지로맛집,을지로입구역, 파스타맛집, 시청맛집,이탈리안레스토랑, 시청음식점, 스파게티,라칸티나,을지로음식점"
+    },
+    {
+      "id": "seoul-attraction-2406",
+      "sourceId": "2406",
+      "name": "아트선재센터",
+      "localizedNames": {
+        "en": "Art Sonje Center",
+        "ja": "アートソンジェセンター"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03062 서울시 종로구 율곡로3길 87",
+      "district": "종로구",
+      "coordinates": [
+        126.981839239613,
+        37.5794635323506
+      ],
+      "tags": "안국역,아트선재센터,행위예술,현대미술,박물관,전시,광화문,음악회,관광지,미술관,씨네코드,단편영화,독립영화"
+    },
+    {
+      "id": "seoul-attraction-50888",
+      "sourceId": "50888",
+      "name": "역전회관",
+      "localizedNames": {
+        "en": "Yeokjeon Hoegwan",
+        "ja": "ヨクチョン会館"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울시 마포구 토정로37길 47 (염리동 173-21)",
+      "district": "마포구",
+      "coordinates": [
+        126.947016676997,
+        37.542937806474
+      ],
+      "tags": "막걸리,마포,낙지볶음,불고기,바싹불고기,오래가게,내한"
+    },
+    {
+      "id": "seoul-attraction-3759",
+      "sourceId": "3759",
+      "name": "윤봉길 의사 기념관",
+      "localizedNames": {
+        "en": "Yun Bong-gil Memorial Hall",
+        "ja": "尹奉吉義士記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06773 서울 서초구 매헌로 99",
+      "district": "서초구",
+      "coordinates": [
+        127.036977084936,
+        37.4730498033959
+      ],
+      "tags": " 강남,독립운동가, 전시관,윤봉길의사기념관, 양재시민의숲,윤봉길, 양재역"
+    },
+    {
+      "id": "seoul-attraction-47482",
+      "sourceId": "47482",
+      "name": "종묘돌담길",
+      "localizedNames": {
+        "en": "Jongmyo Stone Wall Path",
+        "ja": "宗廟石垣道"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "03135 서울 종로구 권농동 104-1",
+      "district": "종로구",
+      "coordinates": [
+        126.992242739442,
+        37.5741874602965
+      ],
+      "tags": "서순라길,종묘,산책로,종로산책길,세계문화유산,돌담길,카페,공예작업실,종묘돌담길"
+    },
+    {
+      "id": "seoul-attraction-45465",
+      "sourceId": "45465",
+      "name": "채석장 전망대",
+      "localizedNames": {
+        "en": "Quarry Viewpoint",
+        "ja": "採石場展望台"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "03091 서울 종로구 낙산5길 51 (창신동)",
+      "district": "종로구",
+      "coordinates": [
+        127.011596787935,
+        37.5782558563534
+      ],
+      "tags": "창신동,카페,전망대,채석장전망대"
+    },
+    {
+      "id": "seoul-attraction-2052",
+      "sourceId": "2052",
+      "name": "하늘물빛 (전통 천연 염색 연구소)",
+      "localizedNames": {
+        "en": "Haneulmulbit Traditional Natural Dyeing Studio",
+        "ja": "ハヌルムルビッ伝統天然染色研究所"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03113 서울 종로구 종로63라길 8 6층 옥상",
+      "district": "종로구",
+      "coordinates": [
+        127.018065848943,
+        37.5746051151834
+      ],
+      "tags": "쪽염색,염색,체험,하늘물빛,공방,전통문화체험,오래가게,천연염색"
+    },
+    {
+      "id": "seoul-attraction-5614",
+      "sourceId": "5614",
+      "name": "하동관",
+      "localizedNames": {
+        "en": "Hadongkwan",
+        "ja": "ハドングァン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울특별시 중구 명동9길 12",
+      "district": "중구",
+      "coordinates": [
+        126.98503102565,
+        37.5644336698671
+      ],
+      "tags": "명동,명동음식점,곰탕,을지로음식점,명동맛집,한우곰탕전문점,수요미식회,수육,하동관,단골맛집"
+    },
+    {
+      "id": "seoul-attraction-1932",
+      "sourceId": "1932",
+      "name": "순라길",
+      "localizedNames": {
+        "en": "Sunra-gil",
+        "ja": "スンラギル"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 종로구 서순라길 일대. 입력된 상세 주소(03134 서울시 종로구 서순라길 161, 권농동)는 검색 출처에서 확인되지 않음.",
+      "district": "종로구",
+      "coordinates": [
+        126.991788676673,
+        37.5773777611238
+      ],
+      "tags": "광화문,역사문학탐방로,안국역,문화공간,순라길,목길,종로"
+    },
+    {
+      "id": "seoul-attraction-46812",
+      "sourceId": "46812",
+      "name": "THEO 띠오",
+      "localizedNames": {
+        "en": "THEO",
+        "ja": "THEO（ティオ）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06156 서울 강남구 봉은사로68길 55-3 (삼성동, BANG2011) 지하 1층",
+      "district": "강남구",
+      "coordinates": [
+        127.052810669685,
+        37.5091052569619
+      ],
+      "tags": "무료전시,THEO,선정릉,전시회,삼성동전시회,갤러리,미술관"
+    },
+    {
+      "id": "seoul-attraction-42170",
+      "sourceId": "42170",
+      "name": "어린이대공원 꿈마루",
+      "localizedNames": {
+        "en": "Dream Maru at Seoul Children's Grand Park",
+        "ja": "ソウル子ども大公園「夢のマル」"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04991 서울 광진구 능동로 216 (능동, 어린이대공원)",
+      "district": "광진구",
+      "coordinates": [
+        127.078770241307,
+        37.5520117940291
+      ],
+      "tags": "어린이대공원-꿈마루"
+    },
+    {
+      "id": "seoul-attraction-4525",
+      "sourceId": "4525",
+      "name": "영휘원 숭인원(홍릉)",
+      "localizedNames": {
+        "en": "Yeonghwiwon and Sunginwon Royal Tombs (Hongneung)",
+        "ja": "英徽園・崇仁園（洪陵）"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "02456 서울 동대문구 홍릉로 90 (영휘원)",
+      "district": "동대문구",
+      "coordinates": [
+        127.043537625987,
+        37.5895837930767
+      ],
+      "tags": "서울왕릉,역사,동대문구,의릉,청량리역,숭인원,현충사,홍릉,유적지,청량리,가을단풍,영휘원,조선,조선왕릉"
+    },
+    {
+      "id": "seoul-attraction-3100",
+      "sourceId": "3100",
+      "name": "금호미술관",
+      "localizedNames": {
+        "en": "Kumho Museum of Art",
+        "ja": "クムホ美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03062 서울 종로구 삼청로 18 (사간동, 금호미술관)",
+      "district": "종로구",
+      "coordinates": [
+        126.979912833772,
+        37.5774667074193
+      ],
+      "tags": " 금호갤러리콘서트,금호아카데미,경복궁역, 경복궁, 문화,전시, 광화문, 안국역, 예술, 광화문역,미술관,금호미술관"
+    },
+    {
+      "id": "seoul-attraction-23759",
+      "sourceId": "23759",
+      "name": "돈의문 터(옛 서대문)",
+      "localizedNames": {
+        "en": "Donuimun Gate Site (Former Seodaemun Gate)",
+        "ja": "敦義門跡（旧西大門）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03178 서울 종로구 신문로2가 170",
+      "district": "종로구",
+      "coordinates": [
+        126.968709533621,
+        37.5688758959702
+      ],
+      "tags": "서전문,돈의문박물관마을,국내여행,문화유산,서대문역,성곽길,돈의문,한양도성순성길,새문,서울가볼만한곳,광화문,사대문,도성,서대문"
+    },
+    {
+      "id": "seoul-attraction-46869",
+      "sourceId": "46869",
+      "name": "진고개 동대문점",
+      "localizedNames": {
+        "en": "Jingogae Dongdaemun",
+        "ja": "チンゴゲ東大門店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03106 서울 종로구 종로 301-1 (창신동)",
+      "district": "종로구",
+      "coordinates": [
+        127.011161843143,
+        37.5721873391473
+      ],
+      "tags": "한식당,갈비,종로,오래가게"
+    },
+    {
+      "id": "seoul-attraction-6252",
+      "sourceId": "6252",
+      "name": "진관사",
+      "localizedNames": {
+        "en": "Jingwansa Temple",
+        "ja": "津寛寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03308 서울특별시 은평구 진관길 73 (진관동)",
+      "district": "은평구",
+      "coordinates": [
+        126.946513261796,
+        37.6378568370404
+      ],
+      "tags": "종교,사찰, 절,고려, 템플스테이,불교, 구파발역,진관사"
+    },
+    {
+      "id": "seoul-attraction-50022",
+      "sourceId": "50022",
+      "name": "통의동 골목",
+      "localizedNames": {
+        "en": "Tongui-dong Alley",
+        "ja": "通義洞の路地"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03044 서울 종로구 통의동 35-15",
+      "district": "종로구",
+      "coordinates": [
+        126.972689079755,
+        37.5778755699713
+      ],
+      "tags": "대림미술관,겸재정선집터,추사김정희집터,영추문길,보안여관,경복궁,서촌,통의동 골목,통의동 백송터"
+    },
+    {
+      "id": "seoul-attraction-43613",
+      "sourceId": "43613",
+      "name": "미림분식",
+      "localizedNames": {
+        "en": "Mirim Bunsik",
+        "ja": "ミリム粉食店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "08846 서울 관악구 호암로 553",
+      "district": "관악구",
+      "coordinates": [
+        126.931346513518,
+        37.4670743790165
+      ],
+      "tags": " 미림여고, 신림, 가성비,분식, 군만두,오래가게,즉석떡볶이"
+    },
+    {
+      "id": "seoul-attraction-50927",
+      "sourceId": "50927",
+      "name": "태조대림감자국",
+      "localizedNames": {
+        "en": "Taejo Daerim Gamjaguk",
+        "ja": "テジョ・テリム・カムジャグク"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03478 서울 은평구 응암로 172 (응암동)",
+      "district": "은평구",
+      "coordinates": [
+        126.916696422873,
+        37.5872197565814
+      ],
+      "tags": "대림시장,응암동,뼈찜,오래가게,24시간,감자국,응암동감자국거리,감자탕"
+    },
+    {
+      "id": "seoul-attraction-2730",
+      "sourceId": "2730",
+      "name": "한국은행화폐박물관",
+      "localizedNames": {
+        "en": "Bank of Korea Money Museum",
+        "ja": "韓国銀行貨幣博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04531 서울특별시 중구 남대문로 39, 한국은행건물 (남대문로3가)",
+      "district": "중구",
+      "coordinates": [
+        126.97972353038,
+        37.5625151968969
+      ],
+      "tags": "박물관,한국은행화폐박물관,아이들과가볼만한곳,화폐박물관,서울가볼만한곳,명동,서울박물관,서울전시회,전시,세계화페,서울어린이체험,한국은행"
+    },
+    {
+      "id": "seoul-attraction-11610",
+      "sourceId": "11610",
+      "name": "한성백제박물관",
+      "localizedNames": {
+        "en": "Seoul Baekje Museum",
+        "ja": "ソウル百済博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "05540 서울 송파구 위례성대로 71 (방이동, 한성백제박물관)",
+      "district": "송파구",
+      "coordinates": [
+        127.120800706942,
+        37.5154287227604
+      ],
+      "tags": " 유적,한성백제박물관, 올림픽공원역,문화재,몽촌토성역, 잠실, 백제, 4D영상체험, 올림픽공원, 방이동, 전시, 박물관"
+    },
+    {
+      "id": "seoul-attraction-28659",
+      "sourceId": "28659",
+      "name": "해방촌 골목",
+      "localizedNames": {
+        "en": "Haebangchon Alley",
+        "ja": "解放村の路地"
+      },
+      "category": "Culture",
+      "placeType": "neighborhood_walk",
+      "address": "04339 서울 용산구 신흥로 90 (용산동2가)",
+      "district": "용산구",
+      "coordinates": [
+        126.985583625331,
+        37.5461126719259
+      ],
+      "tags": "서울산책,해방촌골목길,오래된가게,용산구,카페,골목길,이태원,해방촌골목,해방촌데이트,서울,핫플레이스,이태원명소,서울명소,해방촌산책,해방촌"
+    },
+    {
+      "id": "seoul-attraction-43472",
+      "sourceId": "43472",
+      "name": "불광대장간",
+      "localizedNames": {
+        "en": "Bulgwang Blacksmith",
+        "ja": "プルグァン鍛冶屋"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03396 서울 은평구 통일로69길 15 (대조동)",
+      "district": "은평구",
+      "coordinates": [
+        126.927031323434,
+        37.6111713283271
+      ],
+      "tags": "철물, 도끼, 주방칼, 수제, 전통, 대장간, 서울미래유산,불광동, 단조,오래가게, 은평구"
+    },
+    {
+      "id": "seoul-attraction-47249",
+      "sourceId": "47249",
+      "name": "성수구름다리",
+      "localizedNames": {
+        "en": "Seongsu Cloud Bridge",
+        "ja": "聖水雲橋"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "04770 서울 성동구 강변북로 257",
+      "district": "성동구",
+      "coordinates": [
+        127.041603887629,
+        37.5389616567303
+      ],
+      "tags": "야경명소,서울야경명소,성수,노을명소,성수구름다리"
+    },
+    {
+      "id": "seoul-attraction-20731",
+      "sourceId": "20731",
+      "name": "아라리오뮤지엄 인 스페이스",
+      "localizedNames": {
+        "en": "Arario Museum in Space",
+        "ja": "アラリオミュージアム・イン・スペース"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03058 서울 종로구 율곡로 83 (원서동)",
+      "district": "종로구",
+      "coordinates": [
+        126.988357552948,
+        37.5777621971432
+      ],
+      "tags": " 현대미술, 예술, 안국역, 아라리오뮤지엄,아라리오,문화공간, 전시,뮤지엄, 아트뮤지엄, 미술관"
+    },
+    {
+      "id": "seoul-attraction-4471",
+      "sourceId": "4471",
+      "name": "아름다운 차박물관",
+      "localizedNames": {
+        "en": "Beautiful Tea Museum",
+        "ja": "美しい茶博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03162 서울 종로구 인사동길 19-11",
+      "district": "종로구",
+      "coordinates": [
+        126.985881712125,
+        37.5723710958927
+      ],
+      "tags": " 전통, 광광지, 종로3가역, 차박물관,퓨전차, 문화,안국역, 도자기,박물관, 종각역,광화문"
+    },
+    {
+      "id": "seoul-attraction-51178",
+      "sourceId": "51178",
+      "name": "용마산 스카이워크 전망대",
+      "localizedNames": {
+        "en": "Yongmasan Skywalk Observatory",
+        "ja": "龍馬山スカイウォーク展望台"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "서울특별시 중랑구 면목동 산1-1",
+      "district": "중랑구",
+      "coordinates": [
+        127.107046655336,
+        37.5843618549641
+      ],
+      "tags": "트레킹,서울둘레길,체험형 숲길,무장애길,용마산,용마산 스카이워크,서울전망대"
+    },
+    {
+      "id": "seoul-attraction-43441",
+      "sourceId": "43441",
+      "name": "공항칼국수",
+      "localizedNames": {
+        "en": "Gonghang Kalguksu",
+        "ja": "コンハン・カルグクス"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07622 서울특별시 강서구 공항대로 18-1, 지하 1층 (공항동, 이스카이오피스텔)",
+      "district": "강서구",
+      "coordinates": [
+        126.809129234237,
+        37.5609595311681
+      ],
+      "tags": "면요리,국물,칼국수,오래가게,한식,김포공항"
+    },
+    {
+      "id": "seoul-attraction-12492",
+      "sourceId": "12492",
+      "name": "오장동함흥냉면",
+      "localizedNames": {
+        "en": "Ojang-dong Hamheung Naengmyeon",
+        "ja": "オジャンドン・ハムフン冷麺"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04559 서울 중구 마른내로 108 (오장동, 오장동함흥냉면)",
+      "district": "중구",
+      "coordinates": [
+        126.999883983625,
+        37.5642721691252
+      ],
+      "tags": "홍어회,미쉐린가이드,회냉면,을지로4가역,비빔냉면,물냉면,오장동함흥냉면,을지로맛집"
+    },
+    {
+      "id": "seoul-attraction-3256",
+      "sourceId": "3256",
+      "name": "길상사",
+      "localizedNames": {
+        "en": "Gilsangsa Temple",
+        "ja": "吉祥寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "02839 서울특별시 성북구 선잠로5길 68 (성북동)",
+      "district": "성북구",
+      "coordinates": [
+        126.994652153245,
+        37.5991094172211
+      ],
+      "tags": "법정스님,침묵의집,수련, 템플스테이,서울벚꽃,길상사,서울사찰,종교,성북동,한성대입구역,절"
+    },
+    {
+      "id": "seoul-attraction-3266",
+      "sourceId": "3266",
+      "name": "창의문",
+      "localizedNames": {
+        "en": "Changuimun Gate",
+        "ja": "彰義門"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03020 서울특별시 종로구 창의문로 118 (부암동)",
+      "district": "종로구",
+      "coordinates": [
+        126.966495700565,
+        37.5926044901685
+      ],
+      "tags": "성곽길,자하문,경복궁역,유적지,북문,한양도성,북악산,성곽,광화문,창의문"
+    },
+    {
+      "id": "seoul-attraction-48010",
+      "sourceId": "48010",
+      "name": "명동 화교거리",
+      "localizedNames": {
+        "en": "Myeongdong Chinese Residents' Street",
+        "ja": "明洞華僑通り"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04535 서울 중구 남대문로 52-5",
+      "district": "중구",
+      "coordinates": [
+        126.981717024453,
+        37.5621198047309
+      ],
+      "tags": "중국대사관,명동,명동화교거리"
+    },
+    {
+      "id": "seoul-attraction-50932",
+      "sourceId": "50932",
+      "name": "평택 고여사집 냉면",
+      "localizedNames": {
+        "en": "Pyeongtaek Goh Yeosa's Naengmyeon",
+        "ja": "平沢・コ女史の冷麺"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03708 서울 서대문구 연희로 81-9 (연희동)",
+      "district": "서대문구",
+      "coordinates": [
+        126.929261397915,
+        37.5656774341986
+      ],
+      "tags": "냉면,오래가게,평양냉면,연희동,신촌,수육,평택"
+    },
+    {
+      "id": "seoul-attraction-28351",
+      "sourceId": "28351",
+      "name": "피터팬1978",
+      "localizedNames": {
+        "en": "Peter Pan 1978",
+        "ja": "ピーターパン1978"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03698 서울 서대문구 증가로 10",
+      "district": "서대문구",
+      "coordinates": [
+        126.931759938035,
+        37.5693884840153
+      ],
+      "tags": " 신촌,오래가게,연세대, 제과점,베이커리, 연희동, 빵"
+    },
+    {
+      "id": "seoul-attraction-2027",
+      "sourceId": "2027",
+      "name": "허준근린공원",
+      "localizedNames": {
+        "en": "Heo Jun Neighborhood Park",
+        "ja": "許浚近隣公園"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "07525 서울 강서구 허준로5길 42 (가양동, 구암공원관리사무실)",
+      "district": "강서구",
+      "coordinates": [
+        126.853729825991,
+        37.5675982250856
+      ],
+      "tags": " 허준공원,박물관,허준, 허준박물관, 가양역, 야경, 한강, 구암공원, 동의보감,분수, 가양동"
+    },
+    {
+      "id": "seoul-attraction-4513",
+      "sourceId": "4513",
+      "name": "사육신공원",
+      "localizedNames": {
+        "en": "Six Martyred Ministers Park",
+        "ja": "死六臣公園"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "06902 서울 동작구 노량진로 191 (노량진동, 사육신묘지공원)",
+      "district": "동작구",
+      "coordinates": [
+        126.949411135441,
+        37.5134579901091
+      ],
+      "tags": "한강대교,사육신,유형문화재8번,여의도,노량진,세조,노량진역,노들역,문화유산,사육신묘"
+    },
+    {
+      "id": "seoul-attraction-43476",
+      "sourceId": "43476",
+      "name": "서울레코드",
+      "localizedNames": {
+        "en": "Seoul Record",
+        "ja": "ソウルレコード"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "서울특별시 종로구 종로 154 1층 (03193)",
+      "district": "종로구",
+      "coordinates": [
+        126.994616749008,
+        37.5702578122921
+      ],
+      "tags": " 블루레이, 음반, 테이프, CD, LP, 레코드,오래가게, 종로"
+    },
+    {
+      "id": "seoul-attraction-52167",
+      "sourceId": "52167",
+      "name": "간송미술관",
+      "localizedNames": {
+        "en": "Kansong Art Museum",
+        "ja": "澗松美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울시 성북구 성북로 102-11 (02837)",
+      "district": "성북구",
+      "coordinates": [
+        126.996238532295,
+        37.5944624355121
+      ],
+      "tags": "간송미술관,서울미술관,서울전시"
+    },
+    {
+      "id": "seoul-attraction-24905",
+      "sourceId": "24905",
+      "name": "손맛김밥",
+      "localizedNames": {
+        "en": "Sonmat Gimbap",
+        "ja": "ソンマッキンパ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03036 서울 종로구 자하문로15길 18",
+      "district": "종로구",
+      "coordinates": [
+        126.969947621917,
+        37.5807670044059
+      ],
+      "tags": "효자동,통인시장,참깨야채김밥,분식,오래가게,김밥"
+    },
+    {
+      "id": "seoul-attraction-18897",
+      "sourceId": "18897",
+      "name": "금박연",
+      "localizedNames": {
+        "en": "Geumbakyeon",
+        "ja": "クムバギョン"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "03056 서울 종로구 북촌로12길 24-12",
+      "district": "종로구",
+      "coordinates": [
+        126.986186699979,
+        37.5826275100841
+      ],
+      "tags": " 공예체험,전통, 서울미래유산,오래가게, 공예, 북촌,금박장식,무형문화재"
+    },
+    {
+      "id": "seoul-attraction-3333",
+      "sourceId": "3333",
+      "name": "짚풀생활사박물관",
+      "localizedNames": {
+        "en": "Jipul Life History Museum",
+        "ja": "チプル生活史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03075 서울 종로구 성균관로4길 45 (명륜2가)",
+      "district": "종로구",
+      "coordinates": [
+        126.999842853497,
+        37.5849058490839
+      ],
+      "tags": " 민속자료, 박물관, 한옥, 동대문,짚풀생활사박물관, 명륜동,혜화역, 역사,대학로, 공예체험, 유물,짚풀"
+    },
+    {
+      "id": "seoul-attraction-297",
+      "sourceId": "297",
+      "name": "창경궁",
+      "localizedNames": {
+        "en": "Changgyeonggung Palace",
+        "ja": "昌慶宮"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "03072 서울 종로구 창경궁로 185 (와룡동, 창경궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.993841430623,
+        37.5776239475981
+      ],
+      "tags": "서울여행코스,서울가볼만한곳,서울밤산책,전통,서울야경,창경궁,궁궐야행,한국역사적명소,서울궁궐,서울데이트코스,서울볼거리,서울야간데이트,한국전통문화,한국궁궐"
+    },
+    {
+      "id": "seoul-attraction-45763",
+      "sourceId": "45763",
+      "name": "청전이상범 가옥",
+      "localizedNames": {
+        "en": "Cheongjeon Lee Sang-beom House",
+        "ja": "青田李象範家"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03039 서울 종로구 필운대로 31-7 (누하동)",
+      "district": "종로구",
+      "coordinates": [
+        126.968402524797,
+        37.5788545117205
+      ],
+      "tags": "가옥,근현대건축,서촌,한옥,서촌한옥마을"
+    },
+    {
+      "id": "seoul-attraction-25930",
+      "sourceId": "25930",
+      "name": "통문관",
+      "localizedNames": {
+        "en": "Tongmungwan",
+        "ja": "通文館"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03145 서울 종로구 인사동길 55-1",
+      "district": "종로구",
+      "coordinates": [
+        126.983667440764,
+        37.5749008038661
+      ],
+      "tags": "오래가게, 서점, 쌈지길, 인문학서점, 희귀본,고서, 서울미래유산"
+    },
+    {
+      "id": "seoul-attraction-42375",
+      "sourceId": "42375",
+      "name": "함스브로트과자점",
+      "localizedNames": {
+        "en": "Hams Brot Bakery",
+        "ja": "ハムスブロート菓子店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "01443 서울 도봉구 도봉로 483 (쌍문동)",
+      "district": "도봉구",
+      "coordinates": [
+        127.034535261333,
+        37.6489391638953
+      ],
+      "tags": "케이크, 명장, 꽃다발케이크, 빵지순례, 쌍문역,오래가게, 제과,빵"
+    },
+    {
+      "id": "seoul-attraction-32528",
+      "sourceId": "32528",
+      "name": "형제대장간",
+      "localizedNames": {
+        "en": "Hyeongje Blacksmith Shop",
+        "ja": "兄弟鍛冶屋"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03504 서울 은평구 수색로 249 (수색동)",
+      "district": "은평구",
+      "coordinates": [
+        126.895989653878,
+        37.5813935447878
+      ],
+      "tags": " 단조,전통, 수제, 망치, 은평구, 수색동,오래가게, 서울미래유산,철물,대장간"
+    },
+    {
+      "id": "seoul-attraction-43436",
+      "sourceId": "43436",
+      "name": "수유어묵공장",
+      "localizedNames": {
+        "en": "Suyu Fish Cake Factory",
+        "ja": "スユオムク工場"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "01117 서울 강북구 도봉로67길 18",
+      "district": "강북구",
+      "coordinates": [
+        127.022668132796,
+        37.6307289053601
+      ],
+      "tags": "미아동,수유시장,수유전통시장,수제,오래가게,어묵,핫바"
+    },
+    {
+      "id": "seoul-attraction-45397",
+      "sourceId": "45397",
+      "name": "옛시장실 재현 공간",
+      "localizedNames": {
+        "en": "Recreated Old Mayor's Office",
+        "ja": "旧市長室再現スペース"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04524 서울 중구 세종대로 110 (태평로1가, 서울특별시청) 서울도서관 3층",
+      "district": "중구",
+      "coordinates": [
+        126.977918351844,
+        37.566370776634
+      ],
+      "tags": "시청, 시장실, 서울시장, 서울도서관,통통투어"
+    },
+    {
+      "id": "seoul-attraction-50161",
+      "sourceId": "50161",
+      "name": "을지로 노가리 골목",
+      "localizedNames": {
+        "en": "Euljiro Nogari Alley",
+        "ja": "乙支路ノガリ横丁"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04543 서울 중구 충무로9길 12 (을지로3가)",
+      "district": "중구",
+      "coordinates": [
+        126.991821171194,
+        37.5669876682873
+      ],
+      "tags": "을지로,노가리골목,을지로술집,맥주,야장 분위기,노가리 안주"
+    },
+    {
+      "id": "seoul-attraction-46608",
+      "sourceId": "46608",
+      "name": "경국사",
+      "localizedNames": {
+        "en": "Gyeongguksa Temple",
+        "ja": "慶国寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울특별시 성북구 보국문로 113-10",
+      "district": "성북구",
+      "coordinates": [
+        127.004551833207,
+        37.6149594820999
+      ],
+      "tags": "삼각산,불교,북한산,사찰,경국사,절"
+    },
+    {
+      "id": "seoul-attraction-46883",
+      "sourceId": "46883",
+      "name": "남도한식정든님고운님",
+      "localizedNames": {
+        "en": "Namdo Hansik Jeongdeunnim Gounnim",
+        "ja": "ナムド韓食 チョンドゥンニム・コウンニム"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04526 서울 중구 세종대로14길 22-5 (북창동)",
+      "district": "중구",
+      "coordinates": [
+        126.978071823726,
+        37.5625556267229
+      ],
+      "tags": "한상차림,  보리굴비,오래가게, 한식당, 시청역"
+    },
+    {
+      "id": "seoul-attraction-27472",
+      "sourceId": "27472",
+      "name": "돌 레코드",
+      "localizedNames": {
+        "en": "Dol Records",
+        "ja": "ドルレコード"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "서울특별시 중구 마장로9길 49-29",
+      "district": "중구",
+      "coordinates": [
+        127.017948235192,
+        37.5699026596932
+      ],
+      "tags": "레코드, LP판, LD판,오래가게, 테이프, CD, 중고"
+    },
+    {
+      "id": "seoul-attraction-43439",
+      "sourceId": "43439",
+      "name": "삼양탕",
+      "localizedNames": {
+        "en": "Samyang Public Bath",
+        "ja": "三陽湯"
+      },
+      "category": "Experience",
+      "placeType": "cultural_experience",
+      "address": "01097 서울 강북구 덕릉로8길 6 (수유동, 삼양여관)",
+      "district": "강북구",
+      "coordinates": [
+        127.015232666457,
+        37.6337002896371
+      ],
+      "tags": "카페,아날로그,삼양여관,스파,목욕탕,오래가게,강북,수유,레트로"
+    },
+    {
+      "id": "seoul-attraction-1539",
+      "sourceId": "1539",
+      "name": "서울광장",
+      "localizedNames": {
+        "en": "Seoul Plaza",
+        "ja": "ソウル広場"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "100-101 서울특별시 중구 세종대로 110",
+      "district": "중구",
+      "coordinates": [
+        126.977918351844,
+        37.566370776634
+      ],
+      "tags": " 아이스링크, 잔디, 시청역,문화행사,서울광장, 시청, 문화공간"
+    },
+    {
+      "id": "seoul-attraction-44215",
+      "sourceId": "44215",
+      "name": "서촌한옥마을",
+      "localizedNames": {
+        "en": "Seochon Hanok Village",
+        "ja": "西村韓屋村"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03037 서울 종로구 필운대로 45 (누하동)",
+      "district": "종로구",
+      "coordinates": [
+        126.968508490721,
+        37.5801925160173
+      ],
+      "tags": "서촌,서촌한옥마을,한옥마을"
+    },
+    {
+      "id": "seoul-attraction-46879",
+      "sourceId": "46879",
+      "name": "성원전주콩나물국밥",
+      "localizedNames": {
+        "en": "Seongwon Jeonju Kongnamul Gukbap",
+        "ja": "ソンウォン全州豆もやしクッパ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04537 서울 중구 명동10길 19-10 (명동2가)",
+      "district": "중구",
+      "coordinates": [
+        126.985978890595,
+        37.5630261596096
+      ],
+      "tags": "콩나물국밥,명동,오래가게"
+    },
+    {
+      "id": "seoul-attraction-43448",
+      "sourceId": "43448",
+      "name": "애플하우스",
+      "localizedNames": {
+        "en": "Apple House",
+        "ja": "アップルハウス"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "07008 서울 동작구 동작대로27다길 29 (사당동, 서광시티뷰) 2층",
+      "district": "동작구",
+      "coordinates": [
+        126.980662610028,
+        37.4862850569156
+      ],
+      "tags": " 순대볶음, 분식, 사당동,오래가게, 무침군만두,즉석떡볶이"
+    },
+    {
+      "id": "seoul-attraction-1596",
+      "sourceId": "1596",
+      "name": "정독도서관",
+      "localizedNames": {
+        "en": "Jeongdok Public Library",
+        "ja": "正読図書館"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03055 서울 종로구 북촌로5길 48 (정독도서관)",
+      "district": "종로구",
+      "coordinates": [
+        126.983870059299,
+        37.5812654545612
+      ],
+      "tags": "서울대표도서관,서울가볼만한곳,도서관데이트,종로시립도서관,정독도서관,아이들과함께,시립공공도서관,서울아이들과가볼만한곳,서울책읽는곳,서울책빌리는곳,종로가볼만한곳"
+    },
+    {
+      "id": "seoul-attraction-2134",
+      "sourceId": "2134",
+      "name": "정동제일교회",
+      "localizedNames": {
+        "en": "Jeongdong First Methodist Church",
+        "ja": "貞洞第一教会"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04516 서울특별시 중구 정동길 46  (정동)",
+      "district": "중구",
+      "coordinates": [
+        126.972449793841,
+        37.5651830153812
+      ],
+      "tags": "정동제일교회,종교,한국최초교회,성지,교회,정동교회"
+    },
+    {
+      "id": "seoul-attraction-37176",
+      "sourceId": "37176",
+      "name": "창경궁 대온실",
+      "localizedNames": {
+        "en": "Changgyeonggung Grand Greenhouse",
+        "ja": "昌慶宮大温室"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03072 서울 종로구 창경궁로 185 (와룡동, 창경궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.993841430623,
+        37.5776239475981
+      ],
+      "tags": "창경궁,서울가볼만한곳,창경궁대온실,창경궁데이트,창경궁포토존"
+    },
+    {
+      "id": "seoul-attraction-10611",
+      "sourceId": "10611",
+      "name": "가미분식",
+      "localizedNames": {
+        "en": "Gami Bunsik",
+        "ja": "カミ粉食"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "서울특별시 서대문구 이화여대8길 2 무궁화상가아파트",
+      "district": "서대문구",
+      "coordinates": [
+        126.945920737962,
+        37.5586536023804
+      ],
+      "tags": "오래가게,분식,면요리,얼큰우동,주먹밥,이대"
+    },
+    {
+      "id": "seoul-attraction-50409",
+      "sourceId": "50409",
+      "name": "갤러리조선",
+      "localizedNames": {
+        "en": "Gallery Chosun",
+        "ja": "ギャラリー・チョソン"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 종로구 북촌로5길 64 (소격동), 03053",
+      "district": "종로구",
+      "coordinates": [
+        126.981472660613,
+        37.5799446061397
+      ],
+      "tags": "삼천동전시,MZ콜렉터,현대미술,안국역,갤러리조선,서울전시,삼청동갤러리"
+    },
+    {
+      "id": "seoul-attraction-25929",
+      "sourceId": "25929",
+      "name": "탈방",
+      "localizedNames": {
+        "en": "Talbang",
+        "ja": "タルバン"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03146 서울 종로구 인사동길 48 (관훈동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984458604383,
+        37.5744075259766
+      ],
+      "tags": "전통탈,인사동,목공예,산대탈,목공예품,오래가게,전통공예,하회탈"
+    },
+    {
+      "id": "seoul-attraction-41681",
+      "sourceId": "41681",
+      "name": "한국금융사박물관",
+      "localizedNames": {
+        "en": "Korea Financial History Museum",
+        "ja": "韓国金融史博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04519 서울 중구 세종대로 135-5 (태평로1가, 조흥금융박물관) 3, 4층",
+      "district": "중구",
+      "coordinates": [
+        126.976433052559,
+        37.5685952282764
+      ],
+      "tags": "화폐,금융,한국금융사박물관,어린이체험,박물관,역사"
+    },
+    {
+      "id": "seoul-attraction-3358",
+      "sourceId": "3358",
+      "name": "한상수자수박물관",
+      "localizedNames": {
+        "en": "Hansangsu Embroidery Museum",
+        "ja": "韓尚洙刺繍博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02880 서울 성북구 성북로 87-1 (성북동, 백강빌딩)",
+      "district": "성북구",
+      "coordinates": [
+        126.999156775598,
+        37.5929188231965
+      ],
+      "tags": "성북동,전통문화,오래가게,체험,무형문화재,전시,한국자수"
+    },
+    {
+      "id": "seoul-attraction-3241",
+      "sourceId": "3241",
+      "name": "국제갤러리",
+      "localizedNames": {
+        "en": "Kukje Gallery",
+        "ja": "ククジェ・ギャラリー"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03053 서울특별시 종로구 삼청로 54  (소격동)",
+      "district": "종로구",
+      "coordinates": [
+        126.98057390782,
+        37.5807206678387
+      ],
+      "tags": "경복궁역, 미술관, 현대미술,광화문, 더레스토랑, 안국역,문화, 광화문역, 작가발굴, 갤러리,전시, 국제갤러리"
+    },
+    {
+      "id": "seoul-attraction-5242",
+      "sourceId": "5242",
+      "name": "헌인릉",
+      "localizedNames": {
+        "en": "Heoninneung Royal Tombs",
+        "ja": "献仁陵"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "(06795) 서울 서초구 헌인릉길 34",
+      "district": "서초구",
+      "coordinates": [
+        127.083715641415,
+        37.4653777954328
+      ],
+      "tags": "유네스코,서울명소,세계문화유산,강남,인릉,헌릉,조선왕릉,서울문화재,관광코스,헌인릉,문화재청"
+    },
+    {
+      "id": "seoul-attraction-23606",
+      "sourceId": "23606",
+      "name": "혜화문",
+      "localizedNames": {
+        "en": "Hyehwamun Gate",
+        "ja": "恵化門"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03076 서울 종로구 창경궁로 307 (혜화동, 혜화문)",
+      "district": "종로구",
+      "coordinates": [
+        127.003505031117,
+        37.5879621452783
+      ],
+      "tags": "성문, 동소문, 혜화, 4소문, 동대문,혜화문, 북동방, 혜화동, 사소문, 한성대입구역,도성, 성곽"
+    },
+    {
+      "id": "seoul-attraction-5765",
+      "sourceId": "5765",
+      "name": "국회의사당",
+      "localizedNames": {
+        "en": "National Assembly Building",
+        "ja": "国会議事堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "07233 서울특별시 영등포구 의사당대로 1  (여의도동)",
+      "district": "영등포구",
+      "coordinates": [
+        126.916406125347,
+        37.5329182828793
+      ],
+      "tags": " 국회의사당역, 국회의사당, 민주주의,역사,국회,의원회관, 여의도,국회참관, 국회도서관,인권"
+    },
+    {
+      "id": "seoul-attraction-50797",
+      "sourceId": "50797",
+      "name": "굴다리식당",
+      "localizedNames": {
+        "en": "Guldari Restaurant",
+        "ja": "クルダリ食堂"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04168 서울 마포구 새창로 8-1 (도화동)",
+      "district": "마포구",
+      "coordinates": [
+        126.950811737715,
+        37.5421160247986
+      ],
+      "tags": "제육볶음,계란말이,굴다리,마포,공덕,오래가게,노포,김치찌개"
+    },
+    {
+      "id": "seoul-attraction-26190",
+      "sourceId": "26190",
+      "name": "낙원떡집",
+      "localizedNames": {
+        "en": "Nakwon Rice Cake House",
+        "ja": "楽園餅店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03132 서울 종로구 삼일대로 438 (낙원동)",
+      "district": "종로구",
+      "coordinates": [
+        126.987907857685,
+        37.5737878650638
+      ],
+      "tags": "쑥떡,종로3가,두텁떡,호박설기,오색경단,쑥인절미,떡집,오래가게,서울미래유산"
+    },
+    {
+      "id": "seoul-attraction-2049",
+      "sourceId": "2049",
+      "legacyId": "deoksugung",
+      "name": "덕수궁",
+      "localizedNames": {
+        "en": "Deoksugung Palace",
+        "ja": "徳寿宮"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "04519 서울 중구 세종대로 99",
+      "district": "중구",
+      "coordinates": [
+        126.973725785222,
+        37.5660868250943
+      ],
+      "tags": "궁궐투어,한국여행지,서울필수여행지,서울야경,덕수궁야간,정동돌담길,서울여행,한국궁,서울걷기좋은길,한국역사,덕수궁투어,서울나들이,덕수궁,한국전통,정동길,고종의길,궁"
+    },
+    {
+      "id": "seoul-attraction-26192",
+      "sourceId": "26192",
+      "name": "비원떡집",
+      "localizedNames": {
+        "en": "Biwon Rice Cake House",
+        "ja": "秘苑餅店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03055 서울 종로구 북촌로 33-1 (가회동)",
+      "district": "종로구",
+      "coordinates": [
+        126.984878290353,
+        37.5797781373572
+      ],
+      "tags": " 잣설기, 서울미래유산, 쑥찹쌀떡, 약식, 떡집,궁중떡, 두텁떡, 쌍개피,오래가게"
+    },
+    {
+      "id": "seoul-attraction-43490",
+      "sourceId": "43490",
+      "name": "승진완구",
+      "localizedNames": {
+        "en": "Seungjin Toys",
+        "ja": "スンジン玩具店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03120 서울 종로구 종로52길 30",
+      "district": "종로구",
+      "coordinates": [
+        127.014184200551,
+        37.5713401693665
+      ],
+      "tags": " 도매상,교육용완구,오래가게, 자동차장난감, 동대문,장난감, 레고"
+    },
+    {
+      "id": "seoul-attraction-50902",
+      "sourceId": "50902",
+      "name": "원조조박집",
+      "localizedNames": {
+        "en": "Wonjo Jobakjip",
+        "ja": "元祖チョバクチプ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04166 서울특별시 마포구 토정로 313-1 1층동",
+      "district": "마포구",
+      "coordinates": [
+        126.943866192022,
+        37.5399716114492
+      ],
+      "tags": "마포,외식,오래가게,돼지갈비,주물럭,막걸리,가족식사"
+    },
+    {
+      "id": "seoul-attraction-12801",
+      "sourceId": "12801",
+      "name": "유림면",
+      "localizedNames": {
+        "en": "Yurim-myeon",
+        "ja": "ユリム麺屋"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04515 서울 중구 서소문로 139-1 (서소문동)",
+      "district": "중구",
+      "coordinates": [
+        126.976098371999,
+        37.5642444317671
+      ],
+      "tags": "유림면,시청음식점,정동음식점,김수현,오래된국수집,시청역,냄비우동,서울3대메밀국수, 국수,메밀국수, 돌냄비국수,비빔국수,별에서온그대"
+    },
+    {
+      "id": "seoul-attraction-25376",
+      "sourceId": "25376",
+      "name": "을지다방",
+      "localizedNames": {
+        "en": "Eulji Coffee Shop",
+        "ja": "乙支茶房"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "04550 서울 중구 을지로 124-1 2층",
+      "district": "중구",
+      "coordinates": [
+        126.99167977913,
+        37.5661204498117
+      ],
+      "tags": " 냉커피,쌍화차, 라면, 다방,오래가게,카페, 을지로3가"
+    },
+    {
+      "id": "seoul-attraction-43488",
+      "sourceId": "43488",
+      "name": "경은상사",
+      "localizedNames": {
+        "en": "Gyeongeun Trading",
+        "ja": "キョンウン商店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_cultural_shop",
+      "address": "03140 서울 종로구 삼일대로 428 낙원상가 2층 B-282호",
+      "district": "종로구",
+      "coordinates": [
+        126.987902476529,
+        37.5727635233966
+      ],
+      "tags": "종각역,기타,일렉기타,베이스기타,어쿠스틱기타,클래식기타,오래가게"
+    },
+    {
+      "id": "seoul-attraction-50922",
+      "sourceId": "50922",
+      "name": "코스모스 분식",
+      "localizedNames": {
+        "en": "Cosmos Bunsik",
+        "ja": "コスモス軽食店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_food",
+      "address": "03412 서울 은평구 연서로15길 2 (구산동)",
+      "district": "은평구",
+      "coordinates": [
+        126.916572107654,
+        37.6105438866914
+      ],
+      "tags": "즉석떡볶이,오래가게,떡볶이,예일여고,분식,구산역,짜장떡볶이"
+    },
+    {
+      "id": "seoul-attraction-26194",
+      "sourceId": "26194",
+      "name": "태극당",
+      "localizedNames": {
+        "en": "Taegukdang",
+        "ja": "タグクダン"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "04617 서울 중구 동호로24길 7",
+      "district": "중구",
+      "coordinates": [
+        127.005087759017,
+        37.5595217348788
+      ],
+      "tags": "오래가게, 제과점, 빵, 옛날빵, 장충동, 동국대"
+    },
+    {
+      "id": "seoul-attraction-42446",
+      "sourceId": "42446",
+      "name": "김중업 건축문화의집",
+      "localizedNames": {
+        "en": "Kim Chung-up Architecture House",
+        "ja": "金重業建築文化の家"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02755 서울 성북구 장위로21나길 11 (장위동)",
+      "district": "성북구",
+      "coordinates": [
+        127.044069841418,
+        37.6150226092067
+      ],
+      "tags": "김중업-건축문화의집,서울미래유산,도시재생,성북문화재단,전시,정원"
+    },
+    {
+      "id": "seoul-attraction-35015",
+      "sourceId": "35015",
+      "name": "남산케이블카",
+      "localizedNames": {
+        "en": "Namsan Cable Car",
+        "ja": "南山ケーブルカー"
+      },
+      "category": "Experience",
+      "placeType": "performance_craft_activity",
+      "address": "서울특별시 중구 소파로 83 (공식 사이트 표기: 예장동)",
+      "district": "중구",
+      "coordinates": [
+        126.98407834438,
+        37.5569249079033
+      ],
+      "tags": "남산전망대,서울,서울구경,서울구경,남산타워,남산케이블카,야경,남산,가족나들이,남산타워전망대,서울투어,서울여행,서울야경,N서울타워"
+    },
+    {
+      "id": "seoul-attraction-25928",
+      "sourceId": "25928",
+      "name": "납청놋전",
+      "localizedNames": {
+        "en": "Napcheong Brassware",
+        "ja": "ナプチョン鍮器店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "서울 종로구 인사동10길 5 (관훈동)",
+      "district": "종로구",
+      "coordinates": [
+        126.985309826057,
+        37.5741249929142
+      ],
+      "tags": "오래가게, 안국역, 이봉주방짜유기,방짜유기, 납청유기, 놋그릇, 이형근방짜유기"
+    },
+    {
+      "id": "seoul-attraction-24904",
+      "sourceId": "24904",
+      "name": "내자땅콩",
+      "localizedNames": {
+        "en": "Naeja Peanut Shop",
+        "ja": "ネジャピーナッツ店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03041 서울 종로구 사직로 111 (내자동)",
+      "district": "종로구",
+      "coordinates": [
+        126.971075140727,
+        37.5762640275272
+      ],
+      "tags": "땅콩센베이,꽈배기,오래가게"
+    },
+    {
+      "id": "seoul-attraction-5548",
+      "sourceId": "5548",
+      "name": "호림박물관 (신사분관)",
+      "localizedNames": {
+        "en": "Horim Museum (Sinsa Branch)",
+        "ja": "湖林博物館（新沙分館）"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06021 서울 강남구 도산대로 317 (신사동, 호림아트센터 1빌딩)",
+      "district": "강남구",
+      "coordinates": [
+        127.036399755802,
+        37.5227003008947
+      ],
+      "tags": "신사동, 박물관,강남, 압구정로데오역, 호림박물관, 현대미술, 전시, 호림박물관신사분관,신사역,강남구청역, 고미술"
+    },
+    {
+      "id": "seoul-attraction-48960",
+      "sourceId": "48960",
+      "name": "호호재 서울",
+      "localizedNames": {
+        "en": "Hohojae Seoul",
+        "ja": "ホホジェ・ソウル"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03054 서울 종로구 삼청로 71-7 (팔판동)",
+      "district": "종로구",
+      "coordinates": [
+        126.981153090219,
+        37.5821003632233
+      ],
+      "tags": "한옥갤러리,삼청동전시,한국작가,갤러리투어,호호재갤러리,서울갤러리,서울전시"
+    },
+    {
+      "id": "seoul-attraction-48918",
+      "sourceId": "48918",
+      "name": "홍대R1 레드컬처마켓",
+      "localizedNames": {
+        "en": "Hongdae R1 Red Culture Market",
+        "ja": "弘大R1レッドカルチャーマーケット"
+      },
+      "category": "Shopping",
+      "placeType": "shopping_destination",
+      "address": "04055 서울 마포구 서교동 348-24",
+      "district": "마포구",
+      "coordinates": [
+        126.926273606023,
+        37.5564346247377
+      ],
+      "tags": "홍대, 레드로드, 관광특화거리, 버스킹, 플리마켓, 문화, 마포구"
+    },
+    {
+      "id": "seoul-attraction-28332",
+      "sourceId": "28332",
+      "name": "홍익문고",
+      "localizedNames": {
+        "en": "Hongik Bookstore",
+        "ja": "弘益書店"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "03779 서울 서대문구 연세로 2 (창천동, 홍익문고)",
+      "district": "서대문구",
+      "coordinates": [
+        126.937043755972,
+        37.5557853830354
+      ],
+      "tags": " 문구류, 팬시, 홍익문고, 홍대서점, 서울서점,오래가게, 신촌역, 연세대, 서강대,서점, 서울미래유산"
+    },
+    {
+      "id": "seoul-attraction-2021",
+      "sourceId": "2021",
+      "name": "화계사",
+      "localizedNames": {
+        "en": "Hwagyesa Temple",
+        "ja": "華渓寺"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "01095 서울 강북구 화계사길 117 (수유동, 화계사)",
+      "district": "강북구",
+      "coordinates": [
+        127.007087091421,
+        37.6325223905148
+      ],
+      "tags": " 자연,숲,삼각산, 템플스테이,화계사, 수유역,사찰, 흥선대원군"
+    },
+    {
+      "id": "seoul-attraction-5668",
+      "sourceId": "5668",
+      "name": "북촌동양문화박물관",
+      "localizedNames": {
+        "en": "Bukchon Oriental Culture Museum",
+        "ja": "北村東洋文化博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03052 서울 종로구 북촌로11길 76",
+      "district": "종로구",
+      "coordinates": [
+        126.983370412821,
+        37.5839903499019
+      ],
+      "tags": "문화,안국역,박물관,광화문,북촌한옥마을,전시,동양문화,북촌동양문화박물관,역사"
+    },
+    {
+      "id": "seoul-attraction-43454",
+      "sourceId": "43454",
+      "name": "서우제과",
+      "localizedNames": {
+        "en": "Seowoo Confectionery",
+        "ja": "ソウ製菓店"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "06745 서울 서초구 강남대로30길 48-2 (양재동)",
+      "district": "서초구",
+      "coordinates": [
+        127.03980041724,
+        37.4823043258481
+      ],
+      "tags": "쌀과자,전통과자,오래가게, 서초, 방배동,뻥튀기"
+    },
+    {
+      "id": "seoul-attraction-4281",
+      "sourceId": "4281",
+      "name": "안중근의사기념관",
+      "localizedNames": {
+        "en": "Ahn Jung-geun Memorial Hall",
+        "ja": "安重根義士記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04636 서울 중구 소월로 91 (남대문로5가, 안중근의사기념관)",
+      "district": "중구",
+      "coordinates": [
+        126.980404324804,
+        37.5534684886426
+      ],
+      "tags": "회현역,역사, 안중근, 안중근의사기념관, 전시, 유적지,명동,독립운동가,기념관, 서울역"
+    },
+    {
+      "id": "seoul-attraction-1862",
+      "sourceId": "1862",
+      "name": "원효로성당",
+      "localizedNames": {
+        "en": "Wonhyoro Catholic Church",
+        "ja": "元暁路聖堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "서울 용산구 원효로19길 49 (원효로4가)",
+      "district": "용산구",
+      "coordinates": [
+        126.95459335968,
+        37.534209370461
+      ],
+      "tags": "서울근대문화재,용산역,용산신학교,여의도,성당,원효로성당"
+    },
+    {
+      "id": "seoul-attraction-41095",
+      "sourceId": "41095",
+      "name": "잠실대교",
+      "localizedNames": {
+        "en": "Jamsil Bridge",
+        "ja": "蚕室大橋"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "05502 서울 송파구 한가람로 65 (잠실동, 한강사업본부 잠실안내센터)",
+      "district": "송파구",
+      "coordinates": [
+        127.086737282438,
+        37.5176288053129
+      ],
+      "tags": "한강,잠실,잠실대교,다리,야경,서울"
+    },
+    {
+      "id": "seoul-attraction-43473",
+      "sourceId": "43473",
+      "name": "잉꼬네떡볶이",
+      "localizedNames": {
+        "en": "Inggone Tteokbokki",
+        "ja": "インコネトッポッキ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "02060 서울 중랑구 용마산로120길 43",
+      "district": "중랑구",
+      "coordinates": [
+        127.103048629635,
+        37.6016128233585
+      ],
+      "tags": "매콤함,오래가게,분식,망우동,중랑,가성비,떡볶이"
+    },
+    {
+      "id": "seoul-attraction-50914",
+      "sourceId": "50914",
+      "name": "청송본관함흥냉면",
+      "localizedNames": {
+        "en": "Cheongsong Main Hall Hamheung Naengmyeon",
+        "ja": "青松本館咸興冷麺"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03708 서울 서대문구 연희맛로 6 (연희동, 에스빌딩)",
+      "district": "서대문구",
+      "coordinates": [
+        126.928782516674,
+        37.5658935655082
+      ],
+      "tags": "오래가게,회냉면,냉면,함흥냉면,녹두전,만두,연희동,서대문구"
+    },
+    {
+      "id": "seoul-attraction-43610",
+      "sourceId": "43610",
+      "name": "터방내",
+      "localizedNames": {
+        "en": "Teobangnae",
+        "ja": "トバンネ"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "06910 서울 동작구 흑석로 101-7",
+      "district": "동작구",
+      "coordinates": [
+        126.960755041795,
+        37.5080576288247
+      ],
+      "tags": "다방,카페,오래가게,흑석동,중앙대,분위기,사이폰커피"
+    },
+    {
+      "id": "seoul-attraction-48452",
+      "sourceId": "48452",
+      "name": "한강초교앞보도육교",
+      "localizedNames": {
+        "en": "Pedestrian Overpass by Hangang Elementary School",
+        "ja": "漢江小学校前歩道橋"
+      },
+      "category": "Nature",
+      "placeType": "landmark_viewpoint",
+      "address": "서울 용산구 한강로3가",
+      "district": "용산구",
+      "coordinates": [
+        126.962182447512,
+        37.5276608637792
+      ],
+      "tags": "서울사진스팟,야경맛집,용산가볼만한곳"
+    },
+    {
+      "id": "seoul-attraction-1403",
+      "sourceId": "1403",
+      "name": "허준박물관",
+      "localizedNames": {
+        "en": "Heo Jun Museum",
+        "ja": "許浚博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "서울특별시 강서구 허준로 87 (가양동)",
+      "district": "강서구",
+      "coordinates": [
+        126.851031243879,
+        37.5678724473689
+      ],
+      "tags": " 동의보감,가양동, 역사, 체험관, 체험학습, 박물관, 구암허준,허준박물관, 한의학, 구암공원, 허준,가양역"
+    },
+    {
+      "id": "seoul-attraction-4198",
+      "sourceId": "4198",
+      "name": "환구단(원구단)",
+      "localizedNames": {
+        "en": "Hwangudan Altar (Wongudan Altar)",
+        "ja": "圜丘壇（円丘壇）"
+      },
+      "category": "Culture",
+      "placeType": "heritage",
+      "address": "서울특별시 중구 소공로 106(소공동 87-1)",
+      "district": "중구",
+      "coordinates": [
+        126.980184460247,
+        37.5644841324893
+      ],
+      "tags": "을지로입구역,제천단,광화문,원구단,시청역,조선호텔,환구단"
+    },
+    {
+      "id": "seoul-attraction-29766",
+      "sourceId": "29766",
+      "name": "황학정",
+      "localizedNames": {
+        "en": "Hwanghakjeong Pavilion",
+        "ja": "黄鶴亭"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03027 서울 종로구 사직로9길 15-32 (사직동)",
+      "district": "종로구",
+      "coordinates": [
+        126.963945833593,
+        37.5779183632114
+      ],
+      "tags": " 광화문,국궁전시관, 황학정, 활터,경복궁역, 경희궁"
+    },
+    {
+      "id": "seoul-attraction-19657",
+      "sourceId": "19657",
+      "name": "효자베이커리",
+      "localizedNames": {
+        "en": "Hyoja Bakery",
+        "ja": "ヒョジャベーカリー"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "03036 서울 종로구 필운대로 54",
+      "district": "종로구",
+      "coordinates": [
+        126.968667351322,
+        37.5809412841108
+      ],
+      "tags": " 빵집, 빵,오래가게, 도넛,고로케, 베이글,발효빵"
+    },
+    {
+      "id": "seoul-attraction-43491",
+      "sourceId": "43491",
+      "name": "휘가로",
+      "localizedNames": {
+        "en": "Figaro",
+        "ja": "フィガロ"
+      },
+      "category": "Food",
+      "placeType": "restaurant_bakery_food_street",
+      "address": "08814 서울 관악구 신림로11길 20 (신림동)",
+      "district": "관악구",
+      "coordinates": [
+        126.938724725639,
+        37.4695927960836
+      ],
+      "tags": "관악구,서울대,오래가게,호프,맥주,녹두거리"
+    },
+    {
+      "id": "seoul-attraction-47055",
+      "sourceId": "47055",
+      "name": "경복궁 돌담길",
+      "localizedNames": {
+        "en": "Gyeongbokgung Palace Stone Wall Path",
+        "ja": "景福宮石垣道"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03045 서울 종로구 사직로 161 (세종로, 경복궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.976842133821,
+        37.5759040910202
+      ],
+      "tags": "경복궁,종로,경복궁돌담길,광화문,돌담길,북촌,서촌,청와대"
+    },
+    {
+      "id": "seoul-attraction-47031",
+      "sourceId": "47031",
+      "name": "창덕궁 후원",
+      "localizedNames": {
+        "en": "Secret Garden of Changdeokgung Palace",
+        "ja": "昌徳宮後苑"
+      },
+      "category": "Nature",
+      "placeType": "walk_garden_scenery",
+      "address": "03072 서울 종로구 율곡로 99 (와룡동, 창덕궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.989710338876,
+        37.5788697347103
+      ],
+      "tags": "정원,창덕궁후원,창덕궁"
+    },
+    {
+      "id": "seoul-attraction-49867",
+      "sourceId": "49867",
+      "name": "코엑스 K-POP 광장",
+      "localizedNames": {
+        "en": "COEX K-POP Plaza",
+        "ja": "COEX K-POP広場"
+      },
+      "category": "Culture",
+      "placeType": "landmark_viewpoint",
+      "address": "06164 서울특별시 강남구 영동대로 513 (삼성동, 코엑스). 코엑스 공식 안내는 K-POP 광장을 코엑스 아티움 건물 외벽 미디어 아래 공간으로 소개합니다.",
+      "district": "강남구",
+      "coordinates": [
+        127.059159043842,
+        37.5118239121138
+      ],
+      "tags": "코엑스 K-POP 스퀘어,별마당도서관,한류콘텐츠,LED사이니지,옥외광고,디지털미디어,삼성역,코엑스"
+    },
+    {
+      "id": "seoul-attraction-50346",
+      "sourceId": "50346",
+      "name": "스페이스K 서울",
+      "localizedNames": {
+        "en": "Space K Seoul",
+        "ja": "スペースKソウル"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "07802 서울특별시 강서구 마곡중앙8로 32, 스페이스K 서울",
+      "district": "강서구",
+      "coordinates": [
+        126.830974669978,
+        37.5610929270592
+      ],
+      "tags": "문화예술,마곡 볼거리,서울전시,비영리 미술관,스페이스K 서울,전시관람,서울 전시관"
+    },
+    {
+      "id": "seoul-attraction-50421",
+      "sourceId": "50421",
+      "name": "플랫폼엘 (PLATFORM-L)",
+      "localizedNames": {
+        "en": "Platform-L",
+        "ja": "プラットフォームL"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06053 서울 강남구 언주로133길 11 (논현동)",
+      "district": "강남구",
+      "coordinates": [
+        127.034381857383,
+        37.5160551065386
+      ],
+      "tags": "플랫폼엘 컨템포러리 아트센터,플랫폼엘미술관,강남전시,리틀엘(LITTLE-L),서울미술관"
+    },
+    {
+      "id": "seoul-attraction-1961",
+      "sourceId": "1961",
+      "name": "겸재정선미술관",
+      "localizedNames": {
+        "en": "Gyeomjae Jeong Seon Museum",
+        "ja": "謙斎・鄭敾美術館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "07522 서울 강서구 양천로47길 36 (가양동, 겸재정선미술관)",
+      "district": "강서구",
+      "coordinates": [
+        126.838412693156,
+        37.572228016527
+      ],
+      "tags": "양천향교역, 겸재성선미술관, 영화감상회,문화,정선, 서울식물원화가정선, 미술관, 가양동, 전시"
+    },
+    {
+      "id": "seoul-attraction-3164",
+      "sourceId": "3164",
+      "name": "남포면옥(중구)",
+      "localizedNames": {
+        "en": "Nampo Myeonok (Jung-gu)",
+        "ja": "ナンポミョノク（中区）"
+      },
+      "category": "Food",
+      "placeType": "restaurant",
+      "address": "04522 서울특별시 중구 을지로3길 24 (다동)",
+      "district": "중구",
+      "coordinates": [
+        126.981675952718,
+        37.5671463662203
+      ],
+      "tags": "을지로맛집,갈비탕,냉면,남포면옥,어복쟁반"
+    },
+    {
+      "id": "seoul-attraction-2030",
+      "sourceId": "2030",
+      "name": "대한성공회서울주교좌성당(서울성공회성당)",
+      "localizedNames": {
+        "en": "Seoul Anglican Cathedral",
+        "ja": "大韓聖公会ソウル主教座聖堂"
+      },
+      "category": "Culture",
+      "placeType": "heritage_architecture",
+      "address": "04519 서울특별시 중구 세종대로21길 15 (정동)",
+      "district": "중구",
+      "coordinates": [
+        126.975333738027,
+        37.5675100246955
+      ],
+      "tags": "광화문, 광화문역, 덕수궁돌담길,시청역,천주교,대한성공회,서울주교좌성당"
+    },
+    {
+      "id": "seoul-attraction-24679",
+      "sourceId": "24679",
+      "name": "동대문디자인플라자 (DDP)",
+      "localizedNames": {
+        "en": "Dongdaemun Design Plaza (DDP)",
+        "ja": "東大門デザインプラザ（DDP）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "04566 서울 중구 을지로 281 (을지로7가, 디자인장터)",
+      "district": "중구",
+      "coordinates": [
+        127.010890355484,
+        37.5680445876689
+      ],
+      "tags": "서울명소,동대문디자인플라자,서울놀거리,서울데이트코스,서울DDP,DDP,서울복합문화공간,서울동대문역사문화공원역,서울볼거리"
+    },
+    {
+      "id": "seoul-attraction-47187",
+      "sourceId": "47187",
+      "name": "삼세영",
+      "localizedNames": {
+        "en": "Samseyoung Gallery",
+        "ja": "SAMSEYOUNG GALLERY"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03003 서울 종로구 평창44길 2 (평창동) 삼세영",
+      "district": "종로구",
+      "coordinates": [
+        126.978292871538,
+        37.6136318587605
+      ],
+      "tags": "현대미술,삼세영,현대미술전시,전시,건축,평창동전시,문화예술,고미술"
+    },
+    {
+      "id": "seoul-attraction-2388",
+      "sourceId": "2388",
+      "name": "아라리오갤러리 서울",
+      "localizedNames": {
+        "en": "Arario Gallery Seoul",
+        "ja": "アラリオギャラリー・ソウル"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03058 서울 종로구 율곡로 85 아라리오갤러리",
+      "district": "종로구",
+      "coordinates": [
+        126.988514892719,
+        37.5778802427982
+      ],
+      "tags": "아라리오갤러리,문화,미술,화랑,아라리오,서울전시,현대미술,전시,북촌,종로,갤러리,삼청동,예술,광화문"
+    },
+    {
+      "id": "seoul-attraction-34860",
+      "sourceId": "34860",
+      "name": "전태일기념관",
+      "localizedNames": {
+        "en": "Jeon Tae-il Memorial Hall",
+        "ja": "全泰壱記念館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03191 서울특별시 종로구 청계천로 105",
+      "district": "종로구",
+      "coordinates": [
+        126.989300313392,
+        37.5684664512813
+      ],
+      "tags": "전태일기념관"
+    },
+    {
+      "id": "seoul-attraction-4696",
+      "sourceId": "4696",
+      "name": "청계천박물관",
+      "localizedNames": {
+        "en": "Cheonggyecheon Museum",
+        "ja": "清渓川博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04704 서울 성동구 청계천로 530 (마장동, 청계천박물관)",
+      "district": "성동구",
+      "coordinates": [
+        127.03504316401,
+        37.5712661734969
+      ],
+      "tags": " 제기동역,역사,전시관, 생태, 청계천박물관, 청계천문화관,청계천,두물다리"
+    },
+    {
+      "id": "seoul-attraction-1955",
+      "sourceId": "1955",
+      "name": "풍납토성",
+      "localizedNames": {
+        "en": "Pungnaptoseong Fortress",
+        "ja": "風納土城"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "05512 서울특별시 송파구 한가람로20길 30 (풍납동)",
+      "district": "송파구",
+      "coordinates": [
+        127.120860181354,
+        37.5386947722498
+      ],
+      "tags": "한강유적,천호역, 풍납토성, 송파구, 백제풍납토성, 백제, 유적지, 한강, 역사"
+    },
+    {
+      "id": "seoul-attraction-42255",
+      "sourceId": "42255",
+      "name": "피겨앤그라운드",
+      "localizedNames": {
+        "en": "Figure & Ground",
+        "ja": "フィギュア＆グラウンド"
+      },
+      "category": "Cafe",
+      "placeType": "cafe_tea_bookcafe",
+      "address": "06036 서울 강남구 논현로153길 53 (신사동, 피겨앤그라운드)",
+      "district": "강남구",
+      "coordinates": [
+        127.023901473322,
+        37.5201623030796
+      ],
+      "tags": "피겨앤그라운드"
+    },
+    {
+      "id": "seoul-attraction-15863",
+      "sourceId": "15863",
+      "name": "피규어뮤지엄W",
+      "localizedNames": {
+        "en": "Figure Museum W",
+        "ja": "フィギュアミュージアムW"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "06014 서울 강남구 선릉로158길 3 (청담동, Ys Roo)",
+      "district": "강남구",
+      "coordinates": [
+        127.040386554258,
+        37.5257998045331
+      ],
+      "tags": " 피규어뮤지엄,임시완, 강남, 문화가있는날, 한류, 피규어,박물관, 이종석, 키덜트, 엑소,디오, 고소영, 이광수, 신민아, 소지섭,압구정로데오역,오마이비너스, 피규어뮤지엄W"
+    },
+    {
+      "id": "seoul-attraction-28051",
+      "sourceId": "28051",
+      "name": "호미화방",
+      "localizedNames": {
+        "en": "Homi Hwabang Art Supply Store",
+        "ja": "ホミ画房"
+      },
+      "category": "Shopping",
+      "placeType": "specialty_culture_shop",
+      "address": "04039 서울 마포구 홍익로3길 20 서교프라자 1층,2층",
+      "district": "마포구",
+      "coordinates": [
+        126.921715374089,
+        37.5535160625816
+      ],
+      "tags": " 디자인,오래가게, 서울미래유산, 서교동,화방, 미술화방, 미술용품, 홍대"
+    },
+    {
+      "id": "seoul-attraction-1999",
+      "sourceId": "1999",
+      "name": "흥인지문(동대문)",
+      "localizedNames": {
+        "en": "Heunginjimun Gate (Dongdaemun Gate)",
+        "ja": "興仁之門（東大門）"
+      },
+      "category": "Culture",
+      "placeType": "heritage_street_architecture",
+      "address": "03119 서울 종로구 종로 288 (종로6가, 흥인지문)",
+      "district": "종로구",
+      "coordinates": [
+        127.009703711735,
+        37.5711672711877
+      ],
+      "tags": "서울여행,동대문야시장, 동대문,서울사대문, 역사,서울명소,서울데이트,흥인지문, 문화재,서울동대문볼거리,동대문명소,성곽,서울문화재"
+    }
+  ]
+}

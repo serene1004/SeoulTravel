@@ -14,7 +14,10 @@ import {
 import { SiteHeader } from './components/SiteHeader';
 import { useLocale } from './context/useLocale';
 import { useSavedSpots } from './context/useSavedSpots';
-import { getPublicAttractionRecord } from './data/publicAttractions';
+import {
+  loadLocalizedPlaceContents,
+  type LocalizedPlaceContentMap,
+} from './data/publicAttractions';
 import {
   getSpotCategoryLabel,
   seoulSpots,
@@ -99,6 +102,9 @@ export default function App() {
   const [selectedClusterPlaces, setSelectedClusterPlaces] = useState<ClusterPlace[]>([]);
   const [clusterListPage, setClusterListPage] = useState(0);
   const [sameLocationIndex, setSameLocationIndex] = useState(0);
+  const [localizedPlaceContents, setLocalizedPlaceContents] = useState<LocalizedPlaceContentMap>(
+    {},
+  );
   const [search, setSearch] = useState('');
   const [searchInput, setSearchInput] = useState('');
   useEffect(() => {
@@ -113,6 +119,19 @@ export default function App() {
     return () => window.clearTimeout(timeoutId);
   }, [search, searchInput]);
 
+  useEffect(() => {
+    if (!selectedId) return undefined;
+    let mounted = true;
+    void loadLocalizedPlaceContents()
+      .then((content) => {
+        if (mounted) setLocalizedPlaceContents(content);
+      })
+      .catch(() => undefined);
+    return () => {
+      mounted = false;
+    };
+  }, [selectedId]);
+
   const visibleSpots = useMemo(() => {
     const normalizedSearch = search.toLocaleLowerCase(locale);
     return seoulSpots.filter((spot) => {
@@ -125,7 +144,9 @@ export default function App() {
     });
   }, [activeCategory, locale, search]);
   const selected = selectedId ? visibleSpots.find((spot) => spot.id === selectedId) : undefined;
-  const selectedPublicRecord = selected ? getPublicAttractionRecord(selected.id) : undefined;
+  const selectedLocalizedContent = selected
+    ? localizedPlaceContents[selected.id]?.[locale]
+    : undefined;
   const selectedClusterItems = selectedClusterPlaces.flatMap((place) => {
     const spot = seoulSpots.find((item) => item.id === place.id);
     return spot ? [{ ...place, name: spot.name[locale], category: spot.category }] : [];
@@ -381,12 +402,17 @@ export default function App() {
                 </div>
                 <h2 id="spot-dialog-title">{selected!.name[locale]}</h2>
                 <p className="spot-dialog-district">
-                  {selectedPublicRecord?.address || selected!.district[locale]}
+                  {selectedLocalizedContent?.address ||
+                    (locale === 'ko' ? selected!.address : undefined) ||
+                    selected!.district[locale]}
                 </p>
                 <div className="info-rule" />
                 <div className="spot-dialog-meta">
-                  <span>{selectedPublicRecord?.tags || selected!.note[locale]}</span>
-                  <span>{selectedPublicRecord?.hours || text.bestTime}</span>
+                  {(selectedLocalizedContent?.tags ||
+                    (locale === 'ko' ? selected!.note.ko : undefined)) && (
+                    <span>{selectedLocalizedContent?.tags || selected!.note.ko}</span>
+                  )}
+                  <span>{selectedLocalizedContent?.hours || text.bestTime}</span>
                 </div>
                 {selected && (
                   <button
