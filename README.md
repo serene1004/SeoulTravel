@@ -9,13 +9,15 @@
 - 한국어·영어·일본어 UI 전환
 - 장소 저장 목록에서 후보를 다시 보고 저장한 장소로 길찾기 시작
 - 선정 장소 상세 정보와 조사 출처 연결
-- 서울 현재 날씨, 강수 확률, 기온 및 추천 복장 안내
+- 서울 현재 날씨와 강수 예보에 맞는 장소·복장 추천
 - 검색 가능한 출발지·도착지 선택과 대중교통 경로 안내
 
-## 향후 개발 계획
+## 데이터 갱신 계획
 
-- 날씨와 장소 정보를 연결한 상황별 여행 추천
-- 관광 정보의 주기적 갱신과 변경 사항 검토 흐름 강화
+- 매월 첫째 주 `pnpm sync:seoul-attractions -- --dry-run`으로 서울시 원천 변경을 확인합니다.
+- 변경이 있으면 신규·수정 장소의 선정 근거와 주소·좌표를 검토하고, 불확실한 항목은 보류합니다. 필요하면 `pnpm review:travel-place-suitability -- --dry-run`으로 AI 검토 제안을 미리 확인합니다.
+- 검토를 마친 변경만 동기화하고 `pnpm geocode:seoul-attractions`, `pnpm build:travel-places`, `pnpm verify` 순서로 반영합니다.
+- 운영 상태·좌표의 추가 보정은 공식 출처나 폐업 등 확인 가능한 근거가 생긴 장소부터 진행합니다.
 
 ## 기술 스택
 
@@ -61,7 +63,8 @@ pnpm format                 # Prettier 적용
 pnpm format:check           # 포맷 검사
 pnpm test                   # 전체 테스트
 pnpm verify                 # 린트, 전체 테스트, 프로덕션 빌드
-pnpm sync:seoul-attractions # 서울 공공 관광 데이터 동기화
+pnpm sync:seoul-attractions -- --dry-run # 변경 미리보기
+pnpm sync:seoul-attractions              # 서울 공공 관광 데이터 동기화
 pnpm enrich:travel-places -- --limit 25 --offset 0 # 장소 상세 정보 조사 배치
 pnpm review:place-localizations -- --limit 25 --offset 0 # 영어·일본어 장소명 검토
 pnpm test:travel-place-enrichment                 # 조사 파이프라인 검사
@@ -95,9 +98,12 @@ LOCALIZATION_REVIEW_MAX_SPEND_USD=1
 
 ## 장소 데이터
 
-지도·검색·상세 화면은 선정된 서울 장소 카탈로그를 공유합니다. 장소 선정 기준은 [장소 선정 정책](docs/TRAVEL_PLACE_POLICY.md), 전체 판단 내역은 [장소 검토표](docs/TRAVEL_PLACE_REVIEW.md)에 있습니다. `pnpm build:travel-places`로 카탈로그를 재생성하고 `pnpm test:travel-places`로 검증합니다. 빌드 시에도 카탈로그를 재생성합니다.
+장소 선정 원본 카탈로그는 빌드 과정에서 지도·검색용 색인과 상세 데이터 조각으로 생성됩니다. 앱은 색인을 공통 사용하고, 상세 화면에서는 해당 장소가 속한 데이터 조각만 지연 로드합니다. 장소 선정 기준은 [장소 선정 정책](docs/TRAVEL_PLACE_POLICY.md), 전체 판단 내역은 [장소 검토표](docs/TRAVEL_PLACE_REVIEW.md)에 있습니다. `pnpm build:travel-places`로 산출물을 재생성하고 `pnpm test:travel-places`로 검증합니다. 빌드 시에도 산출물을 재생성합니다.
 
-- `src/data/seoul-travel-places.json`: 지도·검색·상세 화면에 사용하는 선정 장소 카탈로그
+- `src/data/seoul-travel-places.json`: 전체 선정 장소 카탈로그 생성 결과
+- `src/data/seoul-travel-place-index.json`: 지도·검색·경로에 사용하는 경량 색인
+- `src/data/seoul-travel-place-details-*.json`: 상세 화면에서 필요한 조각만 지연 로드하는 상세 데이터
+- `src/data/seoul-travel-place-localized-content.json`: 지도 팝업·상세 화면용 지연 로드 번역
 - `src/data/seoul-travel-place-review.json`: 포함·제외·보류 판단과 근거
 - `src/data/seoul-travel-place-enrichment.json`: AI 조사 제안, 필드별 출처, 사용량과 비용 기록
 - `src/data/spots.ts`: 장소 데이터 타입과 조회 함수
