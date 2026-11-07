@@ -2126,16 +2126,13 @@ a:focus-visible {
 }
 .route-form {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 40px;
-  gap: var(--space-4);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
   max-width: 460px;
   margin-top: var(--space-8);
 }
 .route-place-fields {
   display: grid;
-  grid-column: 1;
-  gap: var(--space-4);
+  gap: var(--space-1);
   min-width: 0;
 }
 .route-place-picker {
@@ -2283,16 +2280,27 @@ a:focus-visible {
   background: var(--color-primary);
 }
 .route-swap {
-  grid-column: 2;
-  align-self: center;
+  display: grid;
+  place-items: center;
   justify-self: center;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--color-border);
+  border: 0;
   border-radius: 50%;
   background: transparent;
   color: var(--color-secondary);
   cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+.route-swap:not(:disabled):hover {
+  background: #f3e6d5;
+  color: var(--color-primary);
+}
+.route-swap:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 .route-swap:disabled {
   cursor: default;
@@ -3152,6 +3160,7 @@ a:focus-visible {
   font-size: 13px;
   font-weight: 600;
   line-height: 1.6;
+  white-space: pre-line;
   overflow-wrap: anywhere;
 }
 .spot-info-content small {
@@ -3462,8 +3471,7 @@ a:focus-visible {
     padding-inline: 16px;
   }
   .route-form {
-    grid-template-columns: minmax(0, 1fr) 44px;
-    gap: 8px;
+    grid-template-columns: minmax(0, 1fr);
   }
   .route-ticket {
     padding: 20px;

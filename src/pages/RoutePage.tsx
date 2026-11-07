@@ -1,9 +1,9 @@
-import { useId, useState, type KeyboardEvent } from 'react';
+import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 
 import {
-  ArrowLeftRight,
   ArrowUpRight,
+  ArrowUpDown,
   Bookmark,
   Check,
   MapPin,
@@ -41,13 +41,21 @@ function PlacePicker({ label, id, selectedId, excludedId, onSelect }: PlacePicke
   const listId = useId();
   const { savedSpotIds } = useSavedSpots();
   const selected = seoulSpots.find((spot) => spot.id === selectedId);
+  const selectedName = selected?.name[locale] ?? '';
   const [queryValue, setQueryValue] = useState(selected?.name[locale] ?? '');
   const [querySelectedId, setQuerySelectedId] = useState(selectedId);
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const previousSelectedNameRef = useRef(selectedName);
   const excluded = seoulSpots.find((spot) => spot.id === excludedId);
   const availableSpots = seoulSpots.filter((spot) => spot.id !== excludedId);
-  const query = querySelectedId === selectedId ? queryValue : (selected?.name[locale] ?? '');
+  const query = querySelectedId === selectedId ? queryValue : selectedName;
+
+  useEffect(() => {
+    const previousSelectedName = previousSelectedNameRef.current;
+    previousSelectedNameRef.current = selectedName;
+    setQueryValue((current) => (current === previousSelectedName ? selectedName : current));
+  }, [selectedName]);
   const normalizedQuery = query.trim().toLocaleLowerCase(locale);
   const normalizedQueryName = normalizedQuery.replaceAll(/\s+/g, '');
   const excludedMatchesQuery = Boolean(
@@ -301,6 +309,15 @@ export default function RoutePage() {
                 excludedId={toId}
                 onSelect={(placeId) => updateRoute(placeId, toId)}
               />
+              <button
+                type="button"
+                className="route-swap"
+                onClick={swapPlaces}
+                disabled={!fromId && !toId}
+                aria-label={t(locale, 'swapPlaces')}
+              >
+                <ArrowUpDown size={18} aria-hidden="true" />
+              </button>
               <PlacePicker
                 id="route-destination"
                 label={t(locale, 'toPlace')}
@@ -309,15 +326,6 @@ export default function RoutePage() {
                 onSelect={(placeId) => updateRoute(fromId, placeId)}
               />
             </div>
-            <button
-              type="button"
-              className="route-swap"
-              onClick={swapPlaces}
-              disabled={!fromId && !toId}
-              aria-label={t(locale, 'swapPlaces')}
-            >
-              <ArrowLeftRight size={18} />
-            </button>
           </div>
           {from && to && from.id === to.id && (
             <p className="route-error" role="alert">
