@@ -1,6 +1,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
+import { addressQuery } from './seoul-address-query.mjs';
+
 const envPath = resolve('.env.local');
 const candidatePath = resolve('src/data/seoul-public-attraction-candidates.json');
 const outputPath = resolve('src/data/seoul-public-attraction-coordinates.json');
@@ -21,16 +23,6 @@ let geocoded = 0;
 let keywordGeocoded = 0;
 let unresolved = 0;
 
-function addressQuery(address) {
-  const withoutDetails = address
-    .trim()
-    .replace(/^\d{5}\s+/, '')
-    .replace(/\([^)]*\)/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-  return withoutDetails.match(/^(.*?\s\d+(?:-\d+)?)(?=\s|$)/)?.[1] ?? withoutDetails;
-}
-
 const categoryRules = [
   { category: 'Cafe', pattern: /카페|커피|coffee|cafe|찻집|다방|tea/g },
   {
@@ -45,7 +37,8 @@ const categoryRules = [
   },
   {
     category: 'Nature',
-    pattern: /공원|숲|한강|호수|생태|수목원|계곡|습지|둘레길|북한산|남산|관악산|인왕산|북악산|도봉산|일자산/g,
+    pattern:
+      /공원|숲|한강|호수|생태|수목원|계곡|습지|둘레길|북한산|남산|관악산|인왕산|북악산|도봉산|일자산/g,
   },
 ];
 
@@ -77,7 +70,8 @@ async function search(endpoint, query) {
 }
 
 for (const attraction of catalog.attractions) {
-  if (Array.isArray(attraction.coordinates) || attraction.coordinateStatus === 'not_found') continue;
+  if (attraction.coordinateStatus === 'geocoded' || attraction.coordinateStatus === 'not_found')
+    continue;
 
   let result = await search(addressEndpoint, addressQuery(attraction.address));
   if (result) {
@@ -109,17 +103,17 @@ const coordinateCatalog = {
   geocodedAt: catalog.geocodedAt,
   totalCount: classifiedAttractions.length,
   attractions: classifiedAttractions.map(({ attraction, classification }) => ({
-      id: attraction.id,
-      name: attraction.name,
-      address: attraction.address,
-      district: attraction.district,
-      tags: attraction.tags,
-      hours: attraction.hours,
-      officialUrl: attraction.officialUrl,
-      coordinates: attraction.coordinates,
-      coordinateStatus: attraction.coordinateStatus,
-      category: classification.category,
-    })),
+    id: attraction.id,
+    name: attraction.name,
+    address: attraction.address,
+    district: attraction.district,
+    tags: attraction.tags,
+    hours: attraction.hours,
+    officialUrl: attraction.officialUrl,
+    coordinates: attraction.coordinates,
+    coordinateStatus: attraction.coordinateStatus,
+    category: classification.category,
+  })),
 };
 await writeFile(outputPath, `${JSON.stringify(coordinateCatalog, null, 2)}\n`, 'utf8');
 const reviewCatalog = {
@@ -137,5 +131,9 @@ const reviewCatalog = {
   })),
 };
 await writeFile(reviewPath, `${JSON.stringify(reviewCatalog, null, 2)}\n`, 'utf8');
-console.log(`Geocoded ${geocoded} by address, ${keywordGeocoded} by keyword; ${unresolved} addresses were not found.`);
-console.log(`Wrote ${classifiedAttractions.length} category reviews; ${reviewCatalog.records.filter((record) => record.needsReview).length} need review.`);
+console.log(
+  `Geocoded ${geocoded} by address, ${keywordGeocoded} by keyword; ${unresolved} addresses were not found.`,
+);
+console.log(
+  `Wrote ${classifiedAttractions.length} category reviews; ${reviewCatalog.records.filter((record) => record.needsReview).length} need review.`,
+);

@@ -1,11 +1,16 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
+import { compareAttractions } from './compare-travel-source.mjs';
+import { getSeoulOpenDataBaseUrl } from './seoul-open-data-url.mjs';
+
 const envPath = resolve('.env.local');
 const outputPath = resolve('src/data/seoul-open-attractions.json');
 const candidateOutputPath = resolve('src/data/seoul-public-attraction-candidates.json');
 const datasetUrl = 'https://data.seoul.go.kr/dataList/OA-21050/A/1/datasetView.do';
 const pageSize = 1000;
+const dryRun = process.argv.includes('--dry-run');
+const allowInsecureHttpOnce = process.argv.includes('--allow-insecure-http-once');
 
 function getEnvValue(envText, name) {
   const line = envText.split(/\r?\n/).find((entry) => entry.startsWith(`${name}=`));
@@ -44,16 +49,14 @@ if (!configuredApiBaseUrl) {
 }
 
 const apiBaseUrl = new URL(configuredApiBaseUrl);
-if (
-  apiBaseUrl.protocol !== 'https:' ||
-  apiBaseUrl.username ||
-  apiBaseUrl.password ||
-  apiBaseUrl.search ||
-  apiBaseUrl.hash
-) {
-  throw new Error('SEOUL_OPEN_DATA_API_BASE_URL must be an HTTPS URL without embedded credentials.');
+const secureApiBaseUrl = getSeoulOpenDataBaseUrl(configuredApiBaseUrl, {
+  allowInsecureHttpOnce,
+});
+if (apiBaseUrl.protocol === 'http:') {
+  console.error(
+    'WARNING: This one-time sync sends the API key over unencrypted HTTP to the official Seoul Open API endpoint.',
+  );
 }
-const secureApiBaseUrl = apiBaseUrl.href.replace(/\/+$/, '');
 
 async function fetchPage(startIndex, endIndex) {
   const response = await fetch(
@@ -83,23 +86,34 @@ for (let startIndex = pageSize + 1; startIndex <= totalCount; startIndex += page
 }
 
 const rows = pages.flatMap((page) => page.row);
+const previousCatalog = JSON.parse(await readFile(outputPath, 'utf8'));
 const existingCandidateCatalog = JSON.parse(await readFile(candidateOutputPath, 'utf8'));
+const placeReview = JSON.parse(await readFile('src/data/seoul-travel-place-review.json', 'utf8'));
 const existingCoordinates = new Map(
-  existingCandidateCatalog.attractions
-    .filter((attraction) => Array.isArray(attraction.coordinates))
-    .map((attraction) => [attraction.id, attraction]),
+  existingCandidateCatalog.attractions.map((attraction) => [attraction.id, attraction]),
+);
+const locationOverrides = new Map(
+  placeReview.decisions
+    .filter((decision) => decision.locationOverride?.address)
+    .map((decision) => [decision.sourceId, decision.locationOverride.address.trim()]),
 );
 
 const normalizedRows = rows.map(toPublicAttraction);
 const koreanAttractions = normalizedRows
   .filter((record) => record.language === 'ko')
-  .map((record) => ({
-    ...record,
-    district: getDistrict(record.address),
-    placeType: '관광지',
-    coordinates: existingCoordinates.get(record.id)?.coordinates ?? null,
-    coordinateStatus: existingCoordinates.get(record.id)?.coordinateStatus ?? 'pending',
-  }));
+  .map((record) => {
+    const address = locationOverrides.get(record.id) ?? record.address;
+    const previousCoordinate = existingCoordinates.get(record.id);
+    const coordinateMatchesAddress = previousCoordinate?.address?.trim() === address?.trim();
+    return {
+      ...record,
+      address,
+      district: getDistrict(address),
+      placeType: '관광지',
+      coordinates: coordinateMatchesAddress ? previousCoordinate.coordinates : null,
+      coordinateStatus: coordinateMatchesAddress ? previousCoordinate.coordinateStatus : 'pending',
+    };
+  });
 const catalog = {
   source: {
     name: '서울시 관광 명소',
@@ -120,8 +134,35 @@ const candidateCatalog = {
   attractions: koreanAttractions,
 };
 
-await writeFile(outputPath, `${JSON.stringify(catalog, null, 2)}\n`, 'utf8');
-await writeFile(candidateOutputPath, `${JSON.stringify(candidateCatalog, null, 2)}\n`, 'utf8');
+const changes = compareAttractions(previousCatalog.attractions, normalizedRows);
+const coordinateAddressChanges = koreanAttractions
+  .filter((attraction) => {
+    const previous = existingCoordinates.get(attraction.id);
+    return previous?.address?.trim() !== attraction.address?.trim();
+  })
+  .map(({ id, name, address }) => ({ id, name, address }))
+  .sort((left, right) => left.id.localeCompare(right.id, 'en'));
+
 console.log(
-  `Wrote ${catalog.attractions.length} public records and ${koreanAttractions.length} map candidates.`,
+  JSON.stringify(
+    {
+      mode: dryRun ? 'preview' : 'write',
+      previousCount: previousCatalog.attractions.length,
+      updatedCount: normalizedRows.length,
+      added: changes.added,
+      changed: changes.changed,
+      removed: changes.removed,
+      coordinateAddressChanges,
+    },
+    null,
+    2,
+  ),
 );
+
+if (!dryRun) {
+  await writeFile(outputPath, `${JSON.stringify(catalog, null, 2)}\n`, 'utf8');
+  await writeFile(candidateOutputPath, `${JSON.stringify(candidateCatalog, null, 2)}\n`, 'utf8');
+  console.log(
+    `Wrote ${catalog.attractions.length} public records and ${koreanAttractions.length} map candidates.`,
+  );
+}
