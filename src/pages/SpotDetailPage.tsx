@@ -132,13 +132,21 @@ export default function SpotDetailPage() {
       icon: Clock3,
       label: t(locale, 'hours'),
       value:
-        localizedContent?.hours ||
-        (locale === 'ko' ? publicRecord?.hours : undefined) ||
-        (locale === 'en' ? 'Check hours' : locale === 'ja' ? '営業時間を確認' : t(locale, 'hours')),
+        spot.operatingStatus === 'temporarily_closed'
+          ? t(locale, 'temporarilyClosedLabel')
+          : localizedContent?.hours ||
+            (locale === 'ko' ? publicRecord?.hours : undefined) ||
+            (locale === 'en'
+              ? 'Check hours'
+              : locale === 'ja'
+                ? '営業時間を確認'
+                : t(locale, 'hours')),
       field: 'hours',
-      description: (locale === 'ko' ? publicRecord?.closedDays : localizedContent?.closedDays)
-        ? `${t(locale, 'closedDays')}: ${locale === 'ko' ? publicRecord?.closedDays : localizedContent?.closedDays}`
-        : t(locale, 'checkOfficialHours'),
+      description: spot.visitorNotice
+        ? t(locale, 'checkOfficialHours')
+        : (locale === 'ko' ? publicRecord?.closedDays : localizedContent?.closedDays)
+          ? `${t(locale, 'closedDays')}: ${locale === 'ko' ? publicRecord?.closedDays : localizedContent?.closedDays}`
+          : t(locale, 'checkOfficialHours'),
     },
     {
       icon: Footprints,
@@ -189,6 +197,11 @@ export default function SpotDetailPage() {
                 <span key={tag}>{tag}</span>
               ))}
           </div>
+          {spot.visitorNotice && (
+            <p className="spot-availability-note" role="note">
+              {spot.visitorNotice[locale]}
+            </p>
+          )}
           <p className="spot-intro-links">
             <button
               type="button"
@@ -217,7 +230,7 @@ export default function SpotDetailPage() {
           <p className="spot-source-note">
             {t(locale, 'dataSource')}: {t(locale, 'seoulAttractionDatasetName')} ·{' '}
             {t(locale, 'publicDatasetLicense')}
-            {publicRecord?.enrichedInfo ? (
+            {spot.visitorNotice ? null : publicRecord?.enrichedInfo ? (
               <>
                 <br />
                 {t(locale, 'researchedAt')}: {publicRecord.enrichedInfo.researchedAt} ·{' '}
@@ -242,13 +255,15 @@ export default function SpotDetailPage() {
             <strong>
               {displayAddress || `${spot.neighborhood[locale]}, ${spot.district[locale]}`}
             </strong>
-            <small>
-              {publicRecord?.enrichedInfo
-                ? t(locale, 'researchedAddress')
-                : publicRecord?.operatingStatus === 'official_information_found'
-                  ? t(locale, 'officialAddress')
-                  : t(locale, 'addressUnknown')}
-            </small>
+            {!spot.visitorNotice && (
+              <small>
+                {publicRecord?.enrichedInfo
+                  ? t(locale, 'researchedAddress')
+                  : publicRecord?.operatingStatus === 'official_information_found'
+                    ? t(locale, 'officialAddress')
+                    : t(locale, 'addressUnknown')}
+              </small>
+            )}
             {sourceLink('address', t(locale, 'addressSource'))}
           </div>
           <a className="spot-map-link" href={mapUrl.href} target="_blank" rel="noreferrer">

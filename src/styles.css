@@ -1322,6 +1322,15 @@ a:focus-visible {
   font-size: 10px;
   font-weight: 800;
 }
+.spot-availability-note {
+  margin: var(--space-5) 0 0;
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-paper-raised);
+  color: var(--color-ink);
+  font-size: var(--text-label);
+  line-height: 1.6;
+}
 .route-page {
   background: #f9efcf;
 }

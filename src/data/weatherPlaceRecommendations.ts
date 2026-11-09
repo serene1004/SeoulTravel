@@ -27,7 +27,9 @@ const placeTypePriority: Record<WeatherPlaceMode, string[]> = {
 };
 
 const placeCandidates = seoulSpots.flatMap((spot) =>
-  spot.placeType ? [{ spot, placeType: spot.placeType }] : [],
+  spot.placeType && spot.operatingStatus !== 'temporarily_closed'
+    ? [{ spot, placeType: spot.placeType }]
+    : [],
 );
 
 export function getWeatherPlaceRecommendations(

@@ -406,13 +406,22 @@ export default function App() {
                     (locale === 'ko' ? selected!.address : undefined) ||
                     selected!.district[locale]}
                 </p>
+                {selected!.visitorNotice && (
+                  <p className="spot-availability-note" role="note">
+                    {selected!.visitorNotice[locale]}
+                  </p>
+                )}
                 <div className="info-rule" />
                 <div className="spot-dialog-meta">
                   {(selectedLocalizedContent?.tags ||
                     (locale === 'ko' ? selected!.note.ko : undefined)) && (
                     <span>{selectedLocalizedContent?.tags || selected!.note.ko}</span>
                   )}
-                  <span>{selectedLocalizedContent?.hours || text.bestTime}</span>
+                  {selected!.operatingStatus === 'temporarily_closed' ? (
+                    <span>{t(locale, 'temporarilyClosedLabel')}</span>
+                  ) : (
+                    <span>{selectedLocalizedContent?.hours || text.bestTime}</span>
+                  )}
                 </div>
                 {selected && (
                   <button

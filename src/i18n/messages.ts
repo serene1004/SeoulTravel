@@ -122,6 +122,7 @@ const messages = {
     publicDatasetLicense: '공공누리 제1유형 (출처표시, 상업적 이용 및 변경 가능)',
     researchedAt: '방문 정보 조사일',
     operatingStatusUnknown: '운영 정보 미확인 · 방문 전 공식 안내를 확인해 주세요.',
+    temporarilyClosedLabel: '현재 휴관 중',
     researchedAddress: '공개 출처에서 조사한 주소',
     officialAddress: '공식 안내 정보 확인',
     addressUnknown: '운영 정보 미확인 · 방문 전 공식 안내를 확인해 주세요.',
@@ -293,6 +294,7 @@ const messages = {
     researchedAt: 'Visitor information researched',
     operatingStatusUnknown:
       'Operating details are unverified. Check official information before visiting.',
+    temporarilyClosedLabel: 'Temporarily closed',
     researchedAddress: 'Address researched from public sources',
     officialAddress: 'Official information verified',
     addressUnknown: 'Operating details are unverified. Check official information before visiting.',
@@ -459,6 +461,7 @@ const messages = {
     publicDatasetLicense: '韓国公共ヌリ（KOGL）第1類型（出典表示、商用利用・改変可）',
     researchedAt: '情報調査日',
     operatingStatusUnknown: '営業情報は未確認です。訪問前に公式案内をご確認ください。',
+    temporarilyClosedLabel: '臨時休館中',
     researchedAddress: '公開情報から調査した住所',
     officialAddress: '公式案内の情報を確認済み',
     addressUnknown: '営業情報は未確認です。訪問前に公式案内をご確認ください。',
