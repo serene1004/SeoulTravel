@@ -313,6 +313,41 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-35405",
+      "sourceId": "35405",
+      "name": "국립한글박물관",
+      "localizedNames": {
+        "en": "National Hangeul Museum",
+        "ja": "国立ハングル博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04383 서울 용산구 서빙고로 139 (용산동6가, 국립한글박물관)",
+      "district": "용산구",
+      "coordinates": [
+        126.980486330158,
+        37.5210687976885
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 훈민정음,한글,국립한글박물관,세종대왕,한글박물관",
+      "hours": "10:00 - 18:00",
+      "closedDays": "* 새단장을 위해 2028년 하반기 까지 휴관\r\n\r\n1월 1일, 설날 당일, 추석 당일\r\n* 한글도서관 휴관일: 토요일, 일요일, 공휴일(한글날 제외)",
+      "officialUrl": "https://www.hangeul.go.kr/main.do",
+      "transport": "지하철 4호선/경의중앙선 이촌역 2번 출구,  500m",
+      "curationReason": "국립한글박물관은 한국어와 한글 문화를 다루는 공공 박물관입니다. 휴관 중인 사실은 별도 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://www.hangeul.go.kr/info/watchGuide.do?curr_menu_cd=0101010000",
+        "https://www.hangeul.go.kr/webzine/202610/sub3_1.html"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "휴관 중입니다. 공식 안내에 따르면 2028년 하반기까지 박물관 관람과 해설을 운영하지 않습니다.",
+        "en": "Temporarily closed. The official notice says museum visits and tours will remain unavailable through the second half of 2028.",
+        "ja": "休館中です。公式案内によると、博物館の観覧と解説は2028年下半期まで休止予定です。"
+      }
+    },
+    {
       "id": "seoul-attraction-54317",
       "sourceId": "54317",
       "name": "경춘철교 음악분수",
@@ -1673,6 +1708,40 @@
       "operatingStatus": "official_information_found"
     },
     {
+      "id": "seoul-attraction-49877",
+      "sourceId": "49877",
+      "name": "서울올림픽주경기장",
+      "localizedNames": {
+        "en": "Seoul Olympic Stadium",
+        "ja": "ソウルオリンピック主競技場"
+      },
+      "category": "Culture",
+      "placeType": "sports_venue",
+      "address": "05500 서울 송파구 올림픽로 25 (잠실동, 서울종합운동장)",
+      "district": "송파구",
+      "coordinates": [
+        127.075940589715,
+        37.5161987797456
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울올림픽주경기장,서울종합운동장,잠실종합운동장,서울올림픽,케이팝 데몬 헌터스,잠실야구장,서울아시안게임",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://stadium.seoul.go.kr/gallery/olympic-tour",
+      "transport": "지하철 2호선/9호선 종합운동장역 5번출구, 18m",
+      "curationReason": "서울올림픽과 대형 체육·문화 행사가 열린 잠실의 대표 경기장입니다. 리모델링 중 투어 중단 상태는 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://stadium.seoul.go.kr/gallery/olympic-tour"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "리모델링 공사로 경기장 투어가 중단되어 있습니다. 공식 안내 일정은 2026년 12월까지이며 변경될 수 있습니다.",
+        "en": "Stadium tours are suspended during renovation. The official schedule currently runs through December 2026 and may change.",
+        "ja": "改修工事のためスタジアムツアーは休止中です。公式日程は現在2026年12月までですが、変更される場合があります。"
+      }
+    },
+    {
       "id": "seoul-attraction-28329",
       "sourceId": "28329",
       "name": "독수리다방",
@@ -2208,6 +2277,40 @@
       "reviewedAt": "2026-11-07",
       "evidenceUrls": [],
       "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-11117",
+      "sourceId": "11117",
+      "name": "북악스카이웨이 북악팔각정",
+      "localizedNames": {
+        "en": "Bugak Skyway Bugak Palgakjeong Pavilion",
+        "ja": "北岳スカイウェイ・北岳八角亭"
+      },
+      "category": "Nature",
+      "placeType": "landmark_viewpoint",
+      "address": "03010 서울시 종로구 북악산로 267 (평창동)",
+      "district": "종로구",
+      "coordinates": [
+        126.980551282647,
+        37.601975429062
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "북악스카이웨이,팔각정,북악산성곽길,산책로,야경,북악산둘레길, 북악산",
+      "hours": "",
+      "closedDays": "북악팔각정 리뉴얼 공사로 임시휴무",
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2444850e-b6da-4a0e-a2dd-0ed4347e5361",
+      "transport": "지하철 4호선 한성대입구역 6번 출구,  1112,1111 버스 탑승 후 서울다원학교,한용운활동터에서 하차,  2.3km \r\n",
+      "curationReason": "대한민국 구석구석에서 서울 도심 경관을 감상하는 관광 명소로 소개합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2444850e-b6da-4a0e-a2dd-0ed4347e5361"
+      ],
+      "operatingStatus": "official_information_found",
+      "visitorNotice": {
+        "ko": "한국관광공사 안내에서 서울 도심 경관 명소로 소개하고 있습니다. 방문 전 최신 시설 이용 정보를 확인해 주세요.",
+        "en": "The Korea Tourism Organization describes it as a scenic Seoul landmark. Check its latest visitor information before your visit.",
+        "ja": "韓国観光公社の案内では、ソウル市街を眺める名所として紹介されています。訪問前に最新の利用案内をご確認ください。"
+      }
     },
     {
       "id": "seoul-attraction-27813",
@@ -3369,6 +3472,40 @@
       "reviewedAt": "2026-11-07",
       "evidenceUrls": [],
       "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-50129",
+      "sourceId": "50129",
+      "name": "한지가헌",
+      "localizedNames": {
+        "en": "Hanji House",
+        "ja": "ハンジホン"
+      },
+      "category": "Culture",
+      "placeType": "exhibition",
+      "address": "03055 서울 종로구 북촌로 31-9 (재동, SWNA)",
+      "district": "종로구",
+      "coordinates": [
+        126.98440432952,
+        37.579537600411
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "북촌한옥마을 명소,안국역 명소,한국공예디자인문화진흥원,한지문화홍보관,한지가헌,한지",
+      "hours": "10:00-19:00",
+      "closedDays": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관",
+      "officialUrl": "www.kcdf.or.kr/hanji",
+      "transport": "지하철 3호선 안국역 2번출구, 355m",
+      "curationReason": "한지 문화를 소개하는 전시·문화 공간입니다. 이전 및 재정비에 따른 휴관과 재개관 예정일은 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://www.kcdf.or.kr/hanji/cms/content/view/204"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "공간 이전과 재정비로 휴관 중입니다. 공식 안내상 2027년 3월 재개관 예정입니다.",
+        "en": "Temporarily closed for relocation and renovation. The official notice currently expects reopening in March 2027.",
+        "ja": "移転と改修のため休館中です。公式案内では2027年3月の再開を予定しています。"
+      }
     },
     {
       "id": "seoul-attraction-45397",

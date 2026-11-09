@@ -242,6 +242,40 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-55295",
+      "sourceId": "55295",
+      "name": "써저리",
+      "localizedNames": {
+        "en": "Surgery (Space)",
+        "ja": "サージェリー（スペース）"
+      },
+      "category": "Culture",
+      "placeType": "exhibition",
+      "address": "06016 서울 강남구 도산대로57길 6 (청담동) 지하2층",
+      "district": "강남구",
+      "coordinates": [
+        127.041631137979,
+        37.5240693579614
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울전시,강남,현대미술,청담동갤러리,SURGERY,청담동,써저리,무료전시",
+      "hours": "12:00~18:00 (예약제)",
+      "closedDays": "",
+      "officialUrl": "https://www.stephaniekimgallery.com/surgery-seoul",
+      "transport": "지하철 수인분당선 압구정로데오역 4번출구, 392m",
+      "curationReason": "서울 청담의 현대미술 전시 공간으로, 다양한 장르의 전시를 예약제로 운영합니다. 전시별 내용은 공식 안내를 확인하도록 합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://www.stephaniekimgallery.com/surgery-seoul"
+      ],
+      "operatingStatus": "unverified",
+      "visitorNotice": {
+        "ko": "예약제로 운영되는 현대미술 전시 공간입니다. 전시 내용과 방문 가능 여부는 공식 갤러리 안내를 확인하세요.",
+        "en": "A contemporary art space that operates by appointment. Check the gallery’s official page for current exhibitions and visit availability.",
+        "ja": "予約制の現代美術スペースです。展示内容や来場可能日程は公式案内をご確認ください。"
+      }
+    },
+    {
       "id": "seoul-attraction-471",
       "sourceId": "471",
       "name": "운현궁",

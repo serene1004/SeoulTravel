@@ -10,7 +10,7 @@
 | -------------------------------------------------------------- | --------------------------------------- | -------------------------- |
 | `src/data/seoul-open-attractions.json`                         | 서울시 관광 명소 원천 스냅샷            | 동기화 명령으로 갱신       |
 | `src/data/seoul-public-attraction-coordinates.json`            | 원천 장소의 좌표와 주소 대조 정보       | 지오코딩 명령으로 갱신     |
-| `src/data/seoul-travel-place-review.json`                      | 포함·제외 판단, 공식 주소 보정과 근거   | 판단·보정을 수정할 때 편집 |
+| `src/data/seoul-travel-place-review.json`                      | 포함·제외 판단, 방문 안내·주소 보정과 근거 | 판단·보정을 수정할 때 편집 |
 | `src/data/seoul-travel-place-enrichment.json`                  | 주소·운영시간·교통·공식 링크와 출처     | 조사 결과를 보존           |
 | `src/data/seoul-travel-place-localization-candidates.json`     | 영어·일본어 장소명 1차 번역 후보        | 후보 생성 후 API 검토      |
 | `src/data/seoul-travel-place-localization-review.json`         | 번역별 OpenAI 검토·수정 제안·사용량     | 검토 배치로 생성           |

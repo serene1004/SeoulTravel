@@ -1919,6 +1919,41 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-29578",
+      "sourceId": "29578",
+      "name": "쉼박물관",
+      "localizedNames": {
+        "en": "Shuim Museum",
+        "ja": "スィム博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03015 서울 종로구 세검정로 209-17 (쉼박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.955677955696,
+        37.5995036888778
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 전시실, 휴식,쉼박물관, 기획전,문화, 보존,광화문역,예술,홍지동, 경복궁역, 현대예술",
+      "hours": "평일 10:00~18:00\r\n토요일 10:00~18:00\r\n일요일 14:00~19:00",
+      "closedDays": "재정비로 별도 공지 시까지 임시 휴관",
+      "officialUrl": "http://museeshuim.com/",
+      "transport": "지하철 3호선 경복궁역 3번 출구, 0212, 1020, 1711, 7016, 7018, 7022(상명대입구 하차).\r\n지하철 5호선 광화문역 3번 출구 교보빌딩 앞, 0212, 1020, 1711, 7016, 7018(상명대입구 하차).",
+      "curationReason": "전시와 예술을 소개하는 박물관으로 선정합니다. 재개관 일정이 확인되지 않은 휴관 상태는 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/attractions/쉼박물관/KOP029578",
+        "https://museeshuim.com/"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "2023년 8월 1일부터 임시 휴관 중이며 재개관 일정은 아직 공지되지 않았습니다.",
+        "en": "Temporarily closed since August 1, 2023. No reopening date has been announced.",
+        "ja": "2023年8月1日から臨時休館中で、再開日はまだ発表されていません。"
+      }
+    },
+    {
       "id": "seoul-attraction-6218",
       "sourceId": "6218",
       "name": "진아춘 광화문점",

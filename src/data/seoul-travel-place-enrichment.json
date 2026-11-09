@@ -26134,6 +26134,46 @@
         }
       ],
       "notes": "2026-11-07 확인. 공식 관람 안내 페이지는 계절별 운영시간, 수·토 야간 운영, 입장 마감 및 매월 2·4주 월요일 휴관을 안내한다. 같은 사이트의 공식 FAQ는 매주 월요일 휴관으로 달리 표기해 휴관일에 미해결 충돌이 있다. 관람 안내 페이지 기준 시간표를 반영하되, 월요일 방문은 예매 캘린더 확인이 필요하다고 표시한다. 기존 서울시 원천의 운영시간에는 계절별 시간과 입장 마감이 없고 휴관일 표기도 공식 안내와 다르다. 전시 일정·티켓은 별도 확인이 필요하다."
+    },
+    {
+      "id": "seoul-attraction-3452",
+      "sourceId": "3452",
+      "name": "한국가구박물관",
+      "district": "성북구",
+      "current": {
+        "address": "02822 서울 성북구 대사관로 121 (성북동, 한국가구박물관)",
+        "hours": "* 2026년 10월 1일 자로 관람을 재개할 예정",
+        "closedDays": "-일요일, 월요일\r\n-1월 1일\r\n-설날, 추석 연휴\r\n",
+        "transport": "지하철 4호선 한성대입구역 6번 출구, 성북02번 탑승 후 한국가구박물관입구에서 하차, 196m ",
+        "officialUrl": "http://www.kofum.com/"
+      },
+      "researchedAt": "2026-11-09",
+      "status": "verified",
+      "fields": {
+        "hours": {
+          "value": "전화 사전 예약 관람",
+          "sourceUrl": "http://www.kofum.com/",
+          "sourceType": "official"
+        },
+        "closedDays": {
+          "value": "매주 일요일·월요일 및 국공휴일 휴관",
+          "sourceUrl": "http://www.kofum.com/",
+          "sourceType": "official"
+        },
+        "officialUrl": {
+          "value": "http://www.kofum.com/",
+          "sourceUrl": "http://www.kofum.com/",
+          "sourceType": "official"
+        }
+      },
+      "sources": [
+        {
+          "url": "http://www.kofum.com/",
+          "title": "한국가구박물관 공식 홈페이지",
+          "type": "official"
+        }
+      ],
+      "notes": "사용자가 확인한 공식 홈페이지 정보에 따라 관람 재개 예정일만 있던 원천 시간을 대체했다. 전화 사전 예약과 휴관 요일을 안내하고, 방문 전 공식 사이트에서 예약 가능 여부를 확인하도록 한다."
     }
   ],
   "model": "gpt-6-luna"

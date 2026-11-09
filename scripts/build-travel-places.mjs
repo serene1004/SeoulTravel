@@ -22,6 +22,16 @@ const localizedContentFields = [
 ];
 const placeDetailShardCount = 4;
 
+function isHttpsUrl(value) {
+  if (typeof value !== 'string') return false;
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && Boolean(url.hostname);
+  } catch {
+    return false;
+  }
+}
+
 export function buildPlaceIndex(catalog) {
   return {
     schemaVersion: catalog.schemaVersion,
@@ -39,6 +49,8 @@ export function buildPlaceIndex(catalog) {
       district: place.district,
       coordinates: place.coordinates,
       tags: place.tags,
+      operatingStatus: place.operatingStatus,
+      ...(place.visitorNotice ? { visitorNotice: place.visitorNotice } : {}),
     })),
   };
 }
@@ -119,9 +131,18 @@ export function buildTravelPlaces(
     if (
       decision.locationOverride &&
       (!decision.locationOverride.address?.trim() ||
-        !decision.locationOverride.evidenceUrl?.startsWith('https://'))
+        !isHttpsUrl(decision.locationOverride.evidenceUrl))
     ) {
       throw new Error(`Invalid location override: ${decision.sourceId}`);
+    }
+    if (decision.officialUrlOverride && !isHttpsUrl(decision.officialUrlOverride)) {
+      throw new Error(`Invalid official URL override: ${decision.sourceId}`);
+    }
+    if (
+      decision.visitorNotice &&
+      !['ko', 'en', 'ja'].every((locale) => decision.visitorNotice[locale]?.trim())
+    ) {
+      throw new Error(`Invalid visitor notice: ${decision.sourceId}`);
     }
     if (
       decision.duplicateOf &&
@@ -197,6 +218,9 @@ export function buildTravelPlaces(
       const enrichedValue = (field) => {
         if (field === 'address' && decision.locationOverride?.address) {
           return decision.locationOverride.address;
+        }
+        if (field === 'officialUrl' && decision.officialUrlOverride) {
+          return decision.officialUrlOverride;
         }
         const suggestion = placeEnrichment?.fields?.[field];
         return suggestion?.value && suggestion.sourceUrl ? suggestion.value : record[field];
@@ -305,6 +329,7 @@ export function buildTravelPlaces(
         reviewedAt: decision.reviewedAt,
         evidenceUrls: decision.evidenceUrls ?? [],
         operatingStatus: decision.operatingStatus ?? 'unverified',
+        ...(decision.visitorNotice ? { visitorNotice: decision.visitorNotice } : {}),
       });
     }
     return {

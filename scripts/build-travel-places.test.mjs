@@ -64,23 +64,66 @@ test('every Korean source has a current explicit review and the generated catalo
       `Missing travel purpose: ${id}`,
     );
   }
-  for (const id of [
-    '46447',
-    '49295',
-    '27814',
-    '15109',
-    '252',
-    '35405',
-    '50129',
-    '3452',
-    '7162',
-    '49356',
-  ]) {
+  for (const id of ['46447', '49295', '27814', '15109', '252', '29381', '7162', '49356']) {
     assert.ok(
       !catalog.places.some((place) => place.sourceId === id),
       `Unexpected destination: ${id}`,
     );
   }
+});
+
+test('reviewed temporary closures remain discoverable with visitor notices', () => {
+  const catalog = buildTravelPlaces(
+    raw,
+    coordinates,
+    review,
+    enrichment,
+    localizationReview,
+    contentLocalizationReview,
+  );
+  const bySourceId = new Map(catalog.places.map((place) => [place.sourceId, place]));
+
+  for (const id of ['35405', '49877', '29578', '50129']) {
+    assert.equal(bySourceId.get(id)?.operatingStatus, 'temporarily_closed');
+    assert.ok(bySourceId.get(id)?.visitorNotice.ko);
+  }
+  assert.equal(bySourceId.get('29381'), undefined);
+  assert.equal(bySourceId.get('47060')?.visitorNotice.ko.includes('2026'), true);
+});
+
+test('rejects malformed HTTPS overrides and incomplete visitor notices', () => {
+  const build = (reviewData) =>
+    buildTravelPlaces(
+      raw,
+      coordinates,
+      reviewData,
+      enrichment,
+      localizationReview,
+      contentLocalizationReview,
+    );
+  const findMuseumDecision = (reviewData) =>
+    reviewData.decisions.find((decision) => decision.sourceId === '35405');
+
+  const invalidOfficialUrlReview = structuredClone(review);
+  findMuseumDecision(invalidOfficialUrlReview).officialUrlOverride = 'https://';
+  assert.throws(
+    () => build(invalidOfficialUrlReview),
+    /Invalid official URL override: 35405/,
+  );
+
+  const invalidEvidenceUrlReview = structuredClone(review);
+  findMuseumDecision(invalidEvidenceUrlReview).locationOverride = {
+    address: '서울 주소',
+    evidenceUrl: 'https://',
+  };
+  assert.throws(
+    () => build(invalidEvidenceUrlReview),
+    /Invalid location override: 35405/,
+  );
+
+  const incompleteNoticeReview = structuredClone(review);
+  delete findMuseumDecision(incompleteNoticeReview).visitorNotice.ja;
+  assert.throws(() => build(incompleteNoticeReview), /Invalid visitor notice: 35405/);
 });
 
 test('only current approved content translations enter the generated catalog', () => {

@@ -3444,6 +3444,55 @@
       "operatingStatus": "official_information_found"
     },
     {
+      "id": "seoul-attraction-3452",
+      "sourceId": "3452",
+      "name": "한국가구박물관",
+      "localizedNames": {
+        "en": "Korean Furniture Museum",
+        "ja": "韓国家具博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02822 서울 성북구 대사관로 121 (성북동, 한국가구박물관)",
+      "district": "성북구",
+      "coordinates": [
+        126.993449438953,
+        37.6003780418349
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 가구, 성북동,목재, 가구박물관, 목가구, 전시,문화,전통가구,한성대입구역,박물관, 한국가구박물관",
+      "hours": "전화 사전 예약 관람",
+      "closedDays": "매주 일요일·월요일 및 국공휴일 휴관",
+      "officialUrl": "https://www.kofum.com/",
+      "transport": "지하철 4호선 한성대입구역 6번 출구, 성북02번 탑승 후 한국가구박물관입구에서 하차, 196m ",
+      "enrichedInfo": {
+        "researchedAt": "2026-11-09",
+        "fields": {
+          "hours": {
+            "value": "전화 사전 예약 관람",
+            "sourceUrl": "http://www.kofum.com/",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 일요일·월요일 및 국공휴일 휴관",
+            "sourceUrl": "http://www.kofum.com/",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "http://www.kofum.com/",
+            "sourceUrl": "http://www.kofum.com/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "한국 전통 가구와 목공예를 소개하는 전문 박물관입니다. 전화 예약 및 휴관일은 상세 운영 정보와 공식 사이트에서 확인할 수 있습니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "http://www.kofum.com/"
+      ],
+      "operatingStatus": "official_information_found"
+    },
+    {
       "id": "seoul-attraction-26192",
       "sourceId": "26192",
       "name": "비원떡집",
@@ -3834,6 +3883,41 @@
         "https://korean.visitseoul.net/attractions/hangangelementaryschooloverpass/KOPlwvkl4"
       ],
       "operatingStatus": "official_information_found"
+    },
+    {
+      "id": "seoul-attraction-47060",
+      "sourceId": "47060",
+      "name": "경복궁 집옥재",
+      "localizedNames": {
+        "en": "Jipokjae Hall at Gyeongbokgung Palace",
+        "ja": "景福宮 集玉斎"
+      },
+      "category": "Culture",
+      "placeType": "heritage_architecture",
+      "address": "03045 서울 종로구 사직로 161 (세종로, 경복궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.976842133821,
+        37.5759040910202
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "도서관,광화문,경복궁,청와대,집옥재",
+      "hours": "10:00 ~ 16:00",
+      "closedDays": "월요일, 화요일 휴무",
+      "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255",
+      "transport": "지하철 3호선 경복궁역 5번 출구,  1.1km",
+      "curationReason": "경복궁 안의 역사적 전각이자 계절별로 내부를 개방하는 방문 장소입니다. 현재 연도 개방 기간이 끝난 점을 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255",
+        "https://korean.visitseoul.net/attractions/2024-Jibokjae/KOPfk9nxi"
+      ],
+      "operatingStatus": "official_information_found",
+      "visitorNotice": {
+        "ko": "집옥재 내부 개방은 2026년 10월 31일 종료되었습니다. 다음 개방 일정은 국가유산청의 공식 안내를 확인해 주세요.",
+        "en": "The 2026 public opening period for Jibokjae ended on October 31. Check the Cultural Heritage Administration’s official notices for the next schedule.",
+        "ja": "集玉斎の2026年一般公開は10月31日に終了しました。次回の日程は国家遺産庁の公式案内をご確認ください。"
+      }
     },
     {
       "id": "seoul-attraction-3164",

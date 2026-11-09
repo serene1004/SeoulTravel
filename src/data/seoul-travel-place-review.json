@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "policyVersion": "seoul-travel-v1",
-  "reviewedAt": "2026-11-07",
+  "reviewedAt": "2026-11-09",
   "reviewer": {
     "kind": "AI",
     "method": "Codex 대화에서 원천 이름·태그·주소·운영 안내를 의미 기반으로 검토하고 일부 공식 자료를 웹 확인했습니다. 생성 스크립트는 AI를 호출하지 않습니다. 2026-11-07: 460개 변경·신규 원천을 AI로 재검토했습니다. 기존 판단과 일치한 결과만 갱신하고, 판단이 다르거나 신규인 항목은 사람 확인 전까지 보류했습니다.",
@@ -313,17 +313,26 @@
     {
       "sourceId": "35405",
       "inputFingerprint": "088e4335675853c8b76c97febe9e5920917dfec1899716b3d9ef829536268533",
-      "decision": "review",
+      "decision": "include",
       "category": "Culture",
       "placeType": "museum_gallery",
-      "reason": "국립한글박물관 공식 관람 안내가 현재 휴관 중이며 박물관 내 관람·해설을 운영하지 않는다고 명시합니다. 공식 자료는 2028년 10월 재개관 예정으로 안내하므로 그 전까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
+      "reason": "국립한글박물관은 한국어와 한글 문화를 다루는 공공 박물관입니다. 휴관 중인 사실은 별도 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
       "operatingStatus": "temporarily_closed",
       "evidenceUrls": [
         "https://www.hangeul.go.kr/info/watchGuide.do?curr_menu_cd=0101010000",
         "https://www.hangeul.go.kr/webzine/202610/sub3_1.html"
       ],
-      "evidenceFields": ["name", "closedDays"]
+      "evidenceFields": ["name", "tags", "closedDays"],
+      "visitorNotice": {
+        "ko": "휴관 중입니다. 공식 안내에 따르면 2028년 하반기까지 박물관 관람과 해설을 운영하지 않습니다.",
+        "en": "Temporarily closed. The official notice says museum visits and tours will remain unavailable through the second half of 2028.",
+        "ja": "休館中です。公式案内によると、博物館の観覧と解説は2028年下半期まで休止予定です。"
+      },
+      "localizedNames": {
+        "en": "National Hangeul Museum",
+        "ja": "国立ハングル博物館"
+      }
     },
     {
       "sourceId": "2084",
@@ -2183,12 +2192,24 @@
     {
       "sourceId": "49877",
       "inputFingerprint": "82368c8928efe358641baa8219609209d1ab0b3306e3ce6b74c4b9fdbf4a4058",
-      "decision": "review",
-      "reason": "서울올림픽주경기장은 공연·경기 명소지만 공식 안내상 리모델링 공사 중이며 일반 투어가 중단되어 있습니다. 공사·투어 재개 전까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
-      "evidenceFields": ["name", "tags", "hours"],
+      "decision": "include",
+      "reason": "서울올림픽과 대형 체육·문화 행사가 열린 잠실의 대표 경기장입니다. 리모델링 중 투어 중단 상태는 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceFields": ["name", "tags", "officialUrl"],
       "evidenceUrls": ["https://stadium.seoul.go.kr/gallery/olympic-tour"],
-      "operatingStatus": "temporarily_closed"
+      "operatingStatus": "temporarily_closed",
+      "category": "Culture",
+      "placeType": "sports_venue",
+      "visitorNotice": {
+        "ko": "리모델링 공사로 경기장 투어가 중단되어 있습니다. 공식 안내 일정은 2026년 12월까지이며 변경될 수 있습니다.",
+        "en": "Stadium tours are suspended during renovation. The official schedule currently runs through December 2026 and may change.",
+        "ja": "改修工事のためスタジアムツアーは休止中です。公式日程は現在2026年12月までですが、変更される場合があります。"
+      },
+      "officialUrlOverride": "https://stadium.seoul.go.kr/gallery/olympic-tour",
+      "localizedNames": {
+        "en": "Seoul Olympic Stadium",
+        "ja": "ソウルオリンピック主競技場"
+      }
     },
     {
       "sourceId": "25927",
@@ -2241,16 +2262,16 @@
     {
       "sourceId": "29381",
       "inputFingerprint": "c063fdbe32d35474946bf9b3f9cdc627ea520124c7813e3ed9a307236e9ee4f2",
-      "decision": "review",
-      "category": "Culture",
+      "decision": "exclude",
+      "category": null,
       "placeType": "museum_gallery",
-      "reason": "서울역사박물관 공식 안내에 돈의문역사관이 공간 재구성 사업으로 2026년 12월 31일까지 휴관한다고 명시되어 있습니다. 재개관 공지가 확인될 때까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
+      "reason": "현재 부분적 미운영 상태이며 돈의문박물관마을이 공원으로 재조성될 예정이라는 확인에 따라, 향후 공간 구성이 확정될 때까지 지도 장소에서 제외합니다.",
+      "reviewedAt": "2026-11-09",
       "operatingStatus": "temporarily_closed",
       "evidenceUrls": [
         "https://museum.seoul.go.kr/www/intro/annexIntro/annex_donuimoon/annex_donuimoon_01.jsp"
       ],
-      "evidenceFields": ["name", "tags", "closedDays"]
+      "evidenceFields": ["name", "address", "closedDays"]
     },
     {
       "sourceId": "27215",
@@ -2781,14 +2802,22 @@
     {
       "sourceId": "11117",
       "inputFingerprint": "d6f886e1df2d8ae9fa0007c2475030439386939c352dcf46a9d084d6b201572b",
-      "decision": "review",
+      "decision": "include",
       "category": "Nature",
       "placeType": "landmark_viewpoint",
-      "reason": "서울 공식 관광 안내 페이지는 북악팔각정을 2026년 기준 연중무휴 24시간 개방이라고 안내하면서, 휴무일 항목에는 리뉴얼 공사로 임시휴무라고 함께 표시합니다. 실제 시설 개방 여부와 공사 종료일이 상충해 확인 전까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
-      "operatingStatus": "unverified",
-      "evidenceUrls": ["https://korean.visitseoul.net/attractions/북악스카이웨이-팔각정/KOP011117"],
-      "evidenceFields": ["name", "address", "hours", "closedDays"]
+      "reason": "대한민국 구석구석에서 서울 도심 경관을 감상하는 관광 명소로 소개합니다.",
+      "reviewedAt": "2026-11-09",
+      "operatingStatus": "official_information_found",
+      "evidenceUrls": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2444850e-b6da-4a0e-a2dd-0ed4347e5361"
+      ],
+      "evidenceFields": ["name", "address"],
+      "officialUrlOverride": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2444850e-b6da-4a0e-a2dd-0ed4347e5361",
+      "visitorNotice": {
+        "ko": "한국관광공사 안내에서 서울 도심 경관 명소로 소개하고 있습니다. 방문 전 최신 시설 이용 정보를 확인해 주세요.",
+        "en": "The Korea Tourism Organization describes it as a scenic Seoul landmark. Check its latest visitor information before your visit.",
+        "ja": "韓国観光公社の案内では、ソウル市街を眺める名所として紹介されています。訪問前に最新の利用案内をご確認ください。"
+      }
     },
     {
       "sourceId": "27813",
@@ -3190,14 +3219,22 @@
     {
       "sourceId": "29578",
       "inputFingerprint": "a137012e25238b2259555f7b42a2e88741238f649eb3fb7a46576bfe9f1b023e",
-      "decision": "review",
+      "decision": "include",
       "category": "Culture",
       "placeType": "museum_gallery",
-      "reason": "서울 공식 관광 안내에 재정비로 별도 공지 시까지 임시 휴관 중이라고 명시되어 있습니다. 재개관 공지가 확인될 때까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
+      "reason": "전시와 예술을 소개하는 박물관으로 선정합니다. 재개관 일정이 확인되지 않은 휴관 상태는 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
       "operatingStatus": "temporarily_closed",
-      "evidenceUrls": ["https://korean.visitseoul.net/attractions/쉼박물관/KOP029578"],
-      "evidenceFields": ["name", "tags", "closedDays"]
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/attractions/쉼박물관/KOP029578",
+        "https://museeshuim.com/"
+      ],
+      "evidenceFields": ["name", "tags", "closedDays"],
+      "visitorNotice": {
+        "ko": "2023년 8월 1일부터 임시 휴관 중이며 재개관 일정은 아직 공지되지 않았습니다.",
+        "en": "Temporarily closed since August 1, 2023. No reopening date has been announced.",
+        "ja": "2023年8月1日から臨時休館中で、再開日はまだ発表されていません。"
+      }
     },
     {
       "sourceId": "49395",
@@ -4744,17 +4781,23 @@
     {
       "sourceId": "50129",
       "inputFingerprint": "18be07b7d000658a43cad3d1e026b5841d7c141918b63ee475bfe0139b99a1dc",
-      "decision": "review",
+      "decision": "include",
       "category": "Culture",
       "placeType": "exhibition",
-      "reason": "한지가헌 공식 안내가 공간 이전·재정비에 따른 임시 휴관과 2027년 3월 재개관 예정일을 명시합니다. 재개관 뒤 다시 확인합니다.",
-      "reviewedAt": "2026-11-07",
+      "reason": "한지 문화를 소개하는 전시·문화 공간입니다. 이전 및 재정비에 따른 휴관과 재개관 예정일은 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
       "operatingStatus": "temporarily_closed",
-      "evidenceUrls": [
-        "https://www.kcdf.or.kr/hanji/cms/content/view/204",
-        "https://www.kcdf.or.kr/hanji/brd/board/279/L/menu/222?bbIdx=306&brdType=R&thisPage=1"
-      ],
-      "evidenceFields": ["name", "tags", "closedDays"]
+      "evidenceUrls": ["https://www.kcdf.or.kr/hanji/cms/content/view/204"],
+      "evidenceFields": ["name", "tags", "closedDays"],
+      "visitorNotice": {
+        "ko": "공간 이전과 재정비로 휴관 중입니다. 공식 안내상 2027년 3월 재개관 예정입니다.",
+        "en": "Temporarily closed for relocation and renovation. The official notice currently expects reopening in March 2027.",
+        "ja": "移転と改修のため休館中です。公式案内では2027年3月の再開を予定しています。"
+      },
+      "localizedNames": {
+        "en": "Hanji House",
+        "ja": "ハンジホン"
+      }
     },
     {
       "sourceId": "42375",
@@ -5124,14 +5167,19 @@
     {
       "sourceId": "3452",
       "inputFingerprint": "73aa1d1c82e38e46abd1cabe499e8175a1b0d2a7dbcc97e31585321d87da5fac",
-      "decision": "review",
+      "decision": "include",
       "category": "Culture",
       "placeType": "museum_gallery",
-      "reason": "서울 공식 관광 안내는 한국가구박물관이 사전 예약·가이드 투어로 운영되며 2026년 10월 1일 관람 재개 예정이라고 기록하지만, 예정일이 지난 현재 실제 예약·관람 가능 여부는 확인되지 않습니다. 공식 예약 가능 일정이 확인될 때까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
-      "operatingStatus": "unverified",
-      "evidenceUrls": ["https://korean.visitseoul.net/museum/한국가구박물관/KOP003452"],
-      "evidenceFields": ["name", "address", "hours", "officialUrl"]
+      "reason": "한국 전통 가구와 목공예를 소개하는 전문 박물관입니다. 전화 예약 및 휴관일은 상세 운영 정보와 공식 사이트에서 확인할 수 있습니다.",
+      "reviewedAt": "2026-11-09",
+      "operatingStatus": "official_information_found",
+      "evidenceUrls": ["http://www.kofum.com/"],
+      "evidenceFields": ["name", "address", "hours", "closedDays", "officialUrl"],
+      "officialUrlOverride": "https://www.kofum.com/",
+      "localizedNames": {
+        "en": "Korean Furniture Museum",
+        "ja": "韓国家具博物館"
+      }
     },
     {
       "sourceId": "41681",
@@ -5832,16 +5880,23 @@
     {
       "sourceId": "47060",
       "inputFingerprint": "693669f70fdd7a03dd5268ccf9ad4b4a91916547338d7792daa4570359c023fe",
-      "decision": "review",
+      "decision": "include",
       "category": "Culture",
-      "placeType": "heritage_street_architecture",
-      "reason": "국가유산청 경복궁관리소는 집옥재·팔우정 작은도서관의 2026년 개방기간을 4월 1일~10월 31일로 명시했습니다. 올해 운영이 종료되어 2027년 개방 일정이 확인될 때까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
-      "operatingStatus": "temporarily_closed",
+      "placeType": "heritage_architecture",
+      "reason": "경복궁 안의 역사적 전각이자 계절별로 내부를 개방하는 방문 장소입니다. 현재 연도 개방 기간이 끝난 점을 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "operatingStatus": "official_information_found",
       "evidenceUrls": [
-        "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255"
+        "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255",
+        "https://korean.visitseoul.net/attractions/2024-Jibokjae/KOPfk9nxi"
       ],
-      "evidenceFields": ["name", "tags", "hours", "closedDays"]
+      "evidenceFields": ["name", "tags", "hours", "closedDays"],
+      "visitorNotice": {
+        "ko": "집옥재 내부 개방은 2026년 10월 31일 종료되었습니다. 다음 개방 일정은 국가유산청의 공식 안내를 확인해 주세요.",
+        "en": "The 2026 public opening period for Jibokjae ended on October 31. Check the Cultural Heritage Administration’s official notices for the next schedule.",
+        "ja": "集玉斎の2026年一般公開は10月31日に終了しました。次回の日程は国家遺産庁の公式案内をご確認ください。"
+      },
+      "officialUrlOverride": "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255"
     },
     {
       "sourceId": "47031",
@@ -6255,14 +6310,24 @@
     {
       "sourceId": "55295",
       "inputFingerprint": "8a7707eec0bde24a5257938feecec8f9cc3978bbfe28dd08bd123c6c2529d28d",
-      "decision": "review",
-      "reason": "공식 갤러리 안내는 예약제 전시공간이며 현재 확인된 전시는 2026년 10월 18일 종료되었습니다. 새 전시나 예약 가능한 일정이 확인될 때까지 보류합니다.",
-      "reviewedAt": "2026-11-07",
+      "decision": "include",
+      "reason": "서울 청담의 현대미술 전시 공간으로, 다양한 장르의 전시를 예약제로 운영합니다. 전시별 내용은 공식 안내를 확인하도록 합니다.",
+      "reviewedAt": "2026-11-09",
       "operatingStatus": "unverified",
       "evidenceUrls": ["https://www.stephaniekimgallery.com/surgery-seoul"],
-      "evidenceFields": ["name", "tags", "hours"],
+      "evidenceFields": ["name", "tags", "address", "hours", "officialUrl"],
       "category": "Culture",
-      "placeType": "exhibition"
+      "placeType": "exhibition",
+      "officialUrlOverride": "https://www.stephaniekimgallery.com/surgery-seoul",
+      "visitorNotice": {
+        "ko": "예약제로 운영되는 현대미술 전시 공간입니다. 전시 내용과 방문 가능 여부는 공식 갤러리 안내를 확인하세요.",
+        "en": "A contemporary art space that operates by appointment. Check the gallery’s official page for current exhibitions and visit availability.",
+        "ja": "予約制の現代美術スペースです。展示内容や来場可能日程は公式案内をご確認ください。"
+      },
+      "localizedNames": {
+        "en": "Surgery (Space)",
+        "ja": "サージェリー（スペース）"
+      }
     },
     {
       "sourceId": "55077",

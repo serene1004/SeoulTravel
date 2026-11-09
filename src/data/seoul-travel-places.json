@@ -8,7 +8,7 @@
     "retrievedAt": "2026-11-07T11:46:39.966Z"
   },
   "policyVersion": "seoul-travel-v1",
-  "reviewedAt": "2026-11-07",
+  "reviewedAt": "2026-11-09",
   "scope": "서울 여행 방문 목적에 대한 AI 적합성 검토. 모든 장소의 현재 영업·개방·좌표 정확성을 보증하지 않습니다.",
   "categories": [
     "Culture",
@@ -20,9 +20,9 @@
   ],
   "summary": {
     "sourceRecords": 517,
-    "included": 388,
-    "excluded": 118,
-    "needsReview": 11,
+    "included": 396,
+    "excluded": 119,
+    "needsReview": 2,
     "retiredReviewIds": []
   },
   "places": [
@@ -891,6 +891,40 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-55295",
+      "sourceId": "55295",
+      "name": "써저리",
+      "localizedNames": {
+        "en": "Surgery (Space)",
+        "ja": "サージェリー（スペース）"
+      },
+      "category": "Culture",
+      "placeType": "exhibition",
+      "address": "06016 서울 강남구 도산대로57길 6 (청담동) 지하2층",
+      "district": "강남구",
+      "coordinates": [
+        127.041631137979,
+        37.5240693579614
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울전시,강남,현대미술,청담동갤러리,SURGERY,청담동,써저리,무료전시",
+      "hours": "12:00~18:00 (예약제)",
+      "closedDays": "",
+      "officialUrl": "https://www.stephaniekimgallery.com/surgery-seoul",
+      "transport": "지하철 수인분당선 압구정로데오역 4번출구, 392m",
+      "curationReason": "서울 청담의 현대미술 전시 공간으로, 다양한 장르의 전시를 예약제로 운영합니다. 전시별 내용은 공식 안내를 확인하도록 합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://www.stephaniekimgallery.com/surgery-seoul"
+      ],
+      "operatingStatus": "unverified",
+      "visitorNotice": {
+        "ko": "예약제로 운영되는 현대미술 전시 공간입니다. 전시 내용과 방문 가능 여부는 공식 갤러리 안내를 확인하세요.",
+        "en": "A contemporary art space that operates by appointment. Check the gallery’s official page for current exhibitions and visit availability.",
+        "ja": "予約制の現代美術スペースです。展示内容や来場可能日程は公式案内をご確認ください。"
+      }
+    },
+    {
       "id": "seoul-attraction-1153",
       "sourceId": "1153",
       "name": "양화진외국인선교사묘원",
@@ -973,6 +1007,41 @@
       "reviewedAt": "2026-11-07",
       "evidenceUrls": [],
       "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-35405",
+      "sourceId": "35405",
+      "name": "국립한글박물관",
+      "localizedNames": {
+        "en": "National Hangeul Museum",
+        "ja": "国立ハングル博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "04383 서울 용산구 서빙고로 139 (용산동6가, 국립한글박물관)",
+      "district": "용산구",
+      "coordinates": [
+        126.980486330158,
+        37.5210687976885
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 훈민정음,한글,국립한글박물관,세종대왕,한글박물관",
+      "hours": "10:00 - 18:00",
+      "closedDays": "* 새단장을 위해 2028년 하반기 까지 휴관\r\n\r\n1월 1일, 설날 당일, 추석 당일\r\n* 한글도서관 휴관일: 토요일, 일요일, 공휴일(한글날 제외)",
+      "officialUrl": "https://www.hangeul.go.kr/main.do",
+      "transport": "지하철 4호선/경의중앙선 이촌역 2번 출구,  500m",
+      "curationReason": "국립한글박물관은 한국어와 한글 문화를 다루는 공공 박물관입니다. 휴관 중인 사실은 별도 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://www.hangeul.go.kr/info/watchGuide.do?curr_menu_cd=0101010000",
+        "https://www.hangeul.go.kr/webzine/202610/sub3_1.html"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "휴관 중입니다. 공식 안내에 따르면 2028년 하반기까지 박물관 관람과 해설을 운영하지 않습니다.",
+        "en": "Temporarily closed. The official notice says museum visits and tours will remain unavailable through the second half of 2028.",
+        "ja": "休館中です。公式案内によると、博物館の観覧と解説は2028年下半期まで休止予定です。"
+      }
     },
     {
       "id": "seoul-attraction-471",
@@ -6391,6 +6460,40 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-49877",
+      "sourceId": "49877",
+      "name": "서울올림픽주경기장",
+      "localizedNames": {
+        "en": "Seoul Olympic Stadium",
+        "ja": "ソウルオリンピック主競技場"
+      },
+      "category": "Culture",
+      "placeType": "sports_venue",
+      "address": "05500 서울 송파구 올림픽로 25 (잠실동, 서울종합운동장)",
+      "district": "송파구",
+      "coordinates": [
+        127.075940589715,
+        37.5161987797456
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "서울올림픽주경기장,서울종합운동장,잠실종합운동장,서울올림픽,케이팝 데몬 헌터스,잠실야구장,서울아시안게임",
+      "hours": "",
+      "closedDays": "",
+      "officialUrl": "https://stadium.seoul.go.kr/gallery/olympic-tour",
+      "transport": "지하철 2호선/9호선 종합운동장역 5번출구, 18m",
+      "curationReason": "서울올림픽과 대형 체육·문화 행사가 열린 잠실의 대표 경기장입니다. 리모델링 중 투어 중단 상태는 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://stadium.seoul.go.kr/gallery/olympic-tour"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "리모델링 공사로 경기장 투어가 중단되어 있습니다. 공식 안내 일정은 2026년 12월까지이며 변경될 수 있습니다.",
+        "en": "Stadium tours are suspended during renovation. The official schedule currently runs through December 2026 and may change.",
+        "ja": "改修工事のためスタジアムツアーは休止中です。公式日程は現在2026年12月までですが、変更される場合があります。"
+      }
+    },
+    {
       "id": "seoul-attraction-25927",
       "sourceId": "25927",
       "name": "명신당필방",
@@ -7863,6 +7966,40 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-11117",
+      "sourceId": "11117",
+      "name": "북악스카이웨이 북악팔각정",
+      "localizedNames": {
+        "en": "Bugak Skyway Bugak Palgakjeong Pavilion",
+        "ja": "北岳スカイウェイ・北岳八角亭"
+      },
+      "category": "Nature",
+      "placeType": "landmark_viewpoint",
+      "address": "03010 서울시 종로구 북악산로 267 (평창동)",
+      "district": "종로구",
+      "coordinates": [
+        126.980551282647,
+        37.601975429062
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "북악스카이웨이,팔각정,북악산성곽길,산책로,야경,북악산둘레길, 북악산",
+      "hours": "",
+      "closedDays": "북악팔각정 리뉴얼 공사로 임시휴무",
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2444850e-b6da-4a0e-a2dd-0ed4347e5361",
+      "transport": "지하철 4호선 한성대입구역 6번 출구,  1112,1111 버스 탑승 후 서울다원학교,한용운활동터에서 하차,  2.3km \r\n",
+      "curationReason": "대한민국 구석구석에서 서울 도심 경관을 감상하는 관광 명소로 소개합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=2444850e-b6da-4a0e-a2dd-0ed4347e5361"
+      ],
+      "operatingStatus": "official_information_found",
+      "visitorNotice": {
+        "ko": "한국관광공사 안내에서 서울 도심 경관 명소로 소개하고 있습니다. 방문 전 최신 시설 이용 정보를 확인해 주세요.",
+        "en": "The Korea Tourism Organization describes it as a scenic Seoul landmark. Check its latest visitor information before your visit.",
+        "ja": "韓国観光公社の案内では、ソウル市街を眺める名所として紹介されています。訪問前に最新の利用案内をご確認ください。"
+      }
+    },
+    {
       "id": "seoul-attraction-27813",
       "sourceId": "27813",
       "name": "북촌목공예공방",
@@ -8694,6 +8831,41 @@
       "reviewedAt": "2026-11-07",
       "evidenceUrls": [],
       "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-29578",
+      "sourceId": "29578",
+      "name": "쉼박물관",
+      "localizedNames": {
+        "en": "Shuim Museum",
+        "ja": "スィム博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "03015 서울 종로구 세검정로 209-17 (쉼박물관)",
+      "district": "종로구",
+      "coordinates": [
+        126.955677955696,
+        37.5995036888778
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 전시실, 휴식,쉼박물관, 기획전,문화, 보존,광화문역,예술,홍지동, 경복궁역, 현대예술",
+      "hours": "평일 10:00~18:00\r\n토요일 10:00~18:00\r\n일요일 14:00~19:00",
+      "closedDays": "재정비로 별도 공지 시까지 임시 휴관",
+      "officialUrl": "http://museeshuim.com/",
+      "transport": "지하철 3호선 경복궁역 3번 출구, 0212, 1020, 1711, 7016, 7018, 7022(상명대입구 하차).\r\n지하철 5호선 광화문역 3번 출구 교보빌딩 앞, 0212, 1020, 1711, 7016, 7018(상명대입구 하차).",
+      "curationReason": "전시와 예술을 소개하는 박물관으로 선정합니다. 재개관 일정이 확인되지 않은 휴관 상태는 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://korean.visitseoul.net/attractions/쉼박물관/KOP029578",
+        "https://museeshuim.com/"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "2023년 8월 1일부터 임시 휴관 중이며 재개관 일정은 아직 공지되지 않았습니다.",
+        "en": "Temporarily closed since August 1, 2023. No reopening date has been announced.",
+        "ja": "2023年8月1日から臨時休館中で、再開日はまだ発表されていません。"
+      }
     },
     {
       "id": "seoul-attraction-5060",
@@ -12374,6 +12546,40 @@
       "operatingStatus": "unverified"
     },
     {
+      "id": "seoul-attraction-50129",
+      "sourceId": "50129",
+      "name": "한지가헌",
+      "localizedNames": {
+        "en": "Hanji House",
+        "ja": "ハンジホン"
+      },
+      "category": "Culture",
+      "placeType": "exhibition",
+      "address": "03055 서울 종로구 북촌로 31-9 (재동, SWNA)",
+      "district": "종로구",
+      "coordinates": [
+        126.98440432952,
+        37.579537600411
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "북촌한옥마을 명소,안국역 명소,한국공예디자인문화진흥원,한지문화홍보관,한지가헌,한지",
+      "hours": "10:00-19:00",
+      "closedDays": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관",
+      "officialUrl": "www.kcdf.or.kr/hanji",
+      "transport": "지하철 3호선 안국역 2번출구, 355m",
+      "curationReason": "한지 문화를 소개하는 전시·문화 공간입니다. 이전 및 재정비에 따른 휴관과 재개관 예정일은 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://www.kcdf.or.kr/hanji/cms/content/view/204"
+      ],
+      "operatingStatus": "temporarily_closed",
+      "visitorNotice": {
+        "ko": "공간 이전과 재정비로 휴관 중입니다. 공식 안내상 2027년 3월 재개관 예정입니다.",
+        "en": "Temporarily closed for relocation and renovation. The official notice currently expects reopening in March 2027.",
+        "ja": "移転と改修のため休館中です。公式案内では2027年3月の再開を予定しています。"
+      }
+    },
+    {
       "id": "seoul-attraction-42375",
       "sourceId": "42375",
       "name": "함스브로트과자점",
@@ -13126,6 +13332,55 @@
       "reviewedAt": "2026-11-07",
       "evidenceUrls": [],
       "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-3452",
+      "sourceId": "3452",
+      "name": "한국가구박물관",
+      "localizedNames": {
+        "en": "Korean Furniture Museum",
+        "ja": "韓国家具博物館"
+      },
+      "category": "Culture",
+      "placeType": "museum_gallery",
+      "address": "02822 서울 성북구 대사관로 121 (성북동, 한국가구박물관)",
+      "district": "성북구",
+      "coordinates": [
+        126.993449438953,
+        37.6003780418349
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": " 가구, 성북동,목재, 가구박물관, 목가구, 전시,문화,전통가구,한성대입구역,박물관, 한국가구박물관",
+      "hours": "전화 사전 예약 관람",
+      "closedDays": "매주 일요일·월요일 및 국공휴일 휴관",
+      "officialUrl": "https://www.kofum.com/",
+      "transport": "지하철 4호선 한성대입구역 6번 출구, 성북02번 탑승 후 한국가구박물관입구에서 하차, 196m ",
+      "enrichedInfo": {
+        "researchedAt": "2026-11-09",
+        "fields": {
+          "hours": {
+            "value": "전화 사전 예약 관람",
+            "sourceUrl": "http://www.kofum.com/",
+            "sourceType": "official"
+          },
+          "closedDays": {
+            "value": "매주 일요일·월요일 및 국공휴일 휴관",
+            "sourceUrl": "http://www.kofum.com/",
+            "sourceType": "official"
+          },
+          "officialUrl": {
+            "value": "http://www.kofum.com/",
+            "sourceUrl": "http://www.kofum.com/",
+            "sourceType": "official"
+          }
+        }
+      },
+      "curationReason": "한국 전통 가구와 목공예를 소개하는 전문 박물관입니다. 전화 예약 및 휴관일은 상세 운영 정보와 공식 사이트에서 확인할 수 있습니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "http://www.kofum.com/"
+      ],
+      "operatingStatus": "official_information_found"
     },
     {
       "id": "seoul-attraction-41681",
@@ -14769,6 +15024,41 @@
       "reviewedAt": "2026-11-07",
       "evidenceUrls": [],
       "operatingStatus": "unverified"
+    },
+    {
+      "id": "seoul-attraction-47060",
+      "sourceId": "47060",
+      "name": "경복궁 집옥재",
+      "localizedNames": {
+        "en": "Jipokjae Hall at Gyeongbokgung Palace",
+        "ja": "景福宮 集玉斎"
+      },
+      "category": "Culture",
+      "placeType": "heritage_architecture",
+      "address": "03045 서울 종로구 사직로 161 (세종로, 경복궁)",
+      "district": "종로구",
+      "coordinates": [
+        126.976842133821,
+        37.5759040910202
+      ],
+      "coordinateStatus": "geocoded",
+      "tags": "도서관,광화문,경복궁,청와대,집옥재",
+      "hours": "10:00 ~ 16:00",
+      "closedDays": "월요일, 화요일 휴무",
+      "officialUrl": "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255",
+      "transport": "지하철 3호선 경복궁역 5번 출구,  1.1km",
+      "curationReason": "경복궁 안의 역사적 전각이자 계절별로 내부를 개방하는 방문 장소입니다. 현재 연도 개방 기간이 끝난 점을 방문 안내로 표시합니다.",
+      "reviewedAt": "2026-11-09",
+      "evidenceUrls": [
+        "https://royal.khs.go.kr/ROYAL/contents/R201000000.do?act=view&ceIdx=202604010255",
+        "https://korean.visitseoul.net/attractions/2024-Jibokjae/KOPfk9nxi"
+      ],
+      "operatingStatus": "official_information_found",
+      "visitorNotice": {
+        "ko": "집옥재 내부 개방은 2026년 10월 31일 종료되었습니다. 다음 개방 일정은 국가유산청의 공식 안내를 확인해 주세요.",
+        "en": "The 2026 public opening period for Jibokjae ended on October 31. Check the Cultural Heritage Administration’s official notices for the next schedule.",
+        "ja": "集玉斎の2026年一般公開は10月31日に終了しました。次回の日程は国家遺産庁の公式案内をご確認ください。"
+      }
     },
     {
       "id": "seoul-attraction-47031",
