@@ -1429,8 +1429,7 @@ a:focus-visible {
   border-radius: 50%;
   background: #edbc74;
 }
-.ticket-line i:nth-child(2),
-.ticket-line i:nth-child(3) {
+.ticket-line i:last-child {
   background: #78bba3;
 }
 .ticket-route {
@@ -2669,8 +2668,7 @@ a:focus-visible {
 .ticket-line i {
   background: #d7c096;
 }
-.ticket-line i:nth-child(2),
-.ticket-line i:nth-child(3) {
+.ticket-line i:last-child {
   background: #94b9a9;
 }
 

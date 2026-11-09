@@ -347,7 +347,7 @@ export default function RoutePage() {
             <b>{hasValidRoute ? `${distanceKm.toFixed(1)} km` : '—'}</b>
           </div>
           <div className="ticket-line" aria-hidden="true">
-            <i /> <i /> <i /> <i />
+            <i /> <i />
           </div>
           {hasValidRoute && from && to ? (
             <>
